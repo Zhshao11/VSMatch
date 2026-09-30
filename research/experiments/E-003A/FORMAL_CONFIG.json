@@ -1,0 +1,44 @@
+{
+  "experiment": "E-003A",
+  "method": "M001-v0.6",
+  "input": {
+    "image_size": [512, 512],
+    "feature_size": [64, 64],
+    "anchors": 128,
+    "candidates_per_anchor": 8,
+    "score_type": "cosine",
+    "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+    "cache_manifest_sha256": "980c2d856653bb18080d53d16ef5bfb5ae0313b40a5e7476072cd98d9eae73da",
+    "cache_aggregate_sha256": "863ad1c0bc49075eef2d3f27e182ca6f5f37f5572eb6e539931295a8454ee930"
+  },
+  "selector": {
+    "hidden_width": 64,
+    "feedback_rounds": 2,
+    "confidence_threshold_px": 5.0,
+    "ridge": 0.0001,
+    "maximum_condition": 1000000.0,
+    "parameter_limit": 100000
+  },
+  "loss": {
+    "candidate_weight": 1.0,
+    "grid_weight": 1.0,
+    "confidence_weight": 0.2,
+    "candidate_sigma_token": 0.5,
+    "candidate_recoverable_radius_token": 2.0,
+    "charbonnier_epsilon": 0.001
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "maximum_epochs": 100,
+    "early_stopping_metric": "dev_actual_grid_error_px_mean",
+    "patience": 10,
+    "main_seeds": [20260805, 20260806, 20260807],
+    "unary_seed": 20260805,
+    "cublas_workspace_config": ":4096:8"
+  },
+  "source_manifest_sha256": "daaf3fea395180560109d74154bb1078e50958cbaacb337738fe9c1c86518482",
+  "automatic_next_experiment": false
+}

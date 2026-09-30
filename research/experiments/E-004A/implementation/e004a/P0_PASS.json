@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "pair_count": 404,
+  "p0_source_manifest_sha256": "2e1b64ad31c41a455bebd68b92948c9c97e17a6c02cadab1eedbec16c3bbe801",
+  "cache_manifest_sha256": "79b891157273520c9e7efa839eac34e4bf1566feded8a7b1e8dcdbb6b20b08bf",
+  "gate_json_sha256": "d20a791d6811f0e8b0e1d1141e61c1e66daee58d3888f35b4ba81b8090dd02ec"
+}

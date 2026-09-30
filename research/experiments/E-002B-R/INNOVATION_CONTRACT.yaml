@@ -1,0 +1,87 @@
+schema_version: 1
+method: M001
+method_version: "0.5"
+experiment: E-002B-R
+contract_type: equivalent_backend
+status: frozen
+
+claim: >-
+  在不改变 E-002B/BIND-001 候选、假设、排序、拟合和输出语义的前提下，
+  消除 Python 循环和小 kernel launch 主导的几何后端开销。
+
+must_implement:
+  - read_only_v04_reference_snapshot
+  - all_131072_hypothesis_ids
+  - deterministic_streaming_top1024_then_top32
+  - bind_001_collision_and_lexicographic_keys
+  - two_round_ordinary_ls
+  - no_fit_final_validation
+  - per_pair_reference_differential_trace
+  - synchronized_memory_and_latency_measurement
+
+must_not_implement:
+  - reduced_or_sampled_hypothesis_budget
+  - data_dependent_early_exit
+  - approximate_topk_or_nearest_candidate
+  - fp16_bf16_tf32_or_quantized_geometry
+  - cross_sample_result_cache
+  - wls_irls_or_third_fit
+  - learned_descriptor_or_training
+  - b1_b3_or_local_refinement
+  - baseline_fallback
+  - gt_valid_mask_or_test_label_in_method_path
+
+implementation_hooks:
+  - path: tmp/e002br-work/experiments/sparsegeo/e002br/optimized_backend.py
+    symbols:
+      - assign_candidates_batched
+      - optimized_hypothesis_and_consensus_path
+      - optimized_refit_and_final_validation_path
+  - path: tmp/e002br-work/experiments/sparsegeo/e002br/reference_worker.py
+    symbols: [read_only_reference_loader]
+  - path: tmp/e002br-work/experiments/sparsegeo/e002br/trace_checker.py
+    symbols: [reference_differential_checker]
+  - path: tmp/e002br-work/experiments/sparsegeo/e002br/geometry_benchmark_worker.py
+    symbols: [synchronized_geometry_benchmark]
+  - path: tmp/e002br-work/experiments/sparsegeo/e002br/p1_orchestrator.py
+    symbols: [p1_gate]
+
+observable_evidence:
+  - candidate_indices_and_ranks_exact
+  - accepted_hypothesis_ids_and_skip_counts_exact
+  - coarse_top1024_ids_and_order_exact
+  - full_top32_ids_and_order_exact
+  - integer_consensus_keys_exact
+  - assignment_targets_masks_validity_and_final_id_exact
+  - floating_values_within_frozen_e002br_tolerances
+  - no_forbidden_modules_or_cross_image_n2
+  - raw_synchronized_wall_cuda_memory_and_rss_records
+
+acceptance_tests:
+  - static_and_negative_tests_pass
+  - synthetic_100_case_parity_pass
+  - archived_two_pair_smoke_parity_pass
+  - fixed_ten_pair_four_variant_p0_early_pass
+  - p1_resource_gate_pass
+  - targeted_review_approve
+  - g5_r2_resource_gate_pass
+  - full_424_by_4_no_gt_trace_pass
+  - baseline_parity_pass
+  - preregistered_accuracy_gate_pass
+
+ablations:
+  - reference_v04_backend_vs_optimized_backend
+  - phase_timing_hypothesis_coarse_full_refit_final
+  - candidate_matching_k_scaling_isolated_from_geometry
+
+stop_conditions:
+  - p0_early_still_fails_after_the_single_allowed_implementation_fix
+  - p1_fails
+  - targeted_review_not_approve
+  - g5_r2_fails
+  - p0_full_any_pair_or_variant_fails
+  - accuracy_fails_after_resource_and_parity_pass
+
+success_behavior: write_result_card_and_wait_for_user
+failure_behavior: write_result_card_and_wait_for_user
+automatic_next_version: false

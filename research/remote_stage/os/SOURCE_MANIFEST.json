@@ -1,0 +1,11 @@
+{
+  "source_root": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp",
+  "synced_at": "2026-09-30",
+  "note": "SHA256 values describe the exact remote files before adding the local SPARSEGEO_ROOT environment override.",
+  "files": {
+    "e075a_preserve_high_precision_recover_c2c5.py": "1b74c437306e236538e24d110c609d349c56bd7f5d26435c6cc166ae86ec95c3",
+    "e074a_f2_f3_twostage_fusion.py": "e331845b07cd3d1ef99fa91795c3bae8493def04ff3c771148f33c1b8abd8806",
+    "e073a_v1_v2_fusion_longtrain.py": "8d20a1dd3e1a76e11f68a304b0e09720a4ae2f9a73821b84991922350553507f",
+    "e072a_layerwise_frontend_alignment.py": "d66da78417b32a4dac36e431f610367e5f6b884ea5a79a3626948c68d044a156"
+  }
+}

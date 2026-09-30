@@ -1,0 +1,110 @@
+{
+  "experiment": "E-004A",
+  "method": "M001",
+  "method_version": "0.7",
+  "status": "COMPLETED_G1_FAIL_G2_NOT_RUN",
+  "specification": {
+    "current_state_sha256": "4c8b6d1edb7791bd4f2c8de258c1888aee1fad98962419bee17e06f6c6220997",
+    "method_spec_sha256": "e1c6b14664214018c622f17de54baabafc7b0f3674cc03e49397ad89ab9847d7",
+    "method_delta_sha256": "d7410557e30378707a93731a15f0d4aa43ebfe39f4d340d3982ce9e3f746dd5a",
+    "innovation_contract_sha256": "c01dcfaf170778687f00fa3b6ec7d74a35ccce6f0252f847dc8ca0297298359a",
+    "experiment_spec_sha256": "6110948722ff841257a938e59ac8e7682666491944b57c75eadfefb42b9ccdc9",
+    "method_review": "APPROVE_WITH_STAGED_P0"
+  },
+  "dataset": {
+    "training_archive_sha256": "2887e7de8cd72290df688de0ce4071f42d7bfdec8507a24716ae2ea15c3f3cf5",
+    "training_root": "/mnt/sda/zhushihao/VS_Match/datasets/extracted/gdros_official_e003a_training",
+    "split_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/data_protocol-v3/split_manifest.jsonl",
+    "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+    "train_pairs": 1607,
+    "dev_pairs": 404,
+    "prohibited_testing_root": "/mnt/sda/zhushihao/VS_Match/datasets/extracted/gdros_official_e000_archive"
+  },
+  "frozen_frontend": {
+    "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/checkpoints/GDROS-os512.pth",
+    "checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+    "image_size": [512, 512],
+    "feature_size": [64, 64],
+    "requires_grad": false
+  },
+  "p0": {
+    "proposal_count": 256,
+    "regions": 64,
+    "proposals_per_region": 4,
+    "selected_anchors": 128,
+    "candidate_count": 8,
+    "uniform_region_offsets": [[2, 2], [6, 6]],
+    "uniform_rule_status": "BIND-001 / FROZEN",
+    "source_manifest_sha256": "2e1b64ad31c41a455bebd68b92948c9c97e17a6c02cadab1eedbec16c3bbe801",
+    "cache_manifest_sha256": "79b891157273520c9e7efa839eac34e4bf1566feded8a7b1e8dcdbb6b20b08bf",
+    "review": "APPROVE_AFTER_TARGETED_FIX_REREVIEW",
+    "watchdog_cache_jobs": {
+      "shard_0_gpu_2": "20260805_191537_64024166",
+      "shard_1_gpu_3": "20260805_191537_daa200c9",
+      "shard_2_gpu_4": "20260805_191537_ffa87bfb",
+      "shard_3_gpu_5": "20260805_191537_dc497f17",
+      "shard_4_gpu_6": "20260805_191537_134c24cc"
+    },
+    "watchdog_p0_oracle_job": "20260805_200010_37588b09",
+    "gate": "PASS"
+  },
+  "g0": {
+    "automatic_tests": "23 PASS",
+    "source_manifest_sha256": "76c735d1fbe34543903148bd69c1f8f43a0f9ed8f855d44334565256a92b9453",
+    "method_review": "APPROVE",
+    "evaluation_resource_review": "APPROVE",
+    "review_record": "/Users/shihao/Documents/图像匹配之二/research/experiments/E-004A/G0_REVIEW_APPROVE.md"
+  },
+  "head_cache": {
+    "status": "PASS",
+    "root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-004A/run-01/head-cache",
+    "content_manifest_sha256": "163d2a7dbe0ece96d5a1991f908ecda63521e2e60e749774e75ad813892f1197",
+    "train_pairs": 1607,
+    "dev_pairs": 404
+  },
+  "training": {
+    "status": "PASS",
+    "parallel_gpus": [2, 3, 4],
+    "watchdog_jobs": {
+      "seed_20260805": "20260806_085528_279ade08",
+      "seed_20260806": "20260806_085528_0b6e46eb",
+      "seed_20260807": "20260806_085528_cb23a2dd"
+    },
+    "checkpoints": {
+      "20260805": {
+        "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-004A/run-01/heads/heads-seed-20260805.pth",
+        "sha256": "1a61c07a29c67e178678b6a3409a3b1839f1f37d90f9e67e9e7d6fc06c3a7113"
+      },
+      "20260806": {
+        "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-004A/run-01/heads/heads-seed-20260806.pth",
+        "sha256": "70dd1163f3e2aadd036bbb7177fcdad8f658d8141049e83bc24831a8b6a9faaa"
+      },
+      "20260807": {
+        "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-004A/run-01/heads/heads-seed-20260807.pth",
+        "sha256": "73a1126b034915ce60888ab5d195a20a85be6bfeea894a175302020667fe4cf0"
+      }
+    }
+  },
+  "formal_g1": {
+    "status": "FAIL",
+    "main_seed": 20260805,
+    "three_seed_same_direction": true,
+    "watchdog_job": "20260806_085925_15474740",
+    "gate_json": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-004A/run-01/gates/g1-dev-gate.json",
+    "gate_json_sha256": "bf56e85acb1e7759c70c899c8709f9da89c872b221684966d2bf7704dac5d24d",
+    "per_pair_jsonl": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-004A/run-01/gates/g1-dev-per-pair.jsonl",
+    "per_pair_jsonl_sha256": "ab3e8d6c054054671cca926fbc027815589e014c3632daeb445e94991cd314dd",
+    "failed_gates": [
+      "recoverable_fraction_ge50",
+      "median_ge64",
+      "gain_vs_uniform_ge10pp",
+      "gain_vs_no_replacement_ge3pp"
+    ]
+  },
+  "formal_g2": {
+    "status": "NOT_RUN_DUE_TO_G1_FAIL"
+  },
+  "remote_module": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/e004a",
+  "run_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-004A/run-01",
+  "automatic_next_experiment": false
+}

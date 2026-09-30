@@ -1,0 +1,43 @@
+{
+  "experiment": "E-010A",
+  "run": "run-01",
+  "status": "COMPLETED / STRONG_RETRIEVER_FAIL",
+  "frozen_sha256": {
+    "METHOD_DELTA.md": "80286c99fe5eb2216c1b9d0fa9a42acea3baeb5c077f00fab553077b8c68fe14",
+    "INNOVATION_CONTRACT.yaml": "5a3e020907d0a20e5ae3918ae65d3b34e9921ecf9d730e304c7693fd15d494b6",
+    "METHOD_SPEC.md": "7aa1ba0e12bc2bbba0ac5ab6ef6cbad0b1119817eea77ec441375d177e88e5ad",
+    "E-010A.md": "ad8a20201fdeb4af326b82fbd5ae56268148be4321758b61d3e2633a187e372a",
+    "REVIEW_PACKET.md": "1c47d20ca1b6417a74c62d630b3f52d67f638652301617c96ec384114795fdac",
+    "CURRENT_STATE.md": "5aca242438f294044118ec2bec785bbcaa1d5ecfffd41e639d990dfc34aeb851"
+  },
+  "split_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/data_protocol-v3/split_manifest.jsonl",
+  "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+  "cache_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-008A/run-01/cache-formal-b8e4dd9f",
+  "e008a_source_sha256": "b8e4dd9f4fce7bf55f2f8ff5a875052e214248c2052ac0de5cb3fb6398ba04a5",
+  "implementation_id": "e010a-strong-cross-modal-region-local-retriever-v1",
+  "implementation_source_sha256": "24a99d9d351e8fe00d55330bdd36010063381952864130a37ea358bb240d3719",
+  "tests": {
+    "remote_py_compile": "PASS",
+    "remote_pytest": "4 passed",
+    "smoke_train": "PASS",
+    "smoke_train_64_proposals": "PASS",
+    "smoke_eval": "PASS",
+    "formal_watchdog": "succeeded"
+  },
+  "watchdog": {
+    "job_id": "20260807_214707_aa6436f3",
+    "gpu": 2,
+    "log": "/mnt/sda/zhushihao/experiment_watchdog/state/job_logs/20260807_214707_aa6436f3.log",
+    "report_json": "/mnt/sda/zhushihao/experiment_watchdog/reports/20260807_214707_aa6436f3.json"
+  },
+  "boundaries": {
+    "s0_s1_fixed_from_e008a": true,
+    "learned_score_before_top64": true,
+    "frozen_s2_is_not_teacher": true,
+    "gdros_frozen_features_used_by_learned_retriever": false,
+    "frozen_scores_used_by_learned_retriever": false,
+    "os424_or_confirm_access": false,
+    "full_image_blind_search": false,
+    "hidden_4096_by_4096": false
+  }
+}

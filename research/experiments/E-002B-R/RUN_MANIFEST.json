@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "experiment_id": "E-002B-R",
+  "method_version": "M001 v0.5",
+  "workflow_version": "2.0",
+  "state": "COMPLETED_EFFICIENCY_HOLD_P1_FAIL",
+  "updated_at": "2026-08-05",
+  "frozen_specs": {
+    "method_spec": {
+      "path": "/Users/shihao/Documents/图像匹配之二/research/METHOD_SPEC.md",
+      "sha256": "eb383532c988569772ef34700067f932a14363b674f4baa0f67e5a4a1ef3f5ea"
+    },
+    "experiment_spec": {
+      "path": "/Users/shihao/Documents/图像匹配之二/research/experiments/E-002B-R.md",
+      "sha256": "5dc34e4efa1a9bde4e826828e0570af9131a01cb8687a3c95175042c42b28434"
+    },
+    "reference_experiment_spec": {
+      "path": "/Users/shihao/Documents/图像匹配之二/research/experiments/E-002B.md",
+      "sha256": "19ec4d70b19a3d313323c3d6959e5059b8d30c224480e60ddea9567893bbaf49"
+    },
+    "method_delta": {
+      "path": "/Users/shihao/Documents/图像匹配之二/research/experiments/E-002B-R/METHOD_DELTA.md",
+      "sha256": "e7242bcf879677cc222df86edc5f1e2c9fd8bb621562b9f2f7e5c10098d1dfbc"
+    },
+    "innovation_contract": {
+      "path": "/Users/shihao/Documents/图像匹配之二/research/experiments/E-002B-R/INNOVATION_CONTRACT.yaml",
+      "sha256": "33f372c791e0e4247b6b119c48b798b2ee75bbfae5e958d721a7573580fe744c"
+    }
+  },
+  "reference": {
+    "git_head": "ee6b6216fe780bc03bfb4759ae094daa0cfddc60",
+    "implementation_manifest_sha256": "3dd002c8f92c4ac58571ba04b92cbda6830843bce9662d93dd5d5ab67f35e58c",
+    "source_snapshot": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B/run-01/g5r/source_snapshot"
+  },
+  "optimized_source": {
+    "local_path": "/Users/shihao/Documents/图像匹配之二/tmp/e002br-work/experiments/sparsegeo/e002br",
+    "remote_path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/e002br",
+    "manifest_sha256": "d7030507e8fb4a43b7e1da786d2a17c73b058aa349d7205ce0feb06d982990d1",
+    "manifest_status": "frozen_at_p1"
+  },
+  "data": {
+    "dataset": "GDROS official OS testing archive",
+    "pair_count": 424,
+    "remote_path": "/mnt/sda/zhushihao/VS_Match/datasets/extracted/gdros_official_e000_archive",
+    "input_manifest_sha256": "7842997f758398f5879b22ff94071856e8aa554d99cbc99cc6954e390299cfe6",
+    "input_manifest_status": "frozen"
+  },
+  "checkpoint": {
+    "sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683"
+  },
+  "anchor": {
+    "sha256": "2872a818932f138d79a0a0aebf3fec2bbadb1939e839788f6f103c1e1f16efb6"
+  },
+  "configuration": {
+    "implementation_block": 4096,
+    "block_locked": true,
+    "block_selection_scope": "synthetic_only",
+    "config_sha256": "54db6658d46d3b2d62ef540d93147ce5054efe618fc596cb8b492693a5afb80e",
+    "config_status": "frozen_for_p1"
+  },
+  "run": {
+    "remote_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01",
+    "current_gate": "P1",
+    "gate_status": "FAIL",
+    "watchdog_status": "20260805_113440_4029a120 failed_by_gate_exit_2"
+  }
+}

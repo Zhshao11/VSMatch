@@ -1,0 +1,12 @@
+{
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "sha256": {
+    "image_matching_part2_migrated/.codex_tmp/global_multimodal_geometry_posterior.py": "ada1dbce86e7f3f6b7cb78fab4000a6841de4be21c20826b7b38407698998d31",
+    "image_matching_part2_migrated/.codex_tmp/test_global_multimodal_geometry_posterior.py": "596c34ab9aea5a441624dc2a75786b8ac66db9d1c9f6d6eb2bb62cde2c2aec4e",
+    "research/experiments/PROPOSED-A-ENGINEERING-HANDOFF.md": "74fb995b7004220e1526c0ff6325d92bf144e3e5bfa7677185a6e87db4a49fb3",
+    "research/experiments/PROPOSED-A-GLOBAL-MULTIMODAL-GEOMETRY-POSTERIOR.md": "b79d836bf95372cc13d69c457b70deff9aa2841eb344ea8f7f26dd9d1dca6263",
+    "research/experiments/PROPOSED-A-INNOVATION-CONTRACT.yaml": "ce732ac776f687d8f7005ec2b6617189fca9c8b9048dc0bcd4f7e09ea1ae28c8"
+  },
+  "torch_import_error": "ModuleNotFoundError(\"No module named 'torch'\")"
+}

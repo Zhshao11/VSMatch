@@ -1,0 +1,63 @@
+{
+  "schema_version": "proposed-a-evidence-v1",
+  "dataset": "OS",
+  "split": "training_diagnostic_32",
+  "pair_ids": [
+    "001709_opt", "000208_opt", "001726_opt", "000220_opt", "000028_opt", "001507_opt", "001283_opt", "000702_opt",
+    "001197_opt", "001656_opt", "000674_opt", "000491_opt", "000034_opt", "001894_opt", "000851_opt", "000691_opt",
+    "000069_opt", "001706_opt", "000928_opt", "001552_opt", "001064_opt", "001382_opt", "001481_opt", "001725_opt",
+    "000412_opt", "000437_opt", "000017_opt", "001982_opt", "001019_opt", "000713_opt", "000807_opt", "001472_opt"
+  ],
+  "checkpoint_path": "/mnt/sda/zhushihao/VS_Match/GDROS/official_models_reference/GDROS-os512.pth",
+  "checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+  "source_path": "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/GDROSnet/FeatureFormer/gdros.py",
+  "source_sha256": "8bf03e580a863d2e5752d0dccf028ccfa235067691aa013ee66458f1b846cced",
+  "source_files_sha256": {
+    "core/GDROSnet/FeatureFormer/gdros.py": "8bf03e580a863d2e5752d0dccf028ccfa235067691aa013ee66458f1b846cced",
+    "core/GDROSnet/FeatureFormer/encoder.py": "837031fe1e41dc124766cf18ec3d07de9532ea2fafbf873083fb3ec793b64c53",
+    "core/GDROSnet/FeatureFormer/transformergmflow.py": "6dd9b0ec6368a985767f03d6b9a0fa86706d6ee10d163d4e18671efea5c74ac7",
+    "core/corr.py": "2bbfb364725d11c217f422ce9f40a84a1da09685bf5112354e5774552d2e928b",
+    "core/update.py": "721b581711e26d71d7799460d58094542c13a0ec230284a80d3b304547f1ddd5",
+    "core/datasets.py": "9e7fcf7c5e63ab18fcd33fd5e8c7655d7cef6346bf6e04e063c34437a67e6a58",
+    "configs/default.py": "ea0f1aa537da39a764ffd86defc2a84a20dfaaf3507966bb64cb64a54f3f37fe"
+  },
+  "input_height": 512,
+  "input_width": 512,
+  "feature_stride": 8,
+  "flow_coordinate_unit": "original_pixel_displacement",
+  "edge_coordinate_unit": "feature_grid_pixel_xy",
+  "coordinate_order": "xy",
+  "align_corners": true,
+  "candidate_edge_budget": 16384,
+  "geometry_mode_budget": 12,
+  "region_rows": 2,
+  "region_cols": 2,
+  "random_seed": 9101,
+  "preprocessing": {
+    "official_repo": "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official",
+    "dataset_source_root": "/mnt/sda/zhushihao/VS_Match/datasets/extracted/gdros_official_e003a_training",
+    "dataset_view_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/PROPOSED-A-EVIDENCE-EXPORT/views/os",
+    "dataset_view_split": "training_diagnostic_32",
+    "dataset_type": "training_diagnostic_32",
+    "sample_selection": "lowest SHA256(proposed-a-d1-v1:OS:pair_id), frozen before inference",
+    "training_overlap": "yes; mechanism diagnostic only, not generalization evidence",
+    "device": "cuda:0",
+    "inference_iters": 32,
+    "edge_topk": 4,
+    "mixed_precision": false,
+    "image_normalization": "official GDROS forward"
+  },
+  "output_operator": {
+    "coarse_flow": "GDROS raw full-resolution flow at iter32",
+    "raw_metrics": true,
+    "post_lsr_metrics": true,
+    "gt_assisted_witness": "diagnostic sidecar only",
+    "testing_selection": false
+  },
+  "software": {
+    "python": "3.10.20",
+    "torch": "2.8.0+cu128",
+    "environment": "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090"
+  },
+  "no_gt_evidence": true
+}

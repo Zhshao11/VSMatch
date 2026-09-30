@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "experiment_id": "E-002B-ACC-DIAG",
+  "method_version": "M001 v0.5 / E-002B v0.4 / BIND-001",
+  "workflow_version": "2.0",
+  "state": "COMPLETED_ACCURACY_DIAGNOSTIC_FAIL",
+  "updated_at": "2026-08-05",
+  "frozen_specs": {
+    "method_spec_sha256": "eb383532c988569772ef34700067f932a14363b674f4baa0f67e5a4a1ef3f5ea",
+    "e002b_spec_sha256": "19ec4d70b19a3d313323c3d6959e5059b8d30c224480e60ddea9567893bbaf49",
+    "diagnostic_spec_sha256": "b4ab4b40ab1868e602ac5d59a0a7d336ea5be2ae22fdb51449bd81852506ae9d",
+    "method_delta_sha256": "4cea7a97f2de562633c39c851129e31fd1ea3f1fcb37af55b83e40b120356315",
+    "innovation_contract_sha256": "8835f2d5f95d3ec0ae67da2b44f8bdbff2dfac9908055b93383fa1f0c9b0cdda"
+  },
+  "reference": {
+    "git_head": "ee6b6216fe780bc03bfb4759ae094daa0cfddc60",
+    "implementation_manifest_sha256": "3dd002c8f92c4ac58571ba04b92cbda6830843bce9662d93dd5d5ab67f35e58c",
+    "source_snapshot": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B/run-01/g5r/source_snapshot",
+    "code_diff_expected": false
+  },
+  "data": {
+    "dataset": "GDROS official OS testing archive",
+    "pair_count": 424,
+    "remote_path": "/mnt/sda/zhushihao/VS_Match/datasets/extracted/gdros_official_e000_archive",
+    "non_gt_input_manifest_sha256": "7842997f758398f5879b22ff94071856e8aa554d99cbc99cc6954e390299cfe6"
+  },
+  "checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+  "anchor_sha256": "2872a818932f138d79a0a0aebf3fec2bbadb1939e839788f6f103c1e1f16efb6",
+  "configuration_binding_sha256": "19ec4d70b19a3d313323c3d6959e5059b8d30c224480e60ddea9567893bbaf49",
+  "existing_review": {
+    "implementation": "APPROVE",
+    "tests": "28/28 PASS",
+    "evidence": "/Users/shihao/Documents/图像匹配之二/research/results/E-002B/review-core.md"
+  },
+  "results": {
+    "startup_gate": "/Users/shihao/Documents/图像匹配之二/research/results/E-002B-ACC-DIAG/gates/startup.json",
+    "accuracy_gate": "/Users/shihao/Documents/图像匹配之二/research/results/E-002B-ACC-DIAG/gates/accuracy.json",
+    "metrics_path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-ACC-DIAG/run-01/accuracy/metrics.json",
+    "metrics_sha256": "00190a473ffe5ba7113d282f39f8cf1592ef76b77411117b1659865f211b1a3f",
+    "per_pair_sha256": "8605ca5718224f7649cc3e3d9815cf4a5a05ca861e45b6a733a1c1102e77b66f",
+    "watchdog_job": "20260805_124412_c40ee093"
+  },
+  "run": {
+    "remote_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-ACC-DIAG/run-01",
+    "current_gate": "DIAGNOSTIC_ACCURACY",
+    "gate_status": "FAIL",
+    "resource_gate_applicable": false,
+    "accuracy_status": "COMPLETED_FAIL"
+  }
+}

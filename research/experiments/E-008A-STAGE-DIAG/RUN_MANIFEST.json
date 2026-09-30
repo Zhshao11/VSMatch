@@ -1,0 +1,37 @@
+{
+  "experiment": "E-008A-STAGE-DIAG",
+  "run": "run-01",
+  "status": "COMPLETED / MIXED_LOSS_DIAGNOSED",
+  "diag_spec_sha256": "d1d51c31968d1e2e31c9e4c1ab64e9a6efd478f1002ccb0e0ccfe67d8c6c0213",
+  "e008a_source_sha256": "b8e4dd9f4fce7bf55f2f8ff5a875052e214248c2052ac0de5cb3fb6398ba04a5",
+  "split_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+  "selector_checkpoint_sha256": "46830fd161d90d9c83793e3ca0245e43bcf3245cf93a5bbcaf0e04c6cfd6de6b",
+  "p0_gate_sha256": "81198d5305880cfec1c2db276e5a9adddcc67cb65a52ca3bd17ce95d7a1fd276",
+  "implementation_sha256": {
+    "core.py": "d9f14b4f7766a53745fe2639777f5f220321f69943de4a3210de17cfc240ac43",
+    "run.py": "017ba93f2cf6e9d48d1fcb261793a1f69998bc30a826d026b31aea96de41cd2c",
+    "spec_binding.py": "f00bcc17b8f746a3f9cacd9c3e08273900a884411c88e9043baff9653ce8951e",
+    "test_core.py": "9b580ed630ead47c2d3b02271efec01831753c09a49102a4a596ec337fe59572"
+  },
+  "tests": {
+    "remote_pytest": "6 passed",
+    "two_pair_s5_parity": "PASS",
+    "formal_subset_rejection": "PASS"
+  },
+  "review": {
+    "r1": "CHANGES_REQUIRED",
+    "r2": "APPROVE",
+    "r2_sha256": "6625e7c790a7681ae6c8acb6bbb683092f3ba4392a8370d8996e13d7c71aa215"
+  },
+  "watchdog": {
+    "cancelled_misallocated_job": "20260807_170733_4fed823d",
+    "formal_job": "20260807_170823_e46768d6",
+    "formal_status": "succeeded",
+    "gpu": 2,
+    "log": "/mnt/sda/zhushihao/experiment_watchdog/state/job_logs/20260807_170823_e46768d6.log"
+  },
+  "remote_run_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-008A-STAGE-DIAG/run-01",
+  "new_training": false,
+  "forbidden_test_data_accessed": false,
+  "os424_or_confirm_accessed": false
+}

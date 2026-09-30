@@ -1,0 +1,98 @@
+{
+  "experiment": "E-005A",
+  "method": "M001",
+  "method_version": "0.8",
+  "status": "COMPLETED_G1_FAIL",
+  "binding": {
+    "id": "BIND-STATE-001",
+    "meaning": "CURRENT_STATE changed only from pending dispatch to ASSIGNED",
+    "formal_state_sha256": "b4d260b4aa16301624c8ec39acc4faff8fd9b4228aa7e0a4f273e19978fe9fa8",
+    "method_semantics_changed": false,
+    "gate_or_scope_changed": false
+  },
+  "specification": {
+    "current_state_sha256": "b4d260b4aa16301624c8ec39acc4faff8fd9b4228aa7e0a4f273e19978fe9fa8",
+    "method_spec_sha256": "2e43d633f65994875fd95631630c5cdd0caf6c549ee59d90ec486bb25df35723",
+    "method_delta_sha256": "f22425ceb59034e5f22169d99f59fefd399d05cd3c2f6d0df67d650adff70893",
+    "innovation_contract_sha256": "572e4dcd7eb374115b121866e45f2866dc0439b63d0030eaf04bbf3344216245",
+    "experiment_spec_sha256": "30e162c9d2ebf95c2ccda6d897a5eb809074d4d050d7738b66706112df58a6a1"
+  },
+  "dataset": {
+    "training_archive_sha256": "2887e7de8cd72290df688de0ce4071f42d7bfdec8507a24716ae2ea15c3f3cf5",
+    "training_root": "/mnt/sda/zhushihao/VS_Match/datasets/extracted/gdros_official_e003a_training",
+    "split_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/data_protocol-v3/split_manifest.jsonl",
+    "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+    "train_pairs": 1607,
+    "dev_pairs": 404
+  },
+  "frozen_frontend": {
+    "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/checkpoints/GDROS-os512.pth",
+    "checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+    "requires_grad": false
+  },
+  "third_party_references": {
+    "root": "/mnt/sda/zhushihao/VS_Match/references/E-005A",
+    "runtime_dependency": false,
+    "verbatim_migrated_lines": 0,
+    "dpvo_commit": "859bbbfdac6c6185f345003b3c473901fcd13ace",
+    "ihn_commit": "c4de4a85b6a26c6ba5adb6dd692c15f708104b0b",
+    "cotracker_commit": "82e02e8029753ad4ef13cf06be7f4fc5facdda4d",
+    "sgmnet_commit": "52a1ebebb33b4ba952f95d239d25e600b5b8d989"
+  },
+  "remote_module": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/e005a",
+  "run_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A/run-01",
+  "source_manifest_sha256": "ec2596a30e65f30277989ffd6507188431d60964e4471cba8b6a282cb58865f4",
+  "gates": {
+    "automatic_tests": "18 passed",
+    "g0_automatic": "PASS",
+    "p0_404": "PASS",
+    "method_review": "APPROVE",
+    "eval_resource_review": "APPROVE",
+    "dense_baseline_parity": "PASS",
+    "g1_dev": "FAIL",
+    "g2_resources": "NOT_RUN_INELIGIBLE_AFTER_G1_FAIL"
+  },
+  "results": {
+    "dense_baseline": {
+      "aepe": 1.4597187775860327,
+      "cmr2_percent": 79.45544554455446,
+      "pair_local_ready_percent": 100.0,
+      "grid_mean_l2_px": 1.4994470646033193,
+      "official_parity_max_abs": 0.0
+    },
+    "main_seed_20260808": {
+      "checkpoint_sha256": "edb62904adf41a52644fd6ac2923a626d59f7f7e568ba8bbe01e51383b078f1f",
+      "aepe": 4.63430410166188,
+      "cmr2_percent": 7.920792079207921,
+      "pair_local_ready_percent": 96.53465346534654,
+      "valid_percent": 100.0,
+      "grid_mean_l2_px": 4.792368758137863
+    },
+    "review_seed_20260809": {
+      "checkpoint_sha256": "3594e1118823c16de26f758c38c4cd58faffec0ee7b979206b8e18cb95e82d5f",
+      "aepe": 4.559264367759818,
+      "cmr2_percent": 11.138613861386139,
+      "pair_local_ready_percent": 96.28712871287128,
+      "valid_percent": 100.0,
+      "grid_mean_l2_px": 4.716619469151638
+    }
+  },
+  "artifacts": {
+    "result_card": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A/run-01/RESULT_CARD.md",
+    "dense_baseline_json": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A/run-01/gates/dense-baseline-dev.json",
+    "dense_baseline_json_sha256": "aeee9e63d83fb4127ee6e62a60cd03e39fcf9e2a598b000775751a7a71dee4d0",
+    "g1_json": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A/run-01/gates/g1-dev.json",
+    "g1_json_sha256": "ec0b63248305334fd98badfcfe72a0dfd7404ffa7305e2ebfe6885615531eec9",
+    "g1_per_pair_jsonl": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A/run-01/gates/g1-dev-per-pair.jsonl",
+    "g1_per_pair_jsonl_sha256": "ff94dcdbedb8cafa84db5fe2d13be22f7e1b5a2cdd3a8848b47171cf2bda45dd",
+    "method_review": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A/run-01/reviews/method-round3.md",
+    "eval_resource_review": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A/run-01/reviews/eval-resource-round4.md"
+  },
+  "watchdog": {
+    "baseline_job": "20260806_145821_85f65bf4",
+    "g1_job": "20260806_150154_3a08e590",
+    "main_training_job": "20260806_142829_8d2da668",
+    "review_training_job": "20260806_142829_fdefed49"
+  },
+  "automatic_next_experiment": false
+}

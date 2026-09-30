@@ -1,0 +1,54 @@
+{
+  "experiment": "E-005A-INLIER-DIAG",
+  "status": "COMPLETED_PASS",
+  "method_version": "M001 v0.8 read-only diagnostic",
+  "frozen_sha256": {
+    "current_state": "19851ba9123915a7ca47ddc0944b36b753f94fcfe9deddfaa17cda9a54bfd883",
+    "diagnostic_spec": "a9bcfb533f98212e4357d96b79e1e9ddaa886672c3a18aea874d5c0572cc52e3",
+    "e005a_result_card": "e2716e03aa384436cc71bd72061e48fa29d414b1b44884ba2f72e7991ee1feea",
+    "e005a_run_manifest": "faf88bf566e5f217b4706d56d460d502489bf18a639bc12afa47af7d10fcac54"
+  },
+  "remote_module": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/e005a_inlier_diag",
+  "run_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A-INLIER-DIAG/run-01",
+  "source_manifest_sha256": "52874aeb0dbe6d0006d732b3e875b5b32cce39bec3bdee766f2cd2fe8073fc95",
+  "validation": {
+    "automatic_tests": "11 passed",
+    "definition_coordinate_sampling_review": "APPROVE",
+    "evaluator_aggregation_plot_review": "APPROVE",
+    "official_parity_max_abs": 0.0,
+    "pair_count": 404,
+    "all_finite": true,
+    "gt_loaded_after_outputs": true
+  },
+  "watchdog": {
+    "job_id": "20260806_162435_151fc93f",
+    "status": "succeeded",
+    "log": "/mnt/sda/zhushihao/experiment_watchdog/state/job_logs/20260806_162435_151fc93f.log"
+  },
+  "results": {
+    "gdros_matched_m256_gt_inlier_at_2": 0.7240292388613861,
+    "gdros_matched_m256_self_inlier_at_2": 0.9674930383663366,
+    "e005a_active_gt_inlier_at_2": 0.1470258353960396,
+    "e005a_active_weighted_gt_mass_at_2": 0.22201189471224772,
+    "e005a_active_self_inlier_at_2": 0.4740872524752475,
+    "e005a_active_weighted_self_mass_at_2": 0.7332666633364464,
+    "minimum_passing_equal_weight_cell": {"k": 16, "rho": 1.0, "aepe": 0.783697250448957, "cmr2_percent": 100.0},
+    "oracle_pred_coord_gt_binary_valid_percent": 38.613861386138616,
+    "oracle_pred_coord_gt_binary_aepe_valid_only": 1.1861046170577025
+  },
+  "artifacts": {
+    "result_card": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A-INLIER-DIAG/run-01/RESULT_CARD.md",
+    "summary_json": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A-INLIER-DIAG/run-01/diagnostic/summary.json",
+    "summary_sha256": "027b76c717974235f0d0decfe594417b33a13f85c29a8c95c8463574ff4cdd95",
+    "gate_json": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A-INLIER-DIAG/run-01/diagnostic/gate.json",
+    "gate_sha256": "5f9172e21e5de69cddc7f39f833744e8bc9245f779a23c3a9ab4b9010a73aad6",
+    "curve_csv": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A-INLIER-DIAG/run-01/diagnostic/k_rho_raw.csv",
+    "curve_csv_sha256": "86ecff591346e8509a551e0b32a9e4df5823b848f2397f298dc2cfa6526de122",
+    "definition_review": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A-INLIER-DIAG/run-01/reviews/definition-coordinate-sampling.md",
+    "evaluator_review": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-005A-INLIER-DIAG/run-01/reviews/evaluator-aggregation-plot-r3.md"
+  },
+  "training_allowed": false,
+  "g2_allowed": false,
+  "os424_allowed": false,
+  "automatic_next_experiment": false
+}

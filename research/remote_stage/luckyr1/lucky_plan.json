@@ -1,0 +1,2648 @@
+{
+  "tasks": [
+    {
+      "id": "constructor_smoke",
+      "name": "LuckyR1-DOWNSTREAM-CONSTRUCTOR-SMOKE-dedicated-historical-invalid",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 12000,
+      "max_attempts": 1,
+      "depends_on": [],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/lucky_downstream_smoke.py"
+      ]
+    },
+    {
+      "id": "safe_g0",
+      "name": "LuckyR1-SAFE-V1V1-G0-dedicated",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 12000,
+      "max_attempts": 2,
+      "depends_on": [
+        "source_audit"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/lucky_safe_v1v1_g0.py"
+      ]
+    },
+    {
+      "id": "source_audit",
+      "name": "LuckyR1-SPLIT-SAFE-SOURCE-CHECKPOINT-AUDIT",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 12000,
+      "max_attempts": 2,
+      "depends_on": [],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_pipeline.py",
+        "--task",
+        "source_audit"
+      ]
+    },
+    {
+      "id": "safe_g0_after_audit",
+      "name": "LuckyR1-SAFE-V1V1-G0-AFTER-AUDIT",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 12000,
+      "max_attempts": 2,
+      "depends_on": [
+        "source_audit"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/lucky_safe_v1v1_g0.py"
+      ]
+    },
+    {
+      "id": "lucky_model_g0",
+      "name": "LuckyR1-MODEL-FACING-ABC-G0",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 22000,
+      "priority": 10,
+      "max_attempts": 2,
+      "depends_on": [
+        "safe_g0_after_audit"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_pipeline.py",
+        "--task",
+        "lucky_model_g0"
+      ]
+    },
+    {
+      "id": "safe_f2_after_audit",
+      "name": "LuckyR1-SAFE-V1V1-F2-AFTER-AUDIT",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 8,
+      "depends_on": [
+        "safe_g0_after_audit"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/lucky_safe_e073_foundation.py",
+        "--variant",
+        "F2",
+        "--seed",
+        "3101"
+      ]
+    },
+    {
+      "id": "safe_f3_after_audit",
+      "name": "LuckyR1-SAFE-V1V1-F3-AFTER-AUDIT",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 8,
+      "depends_on": [
+        "safe_g0_after_audit"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/lucky_safe_e073_foundation.py",
+        "--variant",
+        "F3",
+        "--seed",
+        "3102"
+      ]
+    },
+    {
+      "id": "constructor_smoke_safe",
+      "name": "LuckyR1-SPLIT-SAFE-BC-CONSTRUCTOR-SMOKE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 4,
+      "depends_on": [
+        "safe_f2_after_audit",
+        "safe_f3_after_audit"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_pipeline.py",
+        "--task",
+        "constructor_smoke_safe"
+      ]
+    },
+    {
+      "id": "exploratory_manifest",
+      "name": "LuckyR1-CURRENT-MODEL-EXPLORATORY-MANIFEST",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 12000,
+      "max_attempts": 2,
+      "depends_on": [
+        "safe_g0"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_pipeline.py",
+        "--task",
+        "exploratory_manifest"
+      ]
+    },
+    {
+      "id": "bc_finalize_b",
+      "name": "LuckyR1-CLEAN1810-BC-B-RC137-FINALIZER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 2,
+      "depends_on": [
+        "constructor_smoke_safe"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_recovery_finalize.py",
+        "--variant",
+        "B"
+      ]
+    },
+    {
+      "id": "bc_finalize_c",
+      "name": "LuckyR1-CLEAN1810-BC-C-RC137-FINALIZER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 2,
+      "depends_on": [
+        "constructor_smoke_safe"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_recovery_finalize.py",
+        "--variant",
+        "C"
+      ]
+    },
+    {
+      "id": "bc_reduce",
+      "name": "LuckyR1-CLEAN1810-BC-REDUCE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 12000,
+      "max_attempts": 2,
+      "depends_on": [
+        "bc_finalize_b",
+        "bc_finalize_c"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_pipeline.py",
+        "--task",
+        "bc_reduce"
+      ]
+    },
+    {
+      "id": "m4_raw",
+      "name": "LuckyR1-CLEAN1810-M4-RAW-CONTROL",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 8,
+      "depends_on": [
+        "bc_reduce"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_pipeline.py",
+        "--task",
+        "m4_raw",
+        "--seed",
+        "7500"
+      ]
+    },
+    {
+      "id": "m4_reduce",
+      "name": "LuckyR1-CLEAN1810-M4-REDUCE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 12000,
+      "max_attempts": 2,
+      "depends_on": [
+        "m4_raw"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_pipeline.py",
+        "--task",
+        "m4_reduce"
+      ]
+    },
+    {
+      "id": "lucky_clean_v3_g0",
+      "name": "LuckyR1-CLEAN1810-M4-V3-ABC-G0",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 24000,
+      "priority": 20,
+      "max_attempts": 4,
+      "depends_on": [
+        "m4_reduce"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_clean_v3_g0.py"
+      ]
+    },
+    {
+      "id": "lucky_a",
+      "name": "LuckyR1-CLEAN1810-MODEL-FACING-A",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 20000,
+      "priority": 20,
+      "max_attempts": 8,
+      "depends_on": [
+        "m4_reduce",
+        "lucky_clean_v3_g0"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_pipeline_v3.py",
+        "--task",
+        "lucky_a",
+        "--seed",
+        "7601"
+      ]
+    },
+    {
+      "id": "lucky_b",
+      "name": "LuckyR1-CLEAN1810-MODEL-FACING-B",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 20000,
+      "priority": 20,
+      "max_attempts": 8,
+      "depends_on": [
+        "m4_reduce",
+        "lucky_clean_v3_g0"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_pipeline_v3.py",
+        "--task",
+        "lucky_b",
+        "--seed",
+        "7602"
+      ]
+    },
+    {
+      "id": "lucky_c",
+      "name": "LuckyR1-CLEAN1810-MODEL-FACING-C",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 22000,
+      "priority": 20,
+      "max_attempts": 8,
+      "depends_on": [
+        "m4_reduce",
+        "lucky_clean_v3_g0"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_pipeline_v3.py",
+        "--task",
+        "lucky_c",
+        "--seed",
+        "7603"
+      ]
+    },
+    {
+      "id": "lucky_reduce",
+      "name": "LuckyR1-CLEAN1810-NO-GAIN-CPU-FINALIZER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "m4_reduce",
+        "lucky_clean_v3_g0",
+        "lucky_a"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_no_gain_finalize.py"
+      ]
+    },
+    {
+      "id": "exploratory_cache_v2",
+      "name": "LuckyR1-CURRENT-MODEL-CHECKPOINT-CACHE-STDLIB-CPU",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 10,
+      "max_attempts": 2,
+      "depends_on": [
+        "exploratory_manifest"
+      ],
+      "command": [
+        "/usr/bin/python3",
+        ".codex_tmp/luckyr1_cache.py"
+      ]
+    },
+    {
+      "id": "exploratory_a_finalize_cpu",
+      "name": "LuckyR1-CURRENT-MODEL-EXPLORATORY-A-FINALIZE-COST-GATE-CPU",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 12000,
+      "priority": 10,
+      "max_attempts": 2,
+      "depends_on": [
+        "exploratory_manifest",
+        "lucky_model_g0"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_pipeline.py",
+        "--task",
+        "exploratory_a_finalize"
+      ]
+    },
+    {
+      "id": "exploratory_v3_g0",
+      "name": "LuckyR1-CURRENT-MODEL-HISTORICAL-M4-V3-G0",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 24000,
+      "priority": 10,
+      "max_attempts": 4,
+      "depends_on": [
+        "exploratory_manifest",
+        "exploratory_cache_v2"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_historical_v3_g0.py"
+      ]
+    },
+    {
+      "id": "exploratory_b_finalize_v6",
+      "name": "LuckyR1-CURRENT-MODEL-EXPLORATORY-B-V6-COST-FINALIZER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 5,
+      "max_attempts": 2,
+      "depends_on": [
+        "exploratory_manifest",
+        "exploratory_cache_v2",
+        "exploratory_v3_g0"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_exploratory_finalize.py",
+        "--variant",
+        "B"
+      ]
+    },
+    {
+      "id": "exploratory_c_finalize_v7",
+      "name": "LuckyR1-CURRENT-MODEL-EXPLORATORY-C-V7-COST-FINALIZER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 5,
+      "max_attempts": 2,
+      "depends_on": [
+        "exploratory_manifest",
+        "exploratory_cache_v2",
+        "exploratory_v3_g0"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_exploratory_finalize.py",
+        "--variant",
+        "C"
+      ]
+    },
+    {
+      "id": "exploratory_reduce",
+      "name": "LuckyR1-CURRENT-MODEL-EXPLORATORY-REDUCE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 12000,
+      "priority": 5,
+      "max_attempts": 2,
+      "depends_on": [
+        "exploratory_a_finalize_cpu",
+        "exploratory_b_finalize_v6",
+        "exploratory_c_finalize_v7"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/luckyr1_pipeline.py",
+        "--task",
+        "exploratory_reduce"
+      ]
+    },
+    {
+      "id": "e081a_diag_parity",
+      "name": "E081A-M4-WHU-DIAGNOSTIC-PARITY",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 4,
+      "depends_on": [
+        "lucky_reduce"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e081a_m4_isomorphic_diagnostic.py",
+        "--mode",
+        "parity"
+      ]
+    },
+    {
+      "id": "e081a_diag_parity_r2",
+      "name": "E081A-M4-WHU-DIAGNOSTIC-PARITY-R2-FP16-TOLERANCE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 2,
+      "depends_on": [
+        "lucky_reduce"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e081a_m4_isomorphic_diagnostic.py",
+        "--mode",
+        "parity"
+      ]
+    },
+    {
+      "id": "e081a_diag_inference",
+      "name": "E081A-M4-WHU-700-PREDICTION-MATERIALIZATION",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 8,
+      "depends_on": [
+        "e081a_diag_parity_r2"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e081a_m4_isomorphic_diagnostic.py",
+        "--mode",
+        "inference"
+      ]
+    },
+    {
+      "id": "e081a_diag_join",
+      "name": "E081A-M4-WHU-700-GT-JOIN-AND-REDUCE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 3,
+      "depends_on": [
+        "e081a_diag_inference"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e081a_m4_isomorphic_diagnostic.py",
+        "--mode",
+        "join"
+      ]
+    },
+    {
+      "id": "e088a_p0_smoke",
+      "name": "E088A-WHU-NOGT-LOCAL-CANDIDATE-P0-SMOKE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 4,
+      "depends_on": [
+        "e081a_diag_join"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e081a_whu_local_refinement_p0.py",
+        "--mode",
+        "smoke"
+      ]
+    },
+    {
+      "id": "e088a_p0_inference",
+      "name": "E088A-WHU-NOGT-LOCAL-CANDIDATE-P0-MATERIALIZATION",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 8,
+      "depends_on": [
+        "e088a_p0_smoke"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e081a_whu_local_refinement_p0.py",
+        "--mode",
+        "inference"
+      ]
+    },
+    {
+      "id": "e088a_p0_join",
+      "name": "E088A-WHU-NOGT-LOCAL-CANDIDATE-P0-GT-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 3,
+      "depends_on": [
+        "e088a_p0_inference"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e081a_whu_local_refinement_p0.py",
+        "--mode",
+        "join"
+      ]
+    },
+    {
+      "id": "e089a_p0_split",
+      "name": "E089A-WHU-HIGHRES-P0-GROUPED-SPLIT",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 2,
+      "depends_on": [
+        "e088a_p0_join"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e089a_whu_highres_refiner.py",
+        "--stage",
+        "P0_split"
+      ]
+    },
+    {
+      "id": "e089a_p0_cache_0",
+      "name": "E089A-WHU-HIGHRES-P0-ANCHOR-CACHE-SHARD0",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e089a_p0_split"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e089a_whu_highres_refiner.py",
+        "--stage",
+        "P0_cache",
+        "--shard",
+        "0",
+        "--shards",
+        "4"
+      ]
+    },
+    {
+      "id": "e089a_p0_cache_1",
+      "name": "E089A-WHU-HIGHRES-P0-ANCHOR-CACHE-SHARD1",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e089a_p0_split"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e089a_whu_highres_refiner.py",
+        "--stage",
+        "P0_cache",
+        "--shard",
+        "1",
+        "--shards",
+        "4"
+      ]
+    },
+    {
+      "id": "e089a_p0_cache_2",
+      "name": "E089A-WHU-HIGHRES-P0-ANCHOR-CACHE-SHARD2",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e089a_p0_split"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e089a_whu_highres_refiner.py",
+        "--stage",
+        "P0_cache",
+        "--shard",
+        "2",
+        "--shards",
+        "4"
+      ]
+    },
+    {
+      "id": "e089a_p0_cache_3",
+      "name": "E089A-WHU-HIGHRES-P0-ANCHOR-CACHE-SHARD3",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e089a_p0_split"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e089a_whu_highres_refiner.py",
+        "--stage",
+        "P0_cache",
+        "--shard",
+        "3",
+        "--shards",
+        "4"
+      ]
+    },
+    {
+      "id": "e089a_p0_cache_reduce",
+      "name": "E089A-WHU-HIGHRES-P0-ANCHOR-CACHE-REDUCE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 2,
+      "depends_on": [
+        "e089a_p0_cache_0",
+        "e089a_p0_cache_1",
+        "e089a_p0_cache_2",
+        "e089a_p0_cache_3"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e089a_whu_highres_refiner.py",
+        "--stage",
+        "P0_cache_reduce"
+      ]
+    },
+    {
+      "id": "e089a_p0_smoke",
+      "name": "E089A-WHU-HIGHRES-P0-CONTRACT-SMOKE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 4,
+      "depends_on": [
+        "e089a_p0_cache_reduce"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e089a_whu_highres_refiner.py",
+        "--stage",
+        "P0_smoke"
+      ]
+    },
+    {
+      "id": "e089a_p1_train",
+      "name": "E089A-WHU-HIGHRES-P1-16PAIR-OVERFIT",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e089a_p0_smoke"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e089a_whu_highres_refiner.py",
+        "--stage",
+        "P1_train"
+      ]
+    },
+    {
+      "id": "e089a_p1_inference",
+      "name": "E089A-WHU-HIGHRES-P1-PREDICTION-MATERIALIZATION",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 4,
+      "depends_on": [
+        "e089a_p1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e089a_whu_highres_refiner.py",
+        "--stage",
+        "P1_inference"
+      ]
+    },
+    {
+      "id": "e089a_p1_join",
+      "name": "E089A-WHU-HIGHRES-P1-GT-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 3,
+      "depends_on": [
+        "e089a_p1_inference"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e089a_whu_highres_refiner.py",
+        "--stage",
+        "P1_join"
+      ]
+    },
+    {
+      "id": "e089a_p1_join_r2",
+      "name": "E089A-WHU-HIGHRES-P1-GT-JOIN-R2-STABILITY-CORRECTION",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 2,
+      "depends_on": [
+        "e089a_p1_inference"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e089a_whu_highres_refiner.py",
+        "--stage",
+        "P1_join_r2"
+      ]
+    },
+    {
+      "id": "e090a_a1_1_train",
+      "name": "E090A-A1-1PAIR-CANDIDATE-ONLY",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 4,
+      "depends_on": [
+        "e089a_p0_smoke"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "a1_train",
+        "--pairs",
+        "1"
+      ]
+    },
+    {
+      "id": "e090a_a1_4_train",
+      "name": "E090A-A1-4PAIR-CANDIDATE-ONLY",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 4,
+      "depends_on": [
+        "e089a_p0_smoke"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "a1_train",
+        "--pairs",
+        "4"
+      ]
+    },
+    {
+      "id": "e090a_a1_16_train",
+      "name": "E090A-A1-16PAIR-CANDIDATE-ONLY",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "priority": 20,
+      "max_attempts": 4,
+      "depends_on": [
+        "e089a_p0_smoke"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "a1_train",
+        "--pairs",
+        "16"
+      ]
+    },
+    {
+      "id": "e090a_a2_1_train",
+      "name": "E090A-A2-1PAIR-ORACLE-GATE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 8000,
+      "priority": 20,
+      "max_attempts": 4,
+      "depends_on": [
+        "e089a_p0_smoke"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "a2_train",
+        "--pairs",
+        "1"
+      ]
+    },
+    {
+      "id": "e090a_a2_4_train",
+      "name": "E090A-A2-4PAIR-ORACLE-GATE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 8000,
+      "priority": 20,
+      "max_attempts": 4,
+      "depends_on": [
+        "e089a_p0_smoke"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "a2_train",
+        "--pairs",
+        "4"
+      ]
+    },
+    {
+      "id": "e090a_a2_16_train",
+      "name": "E090A-A2-16PAIR-ORACLE-GATE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 8000,
+      "priority": 20,
+      "max_attempts": 4,
+      "depends_on": [
+        "e089a_p0_smoke"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "a2_train",
+        "--pairs",
+        "16"
+      ]
+    },
+    {
+      "id": "e090a_a1_1_infer",
+      "name": "E090A-A1-1PAIR-INFER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 8000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090a_a1_1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "a1_infer",
+        "--pairs",
+        "1"
+      ]
+    },
+    {
+      "id": "e090a_a1_4_infer",
+      "name": "E090A-A1-4PAIR-INFER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 8000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090a_a1_4_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "a1_infer",
+        "--pairs",
+        "4"
+      ]
+    },
+    {
+      "id": "e090a_a1_16_infer",
+      "name": "E090A-A1-16PAIR-INFER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 8000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090a_a1_16_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "a1_infer",
+        "--pairs",
+        "16"
+      ]
+    },
+    {
+      "id": "e090a_a2_1_infer",
+      "name": "E090A-A2-1PAIR-INFER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 4000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090a_a2_1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "a2_infer",
+        "--pairs",
+        "1"
+      ]
+    },
+    {
+      "id": "e090a_a2_4_infer",
+      "name": "E090A-A2-4PAIR-INFER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 4000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090a_a2_4_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "a2_infer",
+        "--pairs",
+        "4"
+      ]
+    },
+    {
+      "id": "e090a_a2_16_infer",
+      "name": "E090A-A2-16PAIR-INFER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 4000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090a_a2_16_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "a2_infer",
+        "--pairs",
+        "16"
+      ]
+    },
+    {
+      "id": "e090a_a1_1_join",
+      "name": "E090A-A1-1PAIR-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090a_a1_1_infer"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "join",
+        "--kind",
+        "A1",
+        "--pairs",
+        "1"
+      ]
+    },
+    {
+      "id": "e090a_a1_4_join",
+      "name": "E090A-A1-4PAIR-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090a_a1_4_infer"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "join",
+        "--kind",
+        "A1",
+        "--pairs",
+        "4"
+      ]
+    },
+    {
+      "id": "e090a_a1_16_join",
+      "name": "E090A-A1-16PAIR-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090a_a1_16_infer"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "join",
+        "--kind",
+        "A1",
+        "--pairs",
+        "16"
+      ]
+    },
+    {
+      "id": "e090a_a2_1_join",
+      "name": "E090A-A2-1PAIR-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090a_a2_1_infer"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "join",
+        "--kind",
+        "A2",
+        "--pairs",
+        "1"
+      ]
+    },
+    {
+      "id": "e090a_a2_4_join",
+      "name": "E090A-A2-4PAIR-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090a_a2_4_infer"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "join",
+        "--kind",
+        "A2",
+        "--pairs",
+        "4"
+      ]
+    },
+    {
+      "id": "e090a_a2_16_join",
+      "name": "E090A-A2-16PAIR-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090a_a2_16_infer"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "join",
+        "--kind",
+        "A2",
+        "--pairs",
+        "16"
+      ]
+    },
+    {
+      "id": "e090a_reduce",
+      "name": "E090A-ROOT-CAUSE-REDUCE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090a_a1_1_join",
+        "e090a_a1_4_join",
+        "e090a_a1_16_join",
+        "e090a_a2_1_join",
+        "e090a_a2_4_join",
+        "e090a_a2_16_join"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090a_representation_optimization_diagnostic.py",
+        "--mode",
+        "reduce"
+      ]
+    },
+    {
+      "id": "e090b_1_train",
+      "name": "E090B-RELATION-1PAIR",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "max_attempts": 4,
+      "depends_on": [
+        "e090a_reduce"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090b_relation_descriptor.py",
+        "--mode",
+        "train",
+        "--pairs",
+        "1"
+      ]
+    },
+    {
+      "id": "e090b_4_train",
+      "name": "E090B-RELATION-4PAIR",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "max_attempts": 4,
+      "depends_on": [
+        "e090a_reduce"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090b_relation_descriptor.py",
+        "--mode",
+        "train",
+        "--pairs",
+        "4"
+      ]
+    },
+    {
+      "id": "e090b_16_train",
+      "name": "E090B-RELATION-16PAIR",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 16000,
+      "max_attempts": 4,
+      "depends_on": [
+        "e090a_reduce"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090b_relation_descriptor.py",
+        "--mode",
+        "train",
+        "--pairs",
+        "16"
+      ]
+    },
+    {
+      "id": "e090b_1_infer",
+      "name": "E090B-RELATION-1PAIR-INFER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 8000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090b_1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090b_relation_descriptor.py",
+        "--mode",
+        "infer",
+        "--pairs",
+        "1"
+      ]
+    },
+    {
+      "id": "e090b_4_infer",
+      "name": "E090B-RELATION-4PAIR-INFER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 8000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090b_4_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090b_relation_descriptor.py",
+        "--mode",
+        "infer",
+        "--pairs",
+        "4"
+      ]
+    },
+    {
+      "id": "e090b_16_infer",
+      "name": "E090B-RELATION-16PAIR-INFER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 8000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090b_16_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090b_relation_descriptor.py",
+        "--mode",
+        "infer",
+        "--pairs",
+        "16"
+      ]
+    },
+    {
+      "id": "e090b_1_join",
+      "name": "E090B-RELATION-1PAIR-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090b_1_infer"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090b_relation_descriptor.py",
+        "--mode",
+        "join",
+        "--pairs",
+        "1"
+      ]
+    },
+    {
+      "id": "e090b_4_join",
+      "name": "E090B-RELATION-4PAIR-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090b_4_infer"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090b_relation_descriptor.py",
+        "--mode",
+        "join",
+        "--pairs",
+        "4"
+      ]
+    },
+    {
+      "id": "e090b_16_join",
+      "name": "E090B-RELATION-16PAIR-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090b_16_infer"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090b_relation_descriptor.py",
+        "--mode",
+        "join",
+        "--pairs",
+        "16"
+      ]
+    },
+    {
+      "id": "e090b_reduce",
+      "name": "E090B-RELATION-REDUCE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090b_1_join",
+        "e090b_4_join",
+        "e090b_16_join"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090b_relation_descriptor.py",
+        "--mode",
+        "reduce"
+      ]
+    },
+    {
+      "id": "e090d_design",
+      "name": "E090D-RECURRENT-EVIDENCE-DESIGN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090b_reduce"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "design"
+      ]
+    },
+    {
+      "id": "e090d_g0",
+      "name": "E090D-RECURRENT-EVIDENCE-G0",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "max_attempts": 4,
+      "depends_on": [
+        "e090d_design"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "g0"
+      ]
+    },
+    {
+      "id": "e090d_g0_r2",
+      "name": "E090D-RECURRENT-EVIDENCE-G0-ANCHOR-IDENTITY-R2",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090d_design"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "g0"
+      ]
+    },
+    {
+      "id": "e090d_d1_1_train",
+      "name": "E090D-D1-1PAIR",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "max_attempts": 4,
+      "depends_on": [
+        "e090d_g0_r2"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "train",
+        "--pairs",
+        "1"
+      ]
+    },
+    {
+      "id": "e090d_d1_4_train",
+      "name": "E090D-D1-4PAIR",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "max_attempts": 4,
+      "depends_on": [
+        "e090d_g0_r2"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "train",
+        "--pairs",
+        "4"
+      ]
+    },
+    {
+      "id": "e090d_d1_8_train",
+      "name": "E090D-D1-8PAIR",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "max_attempts": 4,
+      "depends_on": [
+        "e090d_g0_r2"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "train",
+        "--pairs",
+        "8"
+      ]
+    },
+    {
+      "id": "e090d_d1_1_infer",
+      "name": "E090D-D1-1PAIR-INFER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090d_d1_1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "infer",
+        "--pairs",
+        "1"
+      ]
+    },
+    {
+      "id": "e090d_d1_4_infer",
+      "name": "E090D-D1-4PAIR-INFER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090d_d1_4_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "infer",
+        "--pairs",
+        "4"
+      ]
+    },
+    {
+      "id": "e090d_d1_8_infer",
+      "name": "E090D-D1-8PAIR-INFER",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "max_attempts": 3,
+      "depends_on": [
+        "e090d_d1_8_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "infer",
+        "--pairs",
+        "8"
+      ]
+    },
+    {
+      "id": "e090d_d1_1_join",
+      "name": "E090D-D1-1PAIR-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090d_d1_1_infer"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "join",
+        "--pairs",
+        "1"
+      ]
+    },
+    {
+      "id": "e090d_d1_4_join",
+      "name": "E090D-D1-4PAIR-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090d_d1_4_infer"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "join",
+        "--pairs",
+        "4"
+      ]
+    },
+    {
+      "id": "e090d_d1_8_join",
+      "name": "E090D-D1-8PAIR-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090d_d1_8_infer"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "join",
+        "--pairs",
+        "8"
+      ]
+    },
+    {
+      "id": "e090d_d1_reduce",
+      "name": "E090D-D1-REDUCE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090d_d1_1_join",
+        "e090d_d1_4_join",
+        "e090d_d1_8_join"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e090d_recurrent_evidence_injection.py",
+        "--mode",
+        "reduce"
+      ]
+    },
+    {
+      "id": "e091a_prepare",
+      "name": "E091A-PREPARE-GROUP-SPLIT",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 2,
+      "depends_on": [
+        "e090d_d1_reduce"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "prepare"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e1_train",
+      "name": "E091A-CANDIDATE-EPOCH1-TRAIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_prepare"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "train",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "1"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e1_infer_0",
+      "name": "E091A-CANDIDATE-EPOCH1-DEV-SHARD0",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "1",
+        "--shard",
+        "0"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e1_infer_1",
+      "name": "E091A-CANDIDATE-EPOCH1-DEV-SHARD1",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "1",
+        "--shard",
+        "1"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e1_infer_2",
+      "name": "E091A-CANDIDATE-EPOCH1-DEV-SHARD2",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "1",
+        "--shard",
+        "2"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e1_infer_3",
+      "name": "E091A-CANDIDATE-EPOCH1-DEV-SHARD3",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "1",
+        "--shard",
+        "3"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e1_join",
+      "name": "E091A-CANDIDATE-EPOCH1-DEV-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 3,
+      "depends_on": [
+        "e091a_candidate_e1_infer_0",
+        "e091a_candidate_e1_infer_1",
+        "e091a_candidate_e1_infer_2",
+        "e091a_candidate_e1_infer_3"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "join",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "1"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e2_train",
+      "name": "E091A-CANDIDATE-EPOCH2-TRAIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e1_join"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "train",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "2"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e2_infer_0",
+      "name": "E091A-CANDIDATE-EPOCH2-DEV-SHARD0",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e2_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "2",
+        "--shard",
+        "0"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e2_infer_1",
+      "name": "E091A-CANDIDATE-EPOCH2-DEV-SHARD1",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e2_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "2",
+        "--shard",
+        "1"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e2_infer_2",
+      "name": "E091A-CANDIDATE-EPOCH2-DEV-SHARD2",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e2_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "2",
+        "--shard",
+        "2"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e2_infer_3",
+      "name": "E091A-CANDIDATE-EPOCH2-DEV-SHARD3",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e2_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "2",
+        "--shard",
+        "3"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e2_join",
+      "name": "E091A-CANDIDATE-EPOCH2-DEV-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 3,
+      "depends_on": [
+        "e091a_candidate_e2_infer_0",
+        "e091a_candidate_e2_infer_1",
+        "e091a_candidate_e2_infer_2",
+        "e091a_candidate_e2_infer_3"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "join",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "2"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e3_train",
+      "name": "E091A-CANDIDATE-EPOCH3-TRAIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e2_join"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "train",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "3"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e3_infer_0",
+      "name": "E091A-CANDIDATE-EPOCH3-DEV-SHARD0",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e3_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "3",
+        "--shard",
+        "0"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e3_infer_1",
+      "name": "E091A-CANDIDATE-EPOCH3-DEV-SHARD1",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e3_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "3",
+        "--shard",
+        "1"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e3_infer_2",
+      "name": "E091A-CANDIDATE-EPOCH3-DEV-SHARD2",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e3_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "3",
+        "--shard",
+        "2"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e3_infer_3",
+      "name": "E091A-CANDIDATE-EPOCH3-DEV-SHARD3",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e3_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "3",
+        "--shard",
+        "3"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e3_join",
+      "name": "E091A-CANDIDATE-EPOCH3-DEV-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 3,
+      "depends_on": [
+        "e091a_candidate_e3_infer_0",
+        "e091a_candidate_e3_infer_1",
+        "e091a_candidate_e3_infer_2",
+        "e091a_candidate_e3_infer_3"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "join",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "3"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e4_train",
+      "name": "E091A-CANDIDATE-EPOCH4-TRAIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e3_join"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "train",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "4"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e4_infer_0",
+      "name": "E091A-CANDIDATE-EPOCH4-DEV-SHARD0",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e4_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "4",
+        "--shard",
+        "0"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e4_infer_1",
+      "name": "E091A-CANDIDATE-EPOCH4-DEV-SHARD1",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e4_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "4",
+        "--shard",
+        "1"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e4_infer_2",
+      "name": "E091A-CANDIDATE-EPOCH4-DEV-SHARD2",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e4_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "4",
+        "--shard",
+        "2"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e4_infer_3",
+      "name": "E091A-CANDIDATE-EPOCH4-DEV-SHARD3",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e4_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "4",
+        "--shard",
+        "3"
+      ]
+    },
+    {
+      "id": "e091a_candidate_e4_join",
+      "name": "E091A-CANDIDATE-EPOCH4-DEV-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 3,
+      "depends_on": [
+        "e091a_candidate_e4_infer_0",
+        "e091a_candidate_e4_infer_1",
+        "e091a_candidate_e4_infer_2",
+        "e091a_candidate_e4_infer_3"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "join",
+        "--phase",
+        "candidate",
+        "--epoch",
+        "4"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e1_train",
+      "name": "E091A-RECURRENT-EPOCH1-TRAIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_candidate_e4_join"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "train",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "1"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e1_infer_0",
+      "name": "E091A-RECURRENT-EPOCH1-DEV-SHARD0",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "1",
+        "--shard",
+        "0"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e1_infer_1",
+      "name": "E091A-RECURRENT-EPOCH1-DEV-SHARD1",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "1",
+        "--shard",
+        "1"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e1_infer_2",
+      "name": "E091A-RECURRENT-EPOCH1-DEV-SHARD2",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "1",
+        "--shard",
+        "2"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e1_infer_3",
+      "name": "E091A-RECURRENT-EPOCH1-DEV-SHARD3",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e1_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "1",
+        "--shard",
+        "3"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e1_join",
+      "name": "E091A-RECURRENT-EPOCH1-DEV-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 3,
+      "depends_on": [
+        "e091a_recurrent_e1_infer_0",
+        "e091a_recurrent_e1_infer_1",
+        "e091a_recurrent_e1_infer_2",
+        "e091a_recurrent_e1_infer_3"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "join",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "1"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e2_train",
+      "name": "E091A-RECURRENT-EPOCH2-TRAIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e1_join"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "train",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "2"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e2_infer_0",
+      "name": "E091A-RECURRENT-EPOCH2-DEV-SHARD0",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e2_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "2",
+        "--shard",
+        "0"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e2_infer_1",
+      "name": "E091A-RECURRENT-EPOCH2-DEV-SHARD1",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e2_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "2",
+        "--shard",
+        "1"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e2_infer_2",
+      "name": "E091A-RECURRENT-EPOCH2-DEV-SHARD2",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e2_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "2",
+        "--shard",
+        "2"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e2_infer_3",
+      "name": "E091A-RECURRENT-EPOCH2-DEV-SHARD3",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e2_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "2",
+        "--shard",
+        "3"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e2_join",
+      "name": "E091A-RECURRENT-EPOCH2-DEV-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 3,
+      "depends_on": [
+        "e091a_recurrent_e2_infer_0",
+        "e091a_recurrent_e2_infer_1",
+        "e091a_recurrent_e2_infer_2",
+        "e091a_recurrent_e2_infer_3"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "join",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "2"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e3_train",
+      "name": "E091A-RECURRENT-EPOCH3-TRAIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e2_join"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "train",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "3"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e3_infer_0",
+      "name": "E091A-RECURRENT-EPOCH3-DEV-SHARD0",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e3_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "3",
+        "--shard",
+        "0"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e3_infer_1",
+      "name": "E091A-RECURRENT-EPOCH3-DEV-SHARD1",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e3_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "3",
+        "--shard",
+        "1"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e3_infer_2",
+      "name": "E091A-RECURRENT-EPOCH3-DEV-SHARD2",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e3_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "3",
+        "--shard",
+        "2"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e3_infer_3",
+      "name": "E091A-RECURRENT-EPOCH3-DEV-SHARD3",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 18000,
+      "priority": 20,
+      "max_attempts": 6,
+      "depends_on": [
+        "e091a_recurrent_e3_train"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "infer",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "3",
+        "--shard",
+        "3"
+      ]
+    },
+    {
+      "id": "e091a_recurrent_e3_join",
+      "name": "E091A-RECURRENT-EPOCH3-DEV-JOIN",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 3,
+      "depends_on": [
+        "e091a_recurrent_e3_infer_0",
+        "e091a_recurrent_e3_infer_1",
+        "e091a_recurrent_e3_infer_2",
+        "e091a_recurrent_e3_infer_3"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "join",
+        "--phase",
+        "recurrent",
+        "--epoch",
+        "3"
+      ]
+    },
+    {
+      "id": "e091a_reduce",
+      "name": "E091A-DEV-SELECTION-AND-GATE",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 3,
+      "depends_on": [
+        "e091a_recurrent_e3_join"
+      ],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e091a_heldout_generalization.py",
+        "--mode",
+        "select"
+      ]
+    }
+  ]
+}

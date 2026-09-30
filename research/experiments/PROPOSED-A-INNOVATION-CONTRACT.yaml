@@ -1,0 +1,78 @@
+schema_version: 1
+method: "proposed-A-global-multimodal-geometry-posterior"
+status: d1_capacity_supported_current_pool_no_gain_training_not_authorized
+
+claim: >-
+  Multiple whole-image cross-modal geometric explanations with held-out-region
+  predictive scoring can improve basin recall and mode selection without
+  averaging incompatible modes.
+
+must_implement:
+  - whole_image_cross_modal_edge_generation
+  - multiple_non_duplicate_geometric_modes
+  - heldout_region_predictive_scoring
+  - frozen_common_evidence_export
+  - translation_and_affine_same_evidence_controls
+  - mode_conditioned_fine_decode
+  - raw_and_post_operator_metrics
+  - no_gt_inference_path
+  - os_whu_shared_forward_interface
+
+must_not_implement:
+  - gpu_training_in_this_phase
+  - queue_cancellation_or_modification
+  - testing_set_checkpoint_selection
+  - gt_selector_in_predict
+  - incompatible_mode_coordinate_average
+  - e087_independent_local_softmax_as_claimed_global_consensus
+  - ransac_as_primary_inference_operator
+
+implementation_hooks:
+  - path: image_matching_part2_migrated/.codex_tmp/global_multimodal_geometry_posterior.py
+    symbols:
+      - global_edges
+      - propose_affine_modes
+      - geometry_conditioned_score
+      - decode_mode
+      - infer_global_posterior
+
+observable_evidence:
+  - d0_protocol_audit
+  - d0_implementation_controls
+  - d0_cpu_test_log
+  - d1_fixed_evidence_comparison
+  - d1_candidate_reachability
+  - d1_heldout_region_ranking
+  - d1_full_pipeline_witness_or_unavailable_reason
+  - evidence_bundle_manifest_and_schema_validation
+
+acceptance_tests:
+  - cpu_coordinate_identity_pass
+  - cpu_geometry_unit_pass
+  - cpu_mode_preservation_pass
+  - cpu_gradient_fixed_hypothesis_score_pass
+  - cpu_degenerate_input_finite_pass
+  - inference_does_not_accept_gt_pass
+  - os_whu_interface_instantiation_pass
+  - whole_image_edge_generation_audited
+  - heldout_region_exclusion_audited
+  - no_gt_evidence_and_label_sidecar_separation_pass
+  - same_pool_scoring_comparison_pass
+
+ablations:
+  - translation_pool_reference
+  - self_score
+  - robust_consensus_score
+  - heldout_region_score
+  - mode_local_decode_vs_incompatible_mode_average
+
+stop_conditions:
+  - protocol_alignment_unavailable_after_bounded_evidence_rebuild
+  - multi_affine_pool_no_reachability_gain
+  - no_gt_mode_ranking_no_better_than_reference
+  - full_pipeline_witness_unavailable_and_not_reconstructable
+  - implementation_audit_failure
+
+success_behavior: write_d0_d1_report_and_wait_for_method_decision
+failure_behavior: write_result_card_and_wait_for_method_decision
+automatic_next_version: false

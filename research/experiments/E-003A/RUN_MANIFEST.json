@@ -1,0 +1,90 @@
+{
+  "experiment": "E-003A",
+  "method": "M001",
+  "method_version": "0.6",
+  "status": "COMPLETED_G1_FAIL_G2_NOT_RUN",
+  "frozen_at": "2026-08-05T00:00:00+08:00",
+  "specification": {
+    "method_spec_sha256": "6d259b05900e4fea404841d35584492da4cfa8ec92391bcb8fe8bced6f51b3a2",
+    "method_delta_sha256": "07b245e9ef803e76ced26b676cee84bc6e0f57b6c0a2fe5a3361bffcba7fe3e8",
+    "innovation_contract_sha256": "f764876bed16ddf57c11aad7a25039d3358fdbd9163aa0e8200a6159995963e4",
+    "experiment_spec_sha256": "6d9dd55c2ecc03c8c8e0379272a8cc1c030d8270464453bb266001b154093791",
+    "current_state_sha256": "2aa64e7e9ade15e8f19d31b865eb275764977f392a508abb36337078e9143e57",
+    "method_review": "APPROVE"
+  },
+  "dataset": {
+    "local_archive": "/Users/shihao/Downloads/os_dataset/training.zip",
+    "remote_archive": "/mnt/sda/zhushihao/VS_Match/datasets/official_archives/gdros/training.zip",
+    "archive_size_bytes": 5727075338,
+    "archive_sha256": "2887e7de8cd72290df688de0ce4071f42d7bfdec8507a24716ae2ea15c3f3cf5",
+    "expected_pairs": 2011,
+    "active_image_size": [512, 512],
+    "target_token_size": [64, 64],
+    "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+    "split_summary_sha256": "33e9798d103518bba3b2edb723d3e6b481f70fc23a252a259413729a4bdf3069",
+    "published_root": "/mnt/sda/zhushihao/VS_Match/datasets/extracted/gdros_official_e003a_training",
+    "train_pairs": 1607,
+    "dev_pairs": 404,
+    "optical_groups": 1976,
+    "cross_split_group_overlap": 0,
+    "testing_optical_exact_overlap": 0
+  },
+  "model": {
+    "gdros_checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+    "gdros_frozen": true,
+    "anchors": 128,
+    "candidates_per_anchor": 8,
+    "feedback_rounds": 2,
+    "hidden_width": 64
+  },
+  "implementation": {
+    "remote_repo": "/mnt/sda/zhushihao/VS_Match/GDROS",
+    "remote_module": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/e003a",
+    "run_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01",
+    "source_manifest_sha256": "daaf3fea395180560109d74154bb1078e50958cbaacb337738fe9c1c86518482",
+    "config_sha256": "325e2059da71b9c802670a89b58a20304b014c758da0ea8db1e0b62c152c5737"
+  },
+  "cache": {
+    "status": "PASS",
+    "pair_count": 2011,
+    "manifest_sha256": "980c2d856653bb18080d53d16ef5bfb5ae0313b40a5e7476072cd98d9eae73da",
+    "aggregate_sha256": "863ad1c0bc49075eef2d3f27e182ca6f5f37f5572eb6e539931295a8454ee930",
+    "gate": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/cache-validation-v2/cache_gate.json"
+  },
+  "completed_g0_evidence": {
+    "unit_tests": "16/16 PASS",
+    "cache_online_parity": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/gates/cache-smoke-parity.json",
+    "real_data_smoke": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/gates/real-smoke/train/training_result.json",
+    "data_protocol_watchdog": "20260805_141948_1e96d73e"
+  },
+  "cache_build_watchdogs": [
+    "20260805_142805_342f29f3",
+    "20260805_142805_83a016af",
+    "20260805_142805_8b502ecb",
+    "20260805_142805_512b1476",
+    "20260805_142805_ca5ed599"
+  ],
+  "reviews": {
+    "round_1_method": "APPROVE",
+    "round_1_path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/reviews/round-1-method.md",
+    "round_2_eval_resources": "APPROVE",
+    "round_2_path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/reviews/round-2-eval-resources.md"
+  },
+  "training_watchdogs": {
+    "main_20260805": "20260805_150219_8c65c8d8",
+    "main_20260806": "20260805_150219_77facb2e",
+    "main_20260807": "20260805_150219_6e84c5e5",
+    "unary_20260805": "20260805_150219_8477c83a"
+  },
+  "formal_g1": {
+    "status": "FAIL",
+    "watchdog": "20260805_150732_15cc8068",
+    "g1_json": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/evaluation/g1-main-20260805/g1.json",
+    "g1_json_sha256": "cc10638cf735039bf5ce492716ec835f924b8f26862d1b43c0d7f4f8885de0b7",
+    "per_pair_sha256": "05871c6bd35339ba737ed7bb35b343b0af372e7bc6cf40beb84a58e1708afd1d",
+    "corrected_oracle_sha256": "39016fffa0c466f2d31395fc0b966d110801fad80ac3e301db430245b4b4a686",
+    "g2_status": "NOT_RUN_DUE_TO_G1_FAIL"
+  },
+  "prohibited_evaluation_root": "/mnt/sda/zhushihao/VS_Match/datasets/extracted/gdros_official_e000_archive",
+  "automatic_next_experiment": false
+}

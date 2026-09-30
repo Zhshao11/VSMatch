@@ -1,0 +1,50 @@
+{
+  "experiment": "E-045A",
+  "reference": "E-044A e044a_k64_l4_noenergy",
+  "reference_metrics": {
+    "aepe": 6.638,
+    "cmr2": 11.951,
+    "cmr5": 49.571,
+    "cmr16": 93.999
+  },
+  "branches": [
+    {
+      "name": "teacher_consistency",
+      "priority": 1,
+      "implementation_risk": "low",
+      "status": "ready_to_implement",
+      "idea": "keep strong optical teacher, tighten SAR-to-teacher consistency, and bias the frontend toward teacher-aligned latent structure",
+      "expected_signal": "better candidate purity, lower drift, minimal architectural churn"
+    },
+    {
+      "name": "sar_structure_stem",
+      "priority": 2,
+      "implementation_risk": "low",
+      "status": "ready_to_implement",
+      "idea": "strengthen SAR structural cue extraction with log/edge/texture channels and a stronger residual stem",
+      "expected_signal": "higher SAR-side selectivity and less energy-collapse"
+    },
+    {
+      "name": "common_unique_split",
+      "priority": 3,
+      "implementation_risk": "medium",
+      "status": "needs_new_model_wrapper",
+      "idea": "separate shared/common representation from modality-specific residuals, then let matcher consume the common latent first",
+      "expected_signal": "better cross-modal invariance without erasing modality-specific cues"
+    },
+    {
+      "name": "masked_cross_modal_pretrain",
+      "priority": 4,
+      "implementation_risk": "high",
+      "status": "needs_new_pretrain_objective",
+      "idea": "add masked reconstruction / modality dropout / cross-modal prediction so one side learns to recover the other",
+      "expected_signal": "stronger global semantic alignment and more robust patch evidence"
+    }
+  ],
+  "comparison_policy": {
+    "frozen_reference": "E-044A noenergy",
+    "baseline_isolation": true,
+    "no_gdros_baseline_mutation": true,
+    "no_e044a_result_pollution": true
+  }
+}

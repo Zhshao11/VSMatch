@@ -1,0 +1,99 @@
+schema_version: 1
+method: M001
+method_version: "0.7"
+experiment: E-004A
+contract_type: coverage_constrained_adaptive_anchor_budgeting
+status: approved_ready
+
+claim: >-
+  在冻结 GDROS 特征下，以粗跨模态可匹配性、区域保底/封顶和有限候补替换，把固定 K128
+  改为有最坏预算约束的动态 K128，提高进入后续匹配器的 recoverable anchor 比例，同时保持
+  仿射可辨识覆盖和低推理成本。
+
+must_implement:
+  - frozen_post_transformer_gdros_features
+  - deterministic_8x8_regions_and_four_proposals_per_region
+  - exact_m256_proposal_pool
+  - average_pooled_16x16_target_coarse_probe
+  - trained_pre_search_recoverability_head
+  - one_primary_minimum_and_three_primary_maximum_per_region
+  - exact_k128_primary_budget
+  - exact_cosine_top8_fine_search
+  - trained_post_search_verifier
+  - same_region_single_round_replacement_with_r64_global_cap
+  - fixed_group_isolated_train_dev_protocol
+  - oracle_isolated_anchor_quality_and_resource_measurement
+
+must_not_implement:
+  - gdros_descriptor_backbone_or_transformer_training
+  - source_all_by_target_all_materialization
+  - ground_truth_in_inference_selection_or_replacement
+  - more_than_192_fine_searched_anchors
+  - repeated_or_cross_region_replacement
+  - rg_sac_or_other_candidate_consensus
+  - affine_hypothesis_enumeration
+  - local_refinement
+  - baseline_fallback
+  - os_424_or_confirm_access
+  - post_result_budget_threshold_or_variant_promotion
+
+implementation_hooks:
+  - path: experiments/sparsegeo/e004a/proposals.py
+    symbols: [build_region_proposals, allocate_coverage_constrained_k128]
+  - path: experiments/sparsegeo/e004a/coarse_probe.py
+    symbols: [build_coarse_target, compute_coarse_probe_features]
+  - path: experiments/sparsegeo/e004a/anchor_heads.py
+    symbols: [PreSearchRecoverabilityHead, PostSearchVerifier]
+  - path: experiments/sparsegeo/e004a/replacement.py
+    symbols: [replace_same_region_once]
+  - path: experiments/sparsegeo/e004a/oracle_gate.py
+    symbols: [evaluate_proposal_headroom, evaluate_selected_anchor_oracle]
+  - path: experiments/sparsegeo/e004a/train_anchor_heads.py
+    symbols: [train_anchor_heads]
+  - path: experiments/sparsegeo/e004a/evaluate_anchor_budget.py
+    symbols: [evaluate_dev, benchmark_anchor_acquisition]
+
+observable_evidence:
+  - exact_64_regions_four_unique_proposals_each
+  - exact_256_by_256_coarse_score_count
+  - exact_128_primary_and_at_most_64_reserve_fine_searches
+  - every_region_primary_count_between_one_and_three
+  - deterministic_ties_and_replacement_trace
+  - no_gt_or_test_path_in_inference_trace
+  - pre_and_post_head_finite_nonzero_gradients
+  - recoverable_fraction_before_and_after_replacement
+  - source_coverage_affine_condition_and_oracle_gap
+  - synchronized_raw_timing_and_peak_memory
+
+acceptance_tests:
+  - frozen_identity_and_split_provenance_pass
+  - proposal_region_shape_and_tie_break_pass
+  - coordinate_flow_and_coarse_pooling_pass
+  - gt_access_negative_test_pass
+  - coverage_allocator_property_tests_pass
+  - replacement_cap_same_region_and_single_round_tests_pass
+  - gradient_and_toy_overfit_pass
+  - online_cache_differential_pass
+  - independent_incremental_reviews_approve
+  - p0_oracle_g1_selection_and_g2_resource_gates_pass
+
+ablations:
+  - fixed_public_stratified_k128
+  - uniform_region_k128
+  - source_only_pre_search_head
+  - pair_conditioned_pre_search_without_coverage_constraints
+  - caab_without_replacement
+  - caab_with_replacement
+
+stop_conditions:
+  - proposal_oracle_headroom_gate_failure
+  - provenance_coordinate_or_gt_isolation_failure
+  - implementation_or_review_gate_failure
+  - selected_recoverable_or_replacement_gain_failure
+  - oracle_affine_gate_failure
+  - resource_gate_failure
+  - e004a_result_card_written
+
+success_behavior: write_result_card_and_wait_for_user
+failure_behavior: audit_implementation_write_result_card_and_wait
+automatic_next_version: false
