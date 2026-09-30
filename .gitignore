@@ -1,0 +1,60 @@
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Local Codex staging and nested repository snapshots
+/.codex_tmp/
+/image_matching_part2_migrated/.codex_tmp/
+
+# One-off historical remote orchestration helpers. Maintained implementations
+# live under research/remote_stage; refactor these before any later import.
+/e075b_*.py
+/e075c_*.py
+/e075d_*.py
+/lucky_*.py
+
+# Downloaded data, checkpoints, archives, and run directories
+/tmp/
+/output/
+/experiments_tmp_check/
+data/
+datasets/
+checkpoints/
+runs/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.part-*
+*.log
+
+# Generated dense experiment payloads. Keep compact RESULT_CARD and manifests.
+research/results/**/*.npz
+research/results/**/*.npy
+research/results/**/*.jsonl
+research/results/**/*.csv
+research/results/**/raw/
+research/results/**/predictions/
+research/results/**/PAIR_ROWS.json
+research/results/**/TRAIN_CURVE.json
+research/results/**/RUNNING_RESULT_CARD.json
+research/results/**/RUNNING_RESULT_CARD.md
+
+# Scheduler/runtime state copied next to source is not a reproducible input.
+research/remote_stage/**/*RESULT_CARD.json
+research/remote_stage/**/*RESULT_CARD.md

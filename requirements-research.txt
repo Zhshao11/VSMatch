@@ -1,0 +1,9 @@
+# Direct dependencies used by the research and protocol scripts.
+# Install the upstream GDROS project's own requirements separately.
+numpy
+opencv-python
+Pillow
+PyYAML
+scipy
+torch
+torchvision
