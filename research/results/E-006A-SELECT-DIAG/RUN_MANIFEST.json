@@ -1,0 +1,46 @@
+{
+  "experiment": "E-006A-SELECT-DIAG",
+  "run": "run-01",
+  "status": "COMPLETED_WAITING_USER",
+  "interpretation": "NOT_SELECTABLE_WITH_CURRENT_FEATURES",
+  "frozen_sha256": {
+    "CURRENT_STATE.md": "ce54e806838a05477728ee99eb3bce2a6adfe5e69c02addc66b040d5446ce5ad",
+    "METHOD_DELTA.md": "0ac7aeaea12641b354f6f1b1bd7299f8031b6e77027298ffa62f16b8c89498c0",
+    "E-006A-SELECT-DIAG.md": "4d17c7e9825057d4a5566dfbd432c215d6c9870f3bbaec7618587b71a57ca080",
+    "REVIEW_PACKET.md": "9131c941cd3c5b71ceb195a95a72252b092398e2fa704b8d269fcfe7285a2416",
+    "DECISION_LOG.md": "32fbc34f4209a78daf826be17023ae6fab59eaf0e0fb4c5fd12fd0264c5d0efe",
+    "E-006A-RESULT_CARD.md": "299faa6a94fa57448870b0d181595fcdd925f62542d3fb30580a4edb262cb29f",
+    "E-006A-P0-GATE.json": "9b5afebf7fa68b027269167eaef4be6165a22b66eb09cbcb19e35b29475164d5"
+  },
+  "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+  "gdros_checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+  "corrected_e006a_source_sha256": "a26f9619ad395bdbc1d45b3ec09ae256d603512042681259efdc8aac4e486d2a",
+  "feature_implementation_id": "e006a-select-diag-v2-finite-local-cosine-sentinel",
+  "source_sha256": {
+    "features.py": "fa8415c7b4e1cc038368813b5624306f9330136c7835be608865e8714e5488fd",
+    "build_features.py": "ad20d03edfa65e314682e70033f61dd4846dcc4c9335abf9613b08ecdbc9f6d7",
+    "build_labels.py": "239ef1be4c0fa54c4194974783c4e5fd63e408da15ef4f55e68e768df50e07d2",
+    "selector.py": "cb24541f06945029d065ce6e5455ef59a651feddda764e12622695335f1045b2",
+    "train.py": "837430f94a5a9586735bb54846206eab37fc04abd0ed92ffc58b76972688059d",
+    "evaluate.py": "14d113c6e3098abbffce92b7b12e865c9886449854ba4996cac005bf3590c113"
+  },
+  "seeds": [20260812, 20260813],
+  "main_affine_track": "full-seed20260812/topK-32",
+  "automatic_tests": {"status": "PASS", "passed": 19, "failed": 0},
+  "reviews": {"feature": "APPROVE", "evaluator": "APPROVE", "incremental_fixes": "APPROVE"},
+  "formal_counts": {"train_pairs": 1607, "dev_pairs": 404, "feature_pairs": 2011, "label_pairs": 2011, "checkpoints": 6},
+  "artifact_roots": {
+    "cache": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-006A-SELECT-DIAG/run-01/cache-formal-v2",
+    "models": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-006A-SELECT-DIAG/run-01/model-v2",
+    "evaluation": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-006A-SELECT-DIAG/run-01/evaluation-v3",
+    "manifests": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-006A-SELECT-DIAG/run-01/manifests"
+  },
+  "failed_attempts_preserved": {
+    "cache_formal_v1": "masked affine-local scores produced non-finite feature dimensions 6/8/24",
+    "evaluation_v2": "D1 train-only grid comparison had an extra broadcast dimension"
+  },
+  "watchdog_final_job": "20260807_000857_ec3fb033",
+  "baseline_modified": false,
+  "invalid_p0_consumed": false,
+  "forbidden_test_data_accessed": false
+}

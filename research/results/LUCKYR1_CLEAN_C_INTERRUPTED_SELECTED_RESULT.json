@@ -1,0 +1,107 @@
+{
+  "claim_scope": "CLEAN_1810_201_MODEL_UNSEEN_DEV",
+  "evaluation_pairs": 201,
+  "evaluations": [
+    {
+      "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/checkpoints/bc_c_step20000.pt",
+      "checkpoint_sha256": "699c9eeedfb0566230a42851355c13ac96fd3a4c15280644caaf8a06c0ac8e18",
+      "metrics": {
+        "aepe": 4.170442357140394,
+        "cmr1": 9.45273631840796,
+        "cmr10": 90.04975124378109,
+        "cmr16": 97.01492537313433,
+        "cmr2": 43.78109452736319,
+        "cmr5": 75.12437810945273,
+        "metric_join": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/step20000_iter24_post_lsr_METRIC_JOIN.csv",
+        "metric_scope": "pair-level",
+        "pairs": 201,
+        "prediction_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/predictions/step20000_iter24_post_lsr/PREDICTIONS.jsonl",
+        "prediction_manifest_sha256": "28836e7d0629183ce7476a02251af9278b63433b2a8cba68e00751b5fdd6c204",
+        "prediction_materialized_before_gt_join": true
+      },
+      "step": 20000
+    },
+    {
+      "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/checkpoints/bc_c_step40000.pt",
+      "checkpoint_sha256": "5358618fdb0643c9937ab4453b674786db056a3432fd80d7fa7b35b0ee1d1f5c",
+      "metrics": {
+        "aepe": 3.817064511390468,
+        "cmr1": 18.407960199004975,
+        "cmr10": 93.53233830845771,
+        "cmr16": 97.51243781094527,
+        "cmr2": 39.30348258706468,
+        "cmr5": 77.11442786069652,
+        "metric_join": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/step40000_iter24_post_lsr_METRIC_JOIN.csv",
+        "metric_scope": "pair-level",
+        "pairs": 201,
+        "prediction_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/predictions/step40000_iter24_post_lsr/PREDICTIONS.jsonl",
+        "prediction_manifest_sha256": "c62dca960bf4dec4f8b4a604b306b31b63524d91fd58ab63eb92e2b5aba22ec0",
+        "prediction_materialized_before_gt_join": true
+      },
+      "step": 40000
+    },
+    {
+      "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/checkpoints/bc_c_step80000.pt",
+      "checkpoint_sha256": "97644743112559745b339d42ea820853af466ed1d43f4fe503488c3d97dc94aa",
+      "metrics": {
+        "aepe": 3.9835579914240102,
+        "cmr1": 13.930348258706468,
+        "cmr10": 93.53233830845771,
+        "cmr16": 97.01492537313433,
+        "cmr2": 41.7910447761194,
+        "cmr5": 73.6318407960199,
+        "metric_join": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/step80000_iter24_post_lsr_METRIC_JOIN.csv",
+        "metric_scope": "pair-level",
+        "pairs": 201,
+        "prediction_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/predictions/step80000_iter24_post_lsr/PREDICTIONS.jsonl",
+        "prediction_manifest_sha256": "844a1554aacdbf6118eee91579b2f64eea4b3e47cc071dcf795abd2d7e8f3049",
+        "prediction_materialized_before_gt_join": true
+      },
+      "step": 80000
+    }
+  ],
+  "last_completed_stage": "TRAIN_STEP_117000_THEN_SHARED_RC137",
+  "last_recorded_step": 117000,
+  "resume_decision": "STOP_NO_RESUME",
+  "resume_reason": "valid 40k/80k curve plateaued or regressed; 117k has no checkpoint evaluation",
+  "return_code": 137,
+  "selected": {
+    "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/checkpoints/bc_c_step40000.pt",
+    "checkpoint_sha256": "5358618fdb0643c9937ab4453b674786db056a3432fd80d7fa7b35b0ee1d1f5c",
+    "metrics": {
+      "aepe": 3.817064511390468,
+      "cmr1": 18.407960199004975,
+      "cmr10": 93.53233830845771,
+      "cmr16": 97.51243781094527,
+      "cmr2": 39.30348258706468,
+      "cmr5": 77.11442786069652,
+      "metric_join": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/step40000_iter24_post_lsr_METRIC_JOIN.csv",
+      "metric_scope": "pair-level",
+      "pairs": 201,
+      "prediction_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/predictions/step40000_iter24_post_lsr/PREDICTIONS.jsonl",
+      "prediction_manifest_sha256": "c62dca960bf4dec4f8b4a604b306b31b63524d91fd58ab63eb92e2b5aba22ec0",
+      "prediction_materialized_before_gt_join": true
+    },
+    "step": 40000
+  },
+  "selection_policy": "CMR@5, then CMR@2, then CMR@1, then AEPE; pair-level on clean 201 dev",
+  "sources": {
+    "f2": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/foundation_safe_v1v1/F2/checkpoints/F2_step120000.pt",
+    "f2_sha256": "df11693c3f6ad3f973aa3720745f2b6287ad4347fda3e30c1bf9e68fdd5c7d16",
+    "f3": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/foundation_safe_v1v1/F3/checkpoints/F3_step120000.pt",
+    "f3_sha256": "07e043ee33f2e35f4bf0523394e1fbd81ca4ec7546cadd054c0b0b2727afc628"
+  },
+  "status": "INTERRUPTED_COST_GATE_SELECTED",
+  "task": "bc_c",
+  "termination": {
+    "attribution": "UNKNOWN_SHARED_TERMINATION_EVENT",
+    "gpu_xid_evidence": "none found in accessible journal window",
+    "kernel_oom_evidence": "none found in accessible journal window",
+    "peer_job": "20260914_080445_ac5e3277",
+    "reboot_or_shutdown_evidence": "none; host boot time 2026-08-29T16:52:10+08:00",
+    "shared_timestamp": "2026-09-14T16:31:54+08:00",
+    "signal_semantics": "shell rc137 is consistent with SIGKILL"
+  },
+  "train_pairs": 1810,
+  "watchdog_job_id": "20260914_080445_c2da3f0b"
+}

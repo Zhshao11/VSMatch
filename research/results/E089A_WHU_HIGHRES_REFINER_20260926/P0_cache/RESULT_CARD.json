@@ -1,0 +1,13 @@
+{
+  "candidate_gpus": null,
+  "checkpoint_sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a",
+  "elapsed_seconds": 12.319550275802612,
+  "last_completed_stage": "5600_FORWARD_REVERSE_ANCHORS_CACHED_WITHOUT_GT",
+  "logical_device": "cuda:0",
+  "manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-089A-WHU-HIGHRES-CROSSMODAL-RESIDUAL-REFINER/P0/ANCHOR_CACHE_MANIFEST.jsonl",
+  "manifest_sha256": "6dd268dddda6d2f1634452eaece3de98006f60512de53331d6f6f1bcc4565cbb",
+  "next_stage": "P0_CONTRACT_SMOKE",
+  "pairs": 5600,
+  "status": "PASS",
+  "truth_flow_opened": false
+}

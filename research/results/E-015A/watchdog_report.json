@@ -1,0 +1,19 @@
+{
+  "job_id": "20260811_100830_13c60853",
+  "name": "E-015A-run-01-formal",
+  "status": "succeeded",
+  "return_code": 0,
+  "created_at": "2026-08-11T10:08:30+08:00",
+  "started_at": "2026-08-11T10:09:16+08:00",
+  "finished_at": "2026-08-11T10:46:16+08:00",
+  "allocated_gpus": [
+    4
+  ],
+  "cwd": "/mnt/sda/zhushihao/VS_Match/GDROS",
+  "command": [
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-015A/run-01/run_e015a.sh"
+  ],
+  "log_path": "/mnt/sda/zhushihao/experiment_watchdog/state/job_logs/20260811_100830_13c60853.log",
+  "log_tail": "E015A dev 0/404 signals=6 tracks=1\nE015A dev 10/404 signals=6 tracks=1\nE015A dev 20/404 signals=6 tracks=1\nE015A dev 30/404 signals=6 tracks=1\nE015A dev 40/404 signals=6 tracks=1\nE015A dev 50/404 signals=6 tracks=1\nE015A dev 60/404 signals=6 tracks=1\nE015A dev 70/404 signals=6 tracks=1\nE015A dev 80/404 signals=6 tracks=1\nE015A dev 90/404 signals=6 tracks=1\nE015A dev 100/404 signals=6 tracks=1\nE015A dev 110/404 signals=6 tracks=1\nE015A dev 120/404 signals=6 tracks=1\nE015A dev 130/404 signals=6 tracks=1\nE015A dev 140/404 signals=6 tracks=1\nE015A dev 150/404 signals=6 tracks=1\nE015A dev 160/404 signals=6 tracks=1\nE015A dev 170/404 signals=6 tracks=1\nE015A dev 180/404 signals=6 tracks=1\nE015A dev 190/404 signals=6 tracks=1\nE015A dev 200/404 signals=6 tracks=1\nE015A dev 210/404 signals=6 tracks=1\nE015A dev 220/404 signals=6 tracks=1\nE015A dev 230/404 signals=6 tracks=1\nE015A dev 240/404 signals=6 tracks=1\nE015A dev 250/404 signals=6 tracks=1\nE015A dev 260/404 signals=6 tracks=1\nE015A dev 270/404 signals=6 tracks=1\nE015A dev 280/404 signals=6 tracks=1\nE015A dev 290/404 signals=6 tracks=1\nE015A dev 300/404 signals=6 tracks=1\nE015A dev 310/404 signals=6 tracks=1\nE015A dev 320/404 signals=6 tracks=1\nE015A dev 330/404 signals=6 tracks=1\nE015A dev 340/404 signals=6 tracks=1\nE015A dev 350/404 signals=6 tracks=1\nE015A dev 360/404 signals=6 tracks=1\nE015A dev 370/404 signals=6 tracks=1\nE015A dev 380/404 signals=6 tracks=1\nE015A dev 390/404 signals=6 tracks=1\nE015A dev 400/404 signals=6 tracks=1\n{\"best\": {\"ap\": 0.0016645325588831366, \"auroc\": 0.8016309881375251, \"best_selection\": {\"correct_mean\": 0.9900990099009901, \"coverage_pass_percent\": 100.0, \"group\": \"global_topk\", \"param\": \"256\", \"precision_mean\": 0.004030118109704465}, \"name\": \"fusion/zscore_available_pretrained\"}, \"matcher_candidate\": {\"name\": \"foundation_dense/dinov2_vitl14_local/full4096_top128\", \"summary\": {\"candidate_base_rate\": {\"1\": 0.0001490740627222127, \"2\": 0.0005981991066539163, \"5\": 0.003736723430514348}, \"candidate_count\": 78303360, \"correct_2px_p10_p50_p90\": [65.60000000000001, 115.0, 164.0], \"mean_correct_2px_proposals\": 115.9430693069307, \"nearest_distance\": {\"mean\": 19.44020652770996, \"p50\": 7.282527923583984, \"p90\": 54.62335510253905}, \"oracle_affine\": {\"aepe\": 12.902549076299783, \"pair_local_ready_percent\": 97.52475247524752, \"valid_percent\": 97.52475247524752}}}, \"p0\": true, \"status\": \"COMPLETED / MATCHER_CANDIDATE_FOUND\"}\n",
+  "failure_reason": null
+}

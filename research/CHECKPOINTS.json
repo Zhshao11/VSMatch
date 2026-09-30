@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "workspace_env": "SPARSEGEO_ROOT",
+  "checkpoints": [
+    {
+      "id": "os_e074_b_180k",
+      "scope": "os",
+      "role": "E075A balanced B input branch",
+      "path": "GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-stage180k/checkpoints/B_step180000.pt",
+      "sha256": "f40d80f2dca62e74ec86c1823963282a490d47f336f2cfce4a28fc211ea33218"
+    },
+    {
+      "id": "os_e074_c_180k",
+      "scope": "os",
+      "role": "E075A high-precision C input branch",
+      "path": "GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/checkpoints/C_step180000.pt",
+      "sha256": "c3c67e6d65aca0dd55cf7af2c2a9eedccadadc0fec5ad11fe6e493e08ecc85b9"
+    },
+    {
+      "id": "os_e075a_m4_80k",
+      "scope": "os",
+      "role": "Current protected OS method",
+      "path": "GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/checkpoints/M4_step80000.pt",
+      "sha256": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b"
+    },
+    {
+      "id": "whu_e081a_m4_120k",
+      "scope": "whu",
+      "role": "Current protected WHU method",
+      "path": "GDROS/experiments/sparsegeo/runs/E-081A-ZZVR-WHU-OUR-METHOD-NATIVE-TRAIN/run-m4-native-r2/checkpoints/M4_step120000.pt",
+      "sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a"
+    }
+  ]
+}

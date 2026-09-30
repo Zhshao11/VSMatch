@@ -1,0 +1,88 @@
+{
+  "experiment": "E-002B-ACC-DIAG",
+  "gate": "DIAGNOSTIC_ACCURACY",
+  "status": "FAIL",
+  "resource_gate_applicable": false,
+  "completeness": {
+    "pairs": 424,
+    "variants": 4,
+    "per_pair_variant_rows": 1696,
+    "all_finite": true,
+    "all_uses_ground_truth_false": true,
+    "gt_isolation_passed": true,
+    "non_gt_trace_hashes": 424,
+    "provenance_consistency_passed": true,
+    "post_run_source_manifest_sha256": "3dd002c8f92c4ac58571ba04b92cbda6830843bce9662d93dd5d5ab67f35e58c",
+    "post_run_input_hash_mismatches": 0
+  },
+  "c8_main": {
+    "pair_local_ready_percent": 75.70754716981132,
+    "pair_local_ready_required_percent": 90.0,
+    "non_abstention_percent": 100.0,
+    "non_abstention_required_percent": 90.0,
+    "grid_mean_l2_px_mean": 17.232631275957484,
+    "grid_mean_l2_px_required_max": 8.0,
+    "aepe": 10.43489213625215,
+    "pair_error_p50": 3.8901772499084473,
+    "pair_error_p95": 43.988956451415866,
+    "pair_error_p99": 118.15088897705068,
+    "cmr1_percent": 0.0,
+    "cmr2_percent": 12.028301886792454,
+    "cmr5_percent": 63.20754716981132,
+    "method_failure_percent": 36.79245283018868,
+    "pair_local_ready_count": 321,
+    "pair_local_not_ready_count": 103,
+    "error_ge_5_count": 156,
+    "all_final_structural_constraints_pass": true,
+    "silent_solver_failures": 0,
+    "bootstrap_95_ci": {
+      "aepe": [8.539449606758525, 12.597593845869852],
+      "pair_local_ready_percent": [71.69811320754717, 79.48113207547169],
+      "method_failure_percent": [32.31132075471698, 41.27948113207544]
+    }
+  },
+  "diagnostics": {
+    "C8-C16-diagnostic": {
+      "aepe": 8.273291085547996,
+      "pair_local_ready_percent": 79.71698113207547,
+      "grid_mean_l2_px_mean": 13.73118115764744
+    },
+    "C8-consensus-only": {
+      "aepe": 11.828917453873832,
+      "pair_local_ready_percent": 67.68867924528303,
+      "grid_mean_l2_px_mean": 19.780101400782478
+    },
+    "R8-diagnostic": {
+      "aepe": 14.708149150013924,
+      "pair_local_ready_percent": 70.04716981132076,
+      "grid_mean_l2_px_mean": 24.29215820189917
+    }
+  },
+  "cosine_top8_gt_oracle": {
+    "availability_percent": 100.0,
+    "aepe": 1.4792192079970297,
+    "pair_local_ready_percent": 99.52830188679245,
+    "grid_mean_l2_px_mean": 2.4101430785684093,
+    "cmr2_percent": 82.31132075471699,
+    "cmr5_percent": 99.52830188679245
+  },
+  "checks": {
+    "pair_local_ready_ge_90_percent": false,
+    "non_abstention_ge_90_percent": true,
+    "grid_mean_l2_px_le_8": false,
+    "all_finite": true,
+    "final_structure_valid": true,
+    "no_silent_solver_failure": true
+  },
+  "runtime_record_only": {
+    "seconds": 1255.4029415030964,
+    "peak_allocated_mib": 1158.744140625
+  },
+  "artifacts": {
+    "metrics": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-ACC-DIAG/run-01/accuracy/metrics.json",
+    "metrics_sha256": "00190a473ffe5ba7113d282f39f8cf1592ef76b77411117b1659865f211b1a3f",
+    "per_pair": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-ACC-DIAG/run-01/accuracy/per_pair.csv",
+    "per_pair_sha256": "8605ca5718224f7649cc3e3d9815cf4a5a05ca861e45b6a733a1c1102e77b66f",
+    "watchdog_job": "20260805_124412_c40ee093"
+  }
+}

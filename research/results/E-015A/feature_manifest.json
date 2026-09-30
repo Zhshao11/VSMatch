@@ -1,0 +1,109 @@
+{
+  "available": [
+    {
+      "checkpoint_path": "/mnt/sda/zhushihao/sourcecode/torch_hub/checkpoints/dinov2_vitl14_pretrain.pth",
+      "checkpoint_sha256": "d5383ea8f4877b2472eb973e0fd72d557c7da5d3611bd527ceeb1d7162cbf428",
+      "commit_or_tag": "ee4105c5c06ba62d819850bf89c8b39a1975779e",
+      "family": "foundation_dense",
+      "license": "DINOv2 upstream Apache-2.0; local notebook repo license not asserted",
+      "load_trace": {
+        "missing": [],
+        "unexpected": [
+          "mask_token"
+        ]
+      },
+      "local_reference_repo": "/mnt/sda/zhushihao/learning/Dino_V2",
+      "name": "foundation_dense/dinov2_vitl14_local",
+      "preprocessing": {
+        "feature_grid": "37x37 patch tokens sampled back to 512 pixel xy with align_corners=True",
+        "optical": "RGB uint8/255 -> resize 518 -> ImageNet mean/std",
+        "sar": "gray uint8/255 -> log1p(x*16)/log(17) -> 3ch -> resize 518 -> ImageNet mean/std"
+      },
+      "repo_url": "https://github.com/facebookresearch/dinov2 / timm vit_large_patch14_dinov2.lvd142m",
+      "status": "available"
+    }
+  ],
+  "created_unix_ns": 1786414159480978436,
+  "disabled": [
+    {
+      "commit_or_tag": null,
+      "exists": true,
+      "family": "foundation_dense",
+      "local_path": "/mnt/sda/zhushihao/openai/clip-vit-base-patch32",
+      "name": "foundation_dense/openclip_remoteclip",
+      "reason": "open_clip/transformers packages unavailable in gdros env; no verified local RemoteCLIP loader",
+      "repo_url": "https://github.com/haistair/RemoteCLIP",
+      "status": "disabled"
+    },
+    {
+      "exists": false,
+      "family": "foundation_dense",
+      "local_path": null,
+      "name": "foundation_dense/sam_sam2",
+      "reason": "segment_anything package/checkpoint unavailable; timm SAM-in1k would require HF download which timed out",
+      "repo_url": "https://github.com/facebookresearch/segment-anything",
+      "status": "disabled"
+    },
+    {
+      "exists": false,
+      "family": "foundation_dense",
+      "local_path": null,
+      "name": "foundation_dense/mae_encoder",
+      "reason": "MAE timm pretrained weights require HF download; download timed out, no local verified checkpoint",
+      "repo_url": "https://github.com/facebookresearch/mae",
+      "status": "disabled"
+    },
+    {
+      "checkpoint_path": "/mnt/sda/zhushihao/learning/XoFTR/demo/weights_xoftr_640.ckpt",
+      "checkpoint_sha256": "6e7f24e553f76746ef49061bf44c7d11252e56057470d1421bcd4e6506af3a67",
+      "commit_or_tag": "e0fbea431b30be9742effbf5577c90aa8eb938f9",
+      "exists": true,
+      "family": "cross_modal_matcher",
+      "local_path": "/mnt/sda/zhushihao/learning/XoFTR",
+      "name": "cross_modal_matcher/xoftr",
+      "reason": "local repo/checkpoint found but not promoted into formal run-01: official wrapper requires separate image resize/config validation; recorded for future dedicated matcher diagnostic",
+      "repo_url": "https://github.com/OnderT/XoFTR",
+      "status": "disabled"
+    },
+    {
+      "checkpoint_path": "/mnt/sda/zhushihao/sourcecode/learning/MINIMA/weights/minima_roma.pth",
+      "checkpoint_sha256": "17f3923bd780e8f1450792706e0643f70c8864ad11bf5fd4f2b54714bac23538",
+      "commit_or_tag": null,
+      "exists": true,
+      "family": "cross_modal_matcher",
+      "local_path": "/mnt/sda/zhushihao/sourcecode/learning/MINIMA",
+      "name": "cross_modal_matcher/roma_dkm_minima",
+      "reason": "local MINIMA/RoMa weights found but no frozen callable integration audited for E-015A run-01",
+      "repo_url": "https://github.com/LSXI7/MINIMA",
+      "status": "disabled"
+    },
+    {
+      "exists": false,
+      "family": "optical_sar_specific",
+      "local_path": null,
+      "name": "optical_sar_specific/promptmid",
+      "reason": "official code/checkpoint not found in approved local paths",
+      "repo_url": "https://github.com/lan-cz/PromptMID",
+      "status": "disabled"
+    },
+    {
+      "exists": false,
+      "family": "optical_sar_specific",
+      "local_path": null,
+      "name": "optical_sar_specific/soma",
+      "reason": "official code/checkpoint not found in approved local paths",
+      "repo_url": "https://github.com/fitzpchao/SOMA",
+      "status": "disabled"
+    },
+    {
+      "exists": false,
+      "family": "cross_modal_matcher",
+      "local_path": null,
+      "name": "cross_modal_matcher/matchanything",
+      "reason": "official package/checkpoint not installed locally",
+      "repo_url": "https://github.com/zymk9/MatchAnything",
+      "status": "disabled"
+    }
+  ],
+  "json_sha256": "f73b05fa352c33149b6244360c2643075690d5732d0e8fce8ab582508ad8fd1f"
+}

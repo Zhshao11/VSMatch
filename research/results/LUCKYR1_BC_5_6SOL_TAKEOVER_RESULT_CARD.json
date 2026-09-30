@@ -1,0 +1,75 @@
+{
+  "status": "SUPERSEDED_BY_20260915_RECOVERY_CARD",
+  "last_completed_stage": "SUPERSEDED",
+  "superseded_by": "research/results/LUCKYR1_RECOVERY_20260915_RESULT_CARD.json",
+  "updated_at": "2026-09-13T21:54:34+08:00",
+  "scope": "current-model LuckyR1-B/C exploratory short training",
+  "audit": {
+    "B": {
+      "status": "IMPLEMENTATION_VALID",
+      "findings": [
+        "uses the real CorrBlock output before the real BasicUpdateBlock",
+        "preserves raw correlation as an additive base",
+        "CorrBlock 81-channel candidate order matches the official implementation",
+        "target offsets are transformed by the local target-coordinate Jacobian",
+        "no coordinate, tensor-shape, or gradient-path defect found"
+      ]
+    },
+    "C_v1": {
+      "status": "IMPLEMENTATION_REJECTED",
+      "reason": "The belief collapsed 81 candidates to one global expected target and then smoothed expected flow. The recurrent state also retained one expected target. This violated the required separated-mode and candidate-to-candidate geometry semantics."
+    },
+    "training_and_evaluation": {
+      "official_404_mapping": "PASS: ordered indices [0,404) reproduce the historical E075A manifest view",
+      "prediction_before_gt_join": "PASS",
+      "checkpoint_resume": "PASS for trainable-delta evidence checkpoints; no B/C milestone checkpoint currently exists",
+      "cost_gate": "PASS: first current-model decision point is step500 against protected M4 pair-level metrics",
+      "metric_scope": "pair-level AEPE and CMR@1/2/5/10/16"
+    }
+  },
+  "v2": {
+    "implementation_version": "luckyr1-bc-v2-sparse-multimode-20260913",
+    "model_file": "research/remote_stage/luckyr1/luckyr1_models_v2.py",
+    "pipeline_file": "research/remote_stage/luckyr1/luckyr1_pipeline_v2.py",
+    "model_sha256": "8c1509e79dcbbff977f17ff0dc733cd51250c889c02d2a78918ed338bc3026cc",
+    "pipeline_sha256": "a46477fb75a84c0dd9d5bcda469289c83ebf307a82d170c83bf852f10f127e66",
+    "changes": [
+      "keeps multiple hard-selected candidate modes with differentiable selected probabilities",
+      "computes bounded candidate-to-candidate messages across cardinal source neighbors",
+      "uses the local full mapping Jacobian for geometry compatibility",
+      "stores detached recurrent modes in absolute target coordinates",
+      "retains unmatched probability mass and additive raw correlation"
+    ],
+    "local_cpu_contract_test": "PASS",
+    "remote_cpu_contract_test": "PASS",
+    "remote_model_facing_g0": "QUEUED: 20260913_214418_b3a88a40",
+    "remote_peak_memory_check": "PENDING"
+  },
+  "scheduler": {
+    "old_b_job": "20260913_205220_657c5bbc",
+    "old_c_job": "20260913_205131_af43d5e9",
+    "old_jobs_last_verified_status": "cancelled/retired with attempt cards preserved",
+    "queue_changed": true,
+    "v2_g0_job": "20260913_214418_b3a88a40",
+    "v2_g0_status": "queued",
+    "new_b_task": "exploratory_b_v4 waiting on exploratory_v2_g0",
+    "new_c_task": "exploratory_c_v4 waiting on exploratory_v2_g0",
+    "capacity_observation": "all eight GPUs have compute PIDs; clean F3 priority20 precedes v2 G0 priority10; B/C priority5",
+    "clean_f2_job": "20260913_203510_3576ef8f",
+    "clean_f2_last_verified_status": "running with increasing CPU ticks",
+    "clean_f3_job": "20260913_203510_641afbbf",
+    "clean_f3_last_verified_status": "queued",
+    "candidate_gpus": null,
+    "logical_device": "cuda:0"
+  },
+  "blocker": null,
+  "endpoint": {
+    "B": "PENDING_REMOTE_CAPACITY",
+    "C": "PENDING_REMOTE_CAPACITY",
+    "metrics_available": false,
+    "long_training_authority": "zzvr dedicated watchdog/orchestrator"
+  },
+  "protected_m4_sha256": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b",
+  "protected_m4_modified": false,
+  "whu_started": false
+}

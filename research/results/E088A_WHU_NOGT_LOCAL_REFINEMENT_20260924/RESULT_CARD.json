@@ -1,0 +1,17 @@
+{
+  "status": "STOPPED_AT_P0_NO_CANDIDATE_DISCERNIBILITY",
+  "experiment": "E088A-WHU-NOGT-LOCAL-REFINEMENT",
+  "frozen_checkpoint_sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a",
+  "completed_stages": [
+    "P0_NO_GT_SMOKE",
+    "P0_700_PAIR_PREDICTION_MATERIALIZATION",
+    "P0_GT_DIAGNOSTIC_JOIN"
+  ],
+  "p0_result": "P0/RESULT_CARD.json",
+  "p1": "NOT_RUN_BY_P0_GATE",
+  "p2": "NOT_RUN_BY_P0_GATE",
+  "decision": "Do not train the proposed local scoring/residual head with the current frozen feature interface.",
+  "protected_os_e075a_m4_modified": false,
+  "e081a_m4_checkpoint_modified": false,
+  "lucky_r2_started": false
+}

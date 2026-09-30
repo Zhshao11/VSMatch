@@ -1,0 +1,13 @@
+{
+  "candidate_gpus": null,
+  "checkpoint_sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a",
+  "elapsed_seconds": 515.9186913967133,
+  "last_completed_stage": "FORWARD_REVERSE_ANCHOR_CACHE_SHARD_COMPLETE",
+  "logical_device": "cuda:0",
+  "next_stage": "P0_ANCHOR_CACHE_REDUCE",
+  "pairs": 1400,
+  "shard": 1,
+  "shards": 4,
+  "status": "PASS",
+  "truth_flow_opened": false
+}

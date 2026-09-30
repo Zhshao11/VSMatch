@@ -1,0 +1,12 @@
+{
+  "candidate_gpus": null,
+  "elapsed_seconds": 8.060702323913574,
+  "last_completed_stage": "P1_16_PAIR_PREDICTIONS_MATERIALIZED_BEFORE_GT",
+  "logical_device": "cuda:0",
+  "manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-089A-WHU-HIGHRES-CROSSMODAL-RESIDUAL-REFINER/P1_inference/PREDICTIONS.jsonl",
+  "manifest_sha256": "ce495a20eb9e2912cd813ea947dd4e3d79e3fa7e4472592718fca90f40c415e2",
+  "next_stage": "P1_GT_JOIN",
+  "pairs": 16,
+  "prediction_materialized_before_gt_join": true,
+  "status": "COMPLETE"
+}

@@ -1,0 +1,739 @@
+{
+  "groups": [
+    {
+      "cosine_R32_r1_percent": 43.38214551484457,
+      "cosine_R64_r2_percent": 77.11124477085255,
+      "cosine_top1_inlier_percent": 6.19387427801993,
+      "native_cosine_hard_k128:aepe": 96.74962500806124,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 93.74569172949161,
+        "p97_5": 99.78723294240123,
+        "point": 96.74962500806124,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 105.56618722879662,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 102.58847494485242,
+        "p97_5": 108.6384665579166,
+        "point": 105.56618722879662,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "visibility_gt_inbounds_fraction",
+      "proxy_max": 0.8515625,
+      "proxy_mean": 0.796653891509434,
+      "proxy_min": 0.625,
+      "quartile": 1
+    },
+    {
+      "cosine_R32_r1_percent": 45.57548127034835,
+      "cosine_R64_r2_percent": 78.22205265958779,
+      "cosine_top1_inlier_percent": 7.522947603273923,
+      "native_cosine_hard_k128:aepe": 83.40725992310722,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 79.89282762239564,
+        "p97_5": 86.78801239211604,
+        "point": 83.40725992310722,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 95.8275321744523,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 92.66698222610187,
+        "p97_5": 99.15869246788745,
+        "point": 95.8275321744523,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "visibility_gt_inbounds_fraction",
+      "proxy_max": 0.90625,
+      "proxy_mean": 0.8862765330188679,
+      "proxy_min": 0.859375,
+      "quartile": 2
+    },
+    {
+      "cosine_R32_r1_percent": 48.19016674200442,
+      "cosine_R64_r2_percent": 80.1380762877539,
+      "cosine_top1_inlier_percent": 8.38110303472667,
+      "native_cosine_hard_k128:aepe": 73.40754627731611,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 70.35424200004002,
+        "p97_5": 76.4597822333282,
+        "point": 73.40754627731611,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 85.24568647708533,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 82.105851419017,
+        "p97_5": 88.24343824746474,
+        "point": 85.24568647708533,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "visibility_gt_inbounds_fraction",
+      "proxy_max": 0.9453125,
+      "proxy_mean": 0.9289504716981132,
+      "proxy_min": 0.90625,
+      "quartile": 3
+    },
+    {
+      "cosine_R32_r1_percent": 49.70258886438124,
+      "cosine_R64_r2_percent": 81.72281672653034,
+      "cosine_top1_inlier_percent": 9.097476123975982,
+      "native_cosine_hard_k128:aepe": 66.24573369296093,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 63.83205521241674,
+        "p97_5": 68.83755338866756,
+        "point": 66.24573369296093,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 79.16907173732541,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 76.94383124585423,
+        "p97_5": 81.62342544501684,
+        "point": 79.16907173732541,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "visibility_gt_inbounds_fraction",
+      "proxy_max": 1.0,
+      "proxy_mean": 0.9770784198113207,
+      "proxy_min": 0.9453125,
+      "quartile": 4
+    },
+    {
+      "cosine_R32_r1_percent": 52.23787494752013,
+      "cosine_R64_r2_percent": 82.68031452893136,
+      "cosine_top1_inlier_percent": 8.64808454615476,
+      "native_cosine_hard_k128:aepe": 71.61652672965572,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 68.90639084779991,
+        "p97_5": 74.39490625543415,
+        "point": 71.61652672965572,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 82.57351519026847,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 79.69104703687272,
+        "p97_5": 85.60011590471808,
+        "point": 82.57351519026847,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "ambiguity_cosine_mean_entropy",
+      "proxy_max": 0.9210812277160585,
+      "proxy_mean": 0.9157160966094794,
+      "proxy_min": 0.8842259948141873,
+      "quartile": 1
+    },
+    {
+      "cosine_R32_r1_percent": 51.467973021236915,
+      "cosine_R64_r2_percent": 82.81389382023306,
+      "cosine_top1_inlier_percent": 9.517119610193763,
+      "native_cosine_hard_k128:aepe": 75.59383521889741,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 71.94043213016582,
+        "p97_5": 79.17992594646957,
+        "point": 75.59383521889741,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 87.33269669874659,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 84.15378626967376,
+        "p97_5": 90.66419358343448,
+        "point": 87.33269669874659,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "ambiguity_cosine_mean_entropy",
+      "proxy_max": 0.9262155792675912,
+      "proxy_mean": 0.9237808132816527,
+      "proxy_min": 0.9210926694795489,
+      "quartile": 2
+    },
+    {
+      "cosine_R32_r1_percent": 46.59650188028903,
+      "cosine_R64_r2_percent": 79.46893184155412,
+      "cosine_top1_inlier_percent": 7.687573742548684,
+      "native_cosine_hard_k128:aepe": 83.41223425235388,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 79.37171508321222,
+        "p97_5": 87.3294876449513,
+        "point": 83.41223425235388,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 95.14528771166532,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 91.67542213583893,
+        "p97_5": 98.56484812070738,
+        "point": 95.14528771166532,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "ambiguity_cosine_mean_entropy",
+      "proxy_max": 0.9302757536061108,
+      "proxy_mean": 0.9282305716440292,
+      "proxy_min": 0.9262543763034046,
+      "quartile": 3
+    },
+    {
+      "cosine_R32_r1_percent": 36.54803254253252,
+      "cosine_R64_r2_percent": 72.23105025400605,
+      "cosine_top1_inlier_percent": 5.3426231410992955,
+      "native_cosine_hard_k128:aepe": 89.18756870053849,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 85.57451778267915,
+        "p97_5": 92.95382835820037,
+        "point": 89.18756870053849,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 100.75697801697929,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 97.66417127105426,
+        "p97_5": 103.8179301117951,
+        "point": 100.75697801697929,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "ambiguity_cosine_mean_entropy",
+      "proxy_max": 0.9375149677507579,
+      "proxy_mean": 0.9322609645007003,
+      "proxy_min": 0.9302931893616915,
+      "quartile": 4
+    },
+    {
+      "cosine_R32_r1_percent": 42.83490562553724,
+      "cosine_R64_r2_percent": 76.49444608351291,
+      "cosine_top1_inlier_percent": 6.193704417850294,
+      "native_cosine_hard_k128:aepe": 82.10843233792286,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 78.78013791858027,
+        "p97_5": 85.53702097658841,
+        "point": 82.10843233792286,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 94.81331055119352,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 91.34355479726251,
+        "p97_5": 98.1577178865109,
+        "point": 94.81331055119352,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "confidence_cosine_mean_margin",
+      "proxy_max": 0.02616883907467127,
+      "proxy_mean": 0.024670297162440378,
+      "proxy_min": 0.02140029368456453,
+      "quartile": 1
+    },
+    {
+      "cosine_R32_r1_percent": 43.171330653410266,
+      "cosine_R64_r2_percent": 77.29728912079143,
+      "cosine_top1_inlier_percent": 6.799061536285031,
+      "native_cosine_hard_k128:aepe": 80.95428063734522,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 77.3576091937299,
+        "p97_5": 84.87676284898002,
+        "point": 80.95428063734522,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 91.08250344474361,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 87.97396794085232,
+        "p97_5": 94.39865629807957,
+        "point": 91.08250344474361,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "confidence_cosine_mean_margin",
+      "proxy_max": 0.027897524880245328,
+      "proxy_mean": 0.027090922795359115,
+      "proxy_min": 0.02620883146300912,
+      "quartile": 2
+    },
+    {
+      "cosine_R32_r1_percent": 48.6828034766173,
+      "cosine_R64_r2_percent": 80.83219327664882,
+      "cosine_top1_inlier_percent": 8.524700931069251,
+      "native_cosine_hard_k128:aepe": 80.98967782506404,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 77.17096473405945,
+        "p97_5": 84.91999760393826,
+        "point": 80.98967782506404,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 91.41849740946068,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 87.87444364529736,
+        "p97_5": 95.09846439361571,
+        "point": 91.41849740946068,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "confidence_cosine_mean_margin",
+      "proxy_max": 0.03011455456726253,
+      "proxy_mean": 0.029009782373114436,
+      "proxy_min": 0.027899674838408828,
+      "quartile": 3
+    },
+    {
+      "cosine_R32_r1_percent": 52.161342636013785,
+      "cosine_R64_r2_percent": 82.57026196377143,
+      "cosine_top1_inlier_percent": 9.677934154791927,
+      "native_cosine_hard_k128:aepe": 75.75777410111337,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 71.84291837800224,
+        "p97_5": 79.71360485958603,
+        "point": 75.75777410111337,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 88.49416621226185,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 84.94842001627076,
+        "p97_5": 92.44936899059223,
+        "point": 88.49416621226185,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "confidence_cosine_mean_margin",
+      "proxy_max": 0.03664682758972049,
+      "proxy_mean": 0.03171721164286488,
+      "proxy_min": 0.030121475225314498,
+      "quartile": 4
+    },
+    {
+      "cosine_R32_r1_percent": 48.80853557383465,
+      "cosine_R64_r2_percent": 80.03114384031166,
+      "cosine_top1_inlier_percent": 8.019322258232599,
+      "native_cosine_hard_k128:aepe": 76.5715847375258,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 73.44142797308149,
+        "p97_5": 79.96641713178383,
+        "point": 76.5715847375258,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 87.59052161450656,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 84.41131872411043,
+        "p97_5": 90.92658516865856,
+        "point": 87.59052161450656,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "collision_cosine_unique_target_ratio",
+      "proxy_max": 0.9296875,
+      "proxy_mean": 0.9129569575471698,
+      "proxy_min": 0.828125,
+      "quartile": 1
+    },
+    {
+      "cosine_R32_r1_percent": 46.853077260575155,
+      "cosine_R64_r2_percent": 79.69820012080699,
+      "cosine_top1_inlier_percent": 7.400980532493353,
+      "native_cosine_hard_k128:aepe": 80.84211644586527,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 77.17653435851044,
+        "p97_5": 84.98738669989244,
+        "point": 80.84211644586527,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 90.39012340329728,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 86.67262071933386,
+        "p97_5": 93.89534888177548,
+        "point": 90.39012340329728,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "collision_cosine_unique_target_ratio",
+      "proxy_max": 0.953125,
+      "proxy_mean": 0.9433225235849056,
+      "proxy_min": 0.9296875,
+      "quartile": 2
+    },
+    {
+      "cosine_R32_r1_percent": 47.438552001493406,
+      "cosine_R64_r2_percent": 79.29842946705007,
+      "cosine_top1_inlier_percent": 8.264381239898789,
+      "native_cosine_hard_k128:aepe": 80.9583693450352,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 77.24137763437236,
+        "p97_5": 84.76813397767408,
+        "point": 80.9583693450352,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 92.91729459222758,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 88.99464296484894,
+        "p97_5": 96.77423201327053,
+        "point": 92.91729459222758,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "collision_cosine_unique_target_ratio",
+      "proxy_max": 0.96875,
+      "proxy_mean": 0.9593160377358491,
+      "proxy_min": 0.953125,
+      "quartile": 3
+    },
+    {
+      "cosine_R32_r1_percent": 43.750217555675384,
+      "cosine_R64_r2_percent": 78.1664170165559,
+      "cosine_top1_inlier_percent": 7.510717009371767,
+      "native_cosine_hard_k128:aepe": 81.43809437301924,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 77.66968880239523,
+        "p97_5": 85.34098450462773,
+        "point": 81.43809437301924,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 94.91053800762825,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 91.79477982071211,
+        "p97_5": 97.94944540059791,
+        "point": 94.91053800762825,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "collision_cosine_unique_target_ratio",
+      "proxy_max": 1.0,
+      "proxy_mean": 0.9774469339622641,
+      "proxy_min": 0.96875,
+      "quartile": 4
+    },
+    {
+      "cosine_R32_r1_percent": 50.27280175939078,
+      "cosine_R64_r2_percent": 80.79847615262358,
+      "cosine_top1_inlier_percent": 8.856413804577466,
+      "native_cosine_hard_k128:aepe": 82.53715007710007,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 78.9192378961815,
+        "p97_5": 86.27324184651644,
+        "point": 82.53715007710007,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 94.78962840674059,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 91.14383340961528,
+        "p97_5": 98.53014805451878,
+        "point": 94.78962840674059,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "collision_cosine_max_target_reuse",
+      "proxy_max": 2.0,
+      "proxy_mean": 1.990566037735849,
+      "proxy_min": 1.0,
+      "quartile": 1
+    },
+    {
+      "cosine_R32_r1_percent": 41.69407636363074,
+      "cosine_R64_r2_percent": 76.51780990519941,
+      "cosine_top1_inlier_percent": 6.665375333418083,
+      "native_cosine_hard_k128:aepe": 81.50337546726443,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 77.40266714006101,
+        "p97_5": 85.4422955315068,
+        "point": 81.50337546726443,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 92.10116998204646,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 88.77216744242975,
+        "p97_5": 95.4129483897731,
+        "point": 92.10116998204646,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "collision_cosine_max_target_reuse",
+      "proxy_max": 2.0,
+      "proxy_mean": 2.0,
+      "proxy_min": 2.0,
+      "quartile": 2
+    },
+    {
+      "cosine_R32_r1_percent": 45.9754119923029,
+      "cosine_R64_r2_percent": 79.22492697057581,
+      "cosine_top1_inlier_percent": 7.245589125757822,
+      "native_cosine_hard_k128:aepe": 80.02099936863162,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 76.91385691840694,
+        "p97_5": 83.35973192970708,
+        "point": 80.02099936863162,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 91.95105923346753,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 88.9453597392676,
+        "p97_5": 95.06371610749441,
+        "point": 91.95105923346753,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "collision_cosine_max_target_reuse",
+      "proxy_max": 3.0,
+      "proxy_mean": 2.4245283018867925,
+      "proxy_min": 2.0,
+      "quartile": 3
+    },
+    {
+      "cosine_R32_r1_percent": 48.90809227625417,
+      "cosine_R64_r2_percent": 80.65297741632578,
+      "cosine_top1_inlier_percent": 8.428022776243134,
+      "native_cosine_hard_k128:aepe": 75.74863998844938,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 71.80889017806862,
+        "p97_5": 79.45905224062362,
+        "point": 75.74863998844938,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 86.96661999540508,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 83.41778008353036,
+        "p97_5": 90.64370418134725,
+        "point": 86.96661999540508,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "collision_cosine_max_target_reuse",
+      "proxy_max": 7.0,
+      "proxy_mean": 3.4056603773584904,
+      "proxy_min": 3.0,
+      "quartile": 4
+    },
+    {
+      "cosine_R32_r1_percent": 48.14638113598302,
+      "cosine_R64_r2_percent": 80.71182470364782,
+      "cosine_top1_inlier_percent": 9.063852232781736,
+      "native_cosine_hard_k128:aepe": 73.10928521066342,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 69.77802248990761,
+        "p97_5": 76.56345004585555,
+        "point": 73.10928521066342,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 86.92898282464945,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 84.23194446923597,
+        "p97_5": 89.81633431416637,
+        "point": 86.92898282464945,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "large_transform_corner_linf_px",
+      "proxy_max": 88.37461161240935,
+      "proxy_mean": 57.86072032246739,
+      "proxy_min": 11.311280488967896,
+      "quartile": 1
+    },
+    {
+      "cosine_R32_r1_percent": 46.656727233476275,
+      "cosine_R64_r2_percent": 79.55153419265463,
+      "cosine_top1_inlier_percent": 7.333165452891843,
+      "native_cosine_hard_k128:aepe": 78.35064157449975,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 75.04573195835329,
+        "p97_5": 81.79018407857642,
+        "point": 78.35064157449975,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 90.53133593865161,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 87.17173366726568,
+        "p97_5": 94.11617936998044,
+        "point": 90.53133593865161,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "large_transform_corner_linf_px",
+      "proxy_max": 125.40943424403667,
+      "proxy_mean": 109.74936739943114,
+      "proxy_min": 89.30128964781761,
+      "quartile": 2
+    },
+    {
+      "cosine_R32_r1_percent": 47.59702108632322,
+      "cosine_R64_r2_percent": 79.78580806452169,
+      "cosine_top1_inlier_percent": 7.969555558205889,
+      "native_cosine_hard_k128:aepe": 80.21026942415058,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 76.59871798011491,
+        "p97_5": 83.84425570290043,
+        "point": 80.21026942415058,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 91.59066095891988,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 87.77204783007784,
+        "p97_5": 95.28086580780317,
+        "point": 91.59066095891988,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "large_transform_corner_linf_px",
+      "proxy_max": 163.17068158090115,
+      "proxy_mean": 143.2873461389879,
+      "proxy_min": 125.57573863863945,
+      "quartile": 3
+    },
+    {
+      "cosine_R32_r1_percent": 44.45025293579607,
+      "cosine_R64_r2_percent": 77.14502348390049,
+      "cosine_top1_inlier_percent": 6.828827796117039,
+      "native_cosine_hard_k128:aepe": 88.13996869213176,
+      "native_cosine_hard_k128:aepe_ci": {
+        "p2_5": 84.46935130875066,
+        "p97_5": 91.926381111145,
+        "point": 88.13996869213176,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_cosine_hard_k128:pair_local_ready_percent": 0.0,
+      "native_raw_hard_k128:aepe": 96.75749789543872,
+      "native_raw_hard_k128:aepe_ci": {
+        "p2_5": 93.06296280375066,
+        "p97_5": 100.43606464008116,
+        "point": 96.75749789543872,
+        "replicates": 2000,
+        "unit": "image-pair"
+      },
+      "native_raw_hard_k128:pair_local_ready_percent": 0.0,
+      "pair_count": 106,
+      "proxy": "large_transform_corner_linf_px",
+      "proxy_max": 254.56428915262222,
+      "proxy_mean": 192.77376130666093,
+      "proxy_min": 163.1833976060152,
+      "quartile": 4
+    }
+  ],
+  "label_policy": "All groups are measurable proxies; no occlusion, repeated-texture, or semantic labels are claimed.",
+  "proxies": {
+    "ambiguity_cosine_mean_entropy": {
+      "definition": "rank quartiles over 424 image pairs; proxy only, not a semantic label",
+      "max": 0.9375149677507579,
+      "median": 0.9262349777854979,
+      "min": 0.8842259948141873
+    },
+    "collision_cosine_max_target_reuse": {
+      "definition": "rank quartiles over 424 image pairs; proxy only, not a semantic label",
+      "max": 7.0,
+      "median": 2.0,
+      "min": 1.0
+    },
+    "collision_cosine_unique_target_ratio": {
+      "definition": "rank quartiles over 424 image pairs; proxy only, not a semantic label",
+      "max": 1.0,
+      "median": 0.953125,
+      "min": 0.828125
+    },
+    "confidence_cosine_mean_margin": {
+      "definition": "rank quartiles over 424 image pairs; proxy only, not a semantic label",
+      "max": 0.03664682758972049,
+      "median": 0.027898599859327078,
+      "min": 0.02140029368456453
+    },
+    "large_transform_corner_linf_px": {
+      "definition": "rank quartiles over 424 image pairs; proxy only, not a semantic label",
+      "max": 254.56428915262222,
+      "median": 125.49258644133806,
+      "min": 11.311280488967896
+    },
+    "visibility_gt_inbounds_fraction": {
+      "definition": "rank quartiles over 424 image pairs; proxy only, not a semantic label",
+      "max": 1.0,
+      "median": 0.90625,
+      "min": 0.625
+    }
+  }
+}

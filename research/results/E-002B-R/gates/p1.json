@@ -1,0 +1,313 @@
+{
+  "checks": {
+    "counts": true,
+    "fp32_finite": true,
+    "fresh_processes": true,
+    "no_truth": true,
+    "optimized_p50_le_80ms": false,
+    "optimized_warm_allocated_le_284mib": true,
+    "speedup_ge_8x": false
+  },
+  "experiment": "E-002B-R",
+  "optimized_p50_ms": 205.05558200000002,
+  "passed": false,
+  "reference_p50_ms": 895.2406295,
+  "speedup": 4.365843742307877,
+  "stage": "P1",
+  "workers": {
+    "optimized": {
+      "cold": {
+        "peak_allocated_bytes": 52014592,
+        "peak_reserved_bytes": 81788928,
+        "wall_ms": 347.07798
+      },
+      "compile_caches": {
+        "cuda": {
+          "file_count": 0,
+          "files": {},
+          "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01/p1/caches/optimized/cuda",
+          "size_bytes": 0
+        },
+        "torchinductor": {
+          "file_count": 0,
+          "files": {},
+          "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01/p1/caches/optimized/torchinductor",
+          "size_bytes": 0
+        },
+        "triton": {
+          "file_count": 0,
+          "files": {},
+          "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01/p1/caches/optimized/triton",
+          "size_bytes": 0
+        }
+      },
+      "environment": {
+        "cuda_runtime": "12.1",
+        "cuda_visible_devices": "2",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "hostname": "ps",
+        "inference_mode": true,
+        "pid": 168131,
+        "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.17",
+        "ppid": 167340,
+        "python": "3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:52:49) \n[GCC 13.3.0]",
+        "tf32_cudnn": false,
+        "tf32_matmul": false,
+        "torch": "2.4.1+cu121",
+        "truth_flow_loaded": false
+      },
+      "experiment": "E-002B-R",
+      "implementation_block": 4096,
+      "output": {
+        "abstained": false,
+        "dtype": "torch.float32",
+        "finite": true,
+        "hypothesis_id": 99257,
+        "shape": [
+          1,
+          2,
+          512,
+          512
+        ]
+      },
+      "provenance": {
+        "checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+        "fixture_sha256": "2f666a85ed7464542be02af819c24553773574520afbbba4e226f718c13aa5a7",
+        "slim_parameter_count": 4804448,
+        "worker_sha256": "e0597d75c4372f5d7fd5b2990d5027aecbc9df1944123227c0cb6efbbc0c3785"
+      },
+      "repeats": 200,
+      "role": "optimized",
+      "rss": [
+        {
+          "pid": 168131,
+          "proc_status": {
+            "VmHWM": {
+              "unit": "kB",
+              "value": 578704
+            },
+            "VmRSS": {
+              "unit": "kB",
+              "value": 570508
+            }
+          },
+          "ru_maxrss_kib": 578704,
+          "stage": "start",
+          "time_ns": 1785901120636145123
+        },
+        {
+          "pid": 168131,
+          "proc_status": {
+            "VmHWM": {
+              "unit": "kB",
+              "value": 759836
+            },
+            "VmRSS": {
+              "unit": "kB",
+              "value": 759836
+            }
+          },
+          "ru_maxrss_kib": 759836,
+          "stage": "model_loaded",
+          "time_ns": 1785901120993374147
+        },
+        {
+          "pid": 168131,
+          "proc_status": {
+            "VmHWM": {
+              "unit": "kB",
+              "value": 1107244
+            },
+            "VmRSS": {
+              "unit": "kB",
+              "value": 1107244
+            }
+          },
+          "ru_maxrss_kib": 1107244,
+          "stage": "candidates_ready",
+          "time_ns": 1785901126404639398
+        },
+        {
+          "pid": 168131,
+          "proc_status": {
+            "VmHWM": {
+              "unit": "kB",
+              "value": 1348300
+            },
+            "VmRSS": {
+              "unit": "kB",
+              "value": 1348300
+            }
+          },
+          "ru_maxrss_kib": 1348300,
+          "stage": "post_timing",
+          "time_ns": 1785901171992858982
+        }
+      ],
+      "stage": "P1",
+      "timing": {
+        "count": 200,
+        "cuda_p50_ms": 205.02540588378906,
+        "cuda_p95_ms": 209.0294631958008,
+        "wall_mean_ms": 205.458112335,
+        "wall_p50_ms": 205.05558200000002,
+        "wall_p95_ms": 209.0603283
+      },
+      "warm": {
+        "peak_allocated_bytes": 54758400,
+        "peak_reserved_bytes": 81788928
+      },
+      "warmup": 20
+    },
+    "reference": {
+      "cold": {
+        "peak_allocated_bytes": 46335488,
+        "peak_reserved_bytes": 58720256,
+        "wall_ms": 1075.741227
+      },
+      "compile_caches": {
+        "cuda": {
+          "file_count": 0,
+          "files": {},
+          "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01/p1/caches/reference/cuda",
+          "size_bytes": 0
+        },
+        "torchinductor": {
+          "file_count": 0,
+          "files": {},
+          "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01/p1/caches/reference/torchinductor",
+          "size_bytes": 0
+        },
+        "triton": {
+          "file_count": 0,
+          "files": {},
+          "manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01/p1/caches/reference/triton",
+          "size_bytes": 0
+        }
+      },
+      "environment": {
+        "cuda_runtime": "12.1",
+        "cuda_visible_devices": "2",
+        "gpu_name": "NVIDIA GeForce RTX 4090",
+        "hostname": "ps",
+        "inference_mode": true,
+        "pid": 167341,
+        "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.17",
+        "ppid": 167340,
+        "python": "3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:52:49) \n[GCC 13.3.0]",
+        "tf32_cudnn": false,
+        "tf32_matmul": false,
+        "torch": "2.4.1+cu121",
+        "truth_flow_loaded": false
+      },
+      "experiment": "E-002B-R",
+      "implementation_block": 4096,
+      "output": {
+        "abstained": false,
+        "dtype": "torch.float32",
+        "finite": true,
+        "hypothesis_id": 99257,
+        "shape": [
+          1,
+          2,
+          512,
+          512
+        ]
+      },
+      "provenance": {
+        "checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+        "fixture_sha256": "2f666a85ed7464542be02af819c24553773574520afbbba4e226f718c13aa5a7",
+        "slim_parameter_count": 4804448,
+        "worker_sha256": "e0597d75c4372f5d7fd5b2990d5027aecbc9df1944123227c0cb6efbbc0c3785"
+      },
+      "repeats": 200,
+      "role": "reference",
+      "rss": [
+        {
+          "pid": 167341,
+          "proc_status": {
+            "VmHWM": {
+              "unit": "kB",
+              "value": 576876
+            },
+            "VmRSS": {
+              "unit": "kB",
+              "value": 568680
+            }
+          },
+          "ru_maxrss_kib": 576876,
+          "stage": "start",
+          "time_ns": 1785900912910529677
+        },
+        {
+          "pid": 167341,
+          "proc_status": {
+            "VmHWM": {
+              "unit": "kB",
+              "value": 756672
+            },
+            "VmRSS": {
+              "unit": "kB",
+              "value": 756672
+            }
+          },
+          "ru_maxrss_kib": 756672,
+          "stage": "model_loaded",
+          "time_ns": 1785900913333112022
+        },
+        {
+          "pid": 167341,
+          "proc_status": {
+            "VmHWM": {
+              "unit": "kB",
+              "value": 1099860
+            },
+            "VmRSS": {
+              "unit": "kB",
+              "value": 1099860
+            }
+          },
+          "ru_maxrss_kib": 1099860,
+          "stage": "candidates_ready",
+          "time_ns": 1785900918796535291
+        },
+        {
+          "pid": 167341,
+          "proc_status": {
+            "VmHWM": {
+              "unit": "kB",
+              "value": 1364396
+            },
+            "VmRSS": {
+              "unit": "kB",
+              "value": 1364396
+            }
+          },
+          "ru_maxrss_kib": 1364396,
+          "stage": "post_timing",
+          "time_ns": 1785901117260165296
+        }
+      ],
+      "stage": "P1",
+      "timing": {
+        "count": 200,
+        "cuda_p50_ms": 895.18017578125,
+        "cuda_p95_ms": 901.0928619384765,
+        "wall_mean_ms": 897.0654991299999,
+        "wall_p50_ms": 895.2406295,
+        "wall_p95_ms": 901.1499196
+      },
+      "warm": {
+        "peak_allocated_bytes": 48438784,
+        "peak_reserved_bytes": 58720256
+      },
+      "warmup": 20
+    }
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "A1": {
+    "1": {
+      "elapsed_seconds": 4.3105175495147705,
+      "entropy_mean": 0.14000169932842255,
+      "last_completed_stage": "A1_GT_JOIN",
+      "pair_rows": [
+        {
+          "entropy": 0.14000169932842255,
+          "in_window_percent": 72.2869873046875,
+          "pair_id": "001864_opt",
+          "top1": 13.28999137878418,
+          "top5": 46.9434700012207
+        }
+      ],
+      "pairs": 1,
+      "prediction_materialized_before_gt_join": true,
+      "random_top1": 1.2345679012345678,
+      "random_top5": 6.172839506172839,
+      "status": "COMPLETE",
+      "top1_percent": 13.289990290032508,
+      "top5_percent": 46.9434711022924
+    },
+    "4": {
+      "elapsed_seconds": 3.297081232070923,
+      "entropy_mean": 0.35264110937714577,
+      "last_completed_stage": "A1_GT_JOIN",
+      "pair_rows": [
+        {
+          "entropy": 0.39150470495224,
+          "in_window_percent": 100.0,
+          "pair_id": "001648_opt",
+          "top1": 2.03399658203125,
+          "top5": 11.70654296875
+        },
+        {
+          "entropy": 0.3967759311199188,
+          "in_window_percent": 72.2869873046875,
+          "pair_id": "001864_opt",
+          "top1": 3.1198549270629883,
+          "top5": 16.4647274017334
+        },
+        {
+          "entropy": 0.41762542724609375,
+          "in_window_percent": 81.46514892578125,
+          "pair_id": "005104_opt",
+          "top1": 10.73629379272461,
+          "top5": 51.12850570678711
+        },
+        {
+          "entropy": 0.2046583741903305,
+          "in_window_percent": 100.0,
+          "pair_id": "005200_opt",
+          "top1": 0.55694580078125,
+          "top5": 77.0721435546875
+        }
+      ],
+      "pairs": 4,
+      "prediction_materialized_before_gt_join": true,
+      "random_top1": 1.2345679012345678,
+      "random_top5": 6.172839506172839,
+      "status": "COMPLETE",
+      "top1_percent": 3.842387905191192,
+      "top5_percent": 40.235080984320746
+    },
+    "16": {
+      "elapsed_seconds": 3.666741132736206,
+      "entropy_mean": 0.41370884887874126,
+      "last_completed_stage": "A1_GT_JOIN",
+      "pair_rows": [
+        {
+          "entropy": 0.4057576656341553,
+          "in_window_percent": 5.8837890625,
+          "pair_id": "001264_opt",
+          "top1": 1.8153527975082397,
+          "top5": 9.232365608215332
+        },
+        {
+          "entropy": 0.4126072824001312,
+          "in_window_percent": 97.381591796875,
+          "pair_id": "001544_opt",
+          "top1": 0.007834534160792828,
+          "top5": 0.3259166479110718
+        },
+        {
+          "entropy": 0.38588136434555054,
+          "in_window_percent": 100.0,
+          "pair_id": "001648_opt",
+          "top1": 24.44000244140625,
+          "top5": 91.180419921875
+        },
+        {
+          "entropy": 0.41242551803588867,
+          "in_window_percent": 72.2869873046875,
+          "pair_id": "001864_opt",
+          "top1": 2.355722427368164,
+          "top5": 10.714737892150879
+        },
+        {
+          "entropy": 0.405310720205307,
+          "in_window_percent": 100.0,
+          "pair_id": "003320_opt",
+          "top1": 22.57080078125,
+          "top5": 62.17803955078125
+        },
+        {
+          "entropy": 0.39252421259880066,
+          "in_window_percent": 100.0,
+          "pair_id": "003616_opt",
+          "top1": 30.133056640625,
+          "top5": 93.511962890625
+        },
+        {
+          "entropy": 0.4171302020549774,
+          "in_window_percent": 100.0,
+          "pair_id": "003792_opt",
+          "top1": 17.6666259765625,
+          "top5": 75.0640869140625
+        },
+        {
+          "entropy": 0.4069507122039795,
+          "in_window_percent": 100.0,
+          "pair_id": "003824_opt",
+          "top1": 2.996826171875,
+          "top5": 10.791015625
+        },
+        {
+          "entropy": 0.40668052434921265,
+          "in_window_percent": 100.0,
+          "pair_id": "004488_opt",
+          "top1": 35.595703125,
+          "top5": 86.59210205078125
+        },
+        {
+          "entropy": 0.39950263500213623,
+          "in_window_percent": 100.0,
+          "pair_id": "004616_opt",
+          "top1": 7.330322265625,
+          "top5": 74.27520751953125
+        },
+        {
+          "entropy": 0.45144423842430115,
+          "in_window_percent": 100.0,
+          "pair_id": "004920_opt",
+          "top1": 3.84063720703125,
+          "top5": 43.7744140625
+        },
+        {
+          "entropy": 0.452160120010376,
+          "in_window_percent": 100.0,
+          "pair_id": "005088_opt",
+          "top1": 35.7513427734375,
+          "top5": 85.9222412109375
+        },
+        {
+          "entropy": 0.4521239399909973,
+          "in_window_percent": 81.46514892578125,
+          "pair_id": "005104_opt",
+          "top1": 17.572908401489258,
+          "top5": 65.80569458007812
+        },
+        {
+          "entropy": 0.4048415422439575,
+          "in_window_percent": 63.4552001953125,
+          "pair_id": "005160_opt",
+          "top1": 13.598325729370117,
+          "top5": 53.236663818359375
+        },
+        {
+          "entropy": 0.41143661737442017,
+          "in_window_percent": 100.0,
+          "pair_id": "005200_opt",
+          "top1": 0.04730224609375,
+          "top5": 1.1199951171875
+        },
+        {
+          "entropy": 0.40256428718566895,
+          "in_window_percent": 100.0,
+          "pair_id": "005552_opt",
+          "top1": 18.37921142578125,
+          "top5": 65.6036376953125
+        }
+      ],
+      "pairs": 16,
+      "prediction_materialized_before_gt_join": true,
+      "random_top1": 1.2345679012345678,
+      "random_top5": 6.172839506172839,
+      "status": "COMPLETE",
+      "top1_percent": 15.735169794214547,
+      "top5_percent": 55.334340937630586
+    }
+  },
+  "A1_gates": {
+    "1": false,
+    "4": false,
+    "16": false
+  },
+  "A1_pass": false,
+  "A2": {
+    "1": {
+      "aepe_relative_reduction": 0.8439263827293323,
+      "baseline": {
+        "aepe": 3.407031297683716,
+        "cmr1": 0.0,
+        "cmr2": 0.0,
+        "cmr5": 100.0,
+        "pairs": 1
+      },
+      "elapsed_seconds": 4.725598096847534,
+      "gate_mean": 0.997753381729126,
+      "last_completed_stage": "A2_ORACLE_PROPOSAL_GT_JOIN",
+      "oracle_gate": {
+        "aepe": 0.5317476987838745,
+        "cmr1": 100.0,
+        "cmr2": 100.0,
+        "cmr5": 100.0,
+        "pairs": 1
+      },
+      "oracle_proposal_diagnostic_only": true,
+      "pair_rows": [
+        {
+          "baseline_aepe": 3.407031297683716,
+          "gate_mean": 0.997753381729126,
+          "oracle_gate_aepe": 0.5317476987838745,
+          "pair_id": "001864_opt"
+        }
+      ],
+      "pairs": 1,
+      "prediction_materialized_before_gt_join": true,
+      "status": "COMPLETE"
+    },
+    "4": {
+      "aepe_relative_reduction": 0.8274921875032214,
+      "baseline": {
+        "aepe": 2.601967930793762,
+        "cmr1": 25.0,
+        "cmr2": 25.0,
+        "cmr5": 100.0,
+        "pairs": 4
+      },
+      "elapsed_seconds": 4.885754108428955,
+      "gate_mean": 0.9937432110309601,
+      "last_completed_stage": "A2_ORACLE_PROPOSAL_GT_JOIN",
+      "oracle_gate": {
+        "aepe": 0.4488597959280014,
+        "cmr1": 100.0,
+        "cmr2": 100.0,
+        "cmr5": 100.0,
+        "pairs": 4
+      },
+      "oracle_proposal_diagnostic_only": true,
+      "pair_rows": [
+        {
+          "baseline_aepe": 0.4142417907714844,
+          "gate_mean": 0.9895104765892029,
+          "oracle_gate_aepe": 0.39496299624443054,
+          "pair_id": "001648_opt"
+        },
+        {
+          "baseline_aepe": 3.407031297683716,
+          "gate_mean": 0.9995944499969482,
+          "oracle_gate_aepe": 0.5311602354049683,
+          "pair_id": "001864_opt"
+        },
+        {
+          "baseline_aepe": 3.205728054046631,
+          "gate_mean": 0.9984614849090576,
+          "oracle_gate_aepe": 0.41631120443344116,
+          "pair_id": "005104_opt"
+        },
+        {
+          "baseline_aepe": 3.3808705806732178,
+          "gate_mean": 0.9874064326286316,
+          "oracle_gate_aepe": 0.45300474762916565,
+          "pair_id": "005200_opt"
+        }
+      ],
+      "pairs": 4,
+      "prediction_materialized_before_gt_join": true,
+      "status": "COMPLETE"
+    },
+    "16": {
+      "aepe_relative_reduction": 0.6120774659999484,
+      "baseline": {
+        "aepe": 2.848993878811598,
+        "cmr1": 25.0,
+        "cmr2": 56.25,
+        "cmr5": 93.75,
+        "pairs": 16
+      },
+      "elapsed_seconds": 6.245129823684692,
+      "gate_mean": 0.9874975830316544,
+      "last_completed_stage": "A2_ORACLE_PROPOSAL_GT_JOIN",
+      "oracle_gate": {
+        "aepe": 1.105188924819231,
+        "cmr1": 93.75,
+        "cmr2": 93.75,
+        "cmr5": 93.75,
+        "pairs": 16
+      },
+      "oracle_proposal_diagnostic_only": true,
+      "pair_rows": [
+        {
+          "baseline_aepe": 16.177507400512695,
+          "gate_mean": 0.999762773513794,
+          "oracle_gate_aepe": 11.493529319763184,
+          "pair_id": "001264_opt"
+        },
+        {
+          "baseline_aepe": 2.883519172668457,
+          "gate_mean": 0.9844945669174194,
+          "oracle_gate_aepe": 0.3808492422103882,
+          "pair_id": "001544_opt"
+        },
+        {
+          "baseline_aepe": 0.4142417907714844,
+          "gate_mean": 0.9808860421180725,
+          "oracle_gate_aepe": 0.39266544580459595,
+          "pair_id": "001648_opt"
+        },
+        {
+          "baseline_aepe": 3.407031297683716,
+          "gate_mean": 0.9981722235679626,
+          "oracle_gate_aepe": 0.5313047766685486,
+          "pair_id": "001864_opt"
+        },
+        {
+          "baseline_aepe": 1.3823142051696777,
+          "gate_mean": 0.9895399808883667,
+          "oracle_gate_aepe": 0.3757319748401642,
+          "pair_id": "003320_opt"
+        },
+        {
+          "baseline_aepe": 0.38594764471054077,
+          "gate_mean": 0.9898959398269653,
+          "oracle_gate_aepe": 0.34144240617752075,
+          "pair_id": "003616_opt"
+        },
+        {
+          "baseline_aepe": 1.5050657987594604,
+          "gate_mean": 0.9871478080749512,
+          "oracle_gate_aepe": 0.39560839533805847,
+          "pair_id": "003792_opt"
+        },
+        {
+          "baseline_aepe": 1.5160142183303833,
+          "gate_mean": 0.9983457326889038,
+          "oracle_gate_aepe": 0.3218070864677429,
+          "pair_id": "003824_opt"
+        },
+        {
+          "baseline_aepe": 1.427132487297058,
+          "gate_mean": 0.9516883492469788,
+          "oracle_gate_aepe": 0.39227283000946045,
+          "pair_id": "004488_opt"
+        },
+        {
+          "baseline_aepe": 0.979138970375061,
+          "gate_mean": 0.987775981426239,
+          "oracle_gate_aepe": 0.28465160727500916,
+          "pair_id": "004616_opt"
+        },
+        {
+          "baseline_aepe": 1.9006834030151367,
+          "gate_mean": 0.9957831501960754,
+          "oracle_gate_aepe": 0.36839231848716736,
+          "pair_id": "004920_opt"
+        },
+        {
+          "baseline_aepe": 3.0016345977783203,
+          "gate_mean": 0.9851161241531372,
+          "oracle_gate_aepe": 0.33795392513275146,
+          "pair_id": "005088_opt"
+        },
+        {
+          "baseline_aepe": 3.205728054046631,
+          "gate_mean": 0.9950882792472839,
+          "oracle_gate_aepe": 0.41817110776901245,
+          "pair_id": "005104_opt"
+        },
+        {
+          "baseline_aepe": 3.3168811798095703,
+          "gate_mean": 0.9962999820709229,
+          "oracle_gate_aepe": 0.7811114192008972,
+          "pair_id": "005160_opt"
+        },
+        {
+          "baseline_aepe": 3.3808705806732178,
+          "gate_mean": 0.9618823528289795,
+          "oracle_gate_aepe": 0.47567275166511536,
+          "pair_id": "005200_opt"
+        },
+        {
+          "baseline_aepe": 0.7001912593841553,
+          "gate_mean": 0.9980820417404175,
+          "oracle_gate_aepe": 0.39185819029808044,
+          "pair_id": "005552_opt"
+        }
+      ],
+      "pairs": 16,
+      "prediction_materialized_before_gt_join": true,
+      "status": "COMPLETE"
+    }
+  },
+  "A2_gates": {
+    "1": true,
+    "4": true,
+    "16": true
+  },
+  "A2_pass": true,
+  "A3": {
+    "candidate_only": {
+      "1": {
+        "ce": 3.144089460372925,
+        "top1": 13.289990290032508
+      },
+      "4": {
+        "ce": 2.879089593887329,
+        "top1": 3.842387905191192
+      },
+      "16": {
+        "ce": 3.788496732711792,
+        "top1": 15.735169794214547
+      }
+    },
+    "effective_lr": {
+      "A1": 0.0008,
+      "A2": 0.001,
+      "E089_raw": 0.0002
+    },
+    "gate_strength_zero_gradient_diagnosis": "E089 clamp at exactly zero suppresses negative optimizer steps; P0 manually set 0.1 before action test. A2 removes clamped scalar strength.",
+    "raw_e089": {
+      "action_delta": 0.06403347407467663,
+      "candidate_ce_first": 4.391539621353149,
+      "candidate_ce_last": 4.340862226486206,
+      "gate_mean": 0.03103793365880847
+    },
+    "staged_candidate_then_gate": "AUTHORIZED_ONLY_IF_A1_PASS; not run when A1 fails"
+  },
+  "e081_checkpoint_modified": false,
+  "last_completed_stage": "E090A_REPRESENTATION_OPTIMIZATION_DECOUPLED",
+  "lucky_r2_started": false,
+  "next_direction": "E090B",
+  "os_modified": false,
+  "root_cause": "candidate representation fails but gate can act on oracle proposals",
+  "status": "COMPLETE",
+  "whu_700_test_used": false
+}

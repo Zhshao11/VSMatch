@@ -1,0 +1,123 @@
+{
+  "backbone_modified": false,
+  "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-081A-ZZVR-WHU-OUR-METHOD-NATIVE-TRAIN/run-m4-native-r2/checkpoints/M4_step120000.pt",
+  "checkpoint_modified": false,
+  "checkpoint_sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a",
+  "elapsed_seconds": 62.57125234603882,
+  "gates": {
+    "capacity_oracle_r4_gain_ge_0_5px": true,
+    "score_top1_does_not_worsen_anchor": false,
+    "score_top1_near_ge_2x_random": false,
+    "score_top5_candidate_aepe_improves_anchor_by_0_1px": false,
+    "score_top5_near_ge_2x_random": false
+  },
+  "ground_truth_policy": "GT first opened only by this join after all 700 candidate bundles were materialized; GT never affected candidate generation, score, rank, or formal output.",
+  "last_completed_stage": "P0_700_PAIR_CANDIDATE_GT_JOIN",
+  "lucky_r2_started": false,
+  "margin_entropy_consistency": {
+    "mean_all_candidate_cycle_error": {
+      "mean": 6.885585553309564,
+      "p50": 4.510876893997192,
+      "p90": 11.418456077575687
+    },
+    "mean_all_candidate_neighbor_error": {
+      "mean": 3.426810678895064,
+      "p50": 3.4243826866149902,
+      "p90": 3.4243831634521484
+    },
+    "normalized_score_entropy": {
+      "mean": 0.9352007076569966,
+      "p50": 0.935711681842804,
+      "p90": 0.9426947116851807
+    },
+    "oracle_cycle_error": {
+      "mean": 5.715736896485489,
+      "p50": 3.33984375,
+      "p90": 11.1015625
+    },
+    "oracle_neighbor_error": {
+      "mean": 1.66387057928884,
+      "p50": 1.4140625,
+      "p90": 3.162109375
+    },
+    "score_margin": {
+      "mean": 0.006317418290169111,
+      "p50": 0.0063267722725868225,
+      "p90": 0.007359697762876749
+    }
+  },
+  "methods": {
+    "anchor_aepe": {
+      "aepe": 1.9050522857265813,
+      "cmr1": 27.857142857142858,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.57142857142857,
+      "cmr2": 72.0,
+      "cmr5": 98.14285714285714,
+      "pairs": 700
+    },
+    "oracle_r2_aepe": {
+      "aepe": 0.8078830979764462,
+      "cmr1": 89.42857142857143,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.71428571428571,
+      "cmr2": 96.85714285714285,
+      "cmr5": 99.57142857142857,
+      "pairs": 700
+    },
+    "oracle_r4_aepe": {
+      "aepe": 0.6416147116465228,
+      "cmr1": 97.85714285714285,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.85714285714286,
+      "cmr2": 99.14285714285714,
+      "cmr5": 99.57142857142857,
+      "pairs": 700
+    },
+    "score_top1_aepe": {
+      "aepe": 4.9685799404553,
+      "cmr1": 0.0,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.57142857142857,
+      "cmr2": 0.0,
+      "cmr5": 83.14285714285714,
+      "pairs": 700
+    },
+    "score_top5_oracle_aepe": {
+      "aepe": 3.682174920695169,
+      "cmr1": 0.0,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.71428571428571,
+      "cmr2": 0.0,
+      "cmr5": 98.14285714285714,
+      "pairs": 700
+    },
+    "score_top8_oracle_aepe": {
+      "aepe": 3.2829227682522366,
+      "cmr1": 0.0,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.71428571428571,
+      "cmr2": 0.0,
+      "cmr5": 98.85714285714286,
+      "pairs": 700
+    }
+  },
+  "metric_scope": "pair-level means over stride-8 source tokens",
+  "next_stage": "STOP_BEFORE_P1",
+  "oracle_r4_gain_px": 1.2634375740800583,
+  "pairs": 700,
+  "prediction_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-088A-WHU-NOGT-LOCAL-REFINEMENT/P0-candidate-discernibility/PREDICTIONS.jsonl",
+  "prediction_manifest_sha256": "1afe7964ec0f37faf570d0ea9e32466bb7bba26756e760400f675ee644efe824",
+  "prediction_materialized_before_gt_join": true,
+  "retrieval": {
+    "oracle_near_definition": "candidate endpoint error <= best r4 candidate error + 0.25 px",
+    "random_top1_reference_percent": 1.2345679012345678,
+    "random_top5_reference_percent": 6.172839506172839,
+    "random_top8_reference_percent": 9.876543209876543,
+    "score_top1_oracle_near_percent": 1.0760672433035714,
+    "score_top5_oracle_near_percent": 4.973842075892857,
+    "score_top8_oracle_near_percent": 7.984758649553571
+  },
+  "score_top5_candidate_gain_px": -1.7771226349685876,
+  "status": "STOP_NO_CANDIDATE_DISCERNIBILITY"
+}

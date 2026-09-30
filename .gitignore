@@ -52,6 +52,8 @@ research/results/**/raw/
 research/results/**/predictions/
 research/results/**/PAIR_ROWS.json
 research/results/**/TRAIN_CURVE.json
+research/results/**/*_PAIR_ROWS.json
+research/results/**/*_TRAIN_CURVE.json
 research/results/**/RUNNING_RESULT_CARD.json
 research/results/**/RUNNING_RESULT_CARD.md
 

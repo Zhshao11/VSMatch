@@ -1,0 +1,45 @@
+{
+  "experiment": "E-008A",
+  "run": "run-01",
+  "status": "COMPLETED_P0_FAIL",
+  "frozen_sha256": {
+    "CURRENT_STATE.md": "ca831efc889ce03b1dee6f8f86babb9681e7f75f7fee5f794703493f7d73fd0a",
+    "METHOD_DELTA.md": "63e710756fa0f0583a3753ff02156ad95046b8b4df9fbf5e3fc01d0af18f8fdd",
+    "INNOVATION_CONTRACT.yaml": "8aa85d4ed518bcd40b8b9c413f112997c466dc0c58640ad7f5193872431ac3ab",
+    "CANDIDATE_GENERATION_BASELINE.md": "eecff3522b8b9b26ffa196cdb559858ad9039291360bf050e791e1a1c13bd197",
+    "E-008A.md": "5ed21226f319c92c6385d981bb7f0d2c46ea502d4db0196b8a2c2ef8fdf62604",
+    "REVIEW_PACKET.md": "749c68f91f0466dae029f7f282af8b1152a245da571069f99d83be978441a789",
+    "EXPERIMENT_INDEX.md": "ef36022041c0103cfe4182b844644b8fd70d787abded61718e890a3be14aba8a",
+    "TASKS.md": "26e100077a177415769735e1fd4f9fe0126c494ca1a7a98c5b12600b9f5cf081",
+    "DECISION_LOG.md": "b1021623dd5a3d28a4cb0ae52913c774e4e0068d385e6032c531c30ea6c4d62f"
+  },
+  "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+  "gdros_checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+  "old_e006a_source_sha256": "a26f9619ad395bdbc1d45b3ec09ae256d603512042681259efdc8aac4e486d2a",
+  "implementation_id": "e008a-region-to-point-v1-ms4-8-16-dynamic-iqr-pool64-top4x3",
+  "implementation_source_sha256": "b8e4dd9f4fce7bf55f2f8ff5a875052e214248c2052ac0de5cb3fb6398ba04a5",
+  "seeds": [20260816, 20260817],
+  "formal_cache_counts": {
+    "train_observations": 1607,
+    "dev_observations": 404,
+    "train_labels": 1607,
+    "dev_labels": 404,
+    "p0_candidate_traces": 404
+  },
+  "gates": {
+    "P0": "FAIL",
+    "P1": "NOT_RUN_P0_FAIL"
+  },
+  "selector_checkpoint_sha256": {
+    "20260816": "46830fd161d90d9c83793e3ca0245e43bcf3245cf93a5bbcaf0e04c6cfd6de6b",
+    "20260817": "f2e5d2b78ac0c41118620ad2dedfd72fc3d3530c28d57bbf051e1e22636f020c"
+  },
+  "review_conclusions": {
+    "candidate": "APPROVE",
+    "evaluator": "APPROVE",
+    "protocol": "APPROVE"
+  },
+  "p0_watchdog_job_id": "20260807_160756_1ba31964",
+  "forbidden_test_data_accessed": false,
+  "baseline_modified": false
+}

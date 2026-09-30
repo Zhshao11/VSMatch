@@ -1,0 +1,41 @@
+{
+  "experiment": "E-014A",
+  "run_id": "run-01",
+  "status": "PREPARED",
+  "method": "Cross-modal Signal Ranking Diagnostic",
+  "frozen_sha256": {
+    "METHOD_DELTA.md": "24d7e8899e61036a6e78c479a6d24b42755eb6a39ec5c0e3f3b538a733339126",
+    "INNOVATION_CONTRACT.yaml": "1267e9391b1f6fa6f29b233c0764582b42cac0904b1ac91fa5a978cc79a52ed1",
+    "experiments/E-014A.md": "2083404132ab971b484aeca5096185f3ad1924e518957e5f6fc587a03f06b4a1",
+    "CURRENT_STATE.md": "2f144d64a1824d715b01e1cf7f9e884e909f0341b4f8065bd24c306d08c68cee",
+    "REVIEW_PACKET.md": "ab28e7bfb204f00730b9e023caa53f6873cfd0a624862b0bcd0006fff670e6af"
+  },
+  "boundaries": {
+    "readonly_diagnostic": true,
+    "no_training": true,
+    "no_finetune": true,
+    "no_geometry_feedback": true,
+    "no_e014b_rescue_descriptor_retraining_sparse_affine_feedback_os424_confirm": true,
+    "candidate_source": "E-011A top128 read-only",
+    "truth_flow_use": "diagnostic label join only"
+  },
+  "inputs": {
+    "split_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/data_protocol-v3/split_manifest.jsonl",
+    "cache_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-008A/run-01/cache-formal-b8e4dd9f",
+    "e011a_checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/models/seed-20260820.pt",
+    "e011a_pair_metrics": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/formal/topr_pair_metrics.jsonl",
+    "e013a_checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-013A/run-01/models/seed-20260821.pt",
+    "e013a_calib_result_card": "/Users/shihao/Documents/图像匹配之二/research/results/E-013A-CALIB-DIAG/RESULT_CARD.md"
+  },
+  "outputs": {
+    "remote_run_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-014A/run-01",
+    "local_result_root": "/Users/shihao/Documents/图像匹配之二/research/results/E-014A"
+  },
+  "spec_to_code_mapping": {
+    "patch extraction and coordinate convention": "experiments/sparsegeo/e014a/patches.py",
+    "signal families": "experiments/sparsegeo/e014a/signals.py",
+    "P0 sanity and negative controls": "experiments/sparsegeo/e014a/sanity.py",
+    "metrics and topK/quota": "experiments/sparsegeo/e014a/metrics.py",
+    "P0/D1/D2/D3/diagnosis orchestration": "experiments/sparsegeo/e014a/evaluate.py"
+  }
+}

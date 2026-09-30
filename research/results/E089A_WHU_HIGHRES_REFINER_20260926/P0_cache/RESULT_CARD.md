@@ -1,0 +1,7 @@
+# E089A P0_cache RESULT_CARD
+
+Status: `PASS`
+
+last_completed_stage: `5600_FORWARD_REVERSE_ANCHORS_CACHED_WITHOUT_GT`
+
+next_stage: `P0_CONTRACT_SMOKE`

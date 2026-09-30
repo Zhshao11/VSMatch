@@ -1,0 +1,38 @@
+{
+  "status": "COST_GATE_STOP",
+  "method": "LuckyR1-A geometric correspondence belief",
+  "track": "CURRENT_MODEL_EXPLORATORY_ONLY",
+  "training_step": 500,
+  "train_pairs": 2011,
+  "evaluation_view": "ordered first 404 pairs matching the historical E075A formal manifest",
+  "output": "iter24 post-LSR",
+  "metrics": {
+    "scope": "pair-level",
+    "aepe": 6.1012789304598725,
+    "cmr1": 25.742574257425744,
+    "cmr2": 54.70297029702971,
+    "cmr5": 71.28712871287128,
+    "cmr10": 79.95049504950495,
+    "cmr16": 86.88118811881188
+  },
+  "protected_control": {
+    "method": "E075A-M4 step80K iter24 post-LSR",
+    "checkpoint_sha256": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b",
+    "aepe": 2.3613,
+    "cmr1": 56.6832,
+    "cmr2": 78.9604,
+    "cmr5": 88.8614,
+    "cmr10": 94.802,
+    "cmr16": 97.0297
+  },
+  "prediction_protocol": {
+    "prediction_count": 404,
+    "manifest_count": 404,
+    "join_count": 404,
+    "prediction_manifest_sha256": "89dfa7b54a17f6082abc4bc514edaf89406e5b33ae2fa2185664e29532afa332",
+    "metric_join_sha256": "d07f1287a7e3443e5d000054e22e17f870d1aada05e24eaf652ba07437f579ae",
+    "prediction_materialized_before_gt_join": true
+  },
+  "decision": "Stop A at step500: AEPE exceeded 1.25x the protected control and CMR@5 did not improve.",
+  "claim_boundary": "This result modifies a model trained on the full 2011 training population and is exploratory. It is not the clean 1810/201 model-unseen result and cannot replace E075A-M4."
+}

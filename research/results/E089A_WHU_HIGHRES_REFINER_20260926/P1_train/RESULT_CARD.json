@@ -1,0 +1,20 @@
+{
+  "base_checkpoint_sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a",
+  "base_frozen": true,
+  "candidate_gpus": null,
+  "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-089A-WHU-HIGHRES-CROSSMODAL-RESIDUAL-REFINER/P1_train/checkpoints/E089A_P1_step600.pt",
+  "checkpoint_sha256": "4844d6b4d7314e9a3ffe32c153688f5b1a653c4d50e9e4e6f08dba4c3aaa6e68",
+  "elapsed_seconds": 50.90927696228027,
+  "last_completed_stage": "P1_16_PAIR_OVERFIT_TRAINING_COMPLETE",
+  "logical_device": "cuda:0",
+  "loss_finite": true,
+  "loss_first10_mean": 1.6073528409004212,
+  "loss_last10_mean": 3.5122365236282347,
+  "next_stage": "P1_PREDICTION_MATERIALIZATION",
+  "pairs": 16,
+  "source_groups": 16,
+  "status": "COMPLETE",
+  "steps": 600,
+  "test_700_used": false,
+  "trainable_parameters": 36036
+}

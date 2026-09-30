@@ -1,0 +1,45 @@
+{
+  "experiment": "E-013A",
+  "method": "M001 v1.6 Geometry-supervised Learned Inlier-Basin Scorer",
+  "run_id": "run-01",
+  "frozen_sha256": {
+    "METHOD_SPEC": "2880fd81f0d0fb19cc05271c4dc65c12a2933fbb7211a997b1d7ca39aefee05c",
+    "METHOD_DELTA": "fa4bacaed6d3aa138a7d0d3a5b91b4c0af33b39e3752bcd9662f4872339c5c4f",
+    "INNOVATION_CONTRACT": "9e027c340be3b16aa3939dbc50a1d26487176b80e33f6c016346d98fe5952cc2",
+    "E-013A": "0ab041276414748525a64bc3d1ea472d634ec430cdf051fb599c29f08372097f",
+    "CURRENT_STATE": "108c2f2524fcedd0c3673634e108b881b94d0e8f7a583b4c429cb771481be8ea",
+    "REVIEW_PACKET": "3204d5a5174c373025fc2eb0493fab5476428decb9c91f297c41af1617f45e50"
+  },
+  "source": {
+    "module": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/e013a",
+    "__init__.py": "b2a7124c221c60da0088d2e89074e3657ed10cc24e9f64b298598457e31b08c5",
+    "affine.py": "8fbd5649d9168dfecc61b4d1283912ae94d6e96fc215eb73de7fa0cdd69ee09e",
+    "checks.py": "503a036d83ed4fb61adfaf86e5c0aa22903e803edbb0230f4121ea18741bf54b",
+    "data.py": "fcce4fe7bddcbce4df5020d75eed975f5160ab60facffec772b8a20943cee9c2",
+    "evaluate.py": "d3cf7fcc23645dd2c3cf828fc435fd39038aef76020168bfe0f71a51e27b67e7",
+    "losses.py": "6ca30f98cf8471892dc67f63a59130ef6c1f5979618603d8c7a72b26f9c68080",
+    "model.py": "088c8f11343446dce298635278da97cf9ea571cd52fa3b1ef5dcdfa663efd1bc",
+    "test_core.py": "290acef852bd88ea532000783b4060febd3e8186294bb1f30a80551602d09908",
+    "train.py": "12196880c04fb0c24e920d7f3f0391afc69b992d21a580518e18c61f5080563c"
+  },
+  "read_only_inputs": {
+    "e011a_checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/models/seed-20260820.pt",
+    "e011a_pair_metrics": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/formal/topr_pair_metrics.jsonl",
+    "e008a_cache_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-008A/run-01/cache-formal-b8e4dd9f",
+    "split_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/data_protocol-v3/split_manifest.jsonl",
+    "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3"
+  },
+  "write_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-013A/run-01",
+  "main_config": {
+    "epochs": 1,
+    "max_candidates_per_pair": 4096,
+    "calibration_pairs": 256,
+    "rounds": 3,
+    "seed": 20260821
+  },
+  "prechecks": {
+    "py_compile": "PASS",
+    "pytest": "4 passed",
+    "smoke_train_eval": "G0_PASS"
+  }
+}

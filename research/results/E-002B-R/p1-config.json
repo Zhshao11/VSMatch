@@ -1,0 +1,23 @@
+{
+  "experiment": "E-002B-R",
+  "stage": "P1",
+  "implementation_block": 4096,
+  "roles": ["reference", "optimized"],
+  "fresh_process_per_role": true,
+  "batch_size": 1,
+  "precision": "FP32",
+  "tf32": false,
+  "warmup": 20,
+  "measured": 200,
+  "synchronize_each_iteration": true,
+  "device_class": "NVIDIA GeForce RTX 4090",
+  "fixture": {
+    "pair_index": 0,
+    "sha256": "2f666a85ed7464542be02af819c24553773574520afbbba4e226f718c13aa5a7"
+  },
+  "gates": {
+    "optimized_geometry_p50_ms_max": 80.0,
+    "reference_speedup_min": 8.0,
+    "optimized_warm_allocated_mib_max": 284.0
+  }
+}

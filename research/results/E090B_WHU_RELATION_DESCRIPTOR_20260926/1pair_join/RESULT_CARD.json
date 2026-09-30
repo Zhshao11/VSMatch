@@ -1,0 +1,10 @@
+{
+  "gate": false,
+  "in_window_coverage_mean": 72.2869873046875,
+  "last_completed_stage": "GT_JOIN",
+  "pairs": 1,
+  "prediction_materialized_before_gt_join": true,
+  "status": "FAIL",
+  "top1_percent": 5.9294127580529405,
+  "top5_percent": 27.18790897960907
+}

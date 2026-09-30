@@ -1,0 +1,11 @@
+{
+  "status": "NOT_RUN_BY_P0_GATE",
+  "stage": "P2_SPLIT_SAFE_SHORT_BUDGET",
+  "blocking_result": "P0 STOP_NO_CANDIDATE_DISCERNIBILITY",
+  "reason": "P2 requires both P0 and P1 to pass; P0 failed and P1 was not run.",
+  "train_dev_split_created": false,
+  "training_started": false,
+  "whu_700_test_evaluated_for_p2": false,
+  "checkpoint_created": false,
+  "lucky_r2_started": false
+}

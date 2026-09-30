@@ -1,0 +1,548 @@
+{
+  "artifacts": {
+    "failure_samples": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-081A-M4-ISOMORPHIC-DIAGNOSTIC/run-01/FAILURE_SAMPLES.csv",
+    "pair_diagnostics": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-081A-M4-ISOMORPHIC-DIAGNOSTIC/run-01/PAIR_LEVEL_DIAGNOSTICS.jsonl",
+    "pair_join": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-081A-M4-ISOMORPHIC-DIAGNOSTIC/run-01/PAIR_LEVEL_METRIC_JOIN.csv"
+  },
+  "branch_decomposition": {
+    "no_values_inferred_for_absent_branches": true,
+    "reported_available_decomposition": "backbone_pre_lsr -> M4_refiner_pre_lsr -> post_lsr",
+    "requested_F2_F3_B_C_M4": "NOT_OBSERVABLE_IN_E081A_ARCHITECTURE",
+    "verified_actual_architecture": "single GDROS/RAFT backbone plus region NativeGateRefiner (M4)"
+  },
+  "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-081A-ZZVR-WHU-OUR-METHOD-NATIVE-TRAIN/run-m4-native-r2/checkpoints/M4_step120000.pt",
+  "checkpoint_sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a",
+  "elapsed_seconds": 287.73039197921753,
+  "failure_count_ge5": 13,
+  "final_error_buckets": {
+    "<1": 196,
+    ">=16": 3,
+    "[1,2)": 308,
+    "[10,16)": 0,
+    "[2,5)": 183,
+    "[5,10)": 10
+  },
+  "fusion_gain_at_iter32": {
+    "m4_minus_backbone_aepe": -0.3693790835993629,
+    "post_lsr_minus_pre_lsr_aepe": -0.19757473900914202
+  },
+  "global_correlation_evidence": {
+    "top16_mean_gt_coverage_percent": 10.340506417410714,
+    "top1_mean_gt_coverage_percent": 1.7862025669642858,
+    "top2_mean_gt_coverage_percent": 2.9572056361607144,
+    "top32_mean_gt_coverage_percent": 14.816720145089286,
+    "top4_mean_gt_coverage_percent": 4.647670200892857,
+    "top8_mean_gt_coverage_percent": 7.039864676339286
+  },
+  "ground_truth_policy": "GT used only after complete prediction materialization, for metric join and explicitly labeled diagnostics/oracles; never for formal prediction selection.",
+  "last_completed_stage": "700_PAIR_GT_JOIN_AND_ATTRIBUTION_COMPLETE",
+  "lucky_r2_started": false,
+  "metrics": {
+    "iter12_backbone_pre_lsr": {
+      "aepe": 3.971736046671867,
+      "cmr1": 2.857142857142857,
+      "cmr10": 94.28571428571428,
+      "cmr16": 98.71428571428571,
+      "cmr2": 33.42857142857143,
+      "cmr5": 80.85714285714286,
+      "pairs": 700
+    },
+    "iter12_m4_post_lsr": {
+      "aepe": 2.0684288900452,
+      "cmr1": 25.71428571428571,
+      "cmr10": 99.14285714285714,
+      "cmr16": 99.42857142857143,
+      "cmr2": 70.71428571428572,
+      "cmr5": 97.42857142857143,
+      "pairs": 700
+    },
+    "iter12_m4_pre_lsr": {
+      "aepe": 2.3331861121313913,
+      "cmr1": 12.0,
+      "cmr10": 99.14285714285714,
+      "cmr16": 99.28571428571429,
+      "cmr2": 61.142857142857146,
+      "cmr5": 97.42857142857143,
+      "pairs": 700
+    },
+    "iter24_backbone_pre_lsr": {
+      "aepe": 2.571793930871146,
+      "cmr1": 5.428571428571429,
+      "cmr10": 99.42857142857143,
+      "cmr16": 99.42857142857143,
+      "cmr2": 52.714285714285715,
+      "cmr5": 95.57142857142857,
+      "pairs": 700
+    },
+    "iter24_m4_post_lsr": {
+      "aepe": 1.9321085952009474,
+      "cmr1": 27.0,
+      "cmr10": 99.42857142857143,
+      "cmr16": 99.42857142857143,
+      "cmr2": 71.85714285714285,
+      "cmr5": 98.14285714285714,
+      "pairs": 700
+    },
+    "iter24_m4_pre_lsr": {
+      "aepe": 2.115024169768606,
+      "cmr1": 13.142857142857142,
+      "cmr10": 99.42857142857143,
+      "cmr16": 99.42857142857143,
+      "cmr2": 65.71428571428571,
+      "cmr5": 98.14285714285714,
+      "pairs": 700
+    },
+    "iter32_backbone_pre_lsr": {
+      "aepe": 2.4724674404518945,
+      "cmr1": 5.0,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.57142857142857,
+      "cmr2": 54.85714285714286,
+      "cmr5": 96.14285714285714,
+      "pairs": 700
+    },
+    "iter32_m4_post_lsr": {
+      "aepe": 1.9055136178433896,
+      "cmr1": 28.000000000000004,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.57142857142857,
+      "cmr2": 72.0,
+      "cmr5": 98.14285714285714,
+      "pairs": 700
+    },
+    "iter32_m4_pre_lsr": {
+      "aepe": 2.1030883568525316,
+      "cmr1": 13.857142857142858,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.57142857142857,
+      "cmr2": 65.71428571428571,
+      "cmr5": 98.14285714285714,
+      "pairs": 700
+    },
+    "post_lsr_local_oracle_r1": {
+      "aepe": 1.1113449975635323,
+      "cmr1": 73.14285714285714,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.71428571428571,
+      "cmr2": 91.14285714285715,
+      "cmr5": 99.28571428571429,
+      "pairs": 700
+    },
+    "post_lsr_local_oracle_r2": {
+      "aepe": 0.807948754365955,
+      "cmr1": 89.42857142857143,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.71428571428571,
+      "cmr2": 97.0,
+      "cmr5": 99.57142857142857,
+      "pairs": 700
+    },
+    "post_lsr_local_oracle_r4": {
+      "aepe": 0.6411560834092753,
+      "cmr1": 97.85714285714285,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.85714285714286,
+      "cmr2": 99.14285714285714,
+      "cmr5": 99.57142857142857,
+      "pairs": 700
+    },
+    "pre_lsr_local_oracle_r1": {
+      "aepe": 1.2605515776787486,
+      "cmr1": 64.57142857142857,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.71428571428571,
+      "cmr2": 89.28571428571429,
+      "cmr5": 99.0,
+      "pairs": 700
+    },
+    "pre_lsr_local_oracle_r2": {
+      "aepe": 0.8991959975021226,
+      "cmr1": 85.85714285714286,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.71428571428571,
+      "cmr2": 96.28571428571429,
+      "cmr5": 99.57142857142857,
+      "pairs": 700
+    },
+    "pre_lsr_local_oracle_r4": {
+      "aepe": 0.6747407710552216,
+      "cmr1": 96.85714285714285,
+      "cmr10": 99.57142857142857,
+      "cmr16": 99.85714285714286,
+      "cmr2": 98.85714285714286,
+      "cmr5": 99.57142857142857,
+      "pairs": 700
+    }
+  },
+  "next_method_recommendation": [
+    "Prioritize feature/correlation evidence acquisition; GT targets are often absent from global top-32 evidence.",
+    "Evidence is locally available but updates under-use it; investigate the recurrent update/context pathway.",
+    "A local fine-localization head has measurable diagnostic headroom at radius 4, subject to a later no-GT design decision."
+  ],
+  "os_alignment": {
+    "comparison_scope": "diagnostic counts only; datasets and architectures differ",
+    "os_reference": "E075D / CURRENT_BEST_OS_METHOD_20260913",
+    "os_reference_failure_count": 45,
+    "same_failure_definition": "final pair-level post-LSR AEPE >= 5 px"
+  },
+  "prediction_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-081A-M4-ISOMORPHIC-DIAGNOSTIC/run-01/PREDICTIONS.jsonl",
+  "prediction_manifest_sha256": "f62f0857b1af58b1a8db79f78570077969588bab59ab7899b7c6c64cd334cc0b",
+  "prediction_materialized_before_gt_join": true,
+  "protocol_pairs": 700,
+  "status": "COMPLETE_DIAGNOSTIC_ONLY",
+  "training_or_new_module_started": false,
+  "trajectory_summary": [
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.99923270089286,
+      "gt_in_level0_radius4_percent": 16.817173549107142,
+      "gt_in_level1_radius4_percent": 45.137241908482146,
+      "gt_in_level2_radius4_percent": 87.40555245535714,
+      "gt_in_level3_radius4_percent": 99.99923270089286,
+      "iteration": 1,
+      "mean_gt_distance_after": 48.06954562153135,
+      "mean_gt_distance_before": 83.59079800469534,
+      "update_toward_gt_percent": 83.95127650669643
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.12140764508929,
+      "gt_in_level0_radius4_percent": 55.234654017857146,
+      "gt_in_level1_radius4_percent": 79.27451869419643,
+      "gt_in_level2_radius4_percent": 93.85989815848214,
+      "gt_in_level3_radius4_percent": 99.12140764508929,
+      "iteration": 2,
+      "mean_gt_distance_after": 35.73530469128064,
+      "mean_gt_distance_before": 48.06954562153135,
+      "update_toward_gt_percent": 75.63357979910714
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.172607421875,
+      "gt_in_level0_radius4_percent": 71.16343470982143,
+      "gt_in_level1_radius4_percent": 85.26607840401786,
+      "gt_in_level2_radius4_percent": 94.94081333705357,
+      "gt_in_level3_radius4_percent": 99.172607421875,
+      "iteration": 3,
+      "mean_gt_distance_after": 26.901109958376203,
+      "mean_gt_distance_before": 35.73530469128064,
+      "update_toward_gt_percent": 75.22551618303571
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.04098074776786,
+      "gt_in_level0_radius4_percent": 80.99609375,
+      "gt_in_level1_radius4_percent": 89.78812081473214,
+      "gt_in_level2_radius4_percent": 95.98367745535714,
+      "gt_in_level3_radius4_percent": 99.04098074776786,
+      "iteration": 4,
+      "mean_gt_distance_after": 20.533561517681395,
+      "mean_gt_distance_before": 26.901109958376203,
+      "update_toward_gt_percent": 72.69210379464286
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 98.97502790178571,
+      "gt_in_level0_radius4_percent": 87.319091796875,
+      "gt_in_level1_radius4_percent": 92.93021065848214,
+      "gt_in_level2_radius4_percent": 96.875,
+      "gt_in_level3_radius4_percent": 98.97502790178571,
+      "iteration": 5,
+      "mean_gt_distance_after": 16.314381801741465,
+      "mean_gt_distance_before": 20.533561517681395,
+      "update_toward_gt_percent": 68.79073660714286
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 98.97331891741071,
+      "gt_in_level0_radius4_percent": 91.24285016741071,
+      "gt_in_level1_radius4_percent": 94.91563197544643,
+      "gt_in_level2_radius4_percent": 97.49061802455357,
+      "gt_in_level3_radius4_percent": 98.97331891741071,
+      "iteration": 6,
+      "mean_gt_distance_after": 13.376095437833241,
+      "mean_gt_distance_before": 16.314381801741465,
+      "update_toward_gt_percent": 65.07470703125
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.04645647321429,
+      "gt_in_level0_radius4_percent": 93.71334402901786,
+      "gt_in_level1_radius4_percent": 96.17581612723214,
+      "gt_in_level2_radius4_percent": 97.94921875,
+      "gt_in_level3_radius4_percent": 99.04645647321429,
+      "iteration": 7,
+      "mean_gt_distance_after": 11.418637328233038,
+      "mean_gt_distance_before": 13.376095437833241,
+      "update_toward_gt_percent": 61.864815848214285
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.116943359375,
+      "gt_in_level0_radius4_percent": 95.27354213169643,
+      "gt_in_level1_radius4_percent": 96.97900390625,
+      "gt_in_level2_radius4_percent": 98.26457868303571,
+      "gt_in_level3_radius4_percent": 99.116943359375,
+      "iteration": 8,
+      "mean_gt_distance_after": 10.019996688195638,
+      "mean_gt_distance_before": 11.418637328233038,
+      "update_toward_gt_percent": 59.0595703125
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.19562639508929,
+      "gt_in_level0_radius4_percent": 96.25048828125,
+      "gt_in_level1_radius4_percent": 97.52057756696429,
+      "gt_in_level2_radius4_percent": 98.509765625,
+      "gt_in_level3_radius4_percent": 99.19562639508929,
+      "iteration": 9,
+      "mean_gt_distance_after": 8.99759498511042,
+      "mean_gt_distance_before": 10.019996688195638,
+      "update_toward_gt_percent": 56.555838448660715
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.26796177455357,
+      "gt_in_level0_radius4_percent": 96.88612583705357,
+      "gt_in_level1_radius4_percent": 97.89714704241071,
+      "gt_in_level2_radius4_percent": 98.70943777901786,
+      "gt_in_level3_radius4_percent": 99.26796177455357,
+      "iteration": 10,
+      "mean_gt_distance_after": 8.266898944548197,
+      "mean_gt_distance_before": 8.99759498511042,
+      "update_toward_gt_percent": 54.577880859375
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.32439313616071,
+      "gt_in_level0_radius4_percent": 97.29628208705357,
+      "gt_in_level1_radius4_percent": 98.15363420758929,
+      "gt_in_level2_radius4_percent": 98.84793526785714,
+      "gt_in_level3_radius4_percent": 99.32439313616071,
+      "iteration": 11,
+      "mean_gt_distance_after": 7.6849627591882435,
+      "mean_gt_distance_before": 8.266898944548197,
+      "update_toward_gt_percent": 52.87465122767857
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.381591796875,
+      "gt_in_level0_radius4_percent": 97.585693359375,
+      "gt_in_level1_radius4_percent": 98.35511997767857,
+      "gt_in_level2_radius4_percent": 98.96662248883929,
+      "gt_in_level3_radius4_percent": 99.381591796875,
+      "iteration": 12,
+      "mean_gt_distance_after": 7.254201595187187,
+      "mean_gt_distance_before": 7.6849627591882435,
+      "update_toward_gt_percent": 51.29921177455357
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.42783900669643,
+      "gt_in_level0_radius4_percent": 97.78909737723214,
+      "gt_in_level1_radius4_percent": 98.495849609375,
+      "gt_in_level2_radius4_percent": 99.04924665178571,
+      "gt_in_level3_radius4_percent": 99.42783900669643,
+      "iteration": 13,
+      "mean_gt_distance_after": 6.879218389477049,
+      "mean_gt_distance_before": 7.254201595187187,
+      "update_toward_gt_percent": 50.049769810267854
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.46983119419643,
+      "gt_in_level0_radius4_percent": 97.95786830357143,
+      "gt_in_level1_radius4_percent": 98.62172154017857,
+      "gt_in_level2_radius4_percent": 99.12248883928571,
+      "gt_in_level3_radius4_percent": 99.46983119419643,
+      "iteration": 14,
+      "mean_gt_distance_after": 6.540815098626273,
+      "mean_gt_distance_before": 6.879218389477049,
+      "update_toward_gt_percent": 48.994873046875
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.5126953125,
+      "gt_in_level0_radius4_percent": 98.09898158482143,
+      "gt_in_level1_radius4_percent": 98.72220284598214,
+      "gt_in_level2_radius4_percent": 99.18516322544643,
+      "gt_in_level3_radius4_percent": 99.5126953125,
+      "iteration": 15,
+      "mean_gt_distance_after": 6.260136784229959,
+      "mean_gt_distance_before": 6.540815098626273,
+      "update_toward_gt_percent": 48.118966238839285
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.55064174107143,
+      "gt_in_level0_radius4_percent": 98.21400669642857,
+      "gt_in_level1_radius4_percent": 98.80723353794643,
+      "gt_in_level2_radius4_percent": 99.22715541294643,
+      "gt_in_level3_radius4_percent": 99.55064174107143,
+      "iteration": 16,
+      "mean_gt_distance_after": 5.97918565928936,
+      "mean_gt_distance_before": 6.260136784229959,
+      "update_toward_gt_percent": 47.483224051339285
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.59197126116071,
+      "gt_in_level0_radius4_percent": 98.31386021205357,
+      "gt_in_level1_radius4_percent": 98.87796456473214,
+      "gt_in_level2_radius4_percent": 99.28323800223214,
+      "gt_in_level3_radius4_percent": 99.59197126116071,
+      "iteration": 17,
+      "mean_gt_distance_after": 5.745948366097042,
+      "mean_gt_distance_before": 5.97918565928936,
+      "update_toward_gt_percent": 46.808140345982146
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.62479073660714,
+      "gt_in_level0_radius4_percent": 98.40143694196429,
+      "gt_in_level1_radius4_percent": 98.94199916294643,
+      "gt_in_level2_radius4_percent": 99.33192661830357,
+      "gt_in_level3_radius4_percent": 99.62479073660714,
+      "iteration": 18,
+      "mean_gt_distance_after": 5.525961123364312,
+      "mean_gt_distance_before": 5.745948366097042,
+      "update_toward_gt_percent": 46.34144810267857
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.65834263392857,
+      "gt_in_level0_radius4_percent": 98.48392159598214,
+      "gt_in_level1_radius4_percent": 99.00390625,
+      "gt_in_level2_radius4_percent": 99.37799944196429,
+      "gt_in_level3_radius4_percent": 99.65834263392857,
+      "iteration": 19,
+      "mean_gt_distance_after": 5.344299370561327,
+      "mean_gt_distance_before": 5.525961123364312,
+      "update_toward_gt_percent": 45.887381417410715
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.68418666294643,
+      "gt_in_level0_radius4_percent": 98.54547991071429,
+      "gt_in_level1_radius4_percent": 99.05998883928571,
+      "gt_in_level2_radius4_percent": 99.41552734375,
+      "gt_in_level3_radius4_percent": 99.68418666294643,
+      "iteration": 20,
+      "mean_gt_distance_after": 5.18759000812258,
+      "mean_gt_distance_before": 5.344299370561327,
+      "update_toward_gt_percent": 45.47303989955357
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.706298828125,
+      "gt_in_level0_radius4_percent": 98.603759765625,
+      "gt_in_level1_radius4_percent": 99.10484095982143,
+      "gt_in_level2_radius4_percent": 99.44517299107143,
+      "gt_in_level3_radius4_percent": 99.706298828125,
+      "iteration": 21,
+      "mean_gt_distance_after": 5.047731632505144,
+      "mean_gt_distance_before": 5.18759000812258,
+      "update_toward_gt_percent": 45.151681082589285
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.72600446428571,
+      "gt_in_level0_radius4_percent": 98.65426199776786,
+      "gt_in_level1_radius4_percent": 99.14753069196429,
+      "gt_in_level2_radius4_percent": 99.48085239955357,
+      "gt_in_level3_radius4_percent": 99.72600446428571,
+      "iteration": 22,
+      "mean_gt_distance_after": 4.918665258458683,
+      "mean_gt_distance_before": 5.047731632505144,
+      "update_toward_gt_percent": 44.983433314732146
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.7451171875,
+      "gt_in_level0_radius4_percent": 98.70319475446429,
+      "gt_in_level1_radius4_percent": 99.18209402901786,
+      "gt_in_level2_radius4_percent": 99.51475306919643,
+      "gt_in_level3_radius4_percent": 99.7451171875,
+      "iteration": 23,
+      "mean_gt_distance_after": 4.805034623571805,
+      "mean_gt_distance_before": 4.918665258458683,
+      "update_toward_gt_percent": 44.637241908482146
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.76133510044643,
+      "gt_in_level0_radius4_percent": 98.74644252232143,
+      "gt_in_level1_radius4_percent": 99.22199358258929,
+      "gt_in_level2_radius4_percent": 99.54485212053571,
+      "gt_in_level3_radius4_percent": 99.76133510044643,
+      "iteration": 24,
+      "mean_gt_distance_after": 4.705229228905269,
+      "mean_gt_distance_before": 4.805034623571805,
+      "update_toward_gt_percent": 44.526402064732146
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.77629743303571,
+      "gt_in_level0_radius4_percent": 98.78724888392857,
+      "gt_in_level1_radius4_percent": 99.26088169642857,
+      "gt_in_level2_radius4_percent": 99.57414899553571,
+      "gt_in_level3_radius4_percent": 99.77629743303571,
+      "iteration": 25,
+      "mean_gt_distance_after": 4.626917392866952,
+      "mean_gt_distance_before": 4.705229228905269,
+      "update_toward_gt_percent": 44.26377650669643
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.78969029017857,
+      "gt_in_level0_radius4_percent": 98.82191685267857,
+      "gt_in_level1_radius4_percent": 99.288818359375,
+      "gt_in_level2_radius4_percent": 99.59068080357143,
+      "gt_in_level3_radius4_percent": 99.78969029017857,
+      "iteration": 26,
+      "mean_gt_distance_after": 4.566290325522423,
+      "mean_gt_distance_before": 4.626917392866952,
+      "update_toward_gt_percent": 44.241768973214285
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.800048828125,
+      "gt_in_level0_radius4_percent": 98.85006277901786,
+      "gt_in_level1_radius4_percent": 99.30430385044643,
+      "gt_in_level2_radius4_percent": 99.60759626116071,
+      "gt_in_level3_radius4_percent": 99.800048828125,
+      "iteration": 27,
+      "mean_gt_distance_after": 4.496556690079825,
+      "mean_gt_distance_before": 4.566290325522423,
+      "update_toward_gt_percent": 44.01914760044643
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.81577845982143,
+      "gt_in_level0_radius4_percent": 98.88385881696429,
+      "gt_in_level1_radius4_percent": 99.33046177455357,
+      "gt_in_level2_radius4_percent": 99.62520926339286,
+      "gt_in_level3_radius4_percent": 99.81577845982143,
+      "iteration": 28,
+      "mean_gt_distance_after": 4.4360012301376885,
+      "mean_gt_distance_before": 4.496556690079825,
+      "update_toward_gt_percent": 43.982840401785715
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.828125,
+      "gt_in_level0_radius4_percent": 98.91932896205357,
+      "gt_in_level1_radius4_percent": 99.35675920758929,
+      "gt_in_level2_radius4_percent": 99.641357421875,
+      "gt_in_level3_radius4_percent": 99.828125,
+      "iteration": 29,
+      "mean_gt_distance_after": 4.386062505500657,
+      "mean_gt_distance_before": 4.4360012301376885,
+      "update_toward_gt_percent": 43.866036551339285
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.83722795758929,
+      "gt_in_level0_radius4_percent": 98.95166015625,
+      "gt_in_level1_radius4_percent": 99.38382393973214,
+      "gt_in_level2_radius4_percent": 99.65202985491071,
+      "gt_in_level3_radius4_percent": 99.83722795758929,
+      "iteration": 30,
+      "mean_gt_distance_after": 4.336576474734715,
+      "mean_gt_distance_before": 4.386062505500657,
+      "update_toward_gt_percent": 43.77525111607143
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.84573800223214,
+      "gt_in_level0_radius4_percent": 98.98346819196429,
+      "gt_in_level1_radius4_percent": 99.41092354910714,
+      "gt_in_level2_radius4_percent": 99.66842215401786,
+      "gt_in_level3_radius4_percent": 99.84573800223214,
+      "iteration": 31,
+      "mean_gt_distance_after": 4.29893843463489,
+      "mean_gt_distance_before": 4.336576474734715,
+      "update_toward_gt_percent": 43.75718470982143
+    },
+    {
+      "gt_in_any_radius4_pyramid_percent": 99.85212053571429,
+      "gt_in_level0_radius4_percent": 99.00983537946429,
+      "gt_in_level1_radius4_percent": 99.42780412946429,
+      "gt_in_level2_radius4_percent": 99.6845703125,
+      "gt_in_level3_radius4_percent": 99.85212053571429,
+      "iteration": 32,
+      "mean_gt_distance_after": 4.267305355838367,
+      "mean_gt_distance_before": 4.29893843463489,
+      "update_toward_gt_percent": 43.68638392857143
+    }
+  ]
+}

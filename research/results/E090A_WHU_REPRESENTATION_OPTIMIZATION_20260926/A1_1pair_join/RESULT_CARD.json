@@ -1,0 +1,21 @@
+{
+  "elapsed_seconds": 4.3105175495147705,
+  "entropy_mean": 0.14000169932842255,
+  "last_completed_stage": "A1_GT_JOIN",
+  "pair_rows": [
+    {
+      "entropy": 0.14000169932842255,
+      "in_window_percent": 72.2869873046875,
+      "pair_id": "001864_opt",
+      "top1": 13.28999137878418,
+      "top5": 46.9434700012207
+    }
+  ],
+  "pairs": 1,
+  "prediction_materialized_before_gt_join": true,
+  "random_top1": 1.2345679012345678,
+  "random_top5": 6.172839506172839,
+  "status": "COMPLETE",
+  "top1_percent": 13.289990290032508,
+  "top5_percent": 46.9434711022924
+}

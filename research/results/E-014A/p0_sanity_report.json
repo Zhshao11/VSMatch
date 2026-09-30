@@ -1,0 +1,62 @@
+{
+  "e011a_top128_parity": {
+    "checks": {
+      "aepe": true,
+      "mean": true,
+      "p10": true,
+      "p50": true,
+      "p90": true
+    },
+    "pass": true,
+    "summary": {
+      "candidate_base_rate": {
+        "1": 8.914049154467957e-05,
+        "2": 0.00035450586028492264,
+        "5": 0.0021029493498107873
+      },
+      "candidate_count": 78303360,
+      "correct_2px_p10_p50_p90": [
+        34.0,
+        66.0,
+        106.0
+      ],
+      "mean_correct_2px_proposals": 68.71039603960396,
+      "nearest_distance": {
+        "mean": 26.98869514465332,
+        "p50": 13.129223823547363,
+        "p90": 70.89501037597655
+      },
+      "oracle_affine": {
+        "aepe": 14.249380585377907,
+        "pair_local_ready_percent": 97.27722772277228,
+        "valid_percent": 97.27722772277228
+      }
+    }
+  },
+  "pass": true,
+  "sanity": {
+    "checks": {
+      "center_ok": true,
+      "coordinate_direction": "optical_source_to_sar_target",
+      "gradient_orientation_toy": true,
+      "known_shift_patch": true,
+      "left_ok": true,
+      "patch_radius": 4,
+      "patch_size": 9,
+      "phase_congruency_rift_toy": true,
+      "random_score_control": true,
+      "random_score_metrics": {
+        "ap": 0.005760720930993557,
+        "auroc": 0.5269346833229065,
+        "base_rate": 0.004999999888241291
+      },
+      "same_image_identity_patch": true,
+      "shuffled_target_control": true,
+      "stride8_token_ok": true,
+      "structure_tensor_toy": true,
+      "swapped_direction_control": true,
+      "up_ok": true
+    },
+    "pass": true
+  }
+}

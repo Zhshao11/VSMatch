@@ -1,0 +1,233 @@
+{
+  "baselines": {
+    "e006a": {
+      "mean": 66.21,
+      "oracle_aepe": 0.190768,
+      "p10": 33.0,
+      "p50": 64.0
+    },
+    "e010a": {
+      "base": 0.0003826,
+      "mean": 37.077,
+      "p10": 16.0,
+      "p50": 36.0,
+      "p90": 60.0
+    },
+    "frozen_s2_gate": {
+      "base": 0.0005161,
+      "mean": 50.015,
+      "nearest_p50": 15.49,
+      "nearest_p90": 75.309,
+      "p10": 26.0,
+      "p50": 48.0
+    }
+  },
+  "candidate_outputs_complete_before_gt": true,
+  "checkpoint": {
+    "parameter_count": 146402,
+    "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/models/seed-20260820.pt",
+    "sha256": "44131806c81881843e4b315cd76fe52f1cadcdc8cbea756ea5a77896d216aacd",
+    "train_peak_allocated_bytes": 165992960,
+    "train_seconds": 2220.319256582763
+  },
+  "e008a_source_sha256": "b8e4dd9f4fce7bf55f2f8ff5a875052e214248c2052ac0de5cb3fb6398ba04a5",
+  "experiment": "E-011A",
+  "frozen_s2": {
+    "candidate_base_rate_2px": 0.0005160953501867608,
+    "candidate_count": 39151680,
+    "correct_2px_p10_p50_p90": [
+      26.0,
+      48.0,
+      78.0
+    ],
+    "mean_correct_2px_proposals": 50.01485148514851,
+    "nearest_distance": {
+      "mean": 29.414955139160156,
+      "p50": 15.490204811096191,
+      "p90": 75.30934753417966
+    }
+  },
+  "g1_checks": {
+    "base_rate_ge_0_0619_percent": false,
+    "formal_exact_404": true,
+    "mean_ge_60": false,
+    "nearest_p50_lt_frozen": false,
+    "nearest_p90_lt_frozen": false,
+    "p10_ge_31": false,
+    "p50_ge_56": false
+  },
+  "g2_checks": "NOT_EVALUATED_G1_FAIL",
+  "learned_score_before_top64": true,
+  "pair_count": 404,
+  "resource": {
+    "end_to_end_ms_p50_p95": [
+      222.90651150979102,
+      312.36387155950064
+    ],
+    "full_image_blind_search": false,
+    "hidden_4096_by_4096": false,
+    "max_live_score_elements": 25344,
+    "max_target_union_tokens": 1648,
+    "patch_extraction_ms_p50_p95": [
+      48.6329251434654,
+      150.88871479965738
+    ],
+    "peak_allocated_bytes_max": 46865408,
+    "retrieval_ms_p50_p95": [
+      171.08829994685948,
+      193.22224343195558
+    ]
+  },
+  "run_mode": "formal",
+  "source_sha256": "dfd7fe1b13da5beb875aac878c439c1f7e8ad25b50faa136af53ccba88ccaca1",
+  "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+  "status": "COMPLETED / RAW_PATCH_RETRIEVER_FAIL",
+  "topr": {
+    "128": {
+      "candidate_base_rate": {
+        "1": 8.914049154467957e-05,
+        "2": 0.00035450586028492264,
+        "5": 0.0021029493498107873
+      },
+      "candidate_count": 78303360,
+      "correct_2px_p10_p50_p90": [
+        34.0,
+        66.0,
+        106.0
+      ],
+      "mean_correct_2px_proposals": 68.71039603960396,
+      "nearest_distance": {
+        "mean": 26.98869514465332,
+        "p50": 13.129223823547363,
+        "p90": 70.89501037597655
+      },
+      "oracle_affine": {
+        "aepe": 14.249380585377907,
+        "pair_local_ready_percent": 97.27722772277228,
+        "valid_percent": 97.27722772277228
+      }
+    },
+    "16": {
+      "candidate_base_rate": {
+        "1": 0.00022231485341114352,
+        "2": 0.0008826185747329361,
+        "5": 0.004404000032693361
+      },
+      "candidate_count": 9787920,
+      "correct_2px_p10_p50_p90": [
+        7.0,
+        20.5,
+        36.0
+      ],
+      "mean_correct_2px_proposals": 21.383663366336634,
+      "nearest_distance": {
+        "mean": 56.522308349609375,
+        "p50": 40.18303298950195,
+        "p90": 126.66852874755858
+      },
+      "oracle_affine": {
+        "aepe": 132.19395940048196,
+        "pair_local_ready_percent": 74.25742574257426,
+        "valid_percent": 74.25742574257426
+      }
+    },
+    "32": {
+      "candidate_base_rate": {
+        "1": 0.00015738788220582105,
+        "2": 0.0006416582889929627,
+        "5": 0.003520002206801854
+      },
+      "candidate_count": 19575840,
+      "correct_2px_p10_p50_p90": [
+        12.0,
+        29.5,
+        52.69999999999999
+      ],
+      "mean_correct_2px_proposals": 31.09158415841584,
+      "nearest_distance": {
+        "mean": 42.964935302734375,
+        "p50": 28.073657989501953,
+        "p90": 100.50412292480466
+      },
+      "oracle_affine": {
+        "aepe": 67.58291875641092,
+        "pair_local_ready_percent": 86.88118811881188,
+        "valid_percent": 86.88118811881188
+      }
+    },
+    "4": {
+      "candidate_base_rate": {
+        "1": 0.000381694987290456,
+        "2": 0.0013866071647500183,
+        "5": 0.005817783553604852
+      },
+      "candidate_count": 2446980,
+      "correct_2px_p10_p50_p90": [
+        2.0,
+        8.0,
+        15.0
+      ],
+      "mean_correct_2px_proposals": 8.398514851485148,
+      "nearest_distance": {
+        "mean": 103.11430358886719,
+        "p50": 81.12041473388672,
+        "p90": 220.90116271972656
+      },
+      "oracle_affine": {
+        "aepe": 393.02133573285573,
+        "pair_local_ready_percent": 23.26732673267327,
+        "valid_percent": 23.26732673267327
+      }
+    },
+    "64": {
+      "candidate_base_rate": {
+        "1": 0.00011713418172604599,
+        "2": 0.00047341518933542574,
+        "5": 0.0027329861707083834
+      },
+      "candidate_count": 39151680,
+      "correct_2px_p10_p50_p90": [
+        20.0,
+        44.0,
+        73.69999999999999
+      ],
+      "mean_correct_2px_proposals": 45.87871287128713,
+      "nearest_distance": {
+        "mean": 33.642608642578125,
+        "p50": 19.45985221862793,
+        "p90": 82.97166137695312
+      },
+      "oracle_affine": {
+        "aepe": 24.464216993918807,
+        "pair_local_ready_percent": 95.29702970297029,
+        "valid_percent": 95.29702970297029
+      }
+    },
+    "8": {
+      "candidate_base_rate": {
+        "1": 0.00030568292344032236,
+        "2": 0.0011612273087642727,
+        "5": 0.005239928401539857
+      },
+      "candidate_count": 4893960,
+      "correct_2px_p10_p50_p90": [
+        4.0,
+        13.0,
+        24.69999999999999
+      ],
+      "mean_correct_2px_proposals": 14.066831683168317,
+      "nearest_distance": {
+        "mean": 76.00240325927734,
+        "p50": 57.188838958740234,
+        "p90": 165.55722045898435
+      },
+      "oracle_affine": {
+        "aepe": 233.4938922485724,
+        "pair_local_ready_percent": 54.45544554455446,
+        "valid_percent": 54.45544554455446
+      }
+    }
+  },
+  "uses_e008a_cached_tail_main_input": false,
+  "uses_raw_images": true
+}

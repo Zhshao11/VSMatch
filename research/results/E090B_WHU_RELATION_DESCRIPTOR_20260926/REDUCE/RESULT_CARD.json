@@ -1,0 +1,39 @@
+{
+  "arms": {
+    "1": {
+      "gate": false,
+      "in_window_coverage_mean": 72.2869873046875,
+      "last_completed_stage": "GT_JOIN",
+      "pairs": 1,
+      "prediction_materialized_before_gt_join": true,
+      "status": "FAIL",
+      "top1_percent": 5.9294127580529405,
+      "top5_percent": 27.18790897960907
+    },
+    "4": {
+      "gate": false,
+      "in_window_coverage_mean": 88.43803405761719,
+      "last_completed_stage": "GT_JOIN",
+      "pairs": 4,
+      "prediction_materialized_before_gt_join": true,
+      "status": "FAIL",
+      "top1_percent": 4.440226885500464,
+      "top5_percent": 26.6215196152436
+    },
+    "16": {
+      "gate": false,
+      "in_window_coverage_mean": 88.77954483032227,
+      "last_completed_stage": "GT_JOIN",
+      "pairs": 16,
+      "prediction_materialized_before_gt_join": true,
+      "status": "FAIL",
+      "top1_percent": 1.533320228032239,
+      "top5_percent": 11.495604890210878
+    }
+  },
+  "last_completed_stage": "PROGRESSIVE_OVERFIT_REDUCED",
+  "next_stage": "E090D_DESIGN_ONLY",
+  "os_experiment_started": false,
+  "status": "STOP_E090B_FAILED",
+  "whu_700_test_used": false
+}

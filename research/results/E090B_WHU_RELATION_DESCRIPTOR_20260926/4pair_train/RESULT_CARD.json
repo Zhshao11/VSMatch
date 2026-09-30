@@ -1,0 +1,10 @@
+{
+  "ce_first": 4.396055698394775,
+  "ce_last": 2.3337454795837402,
+  "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-090B-WHU-RELATION-DESCRIPTOR/4pair_train/E090B_4.pt",
+  "checkpoint_sha256": "e82015eae1f83733095a12d0e703c779de47cbcb6aec7502aca41bb255fa5d4c",
+  "last_completed_stage": "RELATION_CANDIDATE_TRAIN",
+  "pairs": 4,
+  "status": "COMPLETE",
+  "steps": 1200
+}

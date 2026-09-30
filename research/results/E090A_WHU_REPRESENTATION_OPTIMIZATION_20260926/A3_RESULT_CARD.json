@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE_DIAGNOSTIC",
+  "raw_e089": {
+    "candidate_ce_first": 4.391539621353149,
+    "candidate_ce_last": 4.340862226486206,
+    "gate_mean": 0.03103793365880847,
+    "action_delta_px": 0.06403347407467663,
+    "learning_rate": 0.0002
+  },
+  "candidate_only": {
+    "learning_rate": 0.0008,
+    "one_pair_final_ce": 3.144089460372925,
+    "four_pair_final_ce": 2.879089593887329,
+    "sixteen_pair_final_ce": 3.788496732711792,
+    "all_parameter_groups_nonzero_gradient": true
+  },
+  "oracle_gate": {
+    "learning_rate": 0.001,
+    "scalar_clamp_removed": true,
+    "all_progressive_aepe_reduction_ge_50_percent": true
+  },
+  "staged_candidate_then_gate": "NOT_RUN_BY_A1_GATE",
+  "gate_strength_zero_point_diagnosis": "E089 used clamp(gate_strength,0,1) at exact zero, suppressing negative optimizer directions. A2 removed the clamped scalar and showed the gate path can overfit oracle proposals.",
+  "conclusion": "Joint optimization aggravated the failure, but candidate representation remains the primary blocker."
+}

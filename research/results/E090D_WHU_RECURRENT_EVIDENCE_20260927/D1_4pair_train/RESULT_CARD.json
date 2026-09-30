@@ -1,0 +1,57 @@
+{
+  "candidate_steps": 500,
+  "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-090D-WHU-RECURRENT-EVIDENCE-INJECTION/D1_4pair_train/E090D_4.pt",
+  "checkpoint_sha256": "d16026d8feba3727f80b6670626e94a93ce57fd59c30f0632c2556de0bd414ed",
+  "curve_tail": [
+    {
+      "action_delta": 1.9922657012939453,
+      "adapter_norm": 3.322868824005127,
+      "aepe": 0.3871525526046753,
+      "ce": 3.9434194564819336,
+      "loss": 1.3907380104064941,
+      "phase": "recurrent",
+      "step": 800
+    },
+    {
+      "action_delta": 2.239837646484375,
+      "adapter_norm": 3.324756383895874,
+      "aepe": 0.8986365795135498,
+      "ce": 3.764108180999756,
+      "loss": 1.8493378162384033,
+      "phase": "recurrent",
+      "step": 825
+    },
+    {
+      "action_delta": 0.3185831308364868,
+      "adapter_norm": 3.3269481658935547,
+      "aepe": 0.23295995593070984,
+      "ce": 4.2128400802612305,
+      "loss": 1.315672755241394,
+      "phase": "recurrent",
+      "step": 850
+    },
+    {
+      "action_delta": 1.7133443355560303,
+      "adapter_norm": 3.328430652618408,
+      "aepe": 0.5740062594413757,
+      "ce": 3.5201945304870605,
+      "loss": 1.4670004844665527,
+      "phase": "recurrent",
+      "step": 875
+    },
+    {
+      "action_delta": 1.773836612701416,
+      "adapter_norm": 3.3299331665039062,
+      "aepe": 0.43259239196777344,
+      "ce": 3.928445339202881,
+      "loss": 1.4302542209625244,
+      "phase": "recurrent",
+      "step": 900
+    }
+  ],
+  "last_completed_stage": "D1_PHASED_TRAIN",
+  "pairs": 4,
+  "recurrent_steps": 400,
+  "status": "COMPLETE",
+  "test_700_used": false
+}

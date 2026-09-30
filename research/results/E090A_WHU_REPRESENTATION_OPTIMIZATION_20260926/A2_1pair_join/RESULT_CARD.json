@@ -1,0 +1,32 @@
+{
+  "aepe_relative_reduction": 0.8439263827293323,
+  "baseline": {
+    "aepe": 3.407031297683716,
+    "cmr1": 0.0,
+    "cmr2": 0.0,
+    "cmr5": 100.0,
+    "pairs": 1
+  },
+  "elapsed_seconds": 4.725598096847534,
+  "gate_mean": 0.997753381729126,
+  "last_completed_stage": "A2_ORACLE_PROPOSAL_GT_JOIN",
+  "oracle_gate": {
+    "aepe": 0.5317476987838745,
+    "cmr1": 100.0,
+    "cmr2": 100.0,
+    "cmr5": 100.0,
+    "pairs": 1
+  },
+  "oracle_proposal_diagnostic_only": true,
+  "pair_rows": [
+    {
+      "baseline_aepe": 3.407031297683716,
+      "gate_mean": 0.997753381729126,
+      "oracle_gate_aepe": 0.5317476987838745,
+      "pair_id": "001864_opt"
+    }
+  ],
+  "pairs": 1,
+  "prediction_materialized_before_gt_join": true,
+  "status": "COMPLETE"
+}

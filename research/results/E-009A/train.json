@@ -1,0 +1,43 @@
+{
+  "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-009A/run-01/models/seed-20260818.pt",
+  "epochs": 4,
+  "gradient_verified": true,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 3.2785612521431013,
+      "positive_groups": 153405,
+      "sample_count": 4908960,
+      "trained_pairs": 1599
+    },
+    {
+      "epoch": 2,
+      "loss": 3.201548483015374,
+      "positive_groups": 153405,
+      "sample_count": 4908960,
+      "trained_pairs": 1599
+    },
+    {
+      "epoch": 3,
+      "loss": 3.175983799480512,
+      "positive_groups": 153405,
+      "sample_count": 4908960,
+      "trained_pairs": 1599
+    },
+    {
+      "epoch": 4,
+      "loss": 3.160749921208251,
+      "positive_groups": 153405,
+      "sample_count": 4908960,
+      "trained_pairs": 1599
+    }
+  ],
+  "loss": "sampled_in_union_cross_entropy_1pos_31neg",
+  "parameter_count": 16065,
+  "record_count": 1607,
+  "run_mode": "formal",
+  "seed": 20260818,
+  "status": "PASS",
+  "train_peak_allocated_bytes": 29564416,
+  "train_seconds": 1055.833458991954
+}

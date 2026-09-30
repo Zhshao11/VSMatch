@@ -1,0 +1,22 @@
+{
+  "accuracy_audit.json": {
+    "sha256": "648d8c08083dffe0911cc3679215dced85550e871307a5a984d7a1d48f524c75",
+    "size_bytes": 12785
+  },
+  "benchmark_audit.json": {
+    "sha256": "5a8f62e0dbd9c257a2a3c694ecdab53024fee5791478b8f13a82628a6f8d4f8f",
+    "size_bytes": 14528
+  },
+  "bootstrap_ci.json": {
+    "sha256": "8074ea7a3e42e688dd2e66f0f61e5ff6b2db35a456f2a6e7c298f04840f7dca6",
+    "size_bytes": 16640
+  },
+  "error_group_summary.json": {
+    "sha256": "bc8ed5b8601aa64054fb0f1d8f3813ef7398fd9fd4f9fec3f0cb9418a08e4450",
+    "size_bytes": 26256
+  },
+  "error_groups.csv": {
+    "sha256": "f9fb3d4693e8168d795d77fa00df37af0fea67808677e4ba8baa462ae87d50c2",
+    "size_bytes": 8367
+  }
+}

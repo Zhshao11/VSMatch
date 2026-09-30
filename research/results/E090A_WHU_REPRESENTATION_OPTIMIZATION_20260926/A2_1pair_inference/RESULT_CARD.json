@@ -1,0 +1,10 @@
+{
+  "elapsed_seconds": 6.091160535812378,
+  "last_completed_stage": "GATE_MAPS_BEFORE_GT",
+  "manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-090A-WHU-REPRESENTATION-OPTIMIZATION-DECOUPLING/A2_1pair_inference/PREDICTIONS.jsonl",
+  "manifest_sha256": "13c0b2c062cd1c85bed36e3c17ebefed97b18dd00a09d9606879ff2d90e488c3",
+  "oracle_proposal_not_materialized": true,
+  "pairs": 1,
+  "prediction_materialized_before_gt_join": true,
+  "status": "COMPLETE"
+}

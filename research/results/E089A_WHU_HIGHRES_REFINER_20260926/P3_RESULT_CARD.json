@@ -1,0 +1,11 @@
+{
+  "status": "NOT_RUN_BY_P1_GATE",
+  "stage": "P3_WHU_700_TEST",
+  "blocking_result": "P1_join_r2/RESULT_CARD.json: STOP_P1_ACTIONABILITY_FAILED",
+  "reason": "P3 requires a unique P2 winner, but P2 was not run.",
+  "prediction_materialized": false,
+  "gt_join_run": false,
+  "test_700_used": false,
+  "exploratory_result_created": false,
+  "lucky_r2_started": false
+}

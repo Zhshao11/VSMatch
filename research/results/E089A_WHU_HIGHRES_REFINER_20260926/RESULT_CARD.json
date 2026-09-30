@@ -1,0 +1,28 @@
+{
+  "status": "STOPPED_AT_P1_ACTIONABILITY_FAILED",
+  "experiment": "E089A-WHU-HIGHRES-CROSSMODAL-RESIDUAL-REFINER",
+  "frozen_base_checkpoint_sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a",
+  "p0": {
+    "status": "PASS",
+    "split": "4800 train / 800 dev in 600 / 100 disjoint source groups",
+    "anchor_cache_pairs": 5600,
+    "contract_smoke": "PASS"
+  },
+  "p1": {
+    "status": "STOP_P1_ACTIONABILITY_FAILED",
+    "baseline_aepe": 2.848993878811598,
+    "new_aepe": 2.8064502459019423,
+    "relative_aepe_reduction": 0.014932862167960087,
+    "cmr1_gain_pp": 0.0,
+    "candidate_top1_percent": 0.7364273071289062,
+    "candidate_top5_percent": 2.417755126953125,
+    "module_off_max_abs_delta": 0.0,
+    "action_path_delta_mean": 0.06403347407467663
+  },
+  "p2": "NOT_RUN_BY_P1_GATE",
+  "p3": "NOT_RUN_BY_P1_GATE",
+  "decision": "Do not continue this descriptor/scorer/gate configuration to split-safe training.",
+  "e081a_m4_checkpoint_modified": false,
+  "os_e075a_m4_modified": false,
+  "lucky_r2_started": false
+}

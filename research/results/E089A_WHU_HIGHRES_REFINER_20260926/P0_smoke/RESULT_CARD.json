@@ -1,0 +1,44 @@
+{
+  "action_path_delta_mean": 0.02740919217467308,
+  "backbone_frozen": true,
+  "checkpoint_sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a",
+  "checks": {
+    "all_trainable_groups_have_finite_nonzero_gradient": true,
+    "base_checkpoint_hash": true,
+    "bounded_residual": true,
+    "cost_volume_81": true,
+    "descriptor_stride2_48d": true,
+    "dual_warp_translation_error_zero": true,
+    "force_gate_off_identity_bitwise": true,
+    "known_shift_beats_random_negative": true,
+    "known_shift_top1_ge_0_90": true,
+    "output_shape": true,
+    "split_4800_800_group_safe": true,
+    "zero_initialized_identity_bitwise": true
+  },
+  "dual_warp_translation_error": 0.0,
+  "elapsed_seconds": 6.3588197231292725,
+  "gate_activation_mean": 0.05000000074505806,
+  "gradient_checks": {
+    "gate": true,
+    "opt_stem": true,
+    "projection": true,
+    "sar_stem": true,
+    "scorer": true
+  },
+  "last_completed_stage": "P0_HIGHRES_INTERFACE_AND_CONTRACT_SMOKE",
+  "next_stage": "P1_ALLOWED",
+  "parameter_count": 36036,
+  "peak_memory_mb": 9113,
+  "status": "PASS",
+  "synthetic": {
+    "known_shift": [
+      2,
+      -2
+    ],
+    "known_shift_score": 0.9999996423721313,
+    "known_shift_top1_accuracy": 1.0,
+    "random_negative_best_score": 0.3123840391635895
+  },
+  "test_700_sealed": true
+}

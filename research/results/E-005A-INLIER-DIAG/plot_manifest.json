@@ -1,0 +1,14 @@
+{
+  "cell_count": 84,
+  "greyed": {
+    "e005a": 0,
+    "equal": 0
+  },
+  "raw_csv_rows": 1085952,
+  "raw_csv_sha256": "86ecff591346e8509a551e0b32a9e4df5823b848f2397f298dc2cfa6526de122",
+  "summary_sha256": "7802d174ed1b5e00ab3ea8366c28e99e4f431a2b1b14341fe2f53d8f54c8dcea",
+  "tracks": {
+    "e005a": 42,
+    "equal": 42
+  }
+}

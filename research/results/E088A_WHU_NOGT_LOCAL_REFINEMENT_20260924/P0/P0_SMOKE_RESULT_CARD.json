@@ -1,0 +1,23 @@
+{
+  "candidate_gpus": null,
+  "checkpoint_sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a",
+  "checks": {
+    "anchor_shape": true,
+    "correlation_shape": true,
+    "cycle_shape": true,
+    "finite": true,
+    "neighbor_shape": true,
+    "offsets_fixed_81": true,
+    "uses_ground_truth_false": true
+  },
+  "elapsed_seconds": 18.484581470489502,
+  "feature_hw": [
+    64,
+    64
+  ],
+  "last_completed_stage": "P0_NO_GT_CANDIDATE_SMOKE",
+  "logical_device": "cuda:0",
+  "pair_index": 0,
+  "status": "PASS",
+  "truth_flow_opened": false
+}

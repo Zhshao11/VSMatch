@@ -1,0 +1,57 @@
+{
+  "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/models/seed-20260820.pt",
+  "descriptor_dim": 96,
+  "epochs": 4,
+  "gradient_verified": true,
+  "history": [
+    {
+      "epoch": 1,
+      "hard_negative": 1.520700996143188,
+      "hard_negative_tokens": 122112348,
+      "listwise": 6.783660026162812,
+      "loss": 7.163835328992565,
+      "proposal_groups": 102336,
+      "trained_pairs": 1599
+    },
+    {
+      "epoch": 2,
+      "hard_negative": 1.5921459709349746,
+      "hard_negative_tokens": 122112348,
+      "listwise": 6.644352786257146,
+      "loss": 7.042389326352041,
+      "proposal_groups": 102336,
+      "trained_pairs": 1599
+    },
+    {
+      "epoch": 3,
+      "hard_negative": 1.6566320544529811,
+      "hard_negative_tokens": 122112348,
+      "listwise": 6.58487385909155,
+      "loss": 6.999031934982691,
+      "proposal_groups": 102336,
+      "trained_pairs": 1599
+    },
+    {
+      "epoch": 4,
+      "hard_negative": 1.7136473022903305,
+      "hard_negative_tokens": 122112348,
+      "listwise": 6.527313302592478,
+      "loss": 6.95572518676128,
+      "proposal_groups": 102336,
+      "trained_pairs": 1599
+    }
+  ],
+  "loss": "raw_image_full_union_gaussian_listwise_plus_current_model_hard_negative",
+  "parameter_count": 146402,
+  "proposal_sampling": "deterministic linspace over recoverable proposals per pair",
+  "proposals_per_pair": 64,
+  "record_count": 1607,
+  "run_mode": "formal",
+  "seed": 20260820,
+  "soft_label": "softmax(-0.5*(distance_px/2.0)^2) over complete S1 union",
+  "status": "PASS",
+  "train_peak_allocated_bytes": 165992960,
+  "train_seconds": 2220.319256582763,
+  "uses_e008a_cached_tail_main_input": false,
+  "uses_raw_images": true
+}

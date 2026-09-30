@@ -1,0 +1,11 @@
+{
+  "candidate_loss": "r4 labels only plus explicit dustbin for outside-window tokens",
+  "evidence_tensor": "stride2 logits [B,81,H/2,W/2] -> expected residual(2), second moment(2), entropy(1), margin(1), top1 mode(2), top1 mass(1), mean logit(1) -> stride8 [B,24,H/8,W/8]",
+  "frozen": "E081 feature/context networks, raw CorrBlock, base update block, M4 refiner, LSR, remaining late update parameters",
+  "identity": "adapter final conv zero; disabled path uses only frozen base update",
+  "last_completed_stage": "DESIGN_FROZEN",
+  "path": "frozen raw CorrBlock -> frozen base update for all 32 iterations; structured 9x9 evidence -> evidence encoder -> zero residual adapter only in iterations 29-32; trainable late update copy supplies restricted motion/update delta features",
+  "status": "COMPLETE",
+  "test_700_sealed": true,
+  "trainable": "OPT/SAR stems, shared projection, score head, evidence encoder, adapter, late update encoder+flow_head only"
+}

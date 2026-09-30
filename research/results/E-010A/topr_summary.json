@@ -1,0 +1,223 @@
+{
+  "baselines": {
+    "e006a": {
+      "mean": 66.21,
+      "oracle_aepe": 0.190768,
+      "p10": 33.0,
+      "p50": 64.0
+    },
+    "e009a": {
+      "base": 0.0003585,
+      "mean": 34.745,
+      "p10": 15.0,
+      "p50": 33.0,
+      "p90": 55.7
+    },
+    "frozen_s2_gate": {
+      "base": 0.0005161,
+      "mean": 50.015,
+      "nearest_p50": 15.49,
+      "nearest_p90": 75.309,
+      "p10": 26.0,
+      "p50": 48.0
+    }
+  },
+  "candidate_outputs_complete_before_gt": true,
+  "checkpoint": {
+    "parameter_count": 134914,
+    "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-010A/run-01/models/seed-20260819.pt",
+    "sha256": "83c3bf1ce0c004328e70846d79d6ccef6fae5bbed6cf1ca0b4652c005966ed4c",
+    "train_peak_allocated_bytes": 542887424,
+    "train_seconds": 2713.6400678821374
+  },
+  "e008a_source_sha256": "b8e4dd9f4fce7bf55f2f8ff5a875052e214248c2052ac0de5cb3fb6398ba04a5",
+  "experiment": "E-010A",
+  "frozen_s2": {
+    "candidate_base_rate_2px": 0.0005160953501867608,
+    "candidate_count": 39151680,
+    "correct_2px_p10_p50_p90": [
+      26.0,
+      48.0,
+      78.0
+    ],
+    "mean_correct_2px_proposals": 50.01485148514851,
+    "nearest_distance": {
+      "mean": 29.414955139160156,
+      "p50": 15.490204811096191,
+      "p90": 75.30934753417966
+    }
+  },
+  "g1_checks": {
+    "base_rate_ge_0_0619_percent": false,
+    "formal_exact_404": true,
+    "mean_ge_60": false,
+    "nearest_p50_lt_frozen": false,
+    "nearest_p90_lt_frozen": false,
+    "p10_ge_31": false,
+    "p50_ge_56": false
+  },
+  "g2_checks": "NOT_EVALUATED_G1_FAIL",
+  "learned_score_before_top64": true,
+  "pair_count": 404,
+  "resource": {
+    "candidate_generation_ms_p50_p95": [
+      322.1626089653,
+      388.2184772286564
+    ],
+    "full_image_blind_search": false,
+    "hidden_4096_by_4096": false,
+    "max_live_score_elements": 25344,
+    "max_target_union_tokens": 1648,
+    "peak_allocated_bytes_max": 13053440
+  },
+  "run_mode": "formal",
+  "source_sha256": "24a99d9d351e8fe00d55330bdd36010063381952864130a37ea358bb240d3719",
+  "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+  "status": "COMPLETED / STRONG_RETRIEVER_FAIL",
+  "topr": {
+    "128": {
+      "candidate_base_rate": {
+        "1": 7.583327203328184e-05,
+        "2": 0.00029992327276888247,
+        "5": 0.0018309176004707845
+      },
+      "candidate_count": 78303360,
+      "correct_2px_p10_p50_p90": [
+        29.0,
+        55.0,
+        89.0
+      ],
+      "mean_correct_2px_proposals": 58.131188118811885,
+      "nearest_distance": {
+        "mean": 31.018192291259766,
+        "p50": 16.375837326049805,
+        "p90": 78.94594421386718
+      },
+      "oracle_affine": {
+        "aepe": 23.13846967813771,
+        "pair_local_ready_percent": 95.54455445544554,
+        "valid_percent": 95.54455445544554
+      }
+    },
+    "16": {
+      "candidate_base_rate": {
+        "1": 0.0001647949717611096,
+        "2": 0.0006212760218718584,
+        "5": 0.003173197165485619
+      },
+      "candidate_count": 9787920,
+      "correct_2px_p10_p50_p90": [
+        5.0,
+        14.0,
+        27.0
+      ],
+      "mean_correct_2px_proposals": 15.051980198019802,
+      "nearest_distance": {
+        "mean": 75.98925018310547,
+        "p50": 52.84764099121094,
+        "p90": 173.05593566894532
+      },
+      "oracle_affine": {
+        "aepe": 228.4281928812587,
+        "pair_local_ready_percent": 55.44554455445545,
+        "valid_percent": 55.44554455445545
+      }
+    },
+    "32": {
+      "candidate_base_rate": {
+        "1": 0.00012474560478630803,
+        "2": 0.0004883059935103679,
+        "5": 0.0027601880685579777
+      },
+      "candidate_count": 19575840,
+      "correct_2px_p10_p50_p90": [
+        10.0,
+        22.0,
+        38.0
+      ],
+      "mean_correct_2px_proposals": 23.66089108910891,
+      "nearest_distance": {
+        "mean": 56.47283935546875,
+        "p50": 37.26544189453125,
+        "p90": 130.41253356933592
+      },
+      "oracle_affine": {
+        "aepe": 109.3918398207072,
+        "pair_local_ready_percent": 78.71287128712872,
+        "valid_percent": 78.71287128712872
+      }
+    },
+    "4": {
+      "candidate_base_rate": {
+        "1": 0.00023988753483886259,
+        "2": 0.0008398107054409926,
+        "5": 0.003615885704010658
+      },
+      "candidate_count": 2446980,
+      "correct_2px_p10_p50_p90": [
+        1.0,
+        5.0,
+        10.0
+      ],
+      "mean_correct_2px_proposals": 5.086633663366337,
+      "nearest_distance": {
+        "mean": 129.03086853027344,
+        "p50": 99.85762023925781,
+        "p90": 280.4036193847656
+      },
+      "oracle_affine": {
+        "aepe": 490.4798718436741,
+        "pair_local_ready_percent": 4.207920792079208,
+        "valid_percent": 4.207920792079208
+      }
+    },
+    "64": {
+      "candidate_base_rate": {
+        "1": 9.680299798118497e-05,
+        "2": 0.000382588946374715,
+        "5": 0.0022803363738158875
+      },
+      "candidate_count": 39151680,
+      "correct_2px_p10_p50_p90": [
+        16.0,
+        36.0,
+        60.0
+      ],
+      "mean_correct_2px_proposals": 37.07673267326733,
+      "nearest_distance": {
+        "mean": 41.615970611572266,
+        "p50": 25.331302642822266,
+        "p90": 99.60319061279293
+      },
+      "oracle_affine": {
+        "aepe": 48.5407244100761,
+        "pair_local_ready_percent": 90.5940594059406,
+        "valid_percent": 90.5940594059406
+      }
+    },
+    "8": {
+      "candidate_base_rate": {
+        "1": 0.0002100548431127349,
+        "2": 0.0007462259601631399,
+        "5": 0.0034338245510792897
+      },
+      "candidate_count": 4893960,
+      "correct_2px_p10_p50_p90": [
+        3.0,
+        8.0,
+        17.0
+      ],
+      "mean_correct_2px_proposals": 9.03960396039604,
+      "nearest_distance": {
+        "mean": 100.24190521240234,
+        "p50": 73.41252136230469,
+        "p90": 224.27392272949214
+      },
+      "oracle_affine": {
+        "aepe": 384.1571474330186,
+        "pair_local_ready_percent": 25.0,
+        "valid_percent": 25.0
+      }
+    }
+  }
+}

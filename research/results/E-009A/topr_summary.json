@@ -1,0 +1,217 @@
+{
+  "baselines": {
+    "e006a": {
+      "mean": 66.21,
+      "oracle_aepe": 0.190768,
+      "p10": 33.0,
+      "p50": 64.0,
+      "plr": 99.0,
+      "valid": 99.0
+    },
+    "frozen_s2": {
+      "base_rate_2px": 0.0005161,
+      "mean": 50.015,
+      "nearest_p50": 15.49,
+      "p10": 26.0,
+      "p50": 48.0
+    }
+  },
+  "candidate_outputs_complete_before_gt": true,
+  "checkpoint": {
+    "parameter_count": 16065,
+    "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-009A/run-01/models/seed-20260818.pt",
+    "sha256": "65a5df0aa293c58f7357de38cd22273f3f0a6295e62e5f5a614df916bc8b24a9",
+    "train_peak_allocated_bytes": 29564416,
+    "train_seconds": 1055.833458991954
+  },
+  "e008a_source_sha256": "b8e4dd9f4fce7bf55f2f8ff5a875052e214248c2052ac0de5cb3fb6398ba04a5",
+  "experiment": "E-009A",
+  "frozen_s2": {
+    "candidate_base_rate_2px": 0.0005160953501867608,
+    "candidate_count": 39151680,
+    "correct_2px_p10_p50_p90": [
+      26.0,
+      48.0,
+      78.0
+    ],
+    "mean_correct_2px_proposals": 50.01485148514851,
+    "nearest_distance": {
+      "mean": 29.414955139160156,
+      "p50": 15.490204811096191,
+      "p90": 75.30934753417966
+    }
+  },
+  "g1_checks": {
+    "base_rate_gt_frozen_s2": false,
+    "formal_exact_404": true,
+    "mean_gt_frozen_s2": false,
+    "nearest_p50_not_worse": false,
+    "nearest_p90_not_worse": false,
+    "p10_gt_frozen_s2": false,
+    "p50_gt_frozen_s2": false
+  },
+  "g2_checks": "NOT_EVALUATED_G1_FAIL",
+  "learned_score_before_top64": true,
+  "pair_count": 404,
+  "resource": {
+    "candidate_generation_ms_p50_p95": [
+      244.32892352342606,
+      292.8088474087417
+    ],
+    "full_image_blind_search": false,
+    "hidden_4096_by_4096": false,
+    "max_live_score_elements": 25344,
+    "max_target_union_tokens": 1648,
+    "peak_allocated_bytes_max": 11097600
+  },
+  "run_mode": "formal",
+  "source_sha256": "1eb43a36f88c69b661eaef2be3ba8655eef1f21ca78abf0167595395f32e8bf6",
+  "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+  "status": "COMPLETED / LEARNED_TOP64_FAIL",
+  "topr": {
+    "128": {
+      "candidate_base_rate": {
+        "1": 7.209141472345504e-05,
+        "2": 0.00028579871923759085,
+        "5": 0.0017373711677251143
+      },
+      "candidate_count": 78303360,
+      "correct_2px_p10_p50_p90": [
+        26.0,
+        53.5,
+        85.0
+      ],
+      "mean_correct_2px_proposals": 55.39356435643565,
+      "nearest_distance": {
+        "mean": 31.888816833496094,
+        "p50": 17.641698837280273,
+        "p90": 79.48154296874999
+      },
+      "oracle_affine": {
+        "aepe": 20.625296776763875,
+        "pair_local_ready_percent": 96.03960396039604,
+        "valid_percent": 96.03960396039604
+      }
+    },
+    "16": {
+      "candidate_base_rate": {
+        "1": 0.00014855045811571816,
+        "2": 0.0005576261350726202,
+        "5": 0.002920845286843374
+      },
+      "candidate_count": 9787920,
+      "correct_2px_p10_p50_p90": [
+        5.0,
+        12.0,
+        24.69999999999999
+      ],
+      "mean_correct_2px_proposals": 13.509900990099009,
+      "nearest_distance": {
+        "mean": 81.52860260009766,
+        "p50": 57.60468292236328,
+        "p90": 184.3961395263672
+      },
+      "oracle_affine": {
+        "aepe": 253.7679394893717,
+        "pair_local_ready_percent": 50.495049504950494,
+        "valid_percent": 50.495049504950494
+      }
+    },
+    "32": {
+      "candidate_base_rate": {
+        "1": 0.00011432459603266067,
+        "2": 0.0004512194623576817,
+        "5": 0.00254190880187006
+      },
+      "candidate_count": 19575840,
+      "correct_2px_p10_p50_p90": [
+        9.0,
+        21.0,
+        36.0
+      ],
+      "mean_correct_2px_proposals": 21.863861386138613,
+      "nearest_distance": {
+        "mean": 60.172142028808594,
+        "p50": 40.68498992919922,
+        "p90": 138.16255493164059
+      },
+      "oracle_affine": {
+        "aepe": 137.25047084357183,
+        "pair_local_ready_percent": 73.26732673267327,
+        "valid_percent": 73.26732673267327
+      }
+    },
+    "4": {
+      "candidate_base_rate": {
+        "1": 0.00021373284620225747,
+        "2": 0.0007625726405610181,
+        "5": 0.0034499668979721945
+      },
+      "candidate_count": 2446980,
+      "correct_2px_p10_p50_p90": [
+        1.0,
+        4.0,
+        9.0
+      ],
+      "mean_correct_2px_proposals": 4.618811881188119,
+      "nearest_distance": {
+        "mean": 137.0676727294922,
+        "p50": 106.662353515625,
+        "p90": 296.65969238281247
+      },
+      "oracle_affine": {
+        "aepe": 494.28204746514854,
+        "pair_local_ready_percent": 3.4653465346534658,
+        "valid_percent": 3.4653465346534658
+      }
+    },
+    "64": {
+      "candidate_base_rate": {
+        "1": 8.998336725269516e-05,
+        "2": 0.000358528676164088,
+        "5": 0.0021234082419962566
+      },
+      "candidate_count": 39151680,
+      "correct_2px_p10_p50_p90": [
+        15.0,
+        33.0,
+        55.69999999999999
+      ],
+      "mean_correct_2px_proposals": 34.745049504950494,
+      "nearest_distance": {
+        "mean": 43.680084228515625,
+        "p50": 27.63445281982422,
+        "p90": 102.91076049804687
+      },
+      "oracle_affine": {
+        "aepe": 52.35887184207982,
+        "pair_local_ready_percent": 89.85148514851485,
+        "valid_percent": 89.85148514851485
+      }
+    },
+    "8": {
+      "candidate_base_rate": {
+        "1": 0.00018512615550597062,
+        "2": 0.0006638795576588284,
+        "5": 0.003231943048165494
+      },
+      "candidate_count": 4893960,
+      "correct_2px_p10_p50_p90": [
+        2.0,
+        7.0,
+        15.699999999999989
+      ],
+      "mean_correct_2px_proposals": 8.042079207920793,
+      "nearest_distance": {
+        "mean": 107.35980987548828,
+        "p50": 79.39351654052734,
+        "p90": 239.49815979003904
+      },
+      "oracle_affine": {
+        "aepe": 415.79378519129784,
+        "pair_local_ready_percent": 18.81188118811881,
+        "valid_percent": 18.81188118811881
+      }
+    }
+  }
+}

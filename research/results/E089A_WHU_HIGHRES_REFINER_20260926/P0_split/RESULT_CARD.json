@@ -1,0 +1,13 @@
+{
+  "dev_groups": 100,
+  "dev_pairs": 800,
+  "elapsed_seconds": 2.8485169410705566,
+  "group_overlap": 0,
+  "last_completed_stage": "GROUPED_4800_800_SPLIT_FROZEN",
+  "next_stage": "P0_ANCHOR_CACHE",
+  "split_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-089A-WHU-HIGHRES-CROSSMODAL-RESIDUAL-REFINER/P0/SPLIT_MANIFEST.json",
+  "status": "PASS",
+  "test_pairs_sealed": 700,
+  "train_groups": 600,
+  "train_pairs": 4800
+}

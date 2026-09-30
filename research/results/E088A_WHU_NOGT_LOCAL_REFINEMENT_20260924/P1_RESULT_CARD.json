@@ -1,0 +1,11 @@
+{
+  "status": "NOT_RUN_BY_P0_GATE",
+  "stage": "P1_ACTIONABILITY_OVERFIT",
+  "blocking_result": "P0 STOP_NO_CANDIDATE_DISCERNIBILITY",
+  "reason": "Frozen E081A feature-correlation scoring performed below random oracle-near retrieval references and materially worsened AEPE.",
+  "training_started": false,
+  "checkpoint_created": false,
+  "backbone_modified": false,
+  "e081a_m4_checkpoint_modified": false,
+  "lucky_r2_started": false
+}

@@ -1,0 +1,597 @@
+{
+  "checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+  "checks": {
+    "formal_exact_404": true,
+    "live_budget_exact": true,
+    "mean_correct_2px_ge_140": false,
+    "no_hidden_n2": true,
+    "oracle_aepe_le_1_6": true,
+    "pair_local_ready_ge_99": true,
+    "valid_ge_99": true
+  },
+  "experiment": "E-006A",
+  "gate": "P0",
+  "mode": "formal",
+  "pair_count": 404,
+  "runtime_trace": {
+    "basin_trace": {
+      "basin_count": 8,
+      "condition": [
+        [
+          16037.7802734375,
+          16037.7802734375,
+          16037.7802734375,
+          16037.7802734375,
+          16037.7802734375,
+          16037.7802734375,
+          16037.7802734375,
+          16037.7802734375
+        ]
+      ],
+      "initialization": "region_match_rank_affine_ls",
+      "uses_ground_truth": false
+    },
+    "dense_flow_state": false,
+    "dense_gru": false,
+    "global_score_elements": 1048576,
+    "global_score_shape": [
+      256,
+      4096
+    ],
+    "hidden_4096_by_4096": false,
+    "local_candidate_score_elements": 165888,
+    "local_score_shape": [
+      8,
+      256,
+      81
+    ],
+    "max_live_score_tensor_elements": 262144,
+    "merge_trace": [
+      {
+        "affine_local_count": 4,
+        "global_count": 8,
+        "hard_selection": true,
+        "post_dedup_max": 20,
+        "post_dedup_min": 8,
+        "pre_dedup_count": 20,
+        "region_count": 8
+      },
+      {
+        "affine_local_count": 4,
+        "global_count": 8,
+        "hard_selection": true,
+        "post_dedup_max": 20,
+        "post_dedup_min": 8,
+        "pre_dedup_count": 20,
+        "region_count": 8
+      },
+      {
+        "affine_local_count": 4,
+        "global_count": 8,
+        "hard_selection": true,
+        "post_dedup_max": 20,
+        "post_dedup_min": 8,
+        "pre_dedup_count": 20,
+        "region_count": 8
+      },
+      {
+        "affine_local_count": 4,
+        "global_count": 8,
+        "hard_selection": true,
+        "post_dedup_max": 20,
+        "post_dedup_min": 8,
+        "pre_dedup_count": 20,
+        "region_count": 8
+      },
+      {
+        "affine_local_count": 4,
+        "global_count": 8,
+        "hard_selection": true,
+        "post_dedup_max": 20,
+        "post_dedup_min": 8,
+        "pre_dedup_count": 20,
+        "region_count": 8
+      },
+      {
+        "affine_local_count": 4,
+        "global_count": 8,
+        "hard_selection": true,
+        "post_dedup_max": 20,
+        "post_dedup_min": 8,
+        "pre_dedup_count": 20,
+        "region_count": 8
+      },
+      {
+        "affine_local_count": 4,
+        "global_count": 8,
+        "hard_selection": true,
+        "post_dedup_max": 20,
+        "post_dedup_min": 9,
+        "pre_dedup_count": 20,
+        "region_count": 8
+      },
+      {
+        "affine_local_count": 4,
+        "global_count": 8,
+        "hard_selection": true,
+        "post_dedup_max": 20,
+        "post_dedup_min": 8,
+        "pre_dedup_count": 20,
+        "region_count": 8
+      }
+    ],
+    "region_candidate_score_elements": 131072,
+    "region_score_elements": 4096,
+    "region_score_shape": [
+      64,
+      64
+    ],
+    "region_score_shape_per_proposal": [
+      256,
+      512
+    ],
+    "score_tensor_shapes": {
+      "affine_local": [
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ],
+        [
+          1,
+          32,
+          81
+        ]
+      ],
+      "global": [
+        [
+          1,
+          256,
+          1024
+        ],
+        [
+          1,
+          256,
+          1024
+        ],
+        [
+          1,
+          256,
+          1024
+        ],
+        [
+          1,
+          256,
+          1024
+        ]
+      ],
+      "region": [
+        [
+          1,
+          32,
+          512
+        ],
+        [
+          1,
+          32,
+          512
+        ],
+        [
+          1,
+          32,
+          512
+        ],
+        [
+          1,
+          32,
+          512
+        ],
+        [
+          1,
+          32,
+          512
+        ],
+        [
+          1,
+          32,
+          512
+        ],
+        [
+          1,
+          32,
+          512
+        ],
+        [
+          1,
+          32,
+          512
+        ]
+      ]
+    },
+    "source_negative_audit": {
+      "files": [
+        {
+          "forbidden_hits": [],
+          "path": "regions.py",
+          "sha256": "994109191795980968cb4acc0fe52e19829326530f30ef7022825707536f3c9c"
+        },
+        {
+          "forbidden_hits": [],
+          "path": "proposals.py",
+          "sha256": "dc31f07e19787315b7f5f5ee0254c2801be0dad0624a7beec7dc5fdfac451bde"
+        },
+        {
+          "forbidden_hits": [],
+          "path": "candidates.py",
+          "sha256": "d14e4079a05ccb85a7b91234b8e76bd94d32db89ae8548181d7c0c04ff494c84"
+        },
+        {
+          "forbidden_hits": [],
+          "path": "robust_affine.py",
+          "sha256": "a133eee1da32e9d85f34af6198b8ed99d860b6c9edf0c311160d8c839652df03"
+        },
+        {
+          "forbidden_hits": [],
+          "path": "state_machine.py",
+          "sha256": "8eba1d93440078015c48e0900abf649efb71a83792e6dccba5ee61da14b183cc"
+        }
+      ],
+      "pass": true
+    }
+  },
+  "source_manifest": {
+    "files": [
+      {
+        "path": "__init__.py",
+        "sha256": "d12fb5fabdc18535d760ea0b58581312dc2271b1cd01e87dc717d053916f6a93"
+      },
+      {
+        "path": "candidates.py",
+        "sha256": "d14e4079a05ccb85a7b91234b8e76bd94d32db89ae8548181d7c0c04ff494c84"
+      },
+      {
+        "path": "p0.py",
+        "sha256": "44442d417e4b3d569b2ec6b70cbb3bbfe12f527ff3889046cca07fd1f97cf36d"
+      },
+      {
+        "path": "proposals.py",
+        "sha256": "dc31f07e19787315b7f5f5ee0254c2801be0dad0624a7beec7dc5fdfac451bde"
+      },
+      {
+        "path": "regions.py",
+        "sha256": "994109191795980968cb4acc0fe52e19829326530f30ef7022825707536f3c9c"
+      },
+      {
+        "path": "robust_affine.py",
+        "sha256": "a133eee1da32e9d85f34af6198b8ed99d860b6c9edf0c311160d8c839652df03"
+      },
+      {
+        "path": "spec_binding.py",
+        "sha256": "23336ea4d64edd1ca2ae8d01f08882387ba0c7d3be5523dee324d82c8403bec4"
+      },
+      {
+        "path": "state_machine.py",
+        "sha256": "8eba1d93440078015c48e0900abf649efb71a83792e6dccba5ee61da14b183cc"
+      }
+    ],
+    "sha256": "a26f9619ad395bdbc1d45b3ec09ae256d603512042681259efdc8aac4e486d2a"
+  },
+  "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+  "status": "FAIL",
+  "summary": {
+    "aepe": 0.19076840212513316,
+    "mean_correct_2px": 66.21039603960396,
+    "pair_local_ready_percent": 100.0,
+    "valid_percent": 100.0
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "pairs": [
+    {
+      "pair_id": "001864_opt",
+      "pair_index": 1864,
+      "source_group": 233
+    },
+    {
+      "pair_id": "001648_opt",
+      "pair_index": 1648,
+      "source_group": 206
+    },
+    {
+      "pair_id": "005104_opt",
+      "pair_index": 5104,
+      "source_group": 638
+    },
+    {
+      "pair_id": "005200_opt",
+      "pair_index": 5200,
+      "source_group": 650
+    },
+    {
+      "pair_id": "004488_opt",
+      "pair_index": 4488,
+      "source_group": 561
+    },
+    {
+      "pair_id": "003792_opt",
+      "pair_index": 3792,
+      "source_group": 474
+    },
+    {
+      "pair_id": "003616_opt",
+      "pair_index": 3616,
+      "source_group": 452
+    },
+    {
+      "pair_id": "004616_opt",
+      "pair_index": 4616,
+      "source_group": 577
+    },
+    {
+      "pair_id": "004920_opt",
+      "pair_index": 4920,
+      "source_group": 615
+    },
+    {
+      "pair_id": "003320_opt",
+      "pair_index": 3320,
+      "source_group": 415
+    },
+    {
+      "pair_id": "005552_opt",
+      "pair_index": 5552,
+      "source_group": 694
+    },
+    {
+      "pair_id": "005088_opt",
+      "pair_index": 5088,
+      "source_group": 636
+    },
+    {
+      "pair_id": "001264_opt",
+      "pair_index": 1264,
+      "source_group": 158
+    },
+    {
+      "pair_id": "005160_opt",
+      "pair_index": 5160,
+      "source_group": 645
+    },
+    {
+      "pair_id": "001544_opt",
+      "pair_index": 1544,
+      "source_group": 193
+    },
+    {
+      "pair_id": "003824_opt",
+      "pair_index": 3824,
+      "source_group": 478
+    }
+  ],
+  "selection": "lowest 16 SHA256(E089A-P1-v1:<train source group>), first generated variant per group",
+  "uses_dev": false,
+  "uses_test_700": false
+}

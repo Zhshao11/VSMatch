@@ -1,0 +1,79 @@
+{
+  "status": "STOP_HELDOUT_GATE_FAILED",
+  "last_completed_stage": "PREDECLARED_DEV_SELECTION_AND_GATE",
+  "train_groups": 200,
+  "train_pairs": 1600,
+  "dev_groups": 100,
+  "dev_pairs": 800,
+  "train_presentations": {
+    "candidate": 6400,
+    "recurrent": 4800
+  },
+  "selection_order": "CMR@1 -> AEPE -> CMR@2 -> CMR@5",
+  "winner": {
+    "phase": "recurrent",
+    "epoch": 3
+  },
+  "methods": {
+    "baseline": {
+      "aepe": 2.4802989554405213,
+      "cmr1": 22.5,
+      "cmr2": 69.875,
+      "cmr5": 97.125,
+      "cmr10": 98.875,
+      "cmr16": 99.0,
+      "fail_ge5": 23
+    },
+    "main": {
+      "aepe": 2.4654684771597384,
+      "cmr1": 24.75,
+      "cmr2": 70.0,
+      "cmr5": 97.375,
+      "cmr10": 98.875,
+      "cmr16": 99.0,
+      "fail_ge5": 21
+    },
+    "shuffle": {
+      "aepe": 2.4651701714098455,
+      "cmr1": 24.5,
+      "cmr2": 69.625,
+      "cmr5": 97.375,
+      "fail_ge5": 21
+    },
+    "zero": {
+      "aepe": 2.9952922697365283,
+      "cmr1": 8.25,
+      "cmr2": 50.5,
+      "cmr5": 95.875,
+      "fail_ge5": 33
+    }
+  },
+  "bootstrap_95ci": {
+    "aepe_improvement": [-0.008088914612308144, 0.036183399600908155],
+    "cmr1_gain_pp": [0.6249999999999978, 3.875000000000001]
+  },
+  "candidate": {
+    "top1_percent": 11.906947196515294,
+    "top5_percent": 39.86065754069422,
+    "entropy_mean": 0.06400434436742217
+  },
+  "main_improved_pairs": 439,
+  "main_degraded_pairs": 361,
+  "main_minus_shuffle_aepe_improvement": -0.00029830574989318846,
+  "main_minus_zero_aepe_improvement": 0.5298237925767899,
+  "adapter_off_max_abs": 0.0,
+  "gates": {
+    "cmr1_gain_ge3": false,
+    "aepe_improvement_ge_0_05": false,
+    "bootstrap_aepe_ci_positive": false,
+    "main_beats_shuffle_significantly": false,
+    "main_beats_zero_significantly": true,
+    "cmr2_drop_le_0_5": true,
+    "cmr5_drop_le_0_5": true,
+    "failures_not_increased": true,
+    "off_identity": true
+  },
+  "root_cause": "generalization/evidence/optimization",
+  "whu_700_test_used": false,
+  "dev_full_test_expansion_started": false
+}

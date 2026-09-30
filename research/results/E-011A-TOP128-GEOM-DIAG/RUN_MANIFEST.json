@@ -1,0 +1,31 @@
+{
+  "experiment": "E-011A-TOP128-GEOM-DIAG",
+  "run_id": "run-01",
+  "mode": "read_only_diagnostic",
+  "frozen": {
+    "spec_sha256": "b0709e151e1efd83be9af0d8767144457fd0795643a53bbd07e7b3a3feafb582",
+    "CURRENT_STATE": "0f480f9ea2d8e80a03ca26df57ba019e049d74371f6fc44c3fd1d59f5a830fe9",
+    "EXPERIMENT_INDEX": "82de2a1ca3dfa98f9d0aa4bb20ac97680baea6c10bffda10f5b243b51fd73721",
+    "TASKS": "90208c9dd7553a78007a048967d7c1e21ee3e3ddc321ea236612896ebd42763d",
+    "DECISION_LOG": "09f679a7edbfa8ca1c5e62d705c3e0176c44bd765c0fcec932664e302824feb4"
+  },
+  "source": {
+    "module": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/e011a_top128_geom_diag",
+    "__init__.py": "92a8d90e44d27b235b7ceaaef416021d76be5abc7d4dadcd29e8c1c3dde95a47",
+    "run.py": "e9f980acdfe17fefc49716c9b1567691238986d3873fbf8973c842da2ec43abf"
+  },
+  "read_only_inputs": {
+    "e011a_topr_summary": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/formal/topr_summary.json",
+    "e011a_pair_metrics": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/formal/topr_pair_metrics.jsonl",
+    "e011a_checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/models/seed-20260820.pt",
+    "e008a_cache_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-008A/run-01/cache-formal-b8e4dd9f",
+    "split_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/data_protocol-v3/split_manifest.jsonl",
+    "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3"
+  },
+  "write_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A-TOP128-GEOM-DIAG/run-01",
+  "completed_prechecks": {
+    "py_compile": "PASS",
+    "synthetic": "PASS",
+    "e011a_top128_parity_precheck": "PASS"
+  }
+}

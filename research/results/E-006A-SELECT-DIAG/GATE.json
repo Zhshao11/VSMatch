@@ -1,0 +1,37 @@
+{
+  "experiment": "E-006A-SELECT-DIAG",
+  "status": "PASS",
+  "diagnostic_completed": true,
+  "interpretation": "NOT_SELECTABLE_WITH_CURRENT_FEATURES",
+  "gates": {
+    "frozen_identity": "PASS",
+    "no_gt_feature_audit": "PASS",
+    "candidate_generator_parity": "PASS",
+    "automatic_tests_19": "PASS",
+    "feature_review": "APPROVE",
+    "evaluator_review": "APPROVE",
+    "formal_feature_cache_2011": "PASS",
+    "formal_label_join_2011": "PASS",
+    "checkpoint_matrix_6": "PASS",
+    "dev_evaluation_404": "PASS"
+  },
+  "main": {
+    "candidate_auroc": 0.9170700502218851,
+    "candidate_ap": 0.013857359504292809,
+    "candidate_ece": 0.3132865601111112,
+    "top32_precision": 0.022586633663366336,
+    "top32_recall": 0.07778369738945125,
+    "affine_aepe_px": 63.51567034792192,
+    "cmr2_percent": 0.0,
+    "valid_percent": 93.8118811881188
+  },
+  "interpretation_evidence": {
+    "not_selectable_threshold_triggered": true,
+    "best_d1": "d1_combined",
+    "candidate_metric_improvement": 0.07941181851406542,
+    "affine_improvement_px": -1.8826379905832908,
+    "partial_gate_pass": false
+  },
+  "summary_sha256": "4b7c9d3a491d353a3cecee74ae0590207ce3ac065d654592d8bd871c5052f9b6",
+  "per_pair_sha256": "cfeb612986db6f9379258bb1d27ce23e09566d68dc180b0b2b967cc1bd3a2ffc"
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "E074A",
+  "frozen_at": "2026-09-04",
+  "recommended_bases": {
+    "balanced": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-stage180k/checkpoints/B_step180000.pt",
+    "high_precision": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/checkpoints/C_step180000.pt",
+    "coverage_diag": "A no-GT chooser"
+  },
+  "best_metrics": {
+    "B_180k": {"aepe": 2.505252162178997, "cmr1": 44.801980198019805, "cmr2": 72.77227722772277, "cmr5": 89.35643564356435, "cmr10": 95.29702970297029, "cmr16": 97.52475247524752},
+    "C_180k": {"aepe": 2.569692603874915, "cmr1": 48.76237623762376, "cmr2": 76.98019801980197, "cmr5": 87.87128712871286, "cmr10": 93.56435643564357, "cmr16": 96.78217821782178},
+    "A_nogt": {"aepe": 2.6361481511946954, "cmr1": 36.88118811881188, "cmr2": 67.82178217821783, "cmr5": 90.0990099009901, "cmr10": 94.80198019801979, "cmr16": 97.52475247524752}
+  },
+  "sha256": {
+    "e074a_script": "e331845b07cd3d1ef99fa91795c3bae8493def04ff3c771148f33c1b8abd8806",
+    "b_checkpoint": "f40d80f2dca62e74ec86c1823963282a490d47f336f2cfce4a28fc211ea33218",
+    "c_checkpoint": "c3c67e6d65aca0dd55cf7af2c2a9eedccadadc0fec5ad11fe6e493e08ecc85b9",
+    "run_manifest": "de27c2d5d2bce55396e2ec8d56160c340cd9768e950bff21d64522eaed38425c"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "candidate_definition": "integer target offsets in [-4,4]^2 around frozen iter32 post-LSR anchor; r2 is the centered [-2,2]^2 subset",
+  "candidate_gpus": null,
+  "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-081A-ZZVR-WHU-OUR-METHOD-NATIVE-TRAIN/run-m4-native-r2/checkpoints/M4_step120000.pt",
+  "checkpoint_sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a",
+  "elapsed_seconds": 287.2723939418793,
+  "formal_score": "cosine similarity of frozen E081A high-resolution-side stride-8 source/target features sampled bilinearly at candidate endpoints",
+  "last_completed_stage": "700_LOCAL_CANDIDATE_BUNDLES_MATERIALIZED_BEFORE_GT",
+  "logical_device": "cuda:0",
+  "manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-088A-WHU-NOGT-LOCAL-REFINEMENT/P0-candidate-discernibility/PREDICTIONS.jsonl",
+  "manifest_sha256": "1afe7964ec0f37faf570d0ea9e32466bb7bba26756e760400f675ee644efe824",
+  "pairs": 700,
+  "prediction_materialized_before_gt_join": true,
+  "status": "COMPLETE",
+  "temperature_for_entropy": 0.07
+}

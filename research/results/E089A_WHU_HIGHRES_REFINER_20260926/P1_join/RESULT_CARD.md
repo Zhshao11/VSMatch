@@ -1,0 +1,7 @@
+# E089A P1_join RESULT_CARD
+
+Status: `STOP_P1_ACTIONABILITY_FAILED`
+
+last_completed_stage: `P1_16_PAIR_PREDICTION_GT_JOIN`
+
+next_stage: `STOP_BEFORE_P2`

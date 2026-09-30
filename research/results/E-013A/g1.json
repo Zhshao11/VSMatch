@@ -1,0 +1,39 @@
+{
+  "active_count": {
+    "mean": 0.6584158415841584,
+    "p10_p50_p90": [
+      0.0,
+      0.0,
+      2.0
+    ]
+  },
+  "checks": {
+    "active_mean_ge_32": false,
+    "active_p10_ge_12": false,
+    "correct_mean_ge_24": false,
+    "correct_p10_ge_8": false,
+    "correct_p50_ge_20": false,
+    "coverage_ratio_ge_90": false,
+    "precision_mean_ge_20": false,
+    "precision_p10_ge_5": false,
+    "precision_p50_ge_15": false
+  },
+  "correct_2px_count": {
+    "mean": 0.017326732673267328,
+    "p10_p50_p90": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "coverage_pass_percent": 0.0,
+  "pass": false,
+  "precision_2px": {
+    "mean": 0.012458745906553647,
+    "p10_p50_p90": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

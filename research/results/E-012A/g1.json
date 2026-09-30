@@ -1,0 +1,38 @@
+{
+  "active_count": {
+    "mean": 327.7227722772277,
+    "p10_p50_p90": [
+      218.60000000000002,
+      294.0,
+      497.7
+    ]
+  },
+  "checks": {
+    "active_mean_ge_64": true,
+    "active_p10_ge_32": true,
+    "correct_mean_ge_60": false,
+    "correct_p10_ge_31": false,
+    "correct_p50_ge_56": false,
+    "coverage_ratio_ge_95": true,
+    "precision_mean_ge_35": false,
+    "precision_p10_ge_20": false
+  },
+  "correct_2px_count": {
+    "mean": 2.8613861386138613,
+    "p10_p50_p90": [
+      0.0,
+      0.0,
+      7.0
+    ]
+  },
+  "coverage_pass_percent": 100.0,
+  "pass": false,
+  "precision_2px": {
+    "mean": 0.0067336723957058635,
+    "p10_p50_p90": [
+      0.0,
+      0.0,
+      0.018273900635540484
+    ]
+  }
+}

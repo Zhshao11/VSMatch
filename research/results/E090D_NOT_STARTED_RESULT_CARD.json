@@ -1,0 +1,7 @@
+{
+  "status": "NOT_STARTED_CONDITION_NOT_FULLY_MET",
+  "reason": "E090B failed, but E090C was not run because its A1 prerequisite failed. This is not evidence that both B and C were executed and failed.",
+  "design_submitted": false,
+  "g0_or_overfit_started": false,
+  "full_training_started": false
+}

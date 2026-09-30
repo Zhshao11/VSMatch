@@ -1,0 +1,49 @@
+{
+  "architecture_audit": {
+    "B": false,
+    "C": false,
+    "F2": false,
+    "F3": false,
+    "M4": "single GDROS/RAFT backbone plus region NativeGateRefiner"
+  },
+  "checkpoint_sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a",
+  "comparisons": [
+    {
+      "iteration": 12,
+      "max_abs": 0.03125,
+      "mean_abs": 0.005640197079628706,
+      "shape": [
+        1,
+        2,
+        512,
+        512
+      ]
+    },
+    {
+      "iteration": 24,
+      "max_abs": 0.03125,
+      "mean_abs": 0.005640644114464521,
+      "shape": [
+        1,
+        2,
+        512,
+        512
+      ]
+    },
+    {
+      "iteration": 32,
+      "max_abs": 0.03125,
+      "mean_abs": 0.005651645828038454,
+      "shape": [
+        1,
+        2,
+        512,
+        512
+      ]
+    }
+  ],
+  "last_completed_stage": "FROZEN_RECURRENCE_PARITY",
+  "pair_index": 0,
+  "status": "PASS",
+  "tolerance": "0.04 px after float16 trace serialization; observed quantization max is 0.03125 px"
+}

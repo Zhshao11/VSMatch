@@ -1,0 +1,152 @@
+{
+  "status": "CURRENT_MODEL_ABC_COST_GATE_COMPLETE_CLEAN_DAG_RUNNING",
+  "last_completed_stage": "B_C_STEP500_FULL404_COST_STOP_CLEAN_M4_RAW_STEP6000",
+  "updated_at": "2026-09-15T10:31:47+08:00",
+  "orchestrator": {
+    "status": "HEALTHY",
+    "pid": 2324644,
+    "pid_live": true,
+    "verified_advancing_heartbeats": [
+      "2026-09-15T09:36:57+08:00",
+      "2026-09-15T09:37:13+08:00",
+      "2026-09-15T09:37:45+08:00",
+      "2026-09-15T10:31:47+08:00"
+    ],
+    "repaired_failure": "created the missing collisions directory at startup; the previous uncaught FileNotFoundError had terminated PID 2631514",
+    "watchdog_daemon_pid": 2174727,
+    "candidate_gpus": null,
+    "logical_device": "cuda:0"
+  },
+  "clean_bc_recovery": {
+    "termination": {
+      "jobs": {
+        "B": "20260914_080445_ac5e3277",
+        "C": "20260914_080445_c2da3f0b"
+      },
+      "last_recorded_step": 117000,
+      "return_code": 137,
+      "shared_finished_at": "2026-09-14T16:31:54+08:00",
+      "signal_semantics": "consistent with SIGKILL",
+      "kernel_oom_evidence": "none found in accessible journal window",
+      "gpu_xid_evidence": "none found in accessible journal window",
+      "reboot_or_shutdown_evidence": "none",
+      "attribution": "UNKNOWN_SHARED_TERMINATION_EVENT"
+    },
+    "resume_decision": "STOP_NO_RESUME",
+    "selection_policy": "CMR@5, then CMR@2, then CMR@1, then AEPE; pair-level on clean 201 dev",
+    "selected": {
+      "B": {
+        "step": 80000,
+        "checkpoint_sha256": "7f34744589524b3f6abaaa14c502db825edff54d3164563654d5f2727fd7dc14",
+        "aepe": 3.6654680673755817,
+        "cmr1": 18.90547263681592,
+        "cmr2": 51.243781094527364,
+        "cmr5": 77.11442786069652,
+        "cmr10": 93.53233830845771,
+        "cmr16": 97.51243781094527
+      },
+      "C": {
+        "step": 40000,
+        "checkpoint_sha256": "5358618fdb0643c9937ab4453b674786db056a3432fd80d7fa7b35b0ee1d1f5c",
+        "aepe": 3.817064511390468,
+        "cmr1": 18.407960199004975,
+        "cmr2": 39.30348258706468,
+        "cmr5": 77.11442786069652,
+        "cmr10": 93.53233830845771,
+        "cmr16": 97.51243781094527
+      }
+    },
+    "finalizer_jobs": {
+      "B": "20260915_093623_02c90eb0",
+      "C": "20260915_093623_1a64f084",
+      "reduce": "20260915_093640_13a1739d"
+    }
+  },
+  "historical_m4_v3_g0": {
+    "job_id": "20260915_093624_331c5869",
+    "status": "succeeded",
+    "implementation_version": "luckyr1-bc-v3-e074b-evidence-graph-20260915",
+    "v2_zero_gradient_root_cause": "historical E074-B teacher_preds wrapped F2/F3 matchers in torch.no_grad; intentional for original frozen teachers but a broken graph after injecting trainable LuckyR1 evidence",
+    "repair": "call E074-B F2/F3 normally while leaving all base parameters requires_grad=False",
+    "B_gradient_tensors": "6/6 present, finite, nonzero",
+    "C_gradient_tensors": "21/21 present, finite, nonzero",
+    "B_peak_reserved_mb": 14820.0,
+    "C_peak_reserved_mb": 14828.0,
+    "finite_output": true,
+    "uses_gt": false
+  },
+  "current_model_exploratory": {
+    "scope": "OS official historical 404 pair view; not clean model-unseen",
+    "protected_m4": {
+      "sha256": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b",
+      "aepe": 2.3613,
+      "cmr1": 56.683168316831676,
+      "cmr2": 78.96039603960396,
+      "cmr5": 88.86138613861387,
+      "cmr10": 94.80198019801979,
+      "cmr16": 97.02970297029702
+    },
+    "A": {
+      "status": "COST_GATE_STOP",
+      "step": 500,
+      "aepe": 6.1013,
+      "cmr1": 25.7426,
+      "cmr2": 54.7030,
+      "cmr5": 71.2871,
+      "cmr10": 79.9505,
+      "cmr16": 86.8812
+    },
+    "B": {
+      "status": "COST_GATE_STOP_NO_SIGNAL",
+      "source_job": "20260915_093904_f13d89b4",
+      "finalizer_job": "20260915_102450_07545a19",
+      "step": 500,
+      "checkpoint_sha256": "ea35e92d2e8172314ed682c75c3ab47549cade7413b9e24929a20387371cc0f7",
+      "aepe": 2.361741509620506,
+      "cmr1": 56.683168316831676,
+      "cmr2": 78.96039603960396,
+      "cmr5": 88.86138613861387,
+      "cmr10": 94.80198019801979,
+      "cmr16": 97.02970297029702,
+      "prediction_manifest_sha256": "369d8f87927871c62d4c4363b03c05e7cce26e574676097068fedc95e1f6ebcd",
+      "prediction_count": 404,
+      "manifest_count": 404,
+      "join_count": 404
+    },
+    "C": {
+      "status": "COST_GATE_STOP_NO_SIGNAL",
+      "source_job": "20260915_093904_7b216495",
+      "finalizer_job": "20260915_102842_f0f7cdd8",
+      "step": 500,
+      "checkpoint_sha256": "365c9d64aa9b41f16af9469c0b5d8a2d82e18f3aa2bac810818bd173564e0b8d",
+      "aepe": 2.36151146471943,
+      "cmr1": 56.43564356435643,
+      "cmr2": 78.96039603960396,
+      "cmr5": 88.86138613861387,
+      "cmr10": 94.80198019801979,
+      "cmr16": 97.02970297029702,
+      "prediction_manifest_sha256": "9dbcf3d2fe0541c6542b0d0251c959fea6176001a2351aa8c7e186d5f8bf72f2",
+      "prediction_count": 404,
+      "manifest_count": 404,
+      "join_count": 404
+    },
+    "prediction_materialized_before_gt_join": true,
+    "metric_scope": "pair-level",
+    "long_training_decision": "STOP_ALL_CURRENT_MODEL_ARMS_NO_SIGNAL",
+    "reduce_job": "20260915_102740_9186bfdc"
+  },
+  "clean_dag": {
+    "m4_raw": {
+      "job_id": "20260915_093657_b59ea46b",
+      "status": "running",
+      "last_verified_step": 6000,
+      "allocated_gpu": 1
+    },
+    "m4_reduce": "waiting",
+    "clean_v3_g0": "waiting after m4_reduce",
+    "lucky_a_b_c": "waiting after clean_v3_g0",
+    "comparison_boundary": "clean results may only be compared with the clean raw control"
+  },
+  "protected_m4_modified": false,
+  "whu_started": false
+}

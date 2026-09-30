@@ -1,0 +1,38 @@
+{
+  "experiment": "E-013A-CALIB-DIAG",
+  "run_id": "run-01",
+  "status": "PREPARED",
+  "method_boundary": {
+    "readonly_diagnostic": true,
+    "no_training": true,
+    "no_finetune": true,
+    "no_checkpoint_or_formal_result_modification": true,
+    "no_e013b_rescue_descriptor_retraining_sparse_affine_feedback_os424_confirm": true
+  },
+  "frozen_sha256": {
+    "METHOD_DELTA.md": "6fcde6ab8c1a5d34f82f8f0300ea2fc98f162014754211ccd4afde3ecfe2eb7d",
+    "INNOVATION_CONTRACT.yaml": "d1807dca45a3d50c2b0c8f87878e90ab3da7af487353222b32f9f0334a9453e6",
+    "experiments/E-013A-CALIB-DIAG.md": "55881aa4120817a164eb9127c5cb49d81b4c0e3f012b91ec8041804769951eac",
+    "CURRENT_STATE.md": "a352e826b744cda391ad0227fa591cdc6430a09007af93cd7a9cf4629c8c8d58",
+    "REVIEW_PACKET.md": "d87f2dcacc85dfdfa30011e58afcc91091791b4d9adaeae596813be176318604"
+  },
+  "inputs": {
+    "e013a_run_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-013A/run-01",
+    "scorer_checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-013A/run-01/models/seed-20260821.pt",
+    "e011a_checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/models/seed-20260820.pt",
+    "split_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/data_protocol-v3/split_manifest.jsonl",
+    "cache_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-008A/run-01/cache-formal-b8e4dd9f"
+  },
+  "outputs": {
+    "run_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-013A-CALIB-DIAG/run-01",
+    "formal": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-013A-CALIB-DIAG/run-01/formal"
+  },
+  "spec_to_code_mapping": {
+    "P0 parity/provenance": "experiments/sparsegeo/e013a_diag/evaluate.py::_parity_check and run",
+    "D1 score separability/calibration": "experiments/sparsegeo/e013a_diag/calibration.py::HistogramMetrics",
+    "D2 threshold sweep": "experiments/sparsegeo/e013a_diag/evaluate.py::_sweep_pass with select_threshold",
+    "D3 topK/quota sweep": "experiments/sparsegeo/e013a_diag/sweeps.py selectors",
+    "D4 source ablation": "experiments/sparsegeo/e013a_diag/evaluate.py::_prob_tracks",
+    "D5 fixed diagnosis": "experiments/sparsegeo/e013a_diag/diagnose.py::assign_failure_category"
+  }
+}

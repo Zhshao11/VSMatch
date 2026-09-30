@@ -1,0 +1,11 @@
+{
+  "status": "NOT_RUN_BY_P1_GATE",
+  "stage": "P2_SPLIT_SAFE_SHORT_BUDGET",
+  "blocking_result": "P1_join_r2/RESULT_CARD.json: STOP_P1_ACTIONABILITY_FAILED",
+  "reason": "The 16-pair head improved AEPE by only 1.49%, changed CMR@1 by 0 pp, and candidate top1/top5 remained below the required random-reference multiples.",
+  "training_started": false,
+  "dev_evaluated": false,
+  "checkpoint_selected": false,
+  "test_700_used": false,
+  "lucky_r2_started": false
+}

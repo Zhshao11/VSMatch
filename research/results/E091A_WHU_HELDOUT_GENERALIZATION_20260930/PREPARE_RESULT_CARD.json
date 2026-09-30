@@ -1,0 +1,12 @@
+{
+  "anchor_cache_verified": true,
+  "base_checkpoint_sha256": "4122c27a7a0a1d0cf6488b9207277b0024d2fe0a9f07f6fcd8eec8ef09ca745a",
+  "dev_groups": 100,
+  "dev_pairs": 800,
+  "group_overlap": 0,
+  "last_completed_stage": "200_100_GROUP_SPLIT_AND_CACHE_AUDIT",
+  "status": "PASS",
+  "test_700_sealed": true,
+  "train_groups": 200,
+  "train_pairs": 1600
+}

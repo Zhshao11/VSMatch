@@ -1,0 +1,31 @@
+{
+  "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-013A/run-01/models/seed-20260821.pt",
+  "history": [
+    {
+      "affine": 0.7283905785723214,
+      "affine_loss_enabled_percent": 99.50217797137523,
+      "basin": 0.09661875937224436,
+      "basin_valid_percent": 99.50217797137523,
+      "endpoint": 0.09612047664442218,
+      "grad_basin_head": true,
+      "grad_scorer": true,
+      "loss": 0.5557512080838165,
+      "pairs": 1607,
+      "positive_rate": 0.016774754978220285,
+      "precision": 0.15064638755918308,
+      "soft": 0.1344766232295396
+    }
+  ],
+  "loss_terms": {
+    "affine": true,
+    "basin": true,
+    "endpoint": true,
+    "precision": true
+  },
+  "parameter_count": 10630,
+  "record_count": 1607,
+  "seed": 20260821,
+  "status": "PASS",
+  "threshold": 0.9699785920487175,
+  "train_seconds": 642.9851544350386
+}

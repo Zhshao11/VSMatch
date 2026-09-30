@@ -1,0 +1,49 @@
+{
+  "elapsed_seconds": 0.040357351303100586,
+  "last_completed_stage": "CHECKPOINT_COST_REDUCTION",
+  "selection": {
+    "B": {
+      "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_b/checkpoints/bc_b_step80000.pt",
+      "checkpoint_sha256": "7f34744589524b3f6abaaa14c502db825edff54d3164563654d5f2727fd7dc14",
+      "metrics": {
+        "aepe": 3.6654680673755817,
+        "cmr1": 18.90547263681592,
+        "cmr10": 93.53233830845771,
+        "cmr16": 97.51243781094527,
+        "cmr2": 51.243781094527364,
+        "cmr5": 77.11442786069652,
+        "metric_join": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_b/step80000_iter24_post_lsr_METRIC_JOIN.csv",
+        "metric_scope": "pair-level",
+        "pairs": 201,
+        "prediction_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_b/predictions/step80000_iter24_post_lsr/PREDICTIONS.jsonl",
+        "prediction_manifest_sha256": "3d69164d7c8394fb58aadb9b9139f7982a69b7cf2126f7b84e130118426c5e4d",
+        "prediction_materialized_before_gt_join": true
+      },
+      "step": 80000
+    },
+    "C": {
+      "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/checkpoints/bc_c_step40000.pt",
+      "checkpoint_sha256": "5358618fdb0643c9937ab4453b674786db056a3432fd80d7fa7b35b0ee1d1f5c",
+      "metrics": {
+        "aepe": 3.817064511390468,
+        "cmr1": 18.407960199004975,
+        "cmr10": 93.53233830845771,
+        "cmr16": 97.51243781094527,
+        "cmr2": 39.30348258706468,
+        "cmr5": 77.11442786069652,
+        "metric_join": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/step40000_iter24_post_lsr_METRIC_JOIN.csv",
+        "metric_scope": "pair-level",
+        "pairs": 201,
+        "prediction_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/bc_c/predictions/step40000_iter24_post_lsr/PREDICTIONS.jsonl",
+        "prediction_manifest_sha256": "c62dca960bf4dec4f8b4a604b306b31b63524d91fd58ab63eb92e2b5aba22ec0",
+        "prediction_materialized_before_gt_join": true
+      },
+      "step": 40000
+    }
+  },
+  "selection_policy": "CMR@5, then CMR@2, then CMR@1, then AEPE; pair-level on predeclared clean 201 dev",
+  "started_at_unix": 1789436204.8443527,
+  "status": "COMPLETE",
+  "task": "bc_reduce",
+  "updated_at_unix": 1789436204.8847196
+}

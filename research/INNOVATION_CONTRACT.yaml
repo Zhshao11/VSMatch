@@ -1,0 +1,81 @@
+schema_version: 1
+method: M001
+method_version: "3.7-design"
+experiment: E-032A-E028B-NATIVE-MATCHER-DIAG
+contract_type: e028b_native_matcher_design
+status: proposed_waiting_user_approval
+
+claim: >-
+  Stop the E028B-to-GDROS-backend adapter route. Design and diagnose a native
+  matcher that consumes E-028B safe dual adapter features directly, using
+  matching, local refinement, and affine consensus instead of GDROS dense GRU/backend.
+
+must_implement:
+  - e028b_checkpoint_sha_and_feature_hook
+  - no_gdros_backend_adapter_primary
+  - e028b_feature_matching_baselines
+  - local_refinement_from_e028b
+  - affine_consensus_solver
+  - materialize_correspondences_before_truth_join
+  - baseline_readonly_audit
+  - baseline_readonly_audit
+  - targeted_native_matcher_and_evaluator_reviewers
+
+must_not_implement:
+  - design_e028b_to_gdros_backend_adapter
+  - reuse_gdros_dense_gru_backend_as_primary_matcher
+  - train_new_descriptor
+  - use_testing_zip_or_confirm_without_user_approval
+  - modify_original_e028b_checkpoint_or_dino_checkpoint
+  - modify_or_overwrite_gdros_baseline_checkpoint
+  - write_to_baseline_directories
+  - launch_full_sparse_feedback_e032b_or_rescue
+
+implementation_hooks:
+  - path: experiments/sparsegeo/e032a_e028b_native_matcher_diag/features.py
+    symbols: [extract_e028b_features]
+  - path: experiments/sparsegeo/e032a_e028b_native_matcher_diag/matchers.py
+    symbols: [run_mutual_nn, run_dual_softmax, run_region_balanced_matching]
+  - path: experiments/sparsegeo/e032a_e028b_native_matcher_diag/refine.py
+    symbols: [run_local_refinement]
+  - path: experiments/sparsegeo/e032a_e028b_native_matcher_diag/consensus.py
+    symbols: [run_affine_consensus]
+
+observable_evidence:
+  - result_card
+  - matcher_baseline_table
+  - local_refinement_table
+  - affine_consensus_report
+  - optional_trainable_head_report
+  - resource_report
+  - isolation_audit
+  - reviewer_conclusions
+  - run_manifest
+  - watchdog_log_or_report
+
+acceptance_tests:
+  - e028b_checkpoint_sha_recorded_pass
+  - no_gdros_backend_adapter_primary_pass
+  - correspondences_materialized_before_truth_join_pass
+  - original_baseline_readonly_pass
+  - matcher_baselines_complete_pass
+  - local_refinement_or_typed_failure_pass
+  - affine_consensus_or_typed_failure_pass
+  - reviewers_approve
+
+ablations:
+  - trainable_matcher_head_only_if_no_train_signal_positive
+
+stop_conditions:
+  - e032a_setup_blocked
+  - e032a_execution_blocked
+  - native_matcher_signal_found
+  - local_refinement_bottleneck
+  - consensus_bottleneck
+  - no_native_matcher_gain
+  - e032a_resource_blocked
+  - result_card_written
+
+success_behavior: write_result_card_and_wait_for_user
+failure_behavior: write_result_card_and_wait_for_user
+automatic_next_version: false

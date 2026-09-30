@@ -1,0 +1,60 @@
+{
+  "experiment": "E-002B-ACC-DIAG",
+  "gate": "STARTUP_PROVENANCE_AND_SMOKE",
+  "status": "PASS",
+  "resource_gate_applicable": false,
+  "frozen": {
+    "diagnostic_spec_sha256": "b4ab4b40ab1868e602ac5d59a0a7d336ea5be2ae22fdb51449bd81852506ae9d",
+    "method_delta_sha256": "4cea7a97f2de562633c39c851129e31fd1ea3f1fcb37af55b83e40b120356315",
+    "innovation_contract_sha256": "8835f2d5f95d3ec0ae67da2b44f8bdbff2dfac9908055b93383fa1f0c9b0cdda",
+    "e002b_spec_sha256": "19ec4d70b19a3d313323c3d6959e5059b8d30c224480e60ddea9567893bbaf49",
+    "reference_implementation_sha256": "3dd002c8f92c4ac58571ba04b92cbda6830843bce9662d93dd5d5ab67f35e58c",
+    "checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+    "anchor_sha256": "2872a818932f138d79a0a0aebf3fec2bbadb1939e839788f6f103c1e1f16efb6",
+    "non_gt_input_manifest_sha256": "7842997f758398f5879b22ff94071856e8aa554d99cbc99cc6954e390299cfe6"
+  },
+  "provenance": {
+    "source_files_passed": 30,
+    "source_files_required": 30,
+    "all_e002b_modules_from_snapshot": true,
+    "e002br_loaded": false,
+    "bound_dependency_hash_mismatches": 0,
+    "support_dependency_git_diff": false,
+    "official_input_pairs": 424,
+    "official_input_hash_mismatches": 0,
+    "truth_paths_present_in_input_manifest": false,
+    "baseline_metrics_sha256": "933d638a6d5a4bff52861ba432bf834f6b04a2ef6e29f54c93eb1a2b1bb23953",
+    "e002a_metrics_sha256": "8301f83ae3e41840eba55843e3f0dd5c39fcf235d5d06ef730219e19c0ef884c"
+  },
+  "smoke": {
+    "pairs": 2,
+    "variant_rows": 8,
+    "variants": [
+      "C8-main",
+      "C8-consensus-only",
+      "C8-C16-diagnostic",
+      "R8-diagnostic"
+    ],
+    "all_finite": true,
+    "all_uses_ground_truth_false": true,
+    "gt_isolation_passed": true,
+    "reference_parity_passed": true,
+    "provenance_consistency_passed": true,
+    "evaluation_mask": "none; all 512x512 pixels including black borders",
+    "metrics": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-ACC-DIAG/run-01/smoke/metrics.json",
+    "metrics_sha256": "a6c7e8b435e06eb2b70c35e62cd1d06c465dfb31da07b5e7f71325b5fd579414"
+  },
+  "review": {
+    "new_review_required": false,
+    "code_diff": false,
+    "reused_conclusion": "APPROVE",
+    "reused_tests": "28/28 PASS",
+    "evidence": "/Users/shihao/Documents/图像匹配之二/research/results/E-002B/review-core.md"
+  },
+  "execution_mode": {
+    "evaluator_entry": "frozen v0.4 snapshot evaluate_e002b.py",
+    "formal_run_flag": false,
+    "reason": "The frozen formal flag hard-requires G5-R PASS; this approved diagnostic records the resource gate as not applicable while retaining all 424/config/protocol checks externally.",
+    "method_or_config_diff": false
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "candidate_gpus": null,
+  "elapsed_seconds": 149.43489336967468,
+  "implementation_version": "luckyr1-bc-v3-e074b-evidence-graph-20260915",
+  "last_completed_stage": "HISTORICAL_M4_V3_PER_PARAMETER_GRAPH_MEMORY_G0",
+  "logical_device": "cuda:0",
+  "method_result": false,
+  "protected_m4_modified": false,
+  "protected_m4_sha256": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b",
+  "started_at_unix": 1789436189.98697,
+  "status": "COMPLETE",
+  "task": "exploratory_v3_g0",
+  "updated_at_unix": 1789436339.4219418,
+  "uses_gt": false,
+  "v2_diagnosis": {
+    "cause": "historical E074-B teacher_preds used torch.no_grad around both matchers",
+    "classification": "intentional for frozen E074 teachers, broken for newly injected trainable LuckyR1 evidence",
+    "inactive_parameters": "model.b.f2/f3 evidence parameters",
+    "repair": "remove no_grad only from E074-B matcher calls; all base parameters remain requires_grad=False"
+  },
+  "variants": [
+    {
+      "all_expected_gradients_present_finite_nonzero": true,
+      "all_parameters_finite": true,
+      "finite_output": true,
+      "gradients": [
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.03822801262140274,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f2.evidence.relation.strength",
+          "parameter_finite": true,
+          "role": "E074-B F2 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.03848559409379959,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f2.evidence.relation.scale",
+          "parameter_finite": true,
+          "role": "E074-B F2 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.02108997292816639,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f3.evidence.relation.strength",
+          "parameter_finite": true,
+          "role": "E074-B F3 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.02123207598924637,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f3.evidence.relation.scale",
+          "parameter_finite": true,
+          "role": "E074-B F3 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.1258438676595688,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.c.student.evidence.relation.strength",
+          "parameter_finite": true,
+          "role": "E074-C student matcher evidence; expected active"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.1266917884349823,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.c.student.evidence.relation.scale",
+          "parameter_finite": true,
+          "role": "E074-C student matcher evidence; expected active"
+        }
+      ],
+      "kind": "B",
+      "outputs": 2,
+      "path": "protected historical M4 -> real CorrBlock -> v3 evidence -> real BasicUpdateBlock -> region gate",
+      "peak_allocated_mb": 12942.1796875,
+      "peak_reserved_mb": 14820.0,
+      "shape": [
+        1,
+        2,
+        512,
+        512
+      ],
+      "trainable_parameters": 6,
+      "trainable_tensors": 6
+    },
+    {
+      "all_expected_gradients_present_finite_nonzero": true,
+      "all_parameters_finite": true,
+      "finite_output": true,
+      "gradients": [
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.006153653375804424,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f2.evidence.belief.level_logits",
+          "parameter_finite": true,
+          "role": "E074-B F2 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 1.1965265912294853e-05,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f2.evidence.belief.unmatched_logits",
+          "parameter_finite": true,
+          "role": "E074-B F2 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.003615899942815304,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f2.evidence.belief.geometry_strength",
+          "parameter_finite": true,
+          "role": "E074-B F2 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 3.1912591680338664e-07,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f2.evidence.belief.temporal_strength",
+          "parameter_finite": true,
+          "role": "E074-B F2 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.0015858112601563334,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f2.evidence.belief.log_sigma",
+          "parameter_finite": true,
+          "role": "E074-B F2 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.038004256784915924,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f2.evidence.relation.strength",
+          "parameter_finite": true,
+          "role": "E074-B F2 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.0382603220641613,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f2.evidence.relation.scale",
+          "parameter_finite": true,
+          "role": "E074-B F2 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.011183178052306175,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f3.evidence.belief.level_logits",
+          "parameter_finite": true,
+          "role": "E074-B F3 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 7.4738500188686885e-06,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f3.evidence.belief.unmatched_logits",
+          "parameter_finite": true,
+          "role": "E074-B F3 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.005062997341156006,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f3.evidence.belief.geometry_strength",
+          "parameter_finite": true,
+          "role": "E074-B F3 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 9.710068979984499e-07,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f3.evidence.belief.temporal_strength",
+          "parameter_finite": true,
+          "role": "E074-B F3 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.002800203626975417,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f3.evidence.belief.log_sigma",
+          "parameter_finite": true,
+          "role": "E074-B F3 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.020908525213599205,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f3.evidence.relation.strength",
+          "parameter_finite": true,
+          "role": "E074-B F3 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.02104940451681614,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.b.f3.evidence.relation.scale",
+          "parameter_finite": true,
+          "role": "E074-B F3 matcher evidence; expected active after v3 graph repair"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.05168824642896652,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.c.student.evidence.belief.level_logits",
+          "parameter_finite": true,
+          "role": "E074-C student matcher evidence; expected active"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 2.3940230676089413e-05,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.c.student.evidence.belief.unmatched_logits",
+          "parameter_finite": true,
+          "role": "E074-C student matcher evidence; expected active"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.024121223017573357,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.c.student.evidence.belief.geometry_strength",
+          "parameter_finite": true,
+          "role": "E074-C student matcher evidence; expected active"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 1.1857329127451521e-06,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.c.student.evidence.belief.temporal_strength",
+          "parameter_finite": true,
+          "role": "E074-C student matcher evidence; expected active"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.009383336640894413,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.c.student.evidence.belief.log_sigma",
+          "parameter_finite": true,
+          "role": "E074-C student matcher evidence; expected active"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.12581413984298706,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.c.student.evidence.relation.strength",
+          "parameter_finite": true,
+          "role": "E074-C student matcher evidence; expected active"
+        },
+        {
+          "expected_nonzero": true,
+          "gradient_abs_sum": 0.12666186690330505,
+          "gradient_finite": true,
+          "gradient_present": true,
+          "name": "model.c.student.evidence.relation.scale",
+          "parameter_finite": true,
+          "role": "E074-C student matcher evidence; expected active"
+        }
+      ],
+      "kind": "C",
+      "outputs": 2,
+      "path": "protected historical M4 -> real CorrBlock -> v3 evidence -> real BasicUpdateBlock -> region gate",
+      "peak_allocated_mb": 12951.2431640625,
+      "peak_reserved_mb": 14828.0,
+      "shape": [
+        1,
+        2,
+        512,
+        512
+      ],
+      "trainable_parameters": 39,
+      "trainable_tensors": 21
+    }
+  ],
+  "watchdog_job_id": "20260915_093624_331c5869"
+}

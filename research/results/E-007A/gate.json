@@ -1,0 +1,47 @@
+{
+  "experiment": "E-007A",
+  "status": "PASS",
+  "pair_count": 404,
+  "integrity": {
+    "automatic_tests": "14/14 PASS",
+    "feature_manifests": "10/10 PASS",
+    "label_manifests": "10/10 PASS",
+    "train_dev_pairs": "1607/404",
+    "candidate_parity_checked": true,
+    "selector_outputs_complete_before_gt": true,
+    "no_dense_retrieval": true,
+    "reviewers": ["APPROVE", "APPROVE", "APPROVE"]
+  },
+  "baseline_parity": {
+    "status": "PASS",
+    "expected_top32_precision": 0.022586633663366336,
+    "actual_top32_precision": 0.022586633663366336,
+    "expected_aepe": 63.51567034792192,
+    "actual_aepe": 63.515671303956815,
+    "actual_cmr2_percent": 0.0
+  },
+  "main_result": {
+    "track": "all_evidence/topK-32",
+    "top32_precision": 0.01786819306930693,
+    "candidate_ap": 0.009835848261927746,
+    "affine_aepe": 36.076093436467765,
+    "cmr2_percent": 0.0,
+    "valid_percent": 99.5049504950495
+  },
+  "interpretation_gates": {
+    "strong": false,
+    "useful": false,
+    "weak": false,
+    "category": "NO_USEFUL_OBSERVATION_GAIN"
+  },
+  "resource": {
+    "feature_extraction_ms_p50_p95": [81.3642384018749, 173.74991910764948],
+    "joint_candidate_scoring_ms_p50_p95": [3.7288868334144354, 4.483018431346861],
+    "all_evidence_verifier_ms_p50_p95": [0.7624209392815828, 0.8065062924288212],
+    "end_to_end_peak_allocated_bytes_max": 315151872
+  },
+  "watchdog": {
+    "training": ["20260807_122626_540f370e", "20260807_122626_bb898f89"],
+    "evaluation": "20260807_122907_759127e6"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "status": "CLEAN_F2_TRAINING_RAM_CACHE_COMPLETE_EXPLORATORY_A_STOPPED",
+  "last_completed_stage": "CLEAN_F2_POST_AUDIT_TRAIN_STEP_1",
+  "date": "2026-09-13",
+  "remote_parent": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN",
+  "dedicated_watchdog_root": "/mnt/sda/zhushihao/experiment_watchdog_luckyr1",
+  "dedicated_g0_job": {
+    "id": "20260913_194750_4cfcc693",
+    "status_observed": "succeeded",
+    "allocated_physical_gpus": [4],
+    "candidate_gpus": null,
+    "logical_device": "cuda:0",
+    "notify_email": false,
+    "source_audit_preceded_execution": true
+  },
+  "model_facing_g0": {
+    "id": "20260913_195310_57d5340e",
+    "status": "succeeded",
+    "allocated_physical_gpus": [1],
+    "variants": ["A", "B", "C"],
+    "finite_outputs": true,
+    "finite_nonzero_evidence_gradients": true,
+    "method_result": false
+  },
+  "active_foundations": {
+    "F2": {"job": "20260913_203510_3576ef8f", "status": "running", "allocated_physical_gpus": [1], "candidate_gpus": null, "last_recorded_step": 1},
+    "F3": {"job": "20260913_203510_641afbbf", "status": "queued", "candidate_gpus": null}
+  },
+  "current_model_exploratory": {
+    "A": {"job": "20260913_195911_20d47bc1", "status": "COST_GATE_STOP", "step": 500, "aepe": 6.1012789304598725, "cmr1": 25.742574257425744, "cmr2": 54.70297029702971, "cmr5": 71.28712871287128, "cmr10": 79.95049504950495, "cmr16": 86.88118811881188},
+    "B": {"job": "20260913_205220_657c5bbc", "status": "queued_from_verified_ram_cache"},
+    "C": {"job": "20260913_205131_af43d5e9", "status": "queued_from_verified_ram_cache"},
+    "claim_scope": "CURRENT_MODEL_EXPLORATORY_ONLY"
+  },
+  "gpu_collision_monitor": {"orchestrator_pid": 2631514, "enabled": true, "policy": "cancel our job and retry when a foreign process group appears on its allocated GPU"},
+  "implementation": {
+    "foundation_script_sha256": "99851ba6ff34587d001e2da5d44365c557976eb5b1f6be1237cad61cc7ce6a62",
+    "model_script_sha256": "893cb53871d0f9b74abb94b7f82e9bba71ec33b12a85d038de6c8e3ea4735606",
+    "pipeline_script_sha256": "74470e458b614aac7a5528d0648aab8359decb7d6cf89cabd1e87030caa75ee7",
+    "cache_script_sha256": "f9faa29bb4c4bc8f630265b65868f7a7b8291b3e45b6428776ab951421843cce",
+    "orchestrator_script_sha256": "a5b69909cdd2937a1aaf8372aea0fbf6f9ad3d9552615bb9d92ca53dd6676859",
+    "dag_plan_sha256": "9fb13c9b59f5a767ed2779a09a618dc4e2b517a8a8ae480eba1cc1edb253030f",
+    "remote_py_compile": "PASS",
+    "prediction_protocol": "prediction tensors and manifest are persisted before a separate GT metric join",
+    "formal_metrics": ["pair-level AEPE", "CMR@1", "CMR@2", "CMR@5", "CMR@10", "CMR@16"]
+  },
+  "dag": [
+    "source_audit",
+    "safe_g0_after_audit",
+    "lucky_model_g0",
+    "safe_f2_after_audit + safe_f3_after_audit",
+    "constructor_smoke_safe",
+    "bc_b + bc_c",
+    "bc_reduce",
+    "m4_raw",
+    "m4_reduce",
+    "lucky_a + lucky_b + lucky_c",
+    "lucky_reduce",
+    "official404 finalizer"
+  ],
+  "tracks": {
+    "clean": "1810 training pairs -> untouched 201 dev selection -> untouched official 404 final",
+    "current_model_exploratory": "separate directory and claim scope; protected E075A-M4 SHA is verified read-only",
+    "whu": "NOT_STARTED"
+  },
+  "invalid_shared_attempts": {
+    "20260913_182218_19ea4cf0": "failed, process disappeared without exit marker; separate RESULT_CARD retained",
+    "20260913_182218_331d5a45": "cancelled before launch; separate RESULT_CARD retained"
+  },
+  "collision_attempts": {
+    "20260913_194820_15475317": {"task": "F2", "last_step": 4078, "status": "INTERRUPTED"},
+    "20260913_194820_7dac85ed": {"task": "F3", "last_step": 3818, "status": "INTERRUPTED"},
+    "20260913_195956_733a5d0c": {"task": "exploratory B", "last_step": 2, "status": "INTERRUPTED"},
+    "20260913_200042_bfcee0d4": {"task": "exploratory C", "last_step": 5, "status": "INTERRUPTED"}
+  },
+  "historical_checkpoint_cache": {"status": "COMPLETE", "job": "20260913_205044_6d4869f7", "filesystem": "/dev/shm", "gpu_used": false, "files": 8, "m4_sha256_verified": true},
+  "retry_policy": {"long_gpu_training_max_attempts": 8, "reason": "external GPU collisions must not exhaust the clean DAG", "checkpoint_resume_enabled": true, "foundation_rolling_checkpoint_interval_steps": 6000, "interrupted_milestone_evaluation_recovery": true},
+  "liveness_telemetry": {"enabled": true, "fields": ["compute_pid", "process_state", "total_cpu_ticks", "cpu_ticks_since_previous_sample", "sampled_at"], "latest_f2_cpu_tick_delta": 17420},
+  "current_blocker": null,
+  "exploratory_method_result_available": true,
+  "clean_method_result_available": false,
+  "method_result_available": true,
+  "protected_best_overwritten": false
+}

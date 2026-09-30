@@ -1,0 +1,56 @@
+{
+  "experiment": "E-011A",
+  "method": "M001 v1.4 Raw-image Cross-modal Patch Descriptor Retriever",
+  "run_id": "run-01",
+  "created_by": "Codex",
+  "frozen_sha256": {
+    "METHOD_DELTA": "925b2bda09f49d730fb736fc42bd8ee79c9d5bdf8c03ef0d4cbac0e1bceb8634",
+    "INNOVATION_CONTRACT": "e63a369f2cfa23bddbd581e65ee0adf284332b4c502c6ee26868ce5bc5c704ce",
+    "METHOD_SPEC": "1eb5907a6db2790c2e394907e4a4f89ed5eeb0b891313beae9d992dd891c9e9a",
+    "E-011A": "dcc64457fc853b09626300728f7903dcc72365a2c43ddd0f463de6a8f9c97a1e",
+    "REVIEW_PACKET": "ca334084a5b8097531bd130a565dac797048a1942a00c022ac0255800c0bfde2",
+    "CURRENT_STATE": "e4ce1408ca3afa32330eef9016b07ec1d1342b5f3862cbd297b61eefb275fab1"
+  },
+  "source": {
+    "repo": "/mnt/sda/zhushihao/VS_Match/GDROS",
+    "module": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/e011a",
+    "sha256": "dfd7fe1b13da5beb875aac878c439c1f7e8ad25b50faa136af53ccba88ccaca1",
+    "files": {
+      "__init__.py": "c07aadd70a3fb00db5ee1509d9a4996d71ca460e62419ae903773d4d266098d9",
+      "evaluate.py": "234032070afc7b234503e3a08ab62837b84c8c4b61cf2d7761d055a1b287c250",
+      "metrics.py": "b9c48dde35d227af4849a016f2639d9ed75eb12737d14554654b9a515ce23226",
+      "retriever.py": "f23598a192fd9bae2b5239a801f7a7bf762757f1a59baee32c105dd16cffb68e",
+      "spec_binding.py": "8242023015d039bc829ebe097df0f37b74e06923ac727faa7e23ec6f770fe40e",
+      "train.py": "3901d614d01dc91001c2427a0b86b55d09de3a9fe65f954254162ef4d5e3fbe5",
+      "test_core.py": "65e47e3a249b53887c5b13a0e6ac83718d3af50c2c4ea04f7dcc08ed3c6f1622"
+    }
+  },
+  "read_only_inputs": {
+    "split_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/data_protocol-v3/split_manifest.jsonl",
+    "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+    "e008a_cache_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-008A/run-01/cache-formal-b8e4dd9f",
+    "raw_training_archive_extract": "/mnt/sda/zhushihao/VS_Match/datasets/extracted/gdros_official_e003a_training",
+    "gdros_baseline_repo": "/mnt/sda/zhushihao/VS_Match/GDROS",
+    "gdros_baseline_checkpoints": "/mnt/sda/zhushihao/VS_Match/GDROS/pretrained",
+    "prior_result_e010a": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-010A"
+  },
+  "write_paths": {
+    "code": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/e011a",
+    "run_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01",
+    "models": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/models",
+    "formal": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/formal",
+    "review": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/review",
+    "provenance": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/provenance"
+  },
+  "completed_gates": {
+    "frozen_sha_validation": "PASS",
+    "py_compile": "PASS",
+    "pytest": "5 passed",
+    "smoke_train": "PASS",
+    "smoke_eval": "PASS"
+  },
+  "formal_commands": {
+    "train": "/mnt/sda/zhushihao/VS_Match/.conda/gdros/bin/python -m experiments.sparsegeo.e011a.train --mode formal --split-manifest /mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/data_protocol-v3/split_manifest.jsonl --cache-root /mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-008A/run-01/cache-formal-b8e4dd9f --output /mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/models/seed-20260820.pt --report /mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/formal/train.json --device cuda --epochs 4 --proposals-per-pair 64",
+    "evaluate": "/mnt/sda/zhushihao/VS_Match/.conda/gdros/bin/python -m experiments.sparsegeo.e011a.evaluate --mode formal --split-manifest /mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/data_protocol-v3/split_manifest.jsonl --cache-root /mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-008A/run-01/cache-formal-b8e4dd9f --checkpoint /mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/models/seed-20260820.pt --output /mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/formal/topr_summary.json --per-pair /mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/formal/topr_pair_metrics.jsonl --device cuda"
+  }
+}

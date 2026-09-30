@@ -1,0 +1,65 @@
+{
+  "arm": "B",
+  "claim_scope": "CLEAN_1810_201_MODEL_UNSEEN_DEV",
+  "clean_m4_raw_control": {
+    "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/m4_raw/checkpoints/m4_raw_step120000.pt",
+    "checkpoint_sha256": "0b0c248ca66b20c8b60ef36f131417f2ee573f6385586d97d0e4a4bb874bf8b2",
+    "metrics": {
+      "aepe": 3.3589399186384616,
+      "cmr1": 22.885572139303484,
+      "cmr10": 94.02985074626865,
+      "cmr16": 98.50746268656717,
+      "cmr2": 55.223880597014926,
+      "cmr5": 79.1044776119403,
+      "metric_join": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/m4_raw/step120000_iter24_post_lsr_METRIC_JOIN.csv",
+      "metric_join_sha256": "a8194689cc8f3f39731a0fdf735892f6257957eb2712c87a1a0ab9e8cd4357c0",
+      "metric_scope": "pair-level",
+      "pairs": 201,
+      "prediction_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/m4_raw/predictions/step120000_iter24_post_lsr/PREDICTIONS.jsonl",
+      "prediction_manifest_sha256": "1f68df010ffd4131a58668b8fca398dd9526a1d1379ab3ac77780123a93dd205",
+      "prediction_materialized_before_gt_join": true
+    },
+    "step": 120000,
+    "task": "m4_raw"
+  },
+  "comparison": {
+    "aepe_delta_arm_minus_control": 2.172789466925451e-05,
+    "all_cmr_unchanged": true,
+    "cmr_keys": [
+      "cmr1",
+      "cmr2",
+      "cmr5",
+      "cmr10",
+      "cmr16"
+    ],
+    "decision": "NO_SUBSTANTIVE_SIGNAL",
+    "reason": "All pair-level CMR values are identical to clean M4; approximately 1e-4 px AEPE variation is immaterial."
+  },
+  "last_completed_stage": "EXISTING_CHECKPOINT_AND_201_DEV_EVIDENCE_FROZEN",
+  "no_additional_attempts": true,
+  "no_retraining": true,
+  "old_attempt_cards_preserved": true,
+  "selected_existing_evidence": {
+    "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/lucky_b/checkpoints/lucky_b_step2000.pt",
+    "checkpoint_sha256": "3c01d0f2cb65509c430517d2410d68da8963e2ffcdff7a1667aaafe1443ff386",
+    "metrics": {
+      "aepe": 3.358961646533131,
+      "cmr1": 22.885572139303484,
+      "cmr10": 94.02985074626865,
+      "cmr16": 98.50746268656717,
+      "cmr2": 55.223880597014926,
+      "cmr5": 79.1044776119403,
+      "metric_join": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/lucky_b/step2000_iter24_post_lsr_METRIC_JOIN.csv",
+      "metric_join_sha256": "a86d91af073958d20ea6c1a4b509b050839484b784819fca58b8636883674112",
+      "metric_scope": "pair-level",
+      "pairs": 201,
+      "prediction_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/clean_1810_201/lucky_b/predictions/step2000_iter24_post_lsr/PREDICTIONS.jsonl",
+      "prediction_manifest_sha256": "f8003741eb8abfc302dec63de6e21a75db597c4ba1e1a7da7d0e538803eedceb",
+      "prediction_materialized_before_gt_join": true
+    },
+    "step": 2000,
+    "task": "lucky_b"
+  },
+  "status": "COST_GATE_STOP_NO_SUBSTANTIVE_SIGNAL",
+  "task": "lucky_b_terminal"
+}

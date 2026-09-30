@@ -1,0 +1,9 @@
+{
+  "all_finite": true,
+  "gt_after_outputs": true,
+  "official_parity": true,
+  "os424_accessed": false,
+  "pair_count": 404,
+  "status": "PASS",
+  "training_performed": false
+}

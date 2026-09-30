@@ -1,0 +1,51 @@
+{
+  "experiment": "E-002B-R",
+  "gate": "P0-early",
+  "status": "PASS",
+  "implementation_block": 4096,
+  "optimized_backend_sha256": "15e7e2747ed28578f83e5217f39780697767b93d85479d83a3b13ac8f2723ccd",
+  "truth_flow_loaded": false,
+  "unit_tests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "synthetic": {
+    "passed": 100,
+    "required": 100,
+    "artifact": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01/p0-early/synthetic/parity-100-rerun-01.json",
+    "sha256": "8a560e016c7a07c2ab2389a01319a36622e18dfeb37cdd63d676ff2635239050",
+    "watchdog_job": "20260805_112539_8c1324a5"
+  },
+  "official": {
+    "unique_pairs": 11,
+    "variant_traces_passed": 44,
+    "variant_traces_required": 44,
+    "indices": [0, 1, 47, 94, 141, 188, 235, 282, 329, 376, 423],
+    "summary_artifacts": [
+      {
+        "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01/p0-early/formal/shard-10/summary.json",
+        "sha256": "3226661a556a67d2ec54e82c80ebc7a7ea63fe328adff64f16ad3086653c3ec1",
+        "watchdog_job": "20260805_112541_745896db"
+      },
+      {
+        "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01/p0-early/formal/shard-11/summary.json",
+        "sha256": "d7ee3453969fc174c779f8111ee73a5eda4dba6efccfb3a85261b25b6ebbef0f",
+        "watchdog_job": "20260805_112543_68745630"
+      },
+      {
+        "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01/p0-early/formal/shard-12/summary.json",
+        "sha256": "2a72c7be36dbaf4306557ff6462dbdc2a51860a343f7d3531d8d75e2aef76725",
+        "watchdog_job": "20260805_112545_14bc1a06"
+      },
+      {
+        "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01/p0-early/formal/shard-13/summary.json",
+        "sha256": "b987c95810ae87691cc0a5de4e079d5c8986c5cce92c0a526e82e8050acdc1ed",
+        "watchdog_job": "20260805_112547_b1a6fd01"
+      }
+    ]
+  },
+  "pair_47_regression": {
+    "passed": true,
+    "artifact": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-002B-R/run-01/p0-early/formal/shard-02/checks/pair-047-C8-main-rerun-07.json"
+  }
+}

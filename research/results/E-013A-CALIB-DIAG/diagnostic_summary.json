@@ -1,0 +1,332 @@
+{
+  "constraints": {
+    "finetuned": false,
+    "launched_e013b_or_rescue": false,
+    "modified_checkpoint": false,
+    "trained": false,
+    "used_os424_confirm": false
+  },
+  "diagnosis": {
+    "dev_best": [
+      0.12305337037153469,
+      "0.0000000000",
+      {
+        "active": {
+          "mean": 615.200495049505,
+          "p10_p50_p90": [
+            424.0,
+            623.0,
+            803.0
+          ]
+        },
+        "condition_pass_percent": 100.0,
+        "correct": {
+          "mean": 2.007425742574257,
+          "p10_p50_p90": [
+            0.0,
+            1.0,
+            6.0
+          ]
+        },
+        "coverage_pass_percent": 100.0,
+        "pair_count": 404,
+        "precision": {
+          "mean": 0.0029791129457921086,
+          "p10_p50_p90": [
+            0.0,
+            0.0015209345147013664,
+            0.008102809730917215
+          ]
+        },
+        "recall": {
+          "mean": 0.028037678328167538,
+          "p10_p50_p90": [
+            0.0,
+            0.014605543576180935,
+            0.07936602681875228
+          ]
+        }
+      }
+    ],
+    "main": "NO_USABLE_RANKING_SIGNAL",
+    "postprocess_note": "BIND to spec text: LABEL_OR_BASE_RATE_LIMITED requires low positive-proposal P10; isolated zero-positive pairs are reported in rule_trace but do not dominate. No scores/sweeps were recomputed.",
+    "rule_trace": {
+      "dev_ap": 0.000470710194344995,
+      "dev_auroc": 0.5024061616301541,
+      "dev_g1": false,
+      "dev_positive_proposal_p10": 34.0,
+      "dev_two_of_three": false,
+      "dev_zero_positive_proposal_pairs": 3,
+      "train_g1": false,
+      "train_two_of_three": false
+    },
+    "secondary": [],
+    "train_best": [
+      0.12613153597370705,
+      "0.0000000000",
+      {
+        "active": {
+          "mean": 629.1070317361543,
+          "p10_p50_p90": [
+            438.20000000000005,
+            636.0,
+            809.0
+          ]
+        },
+        "condition_pass_percent": 100.0,
+        "correct": {
+          "mean": 2.288114499066584,
+          "p10_p50_p90": [
+            0.0,
+            1.0,
+            6.0
+          ]
+        },
+        "coverage_pass_percent": 100.0,
+        "pair_count": 1607,
+        "precision": {
+          "mean": 0.003250390983041197,
+          "p10_p50_p90": [
+            0.0,
+            0.0015600624028593302,
+            0.008303486369550235
+          ]
+        },
+        "recall": {
+          "mean": 0.03106569308514041,
+          "p10_p50_p90": [
+            0.0,
+            0.014705882407724857,
+            0.0833333358168602
+          ]
+        }
+      }
+    ]
+  },
+  "experiment": "E-013A-CALIB-DIAG",
+  "p0": {
+    "checks": {
+      "candidate_before_label_join": true,
+      "checkpoint_sha256_recorded": true,
+      "e011a_input_sha256_recorded": true,
+      "e013a_g1_parity": true,
+      "no_formal_result_overwrite": true,
+      "no_training_no_checkpoint_write": true,
+      "split_sha256": true
+    },
+    "parity": {
+      "checks": {
+        "active_mean": true,
+        "active_p10_p50_p90": true,
+        "correct_mean": true,
+        "correct_p10_p50_p90": true,
+        "coverage": true,
+        "precision_mean": true,
+        "precision_p10_p50_p90": true
+      },
+      "expected": {
+        "active_mean": 0.658,
+        "active_p10_p50_p90": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "correct_mean": 0.017,
+        "correct_p10_p50_p90": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coverage_pass_percent": 0.0,
+        "precision_mean": 0.01246,
+        "precision_p10_p50_p90": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "observed": {
+        "active_count": {
+          "mean": 0.655940594059406,
+          "p10_p50_p90": [
+            0.0,
+            0.0,
+            2.0
+          ]
+        },
+        "checks": {
+          "active_mean_ge_32": false,
+          "active_p10_ge_12": false,
+          "correct_mean_ge_24": false,
+          "correct_p10_ge_8": false,
+          "correct_p50_ge_20": false,
+          "coverage_ratio_ge_90": false,
+          "precision_mean_ge_20": false,
+          "precision_p10_ge_5": false,
+          "precision_p50_ge_15": false
+        },
+        "correct_2px_count": {
+          "mean": 0.017326732673267328,
+          "p10_p50_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "coverage_pass_percent": 0.0,
+        "pass": false,
+        "precision_2px": {
+          "mean": 0.012458745906553647,
+          "p10_p50_p90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "pass": true
+    },
+    "pass": true
+  },
+  "provenance": {
+    "cache_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-008A/run-01/cache-formal-b8e4dd9f",
+    "e011a_checkpoint": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-011A/run-01/models/seed-20260820.pt",
+      "sha256": "44131806c81881843e4b315cd76fe52f1cadcdc8cbea756ea5a77896d216aacd"
+    },
+    "e011a_source_sha256": "dfd7fe1b13da5beb875aac878c439c1f7e8ad25b50faa136af53ccba88ccaca1",
+    "formal_e013a_run_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-013A/run-01",
+    "scorer_checkpoint": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-013A/run-01/models/seed-20260821.pt",
+      "sha256": "74883cb309dcbb8a0a66d74cdd74640adecd665ceeacd3b821b0ff2f1b7682bb",
+      "threshold": 0.9699785920487175
+    },
+    "split_manifest": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-003A/run-01/data_protocol-v3/split_manifest.jsonl",
+      "sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3"
+    }
+  },
+  "score_pass": {
+    "dev": {
+      "feedback_changed_pairs": 404,
+      "max_live_score_elements": 204544,
+      "pairs": 404,
+      "score_ms_p50_p95": [
+        820.8135061431676,
+        1075.2737384056672
+      ]
+    },
+    "train": {
+      "feedback_changed_pairs": 1601,
+      "max_live_score_elements": 206720,
+      "pairs": 1607,
+      "score_ms_p50_p95": [
+        685.1365072652698,
+        785.2446345146744
+      ]
+    }
+  },
+  "score_separability_digest": {
+    "dev": {
+      "basin_logit_only": {
+        "ap": 0.00024161106415203424,
+        "auprc": 0.00013081923602339883,
+        "auroc": 0.05868111871276703,
+        "brier": 0.9987317548284925,
+        "ece": 0.9989648806321977,
+        "positive_rate": 0.00035450586028492264
+      },
+      "combined_inlier_basin": {
+        "ap": 0.00046678957205178843,
+        "auprc": 0.010313100605164471,
+        "auroc": 0.5023720328641039,
+        "brier": 0.0003595469093837052,
+        "ece": 0.00011259319523453398,
+        "positive_rate": 0.00035450586028492264
+      },
+      "endpoint_logit_only": {
+        "ap": 0.0025596870769220813,
+        "auprc": 0.0027183524099745867,
+        "auroc": 0.7018571414632432,
+        "brier": 0.0014722937459550314,
+        "ece": 0.0020883060318229,
+        "positive_rate": 0.00035450586028492264
+      },
+      "final_score": {
+        "ap": 0.000470710194344995,
+        "auprc": 0.010024482260630461,
+        "auroc": 0.5024061616301541,
+        "brier": 0.0003661257806709922,
+        "ece": 0.00011768913236928793,
+        "positive_rate": 0.00035450586028492264
+      },
+      "post_feedback_score": {
+        "ap": 0.000470710194344995,
+        "auprc": 0.010024482260630461,
+        "auroc": 0.5024061616301541,
+        "brier": 0.0003661257806709922,
+        "ece": 0.00011768913236928793,
+        "positive_rate": 0.00035450586028492264
+      },
+      "pre_feedback_score": {
+        "ap": 0.0025596870769220813,
+        "auprc": 0.0027183524099745867,
+        "auroc": 0.7018571414632432,
+        "brier": 0.0014722937459550314,
+        "ece": 0.0020883060318229,
+        "positive_rate": 0.00035450586028492264
+      }
+    },
+    "train": {
+      "basin_logit_only": {
+        "ap": 0.00023745310122781337,
+        "auprc": 0.00013442780074767355,
+        "auroc": 0.05981686571864878,
+        "brier": 0.9986059818541965,
+        "ece": 0.9989015667979461,
+        "positive_rate": 0.00035386027149558855
+      },
+      "combined_inlier_basin": {
+        "ap": 0.0004708704903290785,
+        "auprc": 0.003158312224893544,
+        "auroc": 0.5034574133804243,
+        "brier": 0.00035901476722580193,
+        "ece": 0.00011186549484443907,
+        "positive_rate": 0.00035386027149558855
+      },
+      "endpoint_logit_only": {
+        "ap": 0.0026238648223035734,
+        "auprc": 0.0028034645124379973,
+        "auroc": 0.7025914448639057,
+        "brier": 0.0014693311011250733,
+        "ece": 0.002092633912089644,
+        "positive_rate": 0.00035386027149558855
+      },
+      "final_score": {
+        "ap": 0.0004773843885988364,
+        "auprc": 0.003162227688349697,
+        "auroc": 0.5035810071783637,
+        "brier": 0.0003653708177944721,
+        "ece": 0.00011693424775182597,
+        "positive_rate": 0.00035386027149558855
+      },
+      "post_feedback_score": {
+        "ap": 0.0004773843885988364,
+        "auprc": 0.003162227688349697,
+        "auroc": 0.5035810071783637,
+        "brier": 0.0003653708177944721,
+        "ece": 0.00011693424775182597,
+        "positive_rate": 0.00035386027149558855
+      },
+      "pre_feedback_score": {
+        "ap": 0.0026238648223035734,
+        "auprc": 0.0028034645124379973,
+        "auroc": 0.7025914448639057,
+        "brier": 0.0014693311011250733,
+        "ece": 0.002092633912089644,
+        "positive_rate": 0.00035386027149558855
+      }
+    }
+  },
+  "status": "COMPLETED / CALIB_DIAG_DONE"
+}

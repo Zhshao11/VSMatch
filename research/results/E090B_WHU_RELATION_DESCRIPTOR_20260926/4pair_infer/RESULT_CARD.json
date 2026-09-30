@@ -1,0 +1,8 @@
+{
+  "last_completed_stage": "PREDICTIONS_BEFORE_GT",
+  "manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-090B-WHU-RELATION-DESCRIPTOR/4pair_infer/PREDICTIONS.jsonl",
+  "manifest_sha256": "84c287f4f5fb77a1919eb00e993340cdb44b49517678e78af1c7bebb86397029",
+  "pairs": 4,
+  "prediction_materialized_before_gt_join": true,
+  "status": "COMPLETE"
+}

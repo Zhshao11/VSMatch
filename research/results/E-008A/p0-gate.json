@@ -1,0 +1,125 @@
+{
+  "baseline": {
+    "ap": 0.01386,
+    "base_rate_2px": 0.001343,
+    "cmr2_percent": 0.0,
+    "mean_correct_2px": 66.21,
+    "oracle_aepe": 0.190768,
+    "p10": 33.0,
+    "p32": 0.02259,
+    "p50": 64.0,
+    "selector_aepe": 36.0761
+  },
+  "baseline_identity": {
+    "card_sha256": "eecff3522b8b9b26ffa196cdb559858ad9039291360bf050e791e1a1c13bd197",
+    "e006a_source_sha256": "a26f9619ad395bdbc1d45b3ec09ae256d603512042681259efdc8aac4e486d2a"
+  },
+  "candidate_outputs_complete_before_gt": true,
+  "checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+  "checks": {
+    "base_rate_gt_0_1343_percent": false,
+    "formal_exact_404": true,
+    "mean_correct_gt_66_210": false,
+    "no_blind_full_search": true,
+    "no_hidden_n2": true,
+    "oracle_aepe_le_0_5": false,
+    "p10_gt_33": false,
+    "p50_gt_64": false,
+    "pair_local_ready_ge_99": false,
+    "valid_ge_99": false
+  },
+  "experiment": "E-008A",
+  "formal_gate_evaluated": true,
+  "gate": "P0",
+  "gdros_checkpoint_sha256": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+  "pair_count": 404,
+  "run_mode": "formal",
+  "selector_checkpoint_sha256": "46830fd161d90d9c83793e3ca0245e43bcf3245cf93a5bbcaf0e04c6cfd6de6b",
+  "source_sha256": "b8e4dd9f4fce7bf55f2f8ff5a875052e214248c2052ac0de5cb3fb6398ba04a5",
+  "split_manifest_sha256": "e8c990888123896af425923970215eb1a9ec8aca89eae0421998d2bdc13a99d3",
+  "status": "FAIL",
+  "summary": {
+    "candidate_base_rate_1px": 0.00025223153454378744,
+    "candidate_base_rate_2px": 0.000982774086718202,
+    "candidate_base_rate_5px": 0.005647414040850647,
+    "candidate_count_per_pair_p10_p50_p90": [
+      16980.2,
+      17323.5,
+      17678.0
+    ],
+    "correct_2px_p10_p50_p90": [
+      7.0,
+      15.0,
+      29.0
+    ],
+    "in_bounds_proposal_percent": 81.13135375033715,
+    "mean_correct_2px_proposals": 17.02227722772277,
+    "nearest_per_proposal_oracle_aepe": 37.84789004892406,
+    "oracle_aepe": 189.22929479355122,
+    "pair_local_ready_percent": 63.11881188118812,
+    "proposal_count_p10_p50_p90_max": [
+      1485.3,
+      1515.0,
+      1544.0,
+      1598
+    ],
+    "resource": {
+      "candidate_generation_ms_p50_p95": [
+        573.3902574284002,
+        655.8746864204294
+      ],
+      "candidate_generation_peak_allocated_bytes_max": 305848320,
+      "full_image_blind_search": false,
+      "hidden_4096_by_4096": false,
+      "max_live_score_elements": 25344,
+      "max_target_union_tokens": 1648,
+      "selector_ms_p50_p95": [
+        453.9104854920879,
+        531.6087589715607
+      ],
+      "selector_peak_allocated_bytes_max": 58313728
+    },
+    "source_type": {
+      "descriptor": {
+        "base_2px": 0.001017989521349475,
+        "count": 2446980
+      },
+      "patch_structure": {
+        "base_2px": 0.000546387792061465,
+        "count": 2446980
+      },
+      "region": {
+        "base_2px": 0.001417257194071856,
+        "count": 2446980
+      }
+    },
+    "track_coverage": {
+      "descriptor_only": {
+        "candidate_base_rate_2px": 0.001017989521349475,
+        "mean_correct_2px_proposals": 6.165841584158416,
+        "oracle_aepe": 470.2354561157967
+      },
+      "dynamic_source_only": {
+        "candidate_base_rate_2px": 0.001984487007372264,
+        "mean_correct_2px_proposals": 3.004950495049505,
+        "oracle_aepe": 508.2061767485177
+      },
+      "full": {
+        "candidate_base_rate_2px": 0.0009827740871468972,
+        "mean_correct_2px_proposals": 17.02227722772277,
+        "oracle_aepe": 189.22929479355122
+      },
+      "patch_structure": {
+        "candidate_base_rate_2px": 0.000546387792061465,
+        "mean_correct_2px_proposals": 3.3094059405940595,
+        "oracle_aepe": 504.4115953128232
+      },
+      "region_only": {
+        "candidate_base_rate_2px": 0.001417257194071856,
+        "mean_correct_2px_proposals": 8.584158415841584,
+        "oracle_aepe": 398.09840346385937
+      }
+    },
+    "valid_percent": 63.11881188118812
+  }
+}

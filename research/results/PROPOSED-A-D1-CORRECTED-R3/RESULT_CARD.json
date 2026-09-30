@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETED_CAPACITY_SUPPORTED_POOL_NO_GAIN_HELDOUT_NOT_TESTABLE",
+  "supersedes": "PROPOSED-A-D1-EVIDENCE-REBUILD-R2 capacity-fail interpretation only; R2 evidence bundles remain frozen inputs",
+  "gpu_used": false,
+  "training": false,
+  "testing_zip_used": false,
+  "pairs_per_dataset": 32,
+  "candidate_budget_per_family": 12,
+  "edge_budget": 16384,
+  "interpretation": {
+    "capacity": "PARAMETER_FAMILY_CAPACITY_SUPPORTED",
+    "candidate_generation": "POOL_NO_GAIN",
+    "heldout_scoring": "HELDOUT_NOT_TESTABLE",
+    "robust_score": "UNSAFE_ON_AFFINE_POOL",
+    "training_eligibility": "NOT_AUTHORIZED"
+  },
+  "remote_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/PROPOSED-A-D1-CORRECTED-R3"
+}

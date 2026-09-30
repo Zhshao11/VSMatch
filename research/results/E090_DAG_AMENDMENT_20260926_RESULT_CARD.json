@@ -1,0 +1,15 @@
+{
+  "status": "DAG_SEMANTICS_AMENDED",
+  "historical_cards_modified": false,
+  "facts": {
+    "E090A_A1": "FAIL",
+    "E090A_A2": "PASS",
+    "E090B": "FAIL",
+    "E090C": "NOT_RUN_BY_A1_GATE"
+  },
+  "semantic_correction": "A direction whose necessary prerequisite fails is exhausted for routing purposes. E090C NOT_RUN_BY_A1_GATE therefore does not block E090D.",
+  "authorized_next_stage": "E090D design + G0 + progressive 1/4/8-pair actionability only",
+  "dev_full_test_authorized": false,
+  "os_authorized": false,
+  "whu_700_test_authorized": false
+}

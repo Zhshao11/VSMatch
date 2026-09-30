@@ -1,0 +1,24 @@
+{
+  "experiment": "E-015A",
+  "method": "M001 v1.8 diagnostic",
+  "run": "run-01",
+  "created_by": "Codex",
+  "created_date": "2026-08-11",
+  "frozen_sha256": {
+    "METHOD_SPEC.md": "0096ddea8edde338e30209b9e93088219a4430ae42e91f24adf49fa4f0fc8aee",
+    "METHOD_DELTA.md": "e0afe7d9c2a39eb52c0cfefcbf65fe4c7454f6805217cf6c498fb1dbb224c00e",
+    "INNOVATION_CONTRACT.yaml": "64ff83a81d405b4b6d74c61e75484830b90dbe9d16e3ea5ca942e7680dfde499",
+    "experiments/E-015A.md": "ed65ebfe4419f96b6aa3f2340be7e5bdd6bfd93121538355565a22ba80dee354",
+    "CURRENT_STATE.md": "cba5694dd56339de84410c97390ba7c15701c5ca6c63ccfceeb0a1aaeffc0651",
+    "REVIEW_PACKET.md": "2862cc8af9887291458d32dc1705357ea443b7318030e66f55b8f1d5402ee540"
+  },
+  "remote_run_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-015A/run-01",
+  "implementation_path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/e015a",
+  "constraints": {
+    "no_training": true,
+    "no_descriptor_finetune": true,
+    "no_sparse_affine_feedback": true,
+    "no_os424_confirm_datum": true,
+    "resource_unqualified_diagnostic_allowed": true
+  }
+}

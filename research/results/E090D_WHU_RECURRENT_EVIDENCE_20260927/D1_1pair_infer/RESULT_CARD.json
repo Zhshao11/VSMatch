@@ -1,0 +1,8 @@
+{
+  "last_completed_stage": "PREDICTIONS_BEFORE_GT",
+  "manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-090D-WHU-RECURRENT-EVIDENCE-INJECTION/D1_1pair_infer/PREDICTIONS.jsonl",
+  "manifest_sha256": "01cf1a169d540c97b91c42da2e4563925c583dda2d3301ee41ee503351cd1a28",
+  "pairs": 1,
+  "prediction_materialized_before_gt_join": true,
+  "status": "COMPLETE"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "last_completed_stage": "HISTORICAL_MANIFEST_PAIR_ID_PREFIX_COMPARISON",
+  "historical_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/formal/materialized/M4_step80000_predictions_before_gt.jsonl",
+  "historical_count": 404,
+  "historical_unique_pair_ids": 404,
+  "raw_dataset_count": 424,
+  "formal_mapping": "ordered indices [0, 404)",
+  "live_luckyr1_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/LuckyR1-FULL-LINEAGE-RETRAIN/current_model_exploratory/exploratory_a/predictions/step500_iter24_post_lsr/PREDICTIONS.jsonl",
+  "live_prefix_compared": 248,
+  "pair_ids_equal": true,
+  "first_mismatch": null,
+  "conclusion": "The explicit first-404 Subset reproduces the historical E075A formal pair ordering; the remaining 20 raw dataset items are outside this formal view."
+}

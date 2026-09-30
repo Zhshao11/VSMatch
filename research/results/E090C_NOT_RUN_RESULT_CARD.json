@@ -1,0 +1,7 @@
+{
+  "status": "NOT_RUN_BY_E090A_A1_GATE",
+  "reason": "E090C requires A1 candidate representation to pass, but all 1/4/16-pair A1 top1 thresholds failed.",
+  "training_started": false,
+  "dev_used": false,
+  "whu_700_test_used": false
+}

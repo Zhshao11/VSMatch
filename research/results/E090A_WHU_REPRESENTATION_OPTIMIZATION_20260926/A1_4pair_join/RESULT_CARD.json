@@ -1,0 +1,42 @@
+{
+  "elapsed_seconds": 3.297081232070923,
+  "entropy_mean": 0.35264110937714577,
+  "last_completed_stage": "A1_GT_JOIN",
+  "pair_rows": [
+    {
+      "entropy": 0.39150470495224,
+      "in_window_percent": 100.0,
+      "pair_id": "001648_opt",
+      "top1": 2.03399658203125,
+      "top5": 11.70654296875
+    },
+    {
+      "entropy": 0.3967759311199188,
+      "in_window_percent": 72.2869873046875,
+      "pair_id": "001864_opt",
+      "top1": 3.1198549270629883,
+      "top5": 16.4647274017334
+    },
+    {
+      "entropy": 0.41762542724609375,
+      "in_window_percent": 81.46514892578125,
+      "pair_id": "005104_opt",
+      "top1": 10.73629379272461,
+      "top5": 51.12850570678711
+    },
+    {
+      "entropy": 0.2046583741903305,
+      "in_window_percent": 100.0,
+      "pair_id": "005200_opt",
+      "top1": 0.55694580078125,
+      "top5": 77.0721435546875
+    }
+  ],
+  "pairs": 4,
+  "prediction_materialized_before_gt_join": true,
+  "random_top1": 1.2345679012345678,
+  "random_top5": 6.172839506172839,
+  "status": "COMPLETE",
+  "top1_percent": 3.842387905191192,
+  "top5_percent": 40.235080984320746
+}
