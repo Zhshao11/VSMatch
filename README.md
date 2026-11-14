@@ -38,7 +38,7 @@
 
 | 日期 | 内容 |
 |---|---|
-| **2026-11-14** | 补齐当前方法设计、统一评测口径与全量 424 对结果文档；同步评测与消融脚本 |
+| **2026-11-14** | 补齐当前方法设计、统一评测口径与全量 424 对结果文档；同步评测与消融脚本；完成 V2（DINO 辅助）分支的零训练消融（官方口径，见 [ABLATION_V2.md](docs/ABLATION_V2.md)） |
 | **2026-11-13** | 核实 GDROS 官方复现无误：官方 `test.py` 计算的是**逐分量绝对误差**，本项目用**向量 EPE**，两者 AEPE 相差约 π/2；补跑官方口径下 M4 结果；完成 Top-25 失败配对归因 |
 | **2026-11-02 ~ 10-31** | 定位 CMR 阈值交叉现象：重尾继承自 E074 B/C 双分支，门控为软加权且 oracle 也无法补救；鲁棒仿射拟合被实验否定为主因 |
 | **2026-09-30** | 冻结 E072 → E073 → E074 → E075A 实现链与阶段性结果卡 |
@@ -116,6 +116,11 @@ flowchart LR
 代价是 CMR@5 落后 5.42 pp。完整指标、逐像素口径、截断式 `AEPE@τ`
 与三种 RMSE 定义见 [当前结果](docs/RESULTS_OS.md)。
 
+**分支消融（2026-11-14，同为官方口径）**：零训练旁路 V2（DINO 辅助）那一路后，
+AEPE `1.4738 → 7.7457`、CMR@1 `72.41 → 0.94`，`96.5%` 的配对变差（仅 15/424 变好），
+说明冻结管线强依赖两路融合；这是**不重训**的消融，不能推断单路重训的上限。
+见 [V2 分支消融](docs/ABLATION_V2.md)。
+
 ---
 
 ## 已知短板
@@ -139,11 +144,13 @@ flowchart LR
 |---|---|
 | [`docs/METHOD_DESIGN.md`](docs/METHOD_DESIGN.md) | **当前方法设计**（分层结构、损失、超参、设计依据） |
 | [`docs/RESULTS_OS.md`](docs/RESULTS_OS.md) | 当前指标、误差结构、口径对照 |
+| [`docs/ABLATION_V2.md`](docs/ABLATION_V2.md) | V2（DINO 辅助）分支零训练消融：定义、结果、边界 |
 | [`docs/EVALUATION_PROTOCOL.md`](docs/EVALUATION_PROTOCOL.md) | CMR / AEPE / RMSE 定义与 π/2 口径更正 |
 | [`docs/REPRODUCE.md`](docs/REPRODUCE.md) | 环境、路径约定、复现命令与限制 |
 | `research/remote_stage/os/` | E072–E075A 训练与模型实现（冻结版本） |
 | [`research/eval/`](research/eval/README.md) | 评测脚本与零训练消融脚本 |
 | `research/results/OS_20261113/` | 2026-11-13 一手评测报告与原始指标 JSON |
+| `research/results/OS_20261114/` | 2026-11-14 分支消融原始结果 JSON（含逐对 EPE） |
 | `research/experiments/`、`research/results/` | 早期方法搜索的规格、结果卡与审计记录 |
 | `research/CURRENT_METHOD_STATE.md` | 2026-09 历史方法状态快照 |
 
@@ -174,4 +181,5 @@ python scripts/preflight.py --scope all
 - [ ] 难度递增的难例合成，覆盖 1.10 尺度档的平移失效
 - [ ] 从 GDROS released 蒸馏并加正则，恢复难配对匹配能力
 - [ ] 门控置信度校准与弃权机制
-- [ ] 上游前端分支消融（两路相关体 → 单路）
+- [x] 上游前端分支消融（零训练旁路 V2 → 单路，官方口径 424 对）
+- [ ] 重训单路版本，测「去掉 DINO 后重新收敛」的能力上限（零训练消融无法回答）

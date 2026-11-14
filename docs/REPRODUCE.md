@@ -72,15 +72,28 @@ CUDA_VISIBLE_DEVICES=2 $PY .codex_tmp/diag_m4_top25.py \
   --max-pairs 424 --gpu 0 --top 25 \
   --out .codex_tmp/m4_top25_diag_20261113.json
 
-# ④ 零训练消融：旁路 V2（DINO 辅助）那一路，同一权重下对比两路 / 单路
+# ④ 零训练消融：旁路 V2（DINO 辅助）那一路，官方 test.py 口径
+#    同一次运行附带 GDROS 官方权重参照行 + 2026-11-13 历史值 sanity check
 CUDA_VISIBLE_DEVICES=2 $PY .codex_tmp/ablate_v2_off.py \
-  --configs both,v2off --max-pairs 404 \
-  --out .codex_tmp/ablate_v2_off_result.json
+  --configs both,v2off --max-pairs 424 --gpu 0 \
+  --out .codex_tmp/ablate_v2_off_result_official.json
+
+# ④-a 只验证链路/门控是否生效（1 对、iters=1，指标无效）
+CUDA_VISIBLE_DEVICES=2 $PY .codex_tmp/ablate_v2_off.py \
+  --configs both,v2off --max-pairs 1 --iters 1 --probe
 ```
 
 `CUDA_VISIBLE_DEVICES=2` 把物理 GPU 映射为进程内 `cuda:0`，因此脚本 `--gpu 0`。
 耗时参考（424 对）：GDROS 70–87 s，M4 554–787 s；Top-25 诊断约 742 s。
-M4 checkpoint 约 6.4 GB，权重加载应报 `missing=[] unexpected=[]`。
+消融脚本共跑 GDROS / both / v2off 三路，约 25–35 min；checkpoint 加载本身约 30–170 s
+（受页缓存与共享机 I/O 影响）。M4 checkpoint 约 6.4 GB，权重加载应报
+`missing=[] unexpected=[]`。
+
+> **口径**：④ 与 ② 完全相同，都是 GDROS 官方 `test.py` 语义（逐分量 `|Δx|,|Δy|`
+> + 配对级聚合 + 424 对），三者结果可直接并列。① 是项目内部向量 EPE 口径，
+> **不能**与 ②/④ 混用；差异见 [EVALUATION_PROTOCOL.md](EVALUATION_PROTOCOL.md)。
+> 消融脚本会打印 `SANITY PASS/FAIL`：只有 GDROS 与 both 复现 2026-11-13 官方数值，
+> `v2off` 的结论才成立。
 
 ## 5. 已知限制与坑
 
