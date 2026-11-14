@@ -6,6 +6,12 @@
 > 机器 zzvr GPU 2，环境 `compared`（torch 2.11.0+cu128）；M4 加载
 > `missing=[] unexpected=[]`。耗时：GDROS 70.8 s / M4 554.4 s（向量 EPE 脚本），
 > GDROS 87.2 s / M4 786.9 s（官方口径脚本）。
+>
+> **2026-11-15 起 M4 默认剪掉 C 分支 `teacher_preds` 死计算**（纯工程优化，
+> 不动权重）：424 对官方口径指标与本文数值**逐位相同（Δ=0）**，只是空闲 GPU
+> 耗时从 `422.4 s` 降到 `317.2 s`。本文耗时均为剪枝前历史记录；验证与计时见
+> [GRU_ITER_SWEEP.md](GRU_ITER_SWEEP.md) §6.1 与
+> [`research/results/OS_20261115/`](../research/results/OS_20261115/)。
 
 ## 0. 读表前必读：三套口径
 

@@ -151,7 +151,12 @@ class E074Model(nn.Module):
             return torch.cat([p2.detach(), p3.detach(), d.detach(), torch.linalg.vector_norm(d.detach(), dim=1, keepdim=True), torch.linalg.vector_norm((p2-l2).detach(), dim=1, keepdim=True), torch.linalg.vector_norm((p3-l3).detach(), dim=1, keepdim=True)], dim=1)
         return torch.cat([p2.detach(), p3.detach(), torch.linalg.vector_norm(d.detach(), dim=1, keepdim=True)], dim=1)
 
-    def forward(self, a, b, iters=12):
+    def forward(self, a, b, iters=12, need_teacher_avg=True):
+        """variant C: teacher_preds only feeds last_teacher_avg (E074 distill loss).
+
+        E075A PairFusion training/eval never reads last_teacher_avg, so it calls
+        this with need_teacher_avg=False to skip 2 frozen GRU chains per pair.
+        """
         if self.variant in ["B", "D"]:
             p2, p3 = self.teacher_preds(a, b, iters)
             outs = []
@@ -165,10 +170,12 @@ class E074Model(nn.Module):
                 aux = {"gate_f2_mean": float(g.detach().mean().cpu()), "scalar_f2": float(s.detach().cpu())}
             self.last_aux = aux
             return outs
-        p2, p3 = self.teacher_preds(a, b, iters)
+        if need_teacher_avg:
+            p2, p3 = self.teacher_preds(a, b, iters)
         souts = self.student(a, b, iters=iters, return_features=False)
-        self.last_teacher_avg = [0.5 * (x2 + x3) for x2, x3 in zip(p2, p3)]
-        self.last_aux = {"student": "F3_init", "teacher_avg": True}
+        if need_teacher_avg:
+            self.last_teacher_avg = [0.5 * (x2 + x3) for x2, x3 in zip(p2, p3)]
+        self.last_aux = {"student": "F3_init", "teacher_avg": bool(need_teacher_avg)}
         return souts
 
 def eval_model(model, ds, device, iters_list, max_pairs, v, tag, name):

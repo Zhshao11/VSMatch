@@ -45,7 +45,15 @@
 | **合计（k=32）** | **5 条链 × 32 = 160 次 GRU update** | **4k+1 = 129 次** |
 
 5 条链正对应上次 V2 旁路消融数出的 **5 个 `E073FusionMatcher` 实例**
-（`variants=['F2','F3','F2','F3','F3']`）。LSR 有两处逐迭代重算：B 分支的
+（`variants=['F2','F3','F2','F3','F3']`）。
+
+> **2026-11-15 起默认已剪枝**：C 分支的 `teacher_preds`（f2 + f3 = 2 条链）
+> 是死计算，见 §6.1。当前实际运行链是
+> **3 条链 × k = 96 次 GRU update（k=32）**，LSR 仍是 `4k+1 = 129` 次。
+> 上表描述剪枝前的历史实现，读 11-13 / 11-14 的耗时与指标记录时按它对齐；
+> 读 11-15 之后的运行记录按剪枝后的链数对齐（指标逐位相同）。
+
+LSR 有两处逐迭代重算：B 分支的
 `gate_input` 与 `PairFusion.gate_features`，此前只算了后者。M4 训练里 B/C 已冻结、
 反向只过约 9.3k 的 gate 参数，**前向链就是每 step 的主要开销** —— 因此 `iters`
 是比「删模块」更直接的加速杠杆。
@@ -132,7 +140,8 @@ step 40000 / 80000 / 120000 三个 checkpoint 结论一致（24 的 AEPE 始终�
 ## 6. 省训练时间：怎么量化、怎么验证
 
 `M4 40K→120K = 0.741 s/step`，80K 步约 16.5 h。按调用次数代理，
-`train_iters 12→8` 让 `4·12+1 → 4·8+1` 次 LSR/step、`5·12 → 5·8` 次 GRU update；
+`train_iters 12→8` 让 `4·12+1 → 4·8+1` 次 LSR/step、GRU update 从
+`3·12 → 3·8`（剪枝前是 `5·12 → 5·8`，见 §2 注与 §6.1）；
 但数据加载、优化器 step、周期性 dev eval 与存档不随之减少，
 **实际加速要实测，不要按比例记账**。
 
@@ -158,25 +167,46 @@ step 40000 / 80000 / 120000 三个 checkpoint 结论一致（24 的 AEPE 始终�
 3. 在此之前，**先白捡推理侧的收益**（筛选实验用 24/16，最终报数保持 32），
    这部分零风险、不需要任何训练。
 
-### 6.1 已验证：C 分支的两个 teacher 是死计算（bit-exact）
+### 6.1 已落地：C 分支的两个 teacher 是死计算（bit-exact，424 对复现）
 
 `E074Model.forward` 的 variant C 会先跑 `teacher_preds`（f2 + f3 = **2 条链 × k**），
-但它的返回值是 `souts`（student 输出）；`p2/p3` 只被写进 `self.last_teacher_avg`，
+但返回值是 `souts`（student 输出）；`p2/p3` 只被写进 `self.last_teacher_avg`，
 而该属性**只被 E074 训练时的 `distill` 损失读取**（`e074a...:225`），
-`PairFusion` 与评测链从不读取。因此推理时这 64 次 GRU update（k=32）完全白跑。
+`PairFusion`、E075A 训练循环与评测链都不读取。因此 k=32 时那 64 次 GRU update 完全白跑。
 
-2026-11-14 在 zzvr 做了只读 A/B probe（进程内 monkey-patch `model.c.forward`，
-不改仓库代码）：
+**2026-11-15 落地**（纯工程剪枝，不动任何权重与指标）：
 
-- `E073FusionMatcher = 5`，`variants = ['F2','F3','F2','F3','F3']`
-- 32 个迭代点全部 `max|Δ| = 0`（**bit-exact**，指标必然不变）
-- 单对 `iters=32`：`1.271 s → 0.708 s`，**1.796×**
-- 与「省掉 64/160 = 40% 的 GRU 链」一致
+| 文件 | 改动 |
+|---|---|
+| `e074a...E074Model.forward` | 新增 `need_teacher_avg=True`，默认保持 E074 蒸馏训练不变 |
+| `e075a...PairFusion.__init__ / forward` | 新增 `c_skip_teachers=True`，对 C 传 `need_teacher_avg=False` |
+| `e075a...` 训练循环 | 手工 `model.b(...)` + `model.c(...)` 路径也传 `need_teacher_avg=False` |
 
-这属于纯工程优化、不动模型能力，且 M4 训练循环里也单独调用了 `model.c(...)`
-（`e075a...:472`），所以**训练与推理都能省**。优先级高于减 `train_iters`。
-落地方式：给 variant C 的 `forward` 加「不需要 `last_teacher_avg` 时直接返回
-`souts`」的分支，再跑一次 424 对 sanity check 确认 `AEPE 1.4738` 不变。
+第三行是关键：M4 训练**不走** `PairFusion.forward`，而是在训练循环里手工拼
+`pb / pc / gate_features / gate`；只改 `PairFusion.forward` 会只省推理、不省训练。
+原始链可用 `c_skip_teachers=False` / `need_teacher_avg=True` 逐位恢复，供 A/B。
+
+**验证**（zzvr 空闲 GPU 5，GDROS 官方 `test.py` 口径 424 对，`SANITY PASS`）：
+
+| 检查 | 结果 |
+|---|---|
+| 8 对 × 32 个迭代点 + post-LSR 同进程 A/B | `max\|Δ\| = 0`（bit-exact） |
+| 424 对 AEPE | `1.473827834446231`，与 11-13 历史值 **Δ = 0** |
+| CMR@1/2/5、RMSE_var | `72.41 / 84.91 / 94.10`、`8.3350`，全部 **Δ = 0** |
+| 全量耗时 | `317.2 s`（剪枝前空闲 GPU `422.4 s`，跨运行参考） |
+| 同进程 30 对计时（推理 `iters=32`） | `0.9638 → 0.7197 s/对`，**1.339×** |
+| 同进程 30 对计时（训练前向 `iters=12`） | `0.6006 → 0.4128 s/对`，**1.455×** |
+
+⚠️ 11-14 只读 probe 报的「单对 `1.271 → 0.708 s`、**1.796×**」是单次计时，
+偏高；以 30 对同进程均值为准。跨运行的 `422.4 / 317.2 = 1.332×` 与同进程
+`1.339×` 一致，可互相印证。
+
+**不要按比例折算训练总时长**：计时只测前向。完整 step 还含 `LSR_list(fused)`、
+loss、只过 L4 gate 的反向、数据加载与周期性 dev eval，这些都不随剪枝减少。
+若粗略假设其余部分不变，`0.741 s/step` 里的前向省约 `0.19 s`，80K 步 `16.5 h`
+有望降到约 12 h 量级 —— **这是推算，未实测**；要下结论必须跑一次同配置
+短训并计时。剪枝后剩余 **129 次 LSR 一次没少**，而 GRU 只剩 3 条链，
+所以 §6.2 的「逐迭代重算 LSR」现在是更大的加速杠杆。
 
 ### 6.2 尚未验证：逐迭代重算 LSR
 
@@ -185,6 +215,9 @@ LSR 有**两处**逐迭代重算：B 分支的 `gate_input`（2k 次）与 `Pair
 （例如 20000 点）能直接砍掉 `4k` 次 200k 点最小二乘，且不改变任何指标。
 先做纯诊断：统计 `‖LSR(pb_k) − LSR(pb_12)‖` 随 k 的衰减，稳定后再改。
 
+§6.1 剪掉 2 条 GRU 链后，**129 次 LSR 一次没少**，它现在是推理与训练前向里
+最大的可压缩项，优先级高于继续压 `iters`。
+
 ## 7. 复现
 
 ```bash
@@ -192,9 +225,20 @@ cd /mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated
 CUDA_VISIBLE_DEVICES=2 /home/zzvr/miniconda3/envs/compared/bin/python \
   .codex_tmp/sweep_gru_iters.py --max-pairs 424 --gpu 0 \
   --out .codex_tmp/sweep_gru_iters_official.json
+
+# §6.1 剪枝正确性：同进程 A/B + 424 对官方口径
+CUDA_VISIBLE_DEVICES=5 /home/zzvr/miniconda3/envs/compared/bin/python \
+  .codex_tmp/verify_c_teacher_pruning.py --max-pairs 424 --ab-pairs 8 --gpu 0 \
+  --out .codex_tmp/verify_c_teacher_pruning.json
+
+# 同进程逐对计时：推理 iters=32 / 训练前向 iters=12
+CUDA_VISIBLE_DEVICES=5 /home/zzvr/miniconda3/envs/compared/bin/python \
+  .codex_tmp/probe_c_prune_timing.py --pairs 30 --warmup 3 --gpu 0 \
+  --out .codex_tmp/probe_c_prune_timing.json
 ```
 
 脚本说明见 [`research/eval/README.md`](../research/eval/README.md)，
 环境与路径约定见 [REPRODUCE.md](REPRODUCE.md)。
 原始数据见 [`sweep_gru_iters_official.json`](../research/results/OS_20261114/sweep_gru_iters_official.json)，
-含每个 `k` 的 424 项逐对 EPE。
+含每个 `k` 的 424 项逐对 EPE；剪枝验证与计时结果见
+[`research/results/OS_20261115/`](../research/results/OS_20261115/)。

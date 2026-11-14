@@ -14,6 +14,8 @@
 | `diag_m4_top25.py` | Top-25 失败配对的 B / C / oracle / LSR 前后分解 | 官方配对级 EPE |
 | `ablate_v2_off.py` | **零训练消融**：旁路 V2（DINO 辅助）那一路，同一权重下跑两路 / 单路 | 与 `eval_os_official_protocol.py` 一致（官方） |
 | `sweep_gru_iters.py` | **零训练 GRU 迭代次数 sweep**：一次 32-iteration 前向拿到 `[4,6,8,12,16,24,32]` 全曲线 | 与 `eval_os_official_protocol.py` 一致（官方） |
+| `verify_c_teacher_pruning.py` | C 分支 teacher 剪枝正确性：同进程 A/B bit-exact + 424 对官方口径 sanity check | 与 `eval_os_official_protocol.py` 一致（官方） |
+| `probe_c_prune_timing.py` | 同进程逐对计时：推理 `iters=32` / 训练前向 `iters=12` 的剪枝前后加速 | 不报指标，仅计时 |
 
 ## `ablate_v2_off.py` 的实现与状态
 
@@ -92,6 +94,35 @@ CUDA_VISIBLE_DEVICES=2 python sweep_gru_iters.py --max-pairs 424 --gpu 0 \
 这只测**推理截断**，不能推断「训练 `train_iters` 砍到 5/6 重训后也行」；
 完整边界与省训练时间的验证路径见
 [`docs/GRU_ITER_SWEEP.md`](../../docs/GRU_ITER_SWEEP.md)。
+
+## C 分支 teacher 剪枝：验证与计时
+
+`E074Model(variant="C")` 的 `teacher_preds`（f2 + f3 两条冻结 GRU 链）只写
+`last_teacher_avg`，而该属性只被 E074 自己的 `distill` 损失读取。E075A 的
+`PairFusion.forward`、M4 手工训练循环、评测链都不读 ⇒ 纯死计算。
+2026-11-15 已落地开关：`E074Model.forward(need_teacher_avg=True)`、
+`PairFusion(c_skip_teachers=True)`；M4 训练循环里手工调用的 `model.c(...)`
+也显式传 `need_teacher_avg=False`（**漏掉这处就只省推理、不省训练**）。
+`c_skip_teachers=False` 可逐位恢复原始链。
+
+```bash
+CUDA_VISIBLE_DEVICES=5 python verify_c_teacher_pruning.py \
+  --max-pairs 424 --ab-pairs 8 --gpu 0 --out verify_c_teacher_pruning.json
+CUDA_VISIBLE_DEVICES=5 python probe_c_prune_timing.py \
+  --pairs 30 --warmup 3 --gpu 0 --out probe_c_prune_timing.json
+```
+
+2026-11-15 运行结果（`SANITY PASS`）：8 对 × 32 个迭代点与 post-LSR 全部
+`max|Δ|=0`；424 对 `AEPE=1.473827834446231`、CMR@1/2/5 `72.41/84.91/94.10`、
+`RMSE_var=8.3350` 与 11-13 历史值 **Δ=0**；全量 `317.2 s`（剪枝前空闲 GPU
+`422.4 s`）。同进程 30 对计时：推理 `0.9638 → 0.7197 s/对`（**1.339×**）、
+训练前向 `0.6006 → 0.4128 s/对`（**1.455×**）。
+
+⚠️ 计时只测前向，**不能**把 `0.741 s/step` / `16.5 h` 直接除以 1.455；
+完整 step 还含 `LSR_list(fused)`、loss、反向、数据加载与 dev eval。
+11-14 单次 probe 报的 `1.796×` 偏高，以 30 对均值为准。
+细节见 [`docs/GRU_ITER_SWEEP.md`](../../docs/GRU_ITER_SWEEP.md) §6.1，
+原始数据见 [`research/results/OS_20261115/`](../../research/results/OS_20261115/)。
 
 ## 未入库的探针脚本
 

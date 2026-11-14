@@ -192,8 +192,9 @@ python scripts/preflight.py --scope all
 - [ ] 适配性续训（固定单路，冻结前端只续训 B/C + L4 gate 2K–8K 步）后按官方口径复测
 - [ ] 严格模块消融：同预算重训单路 E073 → E074 → M4，才能量化 V2 的边际贡献
 - [x] GRU 迭代次数官方口径 sweep：确认 `iters=32` 过冲、`24` 更准、`16` 省一半
-- [x] 核清 M4 调用链：一次 `iters=32` 前向 = 5 条 GRU 链 / 160 次 update + 129 次 LSR
-- [x] 验证 C 分支 `teacher_preds` 是死计算（32 个迭代点 bit-exact，单对 1.80×）
-- [ ] 落地「C 分支跳过 teacher」并跑 424 对 sanity check（AEPE 1.4738 应不变）
-- [ ] 诊断两处逐迭代 LSR（`B.gate_input` / `PairFusion.gate_features`）的缓存冗余
+- [x] 核清 M4 调用链（剪枝前）：`iters=32` 前向 = 5 条 GRU 链 / 160 次 update + 129 次 LSR
+- [x] 落地 C 分支 `teacher_preds` 死计算剪枝：GRU 160→96 次；424 对官方口径 AEPE / CMR / RMSE **逐项 Δ=0**（`SANITY PASS`），全量 422→317 s
+- [x] 同进程 A/B 计时：推理 **1.339×**、训练前向 **1.455×**；剪枝同时覆盖 `PairFusion.forward` 与 M4 手工训练循环
+- [ ] 实测剪枝后的完整训练 step（前向 1.455× 不等于总时长 1.455×）
+- [ ] 诊断两处逐迭代 LSR（`B.gate_input` / `PairFusion.gate_features`）的缓存冗余 —— 129 次 LSR 全保留，现为最大可压缩项
 - [ ] 固定 `train_iters=8` 短训 2K 步，验证训练步数是否真能压缩（零训练 sweep 不能回答）

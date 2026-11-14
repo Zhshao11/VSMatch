@@ -1,0 +1,53 @@
+{
+  "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/checkpoints/M4_step80000.pt",
+  "same_process_ab": true,
+  "paths": {
+    "legacy": {
+      "eval": {
+        "pairs_timed": 30,
+        "iters": 32,
+        "total_sec": 28.913,
+        "per_pair_sec": 0.9638
+      },
+      "train": {
+        "pairs_timed": 30,
+        "iters": 12,
+        "total_sec": 18.019,
+        "per_pair_sec": 0.6006
+      }
+    },
+    "pruned": {
+      "eval": {
+        "pairs_timed": 30,
+        "iters": 32,
+        "total_sec": 21.591,
+        "per_pair_sec": 0.7197
+      },
+      "train": {
+        "pairs_timed": 30,
+        "iters": 12,
+        "total_sec": 12.385,
+        "per_pair_sec": 0.4128
+      }
+    }
+  },
+  "speedup": {
+    "eval": 1.3392,
+    "train": 1.4549
+  },
+  "call_counts": {
+    "gru_updates": {
+      "legacy": {
+        "eval": 160,
+        "train": 60
+      },
+      "pruned": {
+        "eval": 96,
+        "train": 36
+      }
+    },
+    "lsr_calls_eval": 129,
+    "note": "pruning removes only C.teacher_preds (2 GRU chains); all LSR calls remain. The timed train path reproduces only the two per-iteration LSR sites (B.gate_input + gate_features = 4k=48); the real training step additionally runs LSR_list(fused), gate_target and pbp/pcp LSR, which are unchanged by the pruning."
+  },
+  "caveat": "Forward-only timing. A full training step also includes LSR_list(fused), losses, backward through the L4 gate, data loading and dev eval; do NOT scale 0.741 s/step by this ratio."
+}

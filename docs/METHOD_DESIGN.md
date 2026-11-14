@@ -140,6 +140,13 @@ B/C 全部冻结，不破坏已收敛的解。
 | 区域门控、损失 | [`e075a_preserve_high_precision_recover_c2c5.py`](../research/remote_stage/os/e075a_preserve_high_precision_recover_c2c5.py)（`PairFusion`） |
 | 评测脚本 | [`research/eval/`](../research/eval/README.md) |
 
+> **实现层注记（2026-11-15）**：E074 variant C 里的 f2 / f3 teacher 只服务
+> E074 训练期的 `distill` 损失；E075A 的 C 分支在训练和推理中都只取 student
+> 输出。当前实现默认跳过这两条冻结链（`need_teacher_avg=False` /
+> `PairFusion(c_skip_teachers=True)`），424 对官方口径指标**逐位不变**。
+> 这是工程剪枝，**不改变上表的方法结构**，详见
+> [GRU_ITER_SWEEP.md](GRU_ITER_SWEEP.md) §6.1。
+
 ## 7. 下一步方向
 
 重尾的主病灶在 E072/E073 的跨模态稠密对应层，因此优先：

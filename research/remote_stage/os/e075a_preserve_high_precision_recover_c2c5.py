@@ -196,9 +196,16 @@ class ScalarOrRegionGate(nn.Module):
 
 
 class PairFusion(nn.Module):
-    def __init__(self, e074, mode: str, device):
+    def __init__(self, e074, mode: str, device, c_skip_teachers: bool = True):
+        """c_skip_teachers: C branch's teacher_preds only feeds E074 distill.
+
+        In E075A (training and eval) nothing reads model.c.last_teacher_avg, so
+        those 2 frozen GRU chains are dead computation. Set False to restore the
+        legacy call chain bit-exactly for A/B verification.
+        """
         super().__init__()
         self.mode = mode
+        self.c_skip_teachers = bool(c_skip_teachers)
         self.b, self.b_info = load_branch(e074, "B", B_CKPT, device)
         self.c, self.c_info = load_branch(e074, "C", C_CKPT, device)
         for p in list(self.b.parameters()) + list(self.c.parameters()):
@@ -212,7 +219,8 @@ class PairFusion(nn.Module):
 
     def forward(self, a, b, iters=12, lsr_fn=None):
         pb = self.b(a, b, iters=iters)
-        pc = self.c(a, b, iters=iters)
+        pc = self.c(a, b, iters=iters,
+                    need_teacher_avg=not self.c_skip_teachers)
         outs = []
         aux = {}
         for xb, xc in zip(pb, pc):
@@ -469,7 +477,11 @@ def train(args):
                 gate = None
             else:
                 pb = model.b(a, b, iters=args.train_iters)
-                pc = model.c(a, b, iters=args.train_iters)
+                # E075A never reads model.c.last_teacher_avg (only E074 distill
+                # does); skip those 2 frozen GRU chains here too, otherwise the
+                # training loop would still pay for the dead computation.
+                pc = model.c(a, b, iters=args.train_iters,
+                             need_teacher_avg=False)
                 fused = []
                 for xb, xc in zip(pb, pc):
                     feat = model.gate_features(xb, xc, e074.lsr)

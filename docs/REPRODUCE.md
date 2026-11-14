@@ -86,10 +86,21 @@ CUDA_VISIBLE_DEVICES=2 $PY .codex_tmp/ablate_v2_off.py \
 CUDA_VISIBLE_DEVICES=2 $PY .codex_tmp/sweep_gru_iters.py \
   --max-pairs 424 --gpu 0 \
   --out .codex_tmp/sweep_gru_iters_official.json
+
+# ⑥ C 分支 teacher 剪枝验证：同进程 A/B bit-exact + 424 对官方口径
+CUDA_VISIBLE_DEVICES=5 $PY .codex_tmp/verify_c_teacher_pruning.py \
+  --max-pairs 424 --ab-pairs 8 --gpu 0 \
+  --out .codex_tmp/verify_c_teacher_pruning.json
+
+# ⑦ 同进程逐对计时：推理 iters=32 / 训练前向 iters=12
+CUDA_VISIBLE_DEVICES=5 $PY .codex_tmp/probe_c_prune_timing.py \
+  --pairs 30 --warmup 3 --gpu 0 \
+  --out .codex_tmp/probe_c_prune_timing.json
 ```
 
 `CUDA_VISIBLE_DEVICES=2` 把物理 GPU 映射为进程内 `cuda:0`，因此脚本 `--gpu 0`。
-耗时参考（424 对）：GDROS 70–87 s，M4 554–787 s；Top-25 诊断约 742 s。
+耗时参考（424 对）：GDROS 59–87 s；M4 **剪枝前** 422–787 s（空闲 GPU 约 422 s），
+**2026-11-15 剪枝后 317 s**；Top-25 诊断约 742 s（剪枝前）。
 消融脚本共跑 GDROS / both / v2off 三路，约 25–35 min；⑤ 一次前向 + 候选点各补
 一次 LSR，实测 **451 s**；checkpoint 加载本身约 30–170 s（受页缓存与共享机 I/O 影响）。
 M4 checkpoint 约 6.4 GB，权重加载应报 `missing=[] unexpected=[]`。
@@ -103,9 +114,17 @@ M4 checkpoint 约 6.4 GB，权重加载应报 `missing=[] unexpected=[]`。
 > ⚠️ **⑤ 扫的是推理 `iters`**：只有 `k=32` 与 ②/④ 同口径、可与论文 Table II 并列；
 > 其他 `k` 是内部筛选用的敏感性曲线。改 `iters` 会改变与 GDROS baseline 的可比性，
 > 详见 [GRU_ITER_SWEEP.md](GRU_ITER_SWEEP.md) §5。
+>
+> ⚠️ **⑥/⑦ 是工程剪枝验证，不是新口径**：⑥ 的 `SANITY PASS` 要求剪枝后 424 对
+> 指标与 11-13 历史值**逐项 Δ=0**；⑦ 只计前向时间，不能当完整训练 step 的加速比。
+> 详见 [GRU_ITER_SWEEP.md](GRU_ITER_SWEEP.md) §6.1。
 
 ## 5. 已知限制与坑
 
+- **2026-11-15 起 M4 默认剪掉 C 分支 `teacher_preds`**（`PairFusion(c_skip_teachers=True)`）：
+  指标逐位不变，GRU 从 5 条链 / 160 次 update 降到 3 条 / 96 次，129 次 LSR 不变。
+  复现剪枝前的耗时 / 调用链要传 `c_skip_teachers=False`；E074 variant C 的蒸馏训练
+  仍走 `need_teacher_avg=True` 默认路径，不受影响。
 - **必须从 `image_matching_part2_migrated/` 启动**：E038B 相关路径解析依赖 cwd。
 - `LSR` 内部有硬编码的 `.cuda()`（`LSmodel.py:138`），因此**纯 CPU 不能跑完整推理链**；
   `ablate_v2_off.py --device cpu` 会自动把 `e074.lsr` 换成恒等映射，仅用于链路自检，
