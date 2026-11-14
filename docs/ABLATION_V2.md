@@ -6,6 +6,12 @@
 > 数字只能作内部诊断，**不宜进论文消融主表**；若引用必须连同下面的边界一起给。
 > 真正能回答「该不该保留 V2」的实验是 §4.1 的 retrain-under-removal。
 
+> **2026-11-15 补充**：本报告只有 `v2off`（只留 V1）一个方向。在剪枝后的
+> M4 上又补了对称的 `v2only`（把两处门控推向含 DINO 那一路），两个方向
+> 都是灾难性退化（`7.7457` / `41.3298`），见
+> [对称单路旁路](ABLATION_BACKBONE_SYMMETRIC.md)。该报告还澄清了
+> 「V2 不是独立 backbone」这一结构边界；两处的定位与边界一致。
+
 > 2026-11-14 于 zzvr 完成。全部数字为 **GDROS 官方 `test.py` 口径**（逐分量
 > `|Δx|,|Δy|` + 配对级聚合），OS 测试集 **424 对全量**，`iters=32`、
 > `LSR NPOINT=200000`。口径定义见 [EVALUATION_PROTOCOL.md](EVALUATION_PROTOCOL.md)，

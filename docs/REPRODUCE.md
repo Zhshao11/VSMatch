@@ -96,6 +96,17 @@ CUDA_VISIBLE_DEVICES=5 $PY .codex_tmp/verify_c_teacher_pruning.py \
 CUDA_VISIBLE_DEVICES=5 $PY .codex_tmp/probe_c_prune_timing.py \
   --pairs 30 --warmup 3 --gpu 0 \
   --out .codex_tmp/probe_c_prune_timing.json
+
+# ⑧/⑨ 对称单路旁路（剪枝后 M4）：两张不同 GPU 并行，一个进程一个配置
+CUDA_VISIBLE_DEVICES=5 $PY .codex_tmp/ablate_backbone_single.py \
+  --config v1only --max-pairs 424 --gpu 0 \
+  --out .codex_tmp/ablate_v1only_pruned.json
+CUDA_VISIBLE_DEVICES=1 $PY .codex_tmp/ablate_backbone_single.py \
+  --config v2only --max-pairs 424 --gpu 0 \
+  --out .codex_tmp/ablate_v2only_pruned.json
+
+# 本地合并两份结果（纯标准库，不需要 GPU）
+python research/eval/merge_backbone_ablation.py
 ```
 
 `CUDA_VISIBLE_DEVICES=2` 把物理 GPU 映射为进程内 `cuda:0`，因此脚本 `--gpu 0`。
@@ -118,6 +129,11 @@ M4 checkpoint 约 6.4 GB，权重加载应报 `missing=[] unexpected=[]`。
 > ⚠️ **⑥/⑦ 是工程剪枝验证，不是新口径**：⑥ 的 `SANITY PASS` 要求剪枝后 424 对
 > 指标与 11-13 历史值**逐项 Δ=0**；⑦ 只计前向时间，不能当完整训练 step 的加速比。
 > 详见 [GRU_ITER_SWEEP.md](GRU_ITER_SWEEP.md) §6.1。
+>
+> ⚠️ **⑧/⑨ 是诊断性旁路，不是模块消融**：`v2only` 里的 V2 不是独立 backbone
+> （冻结 DINO 描述子只是注入到 V1 特征上），它表示「把两处门控推向 V2 侧」。
+> 两个方向的大幅掉点**不能**读作任一路的边际贡献；结构边界与推论限制见
+> [ABLATION_BACKBONE_SYMMETRIC.md](ABLATION_BACKBONE_SYMMETRIC.md) §1.1 / §4。
 
 ## 5. 已知限制与坑
 

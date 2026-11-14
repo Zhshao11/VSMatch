@@ -1,12 +1,16 @@
-# 2026-11-15 一手结果：C 分支 teacher 剪枝
+# 2026-11-15 一手结果：C 分支剪枝 + 对称单路旁路
 
 | 文件 | 内容 |
 |---|---|
 | `verify_c_teacher_pruning.json` | 同进程 A/B bit-exact + 424 对官方口径 sanity check |
 | `probe_c_prune_timing.json` | 同进程逐对计时：推理 `iters=32` / 训练前向 `iters=12` |
+| `ablate_v1only_pruned.json` | 对称单路旁路 `v1only`（只留 GDROS 前端），GPU 5 |
+| `ablate_v2only_pruned.json` | 对称单路旁路 `v2only`（门控推向含 DINO 那路），GPU 1 |
+| `backbone_ablation_merged.json` | 合并主表 + 三组逐对 ΔEPE 统计 |
 
-两次运行都在 zzvr 空闲 GPU 5 上，`CUDA_VISIBLE_DEVICES=5` 映射为进程内
-`cuda:0`，脚本 `--gpu 0`；权重为保护版本 `M4_step80000.pt`。
+剪枝验证与计时在 zzvr 空闲 GPU 5 上；对称单路旁路分别在 **GPU 5 与 GPU 1**
+并行。`CUDA_VISIBLE_DEVICES=<物理卡>` 映射为进程内 `cuda:0`，脚本 `--gpu 0`；
+权重统一为保护版本 `M4_step80000.pt`。
 
 ## `verify_c_teacher_pruning.json`
 
@@ -47,3 +51,20 @@ OS 测试集全量 424 对、`iters=32`、`LSR NPOINT=200000`。
 
 结论与边界见 [`docs/GRU_ITER_SWEEP.md`](../../../docs/GRU_ITER_SWEEP.md) §6.1，
 脚本说明见 [`research/eval/README.md`](../../eval/README.md)。
+
+## 对称单路旁路（剪枝后 M4，双 GPU）
+
+三份文件见顶部表格：两份 `ablate_*_pruned.json` 是单配置原始结果，
+`backbone_ablation_merged.json` 是本地合并产物。
+两份单路 JSON 均含 `ablation_class: "diagnostic_bypass_not_module_ablation"`、
+`structural_caveat`（V2 不是独立 backbone）、`pruned_model.c_skip_teachers: true`、
+5 个 `E073FusionMatcher` 的门控快照、1 对 probe 的 `max|Δpost|`、
+`result.official` 与 424 项 `pair_EPE`，以及 `sanity_checks` / `sanity_pass`。
+
+`v1only` 的 5 项官方指标与 11-14 历史 `v2off` **Δ=0**；`v2only` 无历史值，
+sanity 检查的是「门控确实改变输出」与「AEPE 与 both 有显著差异」。
+`v2only` 的 `elapsed_sec: 950.7` 受 GPU 1 被另一任务占满影响，
+**不能**与 `v1only` 的 `350.2` 直接比较；指标不受影响。
+
+结论、结构边界（「只留 DINO」不可严格实现）与推论限制见
+[`docs/ABLATION_BACKBONE_SYMMETRIC.md`](../../../docs/ABLATION_BACKBONE_SYMMETRIC.md)。

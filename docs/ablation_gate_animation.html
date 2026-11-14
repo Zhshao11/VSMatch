@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>E075A-M4 融合门控切换演示</title>
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f7f7f5; --line: #e3e3df;
+    --ink: #1c1c1a; --muted: #6b6b66;
+    --v1: #2563eb; --v2: #dc2626; --out: #0f766e; --warn: #b45309;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 28px 20px 40px; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.6; font-size: 14px;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 20px; font-weight: 600; margin: 0 0 6px; }
+  .sub { color: var(--muted); font-size: 13px; margin: 0 0 20px; }
+  .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin-bottom: 16px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  button {
+    font: inherit; font-size: 13px; padding: 7px 14px; border: 1px solid var(--line);
+    background: #fff; color: var(--ink); border-radius: 8px; cursor: pointer;
+  }
+  button:hover { border-color: #b9b9b2; }
+  button.primary { background: var(--ink); color: #fff; border-color: var(--ink); }
+  label { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+  input[type=range] { width: 120px; }
+  .state { display: grid; grid-template-columns: 150px 1fr; gap: 8px 18px; margin-top: 6px; }
+  .k { color: var(--muted); }
+  .v { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+  .note { color: var(--warn); }
+  .bars { display: grid; grid-template-columns: repeat(8, 1fr); gap: 10px; align-items: end; height: 190px; padding-top: 8px; }
+  .col { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 100%; gap: 3px; }
+  .stack { display: flex; align-items: flex-end; gap: 3px; height: 145px; }
+  .bar { width: 15px; border-radius: 3px 3px 0 0; transition: height .55s ease, background .3s ease; }
+  .b1 { background: var(--v1); }
+  .b2 { background: var(--v2); }
+  .b3 { background: var(--out); width: 21px; }
+  .lbl { font-size: 11px; color: var(--muted); }
+  .legend { display: flex; gap: 20px; font-size: 12px; color: var(--muted); margin-top: 10px; flex-wrap: wrap; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+  ol.steps { margin: 0; padding-left: 20px; font-size: 13px; }
+  ol.steps li { padding: 5px 6px; border-radius: 6px; color: var(--muted); }
+  ol.steps li.on { background: #ececea; color: var(--ink); font-weight: 600; }
+  .caveat { font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>E075A-M4 融合门控切换演示</h1>
+  <p class="sub">8 个示意特征单元，展示 F3 的 <code>a</code> 与 F2 的 <code>gs</code> 从训练值被硬推到两个单侧时，混合结果如何跳变。点击「下一步」或「播放」逐步查看。</p>
+
+  <div class="panel">
+    <div class="controls">
+      <button id="play" class="primary">播放</button>
+      <button id="prev">上一步</button>
+      <button id="next">下一步</button>
+      <button id="reset">重置</button>
+      <label>速度 <input id="speed" type="range" min="1" max="6" value="3"><span id="speedv">2.0 s</span></label>
+      <span id="counter" style="margin-left:auto;color:var(--muted);font-size:13px;"></span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="state">
+      <div class="k">当前配置</div><div class="v" id="cfg">—</div>
+      <div class="k">F3 相关体门控</div><div class="v" id="fa">—</div>
+      <div class="k">F2 特征门控</div><div class="v" id="fg">—</div>
+      <div class="k">当前步骤说明</div><div class="v" id="desc">—</div>
+      <div class="k">下游状态</div><div class="v note" id="ood">—</div>
+    </div>
+    <div class="bars" id="bars"></div>
+    <div class="legend">
+      <span><i class="dot" style="background:var(--v1)"></i>V1 / GDROS 描述子</span>
+      <span><i class="dot" style="background:var(--v2)"></i>V2 / 含 DINO 注入的描述子</span>
+      <span><i class="dot" style="background:var(--out)"></i>F3 混合输出 <code>(1−a)·Corr1 + a·Corr2</code></span>
+    </div>
+    <div class="caveat">
+      结构边界：E072 的 V2 不是独立 backbone —— <code>front_v1</code> 始终运行，
+      <code>E046FiLM</code> 只把冻结 DINO 描述子注入到 V1 特征上。且 F2 在
+      <code>gs=1</code> 时输出 <code>fuse_proj(cat([f1s,f2s]))</code>，仍含 V1 信息。
+      因此 <code>v2only</code> 是「门控推向 V2 侧」，不是「删除 GDROS 前端」。
+      图中只可视化 F3 的相关体加权；F2 的变化见上方公式文字。
+    </div>
+  </div>
+
+  <div class="panel">
+    <ol class="steps" id="steps">
+      <li><b>both</b>：训练后的门控 <code>a≈0.5</code>、<code>fuse_gate</code> 为学到的空间门控。两路都参与，下游 B/C + L4 见过这类输入分布。</li>
+      <li><b>v1only</b>：<code>corr_gate_logit=−80 → a≈0</code>、<code>fuse_gate=−80 → gs≈0</code>。输出退回纯 V1（<code>Corr1 / f1s</code>）；下游输入分布偏移，AEPE 1.4738 → 7.7457。</li>
+      <li><b>v2only</b>：<code>corr_gate_logit=+80 → a≈1</code>、<code>fuse_gate=+80 → gs≈1</code>。相关体全取 Corr2，且 F2 第一次单独输出 <code>fuse_proj</code> 的结果；下游严重失配，AEPE → 41.3298。</li>
+    </ol>
+  </div>
+</div>
+
+<script>
+  var V1 = [0.82, 0.45, 0.91, 0.30, 0.66, 0.20, 0.74, 0.53];
+  var V2 = [0.35, 0.88, 0.22, 0.79, 0.41, 0.95, 0.28, 0.62];
+  var STEPS = [
+    {
+      cfg: 'both（原始两路）', a: 0.5, gs: '学到的空间门控（约 0.5）',
+      fa: 'a = sigmoid(corr_gate_logit) ≈ 0.5；corr = 0.5·Corr1 + 0.5·Corr2',
+      fg: 'fs = (1−gs)·f1s + gs·fuse_proj(cat([f1s,f2s]))，gs 由 fuse_gate 逐像素给出',
+      desc: '两路混合是收敛解的一部分，下游输入在训练分布内。AEPE 1.4738。',
+      ood: '训练分布内'
+    },
+    {
+      cfg: 'v1only（只留 GDROS 那路）', a: 0.0, gs: '常数 −80 → gs ≈ 0',
+      fa: 'corr_gate_logit = −80 → a ≈ 0；corr = Corr1',
+      fg: 'fuse_gate 换成常数 −80 → fs = f1s（V1 特征原样通过）',
+      desc: '只留 V1。V2 前端仍前向，但输出乘到 ≈0。AEPE 7.7457，CMR@5 24.76%。',
+      ood: '下游 OOD：B/C + L4 从未见过纯单路输入'
+    },
+    {
+      cfg: 'v2only（门控推向含 DINO 那路）', a: 1.0, gs: '常数 +80 → gs ≈ 1',
+      fa: 'corr_gate_logit = +80 → a ≈ 1；corr = Corr2',
+      fg: 'fuse_gate 换成常数 +80 → fs = fuse_proj(cat([f1s,f2s]))，仍含 f1s',
+      desc: '相关体全取 Corr2，F2 首次单独输出融合投影。AEPE 41.3298，CMR@5 0.24%。',
+      ood: '下游严重 OOD：416/424 对的配对 EPE > 10 px'
+    }
+  ];
+  var idx = 0, timer = null;
+  var bars = document.getElementById('bars');
+  var cols = [];
+  for (var i = 0; i < 8; i++) {
+    var col = document.createElement('div');
+    col.className = 'col';
+    var stack = document.createElement('div');
+    stack.className = 'stack';
+    var b1 = document.createElement('div'); b1.className = 'bar b1';
+    var b2 = document.createElement('div'); b2.className = 'bar b2';
+    var b3 = document.createElement('div'); b3.className = 'bar b3';
+    stack.appendChild(b1); stack.appendChild(b2); stack.appendChild(b3);
+    var lbl = document.createElement('div'); lbl.className = 'lbl'; lbl.textContent = 'u' + (i + 1);
+    col.appendChild(stack); col.appendChild(lbl);
+    bars.appendChild(col);
+    cols.push({ b1: b1, b2: b2, b3: b3 });
+  }
+  function render() {
+    var s = STEPS[idx];
+    document.getElementById('cfg').textContent = s.cfg;
+    document.getElementById('fa').textContent = s.fa;
+    document.getElementById('fg').textContent = s.fg;
+    document.getElementById('desc').textContent = s.desc;
+    document.getElementById('ood').textContent = s.ood;
+    document.getElementById('counter').textContent = '步骤 ' + (idx + 1) + ' / ' + STEPS.length;
+    var lis = document.getElementById('steps').children;
+    for (var j = 0; j < lis.length; j++) lis[j].className = (j === idx ? 'on' : '');
+    for (var i = 0; i < 8; i++) {
+      cols[i].b1.style.height = (V1[i] * 130) + 'px';
+      cols[i].b2.style.height = (V2[i] * 130) + 'px';
+      cols[i].b3.style.height = (((1 - s.a) * V1[i] + s.a * V2[i]) * 130) + 'px';
+      cols[i].b3.style.background = (idx === 2 ? '#b45309' : 'var(--out)');
+    }
+    document.getElementById('play').textContent = timer ? '暂停' : '播放';
+  }
+  function step(d) { idx = (idx + d + STEPS.length) % STEPS.length; render(); }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+  function play() {
+    if (timer) { stop(); render(); return; }
+    var sec = (7 - Number(document.getElementById('speed').value)) * 0.5;
+    timer = setInterval(function () { step(1); }, Math.max(500, sec * 1000));
+    render();
+  }
+  document.getElementById('play').onclick = play;
+  document.getElementById('prev').onclick = function () { stop(); step(-1); };
+  document.getElementById('next').onclick = function () { stop(); step(1); };
+  document.getElementById('reset').onclick = function () { stop(); idx = 0; render(); };
+  document.getElementById('speed').oninput = function () {
+    document.getElementById('speedv').textContent = ((7 - Number(this.value)) * 0.5).toFixed(1) + ' s';
+    if (timer) { stop(); play(); }
+  };
+  render();
+</script>
+</body>
+</html>

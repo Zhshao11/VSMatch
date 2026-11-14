@@ -1,0 +1,276 @@
+{
+  "protocol": "GDROS official test.py, 424 pairs, iters=32, LSR NPOINT=200000",
+  "ablation_class": "diagnostic_bypass_not_module_ablation",
+  "structural_caveat": "E072 V2 is not an independent backbone: front_v1 always runs and E046FiLM injects frozen DINO descriptors into that V1 feature. f2 therefore contains V1 information, and F2 with gs=1 returns fuse_proj(cat([f1s,f2s])) which still contains f1s. v2only is a gate-biased bypass, not a V1 removal.",
+  "pruned_model": {
+    "c_skip_teachers": true,
+    "gru_chains": 3,
+    "gru_updates_per_pair": 96,
+    "lsr_calls_per_pair": 129,
+    "note": "2026-11-15 C-branch teacher pruning; metrics bit-exact vs legacy"
+  },
+  "table": {
+    "gdros_released": {
+      "AEPE": 1.4618458366096103,
+      "CMR@1": 33.72641509433962,
+      "CMR@2": 81.60377358490567,
+      "CMR@5": 99.52830188679245,
+      "RMSE_official_var": 0.7463472918495302
+    },
+    "both": {
+      "AEPE": 1.473827834446231,
+      "CMR@1": 72.40566037735849,
+      "CMR@2": 84.90566037735849,
+      "CMR@5": 94.10377358490567,
+      "RMSE_official_var": 8.335009898837217,
+      "pairs": 424
+    },
+    "v1only": {
+      "AEPE": 7.745715116406876,
+      "CMR@1": 0.9433962264150944,
+      "CMR@2": 4.245283018867925,
+      "CMR@5": 24.764150943396228,
+      "RMSE_official_var": 16.018962391754382,
+      "pairs": 424
+    },
+    "v2only": {
+      "AEPE": 41.32983630651596,
+      "CMR@1": 0.0,
+      "CMR@2": 0.0,
+      "CMR@5": 0.2358490566037736,
+      "RMSE_official_var": 287.7099512777089,
+      "pairs": 424
+    }
+  },
+  "pairwise": {
+    "v1only_minus_both": {
+      "n": 424,
+      "mean_delta": 6.271887281960645,
+      "median_delta": 6.089226448110132,
+      "a_better_pairs": 15,
+      "a_better_pct": 3.5377358490566038,
+      "delta_gt_5px": 261,
+      "delta_lt_minus_5px": 5,
+      "a_catastrophic_gt_10px": 104,
+      "b_catastrophic_gt_10px": 12,
+      "worst_10": [
+        {
+          "idx": 55,
+          "a": 20.6067,
+          "b": 1.3698,
+          "delta": 19.2369
+        },
+        {
+          "idx": 336,
+          "a": 19.7474,
+          "b": 0.7389,
+          "delta": 19.0085
+        },
+        {
+          "idx": 194,
+          "a": 20.035,
+          "b": 2.2552,
+          "delta": 17.7797
+        },
+        {
+          "idx": 281,
+          "a": 17.0668,
+          "b": 0.5385,
+          "delta": 16.5283
+        },
+        {
+          "idx": 243,
+          "a": 16.9471,
+          "b": 0.6923,
+          "delta": 16.2549
+        },
+        {
+          "idx": 418,
+          "a": 17.9979,
+          "b": 2.0497,
+          "delta": 15.9482
+        },
+        {
+          "idx": 237,
+          "a": 16.8291,
+          "b": 0.9801,
+          "delta": 15.849
+        },
+        {
+          "idx": 70,
+          "a": 27.0346,
+          "b": 11.517,
+          "delta": 15.5176
+        },
+        {
+          "idx": 135,
+          "a": 17.2167,
+          "b": 1.8326,
+          "delta": 15.3841
+        },
+        {
+          "idx": 68,
+          "a": 18.6661,
+          "b": 3.481,
+          "delta": 15.1851
+        }
+      ]
+    },
+    "v2only_minus_both": {
+      "n": 424,
+      "mean_delta": 39.85600847206972,
+      "median_delta": 40.02426914287997,
+      "a_better_pairs": 2,
+      "a_better_pct": 0.4716981132075472,
+      "delta_gt_5px": 419,
+      "delta_lt_minus_5px": 1,
+      "a_catastrophic_gt_10px": 416,
+      "b_catastrophic_gt_10px": 12,
+      "worst_10": [
+        {
+          "idx": 155,
+          "a": 97.5486,
+          "b": 4.1711,
+          "delta": 93.3776
+        },
+        {
+          "idx": 239,
+          "a": 94.4981,
+          "b": 1.4612,
+          "delta": 93.0369
+        },
+        {
+          "idx": 78,
+          "a": 89.9231,
+          "b": 1.2659,
+          "delta": 88.6571
+        },
+        {
+          "idx": 329,
+          "a": 94.9982,
+          "b": 8.5888,
+          "delta": 86.4094
+        },
+        {
+          "idx": 131,
+          "a": 87.2566,
+          "b": 3.1474,
+          "delta": 84.1092
+        },
+        {
+          "idx": 247,
+          "a": 80.2614,
+          "b": 1.4788,
+          "delta": 78.7826
+        },
+        {
+          "idx": 12,
+          "a": 76.9948,
+          "b": 0.9901,
+          "delta": 76.0047
+        },
+        {
+          "idx": 159,
+          "a": 75.0476,
+          "b": 0.8911,
+          "delta": 74.1565
+        },
+        {
+          "idx": 281,
+          "a": 73.9002,
+          "b": 0.5385,
+          "delta": 73.3616
+        },
+        {
+          "idx": 28,
+          "a": 76.6488,
+          "b": 3.5286,
+          "delta": 73.1202
+        }
+      ]
+    },
+    "v1only_minus_v2only": {
+      "n": 424,
+      "mean_delta": -33.58412119010907,
+      "median_delta": -33.86235091915465,
+      "a_better_pairs": 420,
+      "a_better_pct": 99.05660377358491,
+      "delta_gt_5px": 2,
+      "delta_lt_minus_5px": 415,
+      "a_catastrophic_gt_10px": 104,
+      "b_catastrophic_gt_10px": 416,
+      "worst_10": [
+        {
+          "idx": 163,
+          "a": 26.844,
+          "b": 14.5192,
+          "delta": 12.3247
+        },
+        {
+          "idx": 55,
+          "a": 20.6067,
+          "b": 9.619,
+          "delta": 10.9878
+        },
+        {
+          "idx": 280,
+          "a": 16.6043,
+          "b": 13.0593,
+          "delta": 3.545
+        },
+        {
+          "idx": 166,
+          "a": 16.1224,
+          "b": 12.7564,
+          "delta": 3.366
+        },
+        {
+          "idx": 339,
+          "a": 14.4925,
+          "b": 15.7612,
+          "delta": -1.2688
+        },
+        {
+          "idx": 146,
+          "a": 1.2164,
+          "b": 4.4223,
+          "delta": -3.2059
+        },
+        {
+          "idx": 107,
+          "a": 2.4849,
+          "b": 6.4579,
+          "delta": -3.973
+        },
+        {
+          "idx": 399,
+          "a": 6.9815,
+          "b": 10.9783,
+          "delta": -3.9968
+        },
+        {
+          "idx": 142,
+          "a": 6.4271,
+          "b": 10.9727,
+          "delta": -4.5457
+        },
+        {
+          "idx": 328,
+          "a": 3.3977,
+          "b": 8.5196,
+          "delta": -5.1219
+        }
+      ]
+    }
+  },
+  "both_pair_EPE_source": "research/results/OS_20261114/ablate_v2_off_result_official.json",
+  "source_files": [
+    "research/results/OS_20261114/ablate_v2_off_result_official.json",
+    "research/results/OS_20261115/ablate_v1only_pruned.json",
+    "research/results/OS_20261115/ablate_v2only_pruned.json"
+  ],
+  "sanity_pass": {
+    "v1only": true,
+    "v2only": true
+  }
+}

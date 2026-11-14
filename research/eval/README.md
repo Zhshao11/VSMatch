@@ -16,6 +16,8 @@
 | `sweep_gru_iters.py` | **零训练 GRU 迭代次数 sweep**：一次 32-iteration 前向拿到 `[4,6,8,12,16,24,32]` 全曲线 | 与 `eval_os_official_protocol.py` 一致（官方） |
 | `verify_c_teacher_pruning.py` | C 分支 teacher 剪枝正确性：同进程 A/B bit-exact + 424 对官方口径 sanity check | 与 `eval_os_official_protocol.py` 一致（官方） |
 | `probe_c_prune_timing.py` | 同进程逐对计时：推理 `iters=32` / 训练前向 `iters=12` 的剪枝前后加速 | 不报指标，仅计时 |
+| `ablate_backbone_single.py` | 剪枝后 M4 的**对称单路旁路**：一个进程一个配置（`both` / `v1only` / `v2only`），便于两张 GPU 并行 | 与 `eval_os_official_protocol.py` 一致（官方） |
+| `merge_backbone_ablation.py` | 合并两份单路结果做逐对 Δ 统计，纯标准库、无需 GPU | 官方 |
 
 ## `ablate_v2_off.py` 的实现与状态
 
@@ -123,6 +125,35 @@ CUDA_VISIBLE_DEVICES=5 python probe_c_prune_timing.py \
 11-14 单次 probe 报的 `1.796×` 偏高，以 30 对均值为准。
 细节见 [`docs/GRU_ITER_SWEEP.md`](../../docs/GRU_ITER_SWEEP.md) §6.1，
 原始数据见 [`research/results/OS_20261115/`](../../research/results/OS_20261115/)。
+
+## 对称单路旁路（2026-11-15，剪枝后 M4，双 GPU）
+
+`ablate_backbone_single.py` 把 11-14 只有单方向的 `v2off` 补成对称的两个方向。
+只改 E073 的两处融合门控，5 个 `E073FusionMatcher` 一起切换，不重训：
+
+| 配置 | F3 `corr_gate_logit` | F2 `fuse_gate` |
+|---|---|---|
+| `v1only` | `-80`（`a≈0`，只留 GDROS 那路） | 常数 `-80`（`gs≈0`） |
+| `v2only` | `+80`（`a≈1`，推向含 DINO 那路） | 常数 `+80`（`gs≈1`） |
+
+`c_skip_teachers=True` 显式启用 2026-11-15 的剪枝，结果 JSON 里记录该标志；
+`v1only` 与 11-14 历史 `v2off` 5 项指标 **Δ=0**，再次验证剪枝逐位等价。
+每个进程先做 1 对 probe（`max|Δpost|` 分别为 46.95 / 143.67）自证门控生效。
+
+```bash
+CUDA_VISIBLE_DEVICES=5 python ablate_backbone_single.py \
+  --config v1only --max-pairs 424 --gpu 0 --out ablate_v1only_pruned.json
+CUDA_VISIBLE_DEVICES=1 python ablate_backbone_single.py \
+  --config v2only --max-pairs 424 --gpu 0 --out ablate_v2only_pruned.json
+python merge_backbone_ablation.py
+```
+
+结果（官方口径 424 对）：`both` AEPE `1.4738`，`v1only` `7.7457`，
+`v2only` `41.3298`（CMR@5 仅 0.24%）。两个方向都大幅掉点，属
+**敏感性诊断，不是模块消融**；尤其 `v2only` 里的 V2 不是独立 backbone
+（DINO 描述子注入到 V1 特征上），只是把门控推向 V2 侧。完整结构边界、
+逐对统计与推论限制见
+[`docs/ABLATION_BACKBONE_SYMMETRIC.md`](../../docs/ABLATION_BACKBONE_SYMMETRIC.md)。
 
 ## 未入库的探针脚本
 

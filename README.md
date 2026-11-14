@@ -38,6 +38,7 @@
 
 | 日期 | 内容 |
 |---|---|
+| **2026-11-15** | 落地 C 分支 `teacher_preds` 死计算剪枝（GRU 160→96 次，424 对指标逐位不变，推理 1.339× / 训练前向 1.455×，见 [GRU_ITER_SWEEP.md](docs/GRU_ITER_SWEEP.md) §6.1）；在剪枝后 M4 上补齐**对称单路旁路**（双 GPU、官方口径 424 对），并澄清 V2 不是独立 backbone，见 [ABLATION_BACKBONE_SYMMETRIC.md](docs/ABLATION_BACKBONE_SYMMETRIC.md) |
 | **2026-11-14** | 补齐当前方法设计、统一评测口径与全量 424 对结果文档；同步评测与消融脚本；完成 V2 分支的**诊断性零训练旁路**（不构成模块消融结论，见 [ABLATION_V2.md](docs/ABLATION_V2.md)）；补跑 GRU 迭代次数官方口径 sweep，确认 `iters=32` 过冲、`24` 更优 |
 | **2026-11-13** | 核实 GDROS 官方复现无误：官方 `test.py` 计算的是**逐分量绝对误差**，本项目用**向量 EPE**，两者 AEPE 相差约 π/2；补跑官方口径下 M4 结果；完成 Top-25 失败配对归因 |
 | **2026-11-02 ~ 10-31** | 定位 CMR 阈值交叉现象：重尾继承自 E074 B/C 双分支，门控为软加权且 oracle 也无法补救；鲁棒仿射拟合被实验否定为主因 |
@@ -151,13 +152,15 @@ V2 那一路的贡献置零（不重训），AEPE `1.4738 → 7.7457`。这测�
 | [`docs/METHOD_DESIGN.md`](docs/METHOD_DESIGN.md) | **当前方法设计**（分层结构、损失、超参、设计依据） |
 | [`docs/RESULTS_OS.md`](docs/RESULTS_OS.md) | 当前指标、误差结构、口径对照 |
 | [`docs/ABLATION_V2.md`](docs/ABLATION_V2.md) | V2（DINO 辅助）分支零训练旁路：定义、结果、边界（诊断性，非模块消融） |
+| [`docs/ABLATION_BACKBONE_SYMMETRIC.md`](docs/ABLATION_BACKBONE_SYMMETRIC.md) | 剪枝后 M4 的**对称单路旁路**（双 GPU）：两方向结果、V2 结构边界、推论限制 |
 | [`docs/GRU_ITER_SWEEP.md`](docs/GRU_ITER_SWEEP.md) | GRU 迭代次数 sweep：代码事实、历史证据、省训练时间的边界 |
 | [`docs/EVALUATION_PROTOCOL.md`](docs/EVALUATION_PROTOCOL.md) | CMR / AEPE / RMSE 定义与 π/2 口径更正 |
 | [`docs/REPRODUCE.md`](docs/REPRODUCE.md) | 环境、路径约定、复现命令与限制 |
 | `research/remote_stage/os/` | E072–E075A 训练与模型实现（冻结版本） |
 | [`research/eval/`](research/eval/README.md) | 评测脚本与零训练消融脚本 |
 | `research/results/OS_20261113/` | 2026-11-13 一手评测报告与原始指标 JSON |
-| `research/results/OS_20261114/` | 2026-11-14 分支消融原始结果 JSON（含逐对 EPE） |
+| `research/results/OS_20261114/` | 2026-11-14 分支消融与 GRU sweep 原始结果 JSON（含逐对 EPE） |
+| `research/results/OS_20261115/` | 2026-11-15 剪枝验证、计时与对称单路旁路原始结果 JSON |
 | `research/experiments/`、`research/results/` | 早期方法搜索的规格、结果卡与审计记录 |
 | `research/CURRENT_METHOD_STATE.md` | 2026-09 历史方法状态快照 |
 
@@ -188,7 +191,7 @@ python scripts/preflight.py --scope all
 - [ ] 难度递增的难例合成，覆盖 1.10 尺度档的平移失效
 - [ ] 从 GDROS released 蒸馏并加正则，恢复难配对匹配能力
 - [ ] 门控置信度校准与弃权机制
-- [x] 上游前端诊断性旁路（冻结权重、零训练，只测敏感性；**不等于模块消融**）
+- [x] 上游前端**对称**单路旁路（剪枝后 M4、双 GPU、官方口径 424 对；两个方向都大幅掉点，**仍只是敏感性诊断，不等于模块消融**）
 - [ ] 适配性续训（固定单路，冻结前端只续训 B/C + L4 gate 2K–8K 步）后按官方口径复测
 - [ ] 严格模块消融：同预算重训单路 E073 → E074 → M4，才能量化 V2 的边际贡献
 - [x] GRU 迭代次数官方口径 sweep：确认 `iters=32` 过冲、`24` 更准、`16` 省一半
