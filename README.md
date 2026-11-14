@@ -192,5 +192,8 @@ python scripts/preflight.py --scope all
 - [ ] 适配性续训（固定单路，冻结前端只续训 B/C + L4 gate 2K–8K 步）后按官方口径复测
 - [ ] 严格模块消融：同预算重训单路 E073 → E074 → M4，才能量化 V2 的边际贡献
 - [x] GRU 迭代次数官方口径 sweep：确认 `iters=32` 过冲、`24` 更准、`16` 省一半
-- [ ] 诊断 `gate_features` 逐迭代重算 LSR 的冗余（若仿射拟合很快稳定，可直接省训练前向）
+- [x] 核清 M4 调用链：一次 `iters=32` 前向 = 5 条 GRU 链 / 160 次 update + 129 次 LSR
+- [x] 验证 C 分支 `teacher_preds` 是死计算（32 个迭代点 bit-exact，单对 1.80×）
+- [ ] 落地「C 分支跳过 teacher」并跑 424 对 sanity check（AEPE 1.4738 应不变）
+- [ ] 诊断两处逐迭代 LSR（`B.gate_input` / `PairFusion.gate_features`）的缓存冗余
 - [ ] 固定 `train_iters=8` 短训 2K 步，验证训练步数是否真能压缩（零训练 sweep 不能回答）

@@ -8,8 +8,10 @@
     不换特征、不改输入分布。
   * 训练 `--train-iters=12`，正式评测 `iters=32` 属于**外推**；把 iters 降到
     12/8/6 反而更贴近训练分布，不制造下游 OOD。
-  * `PairFusion.forward` 在**每个迭代点**都调 `gate_features`，后者对 B/C 各做一次
-    LSR ⇒ 一次 iters=K 的前向含 `2K` 次 LSR，再加评测对 `preds[-1]` 的 1 次 ⇒ `2K+1`。
+  * 一次 `iters=k` 前向里，B 分支 `E074Model.gate_input` 逐迭代做 2 次 LSR，
+    `PairFusion.gate_features` 又逐迭代做 2 次，共 `4k` 次；加评测对
+    `preds[-1]` 的 1 次 ⇒ `4k+1` 次/对。GRU 侧是 **5 条链 × k**
+    （B: f2+f3 = 2 条；C: f2+f3+student = 3 条）。
     因此 iters 与训练/评测计算量近似线性相关，这直接对应「省训练时间」。
 
 本脚本只做一次 `iters=32` 前向（内部 64 次 LSR），再对候选迭代点的
@@ -76,7 +78,9 @@ def run(model, device, max_pairs, sweep):
         _, a_img, b_img, gt, _ = ds[i]
         a = a_img[None].to(device)
         b = b_img[None].to(device)
-        # 一次前向；gate_features 内部对每个迭代点各做 2 次 LSR
+        # 一次前向；每个迭代点两处各 2 次 LSR：
+        #   B 分支 E074Model.gate_input 2 次 + PairFusion.gate_features 2 次
+        # 另评测外层对 preds[-1] 再做 1 次，合计 4k+1 次/对。
         preds = model(a, b, iters=ITERS_MAX, lsr_fn=e074.lsr)
         if len(preds) != ITERS_MAX:
             raise RuntimeError("preds len %d != iters %d" % (len(preds), ITERS_MAX))
@@ -90,9 +94,9 @@ def run(model, device, max_pairs, sweep):
     return {str(k): {"iters": k,
                      "official": cols[k].report(),
                      "pair_EPE": [float(x) for x in cols[k].pairs],
-                     # LSR 调用次数：每个迭代点 gate 用 2 次，评测再用 1 次
-                     "lsr_calls_per_pair": 2 * k + 1,
-                     "relative_inference_cost": round((2 * k + 1) / (2 * ITERS_MAX + 1), 4)}
+                     # B.gate_input(2k) + PairFusion.gate_features(2k) + 最终 1 次
+                     "lsr_calls_per_pair": 4 * k + 1,
+                     "relative_inference_cost": round((4 * k + 1) / (4 * ITERS_MAX + 1), 4)}
             for k in sweep}, round(time.time() - t0, 1)
 
 
@@ -110,8 +114,8 @@ def print_table(res, sanity_ok):
           (fmt(GDROS_REF["AEPE"]), fmt(GDROS_REF["CMR@1"], 2),
            fmt(GDROS_REF["CMR@2"], 2), fmt(GDROS_REF["CMR@5"], 2),
            fmt(GDROS_REF["RMSE_official_var"])), flush=True)
-    print("\n相对推理成本 = (2·k+1)/(2·32+1)，即 LSR 调用次数之比；"
-          "训练时同样按 2·k 次 LSR/step 计。", flush=True)
+    print("\n相对推理成本 = (4·k+1)/(4·32+1)，即 LSR 调用次数之比；"
+          "GRU 前向次数比 k/32 近似一致。", flush=True)
     print("SANITY %s" % ("PASS" if sanity_ok else "FAIL —— 不要采用本表结论"), flush=True)
 
 

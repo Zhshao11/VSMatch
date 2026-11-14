@@ -494,8 +494,8 @@
         0.24423991499244835,
         0.4988113824216782
       ],
-      "lsr_calls_per_pair": 9,
-      "relative_inference_cost": 0.1385
+      "lsr_calls_per_pair": 17,
+      "relative_inference_cost": 0.1318
     },
     "6": {
       "iters": 6,
@@ -973,8 +973,8 @@
         0.21013265972148076,
         0.32681030130322597
       ],
-      "lsr_calls_per_pair": 13,
-      "relative_inference_cost": 0.2
+      "lsr_calls_per_pair": 25,
+      "relative_inference_cost": 0.1938
     },
     "8": {
       "iters": 8,
@@ -1452,8 +1452,8 @@
         0.23319977588535323,
         0.2279414151793162
       ],
-      "lsr_calls_per_pair": 17,
-      "relative_inference_cost": 0.2615
+      "lsr_calls_per_pair": 33,
+      "relative_inference_cost": 0.2558
     },
     "12": {
       "iters": 12,
@@ -1931,8 +1931,8 @@
         0.20826582083157064,
         0.2320751056115995
       ],
-      "lsr_calls_per_pair": 25,
-      "relative_inference_cost": 0.3846
+      "lsr_calls_per_pair": 49,
+      "relative_inference_cost": 0.3798
     },
     "16": {
       "iters": 16,
@@ -2410,8 +2410,8 @@
         0.205277686397892,
         0.22906869721541057
       ],
-      "lsr_calls_per_pair": 33,
-      "relative_inference_cost": 0.5077
+      "lsr_calls_per_pair": 65,
+      "relative_inference_cost": 0.5039
     },
     "24": {
       "iters": 24,
@@ -2889,8 +2889,8 @@
         0.24221941754542797,
         0.25124439077178806
       ],
-      "lsr_calls_per_pair": 49,
-      "relative_inference_cost": 0.7538
+      "lsr_calls_per_pair": 97,
+      "relative_inference_cost": 0.7519
     },
     "32": {
       "iters": 32,
@@ -3368,8 +3368,9 @@
         0.2914973386720021,
         0.25361657421161965
       ],
-      "lsr_calls_per_pair": 65,
+      "lsr_calls_per_pair": 129,
       "relative_inference_cost": 1.0
     }
-  }
+  },
+  "counting_note": "LSR/对 = 4k+1：B.E074Model.gate_input 2k + PairFusion.gate_features 2k + 最终 e074.lsr(preds[-1]) 1。GRU update = 5 条链 x k (B: f2+f3; C: f2+f3+student)。2026-11-14 逐层核对后修正，初版误记为 2k+1；official 指标字段未改动。"
 }
