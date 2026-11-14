@@ -13,6 +13,7 @@
 | `diag_gdros_epe.py` | 同一批预测流只换误差定义，验证 π/2 比值 | 两种口径对照 |
 | `diag_m4_top25.py` | Top-25 失败配对的 B / C / oracle / LSR 前后分解 | 官方配对级 EPE |
 | `ablate_v2_off.py` | **零训练消融**：旁路 V2（DINO 辅助）那一路，同一权重下跑两路 / 单路 | 与 `eval_os_official_protocol.py` 一致（官方） |
+| `sweep_gru_iters.py` | **零训练 GRU 迭代次数 sweep**：一次 32-iteration 前向拿到 `[4,6,8,12,16,24,32]` 全曲线 | 与 `eval_os_official_protocol.py` 一致（官方） |
 
 ## `ablate_v2_off.py` 的实现与状态
 
@@ -72,6 +73,25 @@ CUDA_VISIBLE_DEVICES=2 python ablate_v2_off.py \
 完整结论、能/不能成立的推论，以及「有效消融需重训单路」的方案与成本见
 [`docs/ABLATION_V2.md`](../../docs/ABLATION_V2.md) §4；原始数据见
 [`research/results/OS_20261114/`](../../research/results/OS_20261114/)。
+
+## `sweep_gru_iters.py`：零训练 GRU 迭代次数 sweep
+
+`iters` 不是结构层，而是**同一份 GRU 权重的循环展开次数**
+（`e073a...:248`）。训练用 12、正式评测用 32。脚本只做一次 `iters=32` 前向，
+对 `preds[k-1]` 各补一次 LSR + 官方 `Collector`，一次拿到
+`[4,6,8,12,16,24,32]` 全曲线，不必逐 `k` 重跑模型。
+
+```bash
+CUDA_VISIBLE_DEVICES=2 python sweep_gru_iters.py --max-pairs 424 --gpu 0 \
+  --out sweep_gru_iters_official.json
+```
+
+`k=32` 与历史官方值做 sanity check（2026-11-14 运行 `SANITY PASS`，451 s）。
+结果：`24` 的 AEPE `1.4449` 反而优于 `32` 的 `1.4738`（68.2% 配对更好），
+`16` 的 AEPE `1.4611` 且 CMR@2 持平；`12` 以下明显退化。
+这只测**推理截断**，不能推断「训练 `train_iters` 砍到 5/6 重训后也行」；
+完整边界与省训练时间的验证路径见
+[`docs/GRU_ITER_SWEEP.md`](../../docs/GRU_ITER_SWEEP.md)。
 
 ## 未入库的探针脚本
 

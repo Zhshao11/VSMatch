@@ -38,7 +38,7 @@
 
 | 日期 | 内容 |
 |---|---|
-| **2026-11-14** | 补齐当前方法设计、统一评测口径与全量 424 对结果文档；同步评测与消融脚本；完成 V2 分支的**诊断性零训练旁路**（不构成模块消融结论，见 [ABLATION_V2.md](docs/ABLATION_V2.md)） |
+| **2026-11-14** | 补齐当前方法设计、统一评测口径与全量 424 对结果文档；同步评测与消融脚本；完成 V2 分支的**诊断性零训练旁路**（不构成模块消融结论，见 [ABLATION_V2.md](docs/ABLATION_V2.md)）；补跑 GRU 迭代次数官方口径 sweep，确认 `iters=32` 过冲、`24` 更优 |
 | **2026-11-13** | 核实 GDROS 官方复现无误：官方 `test.py` 计算的是**逐分量绝对误差**，本项目用**向量 EPE**，两者 AEPE 相差约 π/2；补跑官方口径下 M4 结果；完成 Top-25 失败配对归因 |
 | **2026-11-02 ~ 10-31** | 定位 CMR 阈值交叉现象：重尾继承自 E074 B/C 双分支，门控为软加权且 oracle 也无法补救；鲁棒仿射拟合被实验否定为主因 |
 | **2026-09-30** | 冻结 E072 → E073 → E074 → E075A 实现链与阶段性结果卡 |
@@ -123,6 +123,10 @@ V2 那一路的贡献置零（不重训），AEPE `1.4738 → 7.7457`。这测�
 「去掉 DINO 模型就废了」。真正的模块消融需要重训单路，见
 [V2 旁路诊断](docs/ABLATION_V2.md) §4.1。
 
+> `iters=32` 是与论文 / GDROS 并列的前提。零训练 sweep 显示 `24` 已更准
+> （AEPE 1.4449、68% 配对更好）、`16` 可省一半评测成本，但**改 iters 就换口径**：
+> 内部筛选可用，最终报数仍须 32。见 [GRU 迭代次数 sweep](docs/GRU_ITER_SWEEP.md)。
+
 ---
 
 ## 已知短板
@@ -146,7 +150,8 @@ V2 那一路的贡献置零（不重训），AEPE `1.4738 → 7.7457`。这测�
 |---|---|
 | [`docs/METHOD_DESIGN.md`](docs/METHOD_DESIGN.md) | **当前方法设计**（分层结构、损失、超参、设计依据） |
 | [`docs/RESULTS_OS.md`](docs/RESULTS_OS.md) | 当前指标、误差结构、口径对照 |
-| [`docs/ABLATION_V2.md`](docs/ABLATION_V2.md) | V2（DINO 辅助）分支零训练消融：定义、结果、边界 |
+| [`docs/ABLATION_V2.md`](docs/ABLATION_V2.md) | V2（DINO 辅助）分支零训练旁路：定义、结果、边界（诊断性，非模块消融） |
+| [`docs/GRU_ITER_SWEEP.md`](docs/GRU_ITER_SWEEP.md) | GRU 迭代次数 sweep：代码事实、历史证据、省训练时间的边界 |
 | [`docs/EVALUATION_PROTOCOL.md`](docs/EVALUATION_PROTOCOL.md) | CMR / AEPE / RMSE 定义与 π/2 口径更正 |
 | [`docs/REPRODUCE.md`](docs/REPRODUCE.md) | 环境、路径约定、复现命令与限制 |
 | `research/remote_stage/os/` | E072–E075A 训练与模型实现（冻结版本） |
@@ -186,3 +191,6 @@ python scripts/preflight.py --scope all
 - [x] 上游前端诊断性旁路（冻结权重、零训练，只测敏感性；**不等于模块消融**）
 - [ ] 适配性续训（固定单路，冻结前端只续训 B/C + L4 gate 2K–8K 步）后按官方口径复测
 - [ ] 严格模块消融：同预算重训单路 E073 → E074 → M4，才能量化 V2 的边际贡献
+- [x] GRU 迭代次数官方口径 sweep：确认 `iters=32` 过冲、`24` 更准、`16` 省一半
+- [ ] 诊断 `gate_features` 逐迭代重算 LSR 的冗余（若仿射拟合很快稳定，可直接省训练前向）
+- [ ] 固定 `train_iters=8` 短训 2K 步，验证训练步数是否真能压缩（零训练 sweep 不能回答）

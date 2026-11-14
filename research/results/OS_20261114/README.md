@@ -2,7 +2,8 @@
 
 | 文件 | 内容 |
 |---|---|
-| `ablate_v2_off_result_official.json` | V2（DINO 辅助）分支零训练消融原始结果 |
+| `ablate_v2_off_result_official.json` | V2（DINO 辅助）分支零训练旁路原始结果 |
+| `sweep_gru_iters_official.json` | GRU 迭代次数 `[4,6,8,12,16,24,32]` 官方口径 sweep 原始结果 |
 
 ## `ablate_v2_off_result_official.json`
 
@@ -24,3 +25,16 @@
 
 结论、逐对统计、以及「这是诊断性旁路而非模块消融」的定位见
 [`docs/ABLATION_V2.md`](../../../docs/ABLATION_V2.md)。
+
+## `sweep_gru_iters_official.json`
+
+由 `research/eval/sweep_gru_iters.py` 产出，**GDROS 官方 `test.py` 口径**，
+424 对全量；一次 `iters=32` 前向，`results.<k>` 给出每个候选迭代点的
+`official` 聚合指标、424 项 `pair_EPE`、`lsr_calls_per_pair` 与
+`relative_inference_cost`。顶层 `train_iters_used_by_checkpoint: 12`，
+`sanity_pass: true`（`k=32` 逐项复现 `AEPE 1.4738` 等历史值），
+`elapsed_sec: 451.1`。
+
+**只有 `k=32` 与论文 Table II / 本目录另一份 JSON 同口径**；
+其他 `k` 是推理超参的敏感性曲线，不可与 GDROS baseline 行并列。
+分析见 [`docs/GRU_ITER_SWEEP.md`](../../../docs/GRU_ITER_SWEEP.md)。
