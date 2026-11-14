@@ -1,5 +1,14 @@
 # Current Method State
 
+> **2026-11-14 更新**：本页是 **2026-09-30 的历史快照**，不再作为当前方法的入口。
+> 当前方法设计、评测口径与全量 424 对结果请以
+> [`docs/METHOD_DESIGN.md`](../docs/METHOD_DESIGN.md)、
+> [`docs/EVALUATION_PROTOCOL.md`](../docs/EVALUATION_PROTOCOL.md)、
+> [`docs/RESULTS_OS.md`](../docs/RESULTS_OS.md) 为准。
+> 本页指标使用早期协议，不能直接与 2026-11 的数字或论文 Table II 并列。
+> 2026-11-13 已核实 GDROS 官方复现无误，此前的数字差异来自误差度量定义
+> （官方逐分量 `|Δx|,|Δy|` vs 项目向量 EPE），不是权重或数据集问题。
+
 Updated: 2026-09-30 (Asia/Shanghai)
 
 This file is the canonical starting point for a new researcher or Codex task.
