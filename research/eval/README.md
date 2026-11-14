@@ -59,7 +59,8 @@ CUDA_VISIBLE_DEVICES=2 python ablate_v2_off.py \
 `--device cpu` 会把 `e074.lsr` 换成恒等映射（`LSR` 内部硬编码 `.cuda()`），
 仅用于链路自检，该模式下指标无效。
 
-**2026-11-14 正式结果**（官方口径 424 对，`SANITY PASS`，10/10 项复现历史值）：
+**2026-11-14 诊断性旁路结果**（官方口径 424 对，`SANITY PASS`，10/10 项复现历史值；
+**非模块消融，不能作为 V2 贡献度引用**）：
 
 | 配置 | AEPE↓ | CMR@1↑ | CMR@2↑ | CMR@5↑ |
 |---|---|---|---|---|
@@ -68,8 +69,8 @@ CUDA_VISIBLE_DEVICES=2 python ablate_v2_off.py \
 | M4 单路 `v2off` | 7.7457 | 0.94 | 4.25 | 24.76 |
 
 逐对 `ΔEPE` mean `+6.2719` / median `+6.0892`，仅 `15/424` 变好。
-完整结论与「零训练消融不等于重训单路」的边界见
-[`docs/ABLATION_V2.md`](../../docs/ABLATION_V2.md)，原始数据见
+完整结论、能/不能成立的推论，以及「有效消融需重训单路」的方案与成本见
+[`docs/ABLATION_V2.md`](../../docs/ABLATION_V2.md) §4；原始数据见
 [`research/results/OS_20261114/`](../../research/results/OS_20261114/)。
 
 ## 未入库的探针脚本

@@ -111,7 +111,7 @@ E072 → E075A 整条链路都用 `vector_norm`，因此内部消融（B/C/M4 �
 但**不能**把 M4 的向量 EPE 数字与论文 Table II 的 GDROS 行直接并列。
 按论文口径重算的 M4 结果见 [RESULTS_OS.md](RESULTS_OS.md) §1.1。
 
-**新增实验统一用官方口径**：2026-11-14 起的两路/单路相关体消融
+**新增实验统一用官方口径**：2026-11-14 起的两路/单路相关体**诊断性旁路**
 （[`ablate_v2_off.py`](../research/eval/ablate_v2_off.py)）直接复用
 `eval_os_official_protocol.py` 的 `Collector`，GDROS 官方权重、M4 两路、M4 单路
 三者在同一份官方口径下报数（424 对），不再产出向量 EPE 主表；向量 EPE 只作为
