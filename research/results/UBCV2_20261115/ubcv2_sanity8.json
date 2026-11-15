@@ -1,0 +1,135 @@
+{
+  "dataset": "UBCv2",
+  "protocol": "GDROS official test.py: per-component |dx|,|dy| error, per-pair EPE(k), iters=32, LSR NPOINT=200000",
+  "test_root": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901",
+  "layout": {
+    "root": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901",
+    "dstype": "testing",
+    "counts": {
+      "opt": 8,
+      "sar_warped": 8,
+      "truth_flow": 8,
+      "datum": 0
+    },
+    "ok": true,
+    "problems": []
+  },
+  "iters": 32,
+  "lsr_npoint": 200000,
+  "requested_pairs": 8,
+  "weight_note": "Both checkpoints are OS-trained. This is a cross-dataset generalisation run, not the paper's in-domain Table III setting.",
+  "results": {
+    "baseline": {
+      "which": "baseline",
+      "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/official_models_reference/GDROS-os512.pth",
+      "pairs_evaluated": 8,
+      "iters": 32,
+      "lsr_npoint": 200000,
+      "elapsed_sec": 1.7,
+      "official": {
+        "pairs": 8,
+        "AEPE": 21.836806966943882,
+        "RMSE_official_var": 661.4510594293547,
+        "RMSE_paper_formula_std": 25.718690857610827,
+        "pixel_RMSE_true": 36.5979710854037,
+        "AEPE_vector_EPE_reference": 33.35701320490924,
+        "CMR@1_vector_EPE_reference": 0.0,
+        "@1px": {
+          "CMR": 0.0,
+          "AEPE": null,
+          "RMSE_official_var": null
+        },
+        "@2px": {
+          "CMR": 0.0,
+          "AEPE": null,
+          "RMSE_official_var": null
+        },
+        "@3px": {
+          "CMR": 0.0,
+          "AEPE": null,
+          "RMSE_official_var": null
+        },
+        "@4px": {
+          "CMR": 0.0,
+          "AEPE": null,
+          "RMSE_official_var": null
+        },
+        "@5px": {
+          "CMR": 12.5,
+          "AEPE": 4.422490545901383,
+          "RMSE_official_var": 0.0
+        },
+        "pixel_CMR": {
+          "1px": 3.9500951766967773,
+          "2px": 8.199691772460938,
+          "3px": 12.702393531799316,
+          "4px": 17.260146141052246,
+          "5px": 22.237491607666016
+        },
+        "pixel_CMR_vector_EPE": {
+          "1px": 0.20360946655273438,
+          "2px": 0.8134841918945312,
+          "3px": 1.79901123046875,
+          "4px": 2.9372215270996094,
+          "5px": 4.652309417724609
+        }
+      }
+    },
+    "m4": {
+      "which": "m4",
+      "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/checkpoints/M4_step80000.pt",
+      "pairs_evaluated": 8,
+      "iters": 32,
+      "lsr_npoint": 200000,
+      "elapsed_sec": 63.1,
+      "official": {
+        "pairs": 8,
+        "AEPE": 1.4620840108174324,
+        "RMSE_official_var": 8.10789778536715,
+        "RMSE_paper_formula_std": 2.8474370555584105,
+        "pixel_RMSE_true": 3.859906676937254,
+        "AEPE_vector_EPE_reference": 2.2724521096291816,
+        "CMR@1_vector_EPE_reference": 75.0,
+        "@1px": {
+          "CMR": 75.0,
+          "AEPE": 0.2721507002121742,
+          "RMSE_official_var": 0.024518103505897757
+        },
+        "@2px": {
+          "CMR": 87.5,
+          "AEPE": 0.39210637068925863,
+          "RMSE_official_var": 0.10735169456841069
+        },
+        "@3px": {
+          "CMR": 87.5,
+          "AEPE": 0.39210637068925863,
+          "RMSE_official_var": 0.10735169456841069
+        },
+        "@4px": {
+          "CMR": 87.5,
+          "AEPE": 0.39210637068925863,
+          "RMSE_official_var": 0.10735169456841069
+        },
+        "@5px": {
+          "CMR": 87.5,
+          "AEPE": 0.39210637068925863,
+          "RMSE_official_var": 0.10735169456841069
+        },
+        "pixel_CMR": {
+          "1px": 79.59764003753662,
+          "2px": 87.7387523651123,
+          "3px": 89.85810279846191,
+          "4px": 90.64421653747559,
+          "5px": 91.43037796020508
+        },
+        "pixel_CMR_vector_EPE": {
+          "1px": 70.2293872833252,
+          "2px": 83.6669921875,
+          "3px": 87.5732421875,
+          "4px": 88.18116188049316,
+          "5px": 88.53316307067871
+        }
+      }
+    }
+  }
+}

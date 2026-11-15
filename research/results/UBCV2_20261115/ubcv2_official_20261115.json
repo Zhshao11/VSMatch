@@ -1,0 +1,135 @@
+{
+  "dataset": "UBCv2",
+  "protocol": "GDROS official test.py: per-component |dx|,|dy| error, per-pair EPE(k), iters=32, LSR NPOINT=200000",
+  "test_root": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901",
+  "layout": {
+    "root": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901",
+    "dstype": "testing",
+    "counts": {
+      "opt": 1625,
+      "sar_warped": 1625,
+      "truth_flow": 1625,
+      "datum": 0
+    },
+    "ok": true,
+    "problems": []
+  },
+  "iters": 32,
+  "lsr_npoint": 200000,
+  "requested_pairs": 1625,
+  "weight_note": "Both checkpoints are OS-trained. This is a cross-dataset generalisation run, not the paper's in-domain Table III setting.",
+  "results": {
+    "baseline": {
+      "which": "baseline",
+      "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/official_models_reference/GDROS-os512.pth",
+      "pairs_evaluated": 1625,
+      "iters": 32,
+      "lsr_npoint": 200000,
+      "elapsed_sec": 131.5,
+      "official": {
+        "pairs": 1625,
+        "AEPE": 22.009050187680995,
+        "RMSE_official_var": 679.0461798222686,
+        "RMSE_paper_formula_std": 26.058514535987438,
+        "pixel_RMSE_true": 39.208193297192366,
+        "AEPE_vector_EPE_reference": 35.00277211876601,
+        "CMR@1_vector_EPE_reference": 0.0,
+        "@1px": {
+          "CMR": 0.06153846153846154,
+          "AEPE": 0.7631077075685058,
+          "RMSE_official_var": 0.0
+        },
+        "@2px": {
+          "CMR": 0.7384615384615385,
+          "AEPE": 1.4556779630668941,
+          "RMSE_official_var": 0.11138215760561004
+        },
+        "@3px": {
+          "CMR": 2.830769230769231,
+          "AEPE": 2.235434158958639,
+          "RMSE_official_var": 0.3044191668589899
+        },
+        "@4px": {
+          "CMR": 6.8307692307692305,
+          "AEPE": 2.9918300210299593,
+          "RMSE_official_var": 0.5809556942779919
+        },
+        "@5px": {
+          "CMR": 11.261538461538462,
+          "AEPE": 3.6079588677722016,
+          "RMSE_official_var": 0.9708479089192563
+        },
+        "pixel_CMR": {
+          "1px": 5.602039161095252,
+          "2px": 11.145726482684795,
+          "3px": 16.540233083871694,
+          "4px": 21.764944810133713,
+          "5px": 26.736788470928484
+        },
+        "pixel_CMR_vector_EPE": {
+          "1px": 0.2524651160606971,
+          "2px": 1.1156458928034856,
+          "3px": 2.4129164475661056,
+          "4px": 4.140825007512019,
+          "5px": 6.4899829571063705
+        }
+      }
+    },
+    "m4": {
+      "which": "m4",
+      "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/checkpoints/M4_step80000.pt",
+      "pairs_evaluated": 1625,
+      "iters": 32,
+      "lsr_npoint": 200000,
+      "elapsed_sec": 1286.4,
+      "official": {
+        "pairs": 1625,
+        "AEPE": 3.8941180913076363,
+        "RMSE_official_var": 38.7571430742614,
+        "RMSE_paper_formula_std": 6.225523518087567,
+        "pixel_RMSE_true": 8.754352996581781,
+        "AEPE_vector_EPE_reference": 6.11569300994444,
+        "CMR@1_vector_EPE_reference": 33.41538461538461,
+        "@1px": {
+          "CMR": 46.46153846153846,
+          "AEPE": 0.46788782915818083,
+          "RMSE_official_var": 0.05813889556581706
+        },
+        "@2px": {
+          "CMR": 62.95384615384615,
+          "AEPE": 0.707250509746513,
+          "RMSE_official_var": 0.22304149271627366
+        },
+        "@3px": {
+          "CMR": 68.67692307692307,
+          "AEPE": 0.849005110406582,
+          "RMSE_official_var": 0.43228427989697776
+        },
+        "@4px": {
+          "CMR": 71.50769230769231,
+          "AEPE": 0.9522435997122786,
+          "RMSE_official_var": 0.6769784366334831
+        },
+        "@5px": {
+          "CMR": 74.52307692307693,
+          "AEPE": 1.0967718565922149,
+          "RMSE_official_var": 1.148452446739178
+        },
+        "pixel_CMR": {
+          "1px": 51.39654752291166,
+          "2px": 66.4646214411809,
+          "3px": 72.8697008573092,
+          "4px": 76.51174621582031,
+          "5px": 79.22282491830678
+        },
+        "pixel_CMR_vector_EPE": {
+          "1px": 36.070640916090746,
+          "2px": 54.24134427584135,
+          "3px": 62.916865891676686,
+          "4px": 67.51851219764123,
+          "5px": 70.6148942213792
+        }
+      }
+    }
+  }
+}

@@ -20,7 +20,10 @@
 | `merge_backbone_ablation.py` | 合并两份单路结果做逐对 Δ 统计，纯标准库、无需 GPU | 官方 |
 | `short_finetune_single_branch.py` | **适配性短训（方案 A）**：锁死单路门控、冻结前端、2000 步续训下游，再同进程官方口径评测 | 与 `eval_os_official_protocol.py` 一致（官方） |
 | `merge_short_finetune.py` | 合并两份短训结果，对比零训练旁路与 `both`，纯标准库 | 官方 |
+| `build_ubcv2_testset.py` | 从 UBCv2 官方 RGB/SAR 精配准影像构造 GDROS 布局测试集（仿射 + `.flo`） | 论文 UBCv2 变换参数 |
+| `verify_ubcv2_testset.py` | 构造结果自检：flow = `M@[x,y,1]−[x,y]`、图像级 warp 一致性、数据集可加载 | 只读验证，不报指标 |
 | `eval_ubcv2_official_protocol.py` | **换数据集**：把官方口径评测指向 UBCv2（只覆盖 `TEST_ROOT`，复用 `Collector` / `run_one`） | 与 `eval_os_official_protocol.py` 一致（官方） |
+| `summarize_ubcv2.py` | 把 UBCv2 结果 JSON 转成 markdown 表 + 与 OS 基准的泛化落差，纯标准库 | 官方 |
 
 ## `ablate_v2_off.py` 的实现与状态
 
@@ -185,27 +188,64 @@ python merge_short_finetune.py
 解冻范围受限、`v2only` 未稳定收敛）。完整边界见
 [`docs/ABLATION_SHORT_FINETUNE.md`](../../docs/ABLATION_SHORT_FINETUNE.md)。
 
-## UBCv2 跨数据集评测（2026-11-15，数据待到位）
+## UBCv2 跨数据集泛化评测（2026-11-15）
 
-`eval_ubcv2_official_protocol.py` 只把 `P.TEST_ROOT` 换成 UBCv2 根目录，
-其余（模型、权重、`Collector`、`run_one`、sanity 逻辑）逐字复用 OS 官方口径。
-要求目录结构与 GDROS 官方一致：`<root>/testing/opt/*.png`、
-`sar_warped/*.png`、`truth_flow/*.flo`，三者数量相等（`datum/` 评测不读）。
+### 数据与 SAR 位深
+
+官方 `UBCv2_test_images/multi-modal.../test_images.zip` 解压后是 **1625 对**
+精配准 512×512 RGB/SAR。⚠️ 官方 SAR TIFF 是 **float32 后向散射幅度**
+（约 0.05–13，稀疏离群到 130），直接 `cv2.imwrite` 写 PNG 会被静默截断成
+`0..13`（几乎全黑）。`build_ubcv2_testset.py` 用**固定全局对数幅度 LUT**
+（`20·log10(x+1e-3)`，从 300 张抽样得 p2 `-28.3079 dB` / p98 `10.5459 dB`）
+统一映射到 uint8 再复制 3 通道；LUT 写入 manifest，所有配对一致、可复现。
+
+### 构造口径
+
+变换按论文 UBCv2：平移 `[-15,15]` px（1 px 步长）、缩放 `[0.9,1.1]`（0.05）、
+旋转 `[-10°,10°]`（1°）；保持 512×512（不做训练的 400 center-crop，因为官方
+`test.py` 在 512 上评测）。`seed=901`，**未做论文预筛**（规则未公开，
+论文 1447 对 vs 本实验 1625 对）。
+
+`truth_flow` 方向用 OS 官方 `datum/*.npy[2]` 反推确认：官方 flow 精确等于
+`M@[x,y,1] − [x,y]`（3 对最小二乘残差 ~1e-6），M 是**绕原点**的
+旋转+缩放+平移（不是 `getRotationMatrix2D` 的中心化形式）。生成脚本用同一形式，
+`warped_sar = cv2.warpAffine(sar, M, ...)` 默认 inverse mapping，与 flow 自洽。
+
+### 验证（`VERIFY PASS`）
+
+`verify_ubcv2_testset.py`：flow vs 解析式 `max|Δ|=4e-6`、反拟合 M `max|Δ|=0`；
+从原始 SAR TIFF 用同一 LUT 重算 warp `warp_max_delta=0`；`opt_sar_test`
+可加载 1625 对，shape `(3,512,512)` / `(2,512,512)`。
+**方向反证**：把 flow 取反后跑 GDROS 8 对，AEPE `21.84 → 81.69`（更差），
+排除 GT 方向写反。
+
+### 复现
 
 ```bash
 cd /mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated
-CUDA_VISIBLE_DEVICES=5 /home/zzvr/miniconda3/envs/compared/bin/python \
-  .codex_tmp/eval_ubcv2_official_protocol.py \
-  --which both --gpu 0 --max-pairs 1447 \
+PY=/home/zzvr/miniconda3/envs/compared/bin/python
+RAW=/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/raw/raw_extracted
+OUT=/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated
+
+$PY .codex_tmp/build_ubcv2_testset.py --raw-root $RAW --output-root $OUT \
+  --seeds 901 --workers 8
+$PY .codex_tmp/verify_ubcv2_testset.py --root $OUT/seed901 \
+  --raw-root $RAW --check-pairs 3
+CUDA_VISIBLE_DEVICES=5 $PY .codex_tmp/eval_ubcv2_official_protocol.py \
+  --test-root $OUT/seed901 --which both --gpu 0 --max-pairs 1625 \
   --out .codex_tmp/ubcv2_official_20261115.json
 ```
+
+`eval_ubcv2_official_protocol.py` 只覆盖 `P.TEST_ROOT`，其余（模型、权重、
+`Collector`、`run_one`）逐字复用 OS 官方口径；表格打印做了 `AEPE=None`
+容错（UBCv2 上 CMR@1 可能为 0）。
 
 **边界（先读）**：`M4_step80000.pt` 与 `GDROS-os512.pth` 都只在 OS 上训练过，
 直接跑 UBCv2 是**跨数据集泛化**，不能与论文 Table III 的 GDROS 行并列
 （后者是 UBCv2 in-domain 训练权重，官方 released 权重里没有 UBCv2 版）。
-论文还要求：预筛后 test 1447 对、三个随机仿射变换测试集报 mean±std
-（平移 ±15px、缩放 0.9–1.1、旋转 ±10°），预筛规则与随机 seed 未公开 ⇒
-即便重训也只能做「同口径条件下的公平对比」，不能逐位复现 Table III。
+论文还要求预筛后 1447 对、三个随机变换测试集报 mean±std；本实验是
+**单 seed、单测试集、未预筛**，预筛规则与随机 seed 均未公开 ⇒ 即便重训
+也只能做「同口径条件下的公平对比」，不能逐位复现 Table III。
 
 ## 未入库的探针脚本
 

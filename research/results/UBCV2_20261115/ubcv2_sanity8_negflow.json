@@ -1,0 +1,79 @@
+{
+  "dataset": "UBCv2",
+  "protocol": "GDROS official test.py: per-component |dx|,|dy| error, per-pair EPE(k), iters=32, LSR NPOINT=200000",
+  "test_root": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901_negflow",
+  "layout": {
+    "root": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901_negflow",
+    "dstype": "testing",
+    "counts": {
+      "opt": 8,
+      "sar_warped": 8,
+      "truth_flow": 8,
+      "datum": 0
+    },
+    "ok": true,
+    "problems": []
+  },
+  "iters": 32,
+  "lsr_npoint": 200000,
+  "requested_pairs": 8,
+  "weight_note": "Both checkpoints are OS-trained. This is a cross-dataset generalisation run, not the paper's in-domain Table III setting.",
+  "results": {
+    "baseline": {
+      "which": "baseline",
+      "checkpoint": "/mnt/sda/zhushihao/VS_Match/GDROS/official_models_reference/GDROS-os512.pth",
+      "pairs_evaluated": 8,
+      "iters": 32,
+      "lsr_npoint": 200000,
+      "elapsed_sec": 2.0,
+      "official": {
+        "pairs": 8,
+        "AEPE": 81.69483343615227,
+        "RMSE_official_var": 524.7968311951479,
+        "RMSE_paper_formula_std": 22.90844453897182,
+        "pixel_RMSE_true": 96.6738770803166,
+        "AEPE_vector_EPE_reference": 125.16886960333791,
+        "CMR@1_vector_EPE_reference": 0.0,
+        "@1px": {
+          "CMR": 0.0,
+          "AEPE": null,
+          "RMSE_official_var": null
+        },
+        "@2px": {
+          "CMR": 0.0,
+          "AEPE": null,
+          "RMSE_official_var": null
+        },
+        "@3px": {
+          "CMR": 0.0,
+          "AEPE": null,
+          "RMSE_official_var": null
+        },
+        "@4px": {
+          "CMR": 0.0,
+          "AEPE": null,
+          "RMSE_official_var": null
+        },
+        "@5px": {
+          "CMR": 0.0,
+          "AEPE": null,
+          "RMSE_official_var": null
+        },
+        "pixel_CMR": {
+          "1px": 0.6065607070922852,
+          "2px": 1.213240623474121,
+          "3px": 1.8229246139526367,
+          "4px": 2.435445785522461,
+          "5px": 3.0500411987304688
+        },
+        "pixel_CMR_vector_EPE": {
+          "1px": 0.003337860107421875,
+          "2px": 0.01354217529296875,
+          "3px": 0.0301361083984375,
+          "4px": 0.05421638488769531,
+          "5px": 0.08678436279296875
+        }
+      }
+    }
+  }
+}

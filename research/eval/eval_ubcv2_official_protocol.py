@@ -49,6 +49,33 @@ def check_layout(root: str, dstype: str = "testing") -> dict:
             "ok": not problems, "problems": problems}
 
 
+def print_table_safe(results) -> None:
+    """P.print_table crashes when a threshold has no inliers (AEPE=None).
+
+    UBCv2 is hard enough that CMR@1 can legitimately be 0, so format those
+    cells as '-' instead.
+    """
+    print("\n### GDROS official test.py protocol (UBCv2)", flush=True)
+    print("| model | AEPE | RMSE_var | CMR@1 | AEPE@1 | CMR@2 | AEPE@2 | CMR@5 | AEPE@5 |",
+          flush=True)
+    print("|---|---|---|---|---|---|---|---|---|", flush=True)
+    for name, r in results:
+        m = r["official"]
+        cells = [name, "%.4f" % m["AEPE"], "%.4f" % m["RMSE_official_var"]]
+        for t in (1, 2, 5):
+            q = m["@%dpx" % t]
+            cells += ["%.2f" % q["CMR"],
+                      ("%.4f" % q["AEPE"]) if q["AEPE"] is not None else "-"]
+        print("| " + " | ".join(cells) + " |", flush=True)
+    for name, r in results:
+        m = r["official"]
+        print("- %s: pairs=%d elapsed=%.1fs pixel_CMR 1/3/5px=%.2f/%.2f/%.2f "
+              "vector_EPE_reference=%.4f" %
+              (name, r["pairs_evaluated"], r["elapsed_sec"],
+               m["pixel_CMR"]["1px"], m["pixel_CMR"]["3px"], m["pixel_CMR"]["5px"],
+               m["AEPE_vector_EPE_reference"]), flush=True)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--test-root", default=DEFAULT_ROOT,
@@ -90,7 +117,7 @@ def main() -> None:
     }
     for w in which_list:
         out["results"][w] = P.run_one(w, device, args.max_pairs)
-    P.print_table([(w, out["results"][w]) for w in which_list])
+    print_table_safe([(w, out["results"][w]) for w in which_list])
     if args.out:
         with open(args.out, "w", encoding="utf-8") as f:
             json.dump(out, f, indent=2, ensure_ascii=False)

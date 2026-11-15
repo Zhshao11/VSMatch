@@ -15,7 +15,8 @@
 > 本仓库记录方法实现、评测协议与结果。克隆本仓库后，从
 > **[当前方法设计](docs/METHOD_DESIGN.md)** 开始读；需要数字看
 > **[当前结果与已知短板](docs/RESULTS_OS.md)**，需要复现看
-> **[评测口径](docs/EVALUATION_PROTOCOL.md)** 与 **[复现指南](docs/REPRODUCE.md)**。
+> **[评测口径](docs/EVALUATION_PROTOCOL.md)** 与 **[复现指南](docs/REPRODUCE.md)**；
+> 跨数据集泛化结果看 **[UBCv2 泛化评测](docs/UBCV2_GENERALIZATION.md)**。
 > 数据集、权重与预测张量不入库。
 
 <details>
@@ -38,6 +39,7 @@
 
 | 日期 | 内容 |
 |---|---|
+| **2026-11-15（UBCv2）** | 新增 **UBCv2 跨数据集泛化评测**：官方 RGB/SAR 测试集 1625 对，按论文变换参数构造 GDROS 布局、修正 SAR float32 位深陷阱、用 OS 官方 `datum` 反推并反证 flow 方向；同一份 OS 权重下 M4 AEPE `3.8941` vs GDROS `22.0091`（CMR@5 `74.52` vs `11.26`）。**跨数据集泛化，不与论文 Table III 并列**，见 [UBCV2_GENERALIZATION.md](docs/UBCV2_GENERALIZATION.md) |
 | **2026-11-15** | 落地 C 分支 `teacher_preds` 死计算剪枝（GRU 160→96 次，424 对指标逐位不变，推理 1.339× / 训练前向 1.455×，见 [GRU_ITER_SWEEP.md](docs/GRU_ITER_SWEEP.md) §6.1）；在剪枝后 M4 上补齐**对称单路旁路**（双 GPU、官方口径 424 对），并澄清 V2 不是独立 backbone，见 [ABLATION_BACKBONE_SYMMETRIC.md](docs/ABLATION_BACKBONE_SYMMETRIC.md)；再补 **2000 步适配性短训**（方案 A），证明零训练旁路 95–96% 的 AEPE 落差来自下游 OOD，见 [ABLATION_SHORT_FINETUNE.md](docs/ABLATION_SHORT_FINETUNE.md) |
 | **2026-11-14** | 补齐当前方法设计、统一评测口径与全量 424 对结果文档；同步评测与消融脚本；完成 V2 分支的**诊断性零训练旁路**（不构成模块消融结论，见 [ABLATION_V2.md](docs/ABLATION_V2.md)）；补跑 GRU 迭代次数官方口径 sweep，确认 `iters=32` 过冲、`24` 更优 |
 | **2026-11-13** | 核实 GDROS 官方复现无误：官方 `test.py` 计算的是**逐分量绝对误差**，本项目用**向量 EPE**，两者 AEPE 相差约 π/2；补跑官方口径下 M4 结果；完成 Top-25 失败配对归因 |
@@ -155,6 +157,7 @@ V2 那一路的贡献置零（不重训），AEPE `1.4738 → 7.7457`。这测�
 | [`docs/ABLATION_BACKBONE_SYMMETRIC.md`](docs/ABLATION_BACKBONE_SYMMETRIC.md) | 剪枝后 M4 的**对称单路旁路**（双 GPU）：两方向结果、V2 结构边界、推论限制 |
 | [`docs/ABLATION_SHORT_FINETUNE.md`](docs/ABLATION_SHORT_FINETUNE.md) | **适配性短训（方案 A）**：受控 2000 步续训，零训练旁路 OOD 的定量证据 |
 | [`docs/GRU_ITER_SWEEP.md`](docs/GRU_ITER_SWEEP.md) | GRU 迭代次数 sweep：代码事实、历史证据、省训练时间的边界 |
+| [`docs/UBCV2_GENERALIZATION.md`](docs/UBCV2_GENERALIZATION.md) | **UBCv2 跨数据集泛化**：数据构造、SAR 位深、flow 方向反推、全量结果与不可并列边界 |
 | [`docs/EVALUATION_PROTOCOL.md`](docs/EVALUATION_PROTOCOL.md) | CMR / AEPE / RMSE 定义与 π/2 口径更正 |
 | [`docs/REPRODUCE.md`](docs/REPRODUCE.md) | 环境、路径约定、复现命令与限制 |
 | `research/remote_stage/os/` | E072–E075A 训练与模型实现（冻结版本） |
@@ -199,6 +202,7 @@ python scripts/preflight.py --scope all
 - [x] 核清 M4 调用链（剪枝前）：`iters=32` 前向 = 5 条 GRU 链 / 160 次 update + 129 次 LSR
 - [x] 落地 C 分支 `teacher_preds` 死计算剪枝：GRU 160→96 次；424 对官方口径 AEPE / CMR / RMSE **逐项 Δ=0**（`SANITY PASS`），全量 422→317 s
 - [x] 同进程 A/B 计时：推理 **1.339×**、训练前向 **1.455×**；剪枝同时覆盖 `PairFusion.forward` 与 M4 手工训练循环
+- [x] **UBCv2 跨数据集泛化**（1625 对、官方口径、单 seed）：M4 `3.8941` vs GDROS `22.0091`；证实 M4 迁移退化 2.64× 而 GDROS 15.06×，**属泛化对比，非 Table III in-domain 复现**
 - [ ] 实测剪枝后的完整训练 step（前向 1.455× 不等于总时长 1.455×）
 - [ ] 诊断两处逐迭代 LSR（`B.gate_input` / `PairFusion.gate_features`）的缓存冗余 —— 129 次 LSR 全保留，现为最大可压缩项
 - [ ] 固定 `train_iters=8` 短训 2K 步，验证训练步数是否真能压缩（零训练 sweep 不能回答）

@@ -118,6 +118,19 @@ CUDA_VISIBLE_DEVICES=7 $PY .codex_tmp/short_finetune_single_branch.py \
   --save-delta .codex_tmp/short_ft_v2only_delta.pt \
   --out .codex_tmp/short_ft_v2only.json
 python research/eval/merge_short_finetune.py
+
+# ⑪ UBCv2 跨数据集泛化：构造测试集 → 验证 → 官方口径评测（1625 对）
+RAW=/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/raw/raw_extracted
+OUT=/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated
+$PY .codex_tmp/build_ubcv2_testset.py --raw-root $RAW --output-root $OUT \
+  --seeds 901 --workers 8
+$PY .codex_tmp/verify_ubcv2_testset.py --root $OUT/seed901 \
+  --raw-root $RAW --check-pairs 3
+CUDA_VISIBLE_DEVICES=5 $PY .codex_tmp/eval_ubcv2_official_protocol.py \
+  --test-root $OUT/seed901 --which both --gpu 0 --max-pairs 1625 \
+  --out .codex_tmp/ubcv2_official_20261115.json
+python research/eval/summarize_ubcv2.py \
+  research/results/UBCV2_20261115/ubcv2_official_20261115.json
 ```
 
 `CUDA_VISIBLE_DEVICES=2` 把物理 GPU 映射为进程内 `cuda:0`，因此脚本 `--gpu 0`。
@@ -151,6 +164,11 @@ M4 checkpoint 约 6.4 GB，权重加载应报 `missing=[] unexpected=[]`。
 > 且 B 的 `teacher_preds` 在 `no_grad` 下、只有 C.student 一条递推链可训练。
 > 短训后的残余差距**不能**当作任一路的边际贡献；边界见
 > [ABLATION_SHORT_FINETUNE.md](ABLATION_SHORT_FINETUNE.md) §4。
+>
+> ⚠️ **⑪ 是跨数据集泛化，不是 Table III 复现**：两个 checkpoint 都只在 OS 上
+> 训练过，UBCv2 上只是同权重推理；且本实验单 seed、未预筛 1625 对，
+> 论文是预筛 1447 对、三个随机变换测试集 mean±std。绝对数值不可与论文并列；
+> 边界与 SAR 位深处理见 [UBCV2_GENERALIZATION.md](UBCV2_GENERALIZATION.md)。
 
 ## 5. 已知限制与坑
 
@@ -158,6 +176,10 @@ M4 checkpoint 约 6.4 GB，权重加载应报 `missing=[] unexpected=[]`。
   指标逐位不变，GRU 从 5 条链 / 160 次 update 降到 3 条 / 96 次，129 次 LSR 不变。
   复现剪枝前的耗时 / 调用链要传 `c_skip_teachers=False`；E074 variant C 的蒸馏训练
   仍走 `need_teacher_avg=True` 默认路径，不受影响。
+- **UBCv2 的 SAR TIFF 是 float32 幅度图**（约 0.05–13，离群到 130），不是 8-bit
+  影像。直接 `cv2.imwrite` 到 PNG 会被静默截断成 `0..13`（几乎全黑），评测无意义。
+  `build_ubcv2_testset.py` 用固定全局对数幅度 LUT（p2/p98 dB）统一映射到 uint8，
+  LUT 参数写在 `protocol_metadata/manifest.json`；换数据集/重跑务必用同一 LUT。
 - **必须从 `image_matching_part2_migrated/` 启动**：E038B 相关路径解析依赖 cwd。
 - `LSR` 内部有硬编码的 `.cuda()`（`LSmodel.py:138`），因此**纯 CPU 不能跑完整推理链**；
   `ablate_v2_off.py --device cpu` 会自动把 `e074.lsr` 换成恒等映射，仅用于链路自检，
