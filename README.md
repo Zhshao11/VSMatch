@@ -39,6 +39,7 @@
 
 | 日期 | 内容 |
 |---|---|
+| **2026-11-15（UBCv2 诊断）** | 查清「M4 `3.8941` 优于论文 GDROS in-domain `4.49`」这个对比**不成立**：用官方阈值分档反解否定「论文筛掉病态对」的解释（要压到 4.49 需保留 7965 对 > 现有 1625）；逐对诊断显示 GDROS 在 UBCv2 上的误差与旋转幅度 / warp 损失面积**全不相关**且预测流近似恒等变换；**零流基线 `29.7910`** 下 GDROS 只比「什么都不预测」好 `26.1%`，M4 好 `86.9%`。另定量了「旋转基准点未公开」带来的 **1.83×** 不可比幅度。**起步在 UBCv2 上按官方 recipe 训 GDROS**（120K 步，约 7.7 h）。见 [UBCV2_DIAGNOSIS.md](docs/UBCV2_DIAGNOSIS.md) |
 | **2026-11-15（UBCv2）** | 新增 **UBCv2 跨数据集泛化评测**：官方 RGB/SAR 测试集 1625 对，按论文变换参数构造 GDROS 布局、修正 SAR float32 位深陷阱、用 OS 官方 `datum` 反推并反证 flow 方向；同一份 OS 权重下 M4 AEPE `3.8941` vs GDROS `22.0091`（CMR@5 `74.52` vs `11.26`）。**跨数据集泛化，不与论文 Table III 并列**，见 [UBCV2_GENERALIZATION.md](docs/UBCV2_GENERALIZATION.md) |
 | **2026-11-15** | 落地 C 分支 `teacher_preds` 死计算剪枝（GRU 160→96 次，424 对指标逐位不变，推理 1.339× / 训练前向 1.455×，见 [GRU_ITER_SWEEP.md](docs/GRU_ITER_SWEEP.md) §6.1）；在剪枝后 M4 上补齐**对称单路旁路**（双 GPU、官方口径 424 对），并澄清 V2 不是独立 backbone，见 [ABLATION_BACKBONE_SYMMETRIC.md](docs/ABLATION_BACKBONE_SYMMETRIC.md)；再补 **2000 步适配性短训**（方案 A），证明零训练旁路 95–96% 的 AEPE 落差来自下游 OOD，见 [ABLATION_SHORT_FINETUNE.md](docs/ABLATION_SHORT_FINETUNE.md) |
 | **2026-11-14** | 补齐当前方法设计、统一评测口径与全量 424 对结果文档；同步评测与消融脚本；完成 V2 分支的**诊断性零训练旁路**（不构成模块消融结论，见 [ABLATION_V2.md](docs/ABLATION_V2.md)）；补跑 GRU 迭代次数官方口径 sweep，确认 `iters=32` 过冲、`24` 更优 |
@@ -158,6 +159,7 @@ V2 那一路的贡献置零（不重训），AEPE `1.4738 → 7.7457`。这测�
 | [`docs/ABLATION_SHORT_FINETUNE.md`](docs/ABLATION_SHORT_FINETUNE.md) | **适配性短训（方案 A）**：受控 2000 步续训，零训练旁路 OOD 的定量证据 |
 | [`docs/GRU_ITER_SWEEP.md`](docs/GRU_ITER_SWEEP.md) | GRU 迭代次数 sweep：代码事实、历史证据、省训练时间的边界 |
 | [`docs/UBCV2_GENERALIZATION.md`](docs/UBCV2_GENERALIZATION.md) | **UBCv2 跨数据集泛化**：数据构造、SAR 位深、flow 方向反推、全量结果与不可并列边界 |
+| [`docs/UBCV2_DIAGNOSIS.md`](docs/UBCV2_DIAGNOSIS.md) | **UBCv2 结果可比性诊断**：筛选假设的反解否定、逐对诊断（几何不敏感 + 预测恒等）、零流基线 `29.7910`、旋转基准点 1.83× 自由度 |
 | [`docs/EVALUATION_PROTOCOL.md`](docs/EVALUATION_PROTOCOL.md) | CMR / AEPE / RMSE 定义与 π/2 口径更正 |
 | [`docs/REPRODUCE.md`](docs/REPRODUCE.md) | 环境、路径约定、复现命令与限制 |
 | `research/remote_stage/os/` | E072–E075A 训练与模型实现（冻结版本） |
@@ -203,6 +205,7 @@ python scripts/preflight.py --scope all
 - [x] 落地 C 分支 `teacher_preds` 死计算剪枝：GRU 160→96 次；424 对官方口径 AEPE / CMR / RMSE **逐项 Δ=0**（`SANITY PASS`），全量 422→317 s
 - [x] 同进程 A/B 计时：推理 **1.339×**、训练前向 **1.455×**；剪枝同时覆盖 `PairFusion.forward` 与 M4 手工训练循环
 - [x] **UBCv2 跨数据集泛化**（1625 对、官方口径、单 seed）：M4 `3.8941` vs GDROS `22.0091`；证实 M4 迁移退化 2.64× 而 GDROS 15.06×，**属泛化对比，非 Table III in-domain 复现**
+- [ ] **UBCv2 in-domain 训练**：GDROS 官方 recipe（120K 步，约 7.7 h，2026-11-15 启动中）；随后需补 M4 在 UBCv2 整链重训（≈16.5 h）才有严格同条件的四格表
 - [ ] 实测剪枝后的完整训练 step（前向 1.455× 不等于总时长 1.455×）
 - [ ] 诊断两处逐迭代 LSR（`B.gate_input` / `PairFusion.gate_features`）的缓存冗余 —— 129 次 LSR 全保留，现为最大可压缩项
 - [ ] 固定 `train_iters=8` 短训 2K 步，验证训练步数是否真能压缩（零训练 sweep 不能回答）

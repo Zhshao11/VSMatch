@@ -24,6 +24,10 @@
 | `verify_ubcv2_testset.py` | 构造结果自检：flow = `M@[x,y,1]−[x,y]`、图像级 warp 一致性、数据集可加载 | 只读验证，不报指标 |
 | `eval_ubcv2_official_protocol.py` | **换数据集**：把官方口径评测指向 UBCv2（只覆盖 `TEST_ROOT`，复用 `Collector` / `run_one`） | 与 `eval_os_official_protocol.py` 一致（官方） |
 | `summarize_ubcv2.py` | 把 UBCv2 结果 JSON 转成 markdown 表 + 与 OS 基准的泛化落差，纯标准库 | 官方 |
+| `diag_ubcv2_pairs.py` | UBCv2 **逐对诊断**：官方 EPE、只算有效重叠区的 EPE、warp 损失面积、预测流的最小二乘仿射 vs 真值 `M` | 官方口径 + 附加诊断字段 |
+| `build_ubcv2_split.py` | 为 UBCv2 **train/val** 构造 GDROS 布局 split，复用测试集 SAR LUT 保证辐射一致 | 与 `build_ubcv2_testset.py` 同一套变换 |
+| `prepare_ubcv2_train_data.sh` | 解压 `train_images.zip` → 生成 `training/`(4008) 与 `validation/`(1681) | 幂等 |
+| `train_gdros_ubcv2.sh` | 用**官方 recipe**（120K 步 / `iters=12` / bs 2 / 400² / OneCycleLR）在 UBCv2 上训 GDROS | 官方 `configs/default.py`，未改上游代码 |
 
 ## `ablate_v2_off.py` 的实现与状态
 
@@ -246,6 +250,40 @@ CUDA_VISIBLE_DEVICES=5 $PY .codex_tmp/eval_ubcv2_official_protocol.py \
 论文还要求预筛后 1447 对、三个随机变换测试集报 mean±std；本实验是
 **单 seed、单测试集、未预筛**，预筛规则与随机 seed 均未公开 ⇒ 即便重训
 也只能做「同口径条件下的公平对比」，不能逐位复现 Table III。
+
+## UBCv2 结果可比性诊断 + in-domain 训练（2026-11-15）
+
+用户质疑「M4 跨数据集 `AEPE 3.8941` 竟然优于论文 GDROS UBCv2 in-domain `4.49`」。
+三步拆解，结论见 [`docs/UBCV2_DIAGNOSIS.md`](../../docs/UBCV2_DIAGNOSIS.md)：
+
+1. **筛选假设被反解否定**。论文三个 split 的保留率一致（87.7/85.5/89.0%），但用官方
+   `@5px` 分档反解，把总 AEPE 压到 4.49 需要保留 7965 对 > 现有 1625，结构上不可能。
+2. **逐对诊断**（`diag_ubcv2_pairs.py`）：`AEPE_overlap 21.84 ≈ AEPE_full 22.01`，
+   误差与旋转幅度、缩放偏差、warp 损失面积的相关性全 ≈ 0，预测流仿射 `pred_scale`
+   中位 0.9958、`pred_rot` 均值 0.08° ⇒ GDROS 在 UBCv2 上**基本输出恒等变换**。
+3. **零流基线 29.7910**：GDROS 22.01 只比「什么都不预测」好 26.1%，M4 好 86.9%。
+
+顺带确定了一个**新的不可比边界**：论文没写旋转/缩放基准点，绕原点（与官方 OS
+`datum/*.npy[2]` 一致）零流基线 29.79，绕图像中心 16.30 —— **1.83×**。所以任何
+绝对 AEPE/CMR 都不能与 Table III/V 并列。
+
+为了把「域差异」和「几何难度」拆开，在 UBCv2 上按**官方 recipe** 训 GDROS：
+
+```bash
+# ⑫ 解压 + 生成 train(4008)/val(1681)，复用测试集 SAR LUT
+bash .codex_tmp/prepare_ubcv2_train_data.sh
+
+# 官方 recipe：120K 步 / iters=12 / bs=2 / 400² / OneCycleLR / RAFT-Sintel 初始化
+NAME=gdros-ubcv2-512 GPU=5 bash .codex_tmp/train_gdros_ubcv2.sh
+```
+
+两个上游硬编码用软链满足、**不改官方代码**：`train.py` 的 `restore_ckpt` 只当布尔开关
+（实际 `torch.load('./checkpoints/raft-sintel.pth')`，`cfg.restore_ckpt` 从未被加载）；
+数据根写死在 `opt_sar_train(root='./datasets/os_dataset')`。`LSR_list` 是无参数最小二乘，
+故 `LSRnet.pth` 与训练无关。实测 `0.214 s/step`，120K 步约 7 h。
+
+**仍未闭合**：GDROS in-domain 也只是「UBCv2 训 vs UBCv2 测」，而 M4 是「OS 训 vs
+UBCv2 测」。严格同条件表还需在 UBCv2 重训 M4 整链（≈16.5 h）。
 
 ## 未入库的探针脚本
 

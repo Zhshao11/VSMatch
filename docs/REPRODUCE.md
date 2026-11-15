@@ -131,6 +131,15 @@ CUDA_VISIBLE_DEVICES=5 $PY .codex_tmp/eval_ubcv2_official_protocol.py \
   --out .codex_tmp/ubcv2_official_20261115.json
 python research/eval/summarize_ubcv2.py \
   research/results/UBCV2_20261115/ubcv2_official_20261115.json
+
+# ⑫ UBCv2 逐对诊断（GDROS only，1625 对，约 180 s）
+CUDA_VISIBLE_DEVICES=3 $PY .codex_tmp/diag_ubcv2_pairs.py \
+  --which baseline --gpu 0 --max-pairs 1625 \
+  --out .codex_tmp/diag_ubcv2_pairs_20261115.json
+
+# ⑬ UBCv2 in-domain 训练 GDROS：解压 → 生成 train/val → 官方 recipe
+bash .codex_tmp/prepare_ubcv2_train_data.sh
+NAME=gdros-ubcv2-512 GPU=5 bash .codex_tmp/train_gdros_ubcv2.sh
 ```
 
 `CUDA_VISIBLE_DEVICES=2` 把物理 GPU 映射为进程内 `cuda:0`，因此脚本 `--gpu 0`。
@@ -169,6 +178,20 @@ M4 checkpoint 约 6.4 GB，权重加载应报 `missing=[] unexpected=[]`。
 > 训练过，UBCv2 上只是同权重推理；且本实验单 seed、未预筛 1625 对，
 > 论文是预筛 1447 对、三个随机变换测试集 mean±std。绝对数值不可与论文并列；
 > 边界与 SAR 位深处理见 [UBCV2_GENERALIZATION.md](UBCV2_GENERALIZATION.md)。
+>
+> ⚠️ **⑫ 只改「怎么读 ⑪」，不改 ⑪ 的数**：⑫ 逐对记录官方 EPE、只算 warp 后有效
+> 重叠区的 EPE、以及预测流的最小二乘仿射。它证明 GDROS 在 UBCv2 上的误差与旋转
+> 幅度 / 缩放偏差 / warp 损失面积**都不相关**，且预测流近似恒等变换；配合由
+> `datum/*.json` 解析算出的**零流基线 29.7910**，可知 GDROS `22.0091` 只比
+> 「什么都不预测」好 26.1%。再叠加「旋转基准点未公开」带来的 **1.83×** 自由度
+> （绕原点 29.79 vs 绕中心 16.30），结论是**绝对数一律不可跨实现比较**。
+> 详见 [UBCV2_DIAGNOSIS.md](UBCV2_DIAGNOSIS.md)。
+>
+> ⚠️ **⑬ 给出的是 GDROS「UBCv2 训 vs UBCv2 测」**，而 M4 是「OS 训 vs UBCv2 测」，
+> 两者仍不同条件；严格同条件表还需在 UBCv2 重训 M4 整链（≈16.5 h）。官方 recipe
+> 的 120K 步实测 `0.214 s/step`（约 7 h），每 20K 步存档。上游两处硬编码
+> （`./checkpoints/raft-sintel.pth`、`./datasets/os_dataset`）由脚本用软链满足，
+> **不修改官方仓库代码**。
 
 ## 5. 已知限制与坑
 
