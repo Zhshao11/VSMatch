@@ -1,4 +1,4 @@
-# 2026-11-15 一手结果：C 分支剪枝 + 对称单路旁路
+# 2026-11-15 一手结果：C 分支剪枝 + 单路消融（旁路 / 短训）
 
 | 文件 | 内容 |
 |---|---|
@@ -7,9 +7,12 @@
 | `ablate_v1only_pruned.json` | 对称单路旁路 `v1only`（只留 GDROS 前端），GPU 5 |
 | `ablate_v2only_pruned.json` | 对称单路旁路 `v2only`（门控推向含 DINO 那路），GPU 1 |
 | `backbone_ablation_merged.json` | 合并主表 + 三组逐对 ΔEPE 统计 |
+| `short_ft_v1only.json` | `v1only` 2000 步适配性短训的训练曲线 + 官方口径评测，GPU 5 |
+| `short_ft_v2only.json` | `v2only` 同预算短训，GPU 7 |
+| `short_finetune_merged.json` | 短训 vs 零训练旁路 vs `both` 的合并对比 |
 
 剪枝验证与计时在 zzvr 空闲 GPU 5 上；对称单路旁路分别在 **GPU 5 与 GPU 1**
-并行。`CUDA_VISIBLE_DEVICES=<物理卡>` 映射为进程内 `cuda:0`，脚本 `--gpu 0`；
+并行，适配性短训在 **GPU 5 与 GPU 7** 并行。`CUDA_VISIBLE_DEVICES=<物理卡>` 映射为进程内 `cuda:0`，脚本 `--gpu 0`；
 权重统一为保护版本 `M4_step80000.pt`。
 
 ## `verify_c_teacher_pruning.json`
@@ -68,3 +71,25 @@ sanity 检查的是「门控确实改变输出」与「AEPE 与 both 有显著�
 
 结论、结构边界（「只留 DINO」不可严格实现）与推论限制见
 [`docs/ABLATION_BACKBONE_SYMMETRIC.md`](../../../docs/ABLATION_BACKBONE_SYMMETRIC.md)。
+
+## 适配性短训（方案 A，2000 步）
+
+`short_ft_*.json` 顶层含 `experiment_class`、`train`（`steps` / `seed` /
+`train_iters` / `lr` / `trainable_params=4401475` / `trainable_groups` /
+`frozen` / `gradient_note` / `elapsed_sec` / `sec_per_step` / `curve`）、
+`gate_lock`、`historical`、`official_after`（聚合指标 + 424 项 `pair_EPE`）
+与 `checkpoint_delta`（zzvr 上的可训练参数增量路径，**完整权重不入库**）。
+
+`short_finetune_merged.json` 给出主表、每个配置的 `AEPE_improvement`、
+`AEPE_gap_vs_both`、`recovery_fraction_of_zeroshot_gap` 和
+`pair_delta_after_minus_zero`（逐对 mean/median、改善比例、>10px 灾难失败变化）。
+
+| 配置 | 零训练 AEPE | 短训 2000 步后 | 恢复落差 | >10px 失败 |
+|---|---|---|---|---|
+| `v1only` | 7.7457 | 1.7127 | 96.2% | 104 → 17 |
+| `v2only` | 41.3298 | 3.3824 | 95.2% | 416 → 17 |
+
+`both` 参照 `1.4738`、>10px 失败 12 对。**短训定量证明零训练旁路的大幅掉点
+主要是下游 OOD**；但 2000 步预算与受限的解冻范围意味着残余差距
+（+0.24 / +1.91 AEPE）**仍不是**任一路的边际贡献。完整边界见
+[`docs/ABLATION_SHORT_FINETUNE.md`](../../../docs/ABLATION_SHORT_FINETUNE.md)。

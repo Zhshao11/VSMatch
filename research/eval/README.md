@@ -18,6 +18,8 @@
 | `probe_c_prune_timing.py` | 同进程逐对计时：推理 `iters=32` / 训练前向 `iters=12` 的剪枝前后加速 | 不报指标，仅计时 |
 | `ablate_backbone_single.py` | 剪枝后 M4 的**对称单路旁路**：一个进程一个配置（`both` / `v1only` / `v2only`），便于两张 GPU 并行 | 与 `eval_os_official_protocol.py` 一致（官方） |
 | `merge_backbone_ablation.py` | 合并两份单路结果做逐对 Δ 统计，纯标准库、无需 GPU | 官方 |
+| `short_finetune_single_branch.py` | **适配性短训（方案 A）**：锁死单路门控、冻结前端、2000 步续训下游，再同进程官方口径评测 | 与 `eval_os_official_protocol.py` 一致（官方） |
+| `merge_short_finetune.py` | 合并两份短训结果，对比零训练旁路与 `both`，纯标准库 | 官方 |
 
 ## `ablate_v2_off.py` 的实现与状态
 
@@ -154,6 +156,33 @@ python merge_backbone_ablation.py
 （DINO 描述子注入到 V1 特征上），只是把门控推向 V2 侧。完整结构边界、
 逐对统计与推论限制见
 [`docs/ABLATION_BACKBONE_SYMMETRIC.md`](../../docs/ABLATION_BACKBONE_SYMMETRIC.md)。
+
+## 适配性短训（2026-11-15，方案 A）
+
+`short_finetune_single_branch.py` 把零训练旁路升级成受控实验：两个配置
+**只有门控锁在哪一侧不同**，其余（初始化、训练数据、seed、2000 步预算、
+`lr=2e-5`、`train_iters=12`、4,401,475 个可训练参数、损失项）完全相同。
+冻结所有 E072 前端（含冻结 DINO 注入）与门控参数；只解冻真正有梯度的下游：
+L4 `gate`、B 的 `GateNet`/`scalar`、C 的 `student.context/update/fuse_proj`。
+
+> **结构事实**：`E074Model(B).teacher_preds` 整体在 `torch.no_grad()` 下，
+> B 的 f2/f3 递推链**拿不到梯度、无法续训**；C.student 是唯一可训练递推链。
+
+```bash
+CUDA_VISIBLE_DEVICES=5 python short_finetune_single_branch.py \
+  --config v1only --steps 2000 --gpu 0 --out short_ft_v1only.json
+CUDA_VISIBLE_DEVICES=7 python short_finetune_single_branch.py \
+  --config v2only --steps 2000 --gpu 0 --out short_ft_v2only.json
+python merge_short_finetune.py
+```
+
+结果（官方口径 424 对）：`v1only` `7.7457→1.7127`、`v2only`
+`41.3298→3.3824`，分别恢复零训练 AEPE 落差的 **96.2% / 95.2%**，
+两者的 >10px 灾难失败都降到 17 对（`both` 为 12 对）。
+这定量证明零训练旁路的大幅掉点主要是下游 OOD；但**残余差距
+（+0.24 / +1.91 AEPE）仍不能当作任一路的边际贡献**（预算只有 2000 步、
+解冻范围受限、`v2only` 未稳定收敛）。完整边界见
+[`docs/ABLATION_SHORT_FINETUNE.md`](../../docs/ABLATION_SHORT_FINETUNE.md)。
 
 ## 未入库的探针脚本
 

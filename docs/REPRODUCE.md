@@ -107,6 +107,17 @@ CUDA_VISIBLE_DEVICES=1 $PY .codex_tmp/ablate_backbone_single.py \
 
 # 本地合并两份结果（纯标准库，不需要 GPU）
 python research/eval/merge_backbone_ablation.py
+
+# ⑩ 适配性短训（方案 A）：两张 GPU 并行，2000 步 + 同进程官方口径评测
+CUDA_VISIBLE_DEVICES=5 $PY .codex_tmp/short_finetune_single_branch.py \
+  --config v1only --steps 2000 --gpu 0 \
+  --save-delta .codex_tmp/short_ft_v1only_delta.pt \
+  --out .codex_tmp/short_ft_v1only.json
+CUDA_VISIBLE_DEVICES=7 $PY .codex_tmp/short_finetune_single_branch.py \
+  --config v2only --steps 2000 --gpu 0 \
+  --save-delta .codex_tmp/short_ft_v2only_delta.pt \
+  --out .codex_tmp/short_ft_v2only.json
+python research/eval/merge_short_finetune.py
 ```
 
 `CUDA_VISIBLE_DEVICES=2` 把物理 GPU 映射为进程内 `cuda:0`，因此脚本 `--gpu 0`。
@@ -134,6 +145,12 @@ M4 checkpoint 约 6.4 GB，权重加载应报 `missing=[] unexpected=[]`。
 > （冻结 DINO 描述子只是注入到 V1 特征上），它表示「把两处门控推向 V2 侧」。
 > 两个方向的大幅掉点**不能**读作任一路的边际贡献；结构边界与推论限制见
 > [ABLATION_BACKBONE_SYMMETRIC.md](ABLATION_BACKBONE_SYMMETRIC.md) §1.1 / §4。
+>
+> ⚠️ **⑩ 是受控短训，不是同预算严格重训消融**：两个配置只变门控锁在哪一侧，
+> 预算 / 数据 / seed / 可训练参数完全相同；但只有 2000 步（保护版本 80K 步），
+> 且 B 的 `teacher_preds` 在 `no_grad` 下、只有 C.student 一条递推链可训练。
+> 短训后的残余差距**不能**当作任一路的边际贡献；边界见
+> [ABLATION_SHORT_FINETUNE.md](ABLATION_SHORT_FINETUNE.md) §4。
 
 ## 5. 已知限制与坑
 

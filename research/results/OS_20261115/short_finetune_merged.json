@@ -1,0 +1,93 @@
+{
+  "protocol": "GDROS official test.py, 424 pairs, iters=32, LSR NPOINT=200000",
+  "experiment_class": "adaptation_short_finetune_scheme_A",
+  "reference": {
+    "gdros_released_AEPE": 1.4618458366096103,
+    "both": {
+      "AEPE": 1.473827834446231,
+      "CMR@1": 72.40566037735849,
+      "CMR@2": 84.90566037735849,
+      "CMR@5": 94.10377358490567,
+      "RMSE_official_var": 8.335009898837217
+    },
+    "both_pair_EPE_source": "research/results/OS_20261114/ablate_v2_off_result_official.json"
+  },
+  "configs": {
+    "v1only": {
+      "zero_shot": {
+        "AEPE": 7.745715116406876,
+        "CMR@1": 0.9433962264150944,
+        "CMR@2": 4.245283018867925,
+        "CMR@5": 24.764150943396228,
+        "RMSE_official_var": 16.018962391754382
+      },
+      "after_short_finetune": {
+        "AEPE": 1.7126951763360871,
+        "CMR@1": 62.028301886792455,
+        "CMR@2": 83.9622641509434,
+        "CMR@5": 92.21698113207547,
+        "RMSE_official_var": 9.417824778359627
+      },
+      "AEPE_improvement": 6.033019940070789,
+      "AEPE_gap_vs_both": 0.23886734188985614,
+      "recovery_fraction_of_zeroshot_gap": 0.9619145990431155,
+      "pair_delta_after_minus_zero": {
+        "n": 424,
+        "mean_delta": -6.03301994007079,
+        "median_delta": -5.918406922748247,
+        "improved_pairs": 403,
+        "improved_pct": 95.04716981132076,
+        "catastrophic_gt_10px_before": 104,
+        "catastrophic_gt_10px_after": 17
+      },
+      "train": {
+        "steps": 2000,
+        "train_iters": 12,
+        "lr": 2e-05,
+        "seed": 901,
+        "trainable_params": 4401475,
+        "elapsed_sec": 1263.1,
+        "sec_per_step": 0.6315
+      },
+      "final_loss": 13.208897590637207
+    },
+    "v2only": {
+      "zero_shot": {
+        "AEPE": 41.32983630651596,
+        "CMR@1": 0.0,
+        "CMR@2": 0.0,
+        "CMR@5": 0.2358490566037736,
+        "RMSE_official_var": 287.7099512777089
+      },
+      "after_short_finetune": {
+        "AEPE": 3.382377904179655,
+        "CMR@1": 3.5377358490566038,
+        "CMR@2": 33.25471698113208,
+        "CMR@5": 87.26415094339623,
+        "RMSE_official_var": 9.38401808494978
+      },
+      "AEPE_improvement": 37.9474584023363,
+      "AEPE_gap_vs_both": 1.9085500697334241,
+      "recovery_fraction_of_zeroshot_gap": 0.9521138683250006,
+      "pair_delta_after_minus_zero": {
+        "n": 424,
+        "mean_delta": -37.947458402336295,
+        "median_delta": -37.83263657913474,
+        "improved_pairs": 422,
+        "improved_pct": 99.52830188679245,
+        "catastrophic_gt_10px_before": 416,
+        "catastrophic_gt_10px_after": 17
+      },
+      "train": {
+        "steps": 2000,
+        "train_iters": 12,
+        "lr": 2e-05,
+        "seed": 901,
+        "trainable_params": 4401475,
+        "elapsed_sec": 1381.7,
+        "sec_per_step": 0.6909
+      },
+      "final_loss": 59.904632568359375
+    }
+  }
+}
