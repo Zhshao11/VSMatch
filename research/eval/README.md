@@ -20,6 +20,7 @@
 | `merge_backbone_ablation.py` | 合并两份单路结果做逐对 Δ 统计，纯标准库、无需 GPU | 官方 |
 | `short_finetune_single_branch.py` | **适配性短训（方案 A）**：锁死单路门控、冻结前端、2000 步续训下游，再同进程官方口径评测 | 与 `eval_os_official_protocol.py` 一致（官方） |
 | `merge_short_finetune.py` | 合并两份短训结果，对比零训练旁路与 `both`，纯标准库 | 官方 |
+| `eval_ubcv2_official_protocol.py` | **换数据集**：把官方口径评测指向 UBCv2（只覆盖 `TEST_ROOT`，复用 `Collector` / `run_one`） | 与 `eval_os_official_protocol.py` 一致（官方） |
 
 ## `ablate_v2_off.py` 的实现与状态
 
@@ -183,6 +184,28 @@ python merge_short_finetune.py
 （+0.24 / +1.91 AEPE）仍不能当作任一路的边际贡献**（预算只有 2000 步、
 解冻范围受限、`v2only` 未稳定收敛）。完整边界见
 [`docs/ABLATION_SHORT_FINETUNE.md`](../../docs/ABLATION_SHORT_FINETUNE.md)。
+
+## UBCv2 跨数据集评测（2026-11-15，数据待到位）
+
+`eval_ubcv2_official_protocol.py` 只把 `P.TEST_ROOT` 换成 UBCv2 根目录，
+其余（模型、权重、`Collector`、`run_one`、sanity 逻辑）逐字复用 OS 官方口径。
+要求目录结构与 GDROS 官方一致：`<root>/testing/opt/*.png`、
+`sar_warped/*.png`、`truth_flow/*.flo`，三者数量相等（`datum/` 评测不读）。
+
+```bash
+cd /mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated
+CUDA_VISIBLE_DEVICES=5 /home/zzvr/miniconda3/envs/compared/bin/python \
+  .codex_tmp/eval_ubcv2_official_protocol.py \
+  --which both --gpu 0 --max-pairs 1447 \
+  --out .codex_tmp/ubcv2_official_20261115.json
+```
+
+**边界（先读）**：`M4_step80000.pt` 与 `GDROS-os512.pth` 都只在 OS 上训练过，
+直接跑 UBCv2 是**跨数据集泛化**，不能与论文 Table III 的 GDROS 行并列
+（后者是 UBCv2 in-domain 训练权重，官方 released 权重里没有 UBCv2 版）。
+论文还要求：预筛后 test 1447 对、三个随机仿射变换测试集报 mean±std
+（平移 ±15px、缩放 0.9–1.1、旋转 ±10°），预筛规则与随机 seed 未公开 ⇒
+即便重训也只能做「同口径条件下的公平对比」，不能逐位复现 Table III。
 
 ## 未入库的探针脚本
 
