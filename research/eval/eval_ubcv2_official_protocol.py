@@ -84,6 +84,11 @@ def main() -> None:
                     help="only 'testing' is supported by P.run_one (hardcoded there)")
     ap.add_argument("--which", choices=["baseline", "m4", "both"], default="both")
     ap.add_argument("--gpu", type=int, default=0)
+    ap.add_argument("--baseline-ckpt", default="",
+                    help="override the GDROS checkpoint (default: released OS weights). "
+                         "Point this at a UBCv2-trained checkpoint for the in-domain run.")
+    ap.add_argument("--tag", default="",
+                    help="free-form label written into the JSON, e.g. 'gdros_ubcv2_120k'")
     ap.add_argument("--max-pairs", type=int, default=1447,
                     help="paper UBCv2 test split is 1447 pairs after pre-screening")
     ap.add_argument("--out", type=str, default="")
@@ -96,13 +101,20 @@ def main() -> None:
     if args.dstype != "testing":
         raise SystemExit("P.run_one hardcodes dstype='testing'; use --dstype testing")
 
-    # P.run_one reads the module-level TEST_ROOT at call time.
+    # P.run_one reads the module-level TEST_ROOT / BASE_CKPT at call time.
     P.TEST_ROOT = args.test_root
+    if args.baseline_ckpt:
+        if not os.path.exists(args.baseline_ckpt):
+            raise SystemExit("baseline checkpoint not found: " + args.baseline_ckpt)
+        P.BASE_CKPT = args.baseline_ckpt
+        print("BASELINE_CKPT " + args.baseline_ckpt, flush=True)
 
     which_list = ["baseline", "m4"] if args.which == "both" else [args.which]
     device = torch.device("cuda:%d" % args.gpu)
+    in_domain = bool(args.baseline_ckpt)
     out = {
         "dataset": "UBCv2",
+        "tag": args.tag,
         "protocol": ("GDROS official test.py: per-component |dx|,|dy| error, "
                      "per-pair EPE(k), iters=32, LSR NPOINT=200000"),
         "test_root": args.test_root,
@@ -110,9 +122,12 @@ def main() -> None:
         "iters": P.ITERS,
         "lsr_npoint": P.NPOINT,
         "requested_pairs": args.max_pairs,
-        "weight_note": ("Both checkpoints are OS-trained. This is a "
-                        "cross-dataset generalisation run, not the paper's "
-                        "in-domain Table III setting."),
+        "weight_note": (
+            "GDROS checkpoint is UBCv2-trained (in-domain); M4 is still OS-trained "
+            "(cross-dataset). Not a like-for-like comparison."
+            if in_domain else
+            "Both checkpoints are OS-trained. This is a cross-dataset generalisation "
+            "run, not the paper's in-domain Table III setting."),
         "results": {},
     }
     for w in which_list:
