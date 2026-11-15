@@ -211,7 +211,17 @@ M4 checkpoint 约 6.4 GB，权重加载应报 `missing=[] unexpected=[]`。
   `DataParallel(..., device_ids=[gpu])` + `torch.cuda.set_device(device)`，
   否则 LSR 内部 grid 落在 `cuda:0` 会导致设备不一致。
 - 官方 `test.py` 的 `--Npoint` 使用 `nargs='+'`，解析为 list，`10000 + Npoint` 会
-  `TypeError`；复现官方数字时需把该值转成 int（唯一改动）。
+  `TypeError`；复现官方数字时需把该值转成 int（唯一改动）。**直接不传该参数最省事**，
+  默认值就是 200000。
+- 上游 `train.py` / `test.py` 依赖 `tensorboard`（`from torch.utils.tensorboard import
+  SummaryWriter`），最小环境里要单独 `pip install tensorboard`，否则 import 阶段就崩。
+- **官方没有发布 UBCv2 权重**（README 只列 WHU-OPT-SAR 与 OS；GitHub Releases 为空；
+  数据下载也不给 UBCv2 筛后 split）⇒ 论文 Table III 的 UBCv2 行没有可用的公开权重
+  直接验证，只能自己按代码 recipe 训。
+- **论文正文与发布代码的超参不一致**：正文写 `lr=1.2e-5 / bs=12`，
+  `configs/default.py` 是 `canonical_lr=12.5e-5 / batch_size=2`，且
+  `core/optimizer/__init__.py` 不按 batch size 缩放 LR。照代码跑 = 6× 台阶更少样本、
+  10.4× 更高 LR。复现时**照代码**，并在对比表里注明这一差异。
 - 共享机器上 checkpoint 加载受磁盘 I/O 与页缓存影响很大，冷盘且高负载时启动可能
   显著变慢；判活应看日志是否打印 `missing=/unexpected=`，而不是看进程是否存在。
 - 训练脚本默认 `steps=120000`，保护版本取 **step 80000**；不要误用 `120000`

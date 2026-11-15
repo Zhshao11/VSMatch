@@ -39,6 +39,7 @@
 
 | 日期 | 内容 |
 |---|---|
+| **2026-11-15（协议等价性）** | 单独证明「我们的评测口径 = 官方 `test.py`」，**不依赖论文数值能否复现**：① 指标实现逐行同构；② 官方 `test.py` 原样跑我们生成的 UBCv2 seed901，得 `AEPE 22.009050 / RMSE 679.046204 / CMR@1..5 0.06/0.74/2.83/6.83/11.26%`，与我们的 JSON **逐位一致**；③ 官方 OS 424 对上得 `EPE 1.461846`，与历史基准吻合。同时写明论文 UBCv2 行难以逐位复现的三条独立原因（**官方未发布 UBCv2 权重**、预筛算法未公开、论文正文 `lr=1.2e-5/bs=12` 与代码 `12.5e-5/bs=2` 不一致）。证据归档 `E-093-PROTOCOL-EQUIVALENCE/`，见 [UBCV2_DIAGNOSIS.md](docs/UBCV2_DIAGNOSIS.md) §6 |
 | **2026-11-15（UBCv2 诊断）** | 查清「M4 `3.8941` 优于论文 GDROS in-domain `4.49`」这个对比**不成立**：用官方阈值分档反解否定「论文筛掉病态对」的解释（要压到 4.49 需保留 7965 对 > 现有 1625）；逐对诊断显示 GDROS 在 UBCv2 上的误差与旋转幅度 / warp 损失面积**全不相关**且预测流近似恒等变换；**零流基线 `29.7910`** 下 GDROS 只比「什么都不预测」好 `26.1%`，M4 好 `86.9%`。另定量了「旋转基准点未公开」带来的 **1.83×** 不可比幅度。**起步在 UBCv2 上按官方 recipe 训 GDROS**（120K 步，约 7.7 h）。见 [UBCV2_DIAGNOSIS.md](docs/UBCV2_DIAGNOSIS.md) |
 | **2026-11-15（UBCv2）** | 新增 **UBCv2 跨数据集泛化评测**：官方 RGB/SAR 测试集 1625 对，按论文变换参数构造 GDROS 布局、修正 SAR float32 位深陷阱、用 OS 官方 `datum` 反推并反证 flow 方向；同一份 OS 权重下 M4 AEPE `3.8941` vs GDROS `22.0091`（CMR@5 `74.52` vs `11.26`）。**跨数据集泛化，不与论文 Table III 并列**，见 [UBCV2_GENERALIZATION.md](docs/UBCV2_GENERALIZATION.md) |
 | **2026-11-15** | 落地 C 分支 `teacher_preds` 死计算剪枝（GRU 160→96 次，424 对指标逐位不变，推理 1.339× / 训练前向 1.455×，见 [GRU_ITER_SWEEP.md](docs/GRU_ITER_SWEEP.md) §6.1）；在剪枝后 M4 上补齐**对称单路旁路**（双 GPU、官方口径 424 对），并澄清 V2 不是独立 backbone，见 [ABLATION_BACKBONE_SYMMETRIC.md](docs/ABLATION_BACKBONE_SYMMETRIC.md)；再补 **2000 步适配性短训**（方案 A），证明零训练旁路 95–96% 的 AEPE 落差来自下游 OOD，见 [ABLATION_SHORT_FINETUNE.md](docs/ABLATION_SHORT_FINETUNE.md) |
