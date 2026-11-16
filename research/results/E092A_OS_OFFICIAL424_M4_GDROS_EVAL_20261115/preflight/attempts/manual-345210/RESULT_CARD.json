@@ -1,0 +1,51 @@
+{
+  "environment": {
+    "batch_size": 1,
+    "cuda_runtime": "12.8",
+    "fp32": true,
+    "hostname": "ubuntu",
+    "numpy": "2.2.6",
+    "pillow": "12.2.0",
+    "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+    "seed": 1234,
+    "torch": "2.8.0+cu128"
+  },
+  "hash_mismatches": {},
+  "hashes": {
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f2-warm120k/checkpoints/F2_step120000.pt": "4a52307fa4b7b67756ac979310fa37d34a131cc182a39e2c45d86711972dab06",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f3-warm120k/checkpoints/F3_step120000.pt": "e5a9c612a7b9b85c568b88776ef784873d5df693cb570ad3dbbbf52fe4801ffd",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-stage180k/checkpoints/B_step180000.pt": "f40d80f2dca62e74ec86c1823963282a490d47f336f2cfce4a28fc211ea33218",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/checkpoints/C_step180000.pt": "c3c67e6d65aca0dd55cf7af2c2a9eedccadadc0fec5ad11fe6e493e08ecc85b9",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/checkpoints/M4_step80000.pt": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b",
+    "/mnt/sda/zhushihao/VS_Match/checkpoints/gdros/GDROS-os512.pth": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+    "/mnt/sda/zhushihao/VS_Match/datasets/official_archives/gdros/testing.zip": "e9c29d6459aa390677066e2da2cdd5927deeb4c9685a10d41c7b6ce44ad81218"
+  },
+  "last_completed_stage": "CPU_PREFLIGHT",
+  "missing_gt": [],
+  "official_source_commit": "ee6b6216fe780bc03bfb4759ae094daa0cfddc60",
+  "pair_ids_unique": true,
+  "protocol": {
+    "join_is_cpu_only": true,
+    "lsr_flat_slice": [
+      10000,
+      210000
+    ],
+    "lsr_npoint": 200000,
+    "main_table": [
+      "gdros_iter32_post_lsr",
+      "m4_iter32_post_lsr"
+    ],
+    "pairs": 424,
+    "prediction_reads_gt": false,
+    "preregistered_supplement": "m4_iter24_post_lsr",
+    "shape": [
+      512,
+      512
+    ],
+    "valid_mask": false,
+    "whole_image": true
+  },
+  "status": "PASS",
+  "task": "preflight",
+  "updated_at_unix": 1794709011.352661
+}

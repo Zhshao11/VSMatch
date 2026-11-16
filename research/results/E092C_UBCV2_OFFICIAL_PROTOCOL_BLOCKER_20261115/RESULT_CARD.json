@@ -1,0 +1,53 @@
+{
+  "status": "BLOCKED_MISSING_AUTHOR_TEST_PROTOCOL",
+  "experiment": "E092C",
+  "decision": "NO_GPU_EVALUATION",
+  "decision_reason": "The available raw UBCv2 assets and locally generated seed901 set do not identify the GDROS authors' screened 1447-pair test split or their three test transformations/ground truth.",
+  "paper_protocol": {
+    "original_pairs": 7170,
+    "post_screen_train_val_test": [3517, 1437, 1447],
+    "test_groups": 3,
+    "main_table_thresholds": [2, 3, 5],
+    "contract_reported_thresholds": [1, 2, 3, 4, 5],
+    "translation_px": [-15, 15, 1],
+    "scale": [0.9, 1.1, 0.05],
+    "rotation_deg": [-10, 10, 1]
+  },
+  "official_publication_identity": {
+    "doi": "10.1109/TGRS.2025.3627132",
+    "arxiv": "2511.00598v1",
+    "official_code_commit_audited": "ee6b6216fe780bc03bfb4759ae094daa0cfddc60",
+    "official_readme_publishes_ubcv2_data_or_weight": false
+  },
+  "available_raw_asset": {
+    "archive": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/raw/test_images.zip",
+    "archive_sha256": "515559a9f2b67981e86d7bd36170d720658a38724f2309bb3003a0d565960aeb",
+    "archive_tiff_members": 3252,
+    "paired_tiff_count": 1626,
+    "extracted_rgb_tiffs": 1625,
+    "extracted_sar_tiffs": 1625,
+    "extraction_note": "Each extracted modality also contains one .tif.aux.xml sidecar; these are not images. The available raw pair count does not establish the authors' screened split."
+  },
+  "local_generated_asset": {
+    "root": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901",
+    "manifest_sha256": "599b8bdab2fc32486c4d4f46ee496d065e3649ecdad918a9906f96efa4e0997d",
+    "generator_sha256": "53f788cbe6bf8516c90c63ab623575b86168944d27dc68bf32ffd152e57bf3d2",
+    "seed": 901,
+    "pairs": 1625,
+    "manifest_prescreen": "none (all official test pairs kept; paper pre-screened to 1447)",
+    "classification": "locally generated paper-style affine set, not author GT/split",
+    "may_be_reported_as_official_e092c": false
+  },
+  "missing_to_unblock": [
+    "Author-screened 1447 test pair IDs",
+    "All three author test seeds or the three realized transformed test groups",
+    "Author ground-truth flows/warps and exact transform realization",
+    "Exact screening and split assignment needed to map the available raw pairs",
+    "An author UBCv2 checkpoint if comparison to the paper's target-trained GDROS row is intended"
+  ],
+  "prohibited_interpretations": [
+    "Do not report the existing 1625-pair seed901 evaluation as official UBCv2 reproduction.",
+    "Do not choose or discard pairs based on model error to force a 1447-pair set.",
+    "Do not compare a single locally generated seed's pairwise standard deviation with the paper's three-seed mean plus/minus standard deviation."
+  ]
+}

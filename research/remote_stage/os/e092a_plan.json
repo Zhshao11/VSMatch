@@ -1,0 +1,90 @@
+{
+  "tasks": [
+    {
+      "id": "preflight",
+      "name": "E092A-CPU-PREFLIGHT",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 1,
+      "depends_on": [],
+      "command": [
+        "/usr/bin/env",
+        "CUDA_VISIBLE_DEVICES=",
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e092a_official_eval.py",
+        "--task",
+        "preflight"
+      ]
+    },
+    {
+      "id": "predict_gdros",
+      "name": "E092A-GDROS32-OFFICIAL424-PREDICT",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 30000,
+      "priority": 20,
+      "max_attempts": 2,
+      "depends_on": ["preflight"],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e092a_official_eval.py",
+        "--task",
+        "predict_gdros"
+      ]
+    },
+    {
+      "id": "predict_m4",
+      "name": "E092A-M4-24-32-OFFICIAL424-PREDICT",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 1,
+      "min_free_memory_mb": 30000,
+      "priority": 20,
+      "max_attempts": 2,
+      "depends_on": ["predict_gdros"],
+      "command": [
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e092a_official_eval.py",
+        "--task",
+        "predict_m4"
+      ]
+    },
+    {
+      "id": "join",
+      "name": "E092A-CPU-GT-JOIN-OFFICIAL424",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 1,
+      "depends_on": ["predict_gdros", "predict_m4"],
+      "command": [
+        "/usr/bin/env",
+        "CUDA_VISIBLE_DEVICES=",
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e092a_official_eval.py",
+        "--task",
+        "join"
+      ]
+    },
+    {
+      "id": "join_parity_corrected",
+      "name": "E092A-CPU-GT-JOIN-PARITY-CORRECTED",
+      "cwd": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated",
+      "gpu_count": 0,
+      "min_free_memory_mb": 0,
+      "priority": 20,
+      "max_attempts": 1,
+      "depends_on": ["join"],
+      "command": [
+        "/usr/bin/env",
+        "CUDA_VISIBLE_DEVICES=",
+        "/mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python",
+        ".codex_tmp/e092a_official_eval.py",
+        "--task",
+        "join"
+      ]
+    }
+  ]
+}

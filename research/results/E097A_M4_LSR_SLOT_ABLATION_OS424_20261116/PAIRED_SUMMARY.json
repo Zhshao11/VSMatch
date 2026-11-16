@@ -1,0 +1,92 @@
+{
+  "final1": {
+    "mean_error_change_px": 0.036371619809629774,
+    "cmr_point_changes": {
+      "1": -0.9433962264150892,
+      "2": -0.23584905660376876,
+      "5": -0.4716981132075375
+    },
+    "latency_reduction_pct": 4.8134758571275915,
+    "lower_error_pairs": 149,
+    "higher_error_pairs": 275,
+    "threshold_changes": {
+      "1": {
+        "rescued_pair_ids": [
+          "000385"
+        ],
+        "lost_success_pair_ids": [
+          "000046",
+          "000100",
+          "000195",
+          "000237",
+          "000372"
+        ],
+        "net_success_change": -4
+      },
+      "2": {
+        "rescued_pair_ids": [],
+        "lost_success_pair_ids": [
+          "000135"
+        ],
+        "net_success_change": -1
+      },
+      "5": {
+        "rescued_pair_ids": [],
+        "lost_success_pair_ids": [
+          "000142",
+          "000363"
+        ],
+        "net_success_change": -2
+      }
+    }
+  },
+  "last45": {
+    "mean_error_change_px": 0.008126137347645779,
+    "cmr_point_changes": {
+      "1": -1.8867924528301785,
+      "2": 0.23584905660376876,
+      "5": -0.4716981132075375
+    },
+    "latency_reduction_pct": 3.015266985077114,
+    "lower_error_pairs": 178,
+    "higher_error_pairs": 246,
+    "threshold_changes": {
+      "1": {
+        "rescued_pair_ids": [
+          "000066",
+          "000377",
+          "000385"
+        ],
+        "lost_success_pair_ids": [
+          "000012",
+          "000046",
+          "000123",
+          "000151",
+          "000195",
+          "000237",
+          "000289",
+          "000320",
+          "000350",
+          "000372",
+          "000407"
+        ],
+        "net_success_change": -8
+      },
+      "2": {
+        "rescued_pair_ids": [
+          "000128"
+        ],
+        "lost_success_pair_ids": [],
+        "net_success_change": 1
+      },
+      "5": {
+        "rescued_pair_ids": [],
+        "lost_success_pair_ids": [
+          "000142",
+          "000304"
+        ],
+        "net_success_change": -2
+      }
+    }
+  }
+}

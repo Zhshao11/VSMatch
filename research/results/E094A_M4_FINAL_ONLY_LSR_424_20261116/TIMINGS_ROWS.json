@@ -1,0 +1,6786 @@
+[
+  {
+    "pair_index": "0",
+    "pair_id": "000000",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2765.241735993186",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "0",
+    "pair_id": "000000",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1528.9765989873558",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "1",
+    "pair_id": "000001",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1604.787675998523",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "1",
+    "pair_id": "000001",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2635.621587993228",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "2",
+    "pair_id": "000002",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2756.227741992916",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "2",
+    "pair_id": "000002",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1299.6945360064274",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "3",
+    "pair_id": "000003",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1344.422444992233",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "3",
+    "pair_id": "000003",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2633.775310998317",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "4",
+    "pair_id": "000004",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2476.7220969952177",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "4",
+    "pair_id": "000004",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1479.3971330072964",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "5",
+    "pair_id": "000005",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1466.4213539945194",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "5",
+    "pair_id": "000005",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2552.9443609993905",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "6",
+    "pair_id": "000006",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2700.054882996483",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "6",
+    "pair_id": "000006",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1485.0869060028344",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "7",
+    "pair_id": "000007",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1406.4060210075695",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "7",
+    "pair_id": "000007",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2754.534075007541",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "8",
+    "pair_id": "000008",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2611.4823700045235",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "8",
+    "pair_id": "000008",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1474.3774230009876",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "9",
+    "pair_id": "000009",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1295.5604489980033",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "9",
+    "pair_id": "000009",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2607.278725001379",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "10",
+    "pair_id": "000010",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2781.377526000142",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "10",
+    "pair_id": "000010",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1407.7810380113078",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "11",
+    "pair_id": "000011",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1495.7770649925806",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "11",
+    "pair_id": "000011",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2581.5448029898107",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "12",
+    "pair_id": "000012",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2463.973435005755",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "12",
+    "pair_id": "000012",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1321.3485700107412",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "13",
+    "pair_id": "000013",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1610.794520995114",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "13",
+    "pair_id": "000013",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2608.4160239988705",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "14",
+    "pair_id": "000014",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2344.597382005304",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "14",
+    "pair_id": "000014",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1551.7390349996276",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "15",
+    "pair_id": "000015",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1622.3429779929575",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "15",
+    "pair_id": "000015",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2468.7542640022",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "16",
+    "pair_id": "000016",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2692.6081929996144",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "16",
+    "pair_id": "000016",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1131.0435979976319",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "17",
+    "pair_id": "000017",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1429.3502299988177",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "17",
+    "pair_id": "000017",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2618.1365220109",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "18",
+    "pair_id": "000018",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2715.4993649892276",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "18",
+    "pair_id": "000018",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1399.9710009957198",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "19",
+    "pair_id": "000019",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1103.4020630031591",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "19",
+    "pair_id": "000019",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1882.8711050009588",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "20",
+    "pair_id": "000020",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1987.163416997646",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "20",
+    "pair_id": "000020",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "963.720984000247",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "21",
+    "pair_id": "000021",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "980.6180539890192",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "21",
+    "pair_id": "000021",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1720.1724180049496",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "22",
+    "pair_id": "000022",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1989.0658750082366",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "22",
+    "pair_id": "000022",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1082.207624000148",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "23",
+    "pair_id": "000023",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1219.664657008252",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "23",
+    "pair_id": "000023",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1991.801623997162",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "24",
+    "pair_id": "000024",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2112.3443450051127",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "24",
+    "pair_id": "000024",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1039.1606999910437",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "25",
+    "pair_id": "000025",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1259.3296569975791",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "25",
+    "pair_id": "000025",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1973.3006280002883",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "26",
+    "pair_id": "000026",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2183.438969004783",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "26",
+    "pair_id": "000026",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1360.7907489931677",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "27",
+    "pair_id": "000027",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1137.1431370062055",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "27",
+    "pair_id": "000027",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1851.5337540011387",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "28",
+    "pair_id": "000028",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1887.8108170029009",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "28",
+    "pair_id": "000028",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1056.546965992311",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "29",
+    "pair_id": "000029",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1118.2923070009565",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "29",
+    "pair_id": "000029",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1793.4014670026954",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "30",
+    "pair_id": "000030",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1884.4271790003404",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "30",
+    "pair_id": "000030",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1124.199375990429",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "31",
+    "pair_id": "000031",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1123.0609030026244",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "31",
+    "pair_id": "000031",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1892.0987170131411",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "32",
+    "pair_id": "000032",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1895.2393390063662",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "32",
+    "pair_id": "000032",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1233.234804996755",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "33",
+    "pair_id": "000033",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1135.6362469960004",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "33",
+    "pair_id": "000033",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2001.584475990967",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "34",
+    "pair_id": "000034",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1607.4817600019742",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "34",
+    "pair_id": "000034",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "978.427007998107",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "35",
+    "pair_id": "000035",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "952.9782909958158",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "35",
+    "pair_id": "000035",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1581.709755002521",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "36",
+    "pair_id": "000036",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1761.9348940061172",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "36",
+    "pair_id": "000036",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1082.4198890040861",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "37",
+    "pair_id": "000037",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "948.8272579910699",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "37",
+    "pair_id": "000037",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1723.5376839962555",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "38",
+    "pair_id": "000038",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1865.8125910005765",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "38",
+    "pair_id": "000038",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "957.8127749991836",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "39",
+    "pair_id": "000039",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "940.9964859951288",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "39",
+    "pair_id": "000039",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1979.485689997091",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "40",
+    "pair_id": "000040",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1496.6018889972474",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "40",
+    "pair_id": "000040",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "928.2141700095963",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "41",
+    "pair_id": "000041",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1196.7904460034333",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "41",
+    "pair_id": "000041",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1856.5905619907426",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "42",
+    "pair_id": "000042",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1870.9969159972388",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "42",
+    "pair_id": "000042",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1078.5206379950978",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "43",
+    "pair_id": "000043",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "952.2221229999559",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "43",
+    "pair_id": "000043",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1758.7622790015303",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "44",
+    "pair_id": "000044",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1731.1229600018123",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "44",
+    "pair_id": "000044",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1039.7904310084414",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "45",
+    "pair_id": "000045",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1096.4341950020753",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "45",
+    "pair_id": "000045",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2040.2910450065974",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "46",
+    "pair_id": "000046",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1986.1626089987112",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "46",
+    "pair_id": "000046",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "990.3065700054867",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "47",
+    "pair_id": "000047",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "767.203742012498",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "47",
+    "pair_id": "000047",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2064.0901690057945",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "48",
+    "pair_id": "000048",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1785.5073670070851",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "48",
+    "pair_id": "000048",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "988.9716640027473",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "49",
+    "pair_id": "000049",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1161.9695620029233",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "49",
+    "pair_id": "000049",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1914.4440139934886",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "50",
+    "pair_id": "000050",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1994.854568009032",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "50",
+    "pair_id": "000050",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1211.4383389998693",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "51",
+    "pair_id": "000051",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1238.024748992757",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "51",
+    "pair_id": "000051",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1949.5721529965522",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "52",
+    "pair_id": "000052",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2014.0567790076602",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "52",
+    "pair_id": "000052",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1103.652454999974",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "53",
+    "pair_id": "000053",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1275.9970409970265",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "53",
+    "pair_id": "000053",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2168.186846000026",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "54",
+    "pair_id": "000054",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2093.8226680009393",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "54",
+    "pair_id": "000054",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1274.005519997445",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "55",
+    "pair_id": "000055",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1097.2161120007513",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "55",
+    "pair_id": "000055",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2073.564419988543",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "56",
+    "pair_id": "000056",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1998.2467789959628",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "56",
+    "pair_id": "000056",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1341.8131439975696",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "57",
+    "pair_id": "000057",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1101.7715219932143",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "57",
+    "pair_id": "000057",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2106.5635929990094",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "58",
+    "pair_id": "000058",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1869.8104610084556",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "58",
+    "pair_id": "000058",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1254.459946998395",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "59",
+    "pair_id": "000059",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1162.0051670033718",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "59",
+    "pair_id": "000059",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2261.580024001887",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "60",
+    "pair_id": "000060",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1865.0325739872642",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "60",
+    "pair_id": "000060",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1017.0902500103693",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "61",
+    "pair_id": "000061",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "807.2884349967353",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "61",
+    "pair_id": "000061",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1147.0802849944448",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "62",
+    "pair_id": "000062",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1538.789744998212",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "62",
+    "pair_id": "000062",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1117.0663999946555",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "63",
+    "pair_id": "000063",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1146.9880990043748",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "63",
+    "pair_id": "000063",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2201.6404000023613",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "64",
+    "pair_id": "000064",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1993.639385997085",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "64",
+    "pair_id": "000064",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1109.0857800008962",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "65",
+    "pair_id": "000065",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1376.0770859953482",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "65",
+    "pair_id": "000065",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2079.7825070039835",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "66",
+    "pair_id": "000066",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2334.0940899943234",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "66",
+    "pair_id": "000066",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1216.368497989606",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "67",
+    "pair_id": "000067",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1419.0955560043221",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "67",
+    "pair_id": "000067",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2299.5763789949706",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "68",
+    "pair_id": "000068",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2015.5070160108153",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "68",
+    "pair_id": "000068",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1322.4740930018015",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "69",
+    "pair_id": "000069",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1243.5098080022726",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "69",
+    "pair_id": "000069",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2136.8824779929128",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "70",
+    "pair_id": "000070",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2078.8051710114814",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "70",
+    "pair_id": "000070",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1215.3294000017922",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "71",
+    "pair_id": "000071",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1210.112668995862",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "71",
+    "pair_id": "000071",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2167.896925006062",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "72",
+    "pair_id": "000072",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2313.7226440012455",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "72",
+    "pair_id": "000072",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1227.4425590003375",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "73",
+    "pair_id": "000073",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1173.9766239916207",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "73",
+    "pair_id": "000073",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1950.4469880048418",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "74",
+    "pair_id": "000074",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2651.542981999228",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "74",
+    "pair_id": "000074",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1077.0973780017812",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "75",
+    "pair_id": "000075",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1329.6997559955344",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "75",
+    "pair_id": "000075",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2230.116952996468",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "76",
+    "pair_id": "000076",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2119.291722003254",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "76",
+    "pair_id": "000076",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1256.8354130053194",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "77",
+    "pair_id": "000077",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1154.8299050045898",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "77",
+    "pair_id": "000077",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2433.4551119973185",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "78",
+    "pair_id": "000078",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2263.294557997142",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "78",
+    "pair_id": "000078",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1351.7035819968442",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "79",
+    "pair_id": "000079",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1350.3487190027954",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "79",
+    "pair_id": "000079",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2210.2806870097993",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "80",
+    "pair_id": "000080",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2555.2143300010357",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "80",
+    "pair_id": "000080",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1277.2085719916504",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "81",
+    "pair_id": "000081",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1067.2248080081772",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "81",
+    "pair_id": "000081",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2470.7899280037964",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "82",
+    "pair_id": "000082",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2387.538480994408",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "82",
+    "pair_id": "000082",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1056.8484250106849",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "83",
+    "pair_id": "000083",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1324.679183002445",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "83",
+    "pair_id": "000083",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2224.4165650045034",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "84",
+    "pair_id": "000084",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2614.4201119896024",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "84",
+    "pair_id": "000084",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1353.4052340110065",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "85",
+    "pair_id": "000085",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1358.181939998758",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "85",
+    "pair_id": "000085",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2436.4948800066486",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "86",
+    "pair_id": "000086",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2266.1358779878356",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "86",
+    "pair_id": "000086",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1358.7663160142256",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "87",
+    "pair_id": "000087",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1480.7194680033717",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "87",
+    "pair_id": "000087",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2230.7034300029045",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "88",
+    "pair_id": "000088",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2228.1751630071085",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "88",
+    "pair_id": "000088",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1360.492792999139",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "89",
+    "pair_id": "000089",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1323.5868850024417",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "89",
+    "pair_id": "000089",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2205.100349994609",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "90",
+    "pair_id": "000090",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2385.2920759964036",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "90",
+    "pair_id": "000090",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1158.8070529978722",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "91",
+    "pair_id": "000091",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1369.7326160036027",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "91",
+    "pair_id": "000091",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2248.904626001604",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "92",
+    "pair_id": "000092",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2308.537154007354",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "92",
+    "pair_id": "000092",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1159.8520800034748",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "93",
+    "pair_id": "000093",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1305.9905889967922",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "93",
+    "pair_id": "000093",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2445.419137002318",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "94",
+    "pair_id": "000094",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2443.677210001624",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "94",
+    "pair_id": "000094",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1501.6795310075395",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "95",
+    "pair_id": "000095",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "995.5120349914068",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "95",
+    "pair_id": "000095",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2422.5992249994306",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "96",
+    "pair_id": "000096",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2205.217213006108",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "96",
+    "pair_id": "000096",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1358.2115589961177",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "97",
+    "pair_id": "000097",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1297.4184060003608",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "97",
+    "pair_id": "000097",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2457.866548007587",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "98",
+    "pair_id": "000098",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2260.3697099984856",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "98",
+    "pair_id": "000098",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1232.4888570001349",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "99",
+    "pair_id": "000099",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1255.5217819899553",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "99",
+    "pair_id": "000099",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2258.3575610042317",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "100",
+    "pair_id": "000100",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2286.4139279990923",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "100",
+    "pair_id": "000100",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1351.904334005667",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "101",
+    "pair_id": "000101",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1130.2752120100195",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "101",
+    "pair_id": "000101",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2547.58712099283",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "102",
+    "pair_id": "000102",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2240.6456080061616",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "102",
+    "pair_id": "000102",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1171.7830470006447",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "103",
+    "pair_id": "000103",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1342.956434993539",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "103",
+    "pair_id": "000103",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2197.4578680092236",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "104",
+    "pair_id": "000104",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2483.2329399941955",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "104",
+    "pair_id": "000104",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1207.6815629989142",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "105",
+    "pair_id": "000105",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1028.626526996959",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "105",
+    "pair_id": "000105",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2629.7327229985967",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "106",
+    "pair_id": "000106",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2228.0183260008926",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "106",
+    "pair_id": "000106",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1419.7035280085402",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "107",
+    "pair_id": "000107",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1108.1112009997014",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "107",
+    "pair_id": "000107",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2236.9966529950034",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "108",
+    "pair_id": "000108",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2356.2279119942104",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "108",
+    "pair_id": "000108",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1162.147480994463",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "109",
+    "pair_id": "000109",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1359.7533010033658",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "109",
+    "pair_id": "000109",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2252.4509220093023",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "110",
+    "pair_id": "000110",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2291.7539709887933",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "110",
+    "pair_id": "000110",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1418.0836899904534",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "111",
+    "pair_id": "000111",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1268.1985200033523",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "111",
+    "pair_id": "000111",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2403.870862995973",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "112",
+    "pair_id": "000112",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2516.1205909971613",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "112",
+    "pair_id": "000112",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1347.4370009935228",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "113",
+    "pair_id": "000113",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1069.679972002632",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "113",
+    "pair_id": "000113",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2474.418241006788",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "114",
+    "pair_id": "000114",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2231.248598007369",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "114",
+    "pair_id": "000114",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1352.0870840002317",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "115",
+    "pair_id": "000115",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1314.8946760047693",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "115",
+    "pair_id": "000115",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2338.658635999309",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "116",
+    "pair_id": "000116",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2462.2136789985234",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "116",
+    "pair_id": "000116",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1300.257270995644",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "117",
+    "pair_id": "000117",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1489.4555530045182",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "117",
+    "pair_id": "000117",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2403.0742839968298",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "118",
+    "pair_id": "000118",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2375.5638080037897",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "118",
+    "pair_id": "000118",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1268.1483319902327",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "119",
+    "pair_id": "000119",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1279.2165339924395",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "119",
+    "pair_id": "000119",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2514.019163994817",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "120",
+    "pair_id": "000120",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2206.705486009014",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "120",
+    "pair_id": "000120",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1326.9530249963282",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "121",
+    "pair_id": "000121",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1196.2774589919718",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "121",
+    "pair_id": "000121",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2300.538430994493",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "122",
+    "pair_id": "000122",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2327.795118006179",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "122",
+    "pair_id": "000122",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1321.0069009946892",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "123",
+    "pair_id": "000123",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "949.0018790093018",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "123",
+    "pair_id": "000123",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2336.6284130024724",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "124",
+    "pair_id": "000124",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2225.3909179999027",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "124",
+    "pair_id": "000124",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1196.2907949928194",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "125",
+    "pair_id": "000125",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1310.476719008875",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "125",
+    "pair_id": "000125",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2222.7969149971614",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "126",
+    "pair_id": "000126",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2447.8005050041247",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "126",
+    "pair_id": "000126",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1054.3531680013984",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "127",
+    "pair_id": "000127",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1110.01336100162",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "127",
+    "pair_id": "000127",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2141.6824359912425",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "128",
+    "pair_id": "000128",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2385.042698995676",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "128",
+    "pair_id": "000128",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1054.050364997238",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "129",
+    "pair_id": "000129",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1207.6549839985091",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "129",
+    "pair_id": "000129",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2298.449175999849",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "130",
+    "pair_id": "000130",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2108.9283299952513",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "130",
+    "pair_id": "000130",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1072.2000239911722",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "131",
+    "pair_id": "000131",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1323.9033620047849",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "131",
+    "pair_id": "000131",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2214.342437000596",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "132",
+    "pair_id": "000132",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2370.26348899235",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "132",
+    "pair_id": "000132",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1363.329347994295",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "133",
+    "pair_id": "000133",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1290.8252170018386",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "133",
+    "pair_id": "000133",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2148.0727210000623",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "134",
+    "pair_id": "000134",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2319.652712001698",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "134",
+    "pair_id": "000134",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1351.854442997137",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "135",
+    "pair_id": "000135",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1327.9646310111275",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "135",
+    "pair_id": "000135",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2328.87641400157",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "136",
+    "pair_id": "000136",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2279.695168006583",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "136",
+    "pair_id": "000136",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1228.1462050013943",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "137",
+    "pair_id": "000137",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1033.5654850059655",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "137",
+    "pair_id": "000137",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2306.964119008626",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "138",
+    "pair_id": "000138",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2359.1634270123905",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "138",
+    "pair_id": "000138",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1053.630209993571",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "139",
+    "pair_id": "000139",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1119.0482579986565",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "139",
+    "pair_id": "000139",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2310.3038080007536",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "140",
+    "pair_id": "000140",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2267.5608300050953",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "140",
+    "pair_id": "000140",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1290.9402160003083",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "141",
+    "pair_id": "000141",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1162.8199970000423",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "141",
+    "pair_id": "000141",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2437.988903999212",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "142",
+    "pair_id": "000142",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2212.734278989956",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "142",
+    "pair_id": "000142",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1193.1844349892344",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "143",
+    "pair_id": "000143",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1176.1496420076583",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "143",
+    "pair_id": "000143",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2344.345418998273",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "144",
+    "pair_id": "000144",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2256.2418849993264",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "144",
+    "pair_id": "000144",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1250.0427459890489",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "145",
+    "pair_id": "000145",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1206.0156749939779",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "145",
+    "pair_id": "000145",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2253.540277000866",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "146",
+    "pair_id": "000146",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2276.4827069913736",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "146",
+    "pair_id": "000146",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1082.271256003878",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "147",
+    "pair_id": "000147",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1261.5119280089857",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "147",
+    "pair_id": "000147",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2216.278735999367",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "148",
+    "pair_id": "000148",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2511.586313994485",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "148",
+    "pair_id": "000148",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1126.4690550015075",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "149",
+    "pair_id": "000149",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1143.878022005083",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "149",
+    "pair_id": "000149",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2025.6216910056537",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "150",
+    "pair_id": "000150",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1600.2480830065906",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "150",
+    "pair_id": "000150",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "717.1522169956006",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "151",
+    "pair_id": "000151",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1205.8673390129115",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "151",
+    "pair_id": "000151",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2517.205540993018",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "152",
+    "pair_id": "000152",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2615.3013319999445",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "152",
+    "pair_id": "000152",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1488.3120519953081",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "153",
+    "pair_id": "000153",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1619.7648160014069",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "153",
+    "pair_id": "000153",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2758.3564719971037",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "154",
+    "pair_id": "000154",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2686.288996002986",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "154",
+    "pair_id": "000154",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1597.6376360049471",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "155",
+    "pair_id": "000155",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1365.414988991688",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "155",
+    "pair_id": "000155",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2797.165617987048",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "156",
+    "pair_id": "000156",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2727.0802200073376",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "156",
+    "pair_id": "000156",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1340.3015549993142",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "157",
+    "pair_id": "000157",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1492.0948689978104",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "157",
+    "pair_id": "000157",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2362.3769550031284",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "158",
+    "pair_id": "000158",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2843.116468997323",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "158",
+    "pair_id": "000158",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1602.7258380054263",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "159",
+    "pair_id": "000159",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1624.1051609977148",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "159",
+    "pair_id": "000159",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2639.5845920051215",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "160",
+    "pair_id": "000160",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2580.204899000819",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "160",
+    "pair_id": "000160",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1399.8166469973512",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "161",
+    "pair_id": "000161",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1414.1039259993704",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "161",
+    "pair_id": "000161",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2841.99085101136",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "162",
+    "pair_id": "000162",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2532.554444987909",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "162",
+    "pair_id": "000162",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1598.053573994548",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "163",
+    "pair_id": "000163",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1514.0539340063697",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "163",
+    "pair_id": "000163",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2650.9172030055197",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "164",
+    "pair_id": "000164",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2845.2566579944687",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "164",
+    "pair_id": "000164",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1328.9230939990375",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "165",
+    "pair_id": "000165",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1592.9931230057264",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "165",
+    "pair_id": "000165",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2727.804666006705",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "166",
+    "pair_id": "000166",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2785.6551069999114",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "166",
+    "pair_id": "000166",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1614.8177399882115",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "167",
+    "pair_id": "000167",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1613.708087010309",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "167",
+    "pair_id": "000167",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2717.517565994058",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "168",
+    "pair_id": "000168",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2649.7207549982704",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "168",
+    "pair_id": "000168",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1582.117276993813",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "169",
+    "pair_id": "000169",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1338.534467999125",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "169",
+    "pair_id": "000169",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2918.5840080026537",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "170",
+    "pair_id": "000170",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2730.607894001878",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "170",
+    "pair_id": "000170",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1495.7278950023465",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "171",
+    "pair_id": "000171",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1551.1046879983041",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "171",
+    "pair_id": "000171",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2751.411219986039",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "172",
+    "pair_id": "000172",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2764.546700986102",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "172",
+    "pair_id": "000172",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1496.586039007525",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "173",
+    "pair_id": "000173",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1620.5249570048181",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "173",
+    "pair_id": "000173",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2841.457039990928",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "174",
+    "pair_id": "000174",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2588.801217993023",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "174",
+    "pair_id": "000174",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1619.0943269903073",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "175",
+    "pair_id": "000175",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1621.3117330044042",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "175",
+    "pair_id": "000175",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3029.515567992348",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "176",
+    "pair_id": "000176",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2933.0556790082483",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "176",
+    "pair_id": "000176",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1538.6664160032524",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "177",
+    "pair_id": "000177",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1525.0385840045055",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "177",
+    "pair_id": "000177",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2681.1582960071974",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "178",
+    "pair_id": "000178",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2690.6711969932076",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "178",
+    "pair_id": "000178",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1594.644661003258",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "179",
+    "pair_id": "000179",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1609.2994159989757",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "179",
+    "pair_id": "000179",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2876.6480580088682",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "180",
+    "pair_id": "000180",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2595.2583409962244",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "180",
+    "pair_id": "000180",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1567.440468003042",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "181",
+    "pair_id": "000181",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1611.9698350084946",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "181",
+    "pair_id": "000181",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2650.292049991549",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "182",
+    "pair_id": "000182",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2746.9709440047154",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "182",
+    "pair_id": "000182",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1618.372035009088",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "183",
+    "pair_id": "000183",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1680.598845006898",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "183",
+    "pair_id": "000183",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2630.99744200008",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "184",
+    "pair_id": "000184",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2888.6387630045647",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "184",
+    "pair_id": "000184",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1464.783075003652",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "185",
+    "pair_id": "000185",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1602.488545991946",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "185",
+    "pair_id": "000185",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2737.4926260090433",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "186",
+    "pair_id": "000186",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2848.9650580013404",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "186",
+    "pair_id": "000186",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1484.8764019989176",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "187",
+    "pair_id": "000187",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1317.5484739913372",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "187",
+    "pair_id": "000187",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2917.913380995742",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "188",
+    "pair_id": "000188",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2717.862891993718",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "188",
+    "pair_id": "000188",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1549.6216550091049",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "189",
+    "pair_id": "000189",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1599.501983000664",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "189",
+    "pair_id": "000189",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2801.640502992086",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "190",
+    "pair_id": "000190",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2751.8738170037977",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "190",
+    "pair_id": "000190",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1515.3054910042556",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "191",
+    "pair_id": "000191",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1420.9435319935437",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "191",
+    "pair_id": "000191",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2925.7489269948564",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "192",
+    "pair_id": "000192",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2709.035848005442",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "192",
+    "pair_id": "000192",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1486.0850050026784",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "193",
+    "pair_id": "000193",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1525.473479006905",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "193",
+    "pair_id": "000193",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2349.879065004643",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "194",
+    "pair_id": "000194",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2868.60608200368",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "194",
+    "pair_id": "000194",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1377.3991389898583",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "195",
+    "pair_id": "000195",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1396.1824989964953",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "195",
+    "pair_id": "000195",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2862.4062329909066",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "196",
+    "pair_id": "000196",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2765.63508399704",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "196",
+    "pair_id": "000196",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1458.028009001282",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "197",
+    "pair_id": "000197",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1433.014477006509",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "197",
+    "pair_id": "000197",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2730.0500059936894",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "198",
+    "pair_id": "000198",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2893.8843159994576",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "198",
+    "pair_id": "000198",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1610.0923560006777",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "199",
+    "pair_id": "000199",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1471.849277993897",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "199",
+    "pair_id": "000199",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2591.066723995027",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "200",
+    "pair_id": "000200",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2671.476208997774",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "200",
+    "pair_id": "000200",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1284.299983002711",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "201",
+    "pair_id": "000201",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1437.0792779955082",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "201",
+    "pair_id": "000201",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2547.660676005762",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "202",
+    "pair_id": "000202",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2755.2305689896457",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "202",
+    "pair_id": "000202",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1313.8284989981912",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "203",
+    "pair_id": "000203",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1471.7471409967402",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "203",
+    "pair_id": "000203",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2748.339833007776",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "204",
+    "pair_id": "000204",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2334.8449000041",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "204",
+    "pair_id": "000204",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1599.9672469915822",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "205",
+    "pair_id": "000205",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1606.7605190037284",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "205",
+    "pair_id": "000205",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2905.4168180009583",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "206",
+    "pair_id": "000206",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2896.4726150006754",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "206",
+    "pair_id": "000206",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1316.7715769959614",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "207",
+    "pair_id": "000207",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1534.86767099821",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "207",
+    "pair_id": "000207",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2646.671926995623",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "208",
+    "pair_id": "000208",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2850.342175006517",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "208",
+    "pair_id": "000208",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1360.9287619910901",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "209",
+    "pair_id": "000209",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1609.5889509888366",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "209",
+    "pair_id": "000209",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2456.2413489911705",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "210",
+    "pair_id": "000210",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2582.5004240032285",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "210",
+    "pair_id": "000210",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1408.653928010608",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "211",
+    "pair_id": "000211",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1444.707725007902",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "211",
+    "pair_id": "000211",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2004.1628579929238",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "212",
+    "pair_id": "000212",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1992.0182610076154",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "212",
+    "pair_id": "000212",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1219.4546390092",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "213",
+    "pair_id": "000213",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1189.971401996445",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "213",
+    "pair_id": "000213",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1974.5861670089653",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "214",
+    "pair_id": "000214",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2153.958651004359",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "214",
+    "pair_id": "000214",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "921.2238589971093",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "215",
+    "pair_id": "000215",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "904.1848380002193",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "215",
+    "pair_id": "000215",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1031.7697009886615",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "216",
+    "pair_id": "000216",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2277.767016988946",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "216",
+    "pair_id": "000216",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1106.7875670123613",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "217",
+    "pair_id": "000217",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1259.9856439919677",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "217",
+    "pair_id": "000217",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1910.660684996401",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "218",
+    "pair_id": "000218",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2231.4260420098435",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "218",
+    "pair_id": "000218",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1202.9327740019653",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "219",
+    "pair_id": "000219",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1290.0724799983436",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "219",
+    "pair_id": "000219",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2056.415933999233",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "220",
+    "pair_id": "000220",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2405.932870999095",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "220",
+    "pair_id": "000220",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1239.4074199983152",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "221",
+    "pair_id": "000221",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1330.5075079988455",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "221",
+    "pair_id": "000221",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1970.8870320027927",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "222",
+    "pair_id": "000222",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2290.4709959984757",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "222",
+    "pair_id": "000222",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1239.0792070073076",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "223",
+    "pair_id": "000223",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1426.5435980050825",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "223",
+    "pair_id": "000223",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2283.292331005214",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "224",
+    "pair_id": "000224",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2373.1552959943656",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "224",
+    "pair_id": "000224",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1413.2251870032633",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "225",
+    "pair_id": "000225",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1255.346203004592",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "225",
+    "pair_id": "000225",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2258.946226007538",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "226",
+    "pair_id": "000226",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2333.5402639932",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "226",
+    "pair_id": "000226",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1258.8422340049874",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "227",
+    "pair_id": "000227",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1352.1945599932224",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "227",
+    "pair_id": "000227",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2344.1917570016813",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "228",
+    "pair_id": "000228",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2300.485945001128",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "228",
+    "pair_id": "000228",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1324.6506009891164",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "229",
+    "pair_id": "000229",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1249.1492459957954",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "229",
+    "pair_id": "000229",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2275.964077998651",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "230",
+    "pair_id": "000230",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2258.417795994319",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "230",
+    "pair_id": "000230",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1247.8508159983903",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "231",
+    "pair_id": "000231",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1452.1145519975107",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "231",
+    "pair_id": "000231",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2390.0262429961003",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "232",
+    "pair_id": "000232",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2160.772691000602",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "232",
+    "pair_id": "000232",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1409.1466160025448",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "233",
+    "pair_id": "000233",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1208.870870003011",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "233",
+    "pair_id": "000233",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2494.5985579979606",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "234",
+    "pair_id": "000234",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2400.0544189912034",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "234",
+    "pair_id": "000234",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1241.4870290085673",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "235",
+    "pair_id": "000235",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1345.1570639881538",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "235",
+    "pair_id": "000235",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2030.3972929978045",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "236",
+    "pair_id": "000236",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2432.9152650025208",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "236",
+    "pair_id": "000236",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1209.8504309979035",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "237",
+    "pair_id": "000237",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1313.405471999431",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "237",
+    "pair_id": "000237",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2418.030949003878",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "238",
+    "pair_id": "000238",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2012.8833220078377",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "238",
+    "pair_id": "000238",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1353.1687590002548",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "239",
+    "pair_id": "000239",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1324.4234549929388",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "239",
+    "pair_id": "000239",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2264.684806999867",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "240",
+    "pair_id": "000240",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2343.4235360036837",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "240",
+    "pair_id": "000240",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1087.567021997529",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "241",
+    "pair_id": "000241",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1367.4272210046183",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "241",
+    "pair_id": "000241",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2174.3381730047986",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "242",
+    "pair_id": "000242",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2282.252151009743",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "242",
+    "pair_id": "000242",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1117.5054049963364",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "243",
+    "pair_id": "000243",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1280.6849799962947",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "243",
+    "pair_id": "000243",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2281.873643005383",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "244",
+    "pair_id": "000244",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2379.8892899940256",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "244",
+    "pair_id": "000244",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1317.6023159903707",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "245",
+    "pair_id": "000245",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1357.7705819916446",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "245",
+    "pair_id": "000245",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2292.4789329990745",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "246",
+    "pair_id": "000246",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2145.342368996353",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "246",
+    "pair_id": "000246",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1232.02971900173",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "247",
+    "pair_id": "000247",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1297.1819429949392",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "247",
+    "pair_id": "000247",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2376.663948991336",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "248",
+    "pair_id": "000248",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2434.473016008269",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "248",
+    "pair_id": "000248",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1232.9202819964848",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "249",
+    "pair_id": "000249",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1187.0123430126114",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "249",
+    "pair_id": "000249",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2439.2156160029117",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "250",
+    "pair_id": "000250",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2373.418182003661",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "250",
+    "pair_id": "000250",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1391.2025449972134",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "251",
+    "pair_id": "000251",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1296.584993993747",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "251",
+    "pair_id": "000251",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2103.6697850067867",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "252",
+    "pair_id": "000252",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2276.8775500007905",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "252",
+    "pair_id": "000252",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1296.492138004396",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "253",
+    "pair_id": "000253",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1227.9616560117574",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "253",
+    "pair_id": "000253",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2317.341221991228",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "254",
+    "pair_id": "000254",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2318.001727006049",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "254",
+    "pair_id": "000254",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1301.5658220101614",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "255",
+    "pair_id": "000255",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1404.5881850033766",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "255",
+    "pair_id": "000255",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3150.1328909944277",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "256",
+    "pair_id": "000256",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2674.3976439902326",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "256",
+    "pair_id": "000256",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1651.8071869941195",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "257",
+    "pair_id": "000257",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1615.6687229959061",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "257",
+    "pair_id": "000257",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3060.2403539960505",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "258",
+    "pair_id": "000258",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2773.8904240104603",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "258",
+    "pair_id": "000258",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1382.856433003326",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "259",
+    "pair_id": "000259",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1454.295485993498",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "259",
+    "pair_id": "000259",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3043.5726159921614",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "260",
+    "pair_id": "000260",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2861.0825659998227",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "260",
+    "pair_id": "000260",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1630.9764129982796",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "261",
+    "pair_id": "000261",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1568.7894239963498",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "261",
+    "pair_id": "000261",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3182.0018099970184",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "262",
+    "pair_id": "000262",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3041.7078630125616",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "262",
+    "pair_id": "000262",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1547.8011679952033",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "263",
+    "pair_id": "000263",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1524.4554759992752",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "263",
+    "pair_id": "000263",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2948.3528470009333",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "264",
+    "pair_id": "000264",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3038.60869500204",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "264",
+    "pair_id": "000264",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1354.4673209980829",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "265",
+    "pair_id": "000265",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1450.3986199997598",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "265",
+    "pair_id": "000265",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2851.613289996749",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "266",
+    "pair_id": "000266",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2943.973241999629",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "266",
+    "pair_id": "000266",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1626.6184999985853",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "267",
+    "pair_id": "000267",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1709.913418002543",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "267",
+    "pair_id": "000267",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2722.5839540042216",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "268",
+    "pair_id": "000268",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2935.6917020049877",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "268",
+    "pair_id": "000268",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1541.476338999928",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "269",
+    "pair_id": "000269",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1548.2855420123087",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "269",
+    "pair_id": "000269",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3161.371167996549",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "270",
+    "pair_id": "000270",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2808.587270992575",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "270",
+    "pair_id": "000270",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1617.2933490015566",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "271",
+    "pair_id": "000271",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1578.02151600481",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "271",
+    "pair_id": "000271",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2923.152504998143",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "272",
+    "pair_id": "000272",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2724.581610003952",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "272",
+    "pair_id": "000272",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1718.598186998861",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "273",
+    "pair_id": "000273",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1596.2833480007248",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "273",
+    "pair_id": "000273",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2902.4183779984014",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "274",
+    "pair_id": "000274",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2889.615356005379",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "274",
+    "pair_id": "000274",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1463.5990749957273",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "275",
+    "pair_id": "000275",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1625.2546369942138",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "275",
+    "pair_id": "000275",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3042.0566909888294",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "276",
+    "pair_id": "000276",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3007.6000570115866",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "276",
+    "pair_id": "000276",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1456.3837580062682",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "277",
+    "pair_id": "000277",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1472.607773001073",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "277",
+    "pair_id": "000277",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2157.7101220027544",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "278",
+    "pair_id": "000278",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1472.7481240115594",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "278",
+    "pair_id": "000278",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1395.891873005894",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "279",
+    "pair_id": "000279",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1620.2008389955154",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "279",
+    "pair_id": "000279",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2997.3125499964226",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "280",
+    "pair_id": "000280",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2935.839529003715",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "280",
+    "pair_id": "000280",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1566.0691850061994",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "281",
+    "pair_id": "000281",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1758.0274799984181",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "281",
+    "pair_id": "000281",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2719.1075129958335",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "282",
+    "pair_id": "000282",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2747.263040000689",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "282",
+    "pair_id": "000282",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1686.5853199997218",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "283",
+    "pair_id": "000283",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1709.3862329929834",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "283",
+    "pair_id": "000283",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2765.139311988605",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "284",
+    "pair_id": "000284",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2855.6948769983137",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "284",
+    "pair_id": "000284",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1577.184997004224",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "285",
+    "pair_id": "000285",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1644.4657350075431",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "285",
+    "pair_id": "000285",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2601.4073900005314",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "286",
+    "pair_id": "000286",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2800.2261869987706",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "286",
+    "pair_id": "000286",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1643.6046199960401",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "287",
+    "pair_id": "000287",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1751.9253850041423",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "287",
+    "pair_id": "000287",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2707.5834200077225",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "288",
+    "pair_id": "000288",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2706.665997990058",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "288",
+    "pair_id": "000288",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1686.4629310002783",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "289",
+    "pair_id": "000289",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1535.8074109972222",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "289",
+    "pair_id": "000289",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3077.424980001524",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "290",
+    "pair_id": "000290",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3023.295288992813",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "290",
+    "pair_id": "000290",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1618.418723999639",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "291",
+    "pair_id": "000291",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1562.40899299155",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "291",
+    "pair_id": "000291",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2946.8374220014084",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "292",
+    "pair_id": "000292",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2938.181256002281",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "292",
+    "pair_id": "000292",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1304.2159200122114",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "293",
+    "pair_id": "000293",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1647.7214089973131",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "293",
+    "pair_id": "000293",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3133.626730996184",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "294",
+    "pair_id": "000294",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3019.254872997408",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "294",
+    "pair_id": "000294",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1507.7038059971528",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "295",
+    "pair_id": "000295",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1683.968128010747",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "295",
+    "pair_id": "000295",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3012.8948089986807",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "296",
+    "pair_id": "000296",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2965.292542008683",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "296",
+    "pair_id": "000296",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1645.534076000331",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "297",
+    "pair_id": "000297",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1534.6888350031804",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "297",
+    "pair_id": "000297",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3092.3629789904226",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "298",
+    "pair_id": "000298",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2838.287152990233",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "298",
+    "pair_id": "000298",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1765.758604000439",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "299",
+    "pair_id": "000299",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1623.5129470005631",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "299",
+    "pair_id": "000299",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2722.6872140017804",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "300",
+    "pair_id": "000300",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2974.9613070016494",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "300",
+    "pair_id": "000300",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1588.1421189988032",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "301",
+    "pair_id": "000301",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1684.5766180049395",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "301",
+    "pair_id": "000301",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2615.1084439916303",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "302",
+    "pair_id": "000302",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3028.056826995453",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "302",
+    "pair_id": "000302",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1707.3059510003077",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "303",
+    "pair_id": "000303",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1275.6445249979151",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "303",
+    "pair_id": "000303",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3025.619153995649",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "304",
+    "pair_id": "000304",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2845.9659029904287",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "304",
+    "pair_id": "000304",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1619.093100001919",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "305",
+    "pair_id": "000305",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1513.0291300010867",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "305",
+    "pair_id": "000305",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3008.5126680060057",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "306",
+    "pair_id": "000306",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2720.1911109877983",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "306",
+    "pair_id": "000306",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1505.4399210057454",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "307",
+    "pair_id": "000307",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1524.0216920064995",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "307",
+    "pair_id": "000307",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2866.190917993663",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "308",
+    "pair_id": "000308",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2843.4938979917206",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "308",
+    "pair_id": "000308",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1306.9468120083911",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "309",
+    "pair_id": "000309",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1690.6600869988324",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "309",
+    "pair_id": "000309",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2754.2196529975627",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "310",
+    "pair_id": "000310",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2941.2804470048286",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "310",
+    "pair_id": "000310",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1601.5709560015239",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "311",
+    "pair_id": "000311",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1610.379635996651",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "311",
+    "pair_id": "000311",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2927.9049949982436",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "312",
+    "pair_id": "000312",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2542.8801369998837",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "312",
+    "pair_id": "000312",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1708.669708998059",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "313",
+    "pair_id": "000313",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1538.1069290015148",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "313",
+    "pair_id": "000313",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3056.2732870021136",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "314",
+    "pair_id": "000314",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2934.932949996437",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "314",
+    "pair_id": "000314",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1560.9025020094123",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "315",
+    "pair_id": "000315",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1498.7800680100918",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "315",
+    "pair_id": "000315",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2773.8830580055946",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "316",
+    "pair_id": "000316",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3022.3734689934645",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "316",
+    "pair_id": "000316",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1672.3503950051963",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "317",
+    "pair_id": "000317",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1603.3292549982434",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "317",
+    "pair_id": "000317",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2730.189584006439",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "318",
+    "pair_id": "000318",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3009.907027008012",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "318",
+    "pair_id": "000318",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1605.5887839902425",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "319",
+    "pair_id": "000319",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1610.8774190070108",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "319",
+    "pair_id": "000319",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2781.262564996723",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "320",
+    "pair_id": "000320",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3029.19748199929",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "320",
+    "pair_id": "000320",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1557.2462530108169",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "321",
+    "pair_id": "000321",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1429.4635349942837",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "321",
+    "pair_id": "000321",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2941.635317998589",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "322",
+    "pair_id": "000322",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3039.671634003753",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "322",
+    "pair_id": "000322",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1429.6410200040555",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "323",
+    "pair_id": "000323",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1646.6378240002086",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "323",
+    "pair_id": "000323",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3066.857401005109",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "324",
+    "pair_id": "000324",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2630.306032995577",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "324",
+    "pair_id": "000324",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1630.6591309985379",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "325",
+    "pair_id": "000325",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1660.6333980016643",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "325",
+    "pair_id": "000325",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2794.500567993964",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "326",
+    "pair_id": "000326",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2947.3478110012366",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "326",
+    "pair_id": "000326",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1324.7664410009747",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "327",
+    "pair_id": "000327",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1515.7169469894143",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "327",
+    "pair_id": "000327",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3033.26740799821",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "328",
+    "pair_id": "000328",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2918.724419985665",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "328",
+    "pair_id": "000328",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1311.6522589989472",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "329",
+    "pair_id": "000329",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1572.5562520092353",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "329",
+    "pair_id": "000329",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3074.5737889956217",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "330",
+    "pair_id": "000330",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2898.030065000057",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "330",
+    "pair_id": "000330",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1534.5403289975366",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "331",
+    "pair_id": "000331",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1625.6836819957243",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "331",
+    "pair_id": "000331",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2878.0694260058226",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "332",
+    "pair_id": "000332",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3069.8801499966066",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "332",
+    "pair_id": "000332",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1533.1936470029177",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "333",
+    "pair_id": "000333",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1637.6031289983075",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "333",
+    "pair_id": "000333",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2775.345895002829",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "334",
+    "pair_id": "000334",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2389.6024329878855",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "334",
+    "pair_id": "000334",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1002.2190919989953",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "335",
+    "pair_id": "000335",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "711.8261979921954",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "335",
+    "pair_id": "000335",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2143.592981999973",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "336",
+    "pair_id": "000336",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3010.3228660009336",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "336",
+    "pair_id": "000336",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1625.9823180007515",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "337",
+    "pair_id": "000337",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1488.3580400055507",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "337",
+    "pair_id": "000337",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2944.3265939917183",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "338",
+    "pair_id": "000338",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2970.701728001586",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "338",
+    "pair_id": "000338",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1605.1279390085256",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "339",
+    "pair_id": "000339",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1540.0566190073732",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "339",
+    "pair_id": "000339",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2805.739099989296",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "340",
+    "pair_id": "000340",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2985.038683997118",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "340",
+    "pair_id": "000340",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1744.0602660062723",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "341",
+    "pair_id": "000341",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1705.8235699951183",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "341",
+    "pair_id": "000341",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2821.8484699900728",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "342",
+    "pair_id": "000342",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2807.7002960053505",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "342",
+    "pair_id": "000342",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1563.8065529929008",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "343",
+    "pair_id": "000343",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1711.9865610002307",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "343",
+    "pair_id": "000343",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2581.528717011679",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "344",
+    "pair_id": "000344",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3073.0894489970524",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "344",
+    "pair_id": "000344",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1666.623081007856",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "345",
+    "pair_id": "000345",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1385.492773988517",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "345",
+    "pair_id": "000345",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3083.9773590123514",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "346",
+    "pair_id": "000346",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2792.56310799974",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "346",
+    "pair_id": "000346",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1416.2923129915725",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "347",
+    "pair_id": "000347",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1712.3429130006116",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "347",
+    "pair_id": "000347",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2843.3044709963724",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "348",
+    "pair_id": "000348",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "3032.7875350049",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "348",
+    "pair_id": "000348",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1566.1161429889034",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "349",
+    "pair_id": "000349",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1544.24652500893",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "349",
+    "pair_id": "000349",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3025.0721009942936",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "350",
+    "pair_id": "000350",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2910.1419759972487",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "350",
+    "pair_id": "000350",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1604.8642690002453",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "351",
+    "pair_id": "000351",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1704.4668339949567",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "351",
+    "pair_id": "000351",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3011.7415050044656",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "352",
+    "pair_id": "000352",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2817.028390010819",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "352",
+    "pair_id": "000352",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1569.6959040069487",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "353",
+    "pair_id": "000353",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1547.6518320065225",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "353",
+    "pair_id": "000353",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3053.7097939959494",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "354",
+    "pair_id": "000354",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2994.862559993635",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "354",
+    "pair_id": "000354",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1626.7901179962792",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "355",
+    "pair_id": "000355",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1604.7412979969522",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "355",
+    "pair_id": "000355",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3001.287102000788",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "356",
+    "pair_id": "000356",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2870.3098650003085",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "356",
+    "pair_id": "000356",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1618.2203920034226",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "357",
+    "pair_id": "000357",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1419.7434930101736",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "357",
+    "pair_id": "000357",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2922.668569997768",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "358",
+    "pair_id": "000358",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2863.870175991906",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "358",
+    "pair_id": "000358",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1333.3411409985274",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "359",
+    "pair_id": "000359",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1601.3291190029122",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "359",
+    "pair_id": "000359",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2895.5605480005033",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "360",
+    "pair_id": "000360",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2958.4137290075887",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "360",
+    "pair_id": "000360",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1547.0063249958912",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "361",
+    "pair_id": "000361",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1596.375020002597",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "361",
+    "pair_id": "000361",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2749.7682659886777",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "362",
+    "pair_id": "000362",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2850.519337996957",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "362",
+    "pair_id": "000362",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1623.4437770035584",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "363",
+    "pair_id": "000363",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1656.1048349976772",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "363",
+    "pair_id": "000363",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2850.577795004938",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "364",
+    "pair_id": "000364",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2813.1150789995445",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "364",
+    "pair_id": "000364",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1559.3540179979755",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "365",
+    "pair_id": "000365",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1444.4345570082078",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "365",
+    "pair_id": "000365",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2889.9893979978515",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "366",
+    "pair_id": "000366",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2872.566021993407",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "366",
+    "pair_id": "000366",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1535.9021420008503",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "367",
+    "pair_id": "000367",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1472.8788060019724",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "367",
+    "pair_id": "000367",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "3170.1835799904075",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "368",
+    "pair_id": "000368",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2830.156429001363",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "368",
+    "pair_id": "000368",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1397.5257760030217",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "369",
+    "pair_id": "000369",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1366.7991129914299",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "369",
+    "pair_id": "000369",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2919.1371720080497",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "370",
+    "pair_id": "000370",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2768.1652550090803",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "370",
+    "pair_id": "000370",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1257.456261999323",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "371",
+    "pair_id": "000371",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1473.3172809937969",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "371",
+    "pair_id": "000371",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2752.2850109962747",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "372",
+    "pair_id": "000372",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2772.4352369987173",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "372",
+    "pair_id": "000372",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1619.9206390010659",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "373",
+    "pair_id": "000373",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1582.8093670133967",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "373",
+    "pair_id": "000373",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2874.1119949991116",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "374",
+    "pair_id": "000374",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2738.7499409960583",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "374",
+    "pair_id": "000374",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1555.3000930085545",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "375",
+    "pair_id": "000375",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1504.2808500002138",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "375",
+    "pair_id": "000375",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2773.192103995825",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "376",
+    "pair_id": "000376",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2871.8038640072336",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "376",
+    "pair_id": "000376",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1479.9635139934253",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "377",
+    "pair_id": "000377",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1488.6134600092191",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "377",
+    "pair_id": "000377",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2680.344430002151",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "378",
+    "pair_id": "000378",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2758.1873960007215",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "378",
+    "pair_id": "000378",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1487.1088319923729",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "379",
+    "pair_id": "000379",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1318.7455240113195",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "379",
+    "pair_id": "000379",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2775.6124409934273",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "380",
+    "pair_id": "000380",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2484.974749997491",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "380",
+    "pair_id": "000380",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1232.4832500016782",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "381",
+    "pair_id": "000381",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1033.040725000319",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "381",
+    "pair_id": "000381",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1992.272186995251",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "382",
+    "pair_id": "000382",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2318.80922599521",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "382",
+    "pair_id": "000382",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1193.9371999906143",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "383",
+    "pair_id": "000383",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1325.0671620044159",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "383",
+    "pair_id": "000383",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2006.2721840076847",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "384",
+    "pair_id": "000384",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2254.3642470118357",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "384",
+    "pair_id": "000384",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1258.078230996034",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "385",
+    "pair_id": "000385",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "985.1834820001386",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "385",
+    "pair_id": "000385",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2287.833408001461",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "386",
+    "pair_id": "000386",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2040.558275009971",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "386",
+    "pair_id": "000386",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1243.4636840043822",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "387",
+    "pair_id": "000387",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1183.546831991407",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "387",
+    "pair_id": "000387",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2366.441580990795",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "388",
+    "pair_id": "000388",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1809.4280270015588",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "388",
+    "pair_id": "000388",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1266.982683999231",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "389",
+    "pair_id": "000389",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1090.7191529986449",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "389",
+    "pair_id": "000389",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2233.754314001999",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "390",
+    "pair_id": "000390",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1994.5315800141543",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "390",
+    "pair_id": "000390",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "975.6820360053098",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "391",
+    "pair_id": "000391",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1174.2778120096773",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "391",
+    "pair_id": "000391",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1976.3280280021718",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "392",
+    "pair_id": "000392",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2228.3478180033853",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "392",
+    "pair_id": "000392",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1254.1556250071153",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "393",
+    "pair_id": "000393",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1153.9290590008022",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "393",
+    "pair_id": "000393",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1990.7732480060076",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "394",
+    "pair_id": "000394",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2244.3721470044693",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "394",
+    "pair_id": "000394",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1231.7549059953308",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "395",
+    "pair_id": "000395",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1457.3331569990842",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "395",
+    "pair_id": "000395",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2364.368424008717",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "396",
+    "pair_id": "000396",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2084.010849997867",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "396",
+    "pair_id": "000396",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1315.976605998003",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "397",
+    "pair_id": "000397",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "895.4324939986691",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "397",
+    "pair_id": "000397",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "1428.677075993619",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "398",
+    "pair_id": "000398",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1974.581861999468",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "398",
+    "pair_id": "000398",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1475.7140670117224",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "399",
+    "pair_id": "000399",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1341.4769660012098",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "399",
+    "pair_id": "000399",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2371.279997008969",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "400",
+    "pair_id": "000400",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2468.529129997478",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "400",
+    "pair_id": "000400",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1225.2457049908116",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "401",
+    "pair_id": "000401",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1278.5701910033822",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "401",
+    "pair_id": "000401",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2248.0577250098577",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "402",
+    "pair_id": "000402",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2192.7744949935004",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "402",
+    "pair_id": "000402",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1473.4514570009196",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "403",
+    "pair_id": "000403",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1072.3572229908314",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "403",
+    "pair_id": "000403",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2369.002614999772",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "404",
+    "pair_id": "000404",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2246.341312988079",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "404",
+    "pair_id": "000404",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1230.953658989165",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "405",
+    "pair_id": "000405",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1371.1519479984418",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "405",
+    "pair_id": "000405",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2340.4892230028054",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "406",
+    "pair_id": "000406",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "1966.2278600007994",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "406",
+    "pair_id": "000406",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1333.0092149990378",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "407",
+    "pair_id": "000407",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1199.2349490028573",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "407",
+    "pair_id": "000407",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2376.7682210018393",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "408",
+    "pair_id": "000408",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2219.1567400004715",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "408",
+    "pair_id": "000408",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1210.2330709894886",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "409",
+    "pair_id": "000409",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1422.061916993698",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "409",
+    "pair_id": "000409",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2336.779741992359",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "410",
+    "pair_id": "000410",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2118.059599000844",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "410",
+    "pair_id": "000410",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1473.491347001982",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "411",
+    "pair_id": "000411",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1332.0976850081934",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "411",
+    "pair_id": "000411",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2368.5622210032307",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "412",
+    "pair_id": "000412",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2371.981036994839",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "412",
+    "pair_id": "000412",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1339.1916040127398",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "413",
+    "pair_id": "000413",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1391.4264910126803",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "413",
+    "pair_id": "000413",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2256.234233005671",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "414",
+    "pair_id": "000414",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2302.421398999286",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "414",
+    "pair_id": "000414",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1394.8837219941197",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "415",
+    "pair_id": "000415",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1219.6304160024738",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "415",
+    "pair_id": "000415",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2476.1868180066813",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "416",
+    "pair_id": "000416",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2406.325743999332",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "416",
+    "pair_id": "000416",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1197.2102829895448",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "417",
+    "pair_id": "000417",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1404.2181169934338",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "417",
+    "pair_id": "000417",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2389.676213002531",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "418",
+    "pair_id": "000418",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2456.065688995295",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "418",
+    "pair_id": "000418",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1189.1377330030082",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "419",
+    "pair_id": "000419",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1375.1571030006744",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "419",
+    "pair_id": "000419",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2340.272501009167",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "420",
+    "pair_id": "000420",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2082.8507209953386",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "420",
+    "pair_id": "000420",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1261.4945129898842",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "421",
+    "pair_id": "000421",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1230.3420240059495",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "421",
+    "pair_id": "000421",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2270.256301999325",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "422",
+    "pair_id": "000422",
+    "variant": "original129",
+    "order": "0",
+    "elapsed_ms": "2292.952954012435",
+    "lsr_calls": "129"
+  },
+  {
+    "pair_index": "422",
+    "pair_id": "000422",
+    "variant": "final5",
+    "order": "1",
+    "elapsed_ms": "1311.774161993526",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "423",
+    "pair_id": "000423",
+    "variant": "final5",
+    "order": "0",
+    "elapsed_ms": "1235.3066469950136",
+    "lsr_calls": "5"
+  },
+  {
+    "pair_index": "423",
+    "pair_id": "000423",
+    "variant": "original129",
+    "order": "1",
+    "elapsed_ms": "2276.47868799977",
+    "lsr_calls": "129"
+  }
+]

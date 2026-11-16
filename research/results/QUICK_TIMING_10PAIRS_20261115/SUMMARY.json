@@ -1,0 +1,58 @@
+{
+  "status": "COMPLETE",
+  "shared_gpu": true,
+  "measured_pairs": 10,
+  "warmup_pairs_per_model": 3,
+  "iterations": 32,
+  "mean_latency_ratio_m4_over_gdros": 7.927603715957962,
+  "gdros": {
+    "fps": 8.251153317960316,
+    "max_ms": 143.98652099771425,
+    "mean_ms": 121.19517859682674,
+    "median_ms": 118.75865549518494,
+    "min_ms": 116.39718600781634,
+    "std_ms": 7.76051541562885,
+    "total_seconds": 1.2119517859682674
+  },
+  "m4": {
+    "fps": 1.0408130392985036,
+    "max_ms": 1003.4787590120686,
+    "mean_ms": 960.7873482003924,
+    "median_ms": 952.0997510044253,
+    "min_ms": 935.3388820018154,
+    "std_ms": 22.93612990552001,
+    "total_seconds": 9.607873482003924
+  },
+  "lsr_calls_per_pair": {
+    "gdros": 1,
+    "m4": 129
+  },
+  "indices": [
+    0,
+    47,
+    94,
+    141,
+    188,
+    235,
+    282,
+    329,
+    376,
+    423
+  ],
+  "gpu_uuid": "GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17",
+  "external_pids": {
+    "gdros": [
+      "945911"
+    ],
+    "m4": [
+      "945911"
+    ]
+  },
+  "checkpoint_sha256": {
+    "gdros": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+    "m4": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b"
+  },
+  "limitation": "Shared GPU, ten pairs, one measurement each; total method latency comparison, not LSR-only attribution.",
+  "c_skip_teachers": true,
+  "metadata_correction": "Measured remote PairFusion default already skips C teachers; prior prose/implementation label claiming retained teachers was incorrect. Recorded hashes, latencies and LSR counts remain valid."
+}

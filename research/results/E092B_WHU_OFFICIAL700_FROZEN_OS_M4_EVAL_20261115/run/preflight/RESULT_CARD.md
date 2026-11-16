@@ -1,0 +1,87 @@
+# E092B preflight
+
+Status: `PASS`
+
+```json
+{
+  "archive": "/mnt/sda/zhushihao/data/vis_sar/WHU_OPT_SAR/testing.zip",
+  "archive_parity": {
+    "all_match_archive": true,
+    "archive_files": 2800,
+    "content_manifest_sha256": "a0530c5f649892c25f4a3a952a12be0488d9985de9202eed528e5fcff1c30166",
+    "exact_member_set": true,
+    "files": 2800,
+    "mismatches": [],
+    "missing_members": [],
+    "unexpected_members": []
+  },
+  "core_dependency_code_hashes": {
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/GDROSnet/FeatureFormer/gdros.py": "8bf03e580a863d2e5752d0dccf028ccfa235067691aa013ee66458f1b846cced",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/LSRnet/LSmodel.py": "8e7e329bd8b0589398765b053e7a7375e7686ba4377a179572d7ad5d5b089d91",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/datasets.py": "9e7fcf7c5e63ab18fcd33fd5e8c7655d7cef6346bf6e04e063c34437a67e6a58",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/test.py": "69d165ff51b38c942ec536da131082e700608c15bb53df2ada939291038f25fd",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e072a_layerwise_frontend_alignment.py": "d66da78417b32a4dac36e431f610367e5f6b884ea5a79a3626948c68d044a156",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e073a_v1_v2_fusion_longtrain.py": "8d20a1dd3e1a76e11f68a304b0e09720a4ae2f9a73821b84991922350553507f",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e074a_f2_f3_twostage_fusion.py": "233412162f127bf1924403bc865549f1f5784f15c029bdf4b578938d1a4ecc01",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e075a_preserve_high_precision_recover_c2c5.py": "2626d29005ae8915a82f9a793850b5523ba2d6a013991161895152879ea621bf",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e092b_whu_eval.py": "ff70eca3a3bd94a62c9b12ea18198b8483746030a2c853036b5098722a432991"
+  },
+  "dataset": "WHU-OPT-SAR author-public single test group",
+  "environment": {
+    "cuda_runtime": "12.8",
+    "hostname": "ubuntu",
+    "numpy": "2.2.6",
+    "pillow": "12.2.0",
+    "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+    "torch": "2.8.0+cu128",
+    "torch_num_threads": 1
+  },
+  "gt_format": "Middlebury .flo float32 [H,W,2]",
+  "hash_mismatches": {},
+  "hashes": {
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f2-warm120k/checkpoints/F2_step120000.pt": "4a52307fa4b7b67756ac979310fa37d34a131cc182a39e2c45d86711972dab06",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f3-warm120k/checkpoints/F3_step120000.pt": "e5a9c612a7b9b85c568b88776ef784873d5df693cb570ad3dbbbf52fe4801ffd",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-stage180k/checkpoints/B_step180000.pt": "f40d80f2dca62e74ec86c1823963282a490d47f336f2cfce4a28fc211ea33218",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/checkpoints/C_step180000.pt": "c3c67e6d65aca0dd55cf7af2c2a9eedccadadc0fec5ad11fe6e493e08ecc85b9",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/checkpoints/M4_step80000.pt": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/official_models_reference/GDROS-whu-opt-sar512.pth": "b6ebe175e59429272ae6aecda5f8fe5c5da2d451a283ac95b4892b5732d22a16",
+    "/mnt/sda/zhushihao/data/vis_sar/WHU_OPT_SAR/testing.zip": "7c658901f6aed4ecd988c198edc6d79fd5775b5441fb04cf8ed7a8997c21a49f"
+  },
+  "invalid_gt": [],
+  "last_completed_stage": "CPU_PREFLIGHT",
+  "m4_identity": "OS E075A step80K only; WHU E081A forbidden",
+  "main_table": [
+    "gdros_whu_iter32_post_lsr",
+    "os_m4_iter32_post_lsr"
+  ],
+  "missing_gt": [],
+  "official_loader_input_parity": {
+    "input_kind": "official .png glob over symlinks to the audited TIFF bytes",
+    "pair_ids_exact_order": true,
+    "pairs": 700,
+    "source_target_tensor_max_abs_difference": 0.0,
+    "status": "PASS",
+    "tensor_dtype": "torch.float32",
+    "tensor_shape": [
+      3,
+      512,
+      512
+    ],
+    "view_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-092B-WHU-OFFICIAL700-FROZEN-OS-M4-EVAL/official_loader_view"
+  },
+  "official_source_commit": "ee6b6216fe780bc03bfb4759ae094daa0cfddc60",
+  "pairs": 700,
+  "paper_protocol_scope": "one public test group; not the paper's three-seed mean+-std",
+  "sample_tensor_shape": [
+    1,
+    3,
+    512,
+    512
+  ],
+  "status": "PASS",
+  "supplement_only": "os_m4_iter24_post_lsr",
+  "task": "preflight",
+  "updated_at_unix": 1794714818.7742803,
+  "whole_image_no_mask": true
+}
+```

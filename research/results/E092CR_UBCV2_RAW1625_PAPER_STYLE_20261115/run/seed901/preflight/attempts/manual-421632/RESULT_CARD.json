@@ -1,0 +1,8 @@
+{
+  "failure_reason": "RuntimeError('UBCv2 E092C-R preflight failed')",
+  "last_completed_stage": "EXCEPTION",
+  "status": "FAILED",
+  "task": "preflight",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e092cr_ubcv2_eval.py\", line 573, in main\n    if args.task == \"preflight\": preflight()\n  File \"/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e092cr_ubcv2_eval.py\", line 331, in preflight\n    raise RuntimeError(\"UBCv2 E092C-R preflight failed\")\nRuntimeError: UBCv2 E092C-R preflight failed\n",
+  "updated_at_unix": 1794716714.7631884
+}

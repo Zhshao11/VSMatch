@@ -1,0 +1,8 @@
+{
+  "failure_reason": "RuntimeError('E092A M4 regression mismatch')",
+  "last_completed_stage": "EXCEPTION",
+  "status": "FAILED",
+  "task": "join",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e093a_bc_ablation_profile.py\", line 797, in main\n    elif args.task == \"join\": join()\n  File \"/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e093a_bc_ablation_profile.py\", line 613, in join\n    if card[\"status\"] != \"COMPLETE\": raise RuntimeError(\"E092A M4 regression mismatch\")\nRuntimeError: E092A M4 regression mismatch\n",
+  "updated_at_unix": 1794763030.5577781
+}

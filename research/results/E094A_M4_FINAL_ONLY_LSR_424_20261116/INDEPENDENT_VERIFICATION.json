@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "predictions": 848,
+  "paired_post_npy_sha256_equal": 424,
+  "source_snapshot_hashes_verified": 8,
+  "raw_max_abs": 0.0,
+  "post_max_abs": 0.0,
+  "metric_dictionaries_equal": true,
+  "mean_latency_reduction_percent": 45.03661626645189,
+  "full_manifest_sha256": "b20649597d6096f9d4b8b4b9d9ec17bf293ec30f6b6bf114fa2e77d6bcd784c6"
+}

@@ -1,0 +1,3394 @@
+[
+  {
+    "pair_index": "0",
+    "pair_id": "000000",
+    "reference5__public_component": "1.3043371438980103",
+    "reference5__vector_epe": "2.124871253967285",
+    "clean__public_component": "1.3043371438980103",
+    "clean__vector_epe": "2.124871253967285"
+  },
+  {
+    "pair_index": "1",
+    "pair_id": "000001",
+    "reference5__public_component": "0.24776314198970795",
+    "reference5__vector_epe": "0.41651254892349243",
+    "clean__public_component": "0.24776314198970795",
+    "clean__vector_epe": "0.41651254892349243"
+  },
+  {
+    "pair_index": "2",
+    "pair_id": "000002",
+    "reference5__public_component": "0.14898265898227692",
+    "reference5__vector_epe": "0.23053544759750366",
+    "clean__public_component": "0.14898265898227692",
+    "clean__vector_epe": "0.23053544759750366"
+  },
+  {
+    "pair_index": "3",
+    "pair_id": "000003",
+    "reference5__public_component": "0.8295470476150513",
+    "reference5__vector_epe": "1.3688198328018188",
+    "clean__public_component": "0.8295470476150513",
+    "clean__vector_epe": "1.3688198328018188"
+  },
+  {
+    "pair_index": "4",
+    "pair_id": "000004",
+    "reference5__public_component": "0.1721629947423935",
+    "reference5__vector_epe": "0.26552143692970276",
+    "clean__public_component": "0.1721629947423935",
+    "clean__vector_epe": "0.26552143692970276"
+  },
+  {
+    "pair_index": "5",
+    "pair_id": "000005",
+    "reference5__public_component": "0.18392100930213928",
+    "reference5__vector_epe": "0.30476275086402893",
+    "clean__public_component": "0.18392100930213928",
+    "clean__vector_epe": "0.30476275086402893"
+  },
+  {
+    "pair_index": "6",
+    "pair_id": "000006",
+    "reference5__public_component": "0.16413775086402893",
+    "reference5__vector_epe": "0.2496800273656845",
+    "clean__public_component": "0.16413775086402893",
+    "clean__vector_epe": "0.2496800273656845"
+  },
+  {
+    "pair_index": "7",
+    "pair_id": "000007",
+    "reference5__public_component": "0.2006361335515976",
+    "reference5__vector_epe": "0.3344131410121918",
+    "clean__public_component": "0.2006361335515976",
+    "clean__vector_epe": "0.3344131410121918"
+  },
+  {
+    "pair_index": "8",
+    "pair_id": "000008",
+    "reference5__public_component": "0.3074497878551483",
+    "reference5__vector_epe": "0.4675597548484802",
+    "clean__public_component": "0.3074497878551483",
+    "clean__vector_epe": "0.4675597548484802"
+  },
+  {
+    "pair_index": "9",
+    "pair_id": "000009",
+    "reference5__public_component": "0.25981178879737854",
+    "reference5__vector_epe": "0.41607123613357544",
+    "clean__public_component": "0.25981178879737854",
+    "clean__vector_epe": "0.41607123613357544"
+  },
+  {
+    "pair_index": "10",
+    "pair_id": "000010",
+    "reference5__public_component": "0.460440069437027",
+    "reference5__vector_epe": "0.6703852415084839",
+    "clean__public_component": "0.460440069437027",
+    "clean__vector_epe": "0.6703852415084839"
+  },
+  {
+    "pair_index": "11",
+    "pair_id": "000011",
+    "reference5__public_component": "1.150099754333496",
+    "reference5__vector_epe": "1.704265832901001",
+    "clean__public_component": "1.150099754333496",
+    "clean__vector_epe": "1.704265832901001"
+  },
+  {
+    "pair_index": "12",
+    "pair_id": "000012",
+    "reference5__public_component": "0.9905775785446167",
+    "reference5__vector_epe": "1.4686365127563477",
+    "clean__public_component": "0.9905775785446167",
+    "clean__vector_epe": "1.4686365127563477"
+  },
+  {
+    "pair_index": "13",
+    "pair_id": "000013",
+    "reference5__public_component": "0.581771194934845",
+    "reference5__vector_epe": "0.9115177989006042",
+    "clean__public_component": "0.581771194934845",
+    "clean__vector_epe": "0.9115177989006042"
+  },
+  {
+    "pair_index": "14",
+    "pair_id": "000014",
+    "reference5__public_component": "0.37126338481903076",
+    "reference5__vector_epe": "0.5810760259628296",
+    "clean__public_component": "0.37126338481903076",
+    "clean__vector_epe": "0.5810760259628296"
+  },
+  {
+    "pair_index": "15",
+    "pair_id": "000015",
+    "reference5__public_component": "0.4791623055934906",
+    "reference5__vector_epe": "0.7235789895057678",
+    "clean__public_component": "0.4791623055934906",
+    "clean__vector_epe": "0.7235789895057678"
+  },
+  {
+    "pair_index": "16",
+    "pair_id": "000016",
+    "reference5__public_component": "4.754292964935303",
+    "reference5__vector_epe": "7.6337385177612305",
+    "clean__public_component": "4.754292964935303",
+    "clean__vector_epe": "7.6337385177612305"
+  },
+  {
+    "pair_index": "17",
+    "pair_id": "000017",
+    "reference5__public_component": "0.31712985038757324",
+    "reference5__vector_epe": "0.5729792714118958",
+    "clean__public_component": "0.31712985038757324",
+    "clean__vector_epe": "0.5729792714118958"
+  },
+  {
+    "pair_index": "18",
+    "pair_id": "000018",
+    "reference5__public_component": "0.6421957612037659",
+    "reference5__vector_epe": "1.1318590641021729",
+    "clean__public_component": "0.6421957612037659",
+    "clean__vector_epe": "1.1318590641021729"
+  },
+  {
+    "pair_index": "19",
+    "pair_id": "000019",
+    "reference5__public_component": "0.9526106119155884",
+    "reference5__vector_epe": "1.4219342470169067",
+    "clean__public_component": "0.9526106119155884",
+    "clean__vector_epe": "1.4219342470169067"
+  },
+  {
+    "pair_index": "20",
+    "pair_id": "000020",
+    "reference5__public_component": "0.39150387048721313",
+    "reference5__vector_epe": "0.6706371903419495",
+    "clean__public_component": "0.39150387048721313",
+    "clean__vector_epe": "0.6706371903419495"
+  },
+  {
+    "pair_index": "21",
+    "pair_id": "000021",
+    "reference5__public_component": "0.2595139741897583",
+    "reference5__vector_epe": "0.38520944118499756",
+    "clean__public_component": "0.2595139741897583",
+    "clean__vector_epe": "0.38520944118499756"
+  },
+  {
+    "pair_index": "22",
+    "pair_id": "000022",
+    "reference5__public_component": "1.5978981256484985",
+    "reference5__vector_epe": "2.8538784980773926",
+    "clean__public_component": "1.5978981256484985",
+    "clean__vector_epe": "2.8538784980773926"
+  },
+  {
+    "pair_index": "23",
+    "pair_id": "000023",
+    "reference5__public_component": "1.4625495672225952",
+    "reference5__vector_epe": "2.1064329147338867",
+    "clean__public_component": "1.4625495672225952",
+    "clean__vector_epe": "2.1064329147338867"
+  },
+  {
+    "pair_index": "24",
+    "pair_id": "000024",
+    "reference5__public_component": "0.6112191081047058",
+    "reference5__vector_epe": "0.9558870196342468",
+    "clean__public_component": "0.6112191081047058",
+    "clean__vector_epe": "0.9558870196342468"
+  },
+  {
+    "pair_index": "25",
+    "pair_id": "000025",
+    "reference5__public_component": "0.17128382623195648",
+    "reference5__vector_epe": "0.28536882996559143",
+    "clean__public_component": "0.17128382623195648",
+    "clean__vector_epe": "0.28536882996559143"
+  },
+  {
+    "pair_index": "26",
+    "pair_id": "000026",
+    "reference5__public_component": "0.2735575735569",
+    "reference5__vector_epe": "0.40786686539649963",
+    "clean__public_component": "0.2735575735569",
+    "clean__vector_epe": "0.40786686539649963"
+  },
+  {
+    "pair_index": "27",
+    "pair_id": "000027",
+    "reference5__public_component": "0.6852646470069885",
+    "reference5__vector_epe": "1.031054973602295",
+    "clean__public_component": "0.6852646470069885",
+    "clean__vector_epe": "1.031054973602295"
+  },
+  {
+    "pair_index": "28",
+    "pair_id": "000028",
+    "reference5__public_component": "3.532762289047241",
+    "reference5__vector_epe": "5.7786993980407715",
+    "clean__public_component": "3.532762289047241",
+    "clean__vector_epe": "5.7786993980407715"
+  },
+  {
+    "pair_index": "29",
+    "pair_id": "000029",
+    "reference5__public_component": "0.6237572431564331",
+    "reference5__vector_epe": "0.9638469219207764",
+    "clean__public_component": "0.6237572431564331",
+    "clean__vector_epe": "0.9638469219207764"
+  },
+  {
+    "pair_index": "30",
+    "pair_id": "000030",
+    "reference5__public_component": "2.0971012115478516",
+    "reference5__vector_epe": "3.132140874862671",
+    "clean__public_component": "2.0971012115478516",
+    "clean__vector_epe": "3.132140874862671"
+  },
+  {
+    "pair_index": "31",
+    "pair_id": "000031",
+    "reference5__public_component": "1.656482458114624",
+    "reference5__vector_epe": "2.5648326873779297",
+    "clean__public_component": "1.656482458114624",
+    "clean__vector_epe": "2.5648326873779297"
+  },
+  {
+    "pair_index": "32",
+    "pair_id": "000032",
+    "reference5__public_component": "0.4360591471195221",
+    "reference5__vector_epe": "0.6428248882293701",
+    "clean__public_component": "0.4360591471195221",
+    "clean__vector_epe": "0.6428248882293701"
+  },
+  {
+    "pair_index": "33",
+    "pair_id": "000033",
+    "reference5__public_component": "0.4459390938282013",
+    "reference5__vector_epe": "0.7094525694847107",
+    "clean__public_component": "0.4459390938282013",
+    "clean__vector_epe": "0.7094525694847107"
+  },
+  {
+    "pair_index": "34",
+    "pair_id": "000034",
+    "reference5__public_component": "0.16271176934242249",
+    "reference5__vector_epe": "0.24171198904514313",
+    "clean__public_component": "0.16271176934242249",
+    "clean__vector_epe": "0.24171198904514313"
+  },
+  {
+    "pair_index": "35",
+    "pair_id": "000035",
+    "reference5__public_component": "0.23976491391658783",
+    "reference5__vector_epe": "0.35501617193222046",
+    "clean__public_component": "0.23976491391658783",
+    "clean__vector_epe": "0.35501617193222046"
+  },
+  {
+    "pair_index": "36",
+    "pair_id": "000036",
+    "reference5__public_component": "0.19900387525558472",
+    "reference5__vector_epe": "0.3011237382888794",
+    "clean__public_component": "0.19900387525558472",
+    "clean__vector_epe": "0.3011237382888794"
+  },
+  {
+    "pair_index": "37",
+    "pair_id": "000037",
+    "reference5__public_component": "0.29422667622566223",
+    "reference5__vector_epe": "0.4367005228996277",
+    "clean__public_component": "0.29422667622566223",
+    "clean__vector_epe": "0.4367005228996277"
+  },
+  {
+    "pair_index": "38",
+    "pair_id": "000038",
+    "reference5__public_component": "0.31297171115875244",
+    "reference5__vector_epe": "0.4785473644733429",
+    "clean__public_component": "0.31297171115875244",
+    "clean__vector_epe": "0.4785473644733429"
+  },
+  {
+    "pair_index": "39",
+    "pair_id": "000039",
+    "reference5__public_component": "0.3723069429397583",
+    "reference5__vector_epe": "0.6809921264648438",
+    "clean__public_component": "0.3723069429397583",
+    "clean__vector_epe": "0.6809921264648438"
+  },
+  {
+    "pair_index": "40",
+    "pair_id": "000040",
+    "reference5__public_component": "0.7744901776313782",
+    "reference5__vector_epe": "1.306625485420227",
+    "clean__public_component": "0.7744901776313782",
+    "clean__vector_epe": "1.306625485420227"
+  },
+  {
+    "pair_index": "41",
+    "pair_id": "000041",
+    "reference5__public_component": "0.806049644947052",
+    "reference5__vector_epe": "1.2474192380905151",
+    "clean__public_component": "0.806049644947052",
+    "clean__vector_epe": "1.2474192380905151"
+  },
+  {
+    "pair_index": "42",
+    "pair_id": "000042",
+    "reference5__public_component": "0.33351337909698486",
+    "reference5__vector_epe": "0.5345242023468018",
+    "clean__public_component": "0.33351337909698486",
+    "clean__vector_epe": "0.5345242023468018"
+  },
+  {
+    "pair_index": "43",
+    "pair_id": "000043",
+    "reference5__public_component": "0.8511419892311096",
+    "reference5__vector_epe": "1.371944785118103",
+    "clean__public_component": "0.8511419892311096",
+    "clean__vector_epe": "1.371944785118103"
+  },
+  {
+    "pair_index": "44",
+    "pair_id": "000044",
+    "reference5__public_component": "0.3992559015750885",
+    "reference5__vector_epe": "0.6725215315818787",
+    "clean__public_component": "0.3992559015750885",
+    "clean__vector_epe": "0.6725215315818787"
+  },
+  {
+    "pair_index": "45",
+    "pair_id": "000045",
+    "reference5__public_component": "0.23655147850513458",
+    "reference5__vector_epe": "0.3556895852088928",
+    "clean__public_component": "0.23655147850513458",
+    "clean__vector_epe": "0.3556895852088928"
+  },
+  {
+    "pair_index": "46",
+    "pair_id": "000046",
+    "reference5__public_component": "0.926311731338501",
+    "reference5__vector_epe": "1.358019471168518",
+    "clean__public_component": "0.926311731338501",
+    "clean__vector_epe": "1.358019471168518"
+  },
+  {
+    "pair_index": "47",
+    "pair_id": "000047",
+    "reference5__public_component": "0.385134756565094",
+    "reference5__vector_epe": "0.5942806005477905",
+    "clean__public_component": "0.385134756565094",
+    "clean__vector_epe": "0.5942806005477905"
+  },
+  {
+    "pair_index": "48",
+    "pair_id": "000048",
+    "reference5__public_component": "0.17438513040542603",
+    "reference5__vector_epe": "0.27001887559890747",
+    "clean__public_component": "0.17438513040542603",
+    "clean__vector_epe": "0.27001887559890747"
+  },
+  {
+    "pair_index": "49",
+    "pair_id": "000049",
+    "reference5__public_component": "0.16037577390670776",
+    "reference5__vector_epe": "0.255517840385437",
+    "clean__public_component": "0.16037577390670776",
+    "clean__vector_epe": "0.255517840385437"
+  },
+  {
+    "pair_index": "50",
+    "pair_id": "000050",
+    "reference5__public_component": "0.4070255160331726",
+    "reference5__vector_epe": "0.6906243562698364",
+    "clean__public_component": "0.4070255160331726",
+    "clean__vector_epe": "0.6906243562698364"
+  },
+  {
+    "pair_index": "51",
+    "pair_id": "000051",
+    "reference5__public_component": "0.0655362457036972",
+    "reference5__vector_epe": "0.10030417144298553",
+    "clean__public_component": "0.0655362457036972",
+    "clean__vector_epe": "0.10030417144298553"
+  },
+  {
+    "pair_index": "52",
+    "pair_id": "000052",
+    "reference5__public_component": "0.18533456325531006",
+    "reference5__vector_epe": "0.3547931909561157",
+    "clean__public_component": "0.18533456325531006",
+    "clean__vector_epe": "0.3547931909561157"
+  },
+  {
+    "pair_index": "53",
+    "pair_id": "000053",
+    "reference5__public_component": "0.34049877524375916",
+    "reference5__vector_epe": "0.5179991126060486",
+    "clean__public_component": "0.34049877524375916",
+    "clean__vector_epe": "0.5179991126060486"
+  },
+  {
+    "pair_index": "54",
+    "pair_id": "000054",
+    "reference5__public_component": "0.4161110818386078",
+    "reference5__vector_epe": "0.6535784006118774",
+    "clean__public_component": "0.4161110818386078",
+    "clean__vector_epe": "0.6535784006118774"
+  },
+  {
+    "pair_index": "55",
+    "pair_id": "000055",
+    "reference5__public_component": "1.3720194101333618",
+    "reference5__vector_epe": "1.9629566669464111",
+    "clean__public_component": "1.3720194101333618",
+    "clean__vector_epe": "1.9629566669464111"
+  },
+  {
+    "pair_index": "56",
+    "pair_id": "000056",
+    "reference5__public_component": "0.7723305225372314",
+    "reference5__vector_epe": "1.2362737655639648",
+    "clean__public_component": "0.7723305225372314",
+    "clean__vector_epe": "1.2362737655639648"
+  },
+  {
+    "pair_index": "57",
+    "pair_id": "000057",
+    "reference5__public_component": "5.942921161651611",
+    "reference5__vector_epe": "11.094168663024902",
+    "clean__public_component": "5.942921161651611",
+    "clean__vector_epe": "11.094168663024902"
+  },
+  {
+    "pair_index": "58",
+    "pair_id": "000058",
+    "reference5__public_component": "0.1018514484167099",
+    "reference5__vector_epe": "0.16163620352745056",
+    "clean__public_component": "0.1018514484167099",
+    "clean__vector_epe": "0.16163620352745056"
+  },
+  {
+    "pair_index": "59",
+    "pair_id": "000059",
+    "reference5__public_component": "0.7047984004020691",
+    "reference5__vector_epe": "1.134496808052063",
+    "clean__public_component": "0.7047984004020691",
+    "clean__vector_epe": "1.134496808052063"
+  },
+  {
+    "pair_index": "60",
+    "pair_id": "000060",
+    "reference5__public_component": "0.29538068175315857",
+    "reference5__vector_epe": "0.48181089758872986",
+    "clean__public_component": "0.29538068175315857",
+    "clean__vector_epe": "0.48181089758872986"
+  },
+  {
+    "pair_index": "61",
+    "pair_id": "000061",
+    "reference5__public_component": "0.32521310448646545",
+    "reference5__vector_epe": "0.5019888877868652",
+    "clean__public_component": "0.32521310448646545",
+    "clean__vector_epe": "0.5019888877868652"
+  },
+  {
+    "pair_index": "62",
+    "pair_id": "000062",
+    "reference5__public_component": "0.32038557529449463",
+    "reference5__vector_epe": "0.5008624196052551",
+    "clean__public_component": "0.32038557529449463",
+    "clean__vector_epe": "0.5008624196052551"
+  },
+  {
+    "pair_index": "63",
+    "pair_id": "000063",
+    "reference5__public_component": "0.7995721101760864",
+    "reference5__vector_epe": "1.1996253728866577",
+    "clean__public_component": "0.7995721101760864",
+    "clean__vector_epe": "1.1996253728866577"
+  },
+  {
+    "pair_index": "64",
+    "pair_id": "000064",
+    "reference5__public_component": "0.35907045006752014",
+    "reference5__vector_epe": "0.6000772714614868",
+    "clean__public_component": "0.35907045006752014",
+    "clean__vector_epe": "0.6000772714614868"
+  },
+  {
+    "pair_index": "65",
+    "pair_id": "000065",
+    "reference5__public_component": "0.2849352955818176",
+    "reference5__vector_epe": "0.4639512300491333",
+    "clean__public_component": "0.2849352955818176",
+    "clean__vector_epe": "0.4639512300491333"
+  },
+  {
+    "pair_index": "66",
+    "pair_id": "000066",
+    "reference5__public_component": "1.079172968864441",
+    "reference5__vector_epe": "1.698907494544983",
+    "clean__public_component": "1.079172968864441",
+    "clean__vector_epe": "1.698907494544983"
+  },
+  {
+    "pair_index": "67",
+    "pair_id": "000067",
+    "reference5__public_component": "0.22071552276611328",
+    "reference5__vector_epe": "0.3574899137020111",
+    "clean__public_component": "0.22071552276611328",
+    "clean__vector_epe": "0.3574899137020111"
+  },
+  {
+    "pair_index": "68",
+    "pair_id": "000068",
+    "reference5__public_component": "3.486384391784668",
+    "reference5__vector_epe": "5.422123908996582",
+    "clean__public_component": "3.486384391784668",
+    "clean__vector_epe": "5.422123908996582"
+  },
+  {
+    "pair_index": "69",
+    "pair_id": "000069",
+    "reference5__public_component": "0.4418729245662689",
+    "reference5__vector_epe": "0.6804357767105103",
+    "clean__public_component": "0.4418729245662689",
+    "clean__vector_epe": "0.6804357767105103"
+  },
+  {
+    "pair_index": "70",
+    "pair_id": "000070",
+    "reference5__public_component": "11.521086692810059",
+    "reference5__vector_epe": "17.62523078918457",
+    "clean__public_component": "11.521086692810059",
+    "clean__vector_epe": "17.62523078918457"
+  },
+  {
+    "pair_index": "71",
+    "pair_id": "000071",
+    "reference5__public_component": "1.002405047416687",
+    "reference5__vector_epe": "1.6318943500518799",
+    "clean__public_component": "1.002405047416687",
+    "clean__vector_epe": "1.6318943500518799"
+  },
+  {
+    "pair_index": "72",
+    "pair_id": "000072",
+    "reference5__public_component": "0.7052484154701233",
+    "reference5__vector_epe": "1.0905717611312866",
+    "clean__public_component": "0.7052484154701233",
+    "clean__vector_epe": "1.0905717611312866"
+  },
+  {
+    "pair_index": "73",
+    "pair_id": "000073",
+    "reference5__public_component": "0.2923555076122284",
+    "reference5__vector_epe": "0.5134356617927551",
+    "clean__public_component": "0.2923555076122284",
+    "clean__vector_epe": "0.5134356617927551"
+  },
+  {
+    "pair_index": "74",
+    "pair_id": "000074",
+    "reference5__public_component": "1.2890212535858154",
+    "reference5__vector_epe": "2.0904548168182373",
+    "clean__public_component": "1.2890212535858154",
+    "clean__vector_epe": "2.0904548168182373"
+  },
+  {
+    "pair_index": "75",
+    "pair_id": "000075",
+    "reference5__public_component": "1.2263153791427612",
+    "reference5__vector_epe": "1.9709192514419556",
+    "clean__public_component": "1.2263153791427612",
+    "clean__vector_epe": "1.9709192514419556"
+  },
+  {
+    "pair_index": "76",
+    "pair_id": "000076",
+    "reference5__public_component": "0.7407506108283997",
+    "reference5__vector_epe": "1.281727910041809",
+    "clean__public_component": "0.7407506108283997",
+    "clean__vector_epe": "1.281727910041809"
+  },
+  {
+    "pair_index": "77",
+    "pair_id": "000077",
+    "reference5__public_component": "0.1962672472000122",
+    "reference5__vector_epe": "0.3262177109718323",
+    "clean__public_component": "0.1962672472000122",
+    "clean__vector_epe": "0.3262177109718323"
+  },
+  {
+    "pair_index": "78",
+    "pair_id": "000078",
+    "reference5__public_component": "1.262830376625061",
+    "reference5__vector_epe": "2.0598649978637695",
+    "clean__public_component": "1.262830376625061",
+    "clean__vector_epe": "2.0598649978637695"
+  },
+  {
+    "pair_index": "79",
+    "pair_id": "000079",
+    "reference5__public_component": "1.0264570713043213",
+    "reference5__vector_epe": "1.5183082818984985",
+    "clean__public_component": "1.0264570713043213",
+    "clean__vector_epe": "1.5183082818984985"
+  },
+  {
+    "pair_index": "80",
+    "pair_id": "000080",
+    "reference5__public_component": "0.29348838329315186",
+    "reference5__vector_epe": "0.45506662130355835",
+    "clean__public_component": "0.29348838329315186",
+    "clean__vector_epe": "0.45506662130355835"
+  },
+  {
+    "pair_index": "81",
+    "pair_id": "000081",
+    "reference5__public_component": "1.0635473728179932",
+    "reference5__vector_epe": "1.5654903650283813",
+    "clean__public_component": "1.0635473728179932",
+    "clean__vector_epe": "1.5654903650283813"
+  },
+  {
+    "pair_index": "82",
+    "pair_id": "000082",
+    "reference5__public_component": "0.27245572209358215",
+    "reference5__vector_epe": "0.4074692130088806",
+    "clean__public_component": "0.27245572209358215",
+    "clean__vector_epe": "0.4074692130088806"
+  },
+  {
+    "pair_index": "83",
+    "pair_id": "000083",
+    "reference5__public_component": "0.27662768959999084",
+    "reference5__vector_epe": "0.4232654273509979",
+    "clean__public_component": "0.27662768959999084",
+    "clean__vector_epe": "0.4232654273509979"
+  },
+  {
+    "pair_index": "84",
+    "pair_id": "000084",
+    "reference5__public_component": "0.9191162586212158",
+    "reference5__vector_epe": "1.5965721607208252",
+    "clean__public_component": "0.9191162586212158",
+    "clean__vector_epe": "1.5965721607208252"
+  },
+  {
+    "pair_index": "85",
+    "pair_id": "000085",
+    "reference5__public_component": "0.6504406332969666",
+    "reference5__vector_epe": "1.0442534685134888",
+    "clean__public_component": "0.6504406332969666",
+    "clean__vector_epe": "1.0442534685134888"
+  },
+  {
+    "pair_index": "86",
+    "pair_id": "000086",
+    "reference5__public_component": "0.3354297876358032",
+    "reference5__vector_epe": "0.5350902080535889",
+    "clean__public_component": "0.3354297876358032",
+    "clean__vector_epe": "0.5350902080535889"
+  },
+  {
+    "pair_index": "87",
+    "pair_id": "000087",
+    "reference5__public_component": "0.5491959452629089",
+    "reference5__vector_epe": "0.8787537813186646",
+    "clean__public_component": "0.5491959452629089",
+    "clean__vector_epe": "0.8787537813186646"
+  },
+  {
+    "pair_index": "88",
+    "pair_id": "000088",
+    "reference5__public_component": "0.7099097371101379",
+    "reference5__vector_epe": "1.174164056777954",
+    "clean__public_component": "0.7099097371101379",
+    "clean__vector_epe": "1.174164056777954"
+  },
+  {
+    "pair_index": "89",
+    "pair_id": "000089",
+    "reference5__public_component": "0.14815017580986023",
+    "reference5__vector_epe": "0.23531706631183624",
+    "clean__public_component": "0.14815017580986023",
+    "clean__vector_epe": "0.23531706631183624"
+  },
+  {
+    "pair_index": "90",
+    "pair_id": "000090",
+    "reference5__public_component": "1.0515012741088867",
+    "reference5__vector_epe": "1.8081815242767334",
+    "clean__public_component": "1.0515012741088867",
+    "clean__vector_epe": "1.8081815242767334"
+  },
+  {
+    "pair_index": "91",
+    "pair_id": "000091",
+    "reference5__public_component": "0.6762256026268005",
+    "reference5__vector_epe": "1.1154497861862183",
+    "clean__public_component": "0.6762256026268005",
+    "clean__vector_epe": "1.1154497861862183"
+  },
+  {
+    "pair_index": "92",
+    "pair_id": "000092",
+    "reference5__public_component": "0.36535799503326416",
+    "reference5__vector_epe": "0.5855939984321594",
+    "clean__public_component": "0.36535799503326416",
+    "clean__vector_epe": "0.5855939984321594"
+  },
+  {
+    "pair_index": "93",
+    "pair_id": "000093",
+    "reference5__public_component": "0.21310769021511078",
+    "reference5__vector_epe": "0.35517334938049316",
+    "clean__public_component": "0.21310769021511078",
+    "clean__vector_epe": "0.35517334938049316"
+  },
+  {
+    "pair_index": "94",
+    "pair_id": "000094",
+    "reference5__public_component": "0.11955276876688004",
+    "reference5__vector_epe": "0.18617457151412964",
+    "clean__public_component": "0.11955276876688004",
+    "clean__vector_epe": "0.18617457151412964"
+  },
+  {
+    "pair_index": "95",
+    "pair_id": "000095",
+    "reference5__public_component": "0.33233949542045593",
+    "reference5__vector_epe": "0.536324143409729",
+    "clean__public_component": "0.33233949542045593",
+    "clean__vector_epe": "0.536324143409729"
+  },
+  {
+    "pair_index": "96",
+    "pair_id": "000096",
+    "reference5__public_component": "1.6449353694915771",
+    "reference5__vector_epe": "2.584693431854248",
+    "clean__public_component": "1.6449353694915771",
+    "clean__vector_epe": "2.584693431854248"
+  },
+  {
+    "pair_index": "97",
+    "pair_id": "000097",
+    "reference5__public_component": "0.22080035507678986",
+    "reference5__vector_epe": "0.34107035398483276",
+    "clean__public_component": "0.22080035507678986",
+    "clean__vector_epe": "0.34107035398483276"
+  },
+  {
+    "pair_index": "98",
+    "pair_id": "000098",
+    "reference5__public_component": "0.5545900464057922",
+    "reference5__vector_epe": "0.9164408445358276",
+    "clean__public_component": "0.5545900464057922",
+    "clean__vector_epe": "0.9164408445358276"
+  },
+  {
+    "pair_index": "99",
+    "pair_id": "000099",
+    "reference5__public_component": "0.4451119899749756",
+    "reference5__vector_epe": "0.7504040598869324",
+    "clean__public_component": "0.4451119899749756",
+    "clean__vector_epe": "0.7504040598869324"
+  },
+  {
+    "pair_index": "100",
+    "pair_id": "000100",
+    "reference5__public_component": "0.9770098328590393",
+    "reference5__vector_epe": "1.4992682933807373",
+    "clean__public_component": "0.9770098328590393",
+    "clean__vector_epe": "1.4992682933807373"
+  },
+  {
+    "pair_index": "101",
+    "pair_id": "000101",
+    "reference5__public_component": "6.217061519622803",
+    "reference5__vector_epe": "10.131271362304688",
+    "clean__public_component": "6.217061519622803",
+    "clean__vector_epe": "10.131271362304688"
+  },
+  {
+    "pair_index": "102",
+    "pair_id": "000102",
+    "reference5__public_component": "0.5250961184501648",
+    "reference5__vector_epe": "0.9306602478027344",
+    "clean__public_component": "0.5250961184501648",
+    "clean__vector_epe": "0.9306602478027344"
+  },
+  {
+    "pair_index": "103",
+    "pair_id": "000103",
+    "reference5__public_component": "0.5112748146057129",
+    "reference5__vector_epe": "0.7830667495727539",
+    "clean__public_component": "0.5112748146057129",
+    "clean__vector_epe": "0.7830667495727539"
+  },
+  {
+    "pair_index": "104",
+    "pair_id": "000104",
+    "reference5__public_component": "0.8696558475494385",
+    "reference5__vector_epe": "1.410483717918396",
+    "clean__public_component": "0.8696558475494385",
+    "clean__vector_epe": "1.410483717918396"
+  },
+  {
+    "pair_index": "105",
+    "pair_id": "000105",
+    "reference5__public_component": "0.5675353407859802",
+    "reference5__vector_epe": "0.8541714549064636",
+    "clean__public_component": "0.5675353407859802",
+    "clean__vector_epe": "0.8541714549064636"
+  },
+  {
+    "pair_index": "106",
+    "pair_id": "000106",
+    "reference5__public_component": "3.1575798988342285",
+    "reference5__vector_epe": "4.926657676696777",
+    "clean__public_component": "3.1575798988342285",
+    "clean__vector_epe": "4.926657676696777"
+  },
+  {
+    "pair_index": "107",
+    "pair_id": "000107",
+    "reference5__public_component": "1.2958531379699707",
+    "reference5__vector_epe": "2.085913896560669",
+    "clean__public_component": "1.2958531379699707",
+    "clean__vector_epe": "2.085913896560669"
+  },
+  {
+    "pair_index": "108",
+    "pair_id": "000108",
+    "reference5__public_component": "0.5850154161453247",
+    "reference5__vector_epe": "0.9410030841827393",
+    "clean__public_component": "0.5850154161453247",
+    "clean__vector_epe": "0.9410030841827393"
+  },
+  {
+    "pair_index": "109",
+    "pair_id": "000109",
+    "reference5__public_component": "0.15154795348644257",
+    "reference5__vector_epe": "0.2341977208852768",
+    "clean__public_component": "0.15154795348644257",
+    "clean__vector_epe": "0.2341977208852768"
+  },
+  {
+    "pair_index": "110",
+    "pair_id": "000110",
+    "reference5__public_component": "0.36370623111724854",
+    "reference5__vector_epe": "0.6538109183311462",
+    "clean__public_component": "0.36370623111724854",
+    "clean__vector_epe": "0.6538109183311462"
+  },
+  {
+    "pair_index": "111",
+    "pair_id": "000111",
+    "reference5__public_component": "0.7395802736282349",
+    "reference5__vector_epe": "1.168662667274475",
+    "clean__public_component": "0.7395802736282349",
+    "clean__vector_epe": "1.168662667274475"
+  },
+  {
+    "pair_index": "112",
+    "pair_id": "000112",
+    "reference5__public_component": "0.2871764600276947",
+    "reference5__vector_epe": "0.499427855014801",
+    "clean__public_component": "0.2871764600276947",
+    "clean__vector_epe": "0.499427855014801"
+  },
+  {
+    "pair_index": "113",
+    "pair_id": "000113",
+    "reference5__public_component": "0.5049240589141846",
+    "reference5__vector_epe": "0.7888488173484802",
+    "clean__public_component": "0.5049240589141846",
+    "clean__vector_epe": "0.7888488173484802"
+  },
+  {
+    "pair_index": "114",
+    "pair_id": "000114",
+    "reference5__public_component": "1.1380401849746704",
+    "reference5__vector_epe": "1.7326143980026245",
+    "clean__public_component": "1.1380401849746704",
+    "clean__vector_epe": "1.7326143980026245"
+  },
+  {
+    "pair_index": "115",
+    "pair_id": "000115",
+    "reference5__public_component": "0.3279845714569092",
+    "reference5__vector_epe": "0.537700355052948",
+    "clean__public_component": "0.3279845714569092",
+    "clean__vector_epe": "0.537700355052948"
+  },
+  {
+    "pair_index": "116",
+    "pair_id": "000116",
+    "reference5__public_component": "21.09558868408203",
+    "reference5__vector_epe": "32.702728271484375",
+    "clean__public_component": "21.09558868408203",
+    "clean__vector_epe": "32.702728271484375"
+  },
+  {
+    "pair_index": "117",
+    "pair_id": "000117",
+    "reference5__public_component": "0.7303516268730164",
+    "reference5__vector_epe": "1.1612896919250488",
+    "clean__public_component": "0.7303516268730164",
+    "clean__vector_epe": "1.1612896919250488"
+  },
+  {
+    "pair_index": "118",
+    "pair_id": "000118",
+    "reference5__public_component": "0.6258241534233093",
+    "reference5__vector_epe": "0.9695890545845032",
+    "clean__public_component": "0.6258241534233093",
+    "clean__vector_epe": "0.9695890545845032"
+  },
+  {
+    "pair_index": "119",
+    "pair_id": "000119",
+    "reference5__public_component": "0.34024056792259216",
+    "reference5__vector_epe": "0.5111855864524841",
+    "clean__public_component": "0.34024056792259216",
+    "clean__vector_epe": "0.5111855864524841"
+  },
+  {
+    "pair_index": "120",
+    "pair_id": "000120",
+    "reference5__public_component": "0.3133472204208374",
+    "reference5__vector_epe": "0.46916404366493225",
+    "clean__public_component": "0.3133472204208374",
+    "clean__vector_epe": "0.46916404366493225"
+  },
+  {
+    "pair_index": "121",
+    "pair_id": "000121",
+    "reference5__public_component": "0.39714139699935913",
+    "reference5__vector_epe": "0.6195924282073975",
+    "clean__public_component": "0.39714139699935913",
+    "clean__vector_epe": "0.6195924282073975"
+  },
+  {
+    "pair_index": "122",
+    "pair_id": "000122",
+    "reference5__public_component": "0.49389010667800903",
+    "reference5__vector_epe": "0.7438430190086365",
+    "clean__public_component": "0.49389010667800903",
+    "clean__vector_epe": "0.7438430190086365"
+  },
+  {
+    "pair_index": "123",
+    "pair_id": "000123",
+    "reference5__public_component": "0.9495497345924377",
+    "reference5__vector_epe": "1.3967053890228271",
+    "clean__public_component": "0.9495497345924377",
+    "clean__vector_epe": "1.3967053890228271"
+  },
+  {
+    "pair_index": "124",
+    "pair_id": "000124",
+    "reference5__public_component": "0.35720235109329224",
+    "reference5__vector_epe": "0.5423148274421692",
+    "clean__public_component": "0.35720235109329224",
+    "clean__vector_epe": "0.5423148274421692"
+  },
+  {
+    "pair_index": "125",
+    "pair_id": "000125",
+    "reference5__public_component": "0.3270328640937805",
+    "reference5__vector_epe": "0.4825150668621063",
+    "clean__public_component": "0.3270328640937805",
+    "clean__vector_epe": "0.4825150668621063"
+  },
+  {
+    "pair_index": "126",
+    "pair_id": "000126",
+    "reference5__public_component": "0.7155452966690063",
+    "reference5__vector_epe": "1.1069766283035278",
+    "clean__public_component": "0.7155452966690063",
+    "clean__vector_epe": "1.1069766283035278"
+  },
+  {
+    "pair_index": "127",
+    "pair_id": "000127",
+    "reference5__public_component": "0.33158746361732483",
+    "reference5__vector_epe": "0.5135123133659363",
+    "clean__public_component": "0.33158746361732483",
+    "clean__vector_epe": "0.5135123133659363"
+  },
+  {
+    "pair_index": "128",
+    "pair_id": "000128",
+    "reference5__public_component": "2.086256504058838",
+    "reference5__vector_epe": "3.320047616958618",
+    "clean__public_component": "2.086256504058838",
+    "clean__vector_epe": "3.320047616958618"
+  },
+  {
+    "pair_index": "129",
+    "pair_id": "000129",
+    "reference5__public_component": "0.32815802097320557",
+    "reference5__vector_epe": "0.5035244226455688",
+    "clean__public_component": "0.32815802097320557",
+    "clean__vector_epe": "0.5035244226455688"
+  },
+  {
+    "pair_index": "130",
+    "pair_id": "000130",
+    "reference5__public_component": "0.09397222101688385",
+    "reference5__vector_epe": "0.16457027196884155",
+    "clean__public_component": "0.09397222101688385",
+    "clean__vector_epe": "0.16457027196884155"
+  },
+  {
+    "pair_index": "131",
+    "pair_id": "000131",
+    "reference5__public_component": "3.143343925476074",
+    "reference5__vector_epe": "5.4014892578125",
+    "clean__public_component": "3.143343925476074",
+    "clean__vector_epe": "5.4014892578125"
+  },
+  {
+    "pair_index": "132",
+    "pair_id": "000132",
+    "reference5__public_component": "4.939082145690918",
+    "reference5__vector_epe": "8.397448539733887",
+    "clean__public_component": "4.939082145690918",
+    "clean__vector_epe": "8.397448539733887"
+  },
+  {
+    "pair_index": "133",
+    "pair_id": "000133",
+    "reference5__public_component": "0.45223891735076904",
+    "reference5__vector_epe": "0.7615810632705688",
+    "clean__public_component": "0.45223891735076904",
+    "clean__vector_epe": "0.7615810632705688"
+  },
+  {
+    "pair_index": "134",
+    "pair_id": "000134",
+    "reference5__public_component": "1.092195749282837",
+    "reference5__vector_epe": "1.583363652229309",
+    "clean__public_component": "1.092195749282837",
+    "clean__vector_epe": "1.583363652229309"
+  },
+  {
+    "pair_index": "135",
+    "pair_id": "000135",
+    "reference5__public_component": "1.8347638845443726",
+    "reference5__vector_epe": "3.0149288177490234",
+    "clean__public_component": "1.8347638845443726",
+    "clean__vector_epe": "3.0149288177490234"
+  },
+  {
+    "pair_index": "136",
+    "pair_id": "000136",
+    "reference5__public_component": "0.9423806071281433",
+    "reference5__vector_epe": "1.3903101682662964",
+    "clean__public_component": "0.9423806071281433",
+    "clean__vector_epe": "1.3903101682662964"
+  },
+  {
+    "pair_index": "137",
+    "pair_id": "000137",
+    "reference5__public_component": "1.261662483215332",
+    "reference5__vector_epe": "1.9942690134048462",
+    "clean__public_component": "1.261662483215332",
+    "clean__vector_epe": "1.9942690134048462"
+  },
+  {
+    "pair_index": "138",
+    "pair_id": "000138",
+    "reference5__public_component": "0.9190976619720459",
+    "reference5__vector_epe": "1.3354685306549072",
+    "clean__public_component": "0.9190976619720459",
+    "clean__vector_epe": "1.3354685306549072"
+  },
+  {
+    "pair_index": "139",
+    "pair_id": "000139",
+    "reference5__public_component": "4.615985870361328",
+    "reference5__vector_epe": "8.59738540649414",
+    "clean__public_component": "4.615985870361328",
+    "clean__vector_epe": "8.59738540649414"
+  },
+  {
+    "pair_index": "140",
+    "pair_id": "000140",
+    "reference5__public_component": "2.2885210514068604",
+    "reference5__vector_epe": "3.3388612270355225",
+    "clean__public_component": "2.2885210514068604",
+    "clean__vector_epe": "3.3388612270355225"
+  },
+  {
+    "pair_index": "141",
+    "pair_id": "000141",
+    "reference5__public_component": "0.24493801593780518",
+    "reference5__vector_epe": "0.3739057779312134",
+    "clean__public_component": "0.24493801593780518",
+    "clean__vector_epe": "0.3739057779312134"
+  },
+  {
+    "pair_index": "142",
+    "pair_id": "000142",
+    "reference5__public_component": "4.971914768218994",
+    "reference5__vector_epe": "7.631032466888428",
+    "clean__public_component": "4.971914768218994",
+    "clean__vector_epe": "7.631032466888428"
+  },
+  {
+    "pair_index": "143",
+    "pair_id": "000143",
+    "reference5__public_component": "1.2782446146011353",
+    "reference5__vector_epe": "1.940637469291687",
+    "clean__public_component": "1.2782446146011353",
+    "clean__vector_epe": "1.940637469291687"
+  },
+  {
+    "pair_index": "144",
+    "pair_id": "000144",
+    "reference5__public_component": "0.794902503490448",
+    "reference5__vector_epe": "1.3127540349960327",
+    "clean__public_component": "0.794902503490448",
+    "clean__vector_epe": "1.3127540349960327"
+  },
+  {
+    "pair_index": "145",
+    "pair_id": "000145",
+    "reference5__public_component": "0.4042844772338867",
+    "reference5__vector_epe": "0.6041179299354553",
+    "clean__public_component": "0.4042844772338867",
+    "clean__vector_epe": "0.6041179299354553"
+  },
+  {
+    "pair_index": "146",
+    "pair_id": "000146",
+    "reference5__public_component": "0.22430585324764252",
+    "reference5__vector_epe": "0.3476867079734802",
+    "clean__public_component": "0.22430585324764252",
+    "clean__vector_epe": "0.3476867079734802"
+  },
+  {
+    "pair_index": "147",
+    "pair_id": "000147",
+    "reference5__public_component": "2.328406572341919",
+    "reference5__vector_epe": "3.506833791732788",
+    "clean__public_component": "2.328406572341919",
+    "clean__vector_epe": "3.506833791732788"
+  },
+  {
+    "pair_index": "148",
+    "pair_id": "000148",
+    "reference5__public_component": "1.1209111213684082",
+    "reference5__vector_epe": "1.7112212181091309",
+    "clean__public_component": "1.1209111213684082",
+    "clean__vector_epe": "1.7112212181091309"
+  },
+  {
+    "pair_index": "149",
+    "pair_id": "000149",
+    "reference5__public_component": "0.23482844233512878",
+    "reference5__vector_epe": "0.36151599884033203",
+    "clean__public_component": "0.23482844233512878",
+    "clean__vector_epe": "0.36151599884033203"
+  },
+  {
+    "pair_index": "150",
+    "pair_id": "000150",
+    "reference5__public_component": "1.811501145362854",
+    "reference5__vector_epe": "2.9258768558502197",
+    "clean__public_component": "1.811501145362854",
+    "clean__vector_epe": "2.9258768558502197"
+  },
+  {
+    "pair_index": "151",
+    "pair_id": "000151",
+    "reference5__public_component": "0.9858349561691284",
+    "reference5__vector_epe": "1.5726441144943237",
+    "clean__public_component": "0.9858349561691284",
+    "clean__vector_epe": "1.5726441144943237"
+  },
+  {
+    "pair_index": "152",
+    "pair_id": "000152",
+    "reference5__public_component": "0.14987069368362427",
+    "reference5__vector_epe": "0.23258543014526367",
+    "clean__public_component": "0.14987069368362427",
+    "clean__vector_epe": "0.23258543014526367"
+  },
+  {
+    "pair_index": "153",
+    "pair_id": "000153",
+    "reference5__public_component": "0.6630162000656128",
+    "reference5__vector_epe": "1.0501044988632202",
+    "clean__public_component": "0.6630162000656128",
+    "clean__vector_epe": "1.0501044988632202"
+  },
+  {
+    "pair_index": "154",
+    "pair_id": "000154",
+    "reference5__public_component": "0.342465341091156",
+    "reference5__vector_epe": "0.5287984609603882",
+    "clean__public_component": "0.342465341091156",
+    "clean__vector_epe": "0.5287984609603882"
+  },
+  {
+    "pair_index": "155",
+    "pair_id": "000155",
+    "reference5__public_component": "4.166711807250977",
+    "reference5__vector_epe": "7.106558322906494",
+    "clean__public_component": "4.166711807250977",
+    "clean__vector_epe": "7.106558322906494"
+  },
+  {
+    "pair_index": "156",
+    "pair_id": "000156",
+    "reference5__public_component": "0.3145655393600464",
+    "reference5__vector_epe": "0.5026066303253174",
+    "clean__public_component": "0.3145655393600464",
+    "clean__vector_epe": "0.5026066303253174"
+  },
+  {
+    "pair_index": "157",
+    "pair_id": "000157",
+    "reference5__public_component": "0.12519080936908722",
+    "reference5__vector_epe": "0.1786993145942688",
+    "clean__public_component": "0.12519080936908722",
+    "clean__vector_epe": "0.1786993145942688"
+  },
+  {
+    "pair_index": "158",
+    "pair_id": "000158",
+    "reference5__public_component": "0.06342675536870956",
+    "reference5__vector_epe": "0.09825298935174942",
+    "clean__public_component": "0.06342675536870956",
+    "clean__vector_epe": "0.09825298935174942"
+  },
+  {
+    "pair_index": "159",
+    "pair_id": "000159",
+    "reference5__public_component": "0.8901920914649963",
+    "reference5__vector_epe": "1.370466947555542",
+    "clean__public_component": "0.8901920914649963",
+    "clean__vector_epe": "1.370466947555542"
+  },
+  {
+    "pair_index": "160",
+    "pair_id": "000160",
+    "reference5__public_component": "0.6186065673828125",
+    "reference5__vector_epe": "0.9023928642272949",
+    "clean__public_component": "0.6186065673828125",
+    "clean__vector_epe": "0.9023928642272949"
+  },
+  {
+    "pair_index": "161",
+    "pair_id": "000161",
+    "reference5__public_component": "0.25252267718315125",
+    "reference5__vector_epe": "0.4193969964981079",
+    "clean__public_component": "0.25252267718315125",
+    "clean__vector_epe": "0.4193969964981079"
+  },
+  {
+    "pair_index": "162",
+    "pair_id": "000162",
+    "reference5__public_component": "0.2261636108160019",
+    "reference5__vector_epe": "0.34674495458602905",
+    "clean__public_component": "0.2261636108160019",
+    "clean__vector_epe": "0.34674495458602905"
+  },
+  {
+    "pair_index": "163",
+    "pair_id": "000163",
+    "reference5__public_component": "21.036678314208984",
+    "reference5__vector_epe": "32.375972747802734",
+    "clean__public_component": "21.036678314208984",
+    "clean__vector_epe": "32.375972747802734"
+  },
+  {
+    "pair_index": "164",
+    "pair_id": "000164",
+    "reference5__public_component": "0.27648815512657166",
+    "reference5__vector_epe": "0.4449879825115204",
+    "clean__public_component": "0.27648815512657166",
+    "clean__vector_epe": "0.4449879825115204"
+  },
+  {
+    "pair_index": "165",
+    "pair_id": "000165",
+    "reference5__public_component": "2.4636240005493164",
+    "reference5__vector_epe": "4.184089660644531",
+    "clean__public_component": "2.4636240005493164",
+    "clean__vector_epe": "4.184089660644531"
+  },
+  {
+    "pair_index": "166",
+    "pair_id": "000166",
+    "reference5__public_component": "10.473190307617188",
+    "reference5__vector_epe": "18.63473892211914",
+    "clean__public_component": "10.473190307617188",
+    "clean__vector_epe": "18.63473892211914"
+  },
+  {
+    "pair_index": "167",
+    "pair_id": "000167",
+    "reference5__public_component": "0.6071712970733643",
+    "reference5__vector_epe": "1.0696674585342407",
+    "clean__public_component": "0.6071712970733643",
+    "clean__vector_epe": "1.0696674585342407"
+  },
+  {
+    "pair_index": "168",
+    "pair_id": "000168",
+    "reference5__public_component": "1.7437680959701538",
+    "reference5__vector_epe": "2.6853246688842773",
+    "clean__public_component": "1.7437680959701538",
+    "clean__vector_epe": "2.6853246688842773"
+  },
+  {
+    "pair_index": "169",
+    "pair_id": "000169",
+    "reference5__public_component": "0.7008448243141174",
+    "reference5__vector_epe": "1.1324050426483154",
+    "clean__public_component": "0.7008448243141174",
+    "clean__vector_epe": "1.1324050426483154"
+  },
+  {
+    "pair_index": "170",
+    "pair_id": "000170",
+    "reference5__public_component": "0.28552237153053284",
+    "reference5__vector_epe": "0.46777352690696716",
+    "clean__public_component": "0.28552237153053284",
+    "clean__vector_epe": "0.46777352690696716"
+  },
+  {
+    "pair_index": "171",
+    "pair_id": "000171",
+    "reference5__public_component": "0.6122853755950928",
+    "reference5__vector_epe": "0.9521127939224243",
+    "clean__public_component": "0.6122853755950928",
+    "clean__vector_epe": "0.9521127939224243"
+  },
+  {
+    "pair_index": "172",
+    "pair_id": "000172",
+    "reference5__public_component": "0.286662757396698",
+    "reference5__vector_epe": "0.4811709523200989",
+    "clean__public_component": "0.286662757396698",
+    "clean__vector_epe": "0.4811709523200989"
+  },
+  {
+    "pair_index": "173",
+    "pair_id": "000173",
+    "reference5__public_component": "0.45329296588897705",
+    "reference5__vector_epe": "0.7374114990234375",
+    "clean__public_component": "0.45329296588897705",
+    "clean__vector_epe": "0.7374114990234375"
+  },
+  {
+    "pair_index": "174",
+    "pair_id": "000174",
+    "reference5__public_component": "1.3256582021713257",
+    "reference5__vector_epe": "2.0376040935516357",
+    "clean__public_component": "1.3256582021713257",
+    "clean__vector_epe": "2.0376040935516357"
+  },
+  {
+    "pair_index": "175",
+    "pair_id": "000175",
+    "reference5__public_component": "1.3652701377868652",
+    "reference5__vector_epe": "2.155851125717163",
+    "clean__public_component": "1.3652701377868652",
+    "clean__vector_epe": "2.155851125717163"
+  },
+  {
+    "pair_index": "176",
+    "pair_id": "000176",
+    "reference5__public_component": "15.4657564163208",
+    "reference5__vector_epe": "23.82607078552246",
+    "clean__public_component": "15.4657564163208",
+    "clean__vector_epe": "23.82607078552246"
+  },
+  {
+    "pair_index": "177",
+    "pair_id": "000177",
+    "reference5__public_component": "0.20260101556777954",
+    "reference5__vector_epe": "0.3047683537006378",
+    "clean__public_component": "0.20260101556777954",
+    "clean__vector_epe": "0.3047683537006378"
+  },
+  {
+    "pair_index": "178",
+    "pair_id": "000178",
+    "reference5__public_component": "0.8186774253845215",
+    "reference5__vector_epe": "1.3436259031295776",
+    "clean__public_component": "0.8186774253845215",
+    "clean__vector_epe": "1.3436259031295776"
+  },
+  {
+    "pair_index": "179",
+    "pair_id": "000179",
+    "reference5__public_component": "3.019099712371826",
+    "reference5__vector_epe": "5.299670219421387",
+    "clean__public_component": "3.019099712371826",
+    "clean__vector_epe": "5.299670219421387"
+  },
+  {
+    "pair_index": "180",
+    "pair_id": "000180",
+    "reference5__public_component": "0.29020899534225464",
+    "reference5__vector_epe": "0.5659900903701782",
+    "clean__public_component": "0.29020899534225464",
+    "clean__vector_epe": "0.5659900903701782"
+  },
+  {
+    "pair_index": "181",
+    "pair_id": "000181",
+    "reference5__public_component": "2.953433036804199",
+    "reference5__vector_epe": "4.4794697761535645",
+    "clean__public_component": "2.953433036804199",
+    "clean__vector_epe": "4.4794697761535645"
+  },
+  {
+    "pair_index": "182",
+    "pair_id": "000182",
+    "reference5__public_component": "1.1472218036651611",
+    "reference5__vector_epe": "1.8056751489639282",
+    "clean__public_component": "1.1472218036651611",
+    "clean__vector_epe": "1.8056751489639282"
+  },
+  {
+    "pair_index": "183",
+    "pair_id": "000183",
+    "reference5__public_component": "0.7185888290405273",
+    "reference5__vector_epe": "1.1173064708709717",
+    "clean__public_component": "0.7185888290405273",
+    "clean__vector_epe": "1.1173064708709717"
+  },
+  {
+    "pair_index": "184",
+    "pair_id": "000184",
+    "reference5__public_component": "1.3377282619476318",
+    "reference5__vector_epe": "2.0899720191955566",
+    "clean__public_component": "1.3377282619476318",
+    "clean__vector_epe": "2.0899720191955566"
+  },
+  {
+    "pair_index": "185",
+    "pair_id": "000185",
+    "reference5__public_component": "0.5761086940765381",
+    "reference5__vector_epe": "0.8605583310127258",
+    "clean__public_component": "0.5761086940765381",
+    "clean__vector_epe": "0.8605583310127258"
+  },
+  {
+    "pair_index": "186",
+    "pair_id": "000186",
+    "reference5__public_component": "0.7230854630470276",
+    "reference5__vector_epe": "1.1344547271728516",
+    "clean__public_component": "0.7230854630470276",
+    "clean__vector_epe": "1.1344547271728516"
+  },
+  {
+    "pair_index": "187",
+    "pair_id": "000187",
+    "reference5__public_component": "0.6668998003005981",
+    "reference5__vector_epe": "1.0961235761642456",
+    "clean__public_component": "0.6668998003005981",
+    "clean__vector_epe": "1.0961235761642456"
+  },
+  {
+    "pair_index": "188",
+    "pair_id": "000188",
+    "reference5__public_component": "0.9122425317764282",
+    "reference5__vector_epe": "1.4715508222579956",
+    "clean__public_component": "0.9122425317764282",
+    "clean__vector_epe": "1.4715508222579956"
+  },
+  {
+    "pair_index": "189",
+    "pair_id": "000189",
+    "reference5__public_component": "0.1426902860403061",
+    "reference5__vector_epe": "0.2372727394104004",
+    "clean__public_component": "0.1426902860403061",
+    "clean__vector_epe": "0.2372727394104004"
+  },
+  {
+    "pair_index": "190",
+    "pair_id": "000190",
+    "reference5__public_component": "0.95411616563797",
+    "reference5__vector_epe": "1.4142621755599976",
+    "clean__public_component": "0.95411616563797",
+    "clean__vector_epe": "1.4142621755599976"
+  },
+  {
+    "pair_index": "191",
+    "pair_id": "000191",
+    "reference5__public_component": "7.364099502563477",
+    "reference5__vector_epe": "14.01517105102539",
+    "clean__public_component": "7.364099502563477",
+    "clean__vector_epe": "14.01517105102539"
+  },
+  {
+    "pair_index": "192",
+    "pair_id": "000192",
+    "reference5__public_component": "6.783257484436035",
+    "reference5__vector_epe": "12.291329383850098",
+    "clean__public_component": "6.783257484436035",
+    "clean__vector_epe": "12.291329383850098"
+  },
+  {
+    "pair_index": "193",
+    "pair_id": "000193",
+    "reference5__public_component": "0.2030179351568222",
+    "reference5__vector_epe": "0.31048327684402466",
+    "clean__public_component": "0.2030179351568222",
+    "clean__vector_epe": "0.31048327684402466"
+  },
+  {
+    "pair_index": "194",
+    "pair_id": "000194",
+    "reference5__public_component": "2.2579987049102783",
+    "reference5__vector_epe": "3.576603889465332",
+    "clean__public_component": "2.2579987049102783",
+    "clean__vector_epe": "3.576603889465332"
+  },
+  {
+    "pair_index": "195",
+    "pair_id": "000195",
+    "reference5__public_component": "0.989976167678833",
+    "reference5__vector_epe": "1.4260019063949585",
+    "clean__public_component": "0.989976167678833",
+    "clean__vector_epe": "1.4260019063949585"
+  },
+  {
+    "pair_index": "196",
+    "pair_id": "000196",
+    "reference5__public_component": "0.8621357083320618",
+    "reference5__vector_epe": "1.2721657752990723",
+    "clean__public_component": "0.8621357083320618",
+    "clean__vector_epe": "1.2721657752990723"
+  },
+  {
+    "pair_index": "197",
+    "pair_id": "000197",
+    "reference5__public_component": "1.963661551475525",
+    "reference5__vector_epe": "3.240187168121338",
+    "clean__public_component": "1.963661551475525",
+    "clean__vector_epe": "3.240187168121338"
+  },
+  {
+    "pair_index": "198",
+    "pair_id": "000198",
+    "reference5__public_component": "0.6153290867805481",
+    "reference5__vector_epe": "0.9634755849838257",
+    "clean__public_component": "0.6153290867805481",
+    "clean__vector_epe": "0.9634755849838257"
+  },
+  {
+    "pair_index": "199",
+    "pair_id": "000199",
+    "reference5__public_component": "0.8452321290969849",
+    "reference5__vector_epe": "1.360469102859497",
+    "clean__public_component": "0.8452321290969849",
+    "clean__vector_epe": "1.360469102859497"
+  },
+  {
+    "pair_index": "200",
+    "pair_id": "000200",
+    "reference5__public_component": "0.2558651864528656",
+    "reference5__vector_epe": "0.3800213038921356",
+    "clean__public_component": "0.2558651864528656",
+    "clean__vector_epe": "0.3800213038921356"
+  },
+  {
+    "pair_index": "201",
+    "pair_id": "000201",
+    "reference5__public_component": "0.4719965159893036",
+    "reference5__vector_epe": "0.6815468668937683",
+    "clean__public_component": "0.4719965159893036",
+    "clean__vector_epe": "0.6815468668937683"
+  },
+  {
+    "pair_index": "202",
+    "pair_id": "000202",
+    "reference5__public_component": "0.4793989062309265",
+    "reference5__vector_epe": "0.854634165763855",
+    "clean__public_component": "0.4793989062309265",
+    "clean__vector_epe": "0.854634165763855"
+  },
+  {
+    "pair_index": "203",
+    "pair_id": "000203",
+    "reference5__public_component": "0.5440136194229126",
+    "reference5__vector_epe": "0.9347514510154724",
+    "clean__public_component": "0.5440136194229126",
+    "clean__vector_epe": "0.9347514510154724"
+  },
+  {
+    "pair_index": "204",
+    "pair_id": "000204",
+    "reference5__public_component": "1.3318426609039307",
+    "reference5__vector_epe": "2.0436947345733643",
+    "clean__public_component": "1.3318426609039307",
+    "clean__vector_epe": "2.0436947345733643"
+  },
+  {
+    "pair_index": "205",
+    "pair_id": "000205",
+    "reference5__public_component": "0.29203540086746216",
+    "reference5__vector_epe": "0.43215951323509216",
+    "clean__public_component": "0.29203540086746216",
+    "clean__vector_epe": "0.43215951323509216"
+  },
+  {
+    "pair_index": "206",
+    "pair_id": "000206",
+    "reference5__public_component": "0.3486442267894745",
+    "reference5__vector_epe": "0.5426020622253418",
+    "clean__public_component": "0.3486442267894745",
+    "clean__vector_epe": "0.5426020622253418"
+  },
+  {
+    "pair_index": "207",
+    "pair_id": "000207",
+    "reference5__public_component": "0.7463581562042236",
+    "reference5__vector_epe": "1.1843347549438477",
+    "clean__public_component": "0.7463581562042236",
+    "clean__vector_epe": "1.1843347549438477"
+  },
+  {
+    "pair_index": "208",
+    "pair_id": "000208",
+    "reference5__public_component": "0.17649368941783905",
+    "reference5__vector_epe": "0.28243863582611084",
+    "clean__public_component": "0.17649368941783905",
+    "clean__vector_epe": "0.28243863582611084"
+  },
+  {
+    "pair_index": "209",
+    "pair_id": "000209",
+    "reference5__public_component": "0.843421459197998",
+    "reference5__vector_epe": "1.3380756378173828",
+    "clean__public_component": "0.843421459197998",
+    "clean__vector_epe": "1.3380756378173828"
+  },
+  {
+    "pair_index": "210",
+    "pair_id": "000210",
+    "reference5__public_component": "0.5207924246788025",
+    "reference5__vector_epe": "0.7735291719436646",
+    "clean__public_component": "0.5207924246788025",
+    "clean__vector_epe": "0.7735291719436646"
+  },
+  {
+    "pair_index": "211",
+    "pair_id": "000211",
+    "reference5__public_component": "0.5152513384819031",
+    "reference5__vector_epe": "0.8070356249809265",
+    "clean__public_component": "0.5152513384819031",
+    "clean__vector_epe": "0.8070356249809265"
+  },
+  {
+    "pair_index": "212",
+    "pair_id": "000212",
+    "reference5__public_component": "0.5375575423240662",
+    "reference5__vector_epe": "0.8146879076957703",
+    "clean__public_component": "0.5375575423240662",
+    "clean__vector_epe": "0.8146879076957703"
+  },
+  {
+    "pair_index": "213",
+    "pair_id": "000213",
+    "reference5__public_component": "10.605782508850098",
+    "reference5__vector_epe": "16.64031410217285",
+    "clean__public_component": "10.605782508850098",
+    "clean__vector_epe": "16.64031410217285"
+  },
+  {
+    "pair_index": "214",
+    "pair_id": "000214",
+    "reference5__public_component": "1.4470371007919312",
+    "reference5__vector_epe": "2.263108015060425",
+    "clean__public_component": "1.4470371007919312",
+    "clean__vector_epe": "2.263108015060425"
+  },
+  {
+    "pair_index": "215",
+    "pair_id": "000215",
+    "reference5__public_component": "0.5981491804122925",
+    "reference5__vector_epe": "0.9140714406967163",
+    "clean__public_component": "0.5981491804122925",
+    "clean__vector_epe": "0.9140714406967163"
+  },
+  {
+    "pair_index": "216",
+    "pair_id": "000216",
+    "reference5__public_component": "0.32115989923477173",
+    "reference5__vector_epe": "0.5139338970184326",
+    "clean__public_component": "0.32115989923477173",
+    "clean__vector_epe": "0.5139338970184326"
+  },
+  {
+    "pair_index": "217",
+    "pair_id": "000217",
+    "reference5__public_component": "0.3221797049045563",
+    "reference5__vector_epe": "0.48096963763237",
+    "clean__public_component": "0.3221797049045563",
+    "clean__vector_epe": "0.48096963763237"
+  },
+  {
+    "pair_index": "218",
+    "pair_id": "000218",
+    "reference5__public_component": "0.6918985247612",
+    "reference5__vector_epe": "1.1010633707046509",
+    "clean__public_component": "0.6918985247612",
+    "clean__vector_epe": "1.1010633707046509"
+  },
+  {
+    "pair_index": "219",
+    "pair_id": "000219",
+    "reference5__public_component": "3.2859039306640625",
+    "reference5__vector_epe": "5.362343788146973",
+    "clean__public_component": "3.2859039306640625",
+    "clean__vector_epe": "5.362343788146973"
+  },
+  {
+    "pair_index": "220",
+    "pair_id": "000220",
+    "reference5__public_component": "2.0899837017059326",
+    "reference5__vector_epe": "3.1984174251556396",
+    "clean__public_component": "2.0899837017059326",
+    "clean__vector_epe": "3.1984174251556396"
+  },
+  {
+    "pair_index": "221",
+    "pair_id": "000221",
+    "reference5__public_component": "1.0196166038513184",
+    "reference5__vector_epe": "1.5459667444229126",
+    "clean__public_component": "1.0196166038513184",
+    "clean__vector_epe": "1.5459667444229126"
+  },
+  {
+    "pair_index": "222",
+    "pair_id": "000222",
+    "reference5__public_component": "0.1834048628807068",
+    "reference5__vector_epe": "0.27284055948257446",
+    "clean__public_component": "0.1834048628807068",
+    "clean__vector_epe": "0.27284055948257446"
+  },
+  {
+    "pair_index": "223",
+    "pair_id": "000223",
+    "reference5__public_component": "2.520895481109619",
+    "reference5__vector_epe": "4.048953533172607",
+    "clean__public_component": "2.520895481109619",
+    "clean__vector_epe": "4.048953533172607"
+  },
+  {
+    "pair_index": "224",
+    "pair_id": "000224",
+    "reference5__public_component": "0.418491929769516",
+    "reference5__vector_epe": "0.6685582995414734",
+    "clean__public_component": "0.418491929769516",
+    "clean__vector_epe": "0.6685582995414734"
+  },
+  {
+    "pair_index": "225",
+    "pair_id": "000225",
+    "reference5__public_component": "0.46276065707206726",
+    "reference5__vector_epe": "0.7975079417228699",
+    "clean__public_component": "0.46276065707206726",
+    "clean__vector_epe": "0.7975079417228699"
+  },
+  {
+    "pair_index": "226",
+    "pair_id": "000226",
+    "reference5__public_component": "0.3179559111595154",
+    "reference5__vector_epe": "0.5032342076301575",
+    "clean__public_component": "0.3179559111595154",
+    "clean__vector_epe": "0.5032342076301575"
+  },
+  {
+    "pair_index": "227",
+    "pair_id": "000227",
+    "reference5__public_component": "0.7776709198951721",
+    "reference5__vector_epe": "1.2270574569702148",
+    "clean__public_component": "0.7776709198951721",
+    "clean__vector_epe": "1.2270574569702148"
+  },
+  {
+    "pair_index": "228",
+    "pair_id": "000228",
+    "reference5__public_component": "0.3672400712966919",
+    "reference5__vector_epe": "0.5274028778076172",
+    "clean__public_component": "0.3672400712966919",
+    "clean__vector_epe": "0.5274028778076172"
+  },
+  {
+    "pair_index": "229",
+    "pair_id": "000229",
+    "reference5__public_component": "0.5355985164642334",
+    "reference5__vector_epe": "0.9347606301307678",
+    "clean__public_component": "0.5355985164642334",
+    "clean__vector_epe": "0.9347606301307678"
+  },
+  {
+    "pair_index": "230",
+    "pair_id": "000230",
+    "reference5__public_component": "0.7011380791664124",
+    "reference5__vector_epe": "1.1099478006362915",
+    "clean__public_component": "0.7011380791664124",
+    "clean__vector_epe": "1.1099478006362915"
+  },
+  {
+    "pair_index": "231",
+    "pair_id": "000231",
+    "reference5__public_component": "0.16762396693229675",
+    "reference5__vector_epe": "0.2778531014919281",
+    "clean__public_component": "0.16762396693229675",
+    "clean__vector_epe": "0.2778531014919281"
+  },
+  {
+    "pair_index": "232",
+    "pair_id": "000232",
+    "reference5__public_component": "0.21256838738918304",
+    "reference5__vector_epe": "0.33961260318756104",
+    "clean__public_component": "0.21256838738918304",
+    "clean__vector_epe": "0.33961260318756104"
+  },
+  {
+    "pair_index": "233",
+    "pair_id": "000233",
+    "reference5__public_component": "1.0369393825531006",
+    "reference5__vector_epe": "1.693620204925537",
+    "clean__public_component": "1.0369393825531006",
+    "clean__vector_epe": "1.693620204925537"
+  },
+  {
+    "pair_index": "234",
+    "pair_id": "000234",
+    "reference5__public_component": "1.2955470085144043",
+    "reference5__vector_epe": "1.9928196668624878",
+    "clean__public_component": "1.2955470085144043",
+    "clean__vector_epe": "1.9928196668624878"
+  },
+  {
+    "pair_index": "235",
+    "pair_id": "000235",
+    "reference5__public_component": "0.3137005865573883",
+    "reference5__vector_epe": "0.5217025876045227",
+    "clean__public_component": "0.3137005865573883",
+    "clean__vector_epe": "0.5217025876045227"
+  },
+  {
+    "pair_index": "236",
+    "pair_id": "000236",
+    "reference5__public_component": "0.46347635984420776",
+    "reference5__vector_epe": "0.7746501564979553",
+    "clean__public_component": "0.46347635984420776",
+    "clean__vector_epe": "0.7746501564979553"
+  },
+  {
+    "pair_index": "237",
+    "pair_id": "000237",
+    "reference5__public_component": "0.9847673177719116",
+    "reference5__vector_epe": "1.4460865259170532",
+    "clean__public_component": "0.9847673177719116",
+    "clean__vector_epe": "1.4460865259170532"
+  },
+  {
+    "pair_index": "238",
+    "pair_id": "000238",
+    "reference5__public_component": "0.36942073702812195",
+    "reference5__vector_epe": "0.676815927028656",
+    "clean__public_component": "0.36942073702812195",
+    "clean__vector_epe": "0.676815927028656"
+  },
+  {
+    "pair_index": "239",
+    "pair_id": "000239",
+    "reference5__public_component": "1.462867259979248",
+    "reference5__vector_epe": "2.3351054191589355",
+    "clean__public_component": "1.462867259979248",
+    "clean__vector_epe": "2.3351054191589355"
+  },
+  {
+    "pair_index": "240",
+    "pair_id": "000240",
+    "reference5__public_component": "0.31595948338508606",
+    "reference5__vector_epe": "0.5187785625457764",
+    "clean__public_component": "0.31595948338508606",
+    "clean__vector_epe": "0.5187785625457764"
+  },
+  {
+    "pair_index": "241",
+    "pair_id": "000241",
+    "reference5__public_component": "14.15622615814209",
+    "reference5__vector_epe": "21.75554084777832",
+    "clean__public_component": "14.15622615814209",
+    "clean__vector_epe": "21.75554084777832"
+  },
+  {
+    "pair_index": "242",
+    "pair_id": "000242",
+    "reference5__public_component": "0.46315452456474304",
+    "reference5__vector_epe": "0.7481066584587097",
+    "clean__public_component": "0.46315452456474304",
+    "clean__vector_epe": "0.7481066584587097"
+  },
+  {
+    "pair_index": "243",
+    "pair_id": "000243",
+    "reference5__public_component": "0.6931235194206238",
+    "reference5__vector_epe": "1.0457103252410889",
+    "clean__public_component": "0.6931235194206238",
+    "clean__vector_epe": "1.0457103252410889"
+  },
+  {
+    "pair_index": "244",
+    "pair_id": "000244",
+    "reference5__public_component": "3.704587697982788",
+    "reference5__vector_epe": "6.026366233825684",
+    "clean__public_component": "3.704587697982788",
+    "clean__vector_epe": "6.026366233825684"
+  },
+  {
+    "pair_index": "245",
+    "pair_id": "000245",
+    "reference5__public_component": "0.33051517605781555",
+    "reference5__vector_epe": "0.4979933798313141",
+    "clean__public_component": "0.33051517605781555",
+    "clean__vector_epe": "0.4979933798313141"
+  },
+  {
+    "pair_index": "246",
+    "pair_id": "000246",
+    "reference5__public_component": "1.153031349182129",
+    "reference5__vector_epe": "1.7270011901855469",
+    "clean__public_component": "1.153031349182129",
+    "clean__vector_epe": "1.7270011901855469"
+  },
+  {
+    "pair_index": "247",
+    "pair_id": "000247",
+    "reference5__public_component": "1.4812504053115845",
+    "reference5__vector_epe": "2.4951391220092773",
+    "clean__public_component": "1.4812504053115845",
+    "clean__vector_epe": "2.4951391220092773"
+  },
+  {
+    "pair_index": "248",
+    "pair_id": "000248",
+    "reference5__public_component": "0.332599401473999",
+    "reference5__vector_epe": "0.4999961256980896",
+    "clean__public_component": "0.332599401473999",
+    "clean__vector_epe": "0.4999961256980896"
+  },
+  {
+    "pair_index": "249",
+    "pair_id": "000249",
+    "reference5__public_component": "0.8017553091049194",
+    "reference5__vector_epe": "1.2299569845199585",
+    "clean__public_component": "0.8017553091049194",
+    "clean__vector_epe": "1.2299569845199585"
+  },
+  {
+    "pair_index": "250",
+    "pair_id": "000250",
+    "reference5__public_component": "0.3729135990142822",
+    "reference5__vector_epe": "0.6227422952651978",
+    "clean__public_component": "0.3729135990142822",
+    "clean__vector_epe": "0.6227422952651978"
+  },
+  {
+    "pair_index": "251",
+    "pair_id": "000251",
+    "reference5__public_component": "0.6050975918769836",
+    "reference5__vector_epe": "1.0530612468719482",
+    "clean__public_component": "0.6050975918769836",
+    "clean__vector_epe": "1.0530612468719482"
+  },
+  {
+    "pair_index": "252",
+    "pair_id": "000252",
+    "reference5__public_component": "0.26959794759750366",
+    "reference5__vector_epe": "0.4237377941608429",
+    "clean__public_component": "0.26959794759750366",
+    "clean__vector_epe": "0.4237377941608429"
+  },
+  {
+    "pair_index": "253",
+    "pair_id": "000253",
+    "reference5__public_component": "2.0295515060424805",
+    "reference5__vector_epe": "3.1696126461029053",
+    "clean__public_component": "2.0295515060424805",
+    "clean__vector_epe": "3.1696126461029053"
+  },
+  {
+    "pair_index": "254",
+    "pair_id": "000254",
+    "reference5__public_component": "0.37806084752082825",
+    "reference5__vector_epe": "0.6529641151428223",
+    "clean__public_component": "0.37806084752082825",
+    "clean__vector_epe": "0.6529641151428223"
+  },
+  {
+    "pair_index": "255",
+    "pair_id": "000255",
+    "reference5__public_component": "0.3333946168422699",
+    "reference5__vector_epe": "0.5932151079177856",
+    "clean__public_component": "0.3333946168422699",
+    "clean__vector_epe": "0.5932151079177856"
+  },
+  {
+    "pair_index": "256",
+    "pair_id": "000256",
+    "reference5__public_component": "1.2840744256973267",
+    "reference5__vector_epe": "1.915666937828064",
+    "clean__public_component": "1.2840744256973267",
+    "clean__vector_epe": "1.915666937828064"
+  },
+  {
+    "pair_index": "257",
+    "pair_id": "000257",
+    "reference5__public_component": "2.264054536819458",
+    "reference5__vector_epe": "3.582602024078369",
+    "clean__public_component": "2.264054536819458",
+    "clean__vector_epe": "3.582602024078369"
+  },
+  {
+    "pair_index": "258",
+    "pair_id": "000258",
+    "reference5__public_component": "0.5589938759803772",
+    "reference5__vector_epe": "0.8821097016334534",
+    "clean__public_component": "0.5589938759803772",
+    "clean__vector_epe": "0.8821097016334534"
+  },
+  {
+    "pair_index": "259",
+    "pair_id": "000259",
+    "reference5__public_component": "15.710958480834961",
+    "reference5__vector_epe": "24.11907386779785",
+    "clean__public_component": "15.710958480834961",
+    "clean__vector_epe": "24.11907386779785"
+  },
+  {
+    "pair_index": "260",
+    "pair_id": "000260",
+    "reference5__public_component": "0.1515766680240631",
+    "reference5__vector_epe": "0.22368568181991577",
+    "clean__public_component": "0.1515766680240631",
+    "clean__vector_epe": "0.22368568181991577"
+  },
+  {
+    "pair_index": "261",
+    "pair_id": "000261",
+    "reference5__public_component": "0.8375308513641357",
+    "reference5__vector_epe": "1.266670823097229",
+    "clean__public_component": "0.8375308513641357",
+    "clean__vector_epe": "1.266670823097229"
+  },
+  {
+    "pair_index": "262",
+    "pair_id": "000262",
+    "reference5__public_component": "0.9040229916572571",
+    "reference5__vector_epe": "1.4622600078582764",
+    "clean__public_component": "0.9040229916572571",
+    "clean__vector_epe": "1.4622600078582764"
+  },
+  {
+    "pair_index": "263",
+    "pair_id": "000263",
+    "reference5__public_component": "20.215600967407227",
+    "reference5__vector_epe": "30.912139892578125",
+    "clean__public_component": "20.215600967407227",
+    "clean__vector_epe": "30.912139892578125"
+  },
+  {
+    "pair_index": "264",
+    "pair_id": "000264",
+    "reference5__public_component": "0.4680117070674896",
+    "reference5__vector_epe": "0.716036856174469",
+    "clean__public_component": "0.4680117070674896",
+    "clean__vector_epe": "0.716036856174469"
+  },
+  {
+    "pair_index": "265",
+    "pair_id": "000265",
+    "reference5__public_component": "0.40640196204185486",
+    "reference5__vector_epe": "0.7525454759597778",
+    "clean__public_component": "0.40640196204185486",
+    "clean__vector_epe": "0.7525454759597778"
+  },
+  {
+    "pair_index": "266",
+    "pair_id": "000266",
+    "reference5__public_component": "0.7471987009048462",
+    "reference5__vector_epe": "1.1232380867004395",
+    "clean__public_component": "0.7471987009048462",
+    "clean__vector_epe": "1.1232380867004395"
+  },
+  {
+    "pair_index": "267",
+    "pair_id": "000267",
+    "reference5__public_component": "0.625658392906189",
+    "reference5__vector_epe": "0.9700400233268738",
+    "clean__public_component": "0.625658392906189",
+    "clean__vector_epe": "0.9700400233268738"
+  },
+  {
+    "pair_index": "268",
+    "pair_id": "000268",
+    "reference5__public_component": "0.7517378926277161",
+    "reference5__vector_epe": "1.1478617191314697",
+    "clean__public_component": "0.7517378926277161",
+    "clean__vector_epe": "1.1478617191314697"
+  },
+  {
+    "pair_index": "269",
+    "pair_id": "000269",
+    "reference5__public_component": "0.3205550014972687",
+    "reference5__vector_epe": "0.4946225881576538",
+    "clean__public_component": "0.3205550014972687",
+    "clean__vector_epe": "0.4946225881576538"
+  },
+  {
+    "pair_index": "270",
+    "pair_id": "000270",
+    "reference5__public_component": "0.6385490894317627",
+    "reference5__vector_epe": "0.980626106262207",
+    "clean__public_component": "0.6385490894317627",
+    "clean__vector_epe": "0.980626106262207"
+  },
+  {
+    "pair_index": "271",
+    "pair_id": "000271",
+    "reference5__public_component": "0.7169508934020996",
+    "reference5__vector_epe": "1.1180728673934937",
+    "clean__public_component": "0.7169508934020996",
+    "clean__vector_epe": "1.1180728673934937"
+  },
+  {
+    "pair_index": "272",
+    "pair_id": "000272",
+    "reference5__public_component": "0.5263312458992004",
+    "reference5__vector_epe": "0.7849436402320862",
+    "clean__public_component": "0.5263312458992004",
+    "clean__vector_epe": "0.7849436402320862"
+  },
+  {
+    "pair_index": "273",
+    "pair_id": "000273",
+    "reference5__public_component": "0.24337786436080933",
+    "reference5__vector_epe": "0.38313305377960205",
+    "clean__public_component": "0.24337786436080933",
+    "clean__vector_epe": "0.38313305377960205"
+  },
+  {
+    "pair_index": "274",
+    "pair_id": "000274",
+    "reference5__public_component": "0.5139688849449158",
+    "reference5__vector_epe": "0.8518239855766296",
+    "clean__public_component": "0.5139688849449158",
+    "clean__vector_epe": "0.8518239855766296"
+  },
+  {
+    "pair_index": "275",
+    "pair_id": "000275",
+    "reference5__public_component": "2.6064188480377197",
+    "reference5__vector_epe": "4.610158443450928",
+    "clean__public_component": "2.6064188480377197",
+    "clean__vector_epe": "4.610158443450928"
+  },
+  {
+    "pair_index": "276",
+    "pair_id": "000276",
+    "reference5__public_component": "1.0248758792877197",
+    "reference5__vector_epe": "1.5864356756210327",
+    "clean__public_component": "1.0248758792877197",
+    "clean__vector_epe": "1.5864356756210327"
+  },
+  {
+    "pair_index": "277",
+    "pair_id": "000277",
+    "reference5__public_component": "0.2131716012954712",
+    "reference5__vector_epe": "0.3444133996963501",
+    "clean__public_component": "0.2131716012954712",
+    "clean__vector_epe": "0.3444133996963501"
+  },
+  {
+    "pair_index": "278",
+    "pair_id": "000278",
+    "reference5__public_component": "4.275995254516602",
+    "reference5__vector_epe": "7.825231552124023",
+    "clean__public_component": "4.275995254516602",
+    "clean__vector_epe": "7.825231552124023"
+  },
+  {
+    "pair_index": "279",
+    "pair_id": "000279",
+    "reference5__public_component": "20.35649871826172",
+    "reference5__vector_epe": "31.154125213623047",
+    "clean__public_component": "20.35649871826172",
+    "clean__vector_epe": "31.154125213623047"
+  },
+  {
+    "pair_index": "280",
+    "pair_id": "000280",
+    "reference5__public_component": "15.045702934265137",
+    "reference5__vector_epe": "23.54082679748535",
+    "clean__public_component": "15.045702934265137",
+    "clean__vector_epe": "23.54082679748535"
+  },
+  {
+    "pair_index": "281",
+    "pair_id": "000281",
+    "reference5__public_component": "0.5357499718666077",
+    "reference5__vector_epe": "0.8483792543411255",
+    "clean__public_component": "0.5357499718666077",
+    "clean__vector_epe": "0.8483792543411255"
+  },
+  {
+    "pair_index": "282",
+    "pair_id": "000282",
+    "reference5__public_component": "0.434451162815094",
+    "reference5__vector_epe": "0.7512410283088684",
+    "clean__public_component": "0.434451162815094",
+    "clean__vector_epe": "0.7512410283088684"
+  },
+  {
+    "pair_index": "283",
+    "pair_id": "000283",
+    "reference5__public_component": "0.1644906997680664",
+    "reference5__vector_epe": "0.24724797904491425",
+    "clean__public_component": "0.1644906997680664",
+    "clean__vector_epe": "0.24724797904491425"
+  },
+  {
+    "pair_index": "284",
+    "pair_id": "000284",
+    "reference5__public_component": "0.2768201231956482",
+    "reference5__vector_epe": "0.43704676628112793",
+    "clean__public_component": "0.2768201231956482",
+    "clean__vector_epe": "0.43704676628112793"
+  },
+  {
+    "pair_index": "285",
+    "pair_id": "000285",
+    "reference5__public_component": "0.40263640880584717",
+    "reference5__vector_epe": "0.6198412179946899",
+    "clean__public_component": "0.40263640880584717",
+    "clean__vector_epe": "0.6198412179946899"
+  },
+  {
+    "pair_index": "286",
+    "pair_id": "000286",
+    "reference5__public_component": "0.38824012875556946",
+    "reference5__vector_epe": "0.6572478413581848",
+    "clean__public_component": "0.38824012875556946",
+    "clean__vector_epe": "0.6572478413581848"
+  },
+  {
+    "pair_index": "287",
+    "pair_id": "000287",
+    "reference5__public_component": "0.2479693591594696",
+    "reference5__vector_epe": "0.3935631215572357",
+    "clean__public_component": "0.2479693591594696",
+    "clean__vector_epe": "0.3935631215572357"
+  },
+  {
+    "pair_index": "288",
+    "pair_id": "000288",
+    "reference5__public_component": "0.4635518491268158",
+    "reference5__vector_epe": "0.7802415490150452",
+    "clean__public_component": "0.4635518491268158",
+    "clean__vector_epe": "0.7802415490150452"
+  },
+  {
+    "pair_index": "289",
+    "pair_id": "000289",
+    "reference5__public_component": "0.9433061480522156",
+    "reference5__vector_epe": "1.4462932348251343",
+    "clean__public_component": "0.9433061480522156",
+    "clean__vector_epe": "1.4462932348251343"
+  },
+  {
+    "pair_index": "290",
+    "pair_id": "000290",
+    "reference5__public_component": "0.17112067341804504",
+    "reference5__vector_epe": "0.26371848583221436",
+    "clean__public_component": "0.17112067341804504",
+    "clean__vector_epe": "0.26371848583221436"
+  },
+  {
+    "pair_index": "291",
+    "pair_id": "000291",
+    "reference5__public_component": "0.5044569969177246",
+    "reference5__vector_epe": "0.753581702709198",
+    "clean__public_component": "0.5044569969177246",
+    "clean__vector_epe": "0.753581702709198"
+  },
+  {
+    "pair_index": "292",
+    "pair_id": "000292",
+    "reference5__public_component": "0.8263190388679504",
+    "reference5__vector_epe": "1.3089399337768555",
+    "clean__public_component": "0.8263190388679504",
+    "clean__vector_epe": "1.3089399337768555"
+  },
+  {
+    "pair_index": "293",
+    "pair_id": "000293",
+    "reference5__public_component": "1.659488320350647",
+    "reference5__vector_epe": "2.6794469356536865",
+    "clean__public_component": "1.659488320350647",
+    "clean__vector_epe": "2.6794469356536865"
+  },
+  {
+    "pair_index": "294",
+    "pair_id": "000294",
+    "reference5__public_component": "4.679485321044922",
+    "reference5__vector_epe": "7.359553813934326",
+    "clean__public_component": "4.679485321044922",
+    "clean__vector_epe": "7.359553813934326"
+  },
+  {
+    "pair_index": "295",
+    "pair_id": "000295",
+    "reference5__public_component": "0.7489151954650879",
+    "reference5__vector_epe": "1.179555058479309",
+    "clean__public_component": "0.7489151954650879",
+    "clean__vector_epe": "1.179555058479309"
+  },
+  {
+    "pair_index": "296",
+    "pair_id": "000296",
+    "reference5__public_component": "0.25553208589553833",
+    "reference5__vector_epe": "0.48896849155426025",
+    "clean__public_component": "0.25553208589553833",
+    "clean__vector_epe": "0.48896849155426025"
+  },
+  {
+    "pair_index": "297",
+    "pair_id": "000297",
+    "reference5__public_component": "0.35377010703086853",
+    "reference5__vector_epe": "0.5611640214920044",
+    "clean__public_component": "0.35377010703086853",
+    "clean__vector_epe": "0.5611640214920044"
+  },
+  {
+    "pair_index": "298",
+    "pair_id": "000298",
+    "reference5__public_component": "0.45443761348724365",
+    "reference5__vector_epe": "0.685656726360321",
+    "clean__public_component": "0.45443761348724365",
+    "clean__vector_epe": "0.685656726360321"
+  },
+  {
+    "pair_index": "299",
+    "pair_id": "000299",
+    "reference5__public_component": "0.696259081363678",
+    "reference5__vector_epe": "1.1720331907272339",
+    "clean__public_component": "0.696259081363678",
+    "clean__vector_epe": "1.1720331907272339"
+  },
+  {
+    "pair_index": "300",
+    "pair_id": "000300",
+    "reference5__public_component": "0.1445527970790863",
+    "reference5__vector_epe": "0.23105725646018982",
+    "clean__public_component": "0.1445527970790863",
+    "clean__vector_epe": "0.23105725646018982"
+  },
+  {
+    "pair_index": "301",
+    "pair_id": "000301",
+    "reference5__public_component": "0.40769946575164795",
+    "reference5__vector_epe": "0.6374885439872742",
+    "clean__public_component": "0.40769946575164795",
+    "clean__vector_epe": "0.6374885439872742"
+  },
+  {
+    "pair_index": "302",
+    "pair_id": "000302",
+    "reference5__public_component": "0.49541595578193665",
+    "reference5__vector_epe": "0.8470461368560791",
+    "clean__public_component": "0.49541595578193665",
+    "clean__vector_epe": "0.8470461368560791"
+  },
+  {
+    "pair_index": "303",
+    "pair_id": "000303",
+    "reference5__public_component": "0.2973549962043762",
+    "reference5__vector_epe": "0.44535326957702637",
+    "clean__public_component": "0.2973549962043762",
+    "clean__vector_epe": "0.44535326957702637"
+  },
+  {
+    "pair_index": "304",
+    "pair_id": "000304",
+    "reference5__public_component": "3.8925459384918213",
+    "reference5__vector_epe": "5.7824530601501465",
+    "clean__public_component": "3.8925459384918213",
+    "clean__vector_epe": "5.7824530601501465"
+  },
+  {
+    "pair_index": "305",
+    "pair_id": "000305",
+    "reference5__public_component": "0.25783979892730713",
+    "reference5__vector_epe": "0.40287768840789795",
+    "clean__public_component": "0.25783979892730713",
+    "clean__vector_epe": "0.40287768840789795"
+  },
+  {
+    "pair_index": "306",
+    "pair_id": "000306",
+    "reference5__public_component": "0.8827399611473083",
+    "reference5__vector_epe": "1.4059937000274658",
+    "clean__public_component": "0.8827399611473083",
+    "clean__vector_epe": "1.4059937000274658"
+  },
+  {
+    "pair_index": "307",
+    "pair_id": "000307",
+    "reference5__public_component": "0.8780748844146729",
+    "reference5__vector_epe": "1.3532109260559082",
+    "clean__public_component": "0.8780748844146729",
+    "clean__vector_epe": "1.3532109260559082"
+  },
+  {
+    "pair_index": "308",
+    "pair_id": "000308",
+    "reference5__public_component": "0.5210646986961365",
+    "reference5__vector_epe": "0.8018145561218262",
+    "clean__public_component": "0.5210646986961365",
+    "clean__vector_epe": "0.8018145561218262"
+  },
+  {
+    "pair_index": "309",
+    "pair_id": "000309",
+    "reference5__public_component": "0.3601335883140564",
+    "reference5__vector_epe": "0.556699275970459",
+    "clean__public_component": "0.3601335883140564",
+    "clean__vector_epe": "0.556699275970459"
+  },
+  {
+    "pair_index": "310",
+    "pair_id": "000310",
+    "reference5__public_component": "0.5724050402641296",
+    "reference5__vector_epe": "0.8942298293113708",
+    "clean__public_component": "0.5724050402641296",
+    "clean__vector_epe": "0.8942298293113708"
+  },
+  {
+    "pair_index": "311",
+    "pair_id": "000311",
+    "reference5__public_component": "7.439289569854736",
+    "reference5__vector_epe": "13.671704292297363",
+    "clean__public_component": "7.439289569854736",
+    "clean__vector_epe": "13.671704292297363"
+  },
+  {
+    "pair_index": "312",
+    "pair_id": "000312",
+    "reference5__public_component": "0.20628441870212555",
+    "reference5__vector_epe": "0.31776899099349976",
+    "clean__public_component": "0.20628441870212555",
+    "clean__vector_epe": "0.31776899099349976"
+  },
+  {
+    "pair_index": "313",
+    "pair_id": "000313",
+    "reference5__public_component": "2.4051005840301514",
+    "reference5__vector_epe": "4.084784507751465",
+    "clean__public_component": "2.4051005840301514",
+    "clean__vector_epe": "4.084784507751465"
+  },
+  {
+    "pair_index": "314",
+    "pair_id": "000314",
+    "reference5__public_component": "1.2902579307556152",
+    "reference5__vector_epe": "2.003641366958618",
+    "clean__public_component": "1.2902579307556152",
+    "clean__vector_epe": "2.003641366958618"
+  },
+  {
+    "pair_index": "315",
+    "pair_id": "000315",
+    "reference5__public_component": "0.21415454149246216",
+    "reference5__vector_epe": "0.32786521315574646",
+    "clean__public_component": "0.21415454149246216",
+    "clean__vector_epe": "0.32786521315574646"
+  },
+  {
+    "pair_index": "316",
+    "pair_id": "000316",
+    "reference5__public_component": "6.733069896697998",
+    "reference5__vector_epe": "10.49959659576416",
+    "clean__public_component": "6.733069896697998",
+    "clean__vector_epe": "10.49959659576416"
+  },
+  {
+    "pair_index": "317",
+    "pair_id": "000317",
+    "reference5__public_component": "0.8016481399536133",
+    "reference5__vector_epe": "1.2379155158996582",
+    "clean__public_component": "0.8016481399536133",
+    "clean__vector_epe": "1.2379155158996582"
+  },
+  {
+    "pair_index": "318",
+    "pair_id": "000318",
+    "reference5__public_component": "0.5978614091873169",
+    "reference5__vector_epe": "0.9300609230995178",
+    "clean__public_component": "0.5978614091873169",
+    "clean__vector_epe": "0.9300609230995178"
+  },
+  {
+    "pair_index": "319",
+    "pair_id": "000319",
+    "reference5__public_component": "0.6554698348045349",
+    "reference5__vector_epe": "1.0304811000823975",
+    "clean__public_component": "0.6554698348045349",
+    "clean__vector_epe": "1.0304811000823975"
+  },
+  {
+    "pair_index": "320",
+    "pair_id": "000320",
+    "reference5__public_component": "0.9581266641616821",
+    "reference5__vector_epe": "1.527249813079834",
+    "clean__public_component": "0.9581266641616821",
+    "clean__vector_epe": "1.527249813079834"
+  },
+  {
+    "pair_index": "321",
+    "pair_id": "000321",
+    "reference5__public_component": "0.29467129707336426",
+    "reference5__vector_epe": "0.4638368487358093",
+    "clean__public_component": "0.29467129707336426",
+    "clean__vector_epe": "0.4638368487358093"
+  },
+  {
+    "pair_index": "322",
+    "pair_id": "000322",
+    "reference5__public_component": "0.5365140438079834",
+    "reference5__vector_epe": "0.8322291970252991",
+    "clean__public_component": "0.5365140438079834",
+    "clean__vector_epe": "0.8322291970252991"
+  },
+  {
+    "pair_index": "323",
+    "pair_id": "000323",
+    "reference5__public_component": "0.1878276765346527",
+    "reference5__vector_epe": "0.2863597273826599",
+    "clean__public_component": "0.1878276765346527",
+    "clean__vector_epe": "0.2863597273826599"
+  },
+  {
+    "pair_index": "324",
+    "pair_id": "000324",
+    "reference5__public_component": "0.6260180473327637",
+    "reference5__vector_epe": "0.9754295349121094",
+    "clean__public_component": "0.6260180473327637",
+    "clean__vector_epe": "0.9754295349121094"
+  },
+  {
+    "pair_index": "325",
+    "pair_id": "000325",
+    "reference5__public_component": "0.4257320165634155",
+    "reference5__vector_epe": "0.6874282956123352",
+    "clean__public_component": "0.4257320165634155",
+    "clean__vector_epe": "0.6874282956123352"
+  },
+  {
+    "pair_index": "326",
+    "pair_id": "000326",
+    "reference5__public_component": "0.7329622507095337",
+    "reference5__vector_epe": "1.1674234867095947",
+    "clean__public_component": "0.7329622507095337",
+    "clean__vector_epe": "1.1674234867095947"
+  },
+  {
+    "pair_index": "327",
+    "pair_id": "000327",
+    "reference5__public_component": "0.25352609157562256",
+    "reference5__vector_epe": "0.40580812096595764",
+    "clean__public_component": "0.25352609157562256",
+    "clean__vector_epe": "0.40580812096595764"
+  },
+  {
+    "pair_index": "328",
+    "pair_id": "000328",
+    "reference5__public_component": "0.4244682490825653",
+    "reference5__vector_epe": "0.6699812412261963",
+    "clean__public_component": "0.4244682490825653",
+    "clean__vector_epe": "0.6699812412261963"
+  },
+  {
+    "pair_index": "329",
+    "pair_id": "000329",
+    "reference5__public_component": "8.579093933105469",
+    "reference5__vector_epe": "13.692693710327148",
+    "clean__public_component": "8.579093933105469",
+    "clean__vector_epe": "13.692693710327148"
+  },
+  {
+    "pair_index": "330",
+    "pair_id": "000330",
+    "reference5__public_component": "0.58651202917099",
+    "reference5__vector_epe": "0.8702937960624695",
+    "clean__public_component": "0.58651202917099",
+    "clean__vector_epe": "0.8702937960624695"
+  },
+  {
+    "pair_index": "331",
+    "pair_id": "000331",
+    "reference5__public_component": "0.8252646923065186",
+    "reference5__vector_epe": "1.2825621366500854",
+    "clean__public_component": "0.8252646923065186",
+    "clean__vector_epe": "1.2825621366500854"
+  },
+  {
+    "pair_index": "332",
+    "pair_id": "000332",
+    "reference5__public_component": "0.6094908714294434",
+    "reference5__vector_epe": "0.9979959726333618",
+    "clean__public_component": "0.6094908714294434",
+    "clean__vector_epe": "0.9979959726333618"
+  },
+  {
+    "pair_index": "333",
+    "pair_id": "000333",
+    "reference5__public_component": "0.7261271476745605",
+    "reference5__vector_epe": "1.1184195280075073",
+    "clean__public_component": "0.7261271476745605",
+    "clean__vector_epe": "1.1184195280075073"
+  },
+  {
+    "pair_index": "334",
+    "pair_id": "000334",
+    "reference5__public_component": "0.6266676187515259",
+    "reference5__vector_epe": "0.998450756072998",
+    "clean__public_component": "0.6266676187515259",
+    "clean__vector_epe": "0.998450756072998"
+  },
+  {
+    "pair_index": "335",
+    "pair_id": "000335",
+    "reference5__public_component": "1.2499459981918335",
+    "reference5__vector_epe": "1.9037665128707886",
+    "clean__public_component": "1.2499459981918335",
+    "clean__vector_epe": "1.9037665128707886"
+  },
+  {
+    "pair_index": "336",
+    "pair_id": "000336",
+    "reference5__public_component": "0.7382348775863647",
+    "reference5__vector_epe": "1.1339194774627686",
+    "clean__public_component": "0.7382348775863647",
+    "clean__vector_epe": "1.1339194774627686"
+  },
+  {
+    "pair_index": "337",
+    "pair_id": "000337",
+    "reference5__public_component": "0.29939544200897217",
+    "reference5__vector_epe": "0.44069090485572815",
+    "clean__public_component": "0.29939544200897217",
+    "clean__vector_epe": "0.44069090485572815"
+  },
+  {
+    "pair_index": "338",
+    "pair_id": "000338",
+    "reference5__public_component": "0.36725205183029175",
+    "reference5__vector_epe": "0.5949064493179321",
+    "clean__public_component": "0.36725205183029175",
+    "clean__vector_epe": "0.5949064493179321"
+  },
+  {
+    "pair_index": "339",
+    "pair_id": "000339",
+    "reference5__public_component": "10.642266273498535",
+    "reference5__vector_epe": "15.17136001586914",
+    "clean__public_component": "10.642266273498535",
+    "clean__vector_epe": "15.17136001586914"
+  },
+  {
+    "pair_index": "340",
+    "pair_id": "000340",
+    "reference5__public_component": "6.136550426483154",
+    "reference5__vector_epe": "9.481804847717285",
+    "clean__public_component": "6.136550426483154",
+    "clean__vector_epe": "9.481804847717285"
+  },
+  {
+    "pair_index": "341",
+    "pair_id": "000341",
+    "reference5__public_component": "0.3385777771472931",
+    "reference5__vector_epe": "0.5089409947395325",
+    "clean__public_component": "0.3385777771472931",
+    "clean__vector_epe": "0.5089409947395325"
+  },
+  {
+    "pair_index": "342",
+    "pair_id": "000342",
+    "reference5__public_component": "0.1815614551305771",
+    "reference5__vector_epe": "0.2894708216190338",
+    "clean__public_component": "0.1815614551305771",
+    "clean__vector_epe": "0.2894708216190338"
+  },
+  {
+    "pair_index": "343",
+    "pair_id": "000343",
+    "reference5__public_component": "0.8957945108413696",
+    "reference5__vector_epe": "1.4234479665756226",
+    "clean__public_component": "0.8957945108413696",
+    "clean__vector_epe": "1.4234479665756226"
+  },
+  {
+    "pair_index": "344",
+    "pair_id": "000344",
+    "reference5__public_component": "3.858112335205078",
+    "reference5__vector_epe": "6.816887378692627",
+    "clean__public_component": "3.858112335205078",
+    "clean__vector_epe": "6.816887378692627"
+  },
+  {
+    "pair_index": "345",
+    "pair_id": "000345",
+    "reference5__public_component": "0.36388900876045227",
+    "reference5__vector_epe": "0.5686001181602478",
+    "clean__public_component": "0.36388900876045227",
+    "clean__vector_epe": "0.5686001181602478"
+  },
+  {
+    "pair_index": "346",
+    "pair_id": "000346",
+    "reference5__public_component": "1.1476463079452515",
+    "reference5__vector_epe": "1.7852805852890015",
+    "clean__public_component": "1.1476463079452515",
+    "clean__vector_epe": "1.7852805852890015"
+  },
+  {
+    "pair_index": "347",
+    "pair_id": "000347",
+    "reference5__public_component": "0.4355265498161316",
+    "reference5__vector_epe": "0.6833600401878357",
+    "clean__public_component": "0.4355265498161316",
+    "clean__vector_epe": "0.6833600401878357"
+  },
+  {
+    "pair_index": "348",
+    "pair_id": "000348",
+    "reference5__public_component": "0.5774459838867188",
+    "reference5__vector_epe": "1.0791369676589966",
+    "clean__public_component": "0.5774459838867188",
+    "clean__vector_epe": "1.0791369676589966"
+  },
+  {
+    "pair_index": "349",
+    "pair_id": "000349",
+    "reference5__public_component": "1.0732735395431519",
+    "reference5__vector_epe": "2.027085781097412",
+    "clean__public_component": "1.0732735395431519",
+    "clean__vector_epe": "2.027085781097412"
+  },
+  {
+    "pair_index": "350",
+    "pair_id": "000350",
+    "reference5__public_component": "0.8519204258918762",
+    "reference5__vector_epe": "1.279262900352478",
+    "clean__public_component": "0.8519204258918762",
+    "clean__vector_epe": "1.279262900352478"
+  },
+  {
+    "pair_index": "351",
+    "pair_id": "000351",
+    "reference5__public_component": "0.34177520871162415",
+    "reference5__vector_epe": "0.5332803726196289",
+    "clean__public_component": "0.34177520871162415",
+    "clean__vector_epe": "0.5332803726196289"
+  },
+  {
+    "pair_index": "352",
+    "pair_id": "000352",
+    "reference5__public_component": "1.1564106941223145",
+    "reference5__vector_epe": "1.7894026041030884",
+    "clean__public_component": "1.1564106941223145",
+    "clean__vector_epe": "1.7894026041030884"
+  },
+  {
+    "pair_index": "353",
+    "pair_id": "000353",
+    "reference5__public_component": "7.638247966766357",
+    "reference5__vector_epe": "14.297086715698242",
+    "clean__public_component": "7.638247966766357",
+    "clean__vector_epe": "14.297086715698242"
+  },
+  {
+    "pair_index": "354",
+    "pair_id": "000354",
+    "reference5__public_component": "1.1912676095962524",
+    "reference5__vector_epe": "1.8134020566940308",
+    "clean__public_component": "1.1912676095962524",
+    "clean__vector_epe": "1.8134020566940308"
+  },
+  {
+    "pair_index": "355",
+    "pair_id": "000355",
+    "reference5__public_component": "0.6457871794700623",
+    "reference5__vector_epe": "1.0089404582977295",
+    "clean__public_component": "0.6457871794700623",
+    "clean__vector_epe": "1.0089404582977295"
+  },
+  {
+    "pair_index": "356",
+    "pair_id": "000356",
+    "reference5__public_component": "0.7285284399986267",
+    "reference5__vector_epe": "1.0927114486694336",
+    "clean__public_component": "0.7285284399986267",
+    "clean__vector_epe": "1.0927114486694336"
+  },
+  {
+    "pair_index": "357",
+    "pair_id": "000357",
+    "reference5__public_component": "3.160909652709961",
+    "reference5__vector_epe": "5.5779876708984375",
+    "clean__public_component": "3.160909652709961",
+    "clean__vector_epe": "5.5779876708984375"
+  },
+  {
+    "pair_index": "358",
+    "pair_id": "000358",
+    "reference5__public_component": "4.511373043060303",
+    "reference5__vector_epe": "7.11347770690918",
+    "clean__public_component": "4.511373043060303",
+    "clean__vector_epe": "7.11347770690918"
+  },
+  {
+    "pair_index": "359",
+    "pair_id": "000359",
+    "reference5__public_component": "0.6461541652679443",
+    "reference5__vector_epe": "1.0880106687545776",
+    "clean__public_component": "0.6461541652679443",
+    "clean__vector_epe": "1.0880106687545776"
+  },
+  {
+    "pair_index": "360",
+    "pair_id": "000360",
+    "reference5__public_component": "0.37096160650253296",
+    "reference5__vector_epe": "0.6739395260810852",
+    "clean__public_component": "0.37096160650253296",
+    "clean__vector_epe": "0.6739395260810852"
+  },
+  {
+    "pair_index": "361",
+    "pair_id": "000361",
+    "reference5__public_component": "1.050297498703003",
+    "reference5__vector_epe": "1.6508451700210571",
+    "clean__public_component": "1.050297498703003",
+    "clean__vector_epe": "1.6508451700210571"
+  },
+  {
+    "pair_index": "362",
+    "pair_id": "000362",
+    "reference5__public_component": "0.27458423376083374",
+    "reference5__vector_epe": "0.4472225308418274",
+    "clean__public_component": "0.27458423376083374",
+    "clean__vector_epe": "0.4472225308418274"
+  },
+  {
+    "pair_index": "363",
+    "pair_id": "000363",
+    "reference5__public_component": "4.304162502288818",
+    "reference5__vector_epe": "7.136740684509277",
+    "clean__public_component": "4.304162502288818",
+    "clean__vector_epe": "7.136740684509277"
+  },
+  {
+    "pair_index": "364",
+    "pair_id": "000364",
+    "reference5__public_component": "3.454136610031128",
+    "reference5__vector_epe": "6.01270055770874",
+    "clean__public_component": "3.454136610031128",
+    "clean__vector_epe": "6.01270055770874"
+  },
+  {
+    "pair_index": "365",
+    "pair_id": "000365",
+    "reference5__public_component": "0.8063923120498657",
+    "reference5__vector_epe": "1.2913683652877808",
+    "clean__public_component": "0.8063923120498657",
+    "clean__vector_epe": "1.2913683652877808"
+  },
+  {
+    "pair_index": "366",
+    "pair_id": "000366",
+    "reference5__public_component": "0.360260009765625",
+    "reference5__vector_epe": "0.5896700620651245",
+    "clean__public_component": "0.360260009765625",
+    "clean__vector_epe": "0.5896700620651245"
+  },
+  {
+    "pair_index": "367",
+    "pair_id": "000367",
+    "reference5__public_component": "0.5022746324539185",
+    "reference5__vector_epe": "0.7595481872558594",
+    "clean__public_component": "0.5022746324539185",
+    "clean__vector_epe": "0.7595481872558594"
+  },
+  {
+    "pair_index": "368",
+    "pair_id": "000368",
+    "reference5__public_component": "0.5810880661010742",
+    "reference5__vector_epe": "0.8766992688179016",
+    "clean__public_component": "0.5810880661010742",
+    "clean__vector_epe": "0.8766992688179016"
+  },
+  {
+    "pair_index": "369",
+    "pair_id": "000369",
+    "reference5__public_component": "0.5134235620498657",
+    "reference5__vector_epe": "0.7683438658714294",
+    "clean__public_component": "0.5134235620498657",
+    "clean__vector_epe": "0.7683438658714294"
+  },
+  {
+    "pair_index": "370",
+    "pair_id": "000370",
+    "reference5__public_component": "0.14770615100860596",
+    "reference5__vector_epe": "0.24798110127449036",
+    "clean__public_component": "0.14770615100860596",
+    "clean__vector_epe": "0.24798110127449036"
+  },
+  {
+    "pair_index": "371",
+    "pair_id": "000371",
+    "reference5__public_component": "0.3727550208568573",
+    "reference5__vector_epe": "0.6880065202713013",
+    "clean__public_component": "0.3727550208568573",
+    "clean__vector_epe": "0.6880065202713013"
+  },
+  {
+    "pair_index": "372",
+    "pair_id": "000372",
+    "reference5__public_component": "0.9702919721603394",
+    "reference5__vector_epe": "1.523301362991333",
+    "clean__public_component": "0.9702919721603394",
+    "clean__vector_epe": "1.523301362991333"
+  },
+  {
+    "pair_index": "373",
+    "pair_id": "000373",
+    "reference5__public_component": "3.6350982189178467",
+    "reference5__vector_epe": "6.184480667114258",
+    "clean__public_component": "3.6350982189178467",
+    "clean__vector_epe": "6.184480667114258"
+  },
+  {
+    "pair_index": "374",
+    "pair_id": "000374",
+    "reference5__public_component": "0.7566022276878357",
+    "reference5__vector_epe": "1.2988024950027466",
+    "clean__public_component": "0.7566022276878357",
+    "clean__vector_epe": "1.2988024950027466"
+  },
+  {
+    "pair_index": "375",
+    "pair_id": "000375",
+    "reference5__public_component": "2.4338905811309814",
+    "reference5__vector_epe": "4.199666976928711",
+    "clean__public_component": "2.4338905811309814",
+    "clean__vector_epe": "4.199666976928711"
+  },
+  {
+    "pair_index": "376",
+    "pair_id": "000376",
+    "reference5__public_component": "0.4303326904773712",
+    "reference5__vector_epe": "0.6925299763679504",
+    "clean__public_component": "0.4303326904773712",
+    "clean__vector_epe": "0.6925299763679504"
+  },
+  {
+    "pair_index": "377",
+    "pair_id": "000377",
+    "reference5__public_component": "1.0980638265609741",
+    "reference5__vector_epe": "1.8351727724075317",
+    "clean__public_component": "1.0980638265609741",
+    "clean__vector_epe": "1.8351727724075317"
+  },
+  {
+    "pair_index": "378",
+    "pair_id": "000378",
+    "reference5__public_component": "1.2895845174789429",
+    "reference5__vector_epe": "1.9927276372909546",
+    "clean__public_component": "1.2895845174789429",
+    "clean__vector_epe": "1.9927276372909546"
+  },
+  {
+    "pair_index": "379",
+    "pair_id": "000379",
+    "reference5__public_component": "9.526257514953613",
+    "reference5__vector_epe": "17.896217346191406",
+    "clean__public_component": "9.526257514953613",
+    "clean__vector_epe": "17.896217346191406"
+  },
+  {
+    "pair_index": "380",
+    "pair_id": "000380",
+    "reference5__public_component": "9.690803527832031",
+    "reference5__vector_epe": "15.675884246826172",
+    "clean__public_component": "9.690803527832031",
+    "clean__vector_epe": "15.675884246826172"
+  },
+  {
+    "pair_index": "381",
+    "pair_id": "000381",
+    "reference5__public_component": "0.34215202927589417",
+    "reference5__vector_epe": "0.5317412614822388",
+    "clean__public_component": "0.34215202927589417",
+    "clean__vector_epe": "0.5317412614822388"
+  },
+  {
+    "pair_index": "382",
+    "pair_id": "000382",
+    "reference5__public_component": "0.6552342772483826",
+    "reference5__vector_epe": "0.9708575010299683",
+    "clean__public_component": "0.6552342772483826",
+    "clean__vector_epe": "0.9708575010299683"
+  },
+  {
+    "pair_index": "383",
+    "pair_id": "000383",
+    "reference5__public_component": "0.11644233763217926",
+    "reference5__vector_epe": "0.17689643800258636",
+    "clean__public_component": "0.11644233763217926",
+    "clean__vector_epe": "0.17689643800258636"
+  },
+  {
+    "pair_index": "384",
+    "pair_id": "000384",
+    "reference5__public_component": "0.34649503231048584",
+    "reference5__vector_epe": "0.538189709186554",
+    "clean__public_component": "0.34649503231048584",
+    "clean__vector_epe": "0.538189709186554"
+  },
+  {
+    "pair_index": "385",
+    "pair_id": "000385",
+    "reference5__public_component": "1.0555323362350464",
+    "reference5__vector_epe": "1.5884596109390259",
+    "clean__public_component": "1.0555323362350464",
+    "clean__vector_epe": "1.5884596109390259"
+  },
+  {
+    "pair_index": "386",
+    "pair_id": "000386",
+    "reference5__public_component": "0.37379366159439087",
+    "reference5__vector_epe": "0.5577676296234131",
+    "clean__public_component": "0.37379366159439087",
+    "clean__vector_epe": "0.5577676296234131"
+  },
+  {
+    "pair_index": "387",
+    "pair_id": "000387",
+    "reference5__public_component": "0.20882345736026764",
+    "reference5__vector_epe": "0.3262861371040344",
+    "clean__public_component": "0.20882345736026764",
+    "clean__vector_epe": "0.3262861371040344"
+  },
+  {
+    "pair_index": "388",
+    "pair_id": "000388",
+    "reference5__public_component": "0.8492932319641113",
+    "reference5__vector_epe": "1.338972568511963",
+    "clean__public_component": "0.8492932319641113",
+    "clean__vector_epe": "1.338972568511963"
+  },
+  {
+    "pair_index": "389",
+    "pair_id": "000389",
+    "reference5__public_component": "0.854191780090332",
+    "reference5__vector_epe": "1.2809743881225586",
+    "clean__public_component": "0.854191780090332",
+    "clean__vector_epe": "1.2809743881225586"
+  },
+  {
+    "pair_index": "390",
+    "pair_id": "000390",
+    "reference5__public_component": "0.7164602279663086",
+    "reference5__vector_epe": "1.1035518646240234",
+    "clean__public_component": "0.7164602279663086",
+    "clean__vector_epe": "1.1035518646240234"
+  },
+  {
+    "pair_index": "391",
+    "pair_id": "000391",
+    "reference5__public_component": "0.24548476934432983",
+    "reference5__vector_epe": "0.3741309940814972",
+    "clean__public_component": "0.24548476934432983",
+    "clean__vector_epe": "0.3741309940814972"
+  },
+  {
+    "pair_index": "392",
+    "pair_id": "000392",
+    "reference5__public_component": "0.2641949951648712",
+    "reference5__vector_epe": "0.44083371758461",
+    "clean__public_component": "0.2641949951648712",
+    "clean__vector_epe": "0.44083371758461"
+  },
+  {
+    "pair_index": "393",
+    "pair_id": "000393",
+    "reference5__public_component": "0.2646533250808716",
+    "reference5__vector_epe": "0.45353880524635315",
+    "clean__public_component": "0.2646533250808716",
+    "clean__vector_epe": "0.45353880524635315"
+  },
+  {
+    "pair_index": "394",
+    "pair_id": "000394",
+    "reference5__public_component": "0.25175368785858154",
+    "reference5__vector_epe": "0.39571186900138855",
+    "clean__public_component": "0.25175368785858154",
+    "clean__vector_epe": "0.39571186900138855"
+  },
+  {
+    "pair_index": "395",
+    "pair_id": "000395",
+    "reference5__public_component": "1.6882145404815674",
+    "reference5__vector_epe": "2.7511096000671387",
+    "clean__public_component": "1.6882145404815674",
+    "clean__vector_epe": "2.7511096000671387"
+  },
+  {
+    "pair_index": "396",
+    "pair_id": "000396",
+    "reference5__public_component": "0.26079824566841125",
+    "reference5__vector_epe": "0.4202677011489868",
+    "clean__public_component": "0.26079824566841125",
+    "clean__vector_epe": "0.4202677011489868"
+  },
+  {
+    "pair_index": "397",
+    "pair_id": "000397",
+    "reference5__public_component": "0.3219292163848877",
+    "reference5__vector_epe": "0.502616822719574",
+    "clean__public_component": "0.3219292163848877",
+    "clean__vector_epe": "0.502616822719574"
+  },
+  {
+    "pair_index": "398",
+    "pair_id": "000398",
+    "reference5__public_component": "0.1627657264471054",
+    "reference5__vector_epe": "0.2501806616783142",
+    "clean__public_component": "0.1627657264471054",
+    "clean__vector_epe": "0.2501806616783142"
+  },
+  {
+    "pair_index": "399",
+    "pair_id": "000399",
+    "reference5__public_component": "4.702232837677002",
+    "reference5__vector_epe": "6.977284908294678",
+    "clean__public_component": "4.702232837677002",
+    "clean__vector_epe": "6.977284908294678"
+  },
+  {
+    "pair_index": "400",
+    "pair_id": "000400",
+    "reference5__public_component": "0.33255499601364136",
+    "reference5__vector_epe": "0.5147764682769775",
+    "clean__public_component": "0.33255499601364136",
+    "clean__vector_epe": "0.5147764682769775"
+  },
+  {
+    "pair_index": "401",
+    "pair_id": "000401",
+    "reference5__public_component": "4.705204963684082",
+    "reference5__vector_epe": "7.784702777862549",
+    "clean__public_component": "4.705204963684082",
+    "clean__vector_epe": "7.784702777862549"
+  },
+  {
+    "pair_index": "402",
+    "pair_id": "000402",
+    "reference5__public_component": "0.42080676555633545",
+    "reference5__vector_epe": "0.6665154099464417",
+    "clean__public_component": "0.42080676555633545",
+    "clean__vector_epe": "0.6665154099464417"
+  },
+  {
+    "pair_index": "403",
+    "pair_id": "000403",
+    "reference5__public_component": "6.97555685043335",
+    "reference5__vector_epe": "12.45256233215332",
+    "clean__public_component": "6.97555685043335",
+    "clean__vector_epe": "12.45256233215332"
+  },
+  {
+    "pair_index": "404",
+    "pair_id": "000404",
+    "reference5__public_component": "6.683696269989014",
+    "reference5__vector_epe": "10.848952293395996",
+    "clean__public_component": "6.683696269989014",
+    "clean__vector_epe": "10.848952293395996"
+  },
+  {
+    "pair_index": "405",
+    "pair_id": "000405",
+    "reference5__public_component": "0.34617161750793457",
+    "reference5__vector_epe": "0.5423839092254639",
+    "clean__public_component": "0.34617161750793457",
+    "clean__vector_epe": "0.5423839092254639"
+  },
+  {
+    "pair_index": "406",
+    "pair_id": "000406",
+    "reference5__public_component": "0.3966860771179199",
+    "reference5__vector_epe": "0.6112309694290161",
+    "clean__public_component": "0.3966860771179199",
+    "clean__vector_epe": "0.6112309694290161"
+  },
+  {
+    "pair_index": "407",
+    "pair_id": "000407",
+    "reference5__public_component": "0.8511151075363159",
+    "reference5__vector_epe": "1.3317381143569946",
+    "clean__public_component": "0.8511151075363159",
+    "clean__vector_epe": "1.3317381143569946"
+  },
+  {
+    "pair_index": "408",
+    "pair_id": "000408",
+    "reference5__public_component": "1.2061291933059692",
+    "reference5__vector_epe": "1.8260315656661987",
+    "clean__public_component": "1.2061291933059692",
+    "clean__vector_epe": "1.8260315656661987"
+  },
+  {
+    "pair_index": "409",
+    "pair_id": "000409",
+    "reference5__public_component": "0.1894930750131607",
+    "reference5__vector_epe": "0.2949479818344116",
+    "clean__public_component": "0.1894930750131607",
+    "clean__vector_epe": "0.2949479818344116"
+  },
+  {
+    "pair_index": "410",
+    "pair_id": "000410",
+    "reference5__public_component": "0.8511991500854492",
+    "reference5__vector_epe": "1.2922258377075195",
+    "clean__public_component": "0.8511991500854492",
+    "clean__vector_epe": "1.2922258377075195"
+  },
+  {
+    "pair_index": "411",
+    "pair_id": "000411",
+    "reference5__public_component": "0.5576579570770264",
+    "reference5__vector_epe": "0.967296302318573",
+    "clean__public_component": "0.5576579570770264",
+    "clean__vector_epe": "0.967296302318573"
+  },
+  {
+    "pair_index": "412",
+    "pair_id": "000412",
+    "reference5__public_component": "0.1535218507051468",
+    "reference5__vector_epe": "0.2531561553478241",
+    "clean__public_component": "0.1535218507051468",
+    "clean__vector_epe": "0.2531561553478241"
+  },
+  {
+    "pair_index": "413",
+    "pair_id": "000413",
+    "reference5__public_component": "0.3464442789554596",
+    "reference5__vector_epe": "0.5395376682281494",
+    "clean__public_component": "0.3464442789554596",
+    "clean__vector_epe": "0.5395376682281494"
+  },
+  {
+    "pair_index": "414",
+    "pair_id": "000414",
+    "reference5__public_component": "0.8902121782302856",
+    "reference5__vector_epe": "1.348732829093933",
+    "clean__public_component": "0.8902121782302856",
+    "clean__vector_epe": "1.348732829093933"
+  },
+  {
+    "pair_index": "415",
+    "pair_id": "000415",
+    "reference5__public_component": "1.016674518585205",
+    "reference5__vector_epe": "1.6714861392974854",
+    "clean__public_component": "1.016674518585205",
+    "clean__vector_epe": "1.6714861392974854"
+  },
+  {
+    "pair_index": "416",
+    "pair_id": "000416",
+    "reference5__public_component": "0.49286970496177673",
+    "reference5__vector_epe": "0.7586275935173035",
+    "clean__public_component": "0.49286970496177673",
+    "clean__vector_epe": "0.7586275935173035"
+  },
+  {
+    "pair_index": "417",
+    "pair_id": "000417",
+    "reference5__public_component": "0.27987924218177795",
+    "reference5__vector_epe": "0.41058945655822754",
+    "clean__public_component": "0.27987924218177795",
+    "clean__vector_epe": "0.41058945655822754"
+  },
+  {
+    "pair_index": "418",
+    "pair_id": "000418",
+    "reference5__public_component": "2.049074172973633",
+    "reference5__vector_epe": "3.3714752197265625",
+    "clean__public_component": "2.049074172973633",
+    "clean__vector_epe": "3.3714752197265625"
+  },
+  {
+    "pair_index": "419",
+    "pair_id": "000419",
+    "reference5__public_component": "0.9476717710494995",
+    "reference5__vector_epe": "1.4405348300933838",
+    "clean__public_component": "0.9476717710494995",
+    "clean__vector_epe": "1.4405348300933838"
+  },
+  {
+    "pair_index": "420",
+    "pair_id": "000420",
+    "reference5__public_component": "2.6863901615142822",
+    "reference5__vector_epe": "4.282654285430908",
+    "clean__public_component": "2.6863901615142822",
+    "clean__vector_epe": "4.282654285430908"
+  },
+  {
+    "pair_index": "421",
+    "pair_id": "000421",
+    "reference5__public_component": "0.31544941663742065",
+    "reference5__vector_epe": "0.5156556963920593",
+    "clean__public_component": "0.31544941663742065",
+    "clean__vector_epe": "0.5156556963920593"
+  },
+  {
+    "pair_index": "422",
+    "pair_id": "000422",
+    "reference5__public_component": "0.2912478744983673",
+    "reference5__vector_epe": "0.42766451835632324",
+    "clean__public_component": "0.2912478744983673",
+    "clean__vector_epe": "0.42766451835632324"
+  },
+  {
+    "pair_index": "423",
+    "pair_id": "000423",
+    "reference5__public_component": "0.25323590636253357",
+    "reference5__vector_epe": "0.382557213306427",
+    "clean__public_component": "0.25323590636253357",
+    "clean__vector_epe": "0.382557213306427"
+  }
+]

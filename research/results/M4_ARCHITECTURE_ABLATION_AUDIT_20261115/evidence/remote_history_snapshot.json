@@ -1,0 +1,959 @@
+{
+  "captured_at": "2026-11-15",
+  "scope": "read-only terminal result cards, not a new experiment",
+  "inventory": {
+    "E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v1/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "corr_quality_report.json",
+      "distribution_alignment_report.json",
+      "iterwise_flow_report.json",
+      "layerwise_frontend_audit.json",
+      "method_ablation.json",
+      "pre_post_lsr_bucket_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "train_curve_checkpoints.json",
+      "training_sufficiency_report.json",
+      "variant_matrix.json"
+    ],
+    "E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v1-r60k/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "corr_quality_report.json",
+      "distribution_alignment_report.json",
+      "iterwise_flow_report.json",
+      "layerwise_frontend_audit.json",
+      "method_ablation.json",
+      "pre_post_lsr_bucket_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "train_curve_checkpoints.json",
+      "training_sufficiency_report.json",
+      "variant_matrix.json"
+    ],
+    "E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v2/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "corr_quality_report.json",
+      "distribution_alignment_report.json",
+      "iterwise_flow_report.json",
+      "layerwise_frontend_audit.json",
+      "method_ablation.json",
+      "pre_post_lsr_bucket_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "train_curve_checkpoints.json",
+      "training_sufficiency_report.json",
+      "variant_matrix.json"
+    ],
+    "E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v2-r60k/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "corr_quality_report.json",
+      "distribution_alignment_report.json",
+      "iterwise_flow_report.json",
+      "layerwise_frontend_audit.json",
+      "method_ablation.json",
+      "pre_post_lsr_bucket_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "train_curve_checkpoints.json",
+      "training_sufficiency_report.json",
+      "variant_matrix.json"
+    ],
+    "E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v3/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "corr_quality_report.json",
+      "distribution_alignment_report.json",
+      "iterwise_flow_report.json",
+      "layerwise_frontend_audit.json",
+      "method_ablation.json",
+      "pre_post_lsr_bucket_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "train_curve_checkpoints.json",
+      "training_sufficiency_report.json",
+      "variant_matrix.json"
+    ],
+    "E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v4/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "corr_quality_report.json",
+      "distribution_alignment_report.json",
+      "iterwise_flow_report.json",
+      "layerwise_frontend_audit.json",
+      "method_ablation.json",
+      "pre_post_lsr_bucket_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "train_curve_checkpoints.json",
+      "training_sufficiency_report.json",
+      "variant_matrix.json"
+    ],
+    "E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f1-formal/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_contribution_report.json",
+      "fusion_variant_matrix.json",
+      "late_ensemble_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt"
+    ],
+    "E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f1-smoke/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_contribution_report.json",
+      "fusion_variant_matrix.json",
+      "late_ensemble_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt"
+    ],
+    "E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f2-smoke/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_contribution_report.json",
+      "checkpoint_curve_report.json",
+      "corr_quality_report.json",
+      "fusion_variant_matrix.json",
+      "iterwise_flow_report.json",
+      "long_training_report.json",
+      "method_ablation.json",
+      "pre_post_lsr_bucket_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "training_sufficiency_report.json"
+    ],
+    "E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f2-warm120k/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_contribution_report.json",
+      "checkpoint_curve_report.json",
+      "corr_quality_report.json",
+      "fusion_variant_matrix.json",
+      "iterwise_flow_report.json",
+      "long_training_report.json",
+      "method_ablation.json",
+      "pre_post_lsr_bucket_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "training_sufficiency_report.json"
+    ],
+    "E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f3-smoke/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_contribution_report.json",
+      "checkpoint_curve_report.json",
+      "corr_quality_report.json",
+      "fusion_variant_matrix.json",
+      "iterwise_flow_report.json",
+      "long_training_report.json",
+      "method_ablation.json",
+      "pre_post_lsr_bucket_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "training_sufficiency_report.json"
+    ],
+    "E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f3-warm120k/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_contribution_report.json",
+      "checkpoint_curve_report.json",
+      "corr_quality_report.json",
+      "fusion_variant_matrix.json",
+      "iterwise_flow_report.json",
+      "long_training_report.json",
+      "method_ablation.json",
+      "pre_post_lsr_bucket_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "training_sufficiency_report.json"
+    ],
+    "E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f4-smoke/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_contribution_report.json",
+      "checkpoint_curve_report.json",
+      "corr_quality_report.json",
+      "fusion_variant_matrix.json",
+      "iterwise_flow_report.json",
+      "long_training_report.json",
+      "method_ablation.json",
+      "pre_post_lsr_bucket_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "training_sufficiency_report.json"
+    ],
+    "E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f4-warm120k/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_contribution_report.json",
+      "checkpoint_curve_report.json",
+      "corr_quality_report.json",
+      "fusion_variant_matrix.json",
+      "iterwise_flow_report.json",
+      "long_training_report.json",
+      "method_ablation.json",
+      "pre_post_lsr_bucket_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "training_sufficiency_report.json"
+    ],
+    "E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-a-formal/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "fusion_stage2_matrix.json",
+      "oracle_vs_nogt_fusion_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt"
+    ],
+    "E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-a-smoke/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "fusion_stage2_matrix.json",
+      "oracle_vs_nogt_fusion_report.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt"
+    ],
+    "E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-smoke/formal": [
+      "P0.json",
+      "baseline_comparison.json",
+      "fusion_stage2_matrix.json"
+    ],
+    "E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-smoke-r2/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_gate_report.json",
+      "checkpoint_curve_report.json",
+      "curve_guided_training_report.json",
+      "fusion_stage2_matrix.json",
+      "method_ablation.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt"
+    ],
+    "E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-stage180k/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_gate_report.json",
+      "checkpoint_curve_report.json",
+      "curve_guided_training_report.json",
+      "fusion_stage2_matrix.json",
+      "method_ablation.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt"
+    ],
+    "E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-smoke-r2/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_gate_report.json",
+      "checkpoint_curve_report.json",
+      "curve_guided_training_report.json",
+      "fusion_stage2_matrix.json",
+      "method_ablation.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt"
+    ],
+    "E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_gate_report.json",
+      "checkpoint_curve_report.json",
+      "curve_guided_training_report.json",
+      "fusion_stage2_matrix.json",
+      "method_ablation.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt"
+    ],
+    "E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-d-smoke-r2/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_gate_report.json",
+      "checkpoint_curve_report.json",
+      "curve_guided_training_report.json",
+      "fusion_stage2_matrix.json",
+      "method_ablation.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt"
+    ],
+    "E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-d-stage180k/formal": [
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "branch_gate_report.json",
+      "checkpoint_curve_report.json",
+      "curve_guided_training_report.json",
+      "fusion_stage2_matrix.json",
+      "method_ablation.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt"
+    ],
+    "E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m1-c-preserve220k/formal": [
+      "E074A_BEST_FREEZE.json",
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "checkpoint_curve_report.json",
+      "curve_guided_finetune_report.json",
+      "method_ablation.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "track_matrix.json"
+    ],
+    "E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m2-scalargate120k/formal": [
+      "E074A_BEST_FREEZE.json",
+      "P0.json",
+      "baseline_comparison.json",
+      "track_matrix.json"
+    ],
+    "E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m2-scalargate120k-r2/formal": [
+      "E074A_BEST_FREEZE.json",
+      "P0.json",
+      "baseline_comparison.json",
+      "track_matrix.json"
+    ],
+    "E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m2-scalargate120k-r3/formal": [
+      "E074A_BEST_FREEZE.json",
+      "P0.json",
+      "baseline_comparison.json",
+      "curve_guided_finetune_report.json",
+      "track_matrix.json"
+    ],
+    "E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m2-scalargate120k-r4/formal": [
+      "E074A_BEST_FREEZE.json",
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "checkpoint_curve_report.json",
+      "curve_guided_finetune_report.json",
+      "method_ablation.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "track_matrix.json"
+    ],
+    "E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m3-cvargate120k/formal": [
+      "E074A_BEST_FREEZE.json",
+      "P0.json",
+      "baseline_comparison.json",
+      "track_matrix.json"
+    ],
+    "E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m3-cvargate120k-r2/formal": [
+      "E074A_BEST_FREEZE.json",
+      "P0.json",
+      "baseline_comparison.json",
+      "track_matrix.json"
+    ],
+    "E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m3-cvargate120k-r3/formal": [
+      "E074A_BEST_FREEZE.json",
+      "P0.json",
+      "baseline_comparison.json",
+      "curve_guided_finetune_report.json",
+      "track_matrix.json"
+    ],
+    "E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m3-cvargate120k-r4/formal": [
+      "E074A_BEST_FREEZE.json",
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "checkpoint_curve_report.json",
+      "curve_guided_finetune_report.json",
+      "method_ablation.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "track_matrix.json"
+    ],
+    "E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k/formal": [
+      "E074A_BEST_FREEZE.json",
+      "P0.json",
+      "baseline_comparison.json",
+      "track_matrix.json"
+    ],
+    "E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/formal": [
+      "E074A_BEST_FREEZE.json",
+      "G0.json",
+      "G1.json",
+      "P0.json",
+      "RESULT_CARD.md",
+      "RUN_MANIFEST.json",
+      "baseline_comparison.json",
+      "checkpoint_curve_report.json",
+      "curve_guided_finetune_report.json",
+      "method_ablation.json",
+      "resource_report.json",
+      "reviewer_conclusion.txt",
+      "track_matrix.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v1/formal/RESULT_CARD.md",
+      "sha256": "03d274d51dd6205609c8f6772567d2a3d10164c01a1251ac3ed470638b01141d",
+      "bytes": 314,
+      "text": "# E072A V1 RESULT_CARD\n\nStatus: `BEATS_E071_TEACHER_ONLY`\n\nBest: `{'variant': 'V1', 'step': 20000, 'eval_variant': 'iter12_post_lsr', 'pairs': 404, 'aepe': 6.782003620178393, 'cmr1': 1.7326732673267329, 'cmr2': 10.396039603960396, 'cmr5': 48.01980198019802, 'cmr10': 80.44554455445545, 'cmr16': 93.8118811881188}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v1/formal/G1.json",
+      "sha256": "d0ef3796ad55a467397420b2e43cd12b9b4a7990c579e8d99ecb83ac519ed590",
+      "bytes": 807,
+      "text": "{\n  \"best\": {\n    \"aepe\": 6.782003620178393,\n    \"cmr1\": 1.7326732673267329,\n    \"cmr10\": 80.44554455445545,\n    \"cmr16\": 93.8118811881188,\n    \"cmr2\": 10.396039603960396,\n    \"cmr5\": 48.01980198019802,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 20000,\n    \"variant\": \"V1\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e071a_teacher\": {\n      \"aepe\": 8.011674760591866,\n      \"cmr10\": 72.27722772277228,\n      \"cmr16\": 87.37623762376238,\n      \"cmr2\": 9.653465346534654,\n      \"cmr5\": 42.82178217821782\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"BEATS_E071_TEACHER_ONLY\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v1/formal/method_ablation.json",
+      "sha256": "4df00b4be63eb35d3f4ecce3db03e618fcbd0b711dd9aadd342f8e0259b76ad5",
+      "bytes": 323,
+      "text": "{\n  \"best\": {\n    \"aepe\": 6.782003620178393,\n    \"cmr1\": 1.7326732673267329,\n    \"cmr10\": 80.44554455445545,\n    \"cmr16\": 93.8118811881188,\n    \"cmr2\": 10.396039603960396,\n    \"cmr5\": 48.01980198019802,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 20000,\n    \"variant\": \"V1\"\n  },\n  \"variant\": \"V1\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v1-r60k/formal/RESULT_CARD.md",
+      "sha256": "3679fb0bdeb0df3bea0885191b1232163cc759b206af41b1df21c89ca15f44ee",
+      "bytes": 300,
+      "text": "# E072A V1 RESULT_CARD\n\nStatus: `BEATS_E065`\n\nBest: `{'variant': 'V1', 'step': 60000, 'eval_variant': 'iter12_post_lsr', 'pairs': 404, 'aepe': 4.192988409264253, 'cmr1': 8.663366336633663, 'cmr2': 33.16831683168317, 'cmr5': 76.48514851485149, 'cmr10': 92.57425742574257, 'cmr16': 96.53465346534654}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v1-r60k/formal/G1.json",
+      "sha256": "f64827c103483a47a58dba8799db84437e8def2e1f9265cb8f80b9cf2745a731",
+      "bytes": 793,
+      "text": "{\n  \"best\": {\n    \"aepe\": 4.192988409264253,\n    \"cmr1\": 8.663366336633663,\n    \"cmr10\": 92.57425742574257,\n    \"cmr16\": 96.53465346534654,\n    \"cmr2\": 33.16831683168317,\n    \"cmr5\": 76.48514851485149,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 60000,\n    \"variant\": \"V1\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e071a_teacher\": {\n      \"aepe\": 8.011674760591866,\n      \"cmr10\": 72.27722772277228,\n      \"cmr16\": 87.37623762376238,\n      \"cmr2\": 9.653465346534654,\n      \"cmr5\": 42.82178217821782\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"BEATS_E065\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v1-r60k/formal/method_ablation.json",
+      "sha256": "0248020576376846feecd5d5801223a92638aa2ed6a4942e7efe2576c86f3a1d",
+      "bytes": 322,
+      "text": "{\n  \"best\": {\n    \"aepe\": 4.192988409264253,\n    \"cmr1\": 8.663366336633663,\n    \"cmr10\": 92.57425742574257,\n    \"cmr16\": 96.53465346534654,\n    \"cmr2\": 33.16831683168317,\n    \"cmr5\": 76.48514851485149,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 60000,\n    \"variant\": \"V1\"\n  },\n  \"variant\": \"V1\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v2/formal/RESULT_CARD.md",
+      "sha256": "f42b73a37f12b463c62f4fd257be86ff140c13209e577fbd40e213ba2897f354",
+      "bytes": 297,
+      "text": "# E072A V2 RESULT_CARD\n\nStatus: `BEATS_E071_TEACHER_ONLY`\n\nBest: `{'variant': 'V2', 'step': 20000, 'eval_variant': 'iter12_post_lsr', 'pairs': 404, 'aepe': 6.685357961029109, 'cmr1': 0.0, 'cmr2': 5.445544554455446, 'cmr5': 46.53465346534654, 'cmr10': 81.1881188118812, 'cmr16': 93.8118811881188}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v2/formal/G1.json",
+      "sha256": "20eb53b3465df057951b02b95d3ab96c18afaa61d7c57e0a2a22671c1c46c0dd",
+      "bytes": 790,
+      "text": "{\n  \"best\": {\n    \"aepe\": 6.685357961029109,\n    \"cmr1\": 0.0,\n    \"cmr10\": 81.1881188118812,\n    \"cmr16\": 93.8118811881188,\n    \"cmr2\": 5.445544554455446,\n    \"cmr5\": 46.53465346534654,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 20000,\n    \"variant\": \"V2\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e071a_teacher\": {\n      \"aepe\": 8.011674760591866,\n      \"cmr10\": 72.27722772277228,\n      \"cmr16\": 87.37623762376238,\n      \"cmr2\": 9.653465346534654,\n      \"cmr5\": 42.82178217821782\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"BEATS_E071_TEACHER_ONLY\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v2/formal/method_ablation.json",
+      "sha256": "170e251ccc1a7348562570c468985a32cf9dbafefde2165005816fdb5f46ce4f",
+      "bytes": 306,
+      "text": "{\n  \"best\": {\n    \"aepe\": 6.685357961029109,\n    \"cmr1\": 0.0,\n    \"cmr10\": 81.1881188118812,\n    \"cmr16\": 93.8118811881188,\n    \"cmr2\": 5.445544554455446,\n    \"cmr5\": 46.53465346534654,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 20000,\n    \"variant\": \"V2\"\n  },\n  \"variant\": \"V2\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v2-r60k/formal/RESULT_CARD.md",
+      "sha256": "f095921e76950a30f275c8e7d1cdf737732b77244aa2010f023270b80396d3df",
+      "bytes": 301,
+      "text": "# E072A V2 RESULT_CARD\n\nStatus: `BEATS_E065`\n\nBest: `{'variant': 'V2', 'step': 60000, 'eval_variant': 'iter12_post_lsr', 'pairs': 404, 'aepe': 4.3024312742423305, 'cmr1': 9.900990099009901, 'cmr2': 43.31683168316832, 'cmr5': 69.55445544554455, 'cmr10': 91.58415841584159, 'cmr16': 97.77227722772277}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v2-r60k/formal/G1.json",
+      "sha256": "1a3d1afb278b85a4b1b54e7f8ea39273e6966945e7020bd1d906296b2bca7d9a",
+      "bytes": 794,
+      "text": "{\n  \"best\": {\n    \"aepe\": 4.3024312742423305,\n    \"cmr1\": 9.900990099009901,\n    \"cmr10\": 91.58415841584159,\n    \"cmr16\": 97.77227722772277,\n    \"cmr2\": 43.31683168316832,\n    \"cmr5\": 69.55445544554455,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 60000,\n    \"variant\": \"V2\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e071a_teacher\": {\n      \"aepe\": 8.011674760591866,\n      \"cmr10\": 72.27722772277228,\n      \"cmr16\": 87.37623762376238,\n      \"cmr2\": 9.653465346534654,\n      \"cmr5\": 42.82178217821782\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"BEATS_E065\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v2-r60k/formal/method_ablation.json",
+      "sha256": "08e5486b61701bf7cb58b3060cd2bdb91f3381813d571c856421ba3bbbc209e1",
+      "bytes": 323,
+      "text": "{\n  \"best\": {\n    \"aepe\": 4.3024312742423305,\n    \"cmr1\": 9.900990099009901,\n    \"cmr10\": 91.58415841584159,\n    \"cmr16\": 97.77227722772277,\n    \"cmr2\": 43.31683168316832,\n    \"cmr5\": 69.55445544554455,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 60000,\n    \"variant\": \"V2\"\n  },\n  \"variant\": \"V2\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v3/formal/RESULT_CARD.md",
+      "sha256": "6fb8363ba1329c2a4ddc4a033431635603fa7a2ecddb3b6f21d54f407fa4b561",
+      "bytes": 315,
+      "text": "# E072A V3 RESULT_CARD\n\nStatus: `TRAINING_SUFFICIENT_NO_E071_TEACHER_GAIN`\n\nBest: `{'variant': 'V3', 'step': 20000, 'eval_variant': 'iter12_post_lsr', 'pairs': 404, 'aepe': 8.42701848220117, 'cmr1': 0.0, 'cmr2': 3.217821782178218, 'cmr5': 37.87128712871287, 'cmr10': 73.01980198019803, 'cmr16': 89.60396039603961}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v3/formal/G1.json",
+      "sha256": "2dc9b8ec615605f41c1f6b4da695521b54d897e1a30ef57073aaea47d3b08ece",
+      "bytes": 808,
+      "text": "{\n  \"best\": {\n    \"aepe\": 8.42701848220117,\n    \"cmr1\": 0.0,\n    \"cmr10\": 73.01980198019803,\n    \"cmr16\": 89.60396039603961,\n    \"cmr2\": 3.217821782178218,\n    \"cmr5\": 37.87128712871287,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 20000,\n    \"variant\": \"V3\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e071a_teacher\": {\n      \"aepe\": 8.011674760591866,\n      \"cmr10\": 72.27722772277228,\n      \"cmr16\": 87.37623762376238,\n      \"cmr2\": 9.653465346534654,\n      \"cmr5\": 42.82178217821782\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"TRAINING_SUFFICIENT_NO_E071_TEACHER_GAIN\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v3/formal/method_ablation.json",
+      "sha256": "0cdd2e48dbb736ee2d668f8ef6e444f30400163e2ac2bc21d900c2caafbd6621",
+      "bytes": 307,
+      "text": "{\n  \"best\": {\n    \"aepe\": 8.42701848220117,\n    \"cmr1\": 0.0,\n    \"cmr10\": 73.01980198019803,\n    \"cmr16\": 89.60396039603961,\n    \"cmr2\": 3.217821782178218,\n    \"cmr5\": 37.87128712871287,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 20000,\n    \"variant\": \"V3\"\n  },\n  \"variant\": \"V3\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v4/formal/RESULT_CARD.md",
+      "sha256": "1b3fcfb6431102ee0626eede9360c84cc6e4de84d6ebc347b5a4825db228cd3d",
+      "bytes": 316,
+      "text": "# E072A V4 RESULT_CARD\n\nStatus: `TRAINING_SUFFICIENT_NO_E071_TEACHER_GAIN`\n\nBest: `{'variant': 'V4', 'step': 20000, 'eval_variant': 'iter12_post_lsr', 'pairs': 404, 'aepe': 8.71903299901745, 'cmr1': 0.0, 'cmr2': 4.702970297029703, 'cmr5': 27.970297029702973, 'cmr10': 69.80198019801979, 'cmr16': 89.85148514851485}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v4/formal/G1.json",
+      "sha256": "40463c8c03baf3cf42c27a33339a8b2e5e3d0923b81506259f2d5bd067676086",
+      "bytes": 809,
+      "text": "{\n  \"best\": {\n    \"aepe\": 8.71903299901745,\n    \"cmr1\": 0.0,\n    \"cmr10\": 69.80198019801979,\n    \"cmr16\": 89.85148514851485,\n    \"cmr2\": 4.702970297029703,\n    \"cmr5\": 27.970297029702973,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 20000,\n    \"variant\": \"V4\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e071a_teacher\": {\n      \"aepe\": 8.011674760591866,\n      \"cmr10\": 72.27722772277228,\n      \"cmr16\": 87.37623762376238,\n      \"cmr2\": 9.653465346534654,\n      \"cmr5\": 42.82178217821782\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"TRAINING_SUFFICIENT_NO_E071_TEACHER_GAIN\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-072A-ZZVR-LAYERWISE-FRONTEND-ALIGNMENT/run-v4/formal/method_ablation.json",
+      "sha256": "ef37e1ba404a8f68d68368d09be8766f322c8ec66648198757d4a95e73eb8101",
+      "bytes": 308,
+      "text": "{\n  \"best\": {\n    \"aepe\": 8.71903299901745,\n    \"cmr1\": 0.0,\n    \"cmr10\": 69.80198019801979,\n    \"cmr16\": 89.85148514851485,\n    \"cmr2\": 4.702970297029703,\n    \"cmr5\": 27.970297029702973,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 20000,\n    \"variant\": \"V4\"\n  },\n  \"variant\": \"V4\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f1-formal/formal/RESULT_CARD.md",
+      "sha256": "940fd18a6b90d47286527270bdb36c8b6c20b2e7b8deed086b462d34eba02e21",
+      "bytes": 1030,
+      "text": "# E073A F1 RESULT_CARD\n\nStatus: `DIAGNOSTIC_DONE`\n\nMetrics: `{'v1': {'pairs': 404, 'aepe': 4.192988409264253, 'cmr1': 8.663366336633663, 'cmr2': 33.16831683168317, 'cmr5': 76.48514851485149, 'cmr10': 92.57425742574257, 'cmr16': 96.53465346534654}, 'v2': {'pairs': 404, 'aepe': 4.3024312742423305, 'cmr1': 9.900990099009901, 'cmr2': 43.31683168316832, 'cmr5': 69.55445544554455, 'cmr10': 91.58415841584159, 'cmr16': 97.77227722772277}, 'avg': {'pairs': 404, 'aepe': 3.632940574226403, 'cmr1': 19.05940594059406, 'cmr2': 47.77227722772277, 'cmr5': 78.96039603960396, 'cmr10': 92.57425742574257, 'cmr16': 97.52475247524752}, 'nogt_self_consistency': {'pairs': 404, 'aepe': 3.7302960075511793, 'cmr1': 12.623762376237623, 'cmr2': 43.56435643564357, 'cmr5': 78.71287128712872, 'cmr10': 93.56435643564357, 'cmr16': 97.77227722772277}, 'gt_oracle_chooser': {'pairs': 404, 'aepe': 2.810803207762466, 'cmr1': 20.2970297029703, 'cmr2': 56.43564356435643, 'cmr5': 86.63366336633663, 'cmr10': 96.53465346534654, 'cmr16': 99.00990099009901}}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f1-formal/formal/G1.json",
+      "sha256": "addfde26e31b7b4a64c0dfd07351ed0862139fa5f3ccdbfc2500e4487b992539",
+      "bytes": 2004,
+      "text": "{\n  \"metrics\": {\n    \"avg\": {\n      \"aepe\": 3.632940574226403,\n      \"cmr1\": 19.05940594059406,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 47.77227722772277,\n      \"cmr5\": 78.96039603960396,\n      \"pairs\": 404\n    },\n    \"gt_oracle_chooser\": {\n      \"aepe\": 2.810803207762466,\n      \"cmr1\": 20.2970297029703,\n      \"cmr10\": 96.53465346534654,\n      \"cmr16\": 99.00990099009901,\n      \"cmr2\": 56.43564356435643,\n      \"cmr5\": 86.63366336633663,\n      \"pairs\": 404\n    },\n    \"nogt_self_consistency\": {\n      \"aepe\": 3.7302960075511793,\n      \"cmr1\": 12.623762376237623,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.56435643564357,\n      \"cmr5\": 78.71287128712872,\n      \"pairs\": 404\n    },\n    \"v1\": {\n      \"aepe\": 4.192988409264253,\n      \"cmr1\": 8.663366336633663,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 33.16831683168317,\n      \"cmr5\": 76.48514851485149,\n      \"pairs\": 404\n    },\n    \"v2\": {\n      \"aepe\": 4.3024312742423305,\n      \"cmr1\": 9.900990099009901,\n      \"cmr10\": 91.58415841584159,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.31683168316832,\n      \"cmr5\": 69.55445544554455,\n      \"pairs\": 404\n    }\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e072_v1_r60k\": {\n      \"aepe\": 4.192988409264253,\n      \"cmr1\": 8.663366336633663,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 33.16831683168317,\n      \"cmr5\": 76.48514851485149\n    },\n    \"e072_v2_r60k\": {\n      \"aepe\": 4.3024312742423305,\n      \"cmr1\": 9.900990099009901,\n      \"cmr10\": 91.58415841584159,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.31683168316832,\n      \"cmr5\": 69.55445544554455\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"DIAGNOSTIC_DONE\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f1-smoke/formal/RESULT_CARD.md",
+      "sha256": "f1aa7c12f0a4bc11614b25a1567b93be6942ff2843ce8b5e37e7ef4a065e1d59",
+      "bytes": 704,
+      "text": "# E073A F1 RESULT_CARD\n\nStatus: `DIAGNOSTIC_DONE`\n\nMetrics: `{'v1': {'pairs': 2, 'aepe': 2.3183725476264954, 'cmr1': 0.0, 'cmr2': 50.0, 'cmr5': 100.0, 'cmr10': 100.0, 'cmr16': 100.0}, 'v2': {'pairs': 2, 'aepe': 5.377148151397705, 'cmr1': 0.0, 'cmr2': 50.0, 'cmr5': 50.0, 'cmr10': 100.0, 'cmr16': 100.0}, 'avg': {'pairs': 2, 'aepe': 2.6126943826675415, 'cmr1': 0.0, 'cmr2': 50.0, 'cmr5': 100.0, 'cmr10': 100.0, 'cmr16': 100.0}, 'nogt_self_consistency': {'pairs': 2, 'aepe': 5.377148151397705, 'cmr1': 0.0, 'cmr2': 50.0, 'cmr5': 50.0, 'cmr10': 100.0, 'cmr16': 100.0}, 'gt_oracle_chooser': {'pairs': 2, 'aepe': 2.1642302870750427, 'cmr1': 0.0, 'cmr2': 50.0, 'cmr5': 100.0, 'cmr10': 100.0, 'cmr16': 100.0}}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f1-smoke/formal/G1.json",
+      "sha256": "403b72f5c51c54ad394d78587394919d1ebef3a92969ac44db423f27de18c161",
+      "bytes": 1678,
+      "text": "{\n  \"metrics\": {\n    \"avg\": {\n      \"aepe\": 2.6126943826675415,\n      \"cmr1\": 0.0,\n      \"cmr10\": 100.0,\n      \"cmr16\": 100.0,\n      \"cmr2\": 50.0,\n      \"cmr5\": 100.0,\n      \"pairs\": 2\n    },\n    \"gt_oracle_chooser\": {\n      \"aepe\": 2.1642302870750427,\n      \"cmr1\": 0.0,\n      \"cmr10\": 100.0,\n      \"cmr16\": 100.0,\n      \"cmr2\": 50.0,\n      \"cmr5\": 100.0,\n      \"pairs\": 2\n    },\n    \"nogt_self_consistency\": {\n      \"aepe\": 5.377148151397705,\n      \"cmr1\": 0.0,\n      \"cmr10\": 100.0,\n      \"cmr16\": 100.0,\n      \"cmr2\": 50.0,\n      \"cmr5\": 50.0,\n      \"pairs\": 2\n    },\n    \"v1\": {\n      \"aepe\": 2.3183725476264954,\n      \"cmr1\": 0.0,\n      \"cmr10\": 100.0,\n      \"cmr16\": 100.0,\n      \"cmr2\": 50.0,\n      \"cmr5\": 100.0,\n      \"pairs\": 2\n    },\n    \"v2\": {\n      \"aepe\": 5.377148151397705,\n      \"cmr1\": 0.0,\n      \"cmr10\": 100.0,\n      \"cmr16\": 100.0,\n      \"cmr2\": 50.0,\n      \"cmr5\": 50.0,\n      \"pairs\": 2\n    }\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e072_v1_r60k\": {\n      \"aepe\": 4.192988409264253,\n      \"cmr1\": 8.663366336633663,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 33.16831683168317,\n      \"cmr5\": 76.48514851485149\n    },\n    \"e072_v2_r60k\": {\n      \"aepe\": 4.3024312742423305,\n      \"cmr1\": 9.900990099009901,\n      \"cmr10\": 91.58415841584159,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.31683168316832,\n      \"cmr5\": 69.55445544554455\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"DIAGNOSTIC_DONE\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f2-smoke/formal/RESULT_CARD.md",
+      "sha256": "2fd9639d209c6786f062fd3a5ad92f8abb534fdf2816b4bd0e0a8b32aa26aee5",
+      "bytes": 239,
+      "text": "# E073A F2 RESULT_CARD\n\nStatus: `TRAINING_INSUFFICIENT`\n\nBest: `{'variant': 'F2', 'step': 60001, 'eval_variant': 'iter24_post_lsr', 'pairs': 1, 'aepe': 28.17144775390625, 'cmr1': 0.0, 'cmr2': 0.0, 'cmr5': 0.0, 'cmr10': 0.0, 'cmr16': 0.0}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f2-smoke/formal/G1.json",
+      "sha256": "17c24cae2cada82abcbab97d5bc6cf4d7e60a024a27c8dd287efd1007964668d",
+      "bytes": 993,
+      "text": "{\n  \"best\": {\n    \"aepe\": 28.17144775390625,\n    \"cmr1\": 0.0,\n    \"cmr10\": 0.0,\n    \"cmr16\": 0.0,\n    \"cmr2\": 0.0,\n    \"cmr5\": 0.0,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 1,\n    \"step\": 60001,\n    \"variant\": \"F2\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e072_v1_r60k\": {\n      \"aepe\": 4.192988409264253,\n      \"cmr1\": 8.663366336633663,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 33.16831683168317,\n      \"cmr5\": 76.48514851485149\n    },\n    \"e072_v2_r60k\": {\n      \"aepe\": 4.3024312742423305,\n      \"cmr1\": 9.900990099009901,\n      \"cmr10\": 91.58415841584159,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.31683168316832,\n      \"cmr5\": 69.55445544554455\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"TRAINING_INSUFFICIENT\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f2-smoke/formal/method_ablation.json",
+      "sha256": "1c1b76b91bcf46ef4b88685e86cbccba8047cbefb217bc17ff62369d024ed96c",
+      "bytes": 250,
+      "text": "{\n  \"best\": {\n    \"aepe\": 28.17144775390625,\n    \"cmr1\": 0.0,\n    \"cmr10\": 0.0,\n    \"cmr16\": 0.0,\n    \"cmr2\": 0.0,\n    \"cmr5\": 0.0,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 1,\n    \"step\": 60001,\n    \"variant\": \"F2\"\n  },\n  \"variant\": \"F2\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f2-warm120k/formal/RESULT_CARD.md",
+      "sha256": "72b536b40ebac6739f916f9284a208a8cb4e47ed99cb5b44b492071ab813a5ee",
+      "bytes": 318,
+      "text": "# E073A F2 RESULT_CARD\n\nStatus: `FUSION_BEATS_SINGLE_BRANCH`\n\nBest: `{'variant': 'F2', 'step': 120000, 'eval_variant': 'iter24_post_lsr', 'aepe': 3.0073599263214237, 'cmr1': 22.277227722772277, 'cmr10': 93.8118811881188, 'cmr16': 96.53465346534654, 'cmr2': 60.89108910891089, 'cmr5': 89.10891089108911, 'pairs': 404}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f2-warm120k/formal/G1.json",
+      "sha256": "3a5e1756aa7558a659560c7184baa67abcba333c98c7db4293f61511340e005a",
+      "bytes": 1072,
+      "text": "{\n  \"best\": {\n    \"aepe\": 3.0073599263214237,\n    \"cmr1\": 22.277227722772277,\n    \"cmr10\": 93.8118811881188,\n    \"cmr16\": 96.53465346534654,\n    \"cmr2\": 60.89108910891089,\n    \"cmr5\": 89.10891089108911,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 120000,\n    \"variant\": \"F2\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e072_v1_r60k\": {\n      \"aepe\": 4.192988409264253,\n      \"cmr1\": 8.663366336633663,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 33.16831683168317,\n      \"cmr5\": 76.48514851485149\n    },\n    \"e072_v2_r60k\": {\n      \"aepe\": 4.3024312742423305,\n      \"cmr1\": 9.900990099009901,\n      \"cmr10\": 91.58415841584159,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.31683168316832,\n      \"cmr5\": 69.55445544554455\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"FUSION_BEATS_SINGLE_BRANCH\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f2-warm120k/formal/method_ablation.json",
+      "sha256": "f9a9e4dccb5e8241fcbf100ea0c4c3bd18bf518b5541a71e4038224e88fa6e4b",
+      "bytes": 324,
+      "text": "{\n  \"best\": {\n    \"aepe\": 3.0073599263214237,\n    \"cmr1\": 22.277227722772277,\n    \"cmr10\": 93.8118811881188,\n    \"cmr16\": 96.53465346534654,\n    \"cmr2\": 60.89108910891089,\n    \"cmr5\": 89.10891089108911,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 120000,\n    \"variant\": \"F2\"\n  },\n  \"variant\": \"F2\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f3-smoke/formal/RESULT_CARD.md",
+      "sha256": "28aabc24f28f1871d776b77c12cd029380c9b5b76f005e6bbd322c62be813f63",
+      "bytes": 239,
+      "text": "# E073A F3 RESULT_CARD\n\nStatus: `TRAINING_INSUFFICIENT`\n\nBest: `{'variant': 'F3', 'step': 60001, 'eval_variant': 'iter12_pre_lsr', 'pairs': 1, 'aepe': 108.18252563476562, 'cmr1': 0.0, 'cmr2': 0.0, 'cmr5': 0.0, 'cmr10': 0.0, 'cmr16': 0.0}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f3-smoke/formal/G1.json",
+      "sha256": "3164e3d84fdc58637864982dd3e9bc8f13aba690f52a5df11b41b670c1f9e5ce",
+      "bytes": 993,
+      "text": "{\n  \"best\": {\n    \"aepe\": 108.18252563476562,\n    \"cmr1\": 0.0,\n    \"cmr10\": 0.0,\n    \"cmr16\": 0.0,\n    \"cmr2\": 0.0,\n    \"cmr5\": 0.0,\n    \"eval_variant\": \"iter12_pre_lsr\",\n    \"pairs\": 1,\n    \"step\": 60001,\n    \"variant\": \"F3\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e072_v1_r60k\": {\n      \"aepe\": 4.192988409264253,\n      \"cmr1\": 8.663366336633663,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 33.16831683168317,\n      \"cmr5\": 76.48514851485149\n    },\n    \"e072_v2_r60k\": {\n      \"aepe\": 4.3024312742423305,\n      \"cmr1\": 9.900990099009901,\n      \"cmr10\": 91.58415841584159,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.31683168316832,\n      \"cmr5\": 69.55445544554455\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"TRAINING_INSUFFICIENT\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f3-smoke/formal/method_ablation.json",
+      "sha256": "ea4cc51a73d576afb94b23dada3cf2b7b790582fa3f5892117276707dcfe5239",
+      "bytes": 250,
+      "text": "{\n  \"best\": {\n    \"aepe\": 108.18252563476562,\n    \"cmr1\": 0.0,\n    \"cmr10\": 0.0,\n    \"cmr16\": 0.0,\n    \"cmr2\": 0.0,\n    \"cmr5\": 0.0,\n    \"eval_variant\": \"iter12_pre_lsr\",\n    \"pairs\": 1,\n    \"step\": 60001,\n    \"variant\": \"F3\"\n  },\n  \"variant\": \"F3\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f3-warm120k/formal/RESULT_CARD.md",
+      "sha256": "f7d6ac47a6716b3aa39e20c3c11e16e49a2f21df03cbacbfe5b52c8d9f7f04ff",
+      "bytes": 317,
+      "text": "# E073A F3 RESULT_CARD\n\nStatus: `FUSION_BEATS_SINGLE_BRANCH`\n\nBest: `{'variant': 'F3', 'step': 120000, 'eval_variant': 'iter24_post_lsr', 'aepe': 2.8285585176015253, 'cmr1': 35.64356435643564, 'cmr10': 94.3069306930693, 'cmr16': 97.52475247524752, 'cmr2': 62.62376237623762, 'cmr5': 88.36633663366337, 'pairs': 404}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f3-warm120k/formal/G1.json",
+      "sha256": "a9386e018988fece974a2625958ec14b50bbab879a2c6f25fb6fc40b11967cc5",
+      "bytes": 1071,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.8285585176015253,\n    \"cmr1\": 35.64356435643564,\n    \"cmr10\": 94.3069306930693,\n    \"cmr16\": 97.52475247524752,\n    \"cmr2\": 62.62376237623762,\n    \"cmr5\": 88.36633663366337,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 120000,\n    \"variant\": \"F3\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e072_v1_r60k\": {\n      \"aepe\": 4.192988409264253,\n      \"cmr1\": 8.663366336633663,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 33.16831683168317,\n      \"cmr5\": 76.48514851485149\n    },\n    \"e072_v2_r60k\": {\n      \"aepe\": 4.3024312742423305,\n      \"cmr1\": 9.900990099009901,\n      \"cmr10\": 91.58415841584159,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.31683168316832,\n      \"cmr5\": 69.55445544554455\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"FUSION_BEATS_SINGLE_BRANCH\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f3-warm120k/formal/method_ablation.json",
+      "sha256": "39805359afe429d212005208c6e875653e72232568dfd6337355536e87b6c103",
+      "bytes": 323,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.8285585176015253,\n    \"cmr1\": 35.64356435643564,\n    \"cmr10\": 94.3069306930693,\n    \"cmr16\": 97.52475247524752,\n    \"cmr2\": 62.62376237623762,\n    \"cmr5\": 88.36633663366337,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 120000,\n    \"variant\": \"F3\"\n  },\n  \"variant\": \"F3\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f4-smoke/formal/RESULT_CARD.md",
+      "sha256": "65537eb92d640a301f90fbb866002e9b02160fc138d411e98a3c72508866e264",
+      "bytes": 246,
+      "text": "# E073A F4 RESULT_CARD\n\nStatus: `TRAINING_INSUFFICIENT`\n\nBest: `{'variant': 'F4', 'step': 60001, 'eval_variant': 'iter24_post_lsr', 'pairs': 1, 'aepe': 4.6621880531311035, 'cmr1': 0.0, 'cmr2': 0.0, 'cmr5': 100.0, 'cmr10': 100.0, 'cmr16': 100.0}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f4-smoke/formal/G1.json",
+      "sha256": "9b72a22901cf9cc71e448080b7fdf0cad284ce9fd067ce7d6d8c6e1a535ce565",
+      "bytes": 1000,
+      "text": "{\n  \"best\": {\n    \"aepe\": 4.6621880531311035,\n    \"cmr1\": 0.0,\n    \"cmr10\": 100.0,\n    \"cmr16\": 100.0,\n    \"cmr2\": 0.0,\n    \"cmr5\": 100.0,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 1,\n    \"step\": 60001,\n    \"variant\": \"F4\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e072_v1_r60k\": {\n      \"aepe\": 4.192988409264253,\n      \"cmr1\": 8.663366336633663,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 33.16831683168317,\n      \"cmr5\": 76.48514851485149\n    },\n    \"e072_v2_r60k\": {\n      \"aepe\": 4.3024312742423305,\n      \"cmr1\": 9.900990099009901,\n      \"cmr10\": 91.58415841584159,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.31683168316832,\n      \"cmr5\": 69.55445544554455\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"TRAINING_INSUFFICIENT\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f4-smoke/formal/method_ablation.json",
+      "sha256": "9eacea03fc34b6db0f6eb1882f62fa53721324046360e6783f35c1166c1e083a",
+      "bytes": 257,
+      "text": "{\n  \"best\": {\n    \"aepe\": 4.6621880531311035,\n    \"cmr1\": 0.0,\n    \"cmr10\": 100.0,\n    \"cmr16\": 100.0,\n    \"cmr2\": 0.0,\n    \"cmr5\": 100.0,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 1,\n    \"step\": 60001,\n    \"variant\": \"F4\"\n  },\n  \"variant\": \"F4\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f4-warm120k/formal/RESULT_CARD.md",
+      "sha256": "b3025f32190c827249a0dd286cc1acc5a58fa145fa806b62879149d3f803d34f",
+      "bytes": 320,
+      "text": "# E073A F4 RESULT_CARD\n\nStatus: `FUSION_BEATS_SINGLE_BRANCH`\n\nBest: `{'variant': 'F4', 'step': 120000, 'eval_variant': 'iter12_post_lsr', 'aepe': 3.1161288409908807, 'cmr1': 30.445544554455445, 'cmr10': 93.56435643564357, 'cmr16': 97.27722772277228, 'cmr2': 58.415841584158414, 'cmr5': 84.15841584158416, 'pairs': 404}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f4-warm120k/formal/G1.json",
+      "sha256": "6e93f9eeaaa64c290aaa026e3689a45e41eee714cdcc19e7b31a61297adfde7b",
+      "bytes": 1074,
+      "text": "{\n  \"best\": {\n    \"aepe\": 3.1161288409908807,\n    \"cmr1\": 30.445544554455445,\n    \"cmr10\": 93.56435643564357,\n    \"cmr16\": 97.27722772277228,\n    \"cmr2\": 58.415841584158414,\n    \"cmr5\": 84.15841584158416,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 120000,\n    \"variant\": \"F4\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e072_v1_r60k\": {\n      \"aepe\": 4.192988409264253,\n      \"cmr1\": 8.663366336633663,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 33.16831683168317,\n      \"cmr5\": 76.48514851485149\n    },\n    \"e072_v2_r60k\": {\n      \"aepe\": 4.3024312742423305,\n      \"cmr1\": 9.900990099009901,\n      \"cmr10\": 91.58415841584159,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.31683168316832,\n      \"cmr5\": 69.55445544554455\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"FUSION_BEATS_SINGLE_BRANCH\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f4-warm120k/formal/method_ablation.json",
+      "sha256": "8e18f80757074acf9fa2f4d610f064112e72a955d74955bc253b20520fb498c5",
+      "bytes": 326,
+      "text": "{\n  \"best\": {\n    \"aepe\": 3.1161288409908807,\n    \"cmr1\": 30.445544554455445,\n    \"cmr10\": 93.56435643564357,\n    \"cmr16\": 97.27722772277228,\n    \"cmr2\": 58.415841584158414,\n    \"cmr5\": 84.15841584158416,\n    \"eval_variant\": \"iter12_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 120000,\n    \"variant\": \"F4\"\n  },\n  \"variant\": \"F4\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-a-formal/formal/RESULT_CARD.md",
+      "sha256": "8998d9d1aa7ff490a1c3b67dc37cf525f0510f8657ade03b0a02a29fef9489de",
+      "bytes": 1029,
+      "text": "# E074A A RESULT_CARD\n\nStatus: `DIAGNOSTIC_DONE`\n\nMetrics: `{'f2': {'pairs': 404, 'aepe': 3.0073599263214237, 'cmr1': 22.277227722772277, 'cmr2': 60.89108910891089, 'cmr5': 89.10891089108911, 'cmr10': 93.8118811881188, 'cmr16': 96.53465346534654}, 'f3': {'pairs': 404, 'aepe': 2.8285585176015253, 'cmr1': 35.64356435643564, 'cmr2': 62.62376237623762, 'cmr5': 88.36633663366337, 'cmr10': 94.3069306930693, 'cmr16': 97.52475247524752}, 'avg': {'pairs': 404, 'aepe': 2.646674346805799, 'cmr1': 36.386138613861384, 'cmr2': 69.3069306930693, 'cmr5': 89.35643564356435, 'cmr10': 94.80198019801979, 'cmr16': 97.52475247524752}, 'nogt_self_consistency': {'pairs': 404, 'aepe': 2.6361481511946954, 'cmr1': 36.88118811881188, 'cmr2': 67.82178217821783, 'cmr5': 90.0990099009901, 'cmr10': 94.80198019801979, 'cmr16': 97.52475247524752}, 'gt_oracle_chooser': {'pairs': 404, 'aepe': 2.109525460860517, 'cmr1': 47.524752475247524, 'cmr2': 76.48514851485149, 'cmr5': 92.07920792079209, 'cmr10': 96.28712871287128, 'cmr16': 98.01980198019803}}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-a-formal/formal/G1.json",
+      "sha256": "173a0482b0b13145734ec3f34af73934496c368fa53cddb7a80d960a38d61f90",
+      "bytes": 2683,
+      "text": "{\n  \"metrics\": {\n    \"avg\": {\n      \"aepe\": 2.646674346805799,\n      \"cmr1\": 36.386138613861384,\n      \"cmr10\": 94.80198019801979,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 69.3069306930693,\n      \"cmr5\": 89.35643564356435,\n      \"pairs\": 404\n    },\n    \"f2\": {\n      \"aepe\": 3.0073599263214237,\n      \"cmr1\": 22.277227722772277,\n      \"cmr10\": 93.8118811881188,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 60.89108910891089,\n      \"cmr5\": 89.10891089108911,\n      \"pairs\": 404\n    },\n    \"f3\": {\n      \"aepe\": 2.8285585176015253,\n      \"cmr1\": 35.64356435643564,\n      \"cmr10\": 94.3069306930693,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 62.62376237623762,\n      \"cmr5\": 88.36633663366337,\n      \"pairs\": 404\n    },\n    \"gt_oracle_chooser\": {\n      \"aepe\": 2.109525460860517,\n      \"cmr1\": 47.524752475247524,\n      \"cmr10\": 96.28712871287128,\n      \"cmr16\": 98.01980198019803,\n      \"cmr2\": 76.48514851485149,\n      \"cmr5\": 92.07920792079209,\n      \"pairs\": 404\n    },\n    \"nogt_self_consistency\": {\n      \"aepe\": 2.6361481511946954,\n      \"cmr1\": 36.88118811881188,\n      \"cmr10\": 94.80198019801979,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 67.82178217821783,\n      \"cmr5\": 90.0990099009901,\n      \"pairs\": 404\n    }\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e073_f1_avg\": {\n      \"aepe\": 3.632940574226403,\n      \"cmr1\": 19.05940594059406,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 47.77227722772277,\n      \"cmr5\": 78.96039603960396\n    },\n    \"e073_f1_gt_oracle\": {\n      \"aepe\": 2.810803207762466,\n      \"cmr1\": 20.2970297029703,\n      \"cmr10\": 96.53465346534654,\n      \"cmr16\": 99.00990099009901,\n      \"cmr2\": 56.43564356435643,\n      \"cmr5\": 86.63366336633663\n    },\n    \"e073_f1_nogt\": {\n      \"aepe\": 3.7302960075511793,\n      \"cmr1\": 12.623762376237623,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.56435643564357,\n      \"cmr5\": 78.71287128712872\n    },\n    \"e073_f2\": {\n      \"aepe\": 3.0073599263214237,\n      \"cmr1\": 22.277227722772277,\n      \"cmr10\": 93.8118811881188,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 60.89108910891089,\n      \"cmr5\": 89.10891089108911\n    },\n    \"e073_f3\": {\n      \"aepe\": 2.8285585176015253,\n      \"cmr1\": 35.64356435643564,\n      \"cmr10\": 94.3069306930693,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 62.62376237623762,\n      \"cmr5\": 88.36633663366337\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"DIAGNOSTIC_DONE\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-a-smoke/formal/RESULT_CARD.md",
+      "sha256": "8320d74c611640d49569106831da5c57eda04699cc20eef1868e847a3f1c8862",
+      "bytes": 709,
+      "text": "# E074A A RESULT_CARD\n\nStatus: `DIAGNOSTIC_DONE`\n\nMetrics: `{'f2': {'pairs': 2, 'aepe': 4.211954593658447, 'cmr1': 0.0, 'cmr2': 50.0, 'cmr5': 50.0, 'cmr10': 100.0, 'cmr16': 100.0}, 'f3': {'pairs': 2, 'aepe': 1.0240829288959503, 'cmr1': 50.0, 'cmr2': 100.0, 'cmr5': 100.0, 'cmr10': 100.0, 'cmr16': 100.0}, 'avg': {'pairs': 2, 'aepe': 2.011882334947586, 'cmr1': 50.0, 'cmr2': 50.0, 'cmr5': 100.0, 'cmr10': 100.0, 'cmr16': 100.0}, 'nogt_self_consistency': {'pairs': 2, 'aepe': 4.0377635061740875, 'cmr1': 50.0, 'cmr2': 50.0, 'cmr5': 50.0, 'cmr10': 100.0, 'cmr16': 100.0}, 'gt_oracle_chooser': {'pairs': 2, 'aepe': 0.9814595580101013, 'cmr1': 50.0, 'cmr2': 100.0, 'cmr5': 100.0, 'cmr10': 100.0, 'cmr16': 100.0}}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-a-smoke/formal/G1.json",
+      "sha256": "ef0ea32a77896cb7a7857fd763f78b24ad7755780fd884ee7f8afb5c96a54c0e",
+      "bytes": 2363,
+      "text": "{\n  \"metrics\": {\n    \"avg\": {\n      \"aepe\": 2.011882334947586,\n      \"cmr1\": 50.0,\n      \"cmr10\": 100.0,\n      \"cmr16\": 100.0,\n      \"cmr2\": 50.0,\n      \"cmr5\": 100.0,\n      \"pairs\": 2\n    },\n    \"f2\": {\n      \"aepe\": 4.211954593658447,\n      \"cmr1\": 0.0,\n      \"cmr10\": 100.0,\n      \"cmr16\": 100.0,\n      \"cmr2\": 50.0,\n      \"cmr5\": 50.0,\n      \"pairs\": 2\n    },\n    \"f3\": {\n      \"aepe\": 1.0240829288959503,\n      \"cmr1\": 50.0,\n      \"cmr10\": 100.0,\n      \"cmr16\": 100.0,\n      \"cmr2\": 100.0,\n      \"cmr5\": 100.0,\n      \"pairs\": 2\n    },\n    \"gt_oracle_chooser\": {\n      \"aepe\": 0.9814595580101013,\n      \"cmr1\": 50.0,\n      \"cmr10\": 100.0,\n      \"cmr16\": 100.0,\n      \"cmr2\": 100.0,\n      \"cmr5\": 100.0,\n      \"pairs\": 2\n    },\n    \"nogt_self_consistency\": {\n      \"aepe\": 4.0377635061740875,\n      \"cmr1\": 50.0,\n      \"cmr10\": 100.0,\n      \"cmr16\": 100.0,\n      \"cmr2\": 50.0,\n      \"cmr5\": 50.0,\n      \"pairs\": 2\n    }\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e073_f1_avg\": {\n      \"aepe\": 3.632940574226403,\n      \"cmr1\": 19.05940594059406,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 47.77227722772277,\n      \"cmr5\": 78.96039603960396\n    },\n    \"e073_f1_gt_oracle\": {\n      \"aepe\": 2.810803207762466,\n      \"cmr1\": 20.2970297029703,\n      \"cmr10\": 96.53465346534654,\n      \"cmr16\": 99.00990099009901,\n      \"cmr2\": 56.43564356435643,\n      \"cmr5\": 86.63366336633663\n    },\n    \"e073_f1_nogt\": {\n      \"aepe\": 3.7302960075511793,\n      \"cmr1\": 12.623762376237623,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.56435643564357,\n      \"cmr5\": 78.71287128712872\n    },\n    \"e073_f2\": {\n      \"aepe\": 3.0073599263214237,\n      \"cmr1\": 22.277227722772277,\n      \"cmr10\": 93.8118811881188,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 60.89108910891089,\n      \"cmr5\": 89.10891089108911\n    },\n    \"e073_f3\": {\n      \"aepe\": 2.8285585176015253,\n      \"cmr1\": 35.64356435643564,\n      \"cmr10\": 94.3069306930693,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 62.62376237623762,\n      \"cmr5\": 88.36633663366337\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"DIAGNOSTIC_DONE\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-smoke-r2/formal/RESULT_CARD.md",
+      "sha256": "0b911ca543412d860dc5345abb047e3f426920cc9f62e15f7d3ab19361ff1609",
+      "bytes": 242,
+      "text": "# E074A B RESULT_CARD\n\nStatus: `TRAINING_INSUFFICIENT`\n\nBest: `{'variant': 'B', 'step': 120001, 'eval_variant': 'iter24_post_lsr', 'pairs': 1, 'aepe': 7.251389503479004, 'cmr1': 0.0, 'cmr2': 0.0, 'cmr5': 0.0, 'cmr10': 100.0, 'cmr16': 100.0}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-smoke-r2/formal/G1.json",
+      "sha256": "855c4ee2ac42ab1815be974639f73fa3aa408d792a7fdc533d92f2ebd1331335",
+      "bytes": 1676,
+      "text": "{\n  \"best\": {\n    \"aepe\": 7.251389503479004,\n    \"cmr1\": 0.0,\n    \"cmr10\": 100.0,\n    \"cmr16\": 100.0,\n    \"cmr2\": 0.0,\n    \"cmr5\": 0.0,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 1,\n    \"step\": 120001,\n    \"variant\": \"B\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e073_f1_avg\": {\n      \"aepe\": 3.632940574226403,\n      \"cmr1\": 19.05940594059406,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 47.77227722772277,\n      \"cmr5\": 78.96039603960396\n    },\n    \"e073_f1_gt_oracle\": {\n      \"aepe\": 2.810803207762466,\n      \"cmr1\": 20.2970297029703,\n      \"cmr10\": 96.53465346534654,\n      \"cmr16\": 99.00990099009901,\n      \"cmr2\": 56.43564356435643,\n      \"cmr5\": 86.63366336633663\n    },\n    \"e073_f1_nogt\": {\n      \"aepe\": 3.7302960075511793,\n      \"cmr1\": 12.623762376237623,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.56435643564357,\n      \"cmr5\": 78.71287128712872\n    },\n    \"e073_f2\": {\n      \"aepe\": 3.0073599263214237,\n      \"cmr1\": 22.277227722772277,\n      \"cmr10\": 93.8118811881188,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 60.89108910891089,\n      \"cmr5\": 89.10891089108911\n    },\n    \"e073_f3\": {\n      \"aepe\": 2.8285585176015253,\n      \"cmr1\": 35.64356435643564,\n      \"cmr10\": 94.3069306930693,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 62.62376237623762,\n      \"cmr5\": 88.36633663366337\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"TRAINING_INSUFFICIENT\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-smoke-r2/formal/method_ablation.json",
+      "sha256": "0b80adfac7690f2d4eff228e3f4dc8b78ec1b3e689e123100dd479387b3cc59e",
+      "bytes": 253,
+      "text": "{\n  \"best\": {\n    \"aepe\": 7.251389503479004,\n    \"cmr1\": 0.0,\n    \"cmr10\": 100.0,\n    \"cmr16\": 100.0,\n    \"cmr2\": 0.0,\n    \"cmr5\": 0.0,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 1,\n    \"step\": 120001,\n    \"variant\": \"B\"\n  },\n  \"variant\": \"B\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-smoke-r2/formal/branch_gate_report.json",
+      "sha256": "754bc0952a5ab18cae2bd0ea05ec86f7c173a89180b85857a4978a53bde79895",
+      "bytes": 95,
+      "text": "{\n  \"120001\": {\n    \"gate_f2_mean\": 0.983123779296875,\n    \"scalar_f2\": 0.622459352016449\n  }\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-stage180k/formal/RESULT_CARD.md",
+      "sha256": "b3643c8e1a952709055ee2eeea6af813c144e1b44d74cb51c6f881bff8de83d2",
+      "bytes": 311,
+      "text": "# E074A B RESULT_CARD\n\nStatus: `FUSION_PARETO_SUCCESS`\n\nBest: `{'variant': 'B', 'step': 180000, 'eval_variant': 'iter24_post_lsr', 'pairs': 404, 'aepe': 2.505252162178997, 'cmr1': 44.801980198019805, 'cmr2': 72.77227722772277, 'cmr5': 89.35643564356435, 'cmr10': 95.29702970297029, 'cmr16': 97.52475247524752}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-stage180k/formal/G1.json",
+      "sha256": "a9304fba0f58c6235f1888e36aa920a282271cf49bf63fc514cceda35dafce57",
+      "bytes": 1745,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.505252162178997,\n    \"cmr1\": 44.801980198019805,\n    \"cmr10\": 95.29702970297029,\n    \"cmr16\": 97.52475247524752,\n    \"cmr2\": 72.77227722772277,\n    \"cmr5\": 89.35643564356435,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 180000,\n    \"variant\": \"B\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e073_f1_avg\": {\n      \"aepe\": 3.632940574226403,\n      \"cmr1\": 19.05940594059406,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 47.77227722772277,\n      \"cmr5\": 78.96039603960396\n    },\n    \"e073_f1_gt_oracle\": {\n      \"aepe\": 2.810803207762466,\n      \"cmr1\": 20.2970297029703,\n      \"cmr10\": 96.53465346534654,\n      \"cmr16\": 99.00990099009901,\n      \"cmr2\": 56.43564356435643,\n      \"cmr5\": 86.63366336633663\n    },\n    \"e073_f1_nogt\": {\n      \"aepe\": 3.7302960075511793,\n      \"cmr1\": 12.623762376237623,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.56435643564357,\n      \"cmr5\": 78.71287128712872\n    },\n    \"e073_f2\": {\n      \"aepe\": 3.0073599263214237,\n      \"cmr1\": 22.277227722772277,\n      \"cmr10\": 93.8118811881188,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 60.89108910891089,\n      \"cmr5\": 89.10891089108911\n    },\n    \"e073_f3\": {\n      \"aepe\": 2.8285585176015253,\n      \"cmr1\": 35.64356435643564,\n      \"cmr10\": 94.3069306930693,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 62.62376237623762,\n      \"cmr5\": 88.36633663366337\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"FUSION_PARETO_SUCCESS\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-stage180k/formal/method_ablation.json",
+      "sha256": "3ece690a7446bb6e45c76dfc7748574603da5ff877c24aaba29d8db49169cab1",
+      "bytes": 322,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.505252162178997,\n    \"cmr1\": 44.801980198019805,\n    \"cmr10\": 95.29702970297029,\n    \"cmr16\": 97.52475247524752,\n    \"cmr2\": 72.77227722772277,\n    \"cmr5\": 89.35643564356435,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 180000,\n    \"variant\": \"B\"\n  },\n  \"variant\": \"B\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-stage180k/formal/branch_gate_report.json",
+      "sha256": "7a28fd26a991e77e66ea20fbc6071e59184b5fddc51c6fcbddc896e2f62021f0",
+      "bytes": 285,
+      "text": "{\n  \"140000\": {\n    \"gate_f2_mean\": 0.48880793880855683,\n    \"scalar_f2\": 0.622459352016449\n  },\n  \"160000\": {\n    \"gate_f2_mean\": 0.4323420237639163,\n    \"scalar_f2\": 0.622459352016449\n  },\n  \"180000\": {\n    \"gate_f2_mean\": 0.4291875803529626,\n    \"scalar_f2\": 0.622459352016449\n  }\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-smoke-r2/formal/RESULT_CARD.md",
+      "sha256": "b6f1d9c7a0aa610e1ca745cd3da3649b39a8ee3e7afdc79f13bd362bd5153d22",
+      "bytes": 249,
+      "text": "# E074A C RESULT_CARD\n\nStatus: `TRAINING_INSUFFICIENT`\n\nBest: `{'variant': 'C', 'step': 120001, 'eval_variant': 'iter24_post_lsr', 'pairs': 1, 'aepe': 0.7887617349624634, 'cmr1': 100.0, 'cmr2': 100.0, 'cmr5': 100.0, 'cmr10': 100.0, 'cmr16': 100.0}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-smoke-r2/formal/G1.json",
+      "sha256": "662616080d0ae9920bd2bbc07f978bc39394ac417d1312464dd6fd414c192f0f",
+      "bytes": 1683,
+      "text": "{\n  \"best\": {\n    \"aepe\": 0.7887617349624634,\n    \"cmr1\": 100.0,\n    \"cmr10\": 100.0,\n    \"cmr16\": 100.0,\n    \"cmr2\": 100.0,\n    \"cmr5\": 100.0,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 1,\n    \"step\": 120001,\n    \"variant\": \"C\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e073_f1_avg\": {\n      \"aepe\": 3.632940574226403,\n      \"cmr1\": 19.05940594059406,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 47.77227722772277,\n      \"cmr5\": 78.96039603960396\n    },\n    \"e073_f1_gt_oracle\": {\n      \"aepe\": 2.810803207762466,\n      \"cmr1\": 20.2970297029703,\n      \"cmr10\": 96.53465346534654,\n      \"cmr16\": 99.00990099009901,\n      \"cmr2\": 56.43564356435643,\n      \"cmr5\": 86.63366336633663\n    },\n    \"e073_f1_nogt\": {\n      \"aepe\": 3.7302960075511793,\n      \"cmr1\": 12.623762376237623,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.56435643564357,\n      \"cmr5\": 78.71287128712872\n    },\n    \"e073_f2\": {\n      \"aepe\": 3.0073599263214237,\n      \"cmr1\": 22.277227722772277,\n      \"cmr10\": 93.8118811881188,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 60.89108910891089,\n      \"cmr5\": 89.10891089108911\n    },\n    \"e073_f3\": {\n      \"aepe\": 2.8285585176015253,\n      \"cmr1\": 35.64356435643564,\n      \"cmr10\": 94.3069306930693,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 62.62376237623762,\n      \"cmr5\": 88.36633663366337\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"TRAINING_INSUFFICIENT\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-smoke-r2/formal/method_ablation.json",
+      "sha256": "8a69f5edc9a2597066eb46a7cd7f96b84d019d2564c52f5069ab574fa801dbc1",
+      "bytes": 260,
+      "text": "{\n  \"best\": {\n    \"aepe\": 0.7887617349624634,\n    \"cmr1\": 100.0,\n    \"cmr10\": 100.0,\n    \"cmr16\": 100.0,\n    \"cmr2\": 100.0,\n    \"cmr5\": 100.0,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 1,\n    \"step\": 120001,\n    \"variant\": \"C\"\n  },\n  \"variant\": \"C\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-smoke-r2/formal/branch_gate_report.json",
+      "sha256": "99133b2105d1732f00b06268a531977827558c152d527e84d8dac199b12c6bf6",
+      "bytes": 44,
+      "text": "{\n  \"120001\": {\n    \"teacher_avg\": 1.0\n  }\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/formal/RESULT_CARD.md",
+      "sha256": "17a785e584126cc6cd90413c79ca02eb79f6b159b47289ac96283921828976cf",
+      "bytes": 308,
+      "text": "# E074A C RESULT_CARD\n\nStatus: `PARTIAL_FUSION_GAIN`\n\nBest: `{'variant': 'C', 'step': 180000, 'eval_variant': 'iter24_post_lsr', 'pairs': 404, 'aepe': 2.569692603874915, 'cmr1': 48.76237623762376, 'cmr2': 76.98019801980197, 'cmr5': 87.87128712871286, 'cmr10': 93.56435643564357, 'cmr16': 96.78217821782178}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/formal/G1.json",
+      "sha256": "ae07eb2817893ed16c0cd2fe946ba21fe3e959e3f8eb5fb22685b546fc3fc847",
+      "bytes": 1742,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.569692603874915,\n    \"cmr1\": 48.76237623762376,\n    \"cmr10\": 93.56435643564357,\n    \"cmr16\": 96.78217821782178,\n    \"cmr2\": 76.98019801980197,\n    \"cmr5\": 87.87128712871286,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 180000,\n    \"variant\": \"C\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e073_f1_avg\": {\n      \"aepe\": 3.632940574226403,\n      \"cmr1\": 19.05940594059406,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 47.77227722772277,\n      \"cmr5\": 78.96039603960396\n    },\n    \"e073_f1_gt_oracle\": {\n      \"aepe\": 2.810803207762466,\n      \"cmr1\": 20.2970297029703,\n      \"cmr10\": 96.53465346534654,\n      \"cmr16\": 99.00990099009901,\n      \"cmr2\": 56.43564356435643,\n      \"cmr5\": 86.63366336633663\n    },\n    \"e073_f1_nogt\": {\n      \"aepe\": 3.7302960075511793,\n      \"cmr1\": 12.623762376237623,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.56435643564357,\n      \"cmr5\": 78.71287128712872\n    },\n    \"e073_f2\": {\n      \"aepe\": 3.0073599263214237,\n      \"cmr1\": 22.277227722772277,\n      \"cmr10\": 93.8118811881188,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 60.89108910891089,\n      \"cmr5\": 89.10891089108911\n    },\n    \"e073_f3\": {\n      \"aepe\": 2.8285585176015253,\n      \"cmr1\": 35.64356435643564,\n      \"cmr10\": 94.3069306930693,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 62.62376237623762,\n      \"cmr5\": 88.36633663366337\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"PARTIAL_FUSION_GAIN\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/formal/method_ablation.json",
+      "sha256": "160ca30beee20d7806d9a3f53a786584a0458a82ad547ff794eb0e73b7a6c94c",
+      "bytes": 321,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.569692603874915,\n    \"cmr1\": 48.76237623762376,\n    \"cmr10\": 93.56435643564357,\n    \"cmr16\": 96.78217821782178,\n    \"cmr2\": 76.98019801980197,\n    \"cmr5\": 87.87128712871286,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 180000,\n    \"variant\": \"C\"\n  },\n  \"variant\": \"C\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/formal/branch_gate_report.json",
+      "sha256": "5af9b69a7b7b121d898b91cb9aac1a6e69bcff8ae936ef04dff8d8d973086f3d",
+      "bytes": 128,
+      "text": "{\n  \"140000\": {\n    \"teacher_avg\": 1.0\n  },\n  \"160000\": {\n    \"teacher_avg\": 1.0\n  },\n  \"180000\": {\n    \"teacher_avg\": 1.0\n  }\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-d-smoke-r2/formal/RESULT_CARD.md",
+      "sha256": "332df3b43228d203f5d29ce0b30111828f17739488544026c0ce5f22454a51e9",
+      "bytes": 245,
+      "text": "# E074A D RESULT_CARD\n\nStatus: `TRAINING_INSUFFICIENT`\n\nBest: `{'variant': 'D', 'step': 120001, 'eval_variant': 'iter24_post_lsr', 'pairs': 1, 'aepe': 2.0048575401306152, 'cmr1': 0.0, 'cmr2': 0.0, 'cmr5': 100.0, 'cmr10': 100.0, 'cmr16': 100.0}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-d-smoke-r2/formal/G1.json",
+      "sha256": "f28045654255aaad93b0132adb4666d4748e9f9548c416902b8fb568ecf4ff82",
+      "bytes": 1679,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.0048575401306152,\n    \"cmr1\": 0.0,\n    \"cmr10\": 100.0,\n    \"cmr16\": 100.0,\n    \"cmr2\": 0.0,\n    \"cmr5\": 100.0,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 1,\n    \"step\": 120001,\n    \"variant\": \"D\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e073_f1_avg\": {\n      \"aepe\": 3.632940574226403,\n      \"cmr1\": 19.05940594059406,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 47.77227722772277,\n      \"cmr5\": 78.96039603960396\n    },\n    \"e073_f1_gt_oracle\": {\n      \"aepe\": 2.810803207762466,\n      \"cmr1\": 20.2970297029703,\n      \"cmr10\": 96.53465346534654,\n      \"cmr16\": 99.00990099009901,\n      \"cmr2\": 56.43564356435643,\n      \"cmr5\": 86.63366336633663\n    },\n    \"e073_f1_nogt\": {\n      \"aepe\": 3.7302960075511793,\n      \"cmr1\": 12.623762376237623,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.56435643564357,\n      \"cmr5\": 78.71287128712872\n    },\n    \"e073_f2\": {\n      \"aepe\": 3.0073599263214237,\n      \"cmr1\": 22.277227722772277,\n      \"cmr10\": 93.8118811881188,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 60.89108910891089,\n      \"cmr5\": 89.10891089108911\n    },\n    \"e073_f3\": {\n      \"aepe\": 2.8285585176015253,\n      \"cmr1\": 35.64356435643564,\n      \"cmr10\": 94.3069306930693,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 62.62376237623762,\n      \"cmr5\": 88.36633663366337\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"TRAINING_INSUFFICIENT\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-d-smoke-r2/formal/method_ablation.json",
+      "sha256": "93654e4d02e4d9024ddd0f5c93cdf651bcc261e38db4c7cce13d55a71b259f37",
+      "bytes": 256,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.0048575401306152,\n    \"cmr1\": 0.0,\n    \"cmr10\": 100.0,\n    \"cmr16\": 100.0,\n    \"cmr2\": 0.0,\n    \"cmr5\": 100.0,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 1,\n    \"step\": 120001,\n    \"variant\": \"D\"\n  },\n  \"variant\": \"D\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-d-smoke-r2/formal/branch_gate_report.json",
+      "sha256": "355c9558d4dcbc903b6983c0c1c57d5392aade9cd6eced5aac808b2cc2dad07b",
+      "bytes": 97,
+      "text": "{\n  \"120001\": {\n    \"gate_f2_mean\": 0.3526686429977417,\n    \"scalar_f2\": 0.6224557161331177\n  }\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-d-stage180k/formal/RESULT_CARD.md",
+      "sha256": "f08ea492f78c2e35228bea52b82e4d7a8235ce65c38bfdb5f52bb018f9467c9b",
+      "bytes": 311,
+      "text": "# E074A D RESULT_CARD\n\nStatus: `FUSION_PARETO_SUCCESS`\n\nBest: `{'variant': 'D', 'step': 180000, 'eval_variant': 'iter24_post_lsr', 'pairs': 404, 'aepe': 2.5991679855650016, 'cmr1': 39.35643564356436, 'cmr2': 69.55445544554455, 'cmr5': 89.85148514851485, 'cmr10': 94.55445544554455, 'cmr16': 97.52475247524752}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-d-stage180k/formal/G1.json",
+      "sha256": "18b373b2946f09644573ec9bac0f5e1e9fc4cf77a299a143d725b955a8ea24ea",
+      "bytes": 1745,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.5991679855650016,\n    \"cmr1\": 39.35643564356436,\n    \"cmr10\": 94.55445544554455,\n    \"cmr16\": 97.52475247524752,\n    \"cmr2\": 69.55445544554455,\n    \"cmr5\": 89.85148514851485,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 180000,\n    \"variant\": \"D\"\n  },\n  \"refs\": {\n    \"e065\": {\n      \"aepe\": 5.6425,\n      \"cmr10\": 88.3459,\n      \"cmr16\": 95.8989,\n      \"cmr2\": 17.3166,\n      \"cmr5\": 59.6648\n    },\n    \"e073_f1_avg\": {\n      \"aepe\": 3.632940574226403,\n      \"cmr1\": 19.05940594059406,\n      \"cmr10\": 92.57425742574257,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 47.77227722772277,\n      \"cmr5\": 78.96039603960396\n    },\n    \"e073_f1_gt_oracle\": {\n      \"aepe\": 2.810803207762466,\n      \"cmr1\": 20.2970297029703,\n      \"cmr10\": 96.53465346534654,\n      \"cmr16\": 99.00990099009901,\n      \"cmr2\": 56.43564356435643,\n      \"cmr5\": 86.63366336633663\n    },\n    \"e073_f1_nogt\": {\n      \"aepe\": 3.7302960075511793,\n      \"cmr1\": 12.623762376237623,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 97.77227722772277,\n      \"cmr2\": 43.56435643564357,\n      \"cmr5\": 78.71287128712872\n    },\n    \"e073_f2\": {\n      \"aepe\": 3.0073599263214237,\n      \"cmr1\": 22.277227722772277,\n      \"cmr10\": 93.8118811881188,\n      \"cmr16\": 96.53465346534654,\n      \"cmr2\": 60.89108910891089,\n      \"cmr5\": 89.10891089108911\n    },\n    \"e073_f3\": {\n      \"aepe\": 2.8285585176015253,\n      \"cmr1\": 35.64356435643564,\n      \"cmr10\": 94.3069306930693,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 62.62376237623762,\n      \"cmr5\": 88.36633663366337\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"FUSION_PARETO_SUCCESS\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-d-stage180k/formal/method_ablation.json",
+      "sha256": "3c3069ef0b9ba2b93b02be814d360694888364eb4c8596ed90641485aa2cd99d",
+      "bytes": 322,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.5991679855650016,\n    \"cmr1\": 39.35643564356436,\n    \"cmr10\": 94.55445544554455,\n    \"cmr16\": 97.52475247524752,\n    \"cmr2\": 69.55445544554455,\n    \"cmr5\": 89.85148514851485,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 180000,\n    \"variant\": \"D\"\n  },\n  \"variant\": \"D\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-d-stage180k/formal/branch_gate_report.json",
+      "sha256": "2531eae4dbba1134f5544acbc813102b979f4431bc40c8b64583f434257f9667",
+      "bytes": 288,
+      "text": "{\n  \"140000\": {\n    \"gate_f2_mean\": 0.4771874004071302,\n    \"scalar_f2\": 0.6057208776473999\n  },\n  \"160000\": {\n    \"gate_f2_mean\": 0.3942507153542915,\n    \"scalar_f2\": 0.5902291536331177\n  },\n  \"180000\": {\n    \"gate_f2_mean\": 0.40078215301036835,\n    \"scalar_f2\": 0.5777319669723511\n  }\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m1-c-preserve220k/formal/RESULT_CARD.md",
+      "sha256": "685599c37709f994fca136e28b2470d25dec16f58378dbf89da37950a15fa78d",
+      "bytes": 312,
+      "text": "# E075A M1 RESULT_CARD\n\nStatus: `PARTIAL_PRESERVE_GAIN`\n\nBest: `{'variant': 'M1', 'step': 220000, 'eval_variant': 'iter32_post_lsr', 'pairs': 404, 'aepe': 2.5936555327239015, 'cmr1': 53.71287128712871, 'cmr2': 74.75247524752476, 'cmr5': 87.62376237623762, 'cmr10': 93.8118811881188, 'cmr16': 97.02970297029702}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m1-c-preserve220k/formal/G1.json",
+      "sha256": "54025efe118f78776cd4e604133e17414f129e79fe07fcee7fb8b678e2a80a57",
+      "bytes": 1145,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.5936555327239015,\n    \"cmr1\": 53.71287128712871,\n    \"cmr10\": 93.8118811881188,\n    \"cmr16\": 97.02970297029702,\n    \"cmr2\": 74.75247524752476,\n    \"cmr5\": 87.62376237623762,\n    \"eval_variant\": \"iter32_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 220000,\n    \"variant\": \"M1\"\n  },\n  \"refs\": {\n    \"e074_a_nogt\": {\n      \"aepe\": 2.6361481511946954,\n      \"cmr1\": 36.88118811881188,\n      \"cmr10\": 94.80198019801979,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 67.82178217821783,\n      \"cmr5\": 90.0990099009901\n    },\n    \"e074_b\": {\n      \"aepe\": 2.505252162178997,\n      \"cmr1\": 44.801980198019805,\n      \"cmr10\": 95.29702970297029,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 72.77227722772277,\n      \"cmr5\": 89.35643564356435\n    },\n    \"e074_c\": {\n      \"aepe\": 2.569692603874915,\n      \"cmr1\": 48.76237623762376,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 96.78217821782178,\n      \"cmr2\": 76.98019801980197,\n      \"cmr5\": 87.87128712871286\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"PARTIAL_PRESERVE_GAIN\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m1-c-preserve220k/formal/method_ablation.json",
+      "sha256": "efbc9aced32bf4eaf74ac2726ae14bb5552b27f30cdfb3de7fe023642af0227c",
+      "bytes": 323,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.5936555327239015,\n    \"cmr1\": 53.71287128712871,\n    \"cmr10\": 93.8118811881188,\n    \"cmr16\": 97.02970297029702,\n    \"cmr2\": 74.75247524752476,\n    \"cmr5\": 87.62376237623762,\n    \"eval_variant\": \"iter32_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 220000,\n    \"variant\": \"M1\"\n  },\n  \"variant\": \"M1\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m2-scalargate120k-r4/formal/RESULT_CARD.md",
+      "sha256": "6aa36cb63395a2673cb2283c3c9f1f23a52188efb35f2e03e1362fb8a9c69ca9",
+      "bytes": 317,
+      "text": "# E075A M2 RESULT_CARD\n\nStatus: `PRESERVE_RECOVER_SUCCESS`\n\nBest: `{'variant': 'M2', 'step': 120000, 'eval_variant': 'iter24_post_lsr', 'pairs': 404, 'aepe': 2.3476858849240707, 'cmr1': 55.940594059405946, 'cmr2': 79.20792079207921, 'cmr5': 88.11881188118812, 'cmr10': 94.55445544554455, 'cmr16': 97.52475247524752}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m2-scalargate120k-r4/formal/G1.json",
+      "sha256": "8342ff5d416c3dad28ac1bcea54f0085962bde43690b39ba1b7a452500fc9f9c",
+      "bytes": 1150,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.3476858849240707,\n    \"cmr1\": 55.940594059405946,\n    \"cmr10\": 94.55445544554455,\n    \"cmr16\": 97.52475247524752,\n    \"cmr2\": 79.20792079207921,\n    \"cmr5\": 88.11881188118812,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 120000,\n    \"variant\": \"M2\"\n  },\n  \"refs\": {\n    \"e074_a_nogt\": {\n      \"aepe\": 2.6361481511946954,\n      \"cmr1\": 36.88118811881188,\n      \"cmr10\": 94.80198019801979,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 67.82178217821783,\n      \"cmr5\": 90.0990099009901\n    },\n    \"e074_b\": {\n      \"aepe\": 2.505252162178997,\n      \"cmr1\": 44.801980198019805,\n      \"cmr10\": 95.29702970297029,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 72.77227722772277,\n      \"cmr5\": 89.35643564356435\n    },\n    \"e074_c\": {\n      \"aepe\": 2.569692603874915,\n      \"cmr1\": 48.76237623762376,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 96.78217821782178,\n      \"cmr2\": 76.98019801980197,\n      \"cmr5\": 87.87128712871286\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"PRESERVE_RECOVER_SUCCESS\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m2-scalargate120k-r4/formal/method_ablation.json",
+      "sha256": "286359c616ccb049dcbcb88e9bf25d7775ed009234468b6703079747d110980e",
+      "bytes": 325,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.3476858849240707,\n    \"cmr1\": 55.940594059405946,\n    \"cmr10\": 94.55445544554455,\n    \"cmr16\": 97.52475247524752,\n    \"cmr2\": 79.20792079207921,\n    \"cmr5\": 88.11881188118812,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 120000,\n    \"variant\": \"M2\"\n  },\n  \"variant\": \"M2\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m3-cvargate120k-r4/formal/RESULT_CARD.md",
+      "sha256": "3d969f9e1786d9968198e0f554305bdfa3a3782648fa98807e0dc6fabcab87a5",
+      "bytes": 316,
+      "text": "# E075A M3 RESULT_CARD\n\nStatus: `PRESERVE_RECOVER_SUCCESS`\n\nBest: `{'variant': 'M3', 'step': 120000, 'eval_variant': 'iter24_post_lsr', 'pairs': 404, 'aepe': 2.3903436864182206, 'cmr1': 55.44554455445545, 'cmr2': 79.70297029702971, 'cmr5': 88.11881188118812, 'cmr10': 94.05940594059405, 'cmr16': 96.78217821782178}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m3-cvargate120k-r4/formal/G1.json",
+      "sha256": "cc1d85f88bb26dbff12afab89fd2296c54eef7ae181bd29f2941fd45e3b7d7f7",
+      "bytes": 1149,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.3903436864182206,\n    \"cmr1\": 55.44554455445545,\n    \"cmr10\": 94.05940594059405,\n    \"cmr16\": 96.78217821782178,\n    \"cmr2\": 79.70297029702971,\n    \"cmr5\": 88.11881188118812,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 120000,\n    \"variant\": \"M3\"\n  },\n  \"refs\": {\n    \"e074_a_nogt\": {\n      \"aepe\": 2.6361481511946954,\n      \"cmr1\": 36.88118811881188,\n      \"cmr10\": 94.80198019801979,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 67.82178217821783,\n      \"cmr5\": 90.0990099009901\n    },\n    \"e074_b\": {\n      \"aepe\": 2.505252162178997,\n      \"cmr1\": 44.801980198019805,\n      \"cmr10\": 95.29702970297029,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 72.77227722772277,\n      \"cmr5\": 89.35643564356435\n    },\n    \"e074_c\": {\n      \"aepe\": 2.569692603874915,\n      \"cmr1\": 48.76237623762376,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 96.78217821782178,\n      \"cmr2\": 76.98019801980197,\n      \"cmr5\": 87.87128712871286\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"PRESERVE_RECOVER_SUCCESS\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m3-cvargate120k-r4/formal/method_ablation.json",
+      "sha256": "5629df119c2d095021f6b7e99e2e924c72f91c82b15dcdb8bafc862fd3646011",
+      "bytes": 324,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.3903436864182206,\n    \"cmr1\": 55.44554455445545,\n    \"cmr10\": 94.05940594059405,\n    \"cmr16\": 96.78217821782178,\n    \"cmr2\": 79.70297029702971,\n    \"cmr5\": 88.11881188118812,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 120000,\n    \"variant\": \"M3\"\n  },\n  \"variant\": \"M3\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/formal/RESULT_CARD.md",
+      "sha256": "3f1107a922a54cbb93d448133027b31870800b7cc4d82a27f623c6f307b80775",
+      "bytes": 316,
+      "text": "# E075A M4 RESULT_CARD\n\nStatus: `PRESERVE_RECOVER_SUCCESS`\n\nBest: `{'variant': 'M4', 'step': 80000, 'eval_variant': 'iter24_post_lsr', 'pairs': 404, 'aepe': 2.3612990358678423, 'cmr1': 56.683168316831676, 'cmr2': 78.96039603960396, 'cmr5': 88.86138613861387, 'cmr10': 94.80198019801979, 'cmr16': 97.02970297029702}`\n"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/formal/G1.json",
+      "sha256": "cc69e6ad100cc3fd8a0b20d97229a33cf14264702c896e28dd37eafac92918b3",
+      "bytes": 1149,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.3612990358678423,\n    \"cmr1\": 56.683168316831676,\n    \"cmr10\": 94.80198019801979,\n    \"cmr16\": 97.02970297029702,\n    \"cmr2\": 78.96039603960396,\n    \"cmr5\": 88.86138613861387,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 80000,\n    \"variant\": \"M4\"\n  },\n  \"refs\": {\n    \"e074_a_nogt\": {\n      \"aepe\": 2.6361481511946954,\n      \"cmr1\": 36.88118811881188,\n      \"cmr10\": 94.80198019801979,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 67.82178217821783,\n      \"cmr5\": 90.0990099009901\n    },\n    \"e074_b\": {\n      \"aepe\": 2.505252162178997,\n      \"cmr1\": 44.801980198019805,\n      \"cmr10\": 95.29702970297029,\n      \"cmr16\": 97.52475247524752,\n      \"cmr2\": 72.77227722772277,\n      \"cmr5\": 89.35643564356435\n    },\n    \"e074_c\": {\n      \"aepe\": 2.569692603874915,\n      \"cmr1\": 48.76237623762376,\n      \"cmr10\": 93.56435643564357,\n      \"cmr16\": 96.78217821782178,\n      \"cmr2\": 76.98019801980197,\n      \"cmr5\": 87.87128712871286\n    },\n    \"gdros_released\": {\n      \"aepe\": 1.461486,\n      \"cmr1\": 33.73,\n      \"cmr2\": 81.6,\n      \"cmr5\": 99.53\n    }\n  },\n  \"status\": \"PRESERVE_RECOVER_SUCCESS\"\n}"
+    },
+    {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/formal/method_ablation.json",
+      "sha256": "e09a95c5e40b9a89110c7937d9c10cabba2c603812850be745e06e31186e270f",
+      "bytes": 324,
+      "text": "{\n  \"best\": {\n    \"aepe\": 2.3612990358678423,\n    \"cmr1\": 56.683168316831676,\n    \"cmr10\": 94.80198019801979,\n    \"cmr16\": 97.02970297029702,\n    \"cmr2\": 78.96039603960396,\n    \"cmr5\": 88.86138613861387,\n    \"eval_variant\": \"iter24_post_lsr\",\n    \"pairs\": 404,\n    \"step\": 80000,\n    \"variant\": \"M4\"\n  },\n  \"variant\": \"M4\"\n}"
+    }
+  ]
+}

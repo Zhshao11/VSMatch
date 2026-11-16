@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "seeds": [
+    {
+      "seed": 901,
+      "status": "PASS",
+      "pairs": 1625,
+      "csv_sha256": "0b81e061922aa89e944cfb36f16d5eb09ae8e5bcc457d4f22f7ebbc5d7d19503",
+      "manifest_sha256": {
+        "gdros_os_iter32_post_lsr": "7a1da3dc38e348dbdd4e036c0bdd2a37e4d7adee681016bce201ef54bcab0d12",
+        "os_m4_iter24_post_lsr": "73ff7406ddf34e7e8433011f64f034734589bd050a8caf7cba9f0962187f6fc4",
+        "os_m4_iter32_post_lsr": "ca3bb62e8a7354536bac2a87c93f03be5718c0452686f3d02054133b461c289e"
+      }
+    }
+  ],
+  "aggregate_checked": false,
+  "scope": "Independent stdlib recomputation from compact CSV/card/manifest artifacts; full remote prediction arrays are not re-read by this audit.",
+  "verifier_sha256": "4e44df0265be17708552b7dd724c764c414a144922b001f2a35be11502d9650b",
+  "protocol": {
+    "status": "PASS",
+    "seeds": [
+      {
+        "seed": 901,
+        "manifest_sha256": "599b8bdab2fc32486c4d4f46ee496d065e3649ecdad918a9906f96efa4e0997d",
+        "params_sha256": "341ab21e97e6d9292528725ad98316f05c586496bd333dff33d7b481f6ac5d4b"
+      },
+      {
+        "seed": 902,
+        "manifest_sha256": "f7adeabfd73d9ac88d1eb165d350cfd101b0c791a5cb50ecefcf9765de410356",
+        "params_sha256": "7d97f00c9c990de548435caf429ccbe17f49832bf51cc0d529a1341e10a34e68"
+      },
+      {
+        "seed": 903,
+        "manifest_sha256": "f7cd46ccec41cb1bc25349c7966e5012b1ee1cc135adeec9d2c4336a55c12d39",
+        "params_sha256": "31f438a672a9f097b8e5eeafa7fdbc14e9fba0e380bdd0f1dd9cb56e821ed806"
+      }
+    ],
+    "same_source_order_and_frozen_sar_mapping": true,
+    "all_affine_metadata_checked": true,
+    "same_opencv_warp0_evidence_hashes_checked": true
+  }
+}

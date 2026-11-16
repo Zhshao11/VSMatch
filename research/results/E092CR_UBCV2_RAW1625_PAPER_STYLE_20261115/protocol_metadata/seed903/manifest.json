@@ -1,0 +1,39 @@
+{
+  "dataset": "UBCv2 multi-modal test images (official)",
+  "raw_root": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/raw/raw_extracted",
+  "seed": 903,
+  "pair_count": 1625,
+  "sar_conversion": {
+    "source": "official UBCv2 SAR TIFF is float32 backscatter amplitude",
+    "type": "fixed_global_log_amplitude_p2_p98_to_uint8",
+    "lo_db": -28.307898330688477,
+    "hi_db": 10.545851440429704,
+    "fixed_across_geometry_seeds": true,
+    "lut_source": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901/protocol_metadata/manifest.json",
+    "note": "20*log10(x+1e-3), clip((db-lo)/(hi-lo)*255,0,255), then replicated to 3 channels; identical LUT for every pair"
+  },
+  "prescreen": "none (all official test pairs kept; paper pre-screened to 1447)",
+  "transform": {
+    "translation_px": [
+      -15,
+      15,
+      1
+    ],
+    "scale": [
+      0.9,
+      1.1,
+      0.05
+    ],
+    "rotation_deg": [
+      -10,
+      10,
+      1
+    ],
+    "crop": null,
+    "border": "constant 0"
+  },
+  "flow_convention": "M@[x,y,1] - [x,y]",
+  "generator": "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e092cr_build_groups.py",
+  "opencv_version": "5.0.0",
+  "numpy_version": "2.2.6"
+}

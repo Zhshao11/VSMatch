@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "scope": "E092C-R seed901 existing generated group; read-only audit",
+  "generator_environment_verification": {
+    "command": "env CUDA_VISIBLE_DEVICES= OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /home/zzvr/miniconda3/envs/compared/bin/python .codex_tmp/verify_ubcv2_testset.py --root /mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901 --raw-root /mnt/sda/zhushihao/VS_Match/datasets/ubcv2/raw/raw_extracted --check-pairs 12",
+    "opencv_version": "5.0.0",
+    "numpy_version": "2.2.6",
+    "verifier_sha256": "078aaf479c7258465f6ae100986f23c67fd203f784e0ff0bdc8d1574e1b1755e",
+    "manifest_sha256": "599b8bdab2fc32486c4d4f46ee496d065e3649ecdad918a9906f96efa4e0997d",
+    "params_sha256": "341ab21e97e6d9292528725ad98316f05c586496bd333dff33d7b481f6ac5d4b",
+    "output_log": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-092CR-UBCV2-RAW1625-PAPER-STYLE/audit/GENERATOR_ENVIRONMENT_VERIFY.log",
+    "output_log_sha256": "1aad79582638c6c4e71c2205484ff867a67efb336e76caca51843bb04be9261b",
+    "sampled_pairs": 12,
+    "warp_max_abs_difference_uint8": 0,
+    "flow_max_abs_difference": 0.000008,
+    "matrix_fit_max_abs_difference": 0.0,
+    "official_loader_pairs": 1625,
+    "result": "VERIFY PASS"
+  },
+  "all_pair_flow_audit": {
+    "pairs": 1625,
+    "probes_per_pair": 5,
+    "flow_matrix_probe_max_abs_difference": 0.000005888882697036024,
+    "counts": {
+      "opt_png": 1625,
+      "sar_warped_png": 1625,
+      "truth_flow": 1625,
+      "datum_json": 1625
+    }
+  },
+  "sar_mapping": {
+    "identity": "fixed independent-reproduction rule, not claimed as authors' unpublished UBCv2 preprocessing",
+    "formula": "20*log10(max(x,0)+1e-3), then clip/linear-map global p2/p98 to uint8",
+    "lo_db": -28.307898330688477,
+    "hi_db": 10.545851440429704,
+    "frozen_for_geometry_seeds": [901, 902, 903]
+  },
+  "geometry": {
+    "rotation_center": "origin (0,0)",
+    "flow": "M@[x,y,1]-[x,y]",
+    "warp": "cv2.warpAffine forward matrix, INTER_LINEAR, constant-zero border",
+    "crop_resize": "none; native 512x512"
+  },
+  "cross_opencv_diagnostic": {
+    "generator_version": "5.0.0",
+    "xoftr_audit_version": "different OpenCV build",
+    "sample_max_abs_difference_uint8": 4,
+    "interpretation": "Explained interpolation implementation difference only; the same-environment zero-difference verification above is the primary evidence."
+  }
+}

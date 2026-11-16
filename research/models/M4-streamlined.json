@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "name": "M4-streamlined",
+  "named_on": "2026-11-16",
+  "status": "validated_inference_archive",
+  "entry_point": {
+    "file": "research/remote_stage/os/m4_streamlined.py",
+    "class": "M4Streamlined",
+    "sha256": "bb3dff70674775ca04469b9a260b7fd6d424d39dbb4249338ac4cd1dae9a2c82"
+  },
+  "frozen_implementation": {
+    "file": "research/remote_stage/os/m4_clean_deploy.py",
+    "class": "CleanM4",
+    "sha256": "3fcd8b685df355c7e7bf6af30094dd554c75c105756450814320f144d9e044bb"
+  },
+  "scope": "inference_only; unchanged learned weights; five total official LSR fits",
+  "defaults": {
+    "dataset": "OS author-public 424 pairs",
+    "input_shape": [
+      1,
+      3,
+      512,
+      512
+    ],
+    "input_dtype": "float32",
+    "input_range": [
+      0,
+      255
+    ],
+    "source": "optical",
+    "target": "SAR",
+    "iterations_per_matcher": 32,
+    "matchers": 3,
+    "correlation_pyramids": 5,
+    "levels_per_pyramid": 4,
+    "internal_lsr_fits": 4,
+    "terminal_lsr_fits": 1,
+    "lsr_npoint": 200000,
+    "tf32": false
+  },
+  "source_checkpoint": {
+    "id": "os_e075a_m4_80k",
+    "manifest": "research/CHECKPOINTS.json",
+    "sha256": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b"
+  },
+  "compact_state": {
+    "path_relative_to_workspace": "GDROS/experiments/sparsegeo/runs/E-095A-M4-CLEAN-DEPLOY-424-20261116-r2/clean_deploy_state.pt",
+    "sha256": "b68832855a3770dbcb0eed5d7be421d0379ae94b4774e161334b10079a3519a5",
+    "bytes": 1392216504,
+    "versioned_in_git": false,
+    "requires_legacy_constructor": true
+  },
+  "metrics": {
+    "convention": "whole-image per-pair public component absolute error; CMR strictly below threshold",
+    "pairs": 424,
+    "mean_component_error_px": 1.4744179696196094,
+    "cmr1_percent": 72.40566037735849,
+    "cmr2_percent": 84.90566037735849,
+    "cmr5_percent": 94.10377358490565,
+    "failures_ge5": 25
+  },
+  "evidence": {
+    "equivalence": "research/results/E095A_M4_CLEAN_DEPLOY_424_20261116/REPORT.md",
+    "paired_baseline": "research/results/E096A_GDROS_CLEAN_M4_OS424_20261116/REPORT.md",
+    "lsr_ablation": "research/results/E097A_M4_LSR_SLOT_ABLATION_OS424_20261116/REPORT.md",
+    "cost_and_branch_audit": "research/results/E098A_M4_COST_CONTRIBUTION_20261116/REPORT.md"
+  },
+  "limitations": [
+    "Datasets, model files, upstream GDROS/DINO and dense predictions are external assets.",
+    "Not a standalone cold-start factory.",
+    "Historical source names are preserved for experiment hashes.",
+    "Inference parity does not establish module-wise accuracy contributions.",
+    "Timing evidence uses shared GPUs."
+  ]
+}

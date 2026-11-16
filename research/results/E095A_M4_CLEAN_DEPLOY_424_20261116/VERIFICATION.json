@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "pairs": 424,
+  "timing_records": 848,
+  "raw_bitwise_equal_pairs": 424,
+  "post_bitwise_equal_pairs": 424,
+  "dense_prediction_files_rehashed_on_zzvr": 848,
+  "dense_prediction_sha256_status": "PASS",
+  "local_compact_statistics_verifier": "PASS",
+  "source_files_unchanged_during_run": true,
+  "local_source_matches_runtime_snapshot": true
+}

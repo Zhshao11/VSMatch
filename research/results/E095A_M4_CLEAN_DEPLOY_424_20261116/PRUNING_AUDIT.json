@@ -1,0 +1,60 @@
+{
+  "clean": {
+    "buffers_bytes": 648,
+    "parameter_bytes": 1391903012,
+    "parameters": 347975753
+  },
+  "dino_groups": [
+    {
+      "adapter_group": 0,
+      "adapter_state_sha256": "394f6a0c4b0c28d7634ebe2e195f58bd26e4632de2802f9711c25a57953b5e6b",
+      "frontend_variant": "masked_cross_modal_pretrain",
+      "group": 0,
+      "matcher": "b.f2",
+      "state_sha256": "1278893826a0a3ea2a10ed04dfce55525bb40b2c596040a63a7fc85dd4de7548"
+    },
+    {
+      "adapter_group": 0,
+      "adapter_state_sha256": "394f6a0c4b0c28d7634ebe2e195f58bd26e4632de2802f9711c25a57953b5e6b",
+      "frontend_variant": "masked_cross_modal_pretrain",
+      "group": 0,
+      "matcher": "b.f3",
+      "state_sha256": "1278893826a0a3ea2a10ed04dfce55525bb40b2c596040a63a7fc85dd4de7548"
+    },
+    {
+      "adapter_group": 0,
+      "adapter_state_sha256": "394f6a0c4b0c28d7634ebe2e195f58bd26e4632de2802f9711c25a57953b5e6b",
+      "frontend_variant": "masked_cross_modal_pretrain",
+      "group": 0,
+      "matcher": "c.student",
+      "state_sha256": "1278893826a0a3ea2a10ed04dfce55525bb40b2c596040a63a7fc85dd4de7548"
+    }
+  ],
+  "original": {
+    "buffers_bytes": 0,
+    "parameter_bytes": 6768256588,
+    "parameters": 1692064147
+  },
+  "preserved": [
+    "three 32-step recurrent matchers",
+    "five correlation pyramids",
+    "all active learned adapters/features/gates",
+    "five official LSR fits"
+  ],
+  "removed": [
+    "C teacher module storage",
+    "nested V1/V2 GRUs and ignored contexts",
+    "unused cost perceiver encoders",
+    "training-only frontend heads",
+    "F3 feature-fusion modules and unused scalars",
+    "nonfinal mask heads/upsampling",
+    "discarded F3 feature averages and diagnostic CPU transfers",
+    "repeated correlation lookup offset construction/transfer"
+  ],
+  "reused": [
+    "identical frozen DINO per modality and image pair",
+    "identical frozen optical/SAR descriptor adapters and interpolation"
+  ],
+  "unique_descriptor_frontends": 1,
+  "unique_dino_backbones": 1
+}

@@ -6,12 +6,16 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](#)
 [![Dataset](https://img.shields.io/badge/Dataset-OS%20(optical–SAR)-2E8B57)](#)
-[![Method](https://img.shields.io/badge/Current%20method-E075A--M4%4080K-8A2BE2)](#)
+[![Method](https://img.shields.io/badge/Inference-M4--streamlined-8A2BE2)](docs/M4_STREAMLINED.md)
 [![Evaluation](https://img.shields.io/badge/Evaluated-424%20pairs-1F6FEB)](#)
 [![Status](https://img.shields.io/badge/Status-research%20snapshot-FF8C00)](#)
 
 </div>
 
+> **2026-11-16 存档：精简推理版正式命名为 [M4-streamlined](docs/M4_STREAMLINED.md)。**
+> 默认 5 次 LSR，与受保护 M4 在 OS 全部 424 对上输出逐元素一致；
+> 从该页面查看统一代码入口、精简内容、权重哈希、复现边界及 E095–E098 最新证据。
+>
 > 本仓库记录方法实现、评测协议与结果。克隆本仓库后，从
 > **[当前方法设计](docs/METHOD_DESIGN.md)** 开始读；需要数字看
 > **[当前结果与已知短板](docs/RESULTS_OS.md)**，需要复现看
@@ -39,6 +43,7 @@
 
 | 日期 | 内容 |
 |---|---|
+| **2026-11-16（M4-streamlined 存档）** | 正式命名已验证的精简推理版；新增 `M4Streamlined` 统一入口与版本清单，保留历史 `CleanM4` 核心和哈希。归档 E092–E098：129→5 LSR 等价优化、冗余清理、全量 GDROS 配对、LSR 位置消融、组件耗时及 B/C 缓存审计。OS424 公共分量 CMR@1/2/5 为 **72.4057 / 84.9057 / 94.1038%**；默认仍保留 5 次 LSR，见 [存档说明](docs/M4_STREAMLINED.md) |
 | **2026-11-15（文献对标）** | 查清 UBCv2 配准指标的公开可比对象：**只有 GDROS 一篇**（arXiv 2511.00598），数据集原出处是 UBC V2 建筑检测基准（TGRS 2023，不报配准指标），OS³Flow 只在 OS + WHU-OPT-SAR 上做实验。拿到 GDROS Table III 的 8 个基线全表（UBCv2 上 `CMR@2` 全 ≤ 1.01%，RIFT2/LNIFT AEPE 200+）与 Table V 的 LSR 消融（LSR 贡献 AEPE −2.84 / CMR@2 +14.1 pt）。据此**纠正读法**：M4 `CMR@5 74.52 / AEPE 3.89` 与论文 `72.50 / 4.49` 是**粗配准覆盖率同档**，差别在 ≤2px（`62.95 vs 14.89`），不能写成「好 4 倍」；代价是 `RMSE(var) 38.76` = 论文 3.2×。同时**改判 RMSE 口径**：`11.97` 是方差不是 std。见 [UBCV2_DIAGNOSIS.md](docs/UBCV2_DIAGNOSIS.md) §9 |
 | **2026-11-15（协议等价性）** | 单独证明「我们的评测口径 = 官方 `test.py`」，**不依赖论文数值能否复现**：① 指标实现逐行同构；② 官方 `test.py` 原样跑我们生成的 UBCv2 seed901，得 `AEPE 22.009050 / RMSE 679.046204 / CMR@1..5 0.06/0.74/2.83/6.83/11.26%`，与我们的 JSON **逐位一致**；③ 官方 OS 424 对上得 `EPE 1.461846`，与历史基准吻合。同时写明论文 UBCv2 行难以逐位复现的三条独立原因（**官方未发布 UBCv2 权重**、预筛算法未公开、论文正文 `lr=1.2e-5/bs=12` 与代码 `12.5e-5/bs=2` 不一致）。证据归档 `E-093-PROTOCOL-EQUIVALENCE/`，见 [UBCV2_DIAGNOSIS.md](docs/UBCV2_DIAGNOSIS.md) §6 |
 | **2026-11-15（UBCv2 诊断）** | 查清「M4 `3.8941` 优于论文 GDROS in-domain `4.49`」这个对比**不成立**：用官方阈值分档反解否定「论文筛掉病态对」的解释（要压到 4.49 需保留 7965 对 > 现有 1625）；逐对诊断显示 GDROS 在 UBCv2 上的误差与旋转幅度 / warp 损失面积**全不相关**且预测流近似恒等变换；**零流基线 `29.7910`** 下 GDROS 只比「什么都不预测」好 `26.1%`，M4 好 `86.9%`。另定量了「旋转基准点未公开」带来的 **1.83×** 不可比幅度。**起步在 UBCv2 上按官方 recipe 训 GDROS**（120K 步，约 7.7 h）。见 [UBCV2_DIAGNOSIS.md](docs/UBCV2_DIAGNOSIS.md) |
@@ -49,8 +54,9 @@
 | **2026-11-02 ~ 10-31** | 定位 CMR 阈值交叉现象：重尾继承自 E074 B/C 双分支，门控为软加权且 oracle 也无法补救；鲁棒仿射拟合被实验否定为主因 |
 | **2026-09-30** | 冻结 E072 → E073 → E074 → E075A 实现链与阶段性结果卡 |
 
-> ⚠️ `research/CURRENT_METHOD_STATE.md` 及 `research/results/` 下的 2026-09 结果卡是**历史快照**，
-> 其指标口径与最新结论以 `docs/` 下的文档为准。
+> `research/CURRENT_METHOD_STATE.md` 已更新至 **2026-11-16**，包含 E092–E098 状态。
+> `research/results/` 中 2026-09 结果卡仍是历史快照；最新精简推理的证据入口为
+> [M4-streamlined](docs/M4_STREAMLINED.md)，不同指标口径、数据构造与数值设置须分开比较。
 
 ---
 
@@ -107,6 +113,12 @@ flowchart LR
 
 ## 当前结果
 
+最新 **M4-streamlined** 在固定 TF32 关闭设置下的 OS424 公共分量均值为
+**1.4744179696 px**，CMR@1/2/5 为 **72.4057 / 84.9057 / 94.1038%**。
+同轮 GDROS 为 1.4616607496 px、33.7264 / 81.6038 / 99.5283%。
+下表保留此前历史设置的结果；微小数值差异不能当作新方法精度提升。
+精简版、权重与全量等价证据见 [版本存档](docs/M4_STREAMLINED.md)。
+
 保护版本 **E075A-M4@80K**（`M4_step80000.pt`），OS 数据集全量 **424 对**，
 `iters=32`、LSR 200k。两套口径**必须分开读**，不能直接与论文表格混排：
 
@@ -154,6 +166,8 @@ V2 那一路的贡献置零（不重训），AEPE `1.4738 → 7.7457`。这测�
 
 | 路径 | 内容 |
 |---|---|
+| [`docs/M4_STREAMLINED.md`](docs/M4_STREAMLINED.md) | **当前精简推理版存档**：名称、统一入口、权重、指标、E095–E098 证据 |
+| [`research/models/M4-streamlined.json`](research/models/M4-streamlined.json) | 可机器读取的版本配置、源代码/权重哈希与指标来源 |
 | [`docs/METHOD_DESIGN.md`](docs/METHOD_DESIGN.md) | **当前方法设计**（分层结构、损失、超参、设计依据） |
 | [`docs/RESULTS_OS.md`](docs/RESULTS_OS.md) | 当前指标、误差结构、口径对照 |
 | [`docs/ABLATION_V2.md`](docs/ABLATION_V2.md) | V2（DINO 辅助）分支零训练旁路：定义、结果、边界（诊断性，非模块消融） |
@@ -170,7 +184,7 @@ V2 那一路的贡献置零（不重训），AEPE `1.4738 → 7.7457`。这测�
 | `research/results/OS_20261114/` | 2026-11-14 分支消融与 GRU sweep 原始结果 JSON（含逐对 EPE） |
 | `research/results/OS_20261115/` | 2026-11-15 剪枝验证、计时与对称单路旁路原始结果 JSON |
 | `research/experiments/`、`research/results/` | 早期方法搜索的规格、结果卡与审计记录 |
-| `research/CURRENT_METHOD_STATE.md` | 2026-09 历史方法状态快照 |
+| `research/CURRENT_METHOD_STATE.md` | 更新至 2026-11-16 的状态与 E092–E098 结果入口；旧记录保留 |
 
 ---
 
@@ -209,5 +223,5 @@ python scripts/preflight.py --scope all
 - [x] **UBCv2 跨数据集泛化**（1625 对、官方口径、单 seed）：M4 `3.8941` vs GDROS `22.0091`；证实 M4 迁移退化 2.64× 而 GDROS 15.06×，**属泛化对比，非 Table III in-domain 复现**
 - [ ] **UBCv2 in-domain 训练**：GDROS 官方 recipe（120K 步，约 7.7 h，2026-11-15 启动中）；随后需补 M4 在 UBCv2 整链重训（≈16.5 h）才有严格同条件的四格表
 - [ ] 实测剪枝后的完整训练 step（前向 1.455× 不等于总时长 1.455×）
-- [ ] 诊断两处逐迭代 LSR（`B.gate_input` / `PairFusion.gate_features`）的缓存冗余 —— 129 次 LSR 全保留，现为最大可压缩项
+- [x] M4-streamlined：移除未消费的中间融合与 LSR，129→5 次；共享冻结 DINO/适配器并清理冗余，OS424 输出逐元素一致。进一步减少内部拟合仅约 3–5% 耗时收益，默认保留 5 次
 - [ ] 固定 `train_iters=8` 短训 2K 步，验证训练步数是否真能压缩（零训练 sweep 不能回答）

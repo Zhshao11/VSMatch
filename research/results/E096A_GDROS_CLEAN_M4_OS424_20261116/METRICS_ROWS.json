@@ -1,0 +1,3394 @@
+[
+  {
+    "pair_index": "0",
+    "pair_id": "000000",
+    "gdros__public_component": "1.2516427040100098",
+    "gdros__vector_epe": "1.8869643211364746",
+    "m4_clean__public_component": "1.3043371438980103",
+    "m4_clean__vector_epe": "2.124871253967285"
+  },
+  {
+    "pair_index": "1",
+    "pair_id": "000001",
+    "gdros__public_component": "1.1667033433914185",
+    "gdros__vector_epe": "1.8762930631637573",
+    "m4_clean__public_component": "0.24776314198970795",
+    "m4_clean__vector_epe": "0.41651254892349243"
+  },
+  {
+    "pair_index": "2",
+    "pair_id": "000002",
+    "gdros__public_component": "1.1295663118362427",
+    "gdros__vector_epe": "1.7956976890563965",
+    "m4_clean__public_component": "0.14898265898227692",
+    "m4_clean__vector_epe": "0.23053544759750366"
+  },
+  {
+    "pair_index": "3",
+    "pair_id": "000003",
+    "gdros__public_component": "1.7969081401824951",
+    "gdros__vector_epe": "3.0416176319122314",
+    "m4_clean__public_component": "0.8295470476150513",
+    "m4_clean__vector_epe": "1.3688198328018188"
+  },
+  {
+    "pair_index": "4",
+    "pair_id": "000004",
+    "gdros__public_component": "1.570820927619934",
+    "gdros__vector_epe": "2.528933525085449",
+    "m4_clean__public_component": "0.1721629947423935",
+    "m4_clean__vector_epe": "0.26552143692970276"
+  },
+  {
+    "pair_index": "5",
+    "pair_id": "000005",
+    "gdros__public_component": "1.8572505712509155",
+    "gdros__vector_epe": "3.3111350536346436",
+    "m4_clean__public_component": "0.18392100930213928",
+    "m4_clean__vector_epe": "0.30476275086402893"
+  },
+  {
+    "pair_index": "6",
+    "pair_id": "000006",
+    "gdros__public_component": "0.910547137260437",
+    "gdros__vector_epe": "1.4636945724487305",
+    "m4_clean__public_component": "0.16413775086402893",
+    "m4_clean__vector_epe": "0.2496800273656845"
+  },
+  {
+    "pair_index": "7",
+    "pair_id": "000007",
+    "gdros__public_component": "0.9434157013893127",
+    "gdros__vector_epe": "1.4985531568527222",
+    "m4_clean__public_component": "0.2006361335515976",
+    "m4_clean__vector_epe": "0.3344131410121918"
+  },
+  {
+    "pair_index": "8",
+    "pair_id": "000008",
+    "gdros__public_component": "0.8196589350700378",
+    "gdros__vector_epe": "1.2784309387207031",
+    "m4_clean__public_component": "0.3074497878551483",
+    "m4_clean__vector_epe": "0.4675597548484802"
+  },
+  {
+    "pair_index": "9",
+    "pair_id": "000009",
+    "gdros__public_component": "1.3023300170898438",
+    "gdros__vector_epe": "2.043236017227173",
+    "m4_clean__public_component": "0.25981178879737854",
+    "m4_clean__vector_epe": "0.41607123613357544"
+  },
+  {
+    "pair_index": "10",
+    "pair_id": "000010",
+    "gdros__public_component": "0.7777410745620728",
+    "gdros__vector_epe": "1.1847304105758667",
+    "m4_clean__public_component": "0.460440069437027",
+    "m4_clean__vector_epe": "0.6703852415084839"
+  },
+  {
+    "pair_index": "11",
+    "pair_id": "000011",
+    "gdros__public_component": "3.802873373031616",
+    "gdros__vector_epe": "5.692983150482178",
+    "m4_clean__public_component": "1.150099754333496",
+    "m4_clean__vector_epe": "1.704265832901001"
+  },
+  {
+    "pair_index": "12",
+    "pair_id": "000012",
+    "gdros__public_component": "2.441357135772705",
+    "gdros__vector_epe": "3.7173733711242676",
+    "m4_clean__public_component": "0.9905775785446167",
+    "m4_clean__vector_epe": "1.4686365127563477"
+  },
+  {
+    "pair_index": "13",
+    "pair_id": "000013",
+    "gdros__public_component": "1.5492873191833496",
+    "gdros__vector_epe": "2.5851125717163086",
+    "m4_clean__public_component": "0.581771194934845",
+    "m4_clean__vector_epe": "0.9115177989006042"
+  },
+  {
+    "pair_index": "14",
+    "pair_id": "000014",
+    "gdros__public_component": "1.567681908607483",
+    "gdros__vector_epe": "2.450089931488037",
+    "m4_clean__public_component": "0.37126338481903076",
+    "m4_clean__vector_epe": "0.5810760259628296"
+  },
+  {
+    "pair_index": "15",
+    "pair_id": "000015",
+    "gdros__public_component": "0.6050269603729248",
+    "gdros__vector_epe": "0.9219768047332764",
+    "m4_clean__public_component": "0.4791623055934906",
+    "m4_clean__vector_epe": "0.7235789895057678"
+  },
+  {
+    "pair_index": "16",
+    "pair_id": "000016",
+    "gdros__public_component": "0.7831676602363586",
+    "gdros__vector_epe": "1.2190256118774414",
+    "m4_clean__public_component": "4.754292964935303",
+    "m4_clean__vector_epe": "7.6337385177612305"
+  },
+  {
+    "pair_index": "17",
+    "pair_id": "000017",
+    "gdros__public_component": "1.4073411226272583",
+    "gdros__vector_epe": "2.1756279468536377",
+    "m4_clean__public_component": "0.31712985038757324",
+    "m4_clean__vector_epe": "0.5729792714118958"
+  },
+  {
+    "pair_index": "18",
+    "pair_id": "000018",
+    "gdros__public_component": "1.6798286437988281",
+    "gdros__vector_epe": "2.436828851699829",
+    "m4_clean__public_component": "0.6421957612037659",
+    "m4_clean__vector_epe": "1.1318590641021729"
+  },
+  {
+    "pair_index": "19",
+    "pair_id": "000019",
+    "gdros__public_component": "0.6426882743835449",
+    "gdros__vector_epe": "0.9959028959274292",
+    "m4_clean__public_component": "0.9526106119155884",
+    "m4_clean__vector_epe": "1.4219342470169067"
+  },
+  {
+    "pair_index": "20",
+    "pair_id": "000020",
+    "gdros__public_component": "1.2586697340011597",
+    "gdros__vector_epe": "1.9972361326217651",
+    "m4_clean__public_component": "0.39150387048721313",
+    "m4_clean__vector_epe": "0.6706371903419495"
+  },
+  {
+    "pair_index": "21",
+    "pair_id": "000021",
+    "gdros__public_component": "0.7412459254264832",
+    "gdros__vector_epe": "1.178123950958252",
+    "m4_clean__public_component": "0.2595139741897583",
+    "m4_clean__vector_epe": "0.38520944118499756"
+  },
+  {
+    "pair_index": "22",
+    "pair_id": "000022",
+    "gdros__public_component": "1.4974232912063599",
+    "gdros__vector_epe": "2.1724870204925537",
+    "m4_clean__public_component": "1.5978981256484985",
+    "m4_clean__vector_epe": "2.8538784980773926"
+  },
+  {
+    "pair_index": "23",
+    "pair_id": "000023",
+    "gdros__public_component": "1.1648223400115967",
+    "gdros__vector_epe": "1.8084737062454224",
+    "m4_clean__public_component": "1.4625495672225952",
+    "m4_clean__vector_epe": "2.1064329147338867"
+  },
+  {
+    "pair_index": "24",
+    "pair_id": "000024",
+    "gdros__public_component": "0.8898043632507324",
+    "gdros__vector_epe": "1.422755241394043",
+    "m4_clean__public_component": "0.6112191081047058",
+    "m4_clean__vector_epe": "0.9558870196342468"
+  },
+  {
+    "pair_index": "25",
+    "pair_id": "000025",
+    "gdros__public_component": "0.9158315658569336",
+    "gdros__vector_epe": "1.7393672466278076",
+    "m4_clean__public_component": "0.17128382623195648",
+    "m4_clean__vector_epe": "0.28536882996559143"
+  },
+  {
+    "pair_index": "26",
+    "pair_id": "000026",
+    "gdros__public_component": "1.2503135204315186",
+    "gdros__vector_epe": "1.9746466875076294",
+    "m4_clean__public_component": "0.2735575735569",
+    "m4_clean__vector_epe": "0.40786686539649963"
+  },
+  {
+    "pair_index": "27",
+    "pair_id": "000027",
+    "gdros__public_component": "0.8447374701499939",
+    "gdros__vector_epe": "1.3932405710220337",
+    "m4_clean__public_component": "0.6852646470069885",
+    "m4_clean__vector_epe": "1.031054973602295"
+  },
+  {
+    "pair_index": "28",
+    "pair_id": "000028",
+    "gdros__public_component": "0.8559638261795044",
+    "gdros__vector_epe": "1.3126345872879028",
+    "m4_clean__public_component": "3.532762289047241",
+    "m4_clean__vector_epe": "5.7786993980407715"
+  },
+  {
+    "pair_index": "29",
+    "pair_id": "000029",
+    "gdros__public_component": "2.351245403289795",
+    "gdros__vector_epe": "3.5078251361846924",
+    "m4_clean__public_component": "0.6237572431564331",
+    "m4_clean__vector_epe": "0.9638469219207764"
+  },
+  {
+    "pair_index": "30",
+    "pair_id": "000030",
+    "gdros__public_component": "1.4814045429229736",
+    "gdros__vector_epe": "2.2512459754943848",
+    "m4_clean__public_component": "2.0971012115478516",
+    "m4_clean__vector_epe": "3.132140874862671"
+  },
+  {
+    "pair_index": "31",
+    "pair_id": "000031",
+    "gdros__public_component": "1.0995172262191772",
+    "gdros__vector_epe": "1.9721235036849976",
+    "m4_clean__public_component": "1.656482458114624",
+    "m4_clean__vector_epe": "2.5648326873779297"
+  },
+  {
+    "pair_index": "32",
+    "pair_id": "000032",
+    "gdros__public_component": "0.7394611239433289",
+    "gdros__vector_epe": "1.1578421592712402",
+    "m4_clean__public_component": "0.4360591471195221",
+    "m4_clean__vector_epe": "0.6428248882293701"
+  },
+  {
+    "pair_index": "33",
+    "pair_id": "000033",
+    "gdros__public_component": "1.0063151121139526",
+    "gdros__vector_epe": "1.585401177406311",
+    "m4_clean__public_component": "0.4459390938282013",
+    "m4_clean__vector_epe": "0.7094525694847107"
+  },
+  {
+    "pair_index": "34",
+    "pair_id": "000034",
+    "gdros__public_component": "1.3539685010910034",
+    "gdros__vector_epe": "2.2809548377990723",
+    "m4_clean__public_component": "0.16271176934242249",
+    "m4_clean__vector_epe": "0.24171198904514313"
+  },
+  {
+    "pair_index": "35",
+    "pair_id": "000035",
+    "gdros__public_component": "1.5729862451553345",
+    "gdros__vector_epe": "2.6014516353607178",
+    "m4_clean__public_component": "0.23976491391658783",
+    "m4_clean__vector_epe": "0.35501617193222046"
+  },
+  {
+    "pair_index": "36",
+    "pair_id": "000036",
+    "gdros__public_component": "1.0315423011779785",
+    "gdros__vector_epe": "1.5044862031936646",
+    "m4_clean__public_component": "0.19900387525558472",
+    "m4_clean__vector_epe": "0.3011237382888794"
+  },
+  {
+    "pair_index": "37",
+    "pair_id": "000037",
+    "gdros__public_component": "1.6347553730010986",
+    "gdros__vector_epe": "2.5595197677612305",
+    "m4_clean__public_component": "0.29422667622566223",
+    "m4_clean__vector_epe": "0.4367005228996277"
+  },
+  {
+    "pair_index": "38",
+    "pair_id": "000038",
+    "gdros__public_component": "1.170926809310913",
+    "gdros__vector_epe": "2.0515995025634766",
+    "m4_clean__public_component": "0.31297171115875244",
+    "m4_clean__vector_epe": "0.4785473644733429"
+  },
+  {
+    "pair_index": "39",
+    "pair_id": "000039",
+    "gdros__public_component": "0.600644052028656",
+    "gdros__vector_epe": "0.9301959872245789",
+    "m4_clean__public_component": "0.3723069429397583",
+    "m4_clean__vector_epe": "0.6809921264648438"
+  },
+  {
+    "pair_index": "40",
+    "pair_id": "000040",
+    "gdros__public_component": "1.4755359888076782",
+    "gdros__vector_epe": "2.7169058322906494",
+    "m4_clean__public_component": "0.7744901776313782",
+    "m4_clean__vector_epe": "1.306625485420227"
+  },
+  {
+    "pair_index": "41",
+    "pair_id": "000041",
+    "gdros__public_component": "1.514345407485962",
+    "gdros__vector_epe": "2.4867708683013916",
+    "m4_clean__public_component": "0.806049644947052",
+    "m4_clean__vector_epe": "1.2474192380905151"
+  },
+  {
+    "pair_index": "42",
+    "pair_id": "000042",
+    "gdros__public_component": "1.1408910751342773",
+    "gdros__vector_epe": "1.7122015953063965",
+    "m4_clean__public_component": "0.33351337909698486",
+    "m4_clean__vector_epe": "0.5345242023468018"
+  },
+  {
+    "pair_index": "43",
+    "pair_id": "000043",
+    "gdros__public_component": "2.6674230098724365",
+    "gdros__vector_epe": "3.960214138031006",
+    "m4_clean__public_component": "0.8511419892311096",
+    "m4_clean__vector_epe": "1.371944785118103"
+  },
+  {
+    "pair_index": "44",
+    "pair_id": "000044",
+    "gdros__public_component": "1.844916582107544",
+    "gdros__vector_epe": "3.0123369693756104",
+    "m4_clean__public_component": "0.3992559015750885",
+    "m4_clean__vector_epe": "0.6725215315818787"
+  },
+  {
+    "pair_index": "45",
+    "pair_id": "000045",
+    "gdros__public_component": "0.7173047065734863",
+    "gdros__vector_epe": "1.1208293437957764",
+    "m4_clean__public_component": "0.23655147850513458",
+    "m4_clean__vector_epe": "0.3556895852088928"
+  },
+  {
+    "pair_index": "46",
+    "pair_id": "000046",
+    "gdros__public_component": "1.446173906326294",
+    "gdros__vector_epe": "2.1360292434692383",
+    "m4_clean__public_component": "0.926311731338501",
+    "m4_clean__vector_epe": "1.358019471168518"
+  },
+  {
+    "pair_index": "47",
+    "pair_id": "000047",
+    "gdros__public_component": "1.0910143852233887",
+    "gdros__vector_epe": "1.650907039642334",
+    "m4_clean__public_component": "0.385134756565094",
+    "m4_clean__vector_epe": "0.5942806005477905"
+  },
+  {
+    "pair_index": "48",
+    "pair_id": "000048",
+    "gdros__public_component": "0.6910789012908936",
+    "gdros__vector_epe": "1.0882564783096313",
+    "m4_clean__public_component": "0.17438513040542603",
+    "m4_clean__vector_epe": "0.27001887559890747"
+  },
+  {
+    "pair_index": "49",
+    "pair_id": "000049",
+    "gdros__public_component": "0.5783793926239014",
+    "gdros__vector_epe": "0.8880080580711365",
+    "m4_clean__public_component": "0.16037577390670776",
+    "m4_clean__vector_epe": "0.255517840385437"
+  },
+  {
+    "pair_index": "50",
+    "pair_id": "000050",
+    "gdros__public_component": "1.309735655784607",
+    "gdros__vector_epe": "2.024658203125",
+    "m4_clean__public_component": "0.4070255160331726",
+    "m4_clean__vector_epe": "0.6906243562698364"
+  },
+  {
+    "pair_index": "51",
+    "pair_id": "000051",
+    "gdros__public_component": "0.6570370197296143",
+    "gdros__vector_epe": "0.9696046113967896",
+    "m4_clean__public_component": "0.0655362457036972",
+    "m4_clean__vector_epe": "0.10030417144298553"
+  },
+  {
+    "pair_index": "52",
+    "pair_id": "000052",
+    "gdros__public_component": "2.0503692626953125",
+    "gdros__vector_epe": "3.0750186443328857",
+    "m4_clean__public_component": "0.18533456325531006",
+    "m4_clean__vector_epe": "0.3547931909561157"
+  },
+  {
+    "pair_index": "53",
+    "pair_id": "000053",
+    "gdros__public_component": "0.6538217067718506",
+    "gdros__vector_epe": "1.0792369842529297",
+    "m4_clean__public_component": "0.34049877524375916",
+    "m4_clean__vector_epe": "0.5179991126060486"
+  },
+  {
+    "pair_index": "54",
+    "pair_id": "000054",
+    "gdros__public_component": "3.0582876205444336",
+    "gdros__vector_epe": "4.7894415855407715",
+    "m4_clean__public_component": "0.4161110818386078",
+    "m4_clean__vector_epe": "0.6535784006118774"
+  },
+  {
+    "pair_index": "55",
+    "pair_id": "000055",
+    "gdros__public_component": "0.6593769192695618",
+    "gdros__vector_epe": "1.061166524887085",
+    "m4_clean__public_component": "1.3720194101333618",
+    "m4_clean__vector_epe": "1.9629566669464111"
+  },
+  {
+    "pair_index": "56",
+    "pair_id": "000056",
+    "gdros__public_component": "0.9849557280540466",
+    "gdros__vector_epe": "1.6136994361877441",
+    "m4_clean__public_component": "0.7723305225372314",
+    "m4_clean__vector_epe": "1.2362737655639648"
+  },
+  {
+    "pair_index": "57",
+    "pair_id": "000057",
+    "gdros__public_component": "0.6188496351242065",
+    "gdros__vector_epe": "0.8998345136642456",
+    "m4_clean__public_component": "5.942921161651611",
+    "m4_clean__vector_epe": "11.094168663024902"
+  },
+  {
+    "pair_index": "58",
+    "pair_id": "000058",
+    "gdros__public_component": "2.258315086364746",
+    "gdros__vector_epe": "3.2522921562194824",
+    "m4_clean__public_component": "0.1018514484167099",
+    "m4_clean__vector_epe": "0.16163620352745056"
+  },
+  {
+    "pair_index": "59",
+    "pair_id": "000059",
+    "gdros__public_component": "2.8048276901245117",
+    "gdros__vector_epe": "4.115244388580322",
+    "m4_clean__public_component": "0.7047984004020691",
+    "m4_clean__vector_epe": "1.134496808052063"
+  },
+  {
+    "pair_index": "60",
+    "pair_id": "000060",
+    "gdros__public_component": "1.3134430646896362",
+    "gdros__vector_epe": "2.016437530517578",
+    "m4_clean__public_component": "0.29538068175315857",
+    "m4_clean__vector_epe": "0.48181089758872986"
+  },
+  {
+    "pair_index": "61",
+    "pair_id": "000061",
+    "gdros__public_component": "1.0551724433898926",
+    "gdros__vector_epe": "1.6085323095321655",
+    "m4_clean__public_component": "0.32521310448646545",
+    "m4_clean__vector_epe": "0.5019888877868652"
+  },
+  {
+    "pair_index": "62",
+    "pair_id": "000062",
+    "gdros__public_component": "1.117184042930603",
+    "gdros__vector_epe": "1.9499742984771729",
+    "m4_clean__public_component": "0.32038557529449463",
+    "m4_clean__vector_epe": "0.5008624196052551"
+  },
+  {
+    "pair_index": "63",
+    "pair_id": "000063",
+    "gdros__public_component": "1.084334373474121",
+    "gdros__vector_epe": "1.5679734945297241",
+    "m4_clean__public_component": "0.7995721101760864",
+    "m4_clean__vector_epe": "1.1996253728866577"
+  },
+  {
+    "pair_index": "64",
+    "pair_id": "000064",
+    "gdros__public_component": "0.6346485614776611",
+    "gdros__vector_epe": "1.1966935396194458",
+    "m4_clean__public_component": "0.35907045006752014",
+    "m4_clean__vector_epe": "0.6000772714614868"
+  },
+  {
+    "pair_index": "65",
+    "pair_id": "000065",
+    "gdros__public_component": "1.1143032312393188",
+    "gdros__vector_epe": "1.9952819347381592",
+    "m4_clean__public_component": "0.2849352955818176",
+    "m4_clean__vector_epe": "0.4639512300491333"
+  },
+  {
+    "pair_index": "66",
+    "pair_id": "000066",
+    "gdros__public_component": "0.7519661784172058",
+    "gdros__vector_epe": "1.193566083908081",
+    "m4_clean__public_component": "1.079172968864441",
+    "m4_clean__vector_epe": "1.698907494544983"
+  },
+  {
+    "pair_index": "67",
+    "pair_id": "000067",
+    "gdros__public_component": "0.8609623312950134",
+    "gdros__vector_epe": "1.4311559200286865",
+    "m4_clean__public_component": "0.22071552276611328",
+    "m4_clean__vector_epe": "0.3574899137020111"
+  },
+  {
+    "pair_index": "68",
+    "pair_id": "000068",
+    "gdros__public_component": "2.7462358474731445",
+    "gdros__vector_epe": "4.51577615737915",
+    "m4_clean__public_component": "3.486384391784668",
+    "m4_clean__vector_epe": "5.422123908996582"
+  },
+  {
+    "pair_index": "69",
+    "pair_id": "000069",
+    "gdros__public_component": "2.1968181133270264",
+    "gdros__vector_epe": "3.435941219329834",
+    "m4_clean__public_component": "0.4418729245662689",
+    "m4_clean__vector_epe": "0.6804357767105103"
+  },
+  {
+    "pair_index": "70",
+    "pair_id": "000070",
+    "gdros__public_component": "0.718583881855011",
+    "gdros__vector_epe": "1.147754192352295",
+    "m4_clean__public_component": "11.521086692810059",
+    "m4_clean__vector_epe": "17.62523078918457"
+  },
+  {
+    "pair_index": "71",
+    "pair_id": "000071",
+    "gdros__public_component": "1.1851273775100708",
+    "gdros__vector_epe": "1.8359313011169434",
+    "m4_clean__public_component": "1.002405047416687",
+    "m4_clean__vector_epe": "1.6318943500518799"
+  },
+  {
+    "pair_index": "72",
+    "pair_id": "000072",
+    "gdros__public_component": "1.036920189857483",
+    "gdros__vector_epe": "1.6665345430374146",
+    "m4_clean__public_component": "0.7052484154701233",
+    "m4_clean__vector_epe": "1.0905717611312866"
+  },
+  {
+    "pair_index": "73",
+    "pair_id": "000073",
+    "gdros__public_component": "2.9051358699798584",
+    "gdros__vector_epe": "4.242969036102295",
+    "m4_clean__public_component": "0.2923555076122284",
+    "m4_clean__vector_epe": "0.5134356617927551"
+  },
+  {
+    "pair_index": "74",
+    "pair_id": "000074",
+    "gdros__public_component": "1.8186722993850708",
+    "gdros__vector_epe": "2.748422622680664",
+    "m4_clean__public_component": "1.2890212535858154",
+    "m4_clean__vector_epe": "2.0904548168182373"
+  },
+  {
+    "pair_index": "75",
+    "pair_id": "000075",
+    "gdros__public_component": "0.7747164964675903",
+    "gdros__vector_epe": "1.2687580585479736",
+    "m4_clean__public_component": "1.2263153791427612",
+    "m4_clean__vector_epe": "1.9709192514419556"
+  },
+  {
+    "pair_index": "76",
+    "pair_id": "000076",
+    "gdros__public_component": "3.4184625148773193",
+    "gdros__vector_epe": "6.03856897354126",
+    "m4_clean__public_component": "0.7407506108283997",
+    "m4_clean__vector_epe": "1.281727910041809"
+  },
+  {
+    "pair_index": "77",
+    "pair_id": "000077",
+    "gdros__public_component": "0.7074889540672302",
+    "gdros__vector_epe": "1.0163002014160156",
+    "m4_clean__public_component": "0.1962672472000122",
+    "m4_clean__vector_epe": "0.3262177109718323"
+  },
+  {
+    "pair_index": "78",
+    "pair_id": "000078",
+    "gdros__public_component": "0.8427972793579102",
+    "gdros__vector_epe": "1.3589026927947998",
+    "m4_clean__public_component": "1.262830376625061",
+    "m4_clean__vector_epe": "2.0598649978637695"
+  },
+  {
+    "pair_index": "79",
+    "pair_id": "000079",
+    "gdros__public_component": "0.9312512874603271",
+    "gdros__vector_epe": "1.4381990432739258",
+    "m4_clean__public_component": "1.0264570713043213",
+    "m4_clean__vector_epe": "1.5183082818984985"
+  },
+  {
+    "pair_index": "80",
+    "pair_id": "000080",
+    "gdros__public_component": "1.5615904331207275",
+    "gdros__vector_epe": "2.500406265258789",
+    "m4_clean__public_component": "0.29348838329315186",
+    "m4_clean__vector_epe": "0.45506662130355835"
+  },
+  {
+    "pair_index": "81",
+    "pair_id": "000081",
+    "gdros__public_component": "1.9338080883026123",
+    "gdros__vector_epe": "3.172039031982422",
+    "m4_clean__public_component": "1.0635473728179932",
+    "m4_clean__vector_epe": "1.5654903650283813"
+  },
+  {
+    "pair_index": "82",
+    "pair_id": "000082",
+    "gdros__public_component": "0.45770809054374695",
+    "gdros__vector_epe": "0.7362797856330872",
+    "m4_clean__public_component": "0.27245572209358215",
+    "m4_clean__vector_epe": "0.4074692130088806"
+  },
+  {
+    "pair_index": "83",
+    "pair_id": "000083",
+    "gdros__public_component": "0.988908052444458",
+    "gdros__vector_epe": "1.542123556137085",
+    "m4_clean__public_component": "0.27662768959999084",
+    "m4_clean__vector_epe": "0.4232654273509979"
+  },
+  {
+    "pair_index": "84",
+    "pair_id": "000084",
+    "gdros__public_component": "1.1562690734863281",
+    "gdros__vector_epe": "1.8455902338027954",
+    "m4_clean__public_component": "0.9191162586212158",
+    "m4_clean__vector_epe": "1.5965721607208252"
+  },
+  {
+    "pair_index": "85",
+    "pair_id": "000085",
+    "gdros__public_component": "1.3292676210403442",
+    "gdros__vector_epe": "1.9953162670135498",
+    "m4_clean__public_component": "0.6504406332969666",
+    "m4_clean__vector_epe": "1.0442534685134888"
+  },
+  {
+    "pair_index": "86",
+    "pair_id": "000086",
+    "gdros__public_component": "1.2035057544708252",
+    "gdros__vector_epe": "1.9388861656188965",
+    "m4_clean__public_component": "0.3354297876358032",
+    "m4_clean__vector_epe": "0.5350902080535889"
+  },
+  {
+    "pair_index": "87",
+    "pair_id": "000087",
+    "gdros__public_component": "0.718723714351654",
+    "gdros__vector_epe": "1.0545762777328491",
+    "m4_clean__public_component": "0.5491959452629089",
+    "m4_clean__vector_epe": "0.8787537813186646"
+  },
+  {
+    "pair_index": "88",
+    "pair_id": "000088",
+    "gdros__public_component": "0.9272165298461914",
+    "gdros__vector_epe": "1.4710716009140015",
+    "m4_clean__public_component": "0.7099097371101379",
+    "m4_clean__vector_epe": "1.174164056777954"
+  },
+  {
+    "pair_index": "89",
+    "pair_id": "000089",
+    "gdros__public_component": "1.1162019968032837",
+    "gdros__vector_epe": "1.652982234954834",
+    "m4_clean__public_component": "0.14815017580986023",
+    "m4_clean__vector_epe": "0.23531706631183624"
+  },
+  {
+    "pair_index": "90",
+    "pair_id": "000090",
+    "gdros__public_component": "1.3625938892364502",
+    "gdros__vector_epe": "2.3251523971557617",
+    "m4_clean__public_component": "1.0515012741088867",
+    "m4_clean__vector_epe": "1.8081815242767334"
+  },
+  {
+    "pair_index": "91",
+    "pair_id": "000091",
+    "gdros__public_component": "1.5910651683807373",
+    "gdros__vector_epe": "2.4615840911865234",
+    "m4_clean__public_component": "0.6762256026268005",
+    "m4_clean__vector_epe": "1.1154497861862183"
+  },
+  {
+    "pair_index": "92",
+    "pair_id": "000092",
+    "gdros__public_component": "0.7960270643234253",
+    "gdros__vector_epe": "1.1686747074127197",
+    "m4_clean__public_component": "0.36535799503326416",
+    "m4_clean__vector_epe": "0.5855939984321594"
+  },
+  {
+    "pair_index": "93",
+    "pair_id": "000093",
+    "gdros__public_component": "4.700057029724121",
+    "gdros__vector_epe": "7.115557670593262",
+    "m4_clean__public_component": "0.21310769021511078",
+    "m4_clean__vector_epe": "0.35517334938049316"
+  },
+  {
+    "pair_index": "94",
+    "pair_id": "000094",
+    "gdros__public_component": "1.4516866207122803",
+    "gdros__vector_epe": "2.2684106826782227",
+    "m4_clean__public_component": "0.11955276876688004",
+    "m4_clean__vector_epe": "0.18617457151412964"
+  },
+  {
+    "pair_index": "95",
+    "pair_id": "000095",
+    "gdros__public_component": "1.3599004745483398",
+    "gdros__vector_epe": "2.265979528427124",
+    "m4_clean__public_component": "0.33233949542045593",
+    "m4_clean__vector_epe": "0.536324143409729"
+  },
+  {
+    "pair_index": "96",
+    "pair_id": "000096",
+    "gdros__public_component": "1.1421576738357544",
+    "gdros__vector_epe": "1.671482801437378",
+    "m4_clean__public_component": "1.6449353694915771",
+    "m4_clean__vector_epe": "2.584693431854248"
+  },
+  {
+    "pair_index": "97",
+    "pair_id": "000097",
+    "gdros__public_component": "0.6923128962516785",
+    "gdros__vector_epe": "1.1756584644317627",
+    "m4_clean__public_component": "0.22080035507678986",
+    "m4_clean__vector_epe": "0.34107035398483276"
+  },
+  {
+    "pair_index": "98",
+    "pair_id": "000098",
+    "gdros__public_component": "1.0412503480911255",
+    "gdros__vector_epe": "1.6244330406188965",
+    "m4_clean__public_component": "0.5545900464057922",
+    "m4_clean__vector_epe": "0.9164408445358276"
+  },
+  {
+    "pair_index": "99",
+    "pair_id": "000099",
+    "gdros__public_component": "1.9666417837142944",
+    "gdros__vector_epe": "3.1374313831329346",
+    "m4_clean__public_component": "0.4451119899749756",
+    "m4_clean__vector_epe": "0.7504040598869324"
+  },
+  {
+    "pair_index": "100",
+    "pair_id": "000100",
+    "gdros__public_component": "1.1315675973892212",
+    "gdros__vector_epe": "1.8026998043060303",
+    "m4_clean__public_component": "0.9770098328590393",
+    "m4_clean__vector_epe": "1.4992682933807373"
+  },
+  {
+    "pair_index": "101",
+    "pair_id": "000101",
+    "gdros__public_component": "0.8802435398101807",
+    "gdros__vector_epe": "1.4263479709625244",
+    "m4_clean__public_component": "6.217061519622803",
+    "m4_clean__vector_epe": "10.131271362304688"
+  },
+  {
+    "pair_index": "102",
+    "pair_id": "000102",
+    "gdros__public_component": "2.3380961418151855",
+    "gdros__vector_epe": "3.5821263790130615",
+    "m4_clean__public_component": "0.5250961184501648",
+    "m4_clean__vector_epe": "0.9306602478027344"
+  },
+  {
+    "pair_index": "103",
+    "pair_id": "000103",
+    "gdros__public_component": "1.6335175037384033",
+    "gdros__vector_epe": "2.3505747318267822",
+    "m4_clean__public_component": "0.5112748146057129",
+    "m4_clean__vector_epe": "0.7830667495727539"
+  },
+  {
+    "pair_index": "104",
+    "pair_id": "000104",
+    "gdros__public_component": "1.337943434715271",
+    "gdros__vector_epe": "2.145655632019043",
+    "m4_clean__public_component": "0.8696558475494385",
+    "m4_clean__vector_epe": "1.410483717918396"
+  },
+  {
+    "pair_index": "105",
+    "pair_id": "000105",
+    "gdros__public_component": "0.5655129551887512",
+    "gdros__vector_epe": "0.8915765881538391",
+    "m4_clean__public_component": "0.5675353407859802",
+    "m4_clean__vector_epe": "0.8541714549064636"
+  },
+  {
+    "pair_index": "106",
+    "pair_id": "000106",
+    "gdros__public_component": "1.2011889219284058",
+    "gdros__vector_epe": "1.7948319911956787",
+    "m4_clean__public_component": "3.1575798988342285",
+    "m4_clean__vector_epe": "4.926657676696777"
+  },
+  {
+    "pair_index": "107",
+    "pair_id": "000107",
+    "gdros__public_component": "1.379817008972168",
+    "gdros__vector_epe": "2.024808645248413",
+    "m4_clean__public_component": "1.2958531379699707",
+    "m4_clean__vector_epe": "2.085913896560669"
+  },
+  {
+    "pair_index": "108",
+    "pair_id": "000108",
+    "gdros__public_component": "0.6427103281021118",
+    "gdros__vector_epe": "0.9953988790512085",
+    "m4_clean__public_component": "0.5850154161453247",
+    "m4_clean__vector_epe": "0.9410030841827393"
+  },
+  {
+    "pair_index": "109",
+    "pair_id": "000109",
+    "gdros__public_component": "0.4211728572845459",
+    "gdros__vector_epe": "0.6605963706970215",
+    "m4_clean__public_component": "0.15154795348644257",
+    "m4_clean__vector_epe": "0.2341977208852768"
+  },
+  {
+    "pair_index": "110",
+    "pair_id": "000110",
+    "gdros__public_component": "0.800238847732544",
+    "gdros__vector_epe": "1.3371540307998657",
+    "m4_clean__public_component": "0.36370623111724854",
+    "m4_clean__vector_epe": "0.6538109183311462"
+  },
+  {
+    "pair_index": "111",
+    "pair_id": "000111",
+    "gdros__public_component": "0.9606305360794067",
+    "gdros__vector_epe": "1.5597490072250366",
+    "m4_clean__public_component": "0.7395802736282349",
+    "m4_clean__vector_epe": "1.168662667274475"
+  },
+  {
+    "pair_index": "112",
+    "pair_id": "000112",
+    "gdros__public_component": "1.829846739768982",
+    "gdros__vector_epe": "2.6744954586029053",
+    "m4_clean__public_component": "0.2871764600276947",
+    "m4_clean__vector_epe": "0.499427855014801"
+  },
+  {
+    "pair_index": "113",
+    "pair_id": "000113",
+    "gdros__public_component": "2.0862481594085693",
+    "gdros__vector_epe": "3.3443896770477295",
+    "m4_clean__public_component": "0.5049240589141846",
+    "m4_clean__vector_epe": "0.7888488173484802"
+  },
+  {
+    "pair_index": "114",
+    "pair_id": "000114",
+    "gdros__public_component": "0.8534839749336243",
+    "gdros__vector_epe": "1.3954188823699951",
+    "m4_clean__public_component": "1.1380401849746704",
+    "m4_clean__vector_epe": "1.7326143980026245"
+  },
+  {
+    "pair_index": "115",
+    "pair_id": "000115",
+    "gdros__public_component": "1.2440439462661743",
+    "gdros__vector_epe": "1.9848111867904663",
+    "m4_clean__public_component": "0.3279845714569092",
+    "m4_clean__vector_epe": "0.537700355052948"
+  },
+  {
+    "pair_index": "116",
+    "pair_id": "000116",
+    "gdros__public_component": "0.9253649115562439",
+    "gdros__vector_epe": "1.4934271574020386",
+    "m4_clean__public_component": "21.09558868408203",
+    "m4_clean__vector_epe": "32.702728271484375"
+  },
+  {
+    "pair_index": "117",
+    "pair_id": "000117",
+    "gdros__public_component": "1.639540433883667",
+    "gdros__vector_epe": "2.628793478012085",
+    "m4_clean__public_component": "0.7303516268730164",
+    "m4_clean__vector_epe": "1.1612896919250488"
+  },
+  {
+    "pair_index": "118",
+    "pair_id": "000118",
+    "gdros__public_component": "0.9006345272064209",
+    "gdros__vector_epe": "1.37929105758667",
+    "m4_clean__public_component": "0.6258241534233093",
+    "m4_clean__vector_epe": "0.9695890545845032"
+  },
+  {
+    "pair_index": "119",
+    "pair_id": "000119",
+    "gdros__public_component": "1.1022326946258545",
+    "gdros__vector_epe": "1.8291537761688232",
+    "m4_clean__public_component": "0.34024056792259216",
+    "m4_clean__vector_epe": "0.5111855864524841"
+  },
+  {
+    "pair_index": "120",
+    "pair_id": "000120",
+    "gdros__public_component": "0.6689906120300293",
+    "gdros__vector_epe": "1.0419515371322632",
+    "m4_clean__public_component": "0.3133472204208374",
+    "m4_clean__vector_epe": "0.46916404366493225"
+  },
+  {
+    "pair_index": "121",
+    "pair_id": "000121",
+    "gdros__public_component": "0.9653891324996948",
+    "gdros__vector_epe": "1.4894176721572876",
+    "m4_clean__public_component": "0.39714139699935913",
+    "m4_clean__vector_epe": "0.6195924282073975"
+  },
+  {
+    "pair_index": "122",
+    "pair_id": "000122",
+    "gdros__public_component": "2.5130491256713867",
+    "gdros__vector_epe": "4.415760040283203",
+    "m4_clean__public_component": "0.49389010667800903",
+    "m4_clean__vector_epe": "0.7438430190086365"
+  },
+  {
+    "pair_index": "123",
+    "pair_id": "000123",
+    "gdros__public_component": "1.2458534240722656",
+    "gdros__vector_epe": "1.9457836151123047",
+    "m4_clean__public_component": "0.9495497345924377",
+    "m4_clean__vector_epe": "1.3967053890228271"
+  },
+  {
+    "pair_index": "124",
+    "pair_id": "000124",
+    "gdros__public_component": "0.7331112027168274",
+    "gdros__vector_epe": "1.2922083139419556",
+    "m4_clean__public_component": "0.35720235109329224",
+    "m4_clean__vector_epe": "0.5423148274421692"
+  },
+  {
+    "pair_index": "125",
+    "pair_id": "000125",
+    "gdros__public_component": "0.5412673354148865",
+    "gdros__vector_epe": "0.8251751661300659",
+    "m4_clean__public_component": "0.3270328640937805",
+    "m4_clean__vector_epe": "0.4825150668621063"
+  },
+  {
+    "pair_index": "126",
+    "pair_id": "000126",
+    "gdros__public_component": "0.9228509664535522",
+    "gdros__vector_epe": "1.5086967945098877",
+    "m4_clean__public_component": "0.7155452966690063",
+    "m4_clean__vector_epe": "1.1069766283035278"
+  },
+  {
+    "pair_index": "127",
+    "pair_id": "000127",
+    "gdros__public_component": "0.40354886651039124",
+    "gdros__vector_epe": "0.69844651222229",
+    "m4_clean__public_component": "0.33158746361732483",
+    "m4_clean__vector_epe": "0.5135123133659363"
+  },
+  {
+    "pair_index": "128",
+    "pair_id": "000128",
+    "gdros__public_component": "2.393974542617798",
+    "gdros__vector_epe": "3.49149751663208",
+    "m4_clean__public_component": "2.086256504058838",
+    "m4_clean__vector_epe": "3.320047616958618"
+  },
+  {
+    "pair_index": "129",
+    "pair_id": "000129",
+    "gdros__public_component": "1.240484595298767",
+    "gdros__vector_epe": "2.1687967777252197",
+    "m4_clean__public_component": "0.32815802097320557",
+    "m4_clean__vector_epe": "0.5035244226455688"
+  },
+  {
+    "pair_index": "130",
+    "pair_id": "000130",
+    "gdros__public_component": "1.0184649229049683",
+    "gdros__vector_epe": "1.6113598346710205",
+    "m4_clean__public_component": "0.09397222101688385",
+    "m4_clean__vector_epe": "0.16457027196884155"
+  },
+  {
+    "pair_index": "131",
+    "pair_id": "000131",
+    "gdros__public_component": "1.33851957321167",
+    "gdros__vector_epe": "2.1459732055664062",
+    "m4_clean__public_component": "3.143343925476074",
+    "m4_clean__vector_epe": "5.4014892578125"
+  },
+  {
+    "pair_index": "132",
+    "pair_id": "000132",
+    "gdros__public_component": "0.8499743938446045",
+    "gdros__vector_epe": "1.365164041519165",
+    "m4_clean__public_component": "4.939082145690918",
+    "m4_clean__vector_epe": "8.397448539733887"
+  },
+  {
+    "pair_index": "133",
+    "pair_id": "000133",
+    "gdros__public_component": "0.6409769058227539",
+    "gdros__vector_epe": "0.977552056312561",
+    "m4_clean__public_component": "0.45223891735076904",
+    "m4_clean__vector_epe": "0.7615810632705688"
+  },
+  {
+    "pair_index": "134",
+    "pair_id": "000134",
+    "gdros__public_component": "0.8945837616920471",
+    "gdros__vector_epe": "1.3910578489303589",
+    "m4_clean__public_component": "1.092195749282837",
+    "m4_clean__vector_epe": "1.583363652229309"
+  },
+  {
+    "pair_index": "135",
+    "pair_id": "000135",
+    "gdros__public_component": "3.0615997314453125",
+    "gdros__vector_epe": "4.489470481872559",
+    "m4_clean__public_component": "1.8347638845443726",
+    "m4_clean__vector_epe": "3.0149288177490234"
+  },
+  {
+    "pair_index": "136",
+    "pair_id": "000136",
+    "gdros__public_component": "1.3700902462005615",
+    "gdros__vector_epe": "2.1443629264831543",
+    "m4_clean__public_component": "0.9423806071281433",
+    "m4_clean__vector_epe": "1.3903101682662964"
+  },
+  {
+    "pair_index": "137",
+    "pair_id": "000137",
+    "gdros__public_component": "1.7381446361541748",
+    "gdros__vector_epe": "2.6119494438171387",
+    "m4_clean__public_component": "1.261662483215332",
+    "m4_clean__vector_epe": "1.9942690134048462"
+  },
+  {
+    "pair_index": "138",
+    "pair_id": "000138",
+    "gdros__public_component": "0.8430801033973694",
+    "gdros__vector_epe": "1.4946368932724",
+    "m4_clean__public_component": "0.9190976619720459",
+    "m4_clean__vector_epe": "1.3354685306549072"
+  },
+  {
+    "pair_index": "139",
+    "pair_id": "000139",
+    "gdros__public_component": "0.8150666952133179",
+    "gdros__vector_epe": "1.2237210273742676",
+    "m4_clean__public_component": "4.615985870361328",
+    "m4_clean__vector_epe": "8.59738540649414"
+  },
+  {
+    "pair_index": "140",
+    "pair_id": "000140",
+    "gdros__public_component": "1.524777889251709",
+    "gdros__vector_epe": "2.3990046977996826",
+    "m4_clean__public_component": "2.2885210514068604",
+    "m4_clean__vector_epe": "3.3388612270355225"
+  },
+  {
+    "pair_index": "141",
+    "pair_id": "000141",
+    "gdros__public_component": "1.5661282539367676",
+    "gdros__vector_epe": "2.7413101196289062",
+    "m4_clean__public_component": "0.24493801593780518",
+    "m4_clean__vector_epe": "0.3739057779312134"
+  },
+  {
+    "pair_index": "142",
+    "pair_id": "000142",
+    "gdros__public_component": "0.6866201162338257",
+    "gdros__vector_epe": "1.0742474794387817",
+    "m4_clean__public_component": "4.971914768218994",
+    "m4_clean__vector_epe": "7.631032466888428"
+  },
+  {
+    "pair_index": "143",
+    "pair_id": "000143",
+    "gdros__public_component": "2.989717960357666",
+    "gdros__vector_epe": "4.99722957611084",
+    "m4_clean__public_component": "1.2782446146011353",
+    "m4_clean__vector_epe": "1.940637469291687"
+  },
+  {
+    "pair_index": "144",
+    "pair_id": "000144",
+    "gdros__public_component": "0.8364009857177734",
+    "gdros__vector_epe": "1.26656973361969",
+    "m4_clean__public_component": "0.794902503490448",
+    "m4_clean__vector_epe": "1.3127540349960327"
+  },
+  {
+    "pair_index": "145",
+    "pair_id": "000145",
+    "gdros__public_component": "0.968841016292572",
+    "gdros__vector_epe": "1.6214300394058228",
+    "m4_clean__public_component": "0.4042844772338867",
+    "m4_clean__vector_epe": "0.6041179299354553"
+  },
+  {
+    "pair_index": "146",
+    "pair_id": "000146",
+    "gdros__public_component": "1.068040370941162",
+    "gdros__vector_epe": "1.5885096788406372",
+    "m4_clean__public_component": "0.22430585324764252",
+    "m4_clean__vector_epe": "0.3476867079734802"
+  },
+  {
+    "pair_index": "147",
+    "pair_id": "000147",
+    "gdros__public_component": "1.3699170351028442",
+    "gdros__vector_epe": "1.9854423999786377",
+    "m4_clean__public_component": "2.328406572341919",
+    "m4_clean__vector_epe": "3.506833791732788"
+  },
+  {
+    "pair_index": "148",
+    "pair_id": "000148",
+    "gdros__public_component": "2.4531188011169434",
+    "gdros__vector_epe": "3.816866636276245",
+    "m4_clean__public_component": "1.1209111213684082",
+    "m4_clean__vector_epe": "1.7112212181091309"
+  },
+  {
+    "pair_index": "149",
+    "pair_id": "000149",
+    "gdros__public_component": "1.4827029705047607",
+    "gdros__vector_epe": "2.3480615615844727",
+    "m4_clean__public_component": "0.23482844233512878",
+    "m4_clean__vector_epe": "0.36151599884033203"
+  },
+  {
+    "pair_index": "150",
+    "pair_id": "000150",
+    "gdros__public_component": "2.007403612136841",
+    "gdros__vector_epe": "3.0083720684051514",
+    "m4_clean__public_component": "1.811501145362854",
+    "m4_clean__vector_epe": "2.9258768558502197"
+  },
+  {
+    "pair_index": "151",
+    "pair_id": "000151",
+    "gdros__public_component": "1.4085781574249268",
+    "gdros__vector_epe": "2.2509536743164062",
+    "m4_clean__public_component": "0.9858349561691284",
+    "m4_clean__vector_epe": "1.5726441144943237"
+  },
+  {
+    "pair_index": "152",
+    "pair_id": "000152",
+    "gdros__public_component": "0.8406524062156677",
+    "gdros__vector_epe": "1.2551707029342651",
+    "m4_clean__public_component": "0.14987069368362427",
+    "m4_clean__vector_epe": "0.23258543014526367"
+  },
+  {
+    "pair_index": "153",
+    "pair_id": "000153",
+    "gdros__public_component": "1.1625847816467285",
+    "gdros__vector_epe": "1.7803000211715698",
+    "m4_clean__public_component": "0.6630162000656128",
+    "m4_clean__vector_epe": "1.0501044988632202"
+  },
+  {
+    "pair_index": "154",
+    "pair_id": "000154",
+    "gdros__public_component": "1.0516685247421265",
+    "gdros__vector_epe": "1.6339439153671265",
+    "m4_clean__public_component": "0.342465341091156",
+    "m4_clean__vector_epe": "0.5287984609603882"
+  },
+  {
+    "pair_index": "155",
+    "pair_id": "000155",
+    "gdros__public_component": "0.47682756185531616",
+    "gdros__vector_epe": "0.7369048595428467",
+    "m4_clean__public_component": "4.166711807250977",
+    "m4_clean__vector_epe": "7.106558322906494"
+  },
+  {
+    "pair_index": "156",
+    "pair_id": "000156",
+    "gdros__public_component": "0.8038385510444641",
+    "gdros__vector_epe": "1.2518649101257324",
+    "m4_clean__public_component": "0.3145655393600464",
+    "m4_clean__vector_epe": "0.5026066303253174"
+  },
+  {
+    "pair_index": "157",
+    "pair_id": "000157",
+    "gdros__public_component": "1.1919094324111938",
+    "gdros__vector_epe": "1.7709946632385254",
+    "m4_clean__public_component": "0.12519080936908722",
+    "m4_clean__vector_epe": "0.1786993145942688"
+  },
+  {
+    "pair_index": "158",
+    "pair_id": "000158",
+    "gdros__public_component": "0.9483813643455505",
+    "gdros__vector_epe": "1.6091711521148682",
+    "m4_clean__public_component": "0.06342675536870956",
+    "m4_clean__vector_epe": "0.09825298935174942"
+  },
+  {
+    "pair_index": "159",
+    "pair_id": "000159",
+    "gdros__public_component": "1.055646300315857",
+    "gdros__vector_epe": "1.6990424394607544",
+    "m4_clean__public_component": "0.8901920914649963",
+    "m4_clean__vector_epe": "1.370466947555542"
+  },
+  {
+    "pair_index": "160",
+    "pair_id": "000160",
+    "gdros__public_component": "0.6604031920433044",
+    "gdros__vector_epe": "1.085031270980835",
+    "m4_clean__public_component": "0.6186065673828125",
+    "m4_clean__vector_epe": "0.9023928642272949"
+  },
+  {
+    "pair_index": "161",
+    "pair_id": "000161",
+    "gdros__public_component": "1.3863303661346436",
+    "gdros__vector_epe": "2.1854677200317383",
+    "m4_clean__public_component": "0.25252267718315125",
+    "m4_clean__vector_epe": "0.4193969964981079"
+  },
+  {
+    "pair_index": "162",
+    "pair_id": "000162",
+    "gdros__public_component": "2.9542348384857178",
+    "gdros__vector_epe": "5.240074157714844",
+    "m4_clean__public_component": "0.2261636108160019",
+    "m4_clean__vector_epe": "0.34674495458602905"
+  },
+  {
+    "pair_index": "163",
+    "pair_id": "000163",
+    "gdros__public_component": "0.4585798978805542",
+    "gdros__vector_epe": "0.6892423033714294",
+    "m4_clean__public_component": "21.036678314208984",
+    "m4_clean__vector_epe": "32.375972747802734"
+  },
+  {
+    "pair_index": "164",
+    "pair_id": "000164",
+    "gdros__public_component": "2.1366078853607178",
+    "gdros__vector_epe": "3.54256534576416",
+    "m4_clean__public_component": "0.27648815512657166",
+    "m4_clean__vector_epe": "0.4449879825115204"
+  },
+  {
+    "pair_index": "165",
+    "pair_id": "000165",
+    "gdros__public_component": "0.8204578161239624",
+    "gdros__vector_epe": "1.4286093711853027",
+    "m4_clean__public_component": "2.4636240005493164",
+    "m4_clean__vector_epe": "4.184089660644531"
+  },
+  {
+    "pair_index": "166",
+    "pair_id": "000166",
+    "gdros__public_component": "1.47422456741333",
+    "gdros__vector_epe": "2.2921783924102783",
+    "m4_clean__public_component": "10.473190307617188",
+    "m4_clean__vector_epe": "18.63473892211914"
+  },
+  {
+    "pair_index": "167",
+    "pair_id": "000167",
+    "gdros__public_component": "1.1076202392578125",
+    "gdros__vector_epe": "1.670497179031372",
+    "m4_clean__public_component": "0.6071712970733643",
+    "m4_clean__vector_epe": "1.0696674585342407"
+  },
+  {
+    "pair_index": "168",
+    "pair_id": "000168",
+    "gdros__public_component": "2.0837597846984863",
+    "gdros__vector_epe": "3.0690219402313232",
+    "m4_clean__public_component": "1.7437680959701538",
+    "m4_clean__vector_epe": "2.6853246688842773"
+  },
+  {
+    "pair_index": "169",
+    "pair_id": "000169",
+    "gdros__public_component": "0.5072676539421082",
+    "gdros__vector_epe": "0.8351042866706848",
+    "m4_clean__public_component": "0.7008448243141174",
+    "m4_clean__vector_epe": "1.1324050426483154"
+  },
+  {
+    "pair_index": "170",
+    "pair_id": "000170",
+    "gdros__public_component": "0.9006208181381226",
+    "gdros__vector_epe": "1.2894794940948486",
+    "m4_clean__public_component": "0.28552237153053284",
+    "m4_clean__vector_epe": "0.46777352690696716"
+  },
+  {
+    "pair_index": "171",
+    "pair_id": "000171",
+    "gdros__public_component": "1.5188038349151611",
+    "gdros__vector_epe": "2.7117562294006348",
+    "m4_clean__public_component": "0.6122853755950928",
+    "m4_clean__vector_epe": "0.9521127939224243"
+  },
+  {
+    "pair_index": "172",
+    "pair_id": "000172",
+    "gdros__public_component": "0.9208508133888245",
+    "gdros__vector_epe": "1.5662851333618164",
+    "m4_clean__public_component": "0.286662757396698",
+    "m4_clean__vector_epe": "0.4811709523200989"
+  },
+  {
+    "pair_index": "173",
+    "pair_id": "000173",
+    "gdros__public_component": "0.7515886425971985",
+    "gdros__vector_epe": "1.1769349575042725",
+    "m4_clean__public_component": "0.45329296588897705",
+    "m4_clean__vector_epe": "0.7374114990234375"
+  },
+  {
+    "pair_index": "174",
+    "pair_id": "000174",
+    "gdros__public_component": "1.9362242221832275",
+    "gdros__vector_epe": "3.0608131885528564",
+    "m4_clean__public_component": "1.3256582021713257",
+    "m4_clean__vector_epe": "2.0376040935516357"
+  },
+  {
+    "pair_index": "175",
+    "pair_id": "000175",
+    "gdros__public_component": "0.7760819792747498",
+    "gdros__vector_epe": "1.1901757717132568",
+    "m4_clean__public_component": "1.3652701377868652",
+    "m4_clean__vector_epe": "2.155851125717163"
+  },
+  {
+    "pair_index": "176",
+    "pair_id": "000176",
+    "gdros__public_component": "0.7714998722076416",
+    "gdros__vector_epe": "1.2231802940368652",
+    "m4_clean__public_component": "15.4657564163208",
+    "m4_clean__vector_epe": "23.82607078552246"
+  },
+  {
+    "pair_index": "177",
+    "pair_id": "000177",
+    "gdros__public_component": "0.9460203051567078",
+    "gdros__vector_epe": "1.455200433731079",
+    "m4_clean__public_component": "0.20260101556777954",
+    "m4_clean__vector_epe": "0.3047683537006378"
+  },
+  {
+    "pair_index": "178",
+    "pair_id": "000178",
+    "gdros__public_component": "1.4388986825942993",
+    "gdros__vector_epe": "2.104365348815918",
+    "m4_clean__public_component": "0.8186774253845215",
+    "m4_clean__vector_epe": "1.3436259031295776"
+  },
+  {
+    "pair_index": "179",
+    "pair_id": "000179",
+    "gdros__public_component": "0.47459810972213745",
+    "gdros__vector_epe": "0.7296081781387329",
+    "m4_clean__public_component": "3.019099712371826",
+    "m4_clean__vector_epe": "5.299670219421387"
+  },
+  {
+    "pair_index": "180",
+    "pair_id": "000180",
+    "gdros__public_component": "0.5529949069023132",
+    "gdros__vector_epe": "0.944668173789978",
+    "m4_clean__public_component": "0.29020899534225464",
+    "m4_clean__vector_epe": "0.5659900903701782"
+  },
+  {
+    "pair_index": "181",
+    "pair_id": "000181",
+    "gdros__public_component": "1.8728877305984497",
+    "gdros__vector_epe": "2.940511465072632",
+    "m4_clean__public_component": "2.953433036804199",
+    "m4_clean__vector_epe": "4.4794697761535645"
+  },
+  {
+    "pair_index": "182",
+    "pair_id": "000182",
+    "gdros__public_component": "1.298741102218628",
+    "gdros__vector_epe": "2.1189827919006348",
+    "m4_clean__public_component": "1.1472218036651611",
+    "m4_clean__vector_epe": "1.8056751489639282"
+  },
+  {
+    "pair_index": "183",
+    "pair_id": "000183",
+    "gdros__public_component": "1.2665433883666992",
+    "gdros__vector_epe": "2.26542592048645",
+    "m4_clean__public_component": "0.7185888290405273",
+    "m4_clean__vector_epe": "1.1173064708709717"
+  },
+  {
+    "pair_index": "184",
+    "pair_id": "000184",
+    "gdros__public_component": "1.323046088218689",
+    "gdros__vector_epe": "2.3393070697784424",
+    "m4_clean__public_component": "1.3377282619476318",
+    "m4_clean__vector_epe": "2.0899720191955566"
+  },
+  {
+    "pair_index": "185",
+    "pair_id": "000185",
+    "gdros__public_component": "0.960300087928772",
+    "gdros__vector_epe": "1.5738463401794434",
+    "m4_clean__public_component": "0.5761086940765381",
+    "m4_clean__vector_epe": "0.8605583310127258"
+  },
+  {
+    "pair_index": "186",
+    "pair_id": "000186",
+    "gdros__public_component": "0.8345228433609009",
+    "gdros__vector_epe": "1.3736833333969116",
+    "m4_clean__public_component": "0.7230854630470276",
+    "m4_clean__vector_epe": "1.1344547271728516"
+  },
+  {
+    "pair_index": "187",
+    "pair_id": "000187",
+    "gdros__public_component": "0.8981474041938782",
+    "gdros__vector_epe": "1.4058260917663574",
+    "m4_clean__public_component": "0.6668998003005981",
+    "m4_clean__vector_epe": "1.0961235761642456"
+  },
+  {
+    "pair_index": "188",
+    "pair_id": "000188",
+    "gdros__public_component": "2.6431686878204346",
+    "gdros__vector_epe": "3.8623979091644287",
+    "m4_clean__public_component": "0.9122425317764282",
+    "m4_clean__vector_epe": "1.4715508222579956"
+  },
+  {
+    "pair_index": "189",
+    "pair_id": "000189",
+    "gdros__public_component": "0.9576054811477661",
+    "gdros__vector_epe": "1.4256104230880737",
+    "m4_clean__public_component": "0.1426902860403061",
+    "m4_clean__vector_epe": "0.2372727394104004"
+  },
+  {
+    "pair_index": "190",
+    "pair_id": "000190",
+    "gdros__public_component": "0.8432350158691406",
+    "gdros__vector_epe": "1.3894610404968262",
+    "m4_clean__public_component": "0.95411616563797",
+    "m4_clean__vector_epe": "1.4142621755599976"
+  },
+  {
+    "pair_index": "191",
+    "pair_id": "000191",
+    "gdros__public_component": "0.5283613801002502",
+    "gdros__vector_epe": "0.8152668476104736",
+    "m4_clean__public_component": "7.364099502563477",
+    "m4_clean__vector_epe": "14.01517105102539"
+  },
+  {
+    "pair_index": "192",
+    "pair_id": "000192",
+    "gdros__public_component": "0.4972817599773407",
+    "gdros__vector_epe": "0.7446435689926147",
+    "m4_clean__public_component": "6.783257484436035",
+    "m4_clean__vector_epe": "12.291329383850098"
+  },
+  {
+    "pair_index": "193",
+    "pair_id": "000193",
+    "gdros__public_component": "0.7045094966888428",
+    "gdros__vector_epe": "1.1645410060882568",
+    "m4_clean__public_component": "0.2030179351568222",
+    "m4_clean__vector_epe": "0.31048327684402466"
+  },
+  {
+    "pair_index": "194",
+    "pair_id": "000194",
+    "gdros__public_component": "1.214301586151123",
+    "gdros__vector_epe": "1.86711847782135",
+    "m4_clean__public_component": "2.2579987049102783",
+    "m4_clean__vector_epe": "3.576603889465332"
+  },
+  {
+    "pair_index": "195",
+    "pair_id": "000195",
+    "gdros__public_component": "1.8690412044525146",
+    "gdros__vector_epe": "3.422034978866577",
+    "m4_clean__public_component": "0.989976167678833",
+    "m4_clean__vector_epe": "1.4260019063949585"
+  },
+  {
+    "pair_index": "196",
+    "pair_id": "000196",
+    "gdros__public_component": "0.9346433281898499",
+    "gdros__vector_epe": "1.5436208248138428",
+    "m4_clean__public_component": "0.8621357083320618",
+    "m4_clean__vector_epe": "1.2721657752990723"
+  },
+  {
+    "pair_index": "197",
+    "pair_id": "000197",
+    "gdros__public_component": "0.6187582015991211",
+    "gdros__vector_epe": "0.9683764576911926",
+    "m4_clean__public_component": "1.963661551475525",
+    "m4_clean__vector_epe": "3.240187168121338"
+  },
+  {
+    "pair_index": "198",
+    "pair_id": "000198",
+    "gdros__public_component": "1.1798608303070068",
+    "gdros__vector_epe": "1.831079125404358",
+    "m4_clean__public_component": "0.6153290867805481",
+    "m4_clean__vector_epe": "0.9634755849838257"
+  },
+  {
+    "pair_index": "199",
+    "pair_id": "000199",
+    "gdros__public_component": "1.3736722469329834",
+    "gdros__vector_epe": "2.1659865379333496",
+    "m4_clean__public_component": "0.8452321290969849",
+    "m4_clean__vector_epe": "1.360469102859497"
+  },
+  {
+    "pair_index": "200",
+    "pair_id": "000200",
+    "gdros__public_component": "1.3800599575042725",
+    "gdros__vector_epe": "2.313326120376587",
+    "m4_clean__public_component": "0.2558651864528656",
+    "m4_clean__vector_epe": "0.3800213038921356"
+  },
+  {
+    "pair_index": "201",
+    "pair_id": "000201",
+    "gdros__public_component": "1.2802067995071411",
+    "gdros__vector_epe": "2.088547945022583",
+    "m4_clean__public_component": "0.4719965159893036",
+    "m4_clean__vector_epe": "0.6815468668937683"
+  },
+  {
+    "pair_index": "202",
+    "pair_id": "000202",
+    "gdros__public_component": "1.3572455644607544",
+    "gdros__vector_epe": "2.3319828510284424",
+    "m4_clean__public_component": "0.4793989062309265",
+    "m4_clean__vector_epe": "0.854634165763855"
+  },
+  {
+    "pair_index": "203",
+    "pair_id": "000203",
+    "gdros__public_component": "0.5863825678825378",
+    "gdros__vector_epe": "0.8944300413131714",
+    "m4_clean__public_component": "0.5440136194229126",
+    "m4_clean__vector_epe": "0.9347514510154724"
+  },
+  {
+    "pair_index": "204",
+    "pair_id": "000204",
+    "gdros__public_component": "1.6650240421295166",
+    "gdros__vector_epe": "2.692378044128418",
+    "m4_clean__public_component": "1.3318426609039307",
+    "m4_clean__vector_epe": "2.0436947345733643"
+  },
+  {
+    "pair_index": "205",
+    "pair_id": "000205",
+    "gdros__public_component": "0.5056720972061157",
+    "gdros__vector_epe": "0.8516585826873779",
+    "m4_clean__public_component": "0.29203540086746216",
+    "m4_clean__vector_epe": "0.43215951323509216"
+  },
+  {
+    "pair_index": "206",
+    "pair_id": "000206",
+    "gdros__public_component": "1.4169132709503174",
+    "gdros__vector_epe": "2.1596877574920654",
+    "m4_clean__public_component": "0.3486442267894745",
+    "m4_clean__vector_epe": "0.5426020622253418"
+  },
+  {
+    "pair_index": "207",
+    "pair_id": "000207",
+    "gdros__public_component": "3.3545279502868652",
+    "gdros__vector_epe": "5.324160575866699",
+    "m4_clean__public_component": "0.7463581562042236",
+    "m4_clean__vector_epe": "1.1843347549438477"
+  },
+  {
+    "pair_index": "208",
+    "pair_id": "000208",
+    "gdros__public_component": "1.7961064577102661",
+    "gdros__vector_epe": "3.1566596031188965",
+    "m4_clean__public_component": "0.17649368941783905",
+    "m4_clean__vector_epe": "0.28243863582611084"
+  },
+  {
+    "pair_index": "209",
+    "pair_id": "000209",
+    "gdros__public_component": "1.3092390298843384",
+    "gdros__vector_epe": "2.121285915374756",
+    "m4_clean__public_component": "0.843421459197998",
+    "m4_clean__vector_epe": "1.3380756378173828"
+  },
+  {
+    "pair_index": "210",
+    "pair_id": "000210",
+    "gdros__public_component": "0.5996429324150085",
+    "gdros__vector_epe": "1.0623382329940796",
+    "m4_clean__public_component": "0.5207924246788025",
+    "m4_clean__vector_epe": "0.7735291719436646"
+  },
+  {
+    "pair_index": "211",
+    "pair_id": "000211",
+    "gdros__public_component": "1.2794275283813477",
+    "gdros__vector_epe": "2.073714256286621",
+    "m4_clean__public_component": "0.5152513384819031",
+    "m4_clean__vector_epe": "0.8070356249809265"
+  },
+  {
+    "pair_index": "212",
+    "pair_id": "000212",
+    "gdros__public_component": "2.9581298828125",
+    "gdros__vector_epe": "4.36409330368042",
+    "m4_clean__public_component": "0.5375575423240662",
+    "m4_clean__vector_epe": "0.8146879076957703"
+  },
+  {
+    "pair_index": "213",
+    "pair_id": "000213",
+    "gdros__public_component": "1.0330193042755127",
+    "gdros__vector_epe": "1.531333327293396",
+    "m4_clean__public_component": "10.605782508850098",
+    "m4_clean__vector_epe": "16.64031410217285"
+  },
+  {
+    "pair_index": "214",
+    "pair_id": "000214",
+    "gdros__public_component": "1.868900179862976",
+    "gdros__vector_epe": "2.924893856048584",
+    "m4_clean__public_component": "1.4470371007919312",
+    "m4_clean__vector_epe": "2.263108015060425"
+  },
+  {
+    "pair_index": "215",
+    "pair_id": "000215",
+    "gdros__public_component": "1.1189388036727905",
+    "gdros__vector_epe": "1.753825068473816",
+    "m4_clean__public_component": "0.5981491804122925",
+    "m4_clean__vector_epe": "0.9140714406967163"
+  },
+  {
+    "pair_index": "216",
+    "pair_id": "000216",
+    "gdros__public_component": "0.9685353636741638",
+    "gdros__vector_epe": "1.5695534944534302",
+    "m4_clean__public_component": "0.32115989923477173",
+    "m4_clean__vector_epe": "0.5139338970184326"
+  },
+  {
+    "pair_index": "217",
+    "pair_id": "000217",
+    "gdros__public_component": "1.4151313304901123",
+    "gdros__vector_epe": "2.37284517288208",
+    "m4_clean__public_component": "0.3221797049045563",
+    "m4_clean__vector_epe": "0.48096963763237"
+  },
+  {
+    "pair_index": "218",
+    "pair_id": "000218",
+    "gdros__public_component": "0.8165562152862549",
+    "gdros__vector_epe": "1.2846938371658325",
+    "m4_clean__public_component": "0.6918985247612",
+    "m4_clean__vector_epe": "1.1010633707046509"
+  },
+  {
+    "pair_index": "219",
+    "pair_id": "000219",
+    "gdros__public_component": "1.0740705728530884",
+    "gdros__vector_epe": "1.652662754058838",
+    "m4_clean__public_component": "3.2859039306640625",
+    "m4_clean__vector_epe": "5.362343788146973"
+  },
+  {
+    "pair_index": "220",
+    "pair_id": "000220",
+    "gdros__public_component": "0.6397807598114014",
+    "gdros__vector_epe": "0.9804957509040833",
+    "m4_clean__public_component": "2.0899837017059326",
+    "m4_clean__vector_epe": "3.1984174251556396"
+  },
+  {
+    "pair_index": "221",
+    "pair_id": "000221",
+    "gdros__public_component": "1.817444920539856",
+    "gdros__vector_epe": "3.054001569747925",
+    "m4_clean__public_component": "1.0196166038513184",
+    "m4_clean__vector_epe": "1.5459667444229126"
+  },
+  {
+    "pair_index": "222",
+    "pair_id": "000222",
+    "gdros__public_component": "1.1028472185134888",
+    "gdros__vector_epe": "1.5723737478256226",
+    "m4_clean__public_component": "0.1834048628807068",
+    "m4_clean__vector_epe": "0.27284055948257446"
+  },
+  {
+    "pair_index": "223",
+    "pair_id": "000223",
+    "gdros__public_component": "1.6930288076400757",
+    "gdros__vector_epe": "2.6829488277435303",
+    "m4_clean__public_component": "2.520895481109619",
+    "m4_clean__vector_epe": "4.048953533172607"
+  },
+  {
+    "pair_index": "224",
+    "pair_id": "000224",
+    "gdros__public_component": "0.511622965335846",
+    "gdros__vector_epe": "0.8024575710296631",
+    "m4_clean__public_component": "0.418491929769516",
+    "m4_clean__vector_epe": "0.6685582995414734"
+  },
+  {
+    "pair_index": "225",
+    "pair_id": "000225",
+    "gdros__public_component": "5.1718645095825195",
+    "gdros__vector_epe": "8.247254371643066",
+    "m4_clean__public_component": "0.46276065707206726",
+    "m4_clean__vector_epe": "0.7975079417228699"
+  },
+  {
+    "pair_index": "226",
+    "pair_id": "000226",
+    "gdros__public_component": "2.3578693866729736",
+    "gdros__vector_epe": "3.5358786582946777",
+    "m4_clean__public_component": "0.3179559111595154",
+    "m4_clean__vector_epe": "0.5032342076301575"
+  },
+  {
+    "pair_index": "227",
+    "pair_id": "000227",
+    "gdros__public_component": "1.70734703540802",
+    "gdros__vector_epe": "2.9193923473358154",
+    "m4_clean__public_component": "0.7776709198951721",
+    "m4_clean__vector_epe": "1.2270574569702148"
+  },
+  {
+    "pair_index": "228",
+    "pair_id": "000228",
+    "gdros__public_component": "1.2320932149887085",
+    "gdros__vector_epe": "1.7967071533203125",
+    "m4_clean__public_component": "0.3672400712966919",
+    "m4_clean__vector_epe": "0.5274028778076172"
+  },
+  {
+    "pair_index": "229",
+    "pair_id": "000229",
+    "gdros__public_component": "0.718529999256134",
+    "gdros__vector_epe": "1.0525197982788086",
+    "m4_clean__public_component": "0.5355985164642334",
+    "m4_clean__vector_epe": "0.9347606301307678"
+  },
+  {
+    "pair_index": "230",
+    "pair_id": "000230",
+    "gdros__public_component": "0.8974905610084534",
+    "gdros__vector_epe": "1.4107385873794556",
+    "m4_clean__public_component": "0.7011380791664124",
+    "m4_clean__vector_epe": "1.1099478006362915"
+  },
+  {
+    "pair_index": "231",
+    "pair_id": "000231",
+    "gdros__public_component": "1.8131266832351685",
+    "gdros__vector_epe": "2.9178543090820312",
+    "m4_clean__public_component": "0.16762396693229675",
+    "m4_clean__vector_epe": "0.2778531014919281"
+  },
+  {
+    "pair_index": "232",
+    "pair_id": "000232",
+    "gdros__public_component": "0.48912733793258667",
+    "gdros__vector_epe": "0.760170578956604",
+    "m4_clean__public_component": "0.21256838738918304",
+    "m4_clean__vector_epe": "0.33961260318756104"
+  },
+  {
+    "pair_index": "233",
+    "pair_id": "000233",
+    "gdros__public_component": "4.4019036293029785",
+    "gdros__vector_epe": "7.047201633453369",
+    "m4_clean__public_component": "1.0369393825531006",
+    "m4_clean__vector_epe": "1.693620204925537"
+  },
+  {
+    "pair_index": "234",
+    "pair_id": "000234",
+    "gdros__public_component": "4.647667407989502",
+    "gdros__vector_epe": "7.508913040161133",
+    "m4_clean__public_component": "1.2955470085144043",
+    "m4_clean__vector_epe": "1.9928196668624878"
+  },
+  {
+    "pair_index": "235",
+    "pair_id": "000235",
+    "gdros__public_component": "1.1689141988754272",
+    "gdros__vector_epe": "1.84725821018219",
+    "m4_clean__public_component": "0.3137005865573883",
+    "m4_clean__vector_epe": "0.5217025876045227"
+  },
+  {
+    "pair_index": "236",
+    "pair_id": "000236",
+    "gdros__public_component": "1.6339665651321411",
+    "gdros__vector_epe": "3.101590633392334",
+    "m4_clean__public_component": "0.46347635984420776",
+    "m4_clean__vector_epe": "0.7746501564979553"
+  },
+  {
+    "pair_index": "237",
+    "pair_id": "000237",
+    "gdros__public_component": "0.9855387210845947",
+    "gdros__vector_epe": "1.602828025817871",
+    "m4_clean__public_component": "0.9847673177719116",
+    "m4_clean__vector_epe": "1.4460865259170532"
+  },
+  {
+    "pair_index": "238",
+    "pair_id": "000238",
+    "gdros__public_component": "2.510789632797241",
+    "gdros__vector_epe": "3.8540561199188232",
+    "m4_clean__public_component": "0.36942073702812195",
+    "m4_clean__vector_epe": "0.676815927028656"
+  },
+  {
+    "pair_index": "239",
+    "pair_id": "000239",
+    "gdros__public_component": "0.901590883731842",
+    "gdros__vector_epe": "1.399859070777893",
+    "m4_clean__public_component": "1.462867259979248",
+    "m4_clean__vector_epe": "2.3351054191589355"
+  },
+  {
+    "pair_index": "240",
+    "pair_id": "000240",
+    "gdros__public_component": "0.8084613084793091",
+    "gdros__vector_epe": "1.1880812644958496",
+    "m4_clean__public_component": "0.31595948338508606",
+    "m4_clean__vector_epe": "0.5187785625457764"
+  },
+  {
+    "pair_index": "241",
+    "pair_id": "000241",
+    "gdros__public_component": "1.2788399457931519",
+    "gdros__vector_epe": "1.9313033819198608",
+    "m4_clean__public_component": "14.15622615814209",
+    "m4_clean__vector_epe": "21.75554084777832"
+  },
+  {
+    "pair_index": "242",
+    "pair_id": "000242",
+    "gdros__public_component": "0.43114498257637024",
+    "gdros__vector_epe": "0.6686676740646362",
+    "m4_clean__public_component": "0.46315452456474304",
+    "m4_clean__vector_epe": "0.7481066584587097"
+  },
+  {
+    "pair_index": "243",
+    "pair_id": "000243",
+    "gdros__public_component": "3.701571464538574",
+    "gdros__vector_epe": "5.60507869720459",
+    "m4_clean__public_component": "0.6931235194206238",
+    "m4_clean__vector_epe": "1.0457103252410889"
+  },
+  {
+    "pair_index": "244",
+    "pair_id": "000244",
+    "gdros__public_component": "5.664280414581299",
+    "gdros__vector_epe": "9.652722358703613",
+    "m4_clean__public_component": "3.704587697982788",
+    "m4_clean__vector_epe": "6.026366233825684"
+  },
+  {
+    "pair_index": "245",
+    "pair_id": "000245",
+    "gdros__public_component": "3.8392443656921387",
+    "gdros__vector_epe": "6.4754509925842285",
+    "m4_clean__public_component": "0.33051517605781555",
+    "m4_clean__vector_epe": "0.4979933798313141"
+  },
+  {
+    "pair_index": "246",
+    "pair_id": "000246",
+    "gdros__public_component": "1.8013056516647339",
+    "gdros__vector_epe": "2.779876947402954",
+    "m4_clean__public_component": "1.153031349182129",
+    "m4_clean__vector_epe": "1.7270011901855469"
+  },
+  {
+    "pair_index": "247",
+    "pair_id": "000247",
+    "gdros__public_component": "2.682593822479248",
+    "gdros__vector_epe": "4.095077037811279",
+    "m4_clean__public_component": "1.4812504053115845",
+    "m4_clean__vector_epe": "2.4951391220092773"
+  },
+  {
+    "pair_index": "248",
+    "pair_id": "000248",
+    "gdros__public_component": "1.1161010265350342",
+    "gdros__vector_epe": "1.8479951620101929",
+    "m4_clean__public_component": "0.332599401473999",
+    "m4_clean__vector_epe": "0.4999961256980896"
+  },
+  {
+    "pair_index": "249",
+    "pair_id": "000249",
+    "gdros__public_component": "1.7353206872940063",
+    "gdros__vector_epe": "3.047762393951416",
+    "m4_clean__public_component": "0.8017553091049194",
+    "m4_clean__vector_epe": "1.2299569845199585"
+  },
+  {
+    "pair_index": "250",
+    "pair_id": "000250",
+    "gdros__public_component": "0.8389593362808228",
+    "gdros__vector_epe": "1.2397445440292358",
+    "m4_clean__public_component": "0.3729135990142822",
+    "m4_clean__vector_epe": "0.6227422952651978"
+  },
+  {
+    "pair_index": "251",
+    "pair_id": "000251",
+    "gdros__public_component": "2.041295051574707",
+    "gdros__vector_epe": "3.0737781524658203",
+    "m4_clean__public_component": "0.6050975918769836",
+    "m4_clean__vector_epe": "1.0530612468719482"
+  },
+  {
+    "pair_index": "252",
+    "pair_id": "000252",
+    "gdros__public_component": "1.1545583009719849",
+    "gdros__vector_epe": "1.8949329853057861",
+    "m4_clean__public_component": "0.26959794759750366",
+    "m4_clean__vector_epe": "0.4237377941608429"
+  },
+  {
+    "pair_index": "253",
+    "pair_id": "000253",
+    "gdros__public_component": "1.3504661321640015",
+    "gdros__vector_epe": "2.1759450435638428",
+    "m4_clean__public_component": "2.0295515060424805",
+    "m4_clean__vector_epe": "3.1696126461029053"
+  },
+  {
+    "pair_index": "254",
+    "pair_id": "000254",
+    "gdros__public_component": "1.0176361799240112",
+    "gdros__vector_epe": "1.5961084365844727",
+    "m4_clean__public_component": "0.37806084752082825",
+    "m4_clean__vector_epe": "0.6529641151428223"
+  },
+  {
+    "pair_index": "255",
+    "pair_id": "000255",
+    "gdros__public_component": "2.541721820831299",
+    "gdros__vector_epe": "4.114407062530518",
+    "m4_clean__public_component": "0.3333946168422699",
+    "m4_clean__vector_epe": "0.5932151079177856"
+  },
+  {
+    "pair_index": "256",
+    "pair_id": "000256",
+    "gdros__public_component": "2.5742974281311035",
+    "gdros__vector_epe": "4.0329484939575195",
+    "m4_clean__public_component": "1.2840744256973267",
+    "m4_clean__vector_epe": "1.915666937828064"
+  },
+  {
+    "pair_index": "257",
+    "pair_id": "000257",
+    "gdros__public_component": "1.9282655715942383",
+    "gdros__vector_epe": "3.4165291786193848",
+    "m4_clean__public_component": "2.264054536819458",
+    "m4_clean__vector_epe": "3.582602024078369"
+  },
+  {
+    "pair_index": "258",
+    "pair_id": "000258",
+    "gdros__public_component": "3.249616861343384",
+    "gdros__vector_epe": "4.93804407119751",
+    "m4_clean__public_component": "0.5589938759803772",
+    "m4_clean__vector_epe": "0.8821097016334534"
+  },
+  {
+    "pair_index": "259",
+    "pair_id": "000259",
+    "gdros__public_component": "1.5589334964752197",
+    "gdros__vector_epe": "2.4713311195373535",
+    "m4_clean__public_component": "15.710958480834961",
+    "m4_clean__vector_epe": "24.11907386779785"
+  },
+  {
+    "pair_index": "260",
+    "pair_id": "000260",
+    "gdros__public_component": "1.7774434089660645",
+    "gdros__vector_epe": "2.8192827701568604",
+    "m4_clean__public_component": "0.1515766680240631",
+    "m4_clean__vector_epe": "0.22368568181991577"
+  },
+  {
+    "pair_index": "261",
+    "pair_id": "000261",
+    "gdros__public_component": "0.943157434463501",
+    "gdros__vector_epe": "1.629615068435669",
+    "m4_clean__public_component": "0.8375308513641357",
+    "m4_clean__vector_epe": "1.266670823097229"
+  },
+  {
+    "pair_index": "262",
+    "pair_id": "000262",
+    "gdros__public_component": "1.78920316696167",
+    "gdros__vector_epe": "2.7616305351257324",
+    "m4_clean__public_component": "0.9040229916572571",
+    "m4_clean__vector_epe": "1.4622600078582764"
+  },
+  {
+    "pair_index": "263",
+    "pair_id": "000263",
+    "gdros__public_component": "1.3841235637664795",
+    "gdros__vector_epe": "2.1128482818603516",
+    "m4_clean__public_component": "20.215600967407227",
+    "m4_clean__vector_epe": "30.912139892578125"
+  },
+  {
+    "pair_index": "264",
+    "pair_id": "000264",
+    "gdros__public_component": "1.7751119136810303",
+    "gdros__vector_epe": "2.8305788040161133",
+    "m4_clean__public_component": "0.4680117070674896",
+    "m4_clean__vector_epe": "0.716036856174469"
+  },
+  {
+    "pair_index": "265",
+    "pair_id": "000265",
+    "gdros__public_component": "0.6754887104034424",
+    "gdros__vector_epe": "1.1139287948608398",
+    "m4_clean__public_component": "0.40640196204185486",
+    "m4_clean__vector_epe": "0.7525454759597778"
+  },
+  {
+    "pair_index": "266",
+    "pair_id": "000266",
+    "gdros__public_component": "1.8599642515182495",
+    "gdros__vector_epe": "3.0200300216674805",
+    "m4_clean__public_component": "0.7471987009048462",
+    "m4_clean__vector_epe": "1.1232380867004395"
+  },
+  {
+    "pair_index": "267",
+    "pair_id": "000267",
+    "gdros__public_component": "1.521662712097168",
+    "gdros__vector_epe": "2.4004414081573486",
+    "m4_clean__public_component": "0.625658392906189",
+    "m4_clean__vector_epe": "0.9700400233268738"
+  },
+  {
+    "pair_index": "268",
+    "pair_id": "000268",
+    "gdros__public_component": "1.4061630964279175",
+    "gdros__vector_epe": "2.209372043609619",
+    "m4_clean__public_component": "0.7517378926277161",
+    "m4_clean__vector_epe": "1.1478617191314697"
+  },
+  {
+    "pair_index": "269",
+    "pair_id": "000269",
+    "gdros__public_component": "2.8192148208618164",
+    "gdros__vector_epe": "4.291589260101318",
+    "m4_clean__public_component": "0.3205550014972687",
+    "m4_clean__vector_epe": "0.4946225881576538"
+  },
+  {
+    "pair_index": "270",
+    "pair_id": "000270",
+    "gdros__public_component": "2.8219804763793945",
+    "gdros__vector_epe": "4.4416327476501465",
+    "m4_clean__public_component": "0.6385490894317627",
+    "m4_clean__vector_epe": "0.980626106262207"
+  },
+  {
+    "pair_index": "271",
+    "pair_id": "000271",
+    "gdros__public_component": "1.709258794784546",
+    "gdros__vector_epe": "2.789034843444824",
+    "m4_clean__public_component": "0.7169508934020996",
+    "m4_clean__vector_epe": "1.1180728673934937"
+  },
+  {
+    "pair_index": "272",
+    "pair_id": "000272",
+    "gdros__public_component": "3.2138538360595703",
+    "gdros__vector_epe": "5.013582229614258",
+    "m4_clean__public_component": "0.5263312458992004",
+    "m4_clean__vector_epe": "0.7849436402320862"
+  },
+  {
+    "pair_index": "273",
+    "pair_id": "000273",
+    "gdros__public_component": "1.0490771532058716",
+    "gdros__vector_epe": "1.8468660116195679",
+    "m4_clean__public_component": "0.24337786436080933",
+    "m4_clean__vector_epe": "0.38313305377960205"
+  },
+  {
+    "pair_index": "274",
+    "pair_id": "000274",
+    "gdros__public_component": "0.7135237455368042",
+    "gdros__vector_epe": "1.1116966009140015",
+    "m4_clean__public_component": "0.5139688849449158",
+    "m4_clean__vector_epe": "0.8518239855766296"
+  },
+  {
+    "pair_index": "275",
+    "pair_id": "000275",
+    "gdros__public_component": "0.5248304009437561",
+    "gdros__vector_epe": "0.8064661622047424",
+    "m4_clean__public_component": "2.6064188480377197",
+    "m4_clean__vector_epe": "4.610158443450928"
+  },
+  {
+    "pair_index": "276",
+    "pair_id": "000276",
+    "gdros__public_component": "0.8748495578765869",
+    "gdros__vector_epe": "1.2938637733459473",
+    "m4_clean__public_component": "1.0248758792877197",
+    "m4_clean__vector_epe": "1.5864356756210327"
+  },
+  {
+    "pair_index": "277",
+    "pair_id": "000277",
+    "gdros__public_component": "2.320477247238159",
+    "gdros__vector_epe": "3.597675323486328",
+    "m4_clean__public_component": "0.2131716012954712",
+    "m4_clean__vector_epe": "0.3444133996963501"
+  },
+  {
+    "pair_index": "278",
+    "pair_id": "000278",
+    "gdros__public_component": "2.2206342220306396",
+    "gdros__vector_epe": "3.195876121520996",
+    "m4_clean__public_component": "4.275995254516602",
+    "m4_clean__vector_epe": "7.825231552124023"
+  },
+  {
+    "pair_index": "279",
+    "pair_id": "000279",
+    "gdros__public_component": "1.5282299518585205",
+    "gdros__vector_epe": "2.5010786056518555",
+    "m4_clean__public_component": "20.35649871826172",
+    "m4_clean__vector_epe": "31.154125213623047"
+  },
+  {
+    "pair_index": "280",
+    "pair_id": "000280",
+    "gdros__public_component": "1.1260430812835693",
+    "gdros__vector_epe": "1.926000952720642",
+    "m4_clean__public_component": "15.045702934265137",
+    "m4_clean__vector_epe": "23.54082679748535"
+  },
+  {
+    "pair_index": "281",
+    "pair_id": "000281",
+    "gdros__public_component": "1.3588405847549438",
+    "gdros__vector_epe": "2.283435344696045",
+    "m4_clean__public_component": "0.5357499718666077",
+    "m4_clean__vector_epe": "0.8483792543411255"
+  },
+  {
+    "pair_index": "282",
+    "pair_id": "000282",
+    "gdros__public_component": "1.3996676206588745",
+    "gdros__vector_epe": "2.0872716903686523",
+    "m4_clean__public_component": "0.434451162815094",
+    "m4_clean__vector_epe": "0.7512410283088684"
+  },
+  {
+    "pair_index": "283",
+    "pair_id": "000283",
+    "gdros__public_component": "0.8900056481361389",
+    "gdros__vector_epe": "1.4119294881820679",
+    "m4_clean__public_component": "0.1644906997680664",
+    "m4_clean__vector_epe": "0.24724797904491425"
+  },
+  {
+    "pair_index": "284",
+    "pair_id": "000284",
+    "gdros__public_component": "1.0944331884384155",
+    "gdros__vector_epe": "1.7460956573486328",
+    "m4_clean__public_component": "0.2768201231956482",
+    "m4_clean__vector_epe": "0.43704676628112793"
+  },
+  {
+    "pair_index": "285",
+    "pair_id": "000285",
+    "gdros__public_component": "1.490820288658142",
+    "gdros__vector_epe": "2.653080701828003",
+    "m4_clean__public_component": "0.40263640880584717",
+    "m4_clean__vector_epe": "0.6198412179946899"
+  },
+  {
+    "pair_index": "286",
+    "pair_id": "000286",
+    "gdros__public_component": "0.667651891708374",
+    "gdros__vector_epe": "1.0423158407211304",
+    "m4_clean__public_component": "0.38824012875556946",
+    "m4_clean__vector_epe": "0.6572478413581848"
+  },
+  {
+    "pair_index": "287",
+    "pair_id": "000287",
+    "gdros__public_component": "2.4517340660095215",
+    "gdros__vector_epe": "3.873049736022949",
+    "m4_clean__public_component": "0.2479693591594696",
+    "m4_clean__vector_epe": "0.3935631215572357"
+  },
+  {
+    "pair_index": "288",
+    "pair_id": "000288",
+    "gdros__public_component": "1.587026596069336",
+    "gdros__vector_epe": "2.6385035514831543",
+    "m4_clean__public_component": "0.4635518491268158",
+    "m4_clean__vector_epe": "0.7802415490150452"
+  },
+  {
+    "pair_index": "289",
+    "pair_id": "000289",
+    "gdros__public_component": "2.3272335529327393",
+    "gdros__vector_epe": "3.427089214324951",
+    "m4_clean__public_component": "0.9433061480522156",
+    "m4_clean__vector_epe": "1.4462932348251343"
+  },
+  {
+    "pair_index": "290",
+    "pair_id": "000290",
+    "gdros__public_component": "0.5264139175415039",
+    "gdros__vector_epe": "0.8212450742721558",
+    "m4_clean__public_component": "0.17112067341804504",
+    "m4_clean__vector_epe": "0.26371848583221436"
+  },
+  {
+    "pair_index": "291",
+    "pair_id": "000291",
+    "gdros__public_component": "2.0168442726135254",
+    "gdros__vector_epe": "3.132673978805542",
+    "m4_clean__public_component": "0.5044569969177246",
+    "m4_clean__vector_epe": "0.753581702709198"
+  },
+  {
+    "pair_index": "292",
+    "pair_id": "000292",
+    "gdros__public_component": "3.955986261367798",
+    "gdros__vector_epe": "6.5084052085876465",
+    "m4_clean__public_component": "0.8263190388679504",
+    "m4_clean__vector_epe": "1.3089399337768555"
+  },
+  {
+    "pair_index": "293",
+    "pair_id": "000293",
+    "gdros__public_component": "3.118417501449585",
+    "gdros__vector_epe": "4.901636123657227",
+    "m4_clean__public_component": "1.659488320350647",
+    "m4_clean__vector_epe": "2.6794469356536865"
+  },
+  {
+    "pair_index": "294",
+    "pair_id": "000294",
+    "gdros__public_component": "3.4437942504882812",
+    "gdros__vector_epe": "5.551890850067139",
+    "m4_clean__public_component": "4.679485321044922",
+    "m4_clean__vector_epe": "7.359553813934326"
+  },
+  {
+    "pair_index": "295",
+    "pair_id": "000295",
+    "gdros__public_component": "3.72045636177063",
+    "gdros__vector_epe": "5.670056343078613",
+    "m4_clean__public_component": "0.7489151954650879",
+    "m4_clean__vector_epe": "1.179555058479309"
+  },
+  {
+    "pair_index": "296",
+    "pair_id": "000296",
+    "gdros__public_component": "1.1677883863449097",
+    "gdros__vector_epe": "1.8097683191299438",
+    "m4_clean__public_component": "0.25553208589553833",
+    "m4_clean__vector_epe": "0.48896849155426025"
+  },
+  {
+    "pair_index": "297",
+    "pair_id": "000297",
+    "gdros__public_component": "1.6427960395812988",
+    "gdros__vector_epe": "2.547067403793335",
+    "m4_clean__public_component": "0.35377010703086853",
+    "m4_clean__vector_epe": "0.5611640214920044"
+  },
+  {
+    "pair_index": "298",
+    "pair_id": "000298",
+    "gdros__public_component": "1.1370832920074463",
+    "gdros__vector_epe": "1.7944140434265137",
+    "m4_clean__public_component": "0.45443761348724365",
+    "m4_clean__vector_epe": "0.685656726360321"
+  },
+  {
+    "pair_index": "299",
+    "pair_id": "000299",
+    "gdros__public_component": "1.450332760810852",
+    "gdros__vector_epe": "2.305846929550171",
+    "m4_clean__public_component": "0.696259081363678",
+    "m4_clean__vector_epe": "1.1720331907272339"
+  },
+  {
+    "pair_index": "300",
+    "pair_id": "000300",
+    "gdros__public_component": "1.1772009134292603",
+    "gdros__vector_epe": "1.6916847229003906",
+    "m4_clean__public_component": "0.1445527970790863",
+    "m4_clean__vector_epe": "0.23105725646018982"
+  },
+  {
+    "pair_index": "301",
+    "pair_id": "000301",
+    "gdros__public_component": "1.7276321649551392",
+    "gdros__vector_epe": "2.7361388206481934",
+    "m4_clean__public_component": "0.40769946575164795",
+    "m4_clean__vector_epe": "0.6374885439872742"
+  },
+  {
+    "pair_index": "302",
+    "pair_id": "000302",
+    "gdros__public_component": "0.993244469165802",
+    "gdros__vector_epe": "1.5572054386138916",
+    "m4_clean__public_component": "0.49541595578193665",
+    "m4_clean__vector_epe": "0.8470461368560791"
+  },
+  {
+    "pair_index": "303",
+    "pair_id": "000303",
+    "gdros__public_component": "1.5853676795959473",
+    "gdros__vector_epe": "2.272705316543579",
+    "m4_clean__public_component": "0.2973549962043762",
+    "m4_clean__vector_epe": "0.44535326957702637"
+  },
+  {
+    "pair_index": "304",
+    "pair_id": "000304",
+    "gdros__public_component": "1.1075125932693481",
+    "gdros__vector_epe": "1.741506814956665",
+    "m4_clean__public_component": "3.8925459384918213",
+    "m4_clean__vector_epe": "5.7824530601501465"
+  },
+  {
+    "pair_index": "305",
+    "pair_id": "000305",
+    "gdros__public_component": "1.443647027015686",
+    "gdros__vector_epe": "2.324371814727783",
+    "m4_clean__public_component": "0.25783979892730713",
+    "m4_clean__vector_epe": "0.40287768840789795"
+  },
+  {
+    "pair_index": "306",
+    "pair_id": "000306",
+    "gdros__public_component": "1.2237145900726318",
+    "gdros__vector_epe": "1.9486123323440552",
+    "m4_clean__public_component": "0.8827399611473083",
+    "m4_clean__vector_epe": "1.4059937000274658"
+  },
+  {
+    "pair_index": "307",
+    "pair_id": "000307",
+    "gdros__public_component": "1.1045969724655151",
+    "gdros__vector_epe": "1.7112796306610107",
+    "m4_clean__public_component": "0.8780748844146729",
+    "m4_clean__vector_epe": "1.3532109260559082"
+  },
+  {
+    "pair_index": "308",
+    "pair_id": "000308",
+    "gdros__public_component": "0.6255862712860107",
+    "gdros__vector_epe": "0.9888801574707031",
+    "m4_clean__public_component": "0.5210646986961365",
+    "m4_clean__vector_epe": "0.8018145561218262"
+  },
+  {
+    "pair_index": "309",
+    "pair_id": "000309",
+    "gdros__public_component": "2.445213794708252",
+    "gdros__vector_epe": "3.7387077808380127",
+    "m4_clean__public_component": "0.3601335883140564",
+    "m4_clean__vector_epe": "0.556699275970459"
+  },
+  {
+    "pair_index": "310",
+    "pair_id": "000310",
+    "gdros__public_component": "1.1003412008285522",
+    "gdros__vector_epe": "1.7378387451171875",
+    "m4_clean__public_component": "0.5724050402641296",
+    "m4_clean__vector_epe": "0.8942298293113708"
+  },
+  {
+    "pair_index": "311",
+    "pair_id": "000311",
+    "gdros__public_component": "2.2452704906463623",
+    "gdros__vector_epe": "3.852257251739502",
+    "m4_clean__public_component": "7.439289569854736",
+    "m4_clean__vector_epe": "13.671704292297363"
+  },
+  {
+    "pair_index": "312",
+    "pair_id": "000312",
+    "gdros__public_component": "3.0864808559417725",
+    "gdros__vector_epe": "4.3897247314453125",
+    "m4_clean__public_component": "0.20628441870212555",
+    "m4_clean__vector_epe": "0.31776899099349976"
+  },
+  {
+    "pair_index": "313",
+    "pair_id": "000313",
+    "gdros__public_component": "2.160703182220459",
+    "gdros__vector_epe": "3.5579373836517334",
+    "m4_clean__public_component": "2.4051005840301514",
+    "m4_clean__vector_epe": "4.084784507751465"
+  },
+  {
+    "pair_index": "314",
+    "pair_id": "000314",
+    "gdros__public_component": "1.572186827659607",
+    "gdros__vector_epe": "2.3777120113372803",
+    "m4_clean__public_component": "1.2902579307556152",
+    "m4_clean__vector_epe": "2.003641366958618"
+  },
+  {
+    "pair_index": "315",
+    "pair_id": "000315",
+    "gdros__public_component": "1.49055814743042",
+    "gdros__vector_epe": "2.340945243835449",
+    "m4_clean__public_component": "0.21415454149246216",
+    "m4_clean__vector_epe": "0.32786521315574646"
+  },
+  {
+    "pair_index": "316",
+    "pair_id": "000316",
+    "gdros__public_component": "1.0303106307983398",
+    "gdros__vector_epe": "1.623510718345642",
+    "m4_clean__public_component": "6.733069896697998",
+    "m4_clean__vector_epe": "10.49959659576416"
+  },
+  {
+    "pair_index": "317",
+    "pair_id": "000317",
+    "gdros__public_component": "0.8835163712501526",
+    "gdros__vector_epe": "1.3909696340560913",
+    "m4_clean__public_component": "0.8016481399536133",
+    "m4_clean__vector_epe": "1.2379155158996582"
+  },
+  {
+    "pair_index": "318",
+    "pair_id": "000318",
+    "gdros__public_component": "0.6930899024009705",
+    "gdros__vector_epe": "1.0807271003723145",
+    "m4_clean__public_component": "0.5978614091873169",
+    "m4_clean__vector_epe": "0.9300609230995178"
+  },
+  {
+    "pair_index": "319",
+    "pair_id": "000319",
+    "gdros__public_component": "1.863211750984192",
+    "gdros__vector_epe": "3.1750054359436035",
+    "m4_clean__public_component": "0.6554698348045349",
+    "m4_clean__vector_epe": "1.0304811000823975"
+  },
+  {
+    "pair_index": "320",
+    "pair_id": "000320",
+    "gdros__public_component": "1.32280433177948",
+    "gdros__vector_epe": "2.1432647705078125",
+    "m4_clean__public_component": "0.9581266641616821",
+    "m4_clean__vector_epe": "1.527249813079834"
+  },
+  {
+    "pair_index": "321",
+    "pair_id": "000321",
+    "gdros__public_component": "3.667874336242676",
+    "gdros__vector_epe": "5.707699775695801",
+    "m4_clean__public_component": "0.29467129707336426",
+    "m4_clean__vector_epe": "0.4638368487358093"
+  },
+  {
+    "pair_index": "322",
+    "pair_id": "000322",
+    "gdros__public_component": "1.5922507047653198",
+    "gdros__vector_epe": "2.486567497253418",
+    "m4_clean__public_component": "0.5365140438079834",
+    "m4_clean__vector_epe": "0.8322291970252991"
+  },
+  {
+    "pair_index": "323",
+    "pair_id": "000323",
+    "gdros__public_component": "0.5667931437492371",
+    "gdros__vector_epe": "0.9440906047821045",
+    "m4_clean__public_component": "0.1878276765346527",
+    "m4_clean__vector_epe": "0.2863597273826599"
+  },
+  {
+    "pair_index": "324",
+    "pair_id": "000324",
+    "gdros__public_component": "4.751659393310547",
+    "gdros__vector_epe": "7.814815044403076",
+    "m4_clean__public_component": "0.6260180473327637",
+    "m4_clean__vector_epe": "0.9754295349121094"
+  },
+  {
+    "pair_index": "325",
+    "pair_id": "000325",
+    "gdros__public_component": "1.6794843673706055",
+    "gdros__vector_epe": "2.6225836277008057",
+    "m4_clean__public_component": "0.4257320165634155",
+    "m4_clean__vector_epe": "0.6874282956123352"
+  },
+  {
+    "pair_index": "326",
+    "pair_id": "000326",
+    "gdros__public_component": "1.3398483991622925",
+    "gdros__vector_epe": "2.1617720127105713",
+    "m4_clean__public_component": "0.7329622507095337",
+    "m4_clean__vector_epe": "1.1674234867095947"
+  },
+  {
+    "pair_index": "327",
+    "pair_id": "000327",
+    "gdros__public_component": "1.3633967638015747",
+    "gdros__vector_epe": "2.056699514389038",
+    "m4_clean__public_component": "0.25352609157562256",
+    "m4_clean__vector_epe": "0.40580812096595764"
+  },
+  {
+    "pair_index": "328",
+    "pair_id": "000328",
+    "gdros__public_component": "1.230027198791504",
+    "gdros__vector_epe": "1.9406852722167969",
+    "m4_clean__public_component": "0.4244682490825653",
+    "m4_clean__vector_epe": "0.6699812412261963"
+  },
+  {
+    "pair_index": "329",
+    "pair_id": "000329",
+    "gdros__public_component": "1.1776528358459473",
+    "gdros__vector_epe": "1.7755534648895264",
+    "m4_clean__public_component": "8.579093933105469",
+    "m4_clean__vector_epe": "13.692693710327148"
+  },
+  {
+    "pair_index": "330",
+    "pair_id": "000330",
+    "gdros__public_component": "0.6476989388465881",
+    "gdros__vector_epe": "1.0284682512283325",
+    "m4_clean__public_component": "0.58651202917099",
+    "m4_clean__vector_epe": "0.8702937960624695"
+  },
+  {
+    "pair_index": "331",
+    "pair_id": "000331",
+    "gdros__public_component": "0.8657052516937256",
+    "gdros__vector_epe": "1.3492553234100342",
+    "m4_clean__public_component": "0.8252646923065186",
+    "m4_clean__vector_epe": "1.2825621366500854"
+  },
+  {
+    "pair_index": "332",
+    "pair_id": "000332",
+    "gdros__public_component": "0.8899230360984802",
+    "gdros__vector_epe": "1.4053549766540527",
+    "m4_clean__public_component": "0.6094908714294434",
+    "m4_clean__vector_epe": "0.9979959726333618"
+  },
+  {
+    "pair_index": "333",
+    "pair_id": "000333",
+    "gdros__public_component": "1.6802260875701904",
+    "gdros__vector_epe": "2.5064597129821777",
+    "m4_clean__public_component": "0.7261271476745605",
+    "m4_clean__vector_epe": "1.1184195280075073"
+  },
+  {
+    "pair_index": "334",
+    "pair_id": "000334",
+    "gdros__public_component": "2.596966505050659",
+    "gdros__vector_epe": "4.177021503448486",
+    "m4_clean__public_component": "0.6266676187515259",
+    "m4_clean__vector_epe": "0.998450756072998"
+  },
+  {
+    "pair_index": "335",
+    "pair_id": "000335",
+    "gdros__public_component": "1.3017843961715698",
+    "gdros__vector_epe": "2.011711359024048",
+    "m4_clean__public_component": "1.2499459981918335",
+    "m4_clean__vector_epe": "1.9037665128707886"
+  },
+  {
+    "pair_index": "336",
+    "pair_id": "000336",
+    "gdros__public_component": "1.0743505954742432",
+    "gdros__vector_epe": "1.7433842420578003",
+    "m4_clean__public_component": "0.7382348775863647",
+    "m4_clean__vector_epe": "1.1339194774627686"
+  },
+  {
+    "pair_index": "337",
+    "pair_id": "000337",
+    "gdros__public_component": "1.4225655794143677",
+    "gdros__vector_epe": "2.4606897830963135",
+    "m4_clean__public_component": "0.29939544200897217",
+    "m4_clean__vector_epe": "0.44069090485572815"
+  },
+  {
+    "pair_index": "338",
+    "pair_id": "000338",
+    "gdros__public_component": "0.7084529399871826",
+    "gdros__vector_epe": "1.153764009475708",
+    "m4_clean__public_component": "0.36725205183029175",
+    "m4_clean__vector_epe": "0.5949064493179321"
+  },
+  {
+    "pair_index": "339",
+    "pair_id": "000339",
+    "gdros__public_component": "2.1496293544769287",
+    "gdros__vector_epe": "3.49121356010437",
+    "m4_clean__public_component": "10.642266273498535",
+    "m4_clean__vector_epe": "15.17136001586914"
+  },
+  {
+    "pair_index": "340",
+    "pair_id": "000340",
+    "gdros__public_component": "1.38993501663208",
+    "gdros__vector_epe": "2.4950809478759766",
+    "m4_clean__public_component": "6.136550426483154",
+    "m4_clean__vector_epe": "9.481804847717285"
+  },
+  {
+    "pair_index": "341",
+    "pair_id": "000341",
+    "gdros__public_component": "1.786755919456482",
+    "gdros__vector_epe": "2.990755558013916",
+    "m4_clean__public_component": "0.3385777771472931",
+    "m4_clean__vector_epe": "0.5089409947395325"
+  },
+  {
+    "pair_index": "342",
+    "pair_id": "000342",
+    "gdros__public_component": "1.509839653968811",
+    "gdros__vector_epe": "2.3720004558563232",
+    "m4_clean__public_component": "0.1815614551305771",
+    "m4_clean__vector_epe": "0.2894708216190338"
+  },
+  {
+    "pair_index": "343",
+    "pair_id": "000343",
+    "gdros__public_component": "1.7180747985839844",
+    "gdros__vector_epe": "2.722843885421753",
+    "m4_clean__public_component": "0.8957945108413696",
+    "m4_clean__vector_epe": "1.4234479665756226"
+  },
+  {
+    "pair_index": "344",
+    "pair_id": "000344",
+    "gdros__public_component": "1.6499897241592407",
+    "gdros__vector_epe": "2.8699402809143066",
+    "m4_clean__public_component": "3.858112335205078",
+    "m4_clean__vector_epe": "6.816887378692627"
+  },
+  {
+    "pair_index": "345",
+    "pair_id": "000345",
+    "gdros__public_component": "1.2668050527572632",
+    "gdros__vector_epe": "2.184351682662964",
+    "m4_clean__public_component": "0.36388900876045227",
+    "m4_clean__vector_epe": "0.5686001181602478"
+  },
+  {
+    "pair_index": "346",
+    "pair_id": "000346",
+    "gdros__public_component": "1.897645115852356",
+    "gdros__vector_epe": "3.1167352199554443",
+    "m4_clean__public_component": "1.1476463079452515",
+    "m4_clean__vector_epe": "1.7852805852890015"
+  },
+  {
+    "pair_index": "347",
+    "pair_id": "000347",
+    "gdros__public_component": "1.0801074504852295",
+    "gdros__vector_epe": "1.8192288875579834",
+    "m4_clean__public_component": "0.4355265498161316",
+    "m4_clean__vector_epe": "0.6833600401878357"
+  },
+  {
+    "pair_index": "348",
+    "pair_id": "000348",
+    "gdros__public_component": "1.0047286748886108",
+    "gdros__vector_epe": "1.5092276334762573",
+    "m4_clean__public_component": "0.5774459838867188",
+    "m4_clean__vector_epe": "1.0791369676589966"
+  },
+  {
+    "pair_index": "349",
+    "pair_id": "000349",
+    "gdros__public_component": "0.9172467589378357",
+    "gdros__vector_epe": "1.4566773176193237",
+    "m4_clean__public_component": "1.0732735395431519",
+    "m4_clean__vector_epe": "2.027085781097412"
+  },
+  {
+    "pair_index": "350",
+    "pair_id": "000350",
+    "gdros__public_component": "2.1602580547332764",
+    "gdros__vector_epe": "3.219561815261841",
+    "m4_clean__public_component": "0.8519204258918762",
+    "m4_clean__vector_epe": "1.279262900352478"
+  },
+  {
+    "pair_index": "351",
+    "pair_id": "000351",
+    "gdros__public_component": "1.202617883682251",
+    "gdros__vector_epe": "1.8512437343597412",
+    "m4_clean__public_component": "0.34177520871162415",
+    "m4_clean__vector_epe": "0.5332803726196289"
+  },
+  {
+    "pair_index": "352",
+    "pair_id": "000352",
+    "gdros__public_component": "2.2928671836853027",
+    "gdros__vector_epe": "3.403216600418091",
+    "m4_clean__public_component": "1.1564106941223145",
+    "m4_clean__vector_epe": "1.7894026041030884"
+  },
+  {
+    "pair_index": "353",
+    "pair_id": "000353",
+    "gdros__public_component": "1.7484217882156372",
+    "gdros__vector_epe": "2.6654164791107178",
+    "m4_clean__public_component": "7.638247966766357",
+    "m4_clean__vector_epe": "14.297086715698242"
+  },
+  {
+    "pair_index": "354",
+    "pair_id": "000354",
+    "gdros__public_component": "1.2233757972717285",
+    "gdros__vector_epe": "1.973123550415039",
+    "m4_clean__public_component": "1.1912676095962524",
+    "m4_clean__vector_epe": "1.8134020566940308"
+  },
+  {
+    "pair_index": "355",
+    "pair_id": "000355",
+    "gdros__public_component": "4.110468864440918",
+    "gdros__vector_epe": "7.307229042053223",
+    "m4_clean__public_component": "0.6457871794700623",
+    "m4_clean__vector_epe": "1.0089404582977295"
+  },
+  {
+    "pair_index": "356",
+    "pair_id": "000356",
+    "gdros__public_component": "1.4823106527328491",
+    "gdros__vector_epe": "2.331808567047119",
+    "m4_clean__public_component": "0.7285284399986267",
+    "m4_clean__vector_epe": "1.0927114486694336"
+  },
+  {
+    "pair_index": "357",
+    "pair_id": "000357",
+    "gdros__public_component": "1.0085481405258179",
+    "gdros__vector_epe": "1.6696686744689941",
+    "m4_clean__public_component": "3.160909652709961",
+    "m4_clean__vector_epe": "5.5779876708984375"
+  },
+  {
+    "pair_index": "358",
+    "pair_id": "000358",
+    "gdros__public_component": "1.7033379077911377",
+    "gdros__vector_epe": "2.5678493976593018",
+    "m4_clean__public_component": "4.511373043060303",
+    "m4_clean__vector_epe": "7.11347770690918"
+  },
+  {
+    "pair_index": "359",
+    "pair_id": "000359",
+    "gdros__public_component": "3.4553253650665283",
+    "gdros__vector_epe": "5.452569961547852",
+    "m4_clean__public_component": "0.6461541652679443",
+    "m4_clean__vector_epe": "1.0880106687545776"
+  },
+  {
+    "pair_index": "360",
+    "pair_id": "000360",
+    "gdros__public_component": "0.9987579584121704",
+    "gdros__vector_epe": "1.6465197801589966",
+    "m4_clean__public_component": "0.37096160650253296",
+    "m4_clean__vector_epe": "0.6739395260810852"
+  },
+  {
+    "pair_index": "361",
+    "pair_id": "000361",
+    "gdros__public_component": "1.1033035516738892",
+    "gdros__vector_epe": "1.6531094312667847",
+    "m4_clean__public_component": "1.050297498703003",
+    "m4_clean__vector_epe": "1.6508451700210571"
+  },
+  {
+    "pair_index": "362",
+    "pair_id": "000362",
+    "gdros__public_component": "1.3173667192459106",
+    "gdros__vector_epe": "2.0193915367126465",
+    "m4_clean__public_component": "0.27458423376083374",
+    "m4_clean__vector_epe": "0.4472225308418274"
+  },
+  {
+    "pair_index": "363",
+    "pair_id": "000363",
+    "gdros__public_component": "3.057713508605957",
+    "gdros__vector_epe": "4.7966814041137695",
+    "m4_clean__public_component": "4.304162502288818",
+    "m4_clean__vector_epe": "7.136740684509277"
+  },
+  {
+    "pair_index": "364",
+    "pair_id": "000364",
+    "gdros__public_component": "0.8444073796272278",
+    "gdros__vector_epe": "1.3310856819152832",
+    "m4_clean__public_component": "3.454136610031128",
+    "m4_clean__vector_epe": "6.01270055770874"
+  },
+  {
+    "pair_index": "365",
+    "pair_id": "000365",
+    "gdros__public_component": "3.1474080085754395",
+    "gdros__vector_epe": "5.125723361968994",
+    "m4_clean__public_component": "0.8063923120498657",
+    "m4_clean__vector_epe": "1.2913683652877808"
+  },
+  {
+    "pair_index": "366",
+    "pair_id": "000366",
+    "gdros__public_component": "1.4016919136047363",
+    "gdros__vector_epe": "2.040376663208008",
+    "m4_clean__public_component": "0.360260009765625",
+    "m4_clean__vector_epe": "0.5896700620651245"
+  },
+  {
+    "pair_index": "367",
+    "pair_id": "000367",
+    "gdros__public_component": "0.798369288444519",
+    "gdros__vector_epe": "1.2835384607315063",
+    "m4_clean__public_component": "0.5022746324539185",
+    "m4_clean__vector_epe": "0.7595481872558594"
+  },
+  {
+    "pair_index": "368",
+    "pair_id": "000368",
+    "gdros__public_component": "1.133565068244934",
+    "gdros__vector_epe": "1.9222711324691772",
+    "m4_clean__public_component": "0.5810880661010742",
+    "m4_clean__vector_epe": "0.8766992688179016"
+  },
+  {
+    "pair_index": "369",
+    "pair_id": "000369",
+    "gdros__public_component": "1.3058327436447144",
+    "gdros__vector_epe": "2.238241195678711",
+    "m4_clean__public_component": "0.5134235620498657",
+    "m4_clean__vector_epe": "0.7683438658714294"
+  },
+  {
+    "pair_index": "370",
+    "pair_id": "000370",
+    "gdros__public_component": "1.7983382940292358",
+    "gdros__vector_epe": "2.7779273986816406",
+    "m4_clean__public_component": "0.14770615100860596",
+    "m4_clean__vector_epe": "0.24798110127449036"
+  },
+  {
+    "pair_index": "371",
+    "pair_id": "000371",
+    "gdros__public_component": "0.6265077590942383",
+    "gdros__vector_epe": "1.0207574367523193",
+    "m4_clean__public_component": "0.3727550208568573",
+    "m4_clean__vector_epe": "0.6880065202713013"
+  },
+  {
+    "pair_index": "372",
+    "pair_id": "000372",
+    "gdros__public_component": "0.8681557178497314",
+    "gdros__vector_epe": "1.3818092346191406",
+    "m4_clean__public_component": "0.9702919721603394",
+    "m4_clean__vector_epe": "1.523301362991333"
+  },
+  {
+    "pair_index": "373",
+    "pair_id": "000373",
+    "gdros__public_component": "3.1439754962921143",
+    "gdros__vector_epe": "5.914464950561523",
+    "m4_clean__public_component": "3.6350982189178467",
+    "m4_clean__vector_epe": "6.184480667114258"
+  },
+  {
+    "pair_index": "374",
+    "pair_id": "000374",
+    "gdros__public_component": "2.719923257827759",
+    "gdros__vector_epe": "4.248358726501465",
+    "m4_clean__public_component": "0.7566022276878357",
+    "m4_clean__vector_epe": "1.2988024950027466"
+  },
+  {
+    "pair_index": "375",
+    "pair_id": "000375",
+    "gdros__public_component": "0.5926047563552856",
+    "gdros__vector_epe": "1.022073745727539",
+    "m4_clean__public_component": "2.4338905811309814",
+    "m4_clean__vector_epe": "4.199666976928711"
+  },
+  {
+    "pair_index": "376",
+    "pair_id": "000376",
+    "gdros__public_component": "1.3551371097564697",
+    "gdros__vector_epe": "1.9845725297927856",
+    "m4_clean__public_component": "0.4303326904773712",
+    "m4_clean__vector_epe": "0.6925299763679504"
+  },
+  {
+    "pair_index": "377",
+    "pair_id": "000377",
+    "gdros__public_component": "0.5718250274658203",
+    "gdros__vector_epe": "0.9248028993606567",
+    "m4_clean__public_component": "1.0980638265609741",
+    "m4_clean__vector_epe": "1.8351727724075317"
+  },
+  {
+    "pair_index": "378",
+    "pair_id": "000378",
+    "gdros__public_component": "4.2345404624938965",
+    "gdros__vector_epe": "6.486498832702637",
+    "m4_clean__public_component": "1.2895845174789429",
+    "m4_clean__vector_epe": "1.9927276372909546"
+  },
+  {
+    "pair_index": "379",
+    "pair_id": "000379",
+    "gdros__public_component": "0.5497891306877136",
+    "gdros__vector_epe": "0.8251248002052307",
+    "m4_clean__public_component": "9.526257514953613",
+    "m4_clean__vector_epe": "17.896217346191406"
+  },
+  {
+    "pair_index": "380",
+    "pair_id": "000380",
+    "gdros__public_component": "1.0940406322479248",
+    "gdros__vector_epe": "1.715345025062561",
+    "m4_clean__public_component": "9.690803527832031",
+    "m4_clean__vector_epe": "15.675884246826172"
+  },
+  {
+    "pair_index": "381",
+    "pair_id": "000381",
+    "gdros__public_component": "0.8938487768173218",
+    "gdros__vector_epe": "1.4782915115356445",
+    "m4_clean__public_component": "0.34215202927589417",
+    "m4_clean__vector_epe": "0.5317412614822388"
+  },
+  {
+    "pair_index": "382",
+    "pair_id": "000382",
+    "gdros__public_component": "0.5051730871200562",
+    "gdros__vector_epe": "0.7876297831535339",
+    "m4_clean__public_component": "0.6552342772483826",
+    "m4_clean__vector_epe": "0.9708575010299683"
+  },
+  {
+    "pair_index": "383",
+    "pair_id": "000383",
+    "gdros__public_component": "1.59518301486969",
+    "gdros__vector_epe": "2.4418697357177734",
+    "m4_clean__public_component": "0.11644233763217926",
+    "m4_clean__vector_epe": "0.17689643800258636"
+  },
+  {
+    "pair_index": "384",
+    "pair_id": "000384",
+    "gdros__public_component": "1.3827766180038452",
+    "gdros__vector_epe": "2.2083845138549805",
+    "m4_clean__public_component": "0.34649503231048584",
+    "m4_clean__vector_epe": "0.538189709186554"
+  },
+  {
+    "pair_index": "385",
+    "pair_id": "000385",
+    "gdros__public_component": "1.205412745475769",
+    "gdros__vector_epe": "2.1342861652374268",
+    "m4_clean__public_component": "1.0555323362350464",
+    "m4_clean__vector_epe": "1.5884596109390259"
+  },
+  {
+    "pair_index": "386",
+    "pair_id": "000386",
+    "gdros__public_component": "0.9805583953857422",
+    "gdros__vector_epe": "1.4339615106582642",
+    "m4_clean__public_component": "0.37379366159439087",
+    "m4_clean__vector_epe": "0.5577676296234131"
+  },
+  {
+    "pair_index": "387",
+    "pair_id": "000387",
+    "gdros__public_component": "0.6674928069114685",
+    "gdros__vector_epe": "1.034682035446167",
+    "m4_clean__public_component": "0.20882345736026764",
+    "m4_clean__vector_epe": "0.3262861371040344"
+  },
+  {
+    "pair_index": "388",
+    "pair_id": "000388",
+    "gdros__public_component": "0.9533348083496094",
+    "gdros__vector_epe": "1.4811666011810303",
+    "m4_clean__public_component": "0.8492932319641113",
+    "m4_clean__vector_epe": "1.338972568511963"
+  },
+  {
+    "pair_index": "389",
+    "pair_id": "000389",
+    "gdros__public_component": "0.6492049098014832",
+    "gdros__vector_epe": "1.0538201332092285",
+    "m4_clean__public_component": "0.854191780090332",
+    "m4_clean__vector_epe": "1.2809743881225586"
+  },
+  {
+    "pair_index": "390",
+    "pair_id": "000390",
+    "gdros__public_component": "0.8729307651519775",
+    "gdros__vector_epe": "1.2990795373916626",
+    "m4_clean__public_component": "0.7164602279663086",
+    "m4_clean__vector_epe": "1.1035518646240234"
+  },
+  {
+    "pair_index": "391",
+    "pair_id": "000391",
+    "gdros__public_component": "1.0925986766815186",
+    "gdros__vector_epe": "1.6565240621566772",
+    "m4_clean__public_component": "0.24548476934432983",
+    "m4_clean__vector_epe": "0.3741309940814972"
+  },
+  {
+    "pair_index": "392",
+    "pair_id": "000392",
+    "gdros__public_component": "0.5372957587242126",
+    "gdros__vector_epe": "0.8544698357582092",
+    "m4_clean__public_component": "0.2641949951648712",
+    "m4_clean__vector_epe": "0.44083371758461"
+  },
+  {
+    "pair_index": "393",
+    "pair_id": "000393",
+    "gdros__public_component": "0.4665476977825165",
+    "gdros__vector_epe": "0.7173686623573303",
+    "m4_clean__public_component": "0.2646533250808716",
+    "m4_clean__vector_epe": "0.45353880524635315"
+  },
+  {
+    "pair_index": "394",
+    "pair_id": "000394",
+    "gdros__public_component": "1.0620217323303223",
+    "gdros__vector_epe": "1.638804316520691",
+    "m4_clean__public_component": "0.25175368785858154",
+    "m4_clean__vector_epe": "0.39571186900138855"
+  },
+  {
+    "pair_index": "395",
+    "pair_id": "000395",
+    "gdros__public_component": "1.1810111999511719",
+    "gdros__vector_epe": "1.8549046516418457",
+    "m4_clean__public_component": "1.6882145404815674",
+    "m4_clean__vector_epe": "2.7511096000671387"
+  },
+  {
+    "pair_index": "396",
+    "pair_id": "000396",
+    "gdros__public_component": "1.2315342426300049",
+    "gdros__vector_epe": "1.9547760486602783",
+    "m4_clean__public_component": "0.26079824566841125",
+    "m4_clean__vector_epe": "0.4202677011489868"
+  },
+  {
+    "pair_index": "397",
+    "pair_id": "000397",
+    "gdros__public_component": "3.905668258666992",
+    "gdros__vector_epe": "6.02114200592041",
+    "m4_clean__public_component": "0.3219292163848877",
+    "m4_clean__vector_epe": "0.502616822719574"
+  },
+  {
+    "pair_index": "398",
+    "pair_id": "000398",
+    "gdros__public_component": "0.5168481469154358",
+    "gdros__vector_epe": "0.7861666679382324",
+    "m4_clean__public_component": "0.1627657264471054",
+    "m4_clean__vector_epe": "0.2501806616783142"
+  },
+  {
+    "pair_index": "399",
+    "pair_id": "000399",
+    "gdros__public_component": "0.574097216129303",
+    "gdros__vector_epe": "0.8731266260147095",
+    "m4_clean__public_component": "4.702232837677002",
+    "m4_clean__vector_epe": "6.977284908294678"
+  },
+  {
+    "pair_index": "400",
+    "pair_id": "000400",
+    "gdros__public_component": "0.2162272036075592",
+    "gdros__vector_epe": "0.34213706851005554",
+    "m4_clean__public_component": "0.33255499601364136",
+    "m4_clean__vector_epe": "0.5147764682769775"
+  },
+  {
+    "pair_index": "401",
+    "pair_id": "000401",
+    "gdros__public_component": "1.5618146657943726",
+    "gdros__vector_epe": "2.379188299179077",
+    "m4_clean__public_component": "4.705204963684082",
+    "m4_clean__vector_epe": "7.784702777862549"
+  },
+  {
+    "pair_index": "402",
+    "pair_id": "000402",
+    "gdros__public_component": "0.8593052625656128",
+    "gdros__vector_epe": "1.4561076164245605",
+    "m4_clean__public_component": "0.42080676555633545",
+    "m4_clean__vector_epe": "0.6665154099464417"
+  },
+  {
+    "pair_index": "403",
+    "pair_id": "000403",
+    "gdros__public_component": "3.4262309074401855",
+    "gdros__vector_epe": "4.917531967163086",
+    "m4_clean__public_component": "6.97555685043335",
+    "m4_clean__vector_epe": "12.45256233215332"
+  },
+  {
+    "pair_index": "404",
+    "pair_id": "000404",
+    "gdros__public_component": "1.9144104719161987",
+    "gdros__vector_epe": "3.2955360412597656",
+    "m4_clean__public_component": "6.683696269989014",
+    "m4_clean__vector_epe": "10.848952293395996"
+  },
+  {
+    "pair_index": "405",
+    "pair_id": "000405",
+    "gdros__public_component": "2.612696886062622",
+    "gdros__vector_epe": "4.489161014556885",
+    "m4_clean__public_component": "0.34617161750793457",
+    "m4_clean__vector_epe": "0.5423839092254639"
+  },
+  {
+    "pair_index": "406",
+    "pair_id": "000406",
+    "gdros__public_component": "2.6119019985198975",
+    "gdros__vector_epe": "4.151730060577393",
+    "m4_clean__public_component": "0.3966860771179199",
+    "m4_clean__vector_epe": "0.6112309694290161"
+  },
+  {
+    "pair_index": "407",
+    "pair_id": "000407",
+    "gdros__public_component": "0.8847245573997498",
+    "gdros__vector_epe": "1.4154586791992188",
+    "m4_clean__public_component": "0.8511151075363159",
+    "m4_clean__vector_epe": "1.3317381143569946"
+  },
+  {
+    "pair_index": "408",
+    "pair_id": "000408",
+    "gdros__public_component": "0.6385219097137451",
+    "gdros__vector_epe": "1.0410751104354858",
+    "m4_clean__public_component": "1.2061291933059692",
+    "m4_clean__vector_epe": "1.8260315656661987"
+  },
+  {
+    "pair_index": "409",
+    "pair_id": "000409",
+    "gdros__public_component": "0.7103127241134644",
+    "gdros__vector_epe": "1.119093894958496",
+    "m4_clean__public_component": "0.1894930750131607",
+    "m4_clean__vector_epe": "0.2949479818344116"
+  },
+  {
+    "pair_index": "410",
+    "pair_id": "000410",
+    "gdros__public_component": "1.141314148902893",
+    "gdros__vector_epe": "1.8866478204727173",
+    "m4_clean__public_component": "0.8511991500854492",
+    "m4_clean__vector_epe": "1.2922258377075195"
+  },
+  {
+    "pair_index": "411",
+    "pair_id": "000411",
+    "gdros__public_component": "2.0852832794189453",
+    "gdros__vector_epe": "3.2532448768615723",
+    "m4_clean__public_component": "0.5576579570770264",
+    "m4_clean__vector_epe": "0.967296302318573"
+  },
+  {
+    "pair_index": "412",
+    "pair_id": "000412",
+    "gdros__public_component": "2.2778122425079346",
+    "gdros__vector_epe": "3.8231759071350098",
+    "m4_clean__public_component": "0.1535218507051468",
+    "m4_clean__vector_epe": "0.2531561553478241"
+  },
+  {
+    "pair_index": "413",
+    "pair_id": "000413",
+    "gdros__public_component": "1.3090425729751587",
+    "gdros__vector_epe": "2.2444684505462646",
+    "m4_clean__public_component": "0.3464442789554596",
+    "m4_clean__vector_epe": "0.5395376682281494"
+  },
+  {
+    "pair_index": "414",
+    "pair_id": "000414",
+    "gdros__public_component": "1.9560081958770752",
+    "gdros__vector_epe": "3.1252875328063965",
+    "m4_clean__public_component": "0.8902121782302856",
+    "m4_clean__vector_epe": "1.348732829093933"
+  },
+  {
+    "pair_index": "415",
+    "pair_id": "000415",
+    "gdros__public_component": "1.3209015130996704",
+    "gdros__vector_epe": "1.898755669593811",
+    "m4_clean__public_component": "1.016674518585205",
+    "m4_clean__vector_epe": "1.6714861392974854"
+  },
+  {
+    "pair_index": "416",
+    "pair_id": "000416",
+    "gdros__public_component": "3.3129401206970215",
+    "gdros__vector_epe": "5.357161045074463",
+    "m4_clean__public_component": "0.49286970496177673",
+    "m4_clean__vector_epe": "0.7586275935173035"
+  },
+  {
+    "pair_index": "417",
+    "pair_id": "000417",
+    "gdros__public_component": "0.507056713104248",
+    "gdros__vector_epe": "0.7766610980033875",
+    "m4_clean__public_component": "0.27987924218177795",
+    "m4_clean__vector_epe": "0.41058945655822754"
+  },
+  {
+    "pair_index": "418",
+    "pair_id": "000418",
+    "gdros__public_component": "1.029333472251892",
+    "gdros__vector_epe": "1.5793883800506592",
+    "m4_clean__public_component": "2.049074172973633",
+    "m4_clean__vector_epe": "3.3714752197265625"
+  },
+  {
+    "pair_index": "419",
+    "pair_id": "000419",
+    "gdros__public_component": "1.9569814205169678",
+    "gdros__vector_epe": "3.130938768386841",
+    "m4_clean__public_component": "0.9476717710494995",
+    "m4_clean__vector_epe": "1.4405348300933838"
+  },
+  {
+    "pair_index": "420",
+    "pair_id": "000420",
+    "gdros__public_component": "1.2856590747833252",
+    "gdros__vector_epe": "2.2817161083221436",
+    "m4_clean__public_component": "2.6863901615142822",
+    "m4_clean__vector_epe": "4.282654285430908"
+  },
+  {
+    "pair_index": "421",
+    "pair_id": "000421",
+    "gdros__public_component": "2.5391411781311035",
+    "gdros__vector_epe": "3.8080973625183105",
+    "m4_clean__public_component": "0.31544941663742065",
+    "m4_clean__vector_epe": "0.5156556963920593"
+  },
+  {
+    "pair_index": "422",
+    "pair_id": "000422",
+    "gdros__public_component": "3.114522933959961",
+    "gdros__vector_epe": "4.928357124328613",
+    "m4_clean__public_component": "0.2912478744983673",
+    "m4_clean__vector_epe": "0.42766451835632324"
+  },
+  {
+    "pair_index": "423",
+    "pair_id": "000423",
+    "gdros__public_component": "1.5712952613830566",
+    "gdros__vector_epe": "2.315443754196167",
+    "m4_clean__public_component": "0.25323590636253357",
+    "m4_clean__vector_epe": "0.382557213306427"
+  }
+]

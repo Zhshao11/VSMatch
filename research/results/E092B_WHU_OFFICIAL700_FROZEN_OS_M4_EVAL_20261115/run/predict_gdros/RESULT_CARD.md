@@ -1,0 +1,29 @@
+# E092B predict_gdros
+
+Status: `COMPLETE`
+
+```json
+{
+  "ground_truth_loaded": false,
+  "last_completed_stage": "700_PREDICTIONS_MATERIALIZED",
+  "load_report": {
+    "missing_keys": [],
+    "state_keys": 318,
+    "unexpected_keys": []
+  },
+  "logical_device": "cuda:0",
+  "manifests": {
+    "gdros_whu_iter32_post_lsr": {
+      "immutable_attempt_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-092B-WHU-OFFICIAL700-FROZEN-OS-M4-EVAL/prediction_attempts/20261115_115356_ab02859f/gdros_whu_iter32_post_lsr/PREDICTIONS.jsonl",
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-092B-WHU-OFFICIAL700-FROZEN-OS-M4-EVAL/predictions/gdros_whu_iter32_post_lsr/PREDICTIONS.jsonl",
+      "prediction_attempt": "20261115_115356_ab02859f",
+      "records": 700,
+      "sha256": "041fc16efdaf13781b04c1b18db3c1b02baf8730ee534acba3bb35e80651beff"
+    }
+  },
+  "prediction_attempt": "20261115_115356_ab02859f",
+  "status": "COMPLETE",
+  "task": "predict_gdros",
+  "updated_at_unix": 1794714953.8277378
+}
+```

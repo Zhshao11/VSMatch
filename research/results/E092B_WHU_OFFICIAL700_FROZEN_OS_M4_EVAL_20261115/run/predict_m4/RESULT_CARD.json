@@ -1,0 +1,31 @@
+{
+  "ground_truth_loaded": false,
+  "last_completed_stage": "700_PREDICTIONS_MATERIALIZED",
+  "load_report": {
+    "checkpoint_step": 80000,
+    "missing_keys": [],
+    "state_keys": 5583,
+    "unexpected_keys": []
+  },
+  "logical_device": "cuda:0",
+  "manifests": {
+    "os_m4_iter24_post_lsr": {
+      "immutable_attempt_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-092B-WHU-OFFICIAL700-FROZEN-OS-M4-EVAL/prediction_attempts/20261115_115659_5e0e4c22/os_m4_iter24_post_lsr/PREDICTIONS.jsonl",
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-092B-WHU-OFFICIAL700-FROZEN-OS-M4-EVAL/predictions/os_m4_iter24_post_lsr/PREDICTIONS.jsonl",
+      "prediction_attempt": "20261115_115659_5e0e4c22",
+      "records": 700,
+      "sha256": "2ca605161521cf70867dc2ecc6644e9baa96fc19088d8428fed9fbc6860eec3e"
+    },
+    "os_m4_iter32_post_lsr": {
+      "immutable_attempt_manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-092B-WHU-OFFICIAL700-FROZEN-OS-M4-EVAL/prediction_attempts/20261115_115659_5e0e4c22/os_m4_iter32_post_lsr/PREDICTIONS.jsonl",
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-092B-WHU-OFFICIAL700-FROZEN-OS-M4-EVAL/predictions/os_m4_iter32_post_lsr/PREDICTIONS.jsonl",
+      "prediction_attempt": "20261115_115659_5e0e4c22",
+      "records": 700,
+      "sha256": "f0d5e01c4eaa626e514d5051f8cf6f05afbae95e7b1d8f05b7c7f94297dc3ae2"
+    }
+  },
+  "prediction_attempt": "20261115_115659_5e0e4c22",
+  "status": "COMPLETE",
+  "task": "predict_m4",
+  "updated_at_unix": 1794715683.5260215
+}

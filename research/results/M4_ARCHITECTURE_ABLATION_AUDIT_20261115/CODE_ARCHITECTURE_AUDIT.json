@@ -1,0 +1,171 @@
+{
+  "method": "OS E075A-M4 Region Gate step80K",
+  "audit_date": "2026-11-15",
+  "source": {
+    "research/remote_stage/os/e074a_f2_f3_twostage_fusion.py": {
+      "sha256": "fef9e03ad07ddacdfca146d264c818bad6b8a8d4fdfc801b0c477c33dc571ae6",
+      "definitions": [
+        {
+          "name": "GateNet",
+          "line": 118,
+          "end_line": 122
+        },
+        {
+          "name": "E074Model",
+          "line": 124,
+          "end_line": 172
+        },
+        {
+          "name": "forward",
+          "line": 122,
+          "end_line": 122
+        },
+        {
+          "name": "gate_input",
+          "line": 147,
+          "end_line": 152
+        },
+        {
+          "name": "forward",
+          "line": 154,
+          "end_line": 172
+        }
+      ]
+    },
+    "research/remote_stage/os/e072a_layerwise_frontend_alignment.py": {
+      "sha256": "8a3dfd6703b96e3625acabbca2db13bf7fbd369cd7d55646cad12439364e124b",
+      "definitions": [
+        {
+          "name": "OfficialLikeFrontend",
+          "line": 115,
+          "end_line": 123
+        },
+        {
+          "name": "E046FiLM",
+          "line": 140,
+          "end_line": 157
+        },
+        {
+          "name": "E072Matcher",
+          "line": 159,
+          "end_line": 203
+        },
+        {
+          "name": "forward",
+          "line": 113,
+          "end_line": 113
+        },
+        {
+          "name": "forward",
+          "line": 122,
+          "end_line": 123
+        },
+        {
+          "name": "forward",
+          "line": 137,
+          "end_line": 138
+        },
+        {
+          "name": "forward",
+          "line": 151,
+          "end_line": 157
+        },
+        {
+          "name": "forward",
+          "line": 189,
+          "end_line": 203
+        }
+      ]
+    },
+    "research/remote_stage/os/e073a_v1_v2_fusion_longtrain.py": {
+      "sha256": "a9a649cb4db2882f8be37c07bd567147272b7892ee1576763e01eabc4432e440",
+      "definitions": [
+        {
+          "name": "E073FusionMatcher",
+          "line": 195,
+          "end_line": 289
+        },
+        {
+          "name": "recurrent_from_corr",
+          "line": 241,
+          "end_line": 255
+        },
+        {
+          "name": "forward",
+          "line": 257,
+          "end_line": 289
+        }
+      ]
+    },
+    "research/remote_stage/os/e075a_preserve_high_precision_recover_c2c5.py": {
+      "sha256": "4288d754bf119d0bcdd56b385d7d59a8d9b9e444455a496293536f2335530e52",
+      "definitions": [
+        {
+          "name": "ScalarOrRegionGate",
+          "line": 176,
+          "end_line": 195
+        },
+        {
+          "name": "PairFusion",
+          "line": 198,
+          "end_line": 232
+        },
+        {
+          "name": "forward",
+          "line": 188,
+          "end_line": 195
+        },
+        {
+          "name": "gate_features",
+          "line": 208,
+          "end_line": 211
+        },
+        {
+          "name": "forward",
+          "line": 213,
+          "end_line": 232
+        }
+      ]
+    }
+  },
+  "counting_scope": "Static executed call graph for current eval/inference path; not a measured FLOP/latency profile. CorrBlock counted per constructor, GRU per BasicUpdateBlock call (not SepConvGRU internal convolutions).",
+  "prediction_dependencies": {
+    "B_F2": {
+      "pyramids": 1,
+      "update_calls_per_T": 1
+    },
+    "B_F3": {
+      "pyramids": 2,
+      "update_calls_per_T": 1
+    },
+    "C_student_F3": {
+      "pyramids": 2,
+      "update_calls_per_T": 1
+    }
+  },
+  "executed_but_not_needed_for_C_prediction": {
+    "C_teacher_F2": {
+      "pyramids": 1,
+      "update_calls_per_T": 1
+    },
+    "C_teacher_F3": {
+      "pyramids": 2,
+      "update_calls_per_T": 1
+    }
+  },
+  "totals_current_code": {
+    "matcher_invocations": 5,
+    "correlation_pyramids_built": 8,
+    "basic_update_block_calls": "5*T",
+    "lsr_calls_one_final_output": "4*T+1",
+    "lsr_calls_E092_m4_24_and_32": "4*32+2=130"
+  },
+  "totals_prediction_dependency_only": {
+    "matcher_invocations": 3,
+    "correlation_pyramids_built": 5,
+    "basic_update_block_calls": "3*T"
+  },
+  "lsr_feedback_into_gru_state": false,
+  "final_fit": "ordinary least-squares affine, six DOF, not unconstrained projective homography or RANSAC",
+  "region_gate_pooling": "kernel=4,stride=4; full 512 input gate becomes128 then interpolated to512; not a global4x4 grid"
+}

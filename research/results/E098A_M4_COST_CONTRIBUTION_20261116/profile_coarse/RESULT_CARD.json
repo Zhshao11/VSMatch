@@ -1,0 +1,113 @@
+{
+  "cuda_visible_devices": "5",
+  "environment": {
+    "batch_size": 1,
+    "cuda_runtime": "12.8",
+    "fp32": true,
+    "hostname": "ubuntu",
+    "numpy": "2.2.6",
+    "pillow": "12.2.0",
+    "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+    "seed": 1234,
+    "torch": "2.8.0+cu128"
+  },
+  "indices": [
+    0,
+    47,
+    94,
+    141,
+    188,
+    235,
+    282,
+    329,
+    376,
+    423
+  ],
+  "instrumentation_parity_max_abs": 0.0,
+  "instrumentation_restored": true,
+  "iterations": 32,
+  "method": "Coarse CUDA-event stream spans; includes scheduling/CPU gaps, not active-kernel-time sums. Iterative matching and related is inclusive matcher span minus nested frontend/DINO/adapter/context/correlation-build spans, including recurrent lookup, updates, mask/upsampling and other matcher arithmetic. Flat categories are nonoverlapping. Percentages refer to instrumented stream totals; plain wall timing is separate.",
+  "pairs": 10,
+  "parity_max_abs": 0.0,
+  "repeats": 3,
+  "shared_gpu": true,
+  "snapshots": [
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 98 %, 70, 385.63 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23813 MiB, 32607 MiB, 97 %, 69, 429.06 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 29553 MiB, 32607 MiB, 80 %, 62, 348.70 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 15 MiB, 32607 MiB, 0 %, 31, 18.92 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14539 MiB, 32607 MiB, 0 %, 46, 108.22 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 13543 MiB, 32607 MiB, 82 %, 59, 263.41 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 19489 MiB, 32607 MiB, 89 %, 56, 288.80 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 13091 MiB, 32607 MiB, 5 %, 44, 101.80 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14826 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 17344 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14512 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2350905, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 1964 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2352493, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 7904 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2342788, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 13062 MiB\n"
+      },
+      "stage": "before_warmup"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 98 %, 71, 411.97 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23813 MiB, 32607 MiB, 100 %, 70, 433.36 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 24757 MiB, 32607 MiB, 23 %, 55, 150.06 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 15 MiB, 32607 MiB, 0 %, 31, 18.53 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14539 MiB, 32607 MiB, 0 %, 44, 79.30 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 14119 MiB, 32607 MiB, 99 %, 68, 371.76 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 18411 MiB, 32607 MiB, 88 %, 56, 267.80 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 13091 MiB, 32607 MiB, 0 %, 44, 89.93 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14826 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 12548 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14512 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2350905, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2540 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2352493, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 6826 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2342788, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 13062 MiB\n"
+      },
+      "stage": "after_measurement"
+    }
+  ],
+  "source_hashes_end": {
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/LSRnet/LSmodel.py": "8e7e329bd8b0589398765b053e7a7375e7686ba4377a179572d7ad5d5b089d91",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/corr.py": "2bbfb364725d11c217f422ce9f40a84a1da09685bf5112354e5774552d2e928b",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e092a_official_eval.py": "ba502d8657171dbba1462ca0bcbd1a572fbe573a56a834f9e0b1a427d56aab3d",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e098b_coarse_component_cost.py": "c62845e46b2bf42ad95b7aa3b407226c311c025ff3d1881ac233a3ef94d6fe12",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/m4_clean_deploy.py": "3fcd8b685df355c7e7bf6af30094dd554c75c105756450814320f144d9e044bb"
+  },
+  "source_hashes_start": {
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/LSRnet/LSmodel.py": "8e7e329bd8b0589398765b053e7a7375e7686ba4377a179572d7ad5d5b089d91",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/corr.py": "2bbfb364725d11c217f422ce9f40a84a1da09685bf5112354e5774552d2e928b",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e092a_official_eval.py": "ba502d8657171dbba1462ca0bcbd1a572fbe573a56a834f9e0b1a427d56aab3d",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e098b_coarse_component_cost.py": "c62845e46b2bf42ad95b7aa3b407226c311c025ff3d1881ac233a3ef94d6fe12",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/m4_clean_deploy.py": "3fcd8b685df355c7e7bf6af30094dd554c75c105756450814320f144d9e044bb"
+  },
+  "status": "COMPLETE",
+  "summary": {
+    "gdros": {
+      "categories_mean_ms": {
+        "context": 8.24046188990275,
+        "correlation_build": 0.2665066679318746,
+        "feature_frontends": 11.155348269144694,
+        "iterative_matching_and_related": 190.43787365357082,
+        "lsr": 6.713537081082662,
+        "other_coordinates_fusion_launch_gaps": 0.04976375102996826
+      },
+      "category_calls_per_pair": {
+        "context": 2,
+        "correlation_build": 1,
+        "feature_frontends": 1,
+        "lsr": 1,
+        "matcher_total": 1
+      },
+      "instrumented_stream_mean_ms": 216.86349131266277,
+      "instrumented_wall_mean_ms": 216.90534656712165,
+      "plain_mean_ms": 221.61015099845827
+    },
+    "m4_clean": {
+      "categories_mean_ms": {
+        "context": 10.268651739756267,
+        "correlation_build": 1.3468543976545333,
+        "descriptor_adapters_film": 4.035441046456496,
+        "dino": 86.57551027933756,
+        "feature_frontends": 59.57688120206197,
+        "fusion_gates": 0.7206058700879415,
+        "iterative_matching_and_related": 294.94653163502613,
+        "lsr": 26.532135450839995,
+        "other_coordinates_fusion_launch_gaps": 2.9552181720733643
+      },
+      "category_calls_per_pair": {
+        "context": 3,
+        "correlation_build": 5,
+        "descriptor_adapters_film": 7,
+        "dino": 2,
+        "feature_frontends": 6,
+        "fusion_gates": 2,
+        "lsr": 5,
+        "matcher_total": 3
+      },
+      "instrumented_stream_mean_ms": 486.95782979329425,
+      "instrumented_wall_mean_ms": 486.9980260002194,
+      "plain_mean_ms": 492.7282807359006
+    }
+  }
+}

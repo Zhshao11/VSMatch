@@ -1,0 +1,91 @@
+{
+  "environment": {
+    "backend": {
+      "autocast": false,
+      "cudnn_allow_tf32": false,
+      "cudnn_benchmark": false,
+      "deterministic_algorithms": false,
+      "fp32": true,
+      "matmul_allow_tf32": false
+    },
+    "batch_size": 1,
+    "cuda_runtime": "12.8",
+    "cuda_visible_devices": "5",
+    "hostname": "ubuntu",
+    "numpy": "2.2.6",
+    "pillow": "12.2.0",
+    "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+    "torch": "2.8.0+cu128",
+    "watchdog_allocated_gpus": null
+  },
+  "ground_truth_loaded": false,
+  "last_completed_stage": "FOUR_VARIANTS_24_32_MATERIALIZED",
+  "load_report": [
+    {
+      "keys": 2235,
+      "missing_keys": [],
+      "name": "m4.b",
+      "state_sha256": "244ac6da04f609ed48a1fda7734743238b557dd36c4506511fb2774b7cd2d0f3",
+      "unexpected_keys": []
+    },
+    {
+      "keys": 1114,
+      "missing_keys": [],
+      "name": "m4.c.student",
+      "state_sha256": "b685db5b769cf6978b071d915fdf29c1bbe8a07662b8c65f08a107699c341f8e",
+      "unexpected_keys": []
+    },
+    {
+      "keys": 6,
+      "missing_keys": [],
+      "name": "m4.gate",
+      "state_sha256": "7252f3df8042afc7bb9cc6a726cbb2c110dda3f15e13bb39258c9b5c42124c8d",
+      "unexpected_keys": []
+    }
+  ],
+  "manifests": {
+    "avg_iter24_post_lsr": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-093A-OS-BC-FROZEN-ABLATION-AND-PROFILE/predictions/avg_iter24_post_lsr/PREDICTIONS.jsonl",
+      "records": 424,
+      "sha256": "8b136ba79f5679a241b4334e5e9675be166abc9bcfa458b29b182fb7c41306a6"
+    },
+    "avg_iter32_post_lsr": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-093A-OS-BC-FROZEN-ABLATION-AND-PROFILE/predictions/avg_iter32_post_lsr/PREDICTIONS.jsonl",
+      "records": 424,
+      "sha256": "b66604aaa2f8d1aa46762c083fe1a5c6d469e9baed22ca86b53d09a4aa965366"
+    },
+    "b_iter24_post_lsr": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-093A-OS-BC-FROZEN-ABLATION-AND-PROFILE/predictions/b_iter24_post_lsr/PREDICTIONS.jsonl",
+      "records": 424,
+      "sha256": "0409fca23e2fd6e6fab7218a7b94d8215b22a7403b735f373f26fbfe941445cd"
+    },
+    "b_iter32_post_lsr": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-093A-OS-BC-FROZEN-ABLATION-AND-PROFILE/predictions/b_iter32_post_lsr/PREDICTIONS.jsonl",
+      "records": 424,
+      "sha256": "0cfc5932a3b465e40f9aa383908b45580af3c44140339473ae8aceac92e32165"
+    },
+    "c_iter24_post_lsr": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-093A-OS-BC-FROZEN-ABLATION-AND-PROFILE/predictions/c_iter24_post_lsr/PREDICTIONS.jsonl",
+      "records": 424,
+      "sha256": "046f5a35414bda0d051e10ff7c62d858e471879a3ddc7791f32de1d914a45e58"
+    },
+    "c_iter32_post_lsr": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-093A-OS-BC-FROZEN-ABLATION-AND-PROFILE/predictions/c_iter32_post_lsr/PREDICTIONS.jsonl",
+      "records": 424,
+      "sha256": "d98beea5a0ddc0ad5a6f4a9e646db27e24c5045bb0677554a015f9cb27c903d7"
+    },
+    "m4_iter24_post_lsr": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-093A-OS-BC-FROZEN-ABLATION-AND-PROFILE/predictions/m4_iter24_post_lsr/PREDICTIONS.jsonl",
+      "records": 424,
+      "sha256": "fb82264980f4548c77238f3436e9f68cc727b6c5f58583c6cbc53c8403cbbebb"
+    },
+    "m4_iter32_post_lsr": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-093A-OS-BC-FROZEN-ABLATION-AND-PROFILE/predictions/m4_iter32_post_lsr/PREDICTIONS.jsonl",
+      "records": 424,
+      "sha256": "a0c78b56f308fe1e64c8d639ceb6d7255c695c09f38fdc9d2381906d562e5ec9"
+    }
+  },
+  "status": "COMPLETE",
+  "task": "predict",
+  "updated_at_unix": 1794762850.1765656
+}

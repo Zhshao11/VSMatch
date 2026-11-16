@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "cpu_tests": 15,
+  "named_entry_import": "PASS",
+  "constructor_and_forward_unchanged": true,
+  "python": "3.10.20",
+  "torch": "2.8.0+cu128",
+  "fresh_gpu_inference": false,
+  "date": "2026-11-16",
+  "execution": "zzvr temporary directory; local archived source copied; CPU tests and import smoke only",
+  "offline_result_verifiers": [
+    "E094A PASS",
+    "E095A PASS",
+    "E096A PASS",
+    "E097A PASS",
+    "E098A PASS"
+  ],
+  "local_compileall": "PASS",
+  "local_default_python_unittest": "Missing numpy; tests rerun on configured remote Python",
+  "local_preflight": "INCOMPLETE: external packages/assets are not installed locally"
+}

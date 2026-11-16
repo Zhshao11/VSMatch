@@ -1,0 +1,32 @@
+{
+  "b.f2.b2.e046.front.": {
+    "optical_adapter.": {
+      "sha256": "9ec700f0e16838fda5a601823827afac7230f704f7a883f5d29c730512049f60",
+      "parameters": 263552
+    },
+    "sar_adapter.": {
+      "sha256": "9bab13135cc486b7ba0f5cf7a982d8a6407cb1005403a2d2cdbd7655be2bdd1e",
+      "parameters": 475648
+    }
+  },
+  "b.f3.b2.e046.front.": {
+    "optical_adapter.": {
+      "sha256": "9ec700f0e16838fda5a601823827afac7230f704f7a883f5d29c730512049f60",
+      "parameters": 263552
+    },
+    "sar_adapter.": {
+      "sha256": "9bab13135cc486b7ba0f5cf7a982d8a6407cb1005403a2d2cdbd7655be2bdd1e",
+      "parameters": 475648
+    }
+  },
+  "c.student.b2.e046.front.": {
+    "optical_adapter.": {
+      "sha256": "9ec700f0e16838fda5a601823827afac7230f704f7a883f5d29c730512049f60",
+      "parameters": 263552
+    },
+    "sar_adapter.": {
+      "sha256": "9bab13135cc486b7ba0f5cf7a982d8a6407cb1005403a2d2cdbd7655be2bdd1e",
+      "parameters": 475648
+    }
+  }
+}

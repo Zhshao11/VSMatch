@@ -27,6 +27,7 @@ env/
 # Downloaded data, checkpoints, archives, and run directories
 /tmp/
 /output/
+/outputs/
 /experiments_tmp_check/
 data/
 datasets/
@@ -56,6 +57,12 @@ research/results/**/*_PAIR_ROWS.json
 research/results/**/*_TRAIN_CURVE.json
 research/results/**/RUNNING_RESULT_CARD.json
 research/results/**/RUNNING_RESULT_CARD.md
+
+# Generated remote scheduler state and launcher logs are not method inputs.
+research/results/**/scheduler/
+research/results/**/watchdog/
+research/results/**/*.pid
+research/results/**/*.lock
 
 # Scheduler/runtime state copied next to source is not a reproducible input.
 research/remote_stage/**/*RESULT_CARD.json

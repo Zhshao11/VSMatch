@@ -1,0 +1,125 @@
+{
+  "archive": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/raw/test_images.zip",
+  "archive_parity": {
+    "cache_reused": true,
+    "manifest": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-092CR-UBCV2-RAW1625-PAPER-STYLE/RAW_INPUT_MANIFEST.json",
+    "manifest_sha256": "c1a04aaf42568e51a5534ca20a276d35425320b20e4b37fa1896a3da676b3f49",
+    "pairs": 1625,
+    "status": "PASS"
+  },
+  "core_dependency_code_hashes": {
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/GDROSnet/FeatureFormer/gdros.py": "8bf03e580a863d2e5752d0dccf028ccfa235067691aa013ee66458f1b846cced",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/LSRnet/LSmodel.py": "8e7e329bd8b0589398765b053e7a7375e7686ba4377a179572d7ad5d5b089d91",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/datasets.py": "9e7fcf7c5e63ab18fcd33fd5e8c7655d7cef6346bf6e04e063c34437a67e6a58",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/test.py": "69d165ff51b38c942ec536da131082e700608c15bb53df2ada939291038f25fd",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e072a_layerwise_frontend_alignment.py": "d66da78417b32a4dac36e431f610367e5f6b884ea5a79a3626948c68d044a156",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e073a_v1_v2_fusion_longtrain.py": "8d20a1dd3e1a76e11f68a304b0e09720a4ae2f9a73821b84991922350553507f",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e074a_f2_f3_twostage_fusion.py": "233412162f127bf1924403bc865549f1f5784f15c029bdf4b578938d1a4ecc01",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e075a_preserve_high_precision_recover_c2c5.py": "2626d29005ae8915a82f9a793850b5523ba2d6a013991161895152879ea621bf",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e092cr_build_groups.py": "1c5ae6ea6503a1c9160b204fa1d1ab4ea5c02659fff5f4b06070e4e45ef0088b",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e092cr_ubcv2_eval.py": "b7221ba9178f733bf3d0a330994979570bed5fd4b20ab5440aac78573ba9c047"
+  },
+  "dataset": "UBCv2 official raw 1625 pairs, paper-style independent geometry",
+  "environment": {
+    "cuda_runtime": "12.8",
+    "hostname": "ubuntu",
+    "numpy": "2.2.6",
+    "pillow": "12.2.0",
+    "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+    "torch": "2.8.0+cu128",
+    "torch_num_threads": 1
+  },
+  "gdros_identity": "official OS checkpoint",
+  "generated_protocol_audit": {
+    "audit_opencv_version": "4.13.0",
+    "cross_version_note": "Independent verification in the generator environment requires exact 0; a different OpenCV build may differ by at most 4 uint8 levels under INTER_LINEAR.",
+    "direction_fixtures": {
+      "identity_flow_at_4_4": [
+        0.0,
+        0.0
+      ],
+      "integer_translation_flow_at_4_4": [
+        2.0,
+        1.0
+      ],
+      "integer_translation_warp_peak_yx": [
+        5,
+        6
+      ],
+      "rotation_scale_formula_checked_by_all_pair_matrix_probes": true
+    },
+    "flow_matrix_probe_max_abs_difference": 5.888882697036024e-06,
+    "generator_opencv_version": "5.0.0",
+    "geometry": {
+      "crop_resize": "none; native 512x512",
+      "flow": "target-minus-source = M*p-p",
+      "interpolation": "cv2.INTER_LINEAR",
+      "matrix": "M@[x,y,1]",
+      "padding": "constant zero",
+      "rotation_center": "origin (0,0)"
+    },
+    "manifest": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901/protocol_metadata/manifest.json",
+    "manifest_sha256": "599b8bdab2fc32486c4d4f46ee496d065e3649ecdad918a9906f96efa4e0997d",
+    "pairs": 1625,
+    "params": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901/protocol_metadata/params.jsonl",
+    "params_sha256": "341ab21e97e6d9292528725ad98316f05c586496bd333dff33d7b481f6ac5d4b",
+    "problems": [],
+    "raw_sar_to_warped_sample_max_abs_difference": 4,
+    "raw_sar_to_warped_tolerance": 4,
+    "sar_mapping": {
+      "formula": "20*log10(max(x,0)+1e-3), global clip/linear p2-p98 to uint8",
+      "hi_db": 10.545851440429704,
+      "identity": "independent reproduction rule, frozen across seeds 901/902/903",
+      "lo_db": -28.307898330688477
+    },
+    "status": "PASS"
+  },
+  "gt_format": "Middlebury .flo float32 [H,W,2]",
+  "hash_mismatches": {},
+  "hashes": {
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f2-warm120k/checkpoints/F2_step120000.pt": "4a52307fa4b7b67756ac979310fa37d34a131cc182a39e2c45d86711972dab06",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-073A-ZZVR-V1V2-FUSION-LONGTRAIN/run-f3-warm120k/checkpoints/F3_step120000.pt": "e5a9c612a7b9b85c568b88776ef784873d5df693cb570ad3dbbbf52fe4801ffd",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-b-stage180k/checkpoints/B_step180000.pt": "f40d80f2dca62e74ec86c1823963282a490d47f336f2cfce4a28fc211ea33218",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/checkpoints/C_step180000.pt": "c3c67e6d65aca0dd55cf7af2c2a9eedccadadc0fec5ad11fe6e493e08ecc85b9",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/checkpoints/M4_step80000.pt": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b",
+    "/mnt/sda/zhushihao/VS_Match/GDROS/official_models_reference/GDROS-os512.pth": "80fd768e2d5f2f3887ff8af62b165e43e073e6cec187544c542b6d4b591ba683",
+    "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/raw/test_images.zip": "515559a9f2b67981e86d7bd36170d720658a38724f2309bb3003a0d565960aeb"
+  },
+  "invalid_gt": [],
+  "last_completed_stage": "CPU_PREFLIGHT",
+  "m4_identity": "OS E075A step80K only",
+  "main_table": [
+    "gdros_os_iter32_post_lsr",
+    "os_m4_iter32_post_lsr"
+  ],
+  "missing_gt": [],
+  "official_loader_input_parity": {
+    "input_kind": "generated RGB/SAR PNG loaded by official opt_sar_test",
+    "pair_ids_exact_order": true,
+    "pairs": 1625,
+    "root": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901",
+    "source_target_tensor_max_abs_difference": 0.0,
+    "status": "PASS",
+    "tensor_dtype": "torch.float32",
+    "tensor_shape": [
+      3,
+      512,
+      512
+    ]
+  },
+  "official_source_commit": "ee6b6216fe780bc03bfb4759ae094daa0cfddc60",
+  "pairs": 1625,
+  "paper_protocol_scope": "independent seeds 901/902/903; not authors' screened 1447 or exact seeds",
+  "sample_tensor_shape": [
+    1,
+    3,
+    512,
+    512
+  ],
+  "seed": 901,
+  "status": "PASS",
+  "supplement_only": "os_m4_iter24_post_lsr",
+  "task": "preflight",
+  "updated_at_unix": 1794716973.1390123,
+  "whole_image_no_mask": true
+}

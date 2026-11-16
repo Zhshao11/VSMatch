@@ -1,5 +1,12 @@
 # Checkpoint Manifest
 
+The verified OS inference implementation is named **M4-streamlined**.
+Its source checkpoint remains `os_e075a_m4_80k`. The optional extracted compact
+state, full SHA256, size and legacy-constructor requirement are recorded in
+[`models/M4-streamlined.json`](models/M4-streamlined.json) and
+[`docs/M4_STREAMLINED.md`](../docs/M4_STREAMLINED.md). Both weight files stay
+outside Git; the public Python name does not change their state_dict keys.
+
 Model weights are intentionally excluded from Git. The machine-readable paths,
 roles, and SHA256 values are in `CHECKPOINTS.json`.
 

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "pairs": 424,
+  "timings": 1272,
+  "dense_predictions_rehashed": 1272,
+  "policies": {
+    "reference5": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "final1": [
+      5
+    ],
+    "last45": [
+      4,
+      5
+    ]
+  },
+  "reference_vs_archive": {
+    "bitwise_equal_pairs": 424,
+    "max_abs": 0.0
+  },
+  "speedup_vs_reference5": {
+    "final1": 1.05056887937102,
+    "last45": 1.031090119973967,
+    "reference5": 1.0
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "b.f2.b1.front_v1.": {
+    "sha256": "c8336b9ff6475d5addec424df2ef6ff9e7a6b6e9bcc14cb0ef2e9b53d6761f75",
+    "parameters": 4807094
+  },
+  "b.f3.b1.front_v1.": {
+    "sha256": "8e641aafd6ce10fc8548d6058cd3ef3ae4ecede57cfb7262c405b2733ea2d0d4",
+    "parameters": 4807094
+  },
+  "c.student.b1.front_v1.": {
+    "sha256": "dfefaca29534038797d3a71b595addf17a67e11962f72bb37f47e9c1cc965e83",
+    "parameters": 4807094
+  },
+  "b.f2.b2.front_v1.": {
+    "sha256": "232337af4862763172d55796b3eda116d4cfc3c854a0caf564807d8adf98b2c4",
+    "parameters": 4807094
+  },
+  "b.f3.b2.front_v1.": {
+    "sha256": "e27a817274982042709ae6eb4dbf89aea6cd98f39cc02d3393b621eb77ed026a",
+    "parameters": 4807094
+  },
+  "c.student.b2.front_v1.": {
+    "sha256": "da2e99961fe278a02fc57b54f8bebd7f58f1c8c821edc5f7b51b899e9351ea9f",
+    "parameters": 4807094
+  },
+  "b.f2.context.": {
+    "sha256": "6f15b1dc7267ecd3d4a05cb62c3ad79072fa966194c3ae8f79c3290dfa49905a",
+    "parameters": 1066848
+  },
+  "b.f3.context.": {
+    "sha256": "5f8d796cec59d34190f7100574e07e293ad8668de801264f328ad506083e20bd",
+    "parameters": 1066848
+  },
+  "c.student.context.": {
+    "sha256": "8787220bb8d946adbf217b07bc487b40e130068145bbfd909b48aa8c7224321a",
+    "parameters": 1066848
+  },
+  "b.f2.update.": {
+    "sha256": "b36f20351ba682cb4c6cd2b437301a8c850b15041a6b92a4191c8cee9a6e5eb0",
+    "parameters": 3120960
+  },
+  "b.f3.update.": {
+    "sha256": "0fe45fbd85dc288fc9431c87c6b143eb2549b1f3c9fbcd26334b536f45b7dfb3",
+    "parameters": 3120960
+  },
+  "c.student.update.": {
+    "sha256": "123ea8d63a4e000f1a26e8fbee524e0dd1238518d9cc3ddcd4cf9bf3b831a40d",
+    "parameters": 3120960
+  },
+  "b.f2.b2.e046.proj.": {
+    "sha256": "e172566f1323976b15ddcf2371b5aa432c54b64edf36bf7f56513952851657ac",
+    "parameters": 394496
+  },
+  "b.f3.b2.e046.proj.": {
+    "sha256": "8ed27605aa33510726f5c96876f691a900143bda005cd08103e4b21ef356c428",
+    "parameters": 394496
+  },
+  "c.student.b2.e046.proj.": {
+    "sha256": "1339c322204514d69891c0d8e4d28b354c27df3538e11ac43b9b778a03239118",
+    "parameters": 394496
+  }
+}

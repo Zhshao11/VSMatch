@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "branch_pairs": 424,
+  "cached_branch_predictions_hashed_on_remote": 1696,
+  "profile_records_per_protocol": 120,
+  "instrumentation_output_change": 0,
+  "offline_check": "Recomputed compact metrics, timing aggregates, call constancy, category sums, source-hash equality and parity; dense hashes were verified by remote audit."
+}

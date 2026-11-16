@@ -1,0 +1,9 @@
+{
+  "torch": "2.8.0+cu128",
+  "default_cudnn_allow_tf32": true,
+  "default_matmul_allow_tf32": false,
+  "default_cudnn_benchmark": false,
+  "scope": "Fresh interpreter defaults only, not instrumentation of archived E092A process",
+  "current_e094a_explicit_cudnn_allow_tf32": false,
+  "current_e094a_explicit_matmul_allow_tf32": false
+}

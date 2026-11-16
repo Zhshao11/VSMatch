@@ -1,0 +1,25 @@
+{
+  "status": "CORRECTED_AND_RESCOPED",
+  "supersedes_fields": {
+    "available_raw_asset.archive_tiff_members": 3250,
+    "available_raw_asset.paired_tiff_count": 1625,
+    "available_raw_asset.archive_non_directory_members": 3252,
+    "available_raw_asset.xml_sidecars": 2
+  },
+  "multimodal_archive": {
+    "local_path": "/Users/shihao/Downloads/UBCv2_test_images/multi-modal_fine-grained_building_roof_instance_segmentation/test_images.zip",
+    "remote_path": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/raw/test_images.zip",
+    "size_bytes": 2405008673,
+    "sha256": "515559a9f2b67981e86d7bd36170d720658a38724f2309bb3003a0d565960aeb",
+    "paired_rgb_sar_tiffs": 1625
+  },
+  "single_modal_archive": {
+    "local_path": "/Users/shihao/Downloads/UBCv2_test_images/fine-grained_building_roof_instance_segmentation/test_images.zip",
+    "sha256": "2d16457539de2560d19b729fd7a6bab54de09b2ccb8290e26e651a3276c20dc3",
+    "optical_tiffs": 2273,
+    "use_for_matching": false
+  },
+  "author_1447_exact_replay_available": false,
+  "new_allowed_scope": "E092C-R paper-style independent three-seed generalisation evaluation over all 1625 official raw pairs",
+  "must_not_claim": "GDROS authors' screened 1447-pair or exact three-seed reproduction"
+}

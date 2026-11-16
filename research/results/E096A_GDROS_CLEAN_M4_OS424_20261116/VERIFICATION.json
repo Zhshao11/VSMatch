@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "pairs": 424,
+  "timings": 848,
+  "dense_predictions_rehashed": 848,
+  "m4_vs_e095a": {
+    "bitwise_equal_pairs": 424,
+    "max_abs": 0.0
+  },
+  "m4_over_gdros_latency_ratio": 2.5798751516410925
+}

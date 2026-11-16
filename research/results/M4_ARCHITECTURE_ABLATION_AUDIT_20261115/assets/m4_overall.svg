@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1660" viewBox="0 0 1800 1660">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="70" y="42" text-anchor="start" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="46" font-weight="600" fill="#182b46">当前 M4：实际推理架构</text>
+<text x="70" y="108" text-anchor="start" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#51647a">E075A step80K · 代码核对于 2026-11-15 · T = 24（历史部署）/ 32（最新主表）</text>
+<rect x="550" y="170" width="700" height="100" rx="18" fill="#eef5fc" stroke="#2366ad" stroke-width="2"/>
+<text x="900.0" y="186" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="600" fill="#2366ad">输入：光学图像 + SAR 图像</text>
+<text x="900.0" y="228" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#182b46">512 × 512，三通道模型输入</text>
+<rect x="65" y="350" width="800" height="590" rx="18" fill="#ffffff" stroke="#9ebfe1" stroke-width="2"/>
+<rect x="935" y="350" width="800" height="590" rx="18" fill="#ffffff" stroke="#8ec9be" stroke-width="2"/>
+<text x="100" y="373" text-anchor="start" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="31" font-weight="600" fill="#2366ad">B 分支：互补匹配器 + 像素门控</text>
+<text x="970" y="373" text-anchor="start" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="31" font-weight="600" fill="#128578">C 分支：F3 初始化的蒸馏 student</text>
+<polyline points="900,270 900,310 85,310 85,420 465,420" fill="none" stroke="#2366ad" stroke-width="3"/>
+<polyline points="900,310 1710,310 1710,420 1335,420 1335,435" fill="none" stroke="#128578" stroke-width="3"/>
+<polygon points="1335,435 1328.9968707179607,423.46906600386933 1341.0031292820393,423.46906600386933" fill="#128578"/>
+<rect x="105" y="435" width="340" height="136" rx="18" fill="#eef5fc" stroke="#2366ad" stroke-width="2"/>
+<text x="275.0" y="451" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="600" fill="#2366ad">F2 特征级融合</text>
+<text x="275.0" y="493" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#182b46">1 套相关金字塔</text>
+<text x="275.0" y="529" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#182b46">1 个 GRU 更新器 × T</text>
+<rect x="485" y="435" width="340" height="136" rx="18" fill="#eef5fc" stroke="#2366ad" stroke-width="2"/>
+<text x="655.0" y="451" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="600" fill="#2366ad">F3 相关性级融合</text>
+<text x="655.0" y="493" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#182b46">2 套相关金字塔</text>
+<text x="655.0" y="529" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#182b46">1 个 GRU 更新器 × T</text>
+<polyline points="465,420 275,420 275,435" fill="none" stroke="#2366ad" stroke-width="3"/>
+<polygon points="275,435 268.99687071796075,423.46906600386933 281.00312928203925,423.46906600386933" fill="#2366ad"/>
+<polyline points="465,420 655,420 655,435" fill="none" stroke="#2366ad" stroke-width="3"/>
+<polygon points="655,435 648.9968707179607,423.46906600386933 661.0031292820393,423.46906600386933" fill="#2366ad"/>
+<polyline points="275,571 275,610 465,610 465,641" fill="none" stroke="#2366ad" stroke-width="3"/>
+<polygon points="465,641 458.99687071796075,629.4690660038693 471.00312928203925,629.4690660038693" fill="#2366ad"/>
+<polyline points="655,571 655,610 465,610" fill="none" stroke="#2366ad" stroke-width="3"/>
+<rect x="110" y="645" width="710" height="174" rx="18" fill="#eef5fc" stroke="#2366ad" stroke-width="2"/>
+<text x="465.0" y="661" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="600" fill="#2366ad">B 像素门控：9 通道特征</text>
+<text x="465.0" y="703" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#182b46">读取两支 flow、分歧及 LSR 残差</text>
+<text x="465.0" y="740" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#182b46">gB = Conv → Sigmoid</text>
+<text x="465.0" y="777" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#182b46">B_t = (1 − gB) · F3_t + gB · F2_t</text>
+<text x="465" y="867" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="600" fill="#2366ad">输出序列 B_1 … B_T</text>
+<polyline points="465,819 465,854" fill="none" stroke="#2366ad" stroke-width="3"/>
+<polygon points="465,854 458.99687071796075,842.4690660038693 471.00312928203925,842.4690660038693" fill="#2366ad"/>
+<rect x="980" y="435" width="710" height="136" rx="18" fill="#ecf8f4" stroke="#128578" stroke-width="2"/>
+<text x="1335.0" y="451" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="600" fill="#128578">C student：F3 相关性级融合</text>
+<text x="1335.0" y="493" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#182b46">2 套相关金字塔，1 个 GRU 更新器 × T</text>
+<text x="1335.0" y="529" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#182b46">student 输出直接作为 C_t</text>
+<text x="1335" y="610" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="600" fill="#128578">输出序列 C_1 … C_T</text>
+<polyline points="1335,571 1335,603" fill="none" stroke="#128578" stroke-width="3"/>
+<polygon points="1335,603 1328.9968707179607,591.4690660038693 1341.0031292820393,591.4690660038693" fill="#128578"/>
+<rect x="980" y="720" width="325" height="130" rx="18" fill="#edf0f3" stroke="#51647a" stroke-width="2"/>
+<text x="1142.5" y="736" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="600" fill="#51647a">Teacher F2</text>
+<text x="1142.5" y="778" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#182b46">仍执行，1 套金字塔</text>
+<text x="1142.5" y="812" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#182b46">GRU × T</text>
+<rect x="1365" y="720" width="325" height="130" rx="18" fill="#edf0f3" stroke="#51647a" stroke-width="2"/>
+<text x="1527.5" y="736" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="600" fill="#51647a">Teacher F3</text>
+<text x="1527.5" y="778" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#182b46">仍执行，2 套金字塔</text>
+<text x="1527.5" y="812" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#182b46">GRU × T</text>
+<polyline points="1250,220 1760,220 1760,685 1142,685 1142,720" fill="none" stroke="#51647a" stroke-width="3" stroke-dasharray="10 8"/>
+<polygon points="1142,720 1135.9968707179607,708.4690660038693 1148.0031292820393,708.4690660038693" fill="#51647a"/>
+<polyline points="1527,685 1527,720" fill="none" stroke="#51647a" stroke-width="3" stroke-dasharray="10 8"/>
+<polygon points="1527,720 1520.9968707179607,708.4690660038693 1533.0031292820393,708.4690660038693" fill="#51647a"/>
+<text x="1335" y="878" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#51647a">灰色为推理冗余：仅生成 teacher_avg 缓存</text>
+<polyline points="465,901 465,980 900,980 900,1025" fill="none" stroke="#7552b2" stroke-width="3"/>
+<polygon points="900,1025 893.9968707179607,1013.4690660038693 906.0031292820393,1013.4690660038693" fill="#7552b2"/>
+<polyline points="1335,650 1720,650 1720,980 900,980" fill="none" stroke="#128578" stroke-width="3"/>
+<rect x="350" y="1030" width="1100" height="190" rx="18" fill="#f4effa" stroke="#7552b2" stroke-width="2"/>
+<text x="900.0" y="1046" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="29" font-weight="600" fill="#7552b2">M4 区域门控：融合 B_t 与 C_t</text>
+<text x="900.0" y="1088" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="400" fill="#182b46">16 通道：flow、分歧、LSR 投影及投影残差</text>
+<text x="900.0" y="1126" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="400" fill="#182b46">Conv 16 → 32 → 16 → 1 → Sigmoid → 4×4 平均池化 → 上采样</text>
+<text x="900.0" y="1164" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="400" fill="#182b46">M4_t = (1 − gM) · B_t + gM · C_t</text>
+<polyline points="900,1220 900,1270" fill="none" stroke="#b27717" stroke-width="3"/>
+<polygon points="900,1270 893.9968707179607,1258.4690660038693 906.0031292820393,1258.4690660038693" fill="#b27717"/>
+<rect x="550" y="1275" width="700" height="115" rx="18" fill="#fff5e4" stroke="#b27717" stroke-width="2"/>
+<text x="900.0" y="1291" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="600" fill="#b27717">选取第 T 轮 → 末端 LSR</text>
+<text x="900.0" y="1333" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#182b46">普通最小二乘仿射拟合，200000 点</text>
+<polyline points="900,1390 900,1430" fill="none" stroke="#b27717" stroke-width="3"/>
+<polygon points="900,1430 893.9968707179607,1418.4690660038693 906.0031292820393,1418.4690660038693" fill="#b27717"/>
+<rect x="550" y="1435" width="700" height="100" rx="18" fill="#ecf8f4" stroke="#128578" stroke-width="2"/>
+<text x="900.0" y="1451" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="600" fill="#128578">输出：仿射约束的稠密匹配位移</text>
+<text x="900.0" y="1493" text-anchor="middle" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#182b46">也可表示为 2×3 仿射矩阵或齐次 3×3 矩阵</text>
+<text x="70" y="1580" text-anchor="start" dominant-baseline="text-before-edge" font-family="STHeiti,PingFang SC,Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#51647a">实线：预测依赖；灰线：当前仍执行的冗余计算。各 GRU 的迭代权重共享；LSR 不回写 GRU 状态。</text>
+</svg>
