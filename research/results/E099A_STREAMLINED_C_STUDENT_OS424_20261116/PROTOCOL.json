@@ -1,0 +1,56 @@
+{
+  "cached_c_manifest": {
+    "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-093A-OS-BC-FROZEN-ABLATION-AND-PROFILE/predictions/c_iter32_post_lsr/PREDICTIONS.jsonl",
+    "sha256": "d98beea5a0ddc0ad5a6f4a9e646db27e24c5045bb0677554a015f9cb27c903d7",
+    "verified_predictions": 424
+  },
+  "checkpoint_sha256": {
+    "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-075A-ZZVR-PRESERVE-HIGH-PRECISION-RECOVER-C2C5-AEPE/run-m4-regiongate120k-r2/checkpoints/M4_step80000.pt": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b",
+    "/mnt/sda/zhushihao/VS_Match/datasets/official_archives/gdros/testing.zip": "e9c29d6459aa390677066e2da2cdd5927deeb4c9685a10d41c7b6ce44ad81218"
+  },
+  "dataset_provenance": {
+    "all_match_archive": true,
+    "loader_content_manifest_sha256": "dfb91223131af6ff1db0829cf50a626db0312b1ab747410ba61d779cb30ba5ef",
+    "loader_files": 1272,
+    "loader_semantics": "PIL uint8; grayscale tiled to 3 channels; color truncated to first 3 channels; CHW float32; no resize/crop/mask",
+    "mismatches": []
+  },
+  "fp32": true,
+  "full_m4_comparison": false,
+  "input_shape": [
+    1,
+    3,
+    512,
+    512
+  ],
+  "iterations": 32,
+  "method": "M4-streamlined-C-student",
+  "pairs": 424,
+  "post_parity_tolerance": 0.0001,
+  "prediction_before_gt_join": true,
+  "raw_parity_tolerance": 1e-05,
+  "sources": {
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/LSRnet/LSmodel.py": "8e7e329bd8b0589398765b053e7a7375e7686ba4377a179572d7ad5d5b089d91",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/corr.py": "2bbfb364725d11c217f422ce9f40a84a1da09685bf5112354e5774552d2e928b",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/update.py": "721b581711e26d71d7799460d58094542c13a0ec230284a80d3b304547f1ddd5",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e072a_layerwise_frontend_alignment.py": "d66da78417b32a4dac36e431f610367e5f6b884ea5a79a3626948c68d044a156",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e073a_v1_v2_fusion_longtrain.py": "8d20a1dd3e1a76e11f68a304b0e09720a4ae2f9a73821b84991922350553507f",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e074a_f2_f3_twostage_fusion.py": "233412162f127bf1924403bc865549f1f5784f15c029bdf4b578938d1a4ecc01",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e075a_preserve_high_precision_recover_c2c5.py": "2626d29005ae8915a82f9a793850b5523ba2d6a013991161895152879ea621bf",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e092a_official_eval.py": "ba502d8657171dbba1462ca0bcbd1a572fbe573a56a834f9e0b1a427d56aab3d",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e093a_bc_ablation_profile.py": "f36ceb3c8c906f03575a0d8c2db37a13528a21555006279bd27f9b420a5af54c",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e099a_streamlined_c_student_eval.py": "172db06cd0c4ca8ca2fc487ba87bfc259e82317071ce9ce7f76201b3278a4357",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/m4_clean_deploy.py": "3fcd8b685df355c7e7bf6af30094dd554c75c105756450814320f144d9e044bb",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/m4_streamlined_c_student.py": "2630d4c22e4922b6534cf68940ce4bbce08524f8a3dff7db6116c93174c3e20c",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/experiments/sparsegeo/e027a/dino_transfer.py": "cf51a0382734495a2535d42636aa5d3cd750f8b6527aa03560da59289bc3283b",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/experiments/sparsegeo/e045a/model.py": "8c9ef8632105700e52099e8dbceb5a1f232b876e0a049fa0cc1c0a271dbf3364"
+  },
+  "tf32": false,
+  "timing": "standalone C only after deleting original C reference; synchronized wall-clock network plus one official terminal LSR; excludes load, decode, H2D, validation, save and GT scoring",
+  "training": false,
+  "warmups": [
+    0,
+    211,
+    423
+  ]
+}

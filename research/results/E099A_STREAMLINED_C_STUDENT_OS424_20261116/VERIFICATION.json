@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "pairs": 424,
+  "standalone_timing_records": 424,
+  "dense_predictions_rehashed": 424,
+  "parameters": 319303309,
+  "c_cache_bitwise_equal_pairs": 424,
+  "instrumentation_output_change": 0,
+  "verification_environment": "zzvr configured Python; --verify-predictions; compact-state SHA256 rechecked"
+}

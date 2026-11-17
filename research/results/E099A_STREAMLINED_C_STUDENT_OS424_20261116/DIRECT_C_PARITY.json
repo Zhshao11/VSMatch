@@ -1,0 +1,41 @@
+[
+  {
+    "pair_index": 0,
+    "post": {
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "raw": {
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    }
+  },
+  {
+    "pair_index": 211,
+    "post": {
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "raw": {
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    }
+  },
+  {
+    "pair_index": 423,
+    "post": {
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "raw": {
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    }
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "groups": {
+    "descriptor_adapters": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 2956800,
+      "parameters": 739200
+    },
+    "dino": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 1217470464,
+      "parameters": 304367616
+    },
+    "matcher": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 56785972,
+      "parameters": 14196493
+    }
+  },
+  "matcher_direct_parameters": 1,
+  "matcher_groups": {
+    "context": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 4267392,
+      "parameters": 1066848
+    },
+    "film_projection": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 1577984,
+      "parameters": 394496
+    },
+    "flow_head": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 1199112,
+      "parameters": 299778
+    },
+    "gru": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 5901312,
+      "parameters": 1475328
+    },
+    "mask_head": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 1772800,
+      "parameters": 443200
+    },
+    "motion_encoder": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 3610616,
+      "parameters": 902654
+    },
+    "v1": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 19228376,
+      "parameters": 4807094
+    },
+    "v2": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 19228376,
+      "parameters": 4807094
+    }
+  },
+  "note": "Frozen inference flags are not an estimate of trainable capacity after retraining.",
+  "pruning": {
+    "counts": {
+      "correlation_pyramids": 2,
+      "dino_forwards": 2,
+      "external_fusion_gates": 0,
+      "feature_frontends": 2,
+      "internal_lsr": 0,
+      "levels_per_pyramid": 4,
+      "matchers": 1,
+      "terminal_lsr": 1
+    },
+    "frozen_descriptor_state_sha256": "394f6a0c4b0c28d7634ebe2e195f58bd26e4632de2802f9711c25a57953b5e6b",
+    "frozen_dino_state_sha256": "1278893826a0a3ea2a10ed04dfce55525bb40b2c596040a63a7fc85dd4de7548",
+    "method": "M4-streamlined-C-student",
+    "original_student": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 1353638080,
+      "parameters": 338409520
+    },
+    "removed": [
+      "B/F2 and B/F3",
+      "B and M4 external fusion gates",
+      "C teachers",
+      "nested unused updates/contexts",
+      "nonfinal masks and upsampling",
+      "unused F3 feature fusion and heads",
+      "unused diagnostics"
+    ],
+    "streamlined": {
+      "buffers_bytes": 648,
+      "parameter_bytes": 1277213236,
+      "parameters": 319303309
+    }
+  },
+  "requires_grad_parameters": 0,
+  "stats": {
+    "buffers_bytes": 648,
+    "parameter_bytes": 1277213236,
+    "parameters": 319303309
+  },
+  "top_level_children": [
+    "dino",
+    "descriptor_adapters",
+    "matcher"
+  ]
+}

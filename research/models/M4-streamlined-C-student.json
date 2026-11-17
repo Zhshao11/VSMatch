@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "name": "M4-streamlined-C-student",
+  "status": "validated_standalone_C_candidate",
+  "date": "2026-11-16",
+  "entry_point": {
+    "file": "research/remote_stage/os/m4_streamlined_c_student.py",
+    "class": "M4StreamlinedCStudent",
+    "sha256": "2630d4c22e4922b6534cf68940ce4bbce08524f8a3dff7db6116c93174c3e20c"
+  },
+  "source_checkpoint": {
+    "id": "os_e075a_m4_80k",
+    "prefix": "c.student.",
+    "sha256": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b"
+  },
+  "defaults": {
+    "matchers": 1,
+    "iterations": 32,
+    "feature_frontends": 2,
+    "correlation_pyramids": 2,
+    "levels_per_pyramid": 4,
+    "dino_forwards": 2,
+    "internal_lsr": 0,
+    "terminal_lsr": 1,
+    "input_shape": [
+      1,
+      3,
+      512,
+      512
+    ],
+    "fp32": true,
+    "tf32": false
+  },
+  "parameters": {
+    "buffers_bytes": 648,
+    "parameter_bytes": 1277213236,
+    "parameters": 319303309
+  },
+  "parameter_groups": {
+    "descriptor_adapters": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 2956800,
+      "parameters": 739200
+    },
+    "dino": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 1217470464,
+      "parameters": 304367616
+    },
+    "matcher": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 56785972,
+      "parameters": 14196493
+    }
+  },
+  "compact_state": {
+    "bytes": 1277449423,
+    "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-099A-STREAMLINED-C-STUDENT-OS424-20261116/M4-streamlined-C-student-state.pt",
+    "sha256": "c2d4f79b45ce190df48f52f588e40a7654fa6cce0a32da1bc0c32020b35636ad"
+  },
+  "mean_ms": 143.47578513163927,
+  "timing_scope": "E099 standalone C only, RTX5090 GPU3; not paired against full M4",
+  "metrics": {
+    "cmr@1": 69.5754716981132,
+    "cmr@10": 96.69811320754717,
+    "cmr@16": 98.82075471698113,
+    "cmr@2": 85.14150943396226,
+    "cmr@3": 88.20754716981132,
+    "cmr@4": 91.0377358490566,
+    "cmr@5": 92.9245283018868,
+    "failures_ge_1": 129,
+    "failures_ge_10": 14,
+    "failures_ge_16": 5,
+    "failures_ge_2": 63,
+    "failures_ge_3": 50,
+    "failures_ge_4": 38,
+    "failures_ge_5": 30,
+    "mean": 1.5929032519530013,
+    "p95": 7.185527253150927,
+    "p99": 18.401621389388968,
+    "pairs": 424,
+    "std": 3.0183636140113017,
+    "variance": 9.110518906387366
+  },
+  "evidence": "research/results/E099A_STREAMLINED_C_STUDENT_OS424_20261116/REPORT.md",
+  "replaces_default_M4_streamlined": false
+}

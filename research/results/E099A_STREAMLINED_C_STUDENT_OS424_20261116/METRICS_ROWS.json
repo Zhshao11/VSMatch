@@ -1,0 +1,2546 @@
+[
+  {
+    "pair_id": "000000",
+    "pair_index": 0,
+    "public_component": 1.6533691883087158,
+    "vector_epe": 2.851749897003174
+  },
+  {
+    "pair_id": "000001",
+    "pair_index": 1,
+    "public_component": 0.2356976419687271,
+    "vector_epe": 0.37815985083580017
+  },
+  {
+    "pair_id": "000002",
+    "pair_index": 2,
+    "public_component": 0.21624897420406342,
+    "vector_epe": 0.341839462518692
+  },
+  {
+    "pair_id": "000003",
+    "pair_index": 3,
+    "public_component": 1.2521781921386719,
+    "vector_epe": 2.1073405742645264
+  },
+  {
+    "pair_id": "000004",
+    "pair_index": 4,
+    "public_component": 0.2992338538169861,
+    "vector_epe": 0.5139479637145996
+  },
+  {
+    "pair_id": "000005",
+    "pair_index": 5,
+    "public_component": 0.29563894867897034,
+    "vector_epe": 0.5611546039581299
+  },
+  {
+    "pair_id": "000006",
+    "pair_index": 6,
+    "public_component": 0.3736708164215088,
+    "vector_epe": 0.5563719272613525
+  },
+  {
+    "pair_id": "000007",
+    "pair_index": 7,
+    "public_component": 0.2788310647010803,
+    "vector_epe": 0.4801882803440094
+  },
+  {
+    "pair_id": "000008",
+    "pair_index": 8,
+    "public_component": 0.5928320288658142,
+    "vector_epe": 0.9580436944961548
+  },
+  {
+    "pair_id": "000009",
+    "pair_index": 9,
+    "public_component": 0.33825141191482544,
+    "vector_epe": 0.5419099926948547
+  },
+  {
+    "pair_id": "000010",
+    "pair_index": 10,
+    "public_component": 0.4387500584125519,
+    "vector_epe": 0.6422345042228699
+  },
+  {
+    "pair_id": "000011",
+    "pair_index": 11,
+    "public_component": 1.1333626508712769,
+    "vector_epe": 1.684539556503296
+  },
+  {
+    "pair_id": "000012",
+    "pair_index": 12,
+    "public_component": 1.0246270895004272,
+    "vector_epe": 1.5381890535354614
+  },
+  {
+    "pair_id": "000013",
+    "pair_index": 13,
+    "public_component": 0.6406199336051941,
+    "vector_epe": 1.0021061897277832
+  },
+  {
+    "pair_id": "000014",
+    "pair_index": 14,
+    "public_component": 0.272026002407074,
+    "vector_epe": 0.4447493553161621
+  },
+  {
+    "pair_id": "000015",
+    "pair_index": 15,
+    "public_component": 0.5648244619369507,
+    "vector_epe": 0.8305180668830872
+  },
+  {
+    "pair_id": "000016",
+    "pair_index": 16,
+    "public_component": 4.6474080085754395,
+    "vector_epe": 7.561207294464111
+  },
+  {
+    "pair_id": "000017",
+    "pair_index": 17,
+    "public_component": 0.6304478049278259,
+    "vector_epe": 1.0670387744903564
+  },
+  {
+    "pair_id": "000018",
+    "pair_index": 18,
+    "public_component": 0.6574231386184692,
+    "vector_epe": 1.1819407939910889
+  },
+  {
+    "pair_id": "000019",
+    "pair_index": 19,
+    "public_component": 0.9177325367927551,
+    "vector_epe": 1.356445074081421
+  },
+  {
+    "pair_id": "000020",
+    "pair_index": 20,
+    "public_component": 0.7072723507881165,
+    "vector_epe": 1.317751169204712
+  },
+  {
+    "pair_id": "000021",
+    "pair_index": 21,
+    "public_component": 0.2149295061826706,
+    "vector_epe": 0.3476150631904602
+  },
+  {
+    "pair_id": "000022",
+    "pair_index": 22,
+    "public_component": 1.6363391876220703,
+    "vector_epe": 2.9295718669891357
+  },
+  {
+    "pair_id": "000023",
+    "pair_index": 23,
+    "public_component": 1.5546940565109253,
+    "vector_epe": 2.2534852027893066
+  },
+  {
+    "pair_id": "000024",
+    "pair_index": 24,
+    "public_component": 0.6823620200157166,
+    "vector_epe": 1.1122394800186157
+  },
+  {
+    "pair_id": "000025",
+    "pair_index": 25,
+    "public_component": 0.38420066237449646,
+    "vector_epe": 0.5586792230606079
+  },
+  {
+    "pair_id": "000026",
+    "pair_index": 26,
+    "public_component": 0.17565253376960754,
+    "vector_epe": 0.27229294180870056
+  },
+  {
+    "pair_id": "000027",
+    "pair_index": 27,
+    "public_component": 0.53776615858078,
+    "vector_epe": 0.8229125142097473
+  },
+  {
+    "pair_id": "000028",
+    "pair_index": 28,
+    "public_component": 3.260028839111328,
+    "vector_epe": 5.486969470977783
+  },
+  {
+    "pair_id": "000029",
+    "pair_index": 29,
+    "public_component": 0.8336578011512756,
+    "vector_epe": 1.35149347782135
+  },
+  {
+    "pair_id": "000030",
+    "pair_index": 30,
+    "public_component": 1.9003100395202637,
+    "vector_epe": 2.7970170974731445
+  },
+  {
+    "pair_id": "000031",
+    "pair_index": 31,
+    "public_component": 1.991166353225708,
+    "vector_epe": 3.068288803100586
+  },
+  {
+    "pair_id": "000032",
+    "pair_index": 32,
+    "public_component": 0.4106345474720001,
+    "vector_epe": 0.6110900044441223
+  },
+  {
+    "pair_id": "000033",
+    "pair_index": 33,
+    "public_component": 0.5269337892532349,
+    "vector_epe": 0.8874788880348206
+  },
+  {
+    "pair_id": "000034",
+    "pair_index": 34,
+    "public_component": 0.25059249997138977,
+    "vector_epe": 0.37161770462989807
+  },
+  {
+    "pair_id": "000035",
+    "pair_index": 35,
+    "public_component": 0.21163122355937958,
+    "vector_epe": 0.3863673210144043
+  },
+  {
+    "pair_id": "000036",
+    "pair_index": 36,
+    "public_component": 0.2525123655796051,
+    "vector_epe": 0.3710519075393677
+  },
+  {
+    "pair_id": "000037",
+    "pair_index": 37,
+    "public_component": 0.2898792326450348,
+    "vector_epe": 0.4757688343524933
+  },
+  {
+    "pair_id": "000038",
+    "pair_index": 38,
+    "public_component": 0.3900260627269745,
+    "vector_epe": 0.6094100475311279
+  },
+  {
+    "pair_id": "000039",
+    "pair_index": 39,
+    "public_component": 0.6551371216773987,
+    "vector_epe": 1.2154117822647095
+  },
+  {
+    "pair_id": "000040",
+    "pair_index": 40,
+    "public_component": 1.1991922855377197,
+    "vector_epe": 2.018660306930542
+  },
+  {
+    "pair_id": "000041",
+    "pair_index": 41,
+    "public_component": 0.8351088166236877,
+    "vector_epe": 1.326505184173584
+  },
+  {
+    "pair_id": "000042",
+    "pair_index": 42,
+    "public_component": 0.4376010596752167,
+    "vector_epe": 0.681203305721283
+  },
+  {
+    "pair_id": "000043",
+    "pair_index": 43,
+    "public_component": 1.0138044357299805,
+    "vector_epe": 1.5831646919250488
+  },
+  {
+    "pair_id": "000044",
+    "pair_index": 44,
+    "public_component": 0.7616289854049683,
+    "vector_epe": 1.2188454866409302
+  },
+  {
+    "pair_id": "000045",
+    "pair_index": 45,
+    "public_component": 0.23252473771572113,
+    "vector_epe": 0.3915272355079651
+  },
+  {
+    "pair_id": "000046",
+    "pair_index": 46,
+    "public_component": 0.6664087176322937,
+    "vector_epe": 1.0394434928894043
+  },
+  {
+    "pair_id": "000047",
+    "pair_index": 47,
+    "public_component": 0.21235698461532593,
+    "vector_epe": 0.3496282398700714
+  },
+  {
+    "pair_id": "000048",
+    "pair_index": 48,
+    "public_component": 0.13893920183181763,
+    "vector_epe": 0.21066203713417053
+  },
+  {
+    "pair_id": "000049",
+    "pair_index": 49,
+    "public_component": 0.26349467039108276,
+    "vector_epe": 0.43106913566589355
+  },
+  {
+    "pair_id": "000050",
+    "pair_index": 50,
+    "public_component": 0.4011057913303375,
+    "vector_epe": 0.6554805636405945
+  },
+  {
+    "pair_id": "000051",
+    "pair_index": 51,
+    "public_component": 0.17085282504558563,
+    "vector_epe": 0.24770231544971466
+  },
+  {
+    "pair_id": "000052",
+    "pair_index": 52,
+    "public_component": 0.4145413041114807,
+    "vector_epe": 0.8051486015319824
+  },
+  {
+    "pair_id": "000053",
+    "pair_index": 53,
+    "public_component": 0.3157476782798767,
+    "vector_epe": 0.5223392248153687
+  },
+  {
+    "pair_id": "000054",
+    "pair_index": 54,
+    "public_component": 0.4099504053592682,
+    "vector_epe": 0.6429129838943481
+  },
+  {
+    "pair_id": "000055",
+    "pair_index": 55,
+    "public_component": 1.5463736057281494,
+    "vector_epe": 2.2123990058898926
+  },
+  {
+    "pair_id": "000056",
+    "pair_index": 56,
+    "public_component": 0.8985517024993896,
+    "vector_epe": 1.4654338359832764
+  },
+  {
+    "pair_id": "000057",
+    "pair_index": 57,
+    "public_component": 5.759676933288574,
+    "vector_epe": 10.74808406829834
+  },
+  {
+    "pair_id": "000058",
+    "pair_index": 58,
+    "public_component": 0.17202429473400116,
+    "vector_epe": 0.2687362730503082
+  },
+  {
+    "pair_id": "000059",
+    "pair_index": 59,
+    "public_component": 0.7590492963790894,
+    "vector_epe": 1.2828011512756348
+  },
+  {
+    "pair_id": "000060",
+    "pair_index": 60,
+    "public_component": 0.2372448891401291,
+    "vector_epe": 0.365297794342041
+  },
+  {
+    "pair_id": "000061",
+    "pair_index": 61,
+    "public_component": 0.2664295434951782,
+    "vector_epe": 0.4090651869773865
+  },
+  {
+    "pair_id": "000062",
+    "pair_index": 62,
+    "public_component": 0.39550939202308655,
+    "vector_epe": 0.634792685508728
+  },
+  {
+    "pair_id": "000063",
+    "pair_index": 63,
+    "public_component": 0.7107604146003723,
+    "vector_epe": 1.07954740524292
+  },
+  {
+    "pair_id": "000064",
+    "pair_index": 64,
+    "public_component": 0.43810975551605225,
+    "vector_epe": 0.6813260316848755
+  },
+  {
+    "pair_id": "000065",
+    "pair_index": 65,
+    "public_component": 0.25395703315734863,
+    "vector_epe": 0.4377475678920746
+  },
+  {
+    "pair_id": "000066",
+    "pair_index": 66,
+    "public_component": 1.2433420419692993,
+    "vector_epe": 1.9500185251235962
+  },
+  {
+    "pair_id": "000067",
+    "pair_index": 67,
+    "public_component": 0.31298014521598816,
+    "vector_epe": 0.4674512445926666
+  },
+  {
+    "pair_id": "000068",
+    "pair_index": 68,
+    "public_component": 3.2149434089660645,
+    "vector_epe": 4.9060492515563965
+  },
+  {
+    "pair_id": "000069",
+    "pair_index": 69,
+    "public_component": 0.43820223212242126,
+    "vector_epe": 0.6691765189170837
+  },
+  {
+    "pair_id": "000070",
+    "pair_index": 70,
+    "public_component": 11.775370597839355,
+    "vector_epe": 17.962139129638672
+  },
+  {
+    "pair_id": "000071",
+    "pair_index": 71,
+    "public_component": 1.0588847398757935,
+    "vector_epe": 1.7003322839736938
+  },
+  {
+    "pair_id": "000072",
+    "pair_index": 72,
+    "public_component": 0.5752155780792236,
+    "vector_epe": 0.9004124402999878
+  },
+  {
+    "pair_id": "000073",
+    "pair_index": 73,
+    "public_component": 0.20964092016220093,
+    "vector_epe": 0.3423099219799042
+  },
+  {
+    "pair_id": "000074",
+    "pair_index": 74,
+    "public_component": 1.412216305732727,
+    "vector_epe": 2.3095474243164062
+  },
+  {
+    "pair_id": "000075",
+    "pair_index": 75,
+    "public_component": 1.1290967464447021,
+    "vector_epe": 1.7218329906463623
+  },
+  {
+    "pair_id": "000076",
+    "pair_index": 76,
+    "public_component": 0.9643242359161377,
+    "vector_epe": 1.6306564807891846
+  },
+  {
+    "pair_id": "000077",
+    "pair_index": 77,
+    "public_component": 0.48307695984840393,
+    "vector_epe": 0.7317016124725342
+  },
+  {
+    "pair_id": "000078",
+    "pair_index": 78,
+    "public_component": 1.4928221702575684,
+    "vector_epe": 2.3233799934387207
+  },
+  {
+    "pair_id": "000079",
+    "pair_index": 79,
+    "public_component": 0.9540475606918335,
+    "vector_epe": 1.3942842483520508
+  },
+  {
+    "pair_id": "000080",
+    "pair_index": 80,
+    "public_component": 0.39369216561317444,
+    "vector_epe": 0.6023826599121094
+  },
+  {
+    "pair_id": "000081",
+    "pair_index": 81,
+    "public_component": 1.0469944477081299,
+    "vector_epe": 1.5716952085494995
+  },
+  {
+    "pair_id": "000082",
+    "pair_index": 82,
+    "public_component": 0.2909747362136841,
+    "vector_epe": 0.5375133752822876
+  },
+  {
+    "pair_id": "000083",
+    "pair_index": 83,
+    "public_component": 0.3316153883934021,
+    "vector_epe": 0.5140947103500366
+  },
+  {
+    "pair_id": "000084",
+    "pair_index": 84,
+    "public_component": 1.2750910520553589,
+    "vector_epe": 2.1916091442108154
+  },
+  {
+    "pair_id": "000085",
+    "pair_index": 85,
+    "public_component": 0.6648849248886108,
+    "vector_epe": 1.0813729763031006
+  },
+  {
+    "pair_id": "000086",
+    "pair_index": 86,
+    "public_component": 0.4148031175136566,
+    "vector_epe": 0.7350190281867981
+  },
+  {
+    "pair_id": "000087",
+    "pair_index": 87,
+    "public_component": 0.7583052515983582,
+    "vector_epe": 1.0984379053115845
+  },
+  {
+    "pair_id": "000088",
+    "pair_index": 88,
+    "public_component": 0.6951361894607544,
+    "vector_epe": 1.196120023727417
+  },
+  {
+    "pair_id": "000089",
+    "pair_index": 89,
+    "public_component": 0.180073544383049,
+    "vector_epe": 0.30734339356422424
+  },
+  {
+    "pair_id": "000090",
+    "pair_index": 90,
+    "public_component": 1.26796293258667,
+    "vector_epe": 2.0960605144500732
+  },
+  {
+    "pair_id": "000091",
+    "pair_index": 91,
+    "public_component": 0.7391683459281921,
+    "vector_epe": 1.2282299995422363
+  },
+  {
+    "pair_id": "000092",
+    "pair_index": 92,
+    "public_component": 0.6750555634498596,
+    "vector_epe": 1.2504023313522339
+  },
+  {
+    "pair_id": "000093",
+    "pair_index": 93,
+    "public_component": 0.4622194170951843,
+    "vector_epe": 0.7150217890739441
+  },
+  {
+    "pair_id": "000094",
+    "pair_index": 94,
+    "public_component": 0.27895858883857727,
+    "vector_epe": 0.43686890602111816
+  },
+  {
+    "pair_id": "000095",
+    "pair_index": 95,
+    "public_component": 0.24330534040927887,
+    "vector_epe": 0.3900196850299835
+  },
+  {
+    "pair_id": "000096",
+    "pair_index": 96,
+    "public_component": 1.6285326480865479,
+    "vector_epe": 2.6750411987304688
+  },
+  {
+    "pair_id": "000097",
+    "pair_index": 97,
+    "public_component": 0.3181486427783966,
+    "vector_epe": 0.5554675459861755
+  },
+  {
+    "pair_id": "000098",
+    "pair_index": 98,
+    "public_component": 0.9633342027664185,
+    "vector_epe": 1.7002549171447754
+  },
+  {
+    "pair_id": "000099",
+    "pair_index": 99,
+    "public_component": 0.599570631980896,
+    "vector_epe": 1.0457972288131714
+  },
+  {
+    "pair_id": "000100",
+    "pair_index": 100,
+    "public_component": 1.1526012420654297,
+    "vector_epe": 1.7607671022415161
+  },
+  {
+    "pair_id": "000101",
+    "pair_index": 101,
+    "public_component": 10.568031311035156,
+    "vector_epe": 16.599079132080078
+  },
+  {
+    "pair_id": "000102",
+    "pair_index": 102,
+    "public_component": 0.8335602283477783,
+    "vector_epe": 1.4607632160186768
+  },
+  {
+    "pair_id": "000103",
+    "pair_index": 103,
+    "public_component": 0.5773171782493591,
+    "vector_epe": 0.8661978840827942
+  },
+  {
+    "pair_id": "000104",
+    "pair_index": 104,
+    "public_component": 1.1928361654281616,
+    "vector_epe": 1.8393248319625854
+  },
+  {
+    "pair_id": "000105",
+    "pair_index": 105,
+    "public_component": 0.5040075778961182,
+    "vector_epe": 0.7724197506904602
+  },
+  {
+    "pair_id": "000106",
+    "pair_index": 106,
+    "public_component": 3.3516287803649902,
+    "vector_epe": 5.327868938446045
+  },
+  {
+    "pair_id": "000107",
+    "pair_index": 107,
+    "public_component": 1.105656385421753,
+    "vector_epe": 1.7837954759597778
+  },
+  {
+    "pair_id": "000108",
+    "pair_index": 108,
+    "public_component": 0.5873547792434692,
+    "vector_epe": 0.97962886095047
+  },
+  {
+    "pair_id": "000109",
+    "pair_index": 109,
+    "public_component": 0.2550448775291443,
+    "vector_epe": 0.4165545105934143
+  },
+  {
+    "pair_id": "000110",
+    "pair_index": 110,
+    "public_component": 0.6972165107727051,
+    "vector_epe": 1.2471444606781006
+  },
+  {
+    "pair_id": "000111",
+    "pair_index": 111,
+    "public_component": 0.7107046246528625,
+    "vector_epe": 1.1192203760147095
+  },
+  {
+    "pair_id": "000112",
+    "pair_index": 112,
+    "public_component": 0.27090007066726685,
+    "vector_epe": 0.44647446274757385
+  },
+  {
+    "pair_id": "000113",
+    "pair_index": 113,
+    "public_component": 0.539111316204071,
+    "vector_epe": 0.8983868956565857
+  },
+  {
+    "pair_id": "000114",
+    "pair_index": 114,
+    "public_component": 1.0671898126602173,
+    "vector_epe": 1.61996328830719
+  },
+  {
+    "pair_id": "000115",
+    "pair_index": 115,
+    "public_component": 0.5775948762893677,
+    "vector_epe": 1.0696921348571777
+  },
+  {
+    "pair_id": "000116",
+    "pair_index": 116,
+    "public_component": 21.120763778686523,
+    "vector_epe": 32.75336837768555
+  },
+  {
+    "pair_id": "000117",
+    "pair_index": 117,
+    "public_component": 0.9127110838890076,
+    "vector_epe": 1.4805738925933838
+  },
+  {
+    "pair_id": "000118",
+    "pair_index": 118,
+    "public_component": 0.6429017186164856,
+    "vector_epe": 1.0958478450775146
+  },
+  {
+    "pair_id": "000119",
+    "pair_index": 119,
+    "public_component": 0.2534324824810028,
+    "vector_epe": 0.3737436532974243
+  },
+  {
+    "pair_id": "000120",
+    "pair_index": 120,
+    "public_component": 0.5207340121269226,
+    "vector_epe": 0.8257537484169006
+  },
+  {
+    "pair_id": "000121",
+    "pair_index": 121,
+    "public_component": 0.28084680438041687,
+    "vector_epe": 0.4508516490459442
+  },
+  {
+    "pair_id": "000122",
+    "pair_index": 122,
+    "public_component": 0.4704640805721283,
+    "vector_epe": 0.8129681348800659
+  },
+  {
+    "pair_id": "000123",
+    "pair_index": 123,
+    "public_component": 0.6742158532142639,
+    "vector_epe": 0.9934699535369873
+  },
+  {
+    "pair_id": "000124",
+    "pair_index": 124,
+    "public_component": 0.2982020676136017,
+    "vector_epe": 0.4673169255256653
+  },
+  {
+    "pair_id": "000125",
+    "pair_index": 125,
+    "public_component": 0.29692453145980835,
+    "vector_epe": 0.47935566306114197
+  },
+  {
+    "pair_id": "000126",
+    "pair_index": 126,
+    "public_component": 0.7404192090034485,
+    "vector_epe": 1.1736702919006348
+  },
+  {
+    "pair_id": "000127",
+    "pair_index": 127,
+    "public_component": 0.5438902378082275,
+    "vector_epe": 0.9167402982711792
+  },
+  {
+    "pair_id": "000128",
+    "pair_index": 128,
+    "public_component": 3.3747811317443848,
+    "vector_epe": 5.481005668640137
+  },
+  {
+    "pair_id": "000129",
+    "pair_index": 129,
+    "public_component": 0.3220248818397522,
+    "vector_epe": 0.49276915192604065
+  },
+  {
+    "pair_id": "000130",
+    "pair_index": 130,
+    "public_component": 0.25320881605148315,
+    "vector_epe": 0.4425310790538788
+  },
+  {
+    "pair_id": "000131",
+    "pair_index": 131,
+    "public_component": 3.367924928665161,
+    "vector_epe": 5.8529839515686035
+  },
+  {
+    "pair_id": "000132",
+    "pair_index": 132,
+    "public_component": 5.051477909088135,
+    "vector_epe": 8.914056777954102
+  },
+  {
+    "pair_id": "000133",
+    "pair_index": 133,
+    "public_component": 0.4589167535305023,
+    "vector_epe": 0.7106828093528748
+  },
+  {
+    "pair_id": "000134",
+    "pair_index": 134,
+    "public_component": 1.0456353425979614,
+    "vector_epe": 1.5288804769515991
+  },
+  {
+    "pair_id": "000135",
+    "pair_index": 135,
+    "public_component": 3.803501605987549,
+    "vector_epe": 6.070348739624023
+  },
+  {
+    "pair_id": "000136",
+    "pair_index": 136,
+    "public_component": 1.167075276374817,
+    "vector_epe": 1.7175192832946777
+  },
+  {
+    "pair_id": "000137",
+    "pair_index": 137,
+    "public_component": 1.538598656654358,
+    "vector_epe": 2.3385865688323975
+  },
+  {
+    "pair_id": "000138",
+    "pair_index": 138,
+    "public_component": 0.7517774701118469,
+    "vector_epe": 1.0961847305297852
+  },
+  {
+    "pair_id": "000139",
+    "pair_index": 139,
+    "public_component": 4.988737106323242,
+    "vector_epe": 9.29917049407959
+  },
+  {
+    "pair_id": "000140",
+    "pair_index": 140,
+    "public_component": 2.834897518157959,
+    "vector_epe": 4.1206440925598145
+  },
+  {
+    "pair_id": "000141",
+    "pair_index": 141,
+    "public_component": 0.22040607035160065,
+    "vector_epe": 0.3625352680683136
+  },
+  {
+    "pair_id": "000142",
+    "pair_index": 142,
+    "public_component": 4.528625965118408,
+    "vector_epe": 6.946955680847168
+  },
+  {
+    "pair_id": "000143",
+    "pair_index": 143,
+    "public_component": 1.4615432024002075,
+    "vector_epe": 2.191498041152954
+  },
+  {
+    "pair_id": "000144",
+    "pair_index": 144,
+    "public_component": 1.1938209533691406,
+    "vector_epe": 1.9784717559814453
+  },
+  {
+    "pair_id": "000145",
+    "pair_index": 145,
+    "public_component": 0.319553017616272,
+    "vector_epe": 0.5743687152862549
+  },
+  {
+    "pair_id": "000146",
+    "pair_index": 146,
+    "public_component": 0.263546884059906,
+    "vector_epe": 0.4033341705799103
+  },
+  {
+    "pair_id": "000147",
+    "pair_index": 147,
+    "public_component": 2.136991024017334,
+    "vector_epe": 3.146101951599121
+  },
+  {
+    "pair_id": "000148",
+    "pair_index": 148,
+    "public_component": 1.2309938669204712,
+    "vector_epe": 1.8345061540603638
+  },
+  {
+    "pair_id": "000149",
+    "pair_index": 149,
+    "public_component": 0.2634797692298889,
+    "vector_epe": 0.3969198167324066
+  },
+  {
+    "pair_id": "000150",
+    "pair_index": 150,
+    "public_component": 1.699293851852417,
+    "vector_epe": 2.8045289516448975
+  },
+  {
+    "pair_id": "000151",
+    "pair_index": 151,
+    "public_component": 0.9540592432022095,
+    "vector_epe": 1.6496007442474365
+  },
+  {
+    "pair_id": "000152",
+    "pair_index": 152,
+    "public_component": 0.12670990824699402,
+    "vector_epe": 0.19750180840492249
+  },
+  {
+    "pair_id": "000153",
+    "pair_index": 153,
+    "public_component": 0.7946900129318237,
+    "vector_epe": 1.3117858171463013
+  },
+  {
+    "pair_id": "000154",
+    "pair_index": 154,
+    "public_component": 0.6673048734664917,
+    "vector_epe": 1.0135679244995117
+  },
+  {
+    "pair_id": "000155",
+    "pair_index": 155,
+    "public_component": 4.401122570037842,
+    "vector_epe": 7.481028079986572
+  },
+  {
+    "pair_id": "000156",
+    "pair_index": 156,
+    "public_component": 0.27901166677474976,
+    "vector_epe": 0.4173358380794525
+  },
+  {
+    "pair_id": "000157",
+    "pair_index": 157,
+    "public_component": 0.24929365515708923,
+    "vector_epe": 0.415425568819046
+  },
+  {
+    "pair_id": "000158",
+    "pair_index": 158,
+    "public_component": 0.2322569638490677,
+    "vector_epe": 0.34150776267051697
+  },
+  {
+    "pair_id": "000159",
+    "pair_index": 159,
+    "public_component": 0.9287049174308777,
+    "vector_epe": 1.4363620281219482
+  },
+  {
+    "pair_id": "000160",
+    "pair_index": 160,
+    "public_component": 0.7610377073287964,
+    "vector_epe": 1.250921607017517
+  },
+  {
+    "pair_id": "000161",
+    "pair_index": 161,
+    "public_component": 0.32997557520866394,
+    "vector_epe": 0.5543824434280396
+  },
+  {
+    "pair_id": "000162",
+    "pair_index": 162,
+    "public_component": 0.25348961353302,
+    "vector_epe": 0.43479377031326294
+  },
+  {
+    "pair_id": "000163",
+    "pair_index": 163,
+    "public_component": 19.418962478637695,
+    "vector_epe": 30.124406814575195
+  },
+  {
+    "pair_id": "000164",
+    "pair_index": 164,
+    "public_component": 0.3560869097709656,
+    "vector_epe": 0.5356065034866333
+  },
+  {
+    "pair_id": "000165",
+    "pair_index": 165,
+    "public_component": 2.908334493637085,
+    "vector_epe": 4.944851875305176
+  },
+  {
+    "pair_id": "000166",
+    "pair_index": 166,
+    "public_component": 9.233390808105469,
+    "vector_epe": 16.69367218017578
+  },
+  {
+    "pair_id": "000167",
+    "pair_index": 167,
+    "public_component": 0.6619769334793091,
+    "vector_epe": 1.0397080183029175
+  },
+  {
+    "pair_id": "000168",
+    "pair_index": 168,
+    "public_component": 1.3097556829452515,
+    "vector_epe": 2.0510096549987793
+  },
+  {
+    "pair_id": "000169",
+    "pair_index": 169,
+    "public_component": 0.6658680438995361,
+    "vector_epe": 1.0159966945648193
+  },
+  {
+    "pair_id": "000170",
+    "pair_index": 170,
+    "public_component": 0.27564847469329834,
+    "vector_epe": 0.4423820972442627
+  },
+  {
+    "pair_id": "000171",
+    "pair_index": 171,
+    "public_component": 0.4451984763145447,
+    "vector_epe": 0.6900678277015686
+  },
+  {
+    "pair_id": "000172",
+    "pair_index": 172,
+    "public_component": 0.28664395213127136,
+    "vector_epe": 0.45282018184661865
+  },
+  {
+    "pair_id": "000173",
+    "pair_index": 173,
+    "public_component": 0.43756601214408875,
+    "vector_epe": 0.6803882122039795
+  },
+  {
+    "pair_id": "000174",
+    "pair_index": 174,
+    "public_component": 1.147093415260315,
+    "vector_epe": 1.7335894107818604
+  },
+  {
+    "pair_id": "000175",
+    "pair_index": 175,
+    "public_component": 0.8961667418479919,
+    "vector_epe": 1.2796409130096436
+  },
+  {
+    "pair_id": "000176",
+    "pair_index": 176,
+    "public_component": 13.962252616882324,
+    "vector_epe": 21.635921478271484
+  },
+  {
+    "pair_id": "000177",
+    "pair_index": 177,
+    "public_component": 0.2019403725862503,
+    "vector_epe": 0.3163064122200012
+  },
+  {
+    "pair_id": "000178",
+    "pair_index": 178,
+    "public_component": 1.0546684265136719,
+    "vector_epe": 1.8286690711975098
+  },
+  {
+    "pair_id": "000179",
+    "pair_index": 179,
+    "public_component": 3.5382280349731445,
+    "vector_epe": 5.9093098640441895
+  },
+  {
+    "pair_id": "000180",
+    "pair_index": 180,
+    "public_component": 0.5746163725852966,
+    "vector_epe": 1.094693660736084
+  },
+  {
+    "pair_id": "000181",
+    "pair_index": 181,
+    "public_component": 2.9191787242889404,
+    "vector_epe": 4.529880046844482
+  },
+  {
+    "pair_id": "000182",
+    "pair_index": 182,
+    "public_component": 1.2098808288574219,
+    "vector_epe": 1.9046908617019653
+  },
+  {
+    "pair_id": "000183",
+    "pair_index": 183,
+    "public_component": 0.3763788342475891,
+    "vector_epe": 0.6027897000312805
+  },
+  {
+    "pair_id": "000184",
+    "pair_index": 184,
+    "public_component": 1.17708158493042,
+    "vector_epe": 1.8281737565994263
+  },
+  {
+    "pair_id": "000185",
+    "pair_index": 185,
+    "public_component": 0.5681790113449097,
+    "vector_epe": 0.883454442024231
+  },
+  {
+    "pair_id": "000186",
+    "pair_index": 186,
+    "public_component": 0.6441961526870728,
+    "vector_epe": 1.056292176246643
+  },
+  {
+    "pair_id": "000187",
+    "pair_index": 187,
+    "public_component": 0.4517112672328949,
+    "vector_epe": 0.7831836342811584
+  },
+  {
+    "pair_id": "000188",
+    "pair_index": 188,
+    "public_component": 1.3056572675704956,
+    "vector_epe": 2.2142672538757324
+  },
+  {
+    "pair_id": "000189",
+    "pair_index": 189,
+    "public_component": 0.1873946338891983,
+    "vector_epe": 0.29415392875671387
+  },
+  {
+    "pair_id": "000190",
+    "pair_index": 190,
+    "public_component": 0.8489419221878052,
+    "vector_epe": 1.321097731590271
+  },
+  {
+    "pair_id": "000191",
+    "pair_index": 191,
+    "public_component": 7.57930850982666,
+    "vector_epe": 14.044121742248535
+  },
+  {
+    "pair_id": "000192",
+    "pair_index": 192,
+    "public_component": 6.839918613433838,
+    "vector_epe": 12.358637809753418
+  },
+  {
+    "pair_id": "000193",
+    "pair_index": 193,
+    "public_component": 0.23534148931503296,
+    "vector_epe": 0.3609294891357422
+  },
+  {
+    "pair_id": "000194",
+    "pair_index": 194,
+    "public_component": 2.0393261909484863,
+    "vector_epe": 3.1510705947875977
+  },
+  {
+    "pair_id": "000195",
+    "pair_index": 195,
+    "public_component": 0.8051424622535706,
+    "vector_epe": 1.2296247482299805
+  },
+  {
+    "pair_id": "000196",
+    "pair_index": 196,
+    "public_component": 1.045872688293457,
+    "vector_epe": 1.6229881048202515
+  },
+  {
+    "pair_id": "000197",
+    "pair_index": 197,
+    "public_component": 1.9968277215957642,
+    "vector_epe": 3.298957347869873
+  },
+  {
+    "pair_id": "000198",
+    "pair_index": 198,
+    "public_component": 0.6780246496200562,
+    "vector_epe": 1.1221394538879395
+  },
+  {
+    "pair_id": "000199",
+    "pair_index": 199,
+    "public_component": 0.4738270938396454,
+    "vector_epe": 0.7796104550361633
+  },
+  {
+    "pair_id": "000200",
+    "pair_index": 200,
+    "public_component": 0.537421464920044,
+    "vector_epe": 0.9676334857940674
+  },
+  {
+    "pair_id": "000201",
+    "pair_index": 201,
+    "public_component": 0.4260023236274719,
+    "vector_epe": 0.6312555074691772
+  },
+  {
+    "pair_id": "000202",
+    "pair_index": 202,
+    "public_component": 0.7238419651985168,
+    "vector_epe": 1.289033055305481
+  },
+  {
+    "pair_id": "000203",
+    "pair_index": 203,
+    "public_component": 0.906381368637085,
+    "vector_epe": 1.6425690650939941
+  },
+  {
+    "pair_id": "000204",
+    "pair_index": 204,
+    "public_component": 1.3982353210449219,
+    "vector_epe": 2.1974101066589355
+  },
+  {
+    "pair_id": "000205",
+    "pair_index": 205,
+    "public_component": 0.2830183207988739,
+    "vector_epe": 0.4929307997226715
+  },
+  {
+    "pair_id": "000206",
+    "pair_index": 206,
+    "public_component": 0.4746444821357727,
+    "vector_epe": 0.7313985824584961
+  },
+  {
+    "pair_id": "000207",
+    "pair_index": 207,
+    "public_component": 0.6266382336616516,
+    "vector_epe": 1.0262537002563477
+  },
+  {
+    "pair_id": "000208",
+    "pair_index": 208,
+    "public_component": 0.2161828577518463,
+    "vector_epe": 0.35608989000320435
+  },
+  {
+    "pair_id": "000209",
+    "pair_index": 209,
+    "public_component": 0.9539150595664978,
+    "vector_epe": 1.4796315431594849
+  },
+  {
+    "pair_id": "000210",
+    "pair_index": 210,
+    "public_component": 0.53401780128479,
+    "vector_epe": 0.7892835140228271
+  },
+  {
+    "pair_id": "000211",
+    "pair_index": 211,
+    "public_component": 0.5104188919067383,
+    "vector_epe": 0.8013793230056763
+  },
+  {
+    "pair_id": "000212",
+    "pair_index": 212,
+    "public_component": 0.4466163218021393,
+    "vector_epe": 0.7019780874252319
+  },
+  {
+    "pair_id": "000213",
+    "pair_index": 213,
+    "public_component": 12.558120727539062,
+    "vector_epe": 19.94385528564453
+  },
+  {
+    "pair_id": "000214",
+    "pair_index": 214,
+    "public_component": 1.9058566093444824,
+    "vector_epe": 2.911487102508545
+  },
+  {
+    "pair_id": "000215",
+    "pair_index": 215,
+    "public_component": 0.5765246748924255,
+    "vector_epe": 0.8709845542907715
+  },
+  {
+    "pair_id": "000216",
+    "pair_index": 216,
+    "public_component": 0.2823098301887512,
+    "vector_epe": 0.44048872590065
+  },
+  {
+    "pair_id": "000217",
+    "pair_index": 217,
+    "public_component": 0.530617892742157,
+    "vector_epe": 0.8704913854598999
+  },
+  {
+    "pair_id": "000218",
+    "pair_index": 218,
+    "public_component": 0.6506452560424805,
+    "vector_epe": 1.0000718832015991
+  },
+  {
+    "pair_id": "000219",
+    "pair_index": 219,
+    "public_component": 3.4445276260375977,
+    "vector_epe": 5.476531505584717
+  },
+  {
+    "pair_id": "000220",
+    "pair_index": 220,
+    "public_component": 2.4291207790374756,
+    "vector_epe": 3.7016654014587402
+  },
+  {
+    "pair_id": "000221",
+    "pair_index": 221,
+    "public_component": 0.9926169514656067,
+    "vector_epe": 1.5098772048950195
+  },
+  {
+    "pair_id": "000222",
+    "pair_index": 222,
+    "public_component": 0.24989928305149078,
+    "vector_epe": 0.3893345892429352
+  },
+  {
+    "pair_id": "000223",
+    "pair_index": 223,
+    "public_component": 2.6354198455810547,
+    "vector_epe": 4.354323863983154
+  },
+  {
+    "pair_id": "000224",
+    "pair_index": 224,
+    "public_component": 0.4048502743244171,
+    "vector_epe": 0.6449559926986694
+  },
+  {
+    "pair_id": "000225",
+    "pair_index": 225,
+    "public_component": 0.5384731292724609,
+    "vector_epe": 0.8187556862831116
+  },
+  {
+    "pair_id": "000226",
+    "pair_index": 226,
+    "public_component": 0.39049822092056274,
+    "vector_epe": 0.5827650427818298
+  },
+  {
+    "pair_id": "000227",
+    "pair_index": 227,
+    "public_component": 0.8431446552276611,
+    "vector_epe": 1.3816477060317993
+  },
+  {
+    "pair_id": "000228",
+    "pair_index": 228,
+    "public_component": 0.31166714429855347,
+    "vector_epe": 0.4526512324810028
+  },
+  {
+    "pair_id": "000229",
+    "pair_index": 229,
+    "public_component": 0.9159064888954163,
+    "vector_epe": 1.6031310558319092
+  },
+  {
+    "pair_id": "000230",
+    "pair_index": 230,
+    "public_component": 0.412440687417984,
+    "vector_epe": 0.6599348187446594
+  },
+  {
+    "pair_id": "000231",
+    "pair_index": 231,
+    "public_component": 0.2018352746963501,
+    "vector_epe": 0.3129173517227173
+  },
+  {
+    "pair_id": "000232",
+    "pair_index": 232,
+    "public_component": 0.25998079776763916,
+    "vector_epe": 0.39702704548835754
+  },
+  {
+    "pair_id": "000233",
+    "pair_index": 233,
+    "public_component": 1.1685065031051636,
+    "vector_epe": 1.9832885265350342
+  },
+  {
+    "pair_id": "000234",
+    "pair_index": 234,
+    "public_component": 1.2234523296356201,
+    "vector_epe": 1.967998743057251
+  },
+  {
+    "pair_id": "000235",
+    "pair_index": 235,
+    "public_component": 0.6616703867912292,
+    "vector_epe": 1.1712325811386108
+  },
+  {
+    "pair_id": "000236",
+    "pair_index": 236,
+    "public_component": 0.5950502157211304,
+    "vector_epe": 1.0354443788528442
+  },
+  {
+    "pair_id": "000237",
+    "pair_index": 237,
+    "public_component": 0.9447928667068481,
+    "vector_epe": 1.3719065189361572
+  },
+  {
+    "pair_id": "000238",
+    "pair_index": 238,
+    "public_component": 0.4690554738044739,
+    "vector_epe": 0.8101539611816406
+  },
+  {
+    "pair_id": "000239",
+    "pair_index": 239,
+    "public_component": 1.3720791339874268,
+    "vector_epe": 2.294177770614624
+  },
+  {
+    "pair_id": "000240",
+    "pair_index": 240,
+    "public_component": 0.33384570479393005,
+    "vector_epe": 0.5624863505363464
+  },
+  {
+    "pair_id": "000241",
+    "pair_index": 241,
+    "public_component": 19.271942138671875,
+    "vector_epe": 29.81844139099121
+  },
+  {
+    "pair_id": "000242",
+    "pair_index": 242,
+    "public_component": 0.5265377163887024,
+    "vector_epe": 0.8371677398681641
+  },
+  {
+    "pair_id": "000243",
+    "pair_index": 243,
+    "public_component": 0.46031448245048523,
+    "vector_epe": 0.7085884809494019
+  },
+  {
+    "pair_id": "000244",
+    "pair_index": 244,
+    "public_component": 6.863677024841309,
+    "vector_epe": 10.787375450134277
+  },
+  {
+    "pair_id": "000245",
+    "pair_index": 245,
+    "public_component": 0.3852904736995697,
+    "vector_epe": 0.5931459665298462
+  },
+  {
+    "pair_id": "000246",
+    "pair_index": 246,
+    "public_component": 1.3228100538253784,
+    "vector_epe": 1.9949138164520264
+  },
+  {
+    "pair_id": "000247",
+    "pair_index": 247,
+    "public_component": 1.5221037864685059,
+    "vector_epe": 2.4211089611053467
+  },
+  {
+    "pair_id": "000248",
+    "pair_index": 248,
+    "public_component": 0.18074534833431244,
+    "vector_epe": 0.29101070761680603
+  },
+  {
+    "pair_id": "000249",
+    "pair_index": 249,
+    "public_component": 0.6398278474807739,
+    "vector_epe": 1.0822772979736328
+  },
+  {
+    "pair_id": "000250",
+    "pair_index": 250,
+    "public_component": 0.317493736743927,
+    "vector_epe": 0.5369994044303894
+  },
+  {
+    "pair_id": "000251",
+    "pair_index": 251,
+    "public_component": 0.653210461139679,
+    "vector_epe": 1.0996651649475098
+  },
+  {
+    "pair_id": "000252",
+    "pair_index": 252,
+    "public_component": 0.1813395470380783,
+    "vector_epe": 0.29230761528015137
+  },
+  {
+    "pair_id": "000253",
+    "pair_index": 253,
+    "public_component": 1.9918559789657593,
+    "vector_epe": 3.2064952850341797
+  },
+  {
+    "pair_id": "000254",
+    "pair_index": 254,
+    "public_component": 0.7199989557266235,
+    "vector_epe": 1.3310904502868652
+  },
+  {
+    "pair_id": "000255",
+    "pair_index": 255,
+    "public_component": 0.4713081121444702,
+    "vector_epe": 0.6757681369781494
+  },
+  {
+    "pair_id": "000256",
+    "pair_index": 256,
+    "public_component": 2.002509355545044,
+    "vector_epe": 2.9587061405181885
+  },
+  {
+    "pair_id": "000257",
+    "pair_index": 257,
+    "public_component": 2.467869281768799,
+    "vector_epe": 3.871117353439331
+  },
+  {
+    "pair_id": "000258",
+    "pair_index": 258,
+    "public_component": 0.4880293011665344,
+    "vector_epe": 0.8007121086120605
+  },
+  {
+    "pair_id": "000259",
+    "pair_index": 259,
+    "public_component": 14.654035568237305,
+    "vector_epe": 22.623031616210938
+  },
+  {
+    "pair_id": "000260",
+    "pair_index": 260,
+    "public_component": 0.20045936107635498,
+    "vector_epe": 0.31873103976249695
+  },
+  {
+    "pair_id": "000261",
+    "pair_index": 261,
+    "public_component": 0.790799617767334,
+    "vector_epe": 1.2721072435379028
+  },
+  {
+    "pair_id": "000262",
+    "pair_index": 262,
+    "public_component": 1.0673549175262451,
+    "vector_epe": 1.6128010749816895
+  },
+  {
+    "pair_id": "000263",
+    "pair_index": 263,
+    "public_component": 20.564315795898438,
+    "vector_epe": 31.46562957763672
+  },
+  {
+    "pair_id": "000264",
+    "pair_index": 264,
+    "public_component": 0.6809536218643188,
+    "vector_epe": 1.0151801109313965
+  },
+  {
+    "pair_id": "000265",
+    "pair_index": 265,
+    "public_component": 0.7461945414543152,
+    "vector_epe": 1.3751882314682007
+  },
+  {
+    "pair_id": "000266",
+    "pair_index": 266,
+    "public_component": 0.6702800393104553,
+    "vector_epe": 1.095090389251709
+  },
+  {
+    "pair_id": "000267",
+    "pair_index": 267,
+    "public_component": 0.7489430904388428,
+    "vector_epe": 1.2577077150344849
+  },
+  {
+    "pair_id": "000268",
+    "pair_index": 268,
+    "public_component": 0.5475268363952637,
+    "vector_epe": 0.832031786441803
+  },
+  {
+    "pair_id": "000269",
+    "pair_index": 269,
+    "public_component": 0.21252644062042236,
+    "vector_epe": 0.3685656785964966
+  },
+  {
+    "pair_id": "000270",
+    "pair_index": 270,
+    "public_component": 1.1428258419036865,
+    "vector_epe": 1.7726765871047974
+  },
+  {
+    "pair_id": "000271",
+    "pair_index": 271,
+    "public_component": 0.8893616199493408,
+    "vector_epe": 1.3756554126739502
+  },
+  {
+    "pair_id": "000272",
+    "pair_index": 272,
+    "public_component": 0.9046728610992432,
+    "vector_epe": 1.3330448865890503
+  },
+  {
+    "pair_id": "000273",
+    "pair_index": 273,
+    "public_component": 0.2939905822277069,
+    "vector_epe": 0.4356178045272827
+  },
+  {
+    "pair_id": "000274",
+    "pair_index": 274,
+    "public_component": 0.6124870181083679,
+    "vector_epe": 0.9376896619796753
+  },
+  {
+    "pair_id": "000275",
+    "pair_index": 275,
+    "public_component": 3.3595030307769775,
+    "vector_epe": 5.749449729919434
+  },
+  {
+    "pair_id": "000276",
+    "pair_index": 276,
+    "public_component": 0.9015100598335266,
+    "vector_epe": 1.413365364074707
+  },
+  {
+    "pair_id": "000277",
+    "pair_index": 277,
+    "public_component": 0.33705753087997437,
+    "vector_epe": 0.5387967228889465
+  },
+  {
+    "pair_id": "000278",
+    "pair_index": 278,
+    "public_component": 4.764214038848877,
+    "vector_epe": 8.609339714050293
+  },
+  {
+    "pair_id": "000279",
+    "pair_index": 279,
+    "public_component": 20.326087951660156,
+    "vector_epe": 31.114456176757812
+  },
+  {
+    "pair_id": "000280",
+    "pair_index": 280,
+    "public_component": 15.48793888092041,
+    "vector_epe": 24.238338470458984
+  },
+  {
+    "pair_id": "000281",
+    "pair_index": 281,
+    "public_component": 0.7504120469093323,
+    "vector_epe": 1.2450759410858154
+  },
+  {
+    "pair_id": "000282",
+    "pair_index": 282,
+    "public_component": 0.570850670337677,
+    "vector_epe": 0.9560103416442871
+  },
+  {
+    "pair_id": "000283",
+    "pair_index": 283,
+    "public_component": 0.25677990913391113,
+    "vector_epe": 0.4276854693889618
+  },
+  {
+    "pair_id": "000284",
+    "pair_index": 284,
+    "public_component": 0.3324005603790283,
+    "vector_epe": 0.4929980933666229
+  },
+  {
+    "pair_id": "000285",
+    "pair_index": 285,
+    "public_component": 0.5155044794082642,
+    "vector_epe": 0.7923577427864075
+  },
+  {
+    "pair_id": "000286",
+    "pair_index": 286,
+    "public_component": 0.45213550329208374,
+    "vector_epe": 0.7434423565864563
+  },
+  {
+    "pair_id": "000287",
+    "pair_index": 287,
+    "public_component": 0.3533390760421753,
+    "vector_epe": 0.5400819778442383
+  },
+  {
+    "pair_id": "000288",
+    "pair_index": 288,
+    "public_component": 0.4502071738243103,
+    "vector_epe": 0.669129490852356
+  },
+  {
+    "pair_id": "000289",
+    "pair_index": 289,
+    "public_component": 0.5921090841293335,
+    "vector_epe": 0.9438297152519226
+  },
+  {
+    "pair_id": "000290",
+    "pair_index": 290,
+    "public_component": 0.14899002015590668,
+    "vector_epe": 0.22047118842601776
+  },
+  {
+    "pair_id": "000291",
+    "pair_index": 291,
+    "public_component": 0.4588322639465332,
+    "vector_epe": 0.6870642900466919
+  },
+  {
+    "pair_id": "000292",
+    "pair_index": 292,
+    "public_component": 0.9188187718391418,
+    "vector_epe": 1.4461994171142578
+  },
+  {
+    "pair_id": "000293",
+    "pair_index": 293,
+    "public_component": 1.8370788097381592,
+    "vector_epe": 2.7687034606933594
+  },
+  {
+    "pair_id": "000294",
+    "pair_index": 294,
+    "public_component": 5.819140434265137,
+    "vector_epe": 9.272294998168945
+  },
+  {
+    "pair_id": "000295",
+    "pair_index": 295,
+    "public_component": 0.8175860047340393,
+    "vector_epe": 1.310509204864502
+  },
+  {
+    "pair_id": "000296",
+    "pair_index": 296,
+    "public_component": 0.5066906809806824,
+    "vector_epe": 0.9697489738464355
+  },
+  {
+    "pair_id": "000297",
+    "pair_index": 297,
+    "public_component": 0.4655912518501282,
+    "vector_epe": 0.7367665767669678
+  },
+  {
+    "pair_id": "000298",
+    "pair_index": 298,
+    "public_component": 0.4263315796852112,
+    "vector_epe": 0.6763571500778198
+  },
+  {
+    "pair_id": "000299",
+    "pair_index": 299,
+    "public_component": 0.7929081320762634,
+    "vector_epe": 1.3587894439697266
+  },
+  {
+    "pair_id": "000300",
+    "pair_index": 300,
+    "public_component": 0.1780148148536682,
+    "vector_epe": 0.29452410340309143
+  },
+  {
+    "pair_id": "000301",
+    "pair_index": 301,
+    "public_component": 0.3738762438297272,
+    "vector_epe": 0.5968605279922485
+  },
+  {
+    "pair_id": "000302",
+    "pair_index": 302,
+    "public_component": 0.5783748626708984,
+    "vector_epe": 0.9062191247940063
+  },
+  {
+    "pair_id": "000303",
+    "pair_index": 303,
+    "public_component": 0.22173477709293365,
+    "vector_epe": 0.3480331301689148
+  },
+  {
+    "pair_id": "000304",
+    "pair_index": 304,
+    "public_component": 3.414668083190918,
+    "vector_epe": 5.105065822601318
+  },
+  {
+    "pair_id": "000305",
+    "pair_index": 305,
+    "public_component": 0.2372787594795227,
+    "vector_epe": 0.36025556921958923
+  },
+  {
+    "pair_id": "000306",
+    "pair_index": 306,
+    "public_component": 0.9559003114700317,
+    "vector_epe": 1.535523533821106
+  },
+  {
+    "pair_id": "000307",
+    "pair_index": 307,
+    "public_component": 1.1509321928024292,
+    "vector_epe": 1.783302664756775
+  },
+  {
+    "pair_id": "000308",
+    "pair_index": 308,
+    "public_component": 0.5242160558700562,
+    "vector_epe": 0.8077786564826965
+  },
+  {
+    "pair_id": "000309",
+    "pair_index": 309,
+    "public_component": 0.3246275782585144,
+    "vector_epe": 0.5081610083580017
+  },
+  {
+    "pair_id": "000310",
+    "pair_index": 310,
+    "public_component": 0.7694499492645264,
+    "vector_epe": 1.2570955753326416
+  },
+  {
+    "pair_id": "000311",
+    "pair_index": 311,
+    "public_component": 8.105541229248047,
+    "vector_epe": 14.753095626831055
+  },
+  {
+    "pair_id": "000312",
+    "pair_index": 312,
+    "public_component": 0.1802866905927658,
+    "vector_epe": 0.25788307189941406
+  },
+  {
+    "pair_id": "000313",
+    "pair_index": 313,
+    "public_component": 2.3332409858703613,
+    "vector_epe": 4.042861461639404
+  },
+  {
+    "pair_id": "000314",
+    "pair_index": 314,
+    "public_component": 0.927849531173706,
+    "vector_epe": 1.4181029796600342
+  },
+  {
+    "pair_id": "000315",
+    "pair_index": 315,
+    "public_component": 0.39621400833129883,
+    "vector_epe": 0.6810500621795654
+  },
+  {
+    "pair_id": "000316",
+    "pair_index": 316,
+    "public_component": 7.242324352264404,
+    "vector_epe": 11.320889472961426
+  },
+  {
+    "pair_id": "000317",
+    "pair_index": 317,
+    "public_component": 0.8361566066741943,
+    "vector_epe": 1.2333869934082031
+  },
+  {
+    "pair_id": "000318",
+    "pair_index": 318,
+    "public_component": 0.3292596638202667,
+    "vector_epe": 0.5527631044387817
+  },
+  {
+    "pair_id": "000319",
+    "pair_index": 319,
+    "public_component": 0.9526368379592896,
+    "vector_epe": 1.4871248006820679
+  },
+  {
+    "pair_id": "000320",
+    "pair_index": 320,
+    "public_component": 0.5865453481674194,
+    "vector_epe": 0.9363994598388672
+  },
+  {
+    "pair_id": "000321",
+    "pair_index": 321,
+    "public_component": 0.5908196568489075,
+    "vector_epe": 1.0767674446105957
+  },
+  {
+    "pair_id": "000322",
+    "pair_index": 322,
+    "public_component": 0.32131531834602356,
+    "vector_epe": 0.5075979828834534
+  },
+  {
+    "pair_id": "000323",
+    "pair_index": 323,
+    "public_component": 0.31920862197875977,
+    "vector_epe": 0.4965307414531708
+  },
+  {
+    "pair_id": "000324",
+    "pair_index": 324,
+    "public_component": 1.0138607025146484,
+    "vector_epe": 1.554582118988037
+  },
+  {
+    "pair_id": "000325",
+    "pair_index": 325,
+    "public_component": 0.481466680765152,
+    "vector_epe": 0.7860593199729919
+  },
+  {
+    "pair_id": "000326",
+    "pair_index": 326,
+    "public_component": 0.8085704445838928,
+    "vector_epe": 1.279445767402649
+  },
+  {
+    "pair_id": "000327",
+    "pair_index": 327,
+    "public_component": 0.31423497200012207,
+    "vector_epe": 0.5072860717773438
+  },
+  {
+    "pair_id": "000328",
+    "pair_index": 328,
+    "public_component": 0.32440489530563354,
+    "vector_epe": 0.5004618763923645
+  },
+  {
+    "pair_id": "000329",
+    "pair_index": 329,
+    "public_component": 11.341789245605469,
+    "vector_epe": 17.82857894897461
+  },
+  {
+    "pair_id": "000330",
+    "pair_index": 330,
+    "public_component": 0.27257534861564636,
+    "vector_epe": 0.42924588918685913
+  },
+  {
+    "pair_id": "000331",
+    "pair_index": 331,
+    "public_component": 0.8387128114700317,
+    "vector_epe": 1.335551142692566
+  },
+  {
+    "pair_id": "000332",
+    "pair_index": 332,
+    "public_component": 0.789266049861908,
+    "vector_epe": 1.3659684658050537
+  },
+  {
+    "pair_id": "000333",
+    "pair_index": 333,
+    "public_component": 0.6985880732536316,
+    "vector_epe": 1.0937539339065552
+  },
+  {
+    "pair_id": "000334",
+    "pair_index": 334,
+    "public_component": 0.7581201195716858,
+    "vector_epe": 1.258892297744751
+  },
+  {
+    "pair_id": "000335",
+    "pair_index": 335,
+    "public_component": 1.2971001863479614,
+    "vector_epe": 1.9701228141784668
+  },
+  {
+    "pair_id": "000336",
+    "pair_index": 336,
+    "public_component": 1.0521769523620605,
+    "vector_epe": 1.5571696758270264
+  },
+  {
+    "pair_id": "000337",
+    "pair_index": 337,
+    "public_component": 0.3023988902568817,
+    "vector_epe": 0.4728924632072449
+  },
+  {
+    "pair_id": "000338",
+    "pair_index": 338,
+    "public_component": 0.31745100021362305,
+    "vector_epe": 0.5110105276107788
+  },
+  {
+    "pair_id": "000339",
+    "pair_index": 339,
+    "public_component": 10.581830978393555,
+    "vector_epe": 15.156763076782227
+  },
+  {
+    "pair_id": "000340",
+    "pair_index": 340,
+    "public_component": 5.901697635650635,
+    "vector_epe": 9.108712196350098
+  },
+  {
+    "pair_id": "000341",
+    "pair_index": 341,
+    "public_component": 0.36932572722435,
+    "vector_epe": 0.593146800994873
+  },
+  {
+    "pair_id": "000342",
+    "pair_index": 342,
+    "public_component": 0.3305179476737976,
+    "vector_epe": 0.5231069922447205
+  },
+  {
+    "pair_id": "000343",
+    "pair_index": 343,
+    "public_component": 0.7041274309158325,
+    "vector_epe": 1.152449369430542
+  },
+  {
+    "pair_id": "000344",
+    "pair_index": 344,
+    "public_component": 4.018435478210449,
+    "vector_epe": 6.935214042663574
+  },
+  {
+    "pair_id": "000345",
+    "pair_index": 345,
+    "public_component": 0.2832735478878021,
+    "vector_epe": 0.43864473700523376
+  },
+  {
+    "pair_id": "000346",
+    "pair_index": 346,
+    "public_component": 1.1515171527862549,
+    "vector_epe": 1.7952699661254883
+  },
+  {
+    "pair_id": "000347",
+    "pair_index": 347,
+    "public_component": 0.5025006532669067,
+    "vector_epe": 0.803192675113678
+  },
+  {
+    "pair_id": "000348",
+    "pair_index": 348,
+    "public_component": 0.9516662359237671,
+    "vector_epe": 1.6238139867782593
+  },
+  {
+    "pair_id": "000349",
+    "pair_index": 349,
+    "public_component": 1.1593129634857178,
+    "vector_epe": 2.1623642444610596
+  },
+  {
+    "pair_id": "000350",
+    "pair_index": 350,
+    "public_component": 0.5923025608062744,
+    "vector_epe": 0.850265622138977
+  },
+  {
+    "pair_id": "000351",
+    "pair_index": 351,
+    "public_component": 0.5811412930488586,
+    "vector_epe": 1.001110553741455
+  },
+  {
+    "pair_id": "000352",
+    "pair_index": 352,
+    "public_component": 1.1170238256454468,
+    "vector_epe": 1.7764437198638916
+  },
+  {
+    "pair_id": "000353",
+    "pair_index": 353,
+    "public_component": 8.084203720092773,
+    "vector_epe": 14.502570152282715
+  },
+  {
+    "pair_id": "000354",
+    "pair_index": 354,
+    "public_component": 0.8775582313537598,
+    "vector_epe": 1.3344871997833252
+  },
+  {
+    "pair_id": "000355",
+    "pair_index": 355,
+    "public_component": 0.5392811894416809,
+    "vector_epe": 0.8145750761032104
+  },
+  {
+    "pair_id": "000356",
+    "pair_index": 356,
+    "public_component": 0.7233031988143921,
+    "vector_epe": 1.1234792470932007
+  },
+  {
+    "pair_id": "000357",
+    "pair_index": 357,
+    "public_component": 3.8898677825927734,
+    "vector_epe": 6.78929328918457
+  },
+  {
+    "pair_id": "000358",
+    "pair_index": 358,
+    "public_component": 5.112336158752441,
+    "vector_epe": 7.832390308380127
+  },
+  {
+    "pair_id": "000359",
+    "pair_index": 359,
+    "public_component": 0.9942800998687744,
+    "vector_epe": 1.5671180486679077
+  },
+  {
+    "pair_id": "000360",
+    "pair_index": 360,
+    "public_component": 0.6919884085655212,
+    "vector_epe": 1.2652068138122559
+  },
+  {
+    "pair_id": "000361",
+    "pair_index": 361,
+    "public_component": 1.0435657501220703,
+    "vector_epe": 1.6197688579559326
+  },
+  {
+    "pair_id": "000362",
+    "pair_index": 362,
+    "public_component": 0.5889871716499329,
+    "vector_epe": 0.9786661863327026
+  },
+  {
+    "pair_id": "000363",
+    "pair_index": 363,
+    "public_component": 7.864238739013672,
+    "vector_epe": 12.369173049926758
+  },
+  {
+    "pair_id": "000364",
+    "pair_index": 364,
+    "public_component": 2.674630641937256,
+    "vector_epe": 4.261043071746826
+  },
+  {
+    "pair_id": "000365",
+    "pair_index": 365,
+    "public_component": 0.9331570267677307,
+    "vector_epe": 1.581530213356018
+  },
+  {
+    "pair_id": "000366",
+    "pair_index": 366,
+    "public_component": 0.39840659499168396,
+    "vector_epe": 0.5815303325653076
+  },
+  {
+    "pair_id": "000367",
+    "pair_index": 367,
+    "public_component": 0.25597891211509705,
+    "vector_epe": 0.40933144092559814
+  },
+  {
+    "pair_id": "000368",
+    "pair_index": 368,
+    "public_component": 0.5039665102958679,
+    "vector_epe": 0.7640424966812134
+  },
+  {
+    "pair_id": "000369",
+    "pair_index": 369,
+    "public_component": 0.5596297979354858,
+    "vector_epe": 0.8075441122055054
+  },
+  {
+    "pair_id": "000370",
+    "pair_index": 370,
+    "public_component": 0.15970245003700256,
+    "vector_epe": 0.23188342154026031
+  },
+  {
+    "pair_id": "000371",
+    "pair_index": 371,
+    "public_component": 0.6305719017982483,
+    "vector_epe": 1.2056032419204712
+  },
+  {
+    "pair_id": "000372",
+    "pair_index": 372,
+    "public_component": 0.9218723177909851,
+    "vector_epe": 1.4396417140960693
+  },
+  {
+    "pair_id": "000373",
+    "pair_index": 373,
+    "public_component": 3.1651034355163574,
+    "vector_epe": 5.253086090087891
+  },
+  {
+    "pair_id": "000374",
+    "pair_index": 374,
+    "public_component": 0.8403059244155884,
+    "vector_epe": 1.5136064291000366
+  },
+  {
+    "pair_id": "000375",
+    "pair_index": 375,
+    "public_component": 2.8171534538269043,
+    "vector_epe": 4.563955783843994
+  },
+  {
+    "pair_id": "000376",
+    "pair_index": 376,
+    "public_component": 0.7069178819656372,
+    "vector_epe": 1.0660284757614136
+  },
+  {
+    "pair_id": "000377",
+    "pair_index": 377,
+    "public_component": 1.2399253845214844,
+    "vector_epe": 2.1648662090301514
+  },
+  {
+    "pair_id": "000378",
+    "pair_index": 378,
+    "public_component": 1.1641159057617188,
+    "vector_epe": 1.7446129322052002
+  },
+  {
+    "pair_id": "000379",
+    "pair_index": 379,
+    "public_component": 8.321651458740234,
+    "vector_epe": 15.732443809509277
+  },
+  {
+    "pair_id": "000380",
+    "pair_index": 380,
+    "public_component": 13.973423957824707,
+    "vector_epe": 22.085742950439453
+  },
+  {
+    "pair_id": "000381",
+    "pair_index": 381,
+    "public_component": 0.4775650203227997,
+    "vector_epe": 0.7537997961044312
+  },
+  {
+    "pair_id": "000382",
+    "pair_index": 382,
+    "public_component": 0.7750944495201111,
+    "vector_epe": 1.1511441469192505
+  },
+  {
+    "pair_id": "000383",
+    "pair_index": 383,
+    "public_component": 0.2896004319190979,
+    "vector_epe": 0.43421927094459534
+  },
+  {
+    "pair_id": "000384",
+    "pair_index": 384,
+    "public_component": 0.2745821475982666,
+    "vector_epe": 0.4104783535003662
+  },
+  {
+    "pair_id": "000385",
+    "pair_index": 385,
+    "public_component": 1.4481552839279175,
+    "vector_epe": 2.212812900543213
+  },
+  {
+    "pair_id": "000386",
+    "pair_index": 386,
+    "public_component": 0.3458600640296936,
+    "vector_epe": 0.5415781736373901
+  },
+  {
+    "pair_id": "000387",
+    "pair_index": 387,
+    "public_component": 0.29602378606796265,
+    "vector_epe": 0.5121442675590515
+  },
+  {
+    "pair_id": "000388",
+    "pair_index": 388,
+    "public_component": 0.9092627167701721,
+    "vector_epe": 1.4073646068572998
+  },
+  {
+    "pair_id": "000389",
+    "pair_index": 389,
+    "public_component": 0.9387791752815247,
+    "vector_epe": 1.4676828384399414
+  },
+  {
+    "pair_id": "000390",
+    "pair_index": 390,
+    "public_component": 0.7148239612579346,
+    "vector_epe": 1.1393409967422485
+  },
+  {
+    "pair_id": "000391",
+    "pair_index": 391,
+    "public_component": 0.5071666836738586,
+    "vector_epe": 0.8889865875244141
+  },
+  {
+    "pair_id": "000392",
+    "pair_index": 392,
+    "public_component": 0.19675491750240326,
+    "vector_epe": 0.3089359998703003
+  },
+  {
+    "pair_id": "000393",
+    "pair_index": 393,
+    "public_component": 0.33347877860069275,
+    "vector_epe": 0.5224382877349854
+  },
+  {
+    "pair_id": "000394",
+    "pair_index": 394,
+    "public_component": 0.2634950578212738,
+    "vector_epe": 0.3860563039779663
+  },
+  {
+    "pair_id": "000395",
+    "pair_index": 395,
+    "public_component": 1.7160810232162476,
+    "vector_epe": 2.828709840774536
+  },
+  {
+    "pair_id": "000396",
+    "pair_index": 396,
+    "public_component": 0.3834068477153778,
+    "vector_epe": 0.584599494934082
+  },
+  {
+    "pair_id": "000397",
+    "pair_index": 397,
+    "public_component": 0.22294409573078156,
+    "vector_epe": 0.3812977373600006
+  },
+  {
+    "pair_id": "000398",
+    "pair_index": 398,
+    "public_component": 0.15905272960662842,
+    "vector_epe": 0.24847833812236786
+  },
+  {
+    "pair_id": "000399",
+    "pair_index": 399,
+    "public_component": 4.91393518447876,
+    "vector_epe": 7.237917423248291
+  },
+  {
+    "pair_id": "000400",
+    "pair_index": 400,
+    "public_component": 0.38616177439689636,
+    "vector_epe": 0.6279115676879883
+  },
+  {
+    "pair_id": "000401",
+    "pair_index": 401,
+    "public_component": 4.758506774902344,
+    "vector_epe": 7.892497539520264
+  },
+  {
+    "pair_id": "000402",
+    "pair_index": 402,
+    "public_component": 0.8518149256706238,
+    "vector_epe": 1.2640156745910645
+  },
+  {
+    "pair_id": "000403",
+    "pair_index": 403,
+    "public_component": 7.356667995452881,
+    "vector_epe": 13.049932479858398
+  },
+  {
+    "pair_id": "000404",
+    "pair_index": 404,
+    "public_component": 6.699903964996338,
+    "vector_epe": 10.877713203430176
+  },
+  {
+    "pair_id": "000405",
+    "pair_index": 405,
+    "public_component": 0.3201334476470947,
+    "vector_epe": 0.5170890688896179
+  },
+  {
+    "pair_id": "000406",
+    "pair_index": 406,
+    "public_component": 0.738517701625824,
+    "vector_epe": 1.2697019577026367
+  },
+  {
+    "pair_id": "000407",
+    "pair_index": 407,
+    "public_component": 0.8765784502029419,
+    "vector_epe": 1.3537214994430542
+  },
+  {
+    "pair_id": "000408",
+    "pair_index": 408,
+    "public_component": 1.1849358081817627,
+    "vector_epe": 1.7994359731674194
+  },
+  {
+    "pair_id": "000409",
+    "pair_index": 409,
+    "public_component": 0.36048588156700134,
+    "vector_epe": 0.611048698425293
+  },
+  {
+    "pair_id": "000410",
+    "pair_index": 410,
+    "public_component": 1.09660804271698,
+    "vector_epe": 1.6145071983337402
+  },
+  {
+    "pair_id": "000411",
+    "pair_index": 411,
+    "public_component": 0.5113229155540466,
+    "vector_epe": 0.8724068999290466
+  },
+  {
+    "pair_id": "000412",
+    "pair_index": 412,
+    "public_component": 0.22099076211452484,
+    "vector_epe": 0.33930012583732605
+  },
+  {
+    "pair_id": "000413",
+    "pair_index": 413,
+    "public_component": 0.2789331376552582,
+    "vector_epe": 0.4343346953392029
+  },
+  {
+    "pair_id": "000414",
+    "pair_index": 414,
+    "public_component": 0.6728736162185669,
+    "vector_epe": 1.0006300210952759
+  },
+  {
+    "pair_id": "000415",
+    "pair_index": 415,
+    "public_component": 0.9070535898208618,
+    "vector_epe": 1.692017912864685
+  },
+  {
+    "pair_id": "000416",
+    "pair_index": 416,
+    "public_component": 0.6337926387786865,
+    "vector_epe": 1.031836986541748
+  },
+  {
+    "pair_id": "000417",
+    "pair_index": 417,
+    "public_component": 0.5409232378005981,
+    "vector_epe": 0.9227708578109741
+  },
+  {
+    "pair_id": "000418",
+    "pair_index": 418,
+    "public_component": 1.9912452697753906,
+    "vector_epe": 3.2208850383758545
+  },
+  {
+    "pair_id": "000419",
+    "pair_index": 419,
+    "public_component": 1.1380685567855835,
+    "vector_epe": 1.7917490005493164
+  },
+  {
+    "pair_id": "000420",
+    "pair_index": 420,
+    "public_component": 2.6228151321411133,
+    "vector_epe": 4.262943267822266
+  },
+  {
+    "pair_id": "000421",
+    "pair_index": 421,
+    "public_component": 0.4350316822528839,
+    "vector_epe": 0.7379679083824158
+  },
+  {
+    "pair_id": "000422",
+    "pair_index": 422,
+    "public_component": 0.3155958652496338,
+    "vector_epe": 0.5124219655990601
+  },
+  {
+    "pair_id": "000423",
+    "pair_index": 423,
+    "public_component": 0.278962641954422,
+    "vector_epe": 0.4290373623371124
+  }
+]

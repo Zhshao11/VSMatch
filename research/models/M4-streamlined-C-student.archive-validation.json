@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-17",
+  "scope": "Independent streamlined historical C/student, E099A and E100A; no adaptive encoder changes",
+  "python_syntax_files": [
+    "research/remote_stage/os/audit_c_training_history.py",
+    "research/remote_stage/os/e099a_streamlined_c_student_eval.py",
+    "research/remote_stage/os/e100a_streamlined_c_crossdataset.py",
+    "research/remote_stage/os/m4_streamlined_c_student.py",
+    "research/remote_stage/os/verify_e099a_results.py",
+    "research/remote_stage/os/verify_e100a_results.py"
+  ],
+  "json_parse_count": 29,
+  "local_markdown_links_checked": 25,
+  "e099_offline_verification": "PASS; 424 accuracy/timing/parity records; no local dense rehash",
+  "e100_compact_verification": "PASS; four result cards agree with existing independent 5575-prediction verification and three-seed aggregates",
+  "current_weight_storage": "zzvr only; path and SHA256 in model manifest; no weights uploaded to Git",
+  "gpu_inference_rerun": false,
+  "training": false,
+  "entry_sha256": "2630d4c22e4922b6534cf68940ce4bbce08524f8a3dff7db6116c93174c3e20c"
+}

@@ -1,0 +1,319 @@
+{
+  "status": "PASS",
+  "groups": {
+    "whu700": {
+      "status": "PASS",
+      "group": "whu700",
+      "metrics": {
+        "mean": 2.7420633957428593,
+        "variance": 48.78478292654175,
+        "std": 6.98461043484472,
+        "pairs": 700,
+        "p95": 16.602115726470945,
+        "p99": 25.63094518661489,
+        "cmr@1": 63.57142857142857,
+        "failures_ge_1": 255,
+        "cmr@2": 80.85714285714286,
+        "failures_ge_2": 134,
+        "cmr@3": 86.28571428571429,
+        "failures_ge_3": 96,
+        "cmr@4": 88.28571428571429,
+        "failures_ge_4": 82,
+        "cmr@5": 89.14285714285714,
+        "failures_ge_5": 76,
+        "cmr@10": 92.57142857142857,
+        "failures_ge_10": 52,
+        "cmr@16": 94.85714285714286,
+        "failures_ge_16": 36
+      },
+      "result_agreement": true,
+      "hashes_verified": 700,
+      "official_formula_vs_component_max_abs_difference": 7.62939453125e-06,
+      "archive_parity": {
+        "files": 2800,
+        "archive_files": 2800,
+        "exact_member_set": true,
+        "unexpected_members": [],
+        "missing_members": [],
+        "all_match_archive": true,
+        "mismatches": [],
+        "content_manifest_sha256": "a0530c5f649892c25f4a3a952a12be0488d9985de9202eed528e5fcff1c30166"
+      },
+      "official_loader_input_parity": {
+        "status": "PASS",
+        "pairs": 700,
+        "view_root": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-100A-STREAMLINED-C-WHU-UBCV2-20261116/provenance_whu/official_loader_view",
+        "input_kind": "official .png glob over symlinks to the audited TIFF bytes",
+        "pair_ids_exact_order": true,
+        "source_target_tensor_max_abs_difference": 0.0,
+        "tensor_shape": [
+          3,
+          512,
+          512
+        ],
+        "tensor_dtype": "torch.float32"
+      }
+    },
+    "ubcv2_seed901": {
+      "status": "PASS",
+      "group": "ubcv2_seed901",
+      "metrics": {
+        "mean": 4.004506290013974,
+        "variance": 40.15727876116855,
+        "std": 6.336977099624753,
+        "pairs": 1625,
+        "p95": 12.981648063659668,
+        "p99": 29.049705810546865,
+        "cmr@1": 46.76923076923077,
+        "failures_ge_1": 865,
+        "cmr@2": 62.52307692307693,
+        "failures_ge_2": 609,
+        "cmr@3": 68.49230769230769,
+        "failures_ge_3": 512,
+        "cmr@4": 70.7076923076923,
+        "failures_ge_4": 476,
+        "cmr@5": 72.98461538461538,
+        "failures_ge_5": 439,
+        "cmr@10": 85.96923076923076,
+        "failures_ge_10": 228,
+        "cmr@16": 96.36923076923077,
+        "failures_ge_16": 59
+      },
+      "result_agreement": true,
+      "hashes_verified": 1625,
+      "official_formula_vs_component_max_abs_difference": 1.71661376953125e-05,
+      "generated_protocol_audit": {
+        "status": "PASS",
+        "manifest": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901/protocol_metadata/manifest.json",
+        "manifest_sha256": "599b8bdab2fc32486c4d4f46ee496d065e3649ecdad918a9906f96efa4e0997d",
+        "params": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901/protocol_metadata/params.jsonl",
+        "params_sha256": "341ab21e97e6d9292528725ad98316f05c586496bd333dff33d7b481f6ac5d4b",
+        "pairs": 1625,
+        "problems": [],
+        "flow_matrix_probe_max_abs_difference": 5.888882697036024e-06,
+        "raw_sar_to_warped_sample_max_abs_difference": 4,
+        "raw_sar_to_warped_tolerance": 4,
+        "generator_opencv_version": "5.0.0",
+        "audit_opencv_version": "4.13.0",
+        "cross_version_note": "Independent verification in the generator environment requires exact 0; a different OpenCV build may differ by at most 4 uint8 levels under INTER_LINEAR.",
+        "direction_fixtures": {
+          "identity_flow_at_4_4": [
+            0.0,
+            0.0
+          ],
+          "integer_translation_flow_at_4_4": [
+            2.0,
+            1.0
+          ],
+          "integer_translation_warp_peak_yx": [
+            5,
+            6
+          ],
+          "rotation_scale_formula_checked_by_all_pair_matrix_probes": true
+        },
+        "geometry": {
+          "rotation_center": "origin (0,0)",
+          "matrix": "M@[x,y,1]",
+          "flow": "target-minus-source = M*p-p",
+          "interpolation": "cv2.INTER_LINEAR",
+          "padding": "constant zero",
+          "crop_resize": "none; native 512x512"
+        },
+        "sar_mapping": {
+          "formula": "20*log10(max(x,0)+1e-3), global clip/linear p2-p98 to uint8",
+          "lo_db": -28.307898330688477,
+          "hi_db": 10.545851440429704,
+          "identity": "independent reproduction rule, frozen across seeds 901/902/903"
+        }
+      },
+      "official_loader_input_parity": {
+        "status": "PASS",
+        "pairs": 1625,
+        "root": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed901",
+        "input_kind": "generated RGB/SAR PNG loaded by official opt_sar_test",
+        "pair_ids_exact_order": true,
+        "source_target_tensor_max_abs_difference": 0.0,
+        "tensor_shape": [
+          3,
+          512,
+          512
+        ],
+        "tensor_dtype": "torch.float32"
+      }
+    },
+    "ubcv2_seed902": {
+      "status": "PASS",
+      "group": "ubcv2_seed902",
+      "metrics": {
+        "mean": 4.342929948559174,
+        "variance": 48.91406410925786,
+        "std": 6.993859028408984,
+        "pairs": 1625,
+        "p95": 13.259230422973634,
+        "p99": 37.00730056762695,
+        "cmr@1": 46.400000000000006,
+        "failures_ge_1": 871,
+        "cmr@2": 60.8,
+        "failures_ge_2": 637,
+        "cmr@3": 65.90769230769232,
+        "failures_ge_3": 554,
+        "cmr@4": 69.66153846153847,
+        "failures_ge_4": 493,
+        "cmr@5": 72.06153846153846,
+        "failures_ge_5": 454,
+        "cmr@10": 84.06153846153846,
+        "failures_ge_10": 259,
+        "cmr@16": 95.87692307692308,
+        "failures_ge_16": 67
+      },
+      "result_agreement": true,
+      "hashes_verified": 1625,
+      "official_formula_vs_component_max_abs_difference": 7.62939453125e-06,
+      "generated_protocol_audit": {
+        "status": "PASS",
+        "manifest": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed902/protocol_metadata/manifest.json",
+        "manifest_sha256": "f7adeabfd73d9ac88d1eb165d350cfd101b0c791a5cb50ecefcf9765de410356",
+        "params": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed902/protocol_metadata/params.jsonl",
+        "params_sha256": "7d97f00c9c990de548435caf429ccbe17f49832bf51cc0d529a1341e10a34e68",
+        "pairs": 1625,
+        "problems": [],
+        "flow_matrix_probe_max_abs_difference": 5.888882697036024e-06,
+        "raw_sar_to_warped_sample_max_abs_difference": 4,
+        "raw_sar_to_warped_tolerance": 4,
+        "generator_opencv_version": "5.0.0",
+        "audit_opencv_version": "4.13.0",
+        "cross_version_note": "Independent verification in the generator environment requires exact 0; a different OpenCV build may differ by at most 4 uint8 levels under INTER_LINEAR.",
+        "direction_fixtures": {
+          "identity_flow_at_4_4": [
+            0.0,
+            0.0
+          ],
+          "integer_translation_flow_at_4_4": [
+            2.0,
+            1.0
+          ],
+          "integer_translation_warp_peak_yx": [
+            5,
+            6
+          ],
+          "rotation_scale_formula_checked_by_all_pair_matrix_probes": true
+        },
+        "geometry": {
+          "rotation_center": "origin (0,0)",
+          "matrix": "M@[x,y,1]",
+          "flow": "target-minus-source = M*p-p",
+          "interpolation": "cv2.INTER_LINEAR",
+          "padding": "constant zero",
+          "crop_resize": "none; native 512x512"
+        },
+        "sar_mapping": {
+          "formula": "20*log10(max(x,0)+1e-3), global clip/linear p2-p98 to uint8",
+          "lo_db": -28.307898330688477,
+          "hi_db": 10.545851440429704,
+          "identity": "independent reproduction rule, frozen across seeds 901/902/903"
+        }
+      },
+      "official_loader_input_parity": {
+        "status": "PASS",
+        "pairs": 1625,
+        "root": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed902",
+        "input_kind": "generated RGB/SAR PNG loaded by official opt_sar_test",
+        "pair_ids_exact_order": true,
+        "source_target_tensor_max_abs_difference": 0.0,
+        "tensor_shape": [
+          3,
+          512,
+          512
+        ],
+        "tensor_dtype": "torch.float32"
+      }
+    },
+    "ubcv2_seed903": {
+      "status": "PASS",
+      "group": "ubcv2_seed903",
+      "metrics": {
+        "mean": 4.003820262521505,
+        "variance": 39.47065393603065,
+        "std": 6.282567463707067,
+        "pairs": 1625,
+        "p95": 12.864709091186521,
+        "p99": 32.26060470581054,
+        "cmr@1": 47.07692307692308,
+        "failures_ge_1": 860,
+        "cmr@2": 61.784615384615385,
+        "failures_ge_2": 621,
+        "cmr@3": 67.38461538461539,
+        "failures_ge_3": 530,
+        "cmr@4": 70.09230769230768,
+        "failures_ge_4": 486,
+        "cmr@5": 72.73846153846154,
+        "failures_ge_5": 443,
+        "cmr@10": 86.76923076923076,
+        "failures_ge_10": 215,
+        "cmr@16": 96.8,
+        "failures_ge_16": 52
+      },
+      "result_agreement": true,
+      "hashes_verified": 1625,
+      "official_formula_vs_component_max_abs_difference": 8.58306884765625e-06,
+      "generated_protocol_audit": {
+        "status": "PASS",
+        "manifest": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed903/protocol_metadata/manifest.json",
+        "manifest_sha256": "f7cd46ccec41cb1bc25349c7966e5012b1ee1cc135adeec9d2c4336a55c12d39",
+        "params": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed903/protocol_metadata/params.jsonl",
+        "params_sha256": "31f438a672a9f097b8e5eeafa7fdbc14e9fba0e380bdd0f1dd9cb56e821ed806",
+        "pairs": 1625,
+        "problems": [],
+        "flow_matrix_probe_max_abs_difference": 5.888882697036024e-06,
+        "raw_sar_to_warped_sample_max_abs_difference": 4,
+        "raw_sar_to_warped_tolerance": 4,
+        "generator_opencv_version": "5.0.0",
+        "audit_opencv_version": "4.13.0",
+        "cross_version_note": "Independent verification in the generator environment requires exact 0; a different OpenCV build may differ by at most 4 uint8 levels under INTER_LINEAR.",
+        "direction_fixtures": {
+          "identity_flow_at_4_4": [
+            0.0,
+            0.0
+          ],
+          "integer_translation_flow_at_4_4": [
+            2.0,
+            1.0
+          ],
+          "integer_translation_warp_peak_yx": [
+            5,
+            6
+          ],
+          "rotation_scale_formula_checked_by_all_pair_matrix_probes": true
+        },
+        "geometry": {
+          "rotation_center": "origin (0,0)",
+          "matrix": "M@[x,y,1]",
+          "flow": "target-minus-source = M*p-p",
+          "interpolation": "cv2.INTER_LINEAR",
+          "padding": "constant zero",
+          "crop_resize": "none; native 512x512"
+        },
+        "sar_mapping": {
+          "formula": "20*log10(max(x,0)+1e-3), global clip/linear p2-p98 to uint8",
+          "lo_db": -28.307898330688477,
+          "hi_db": 10.545851440429704,
+          "identity": "independent reproduction rule, frozen across seeds 901/902/903"
+        }
+      },
+      "official_loader_input_parity": {
+        "status": "PASS",
+        "pairs": 1625,
+        "root": "/mnt/sda/zhushihao/VS_Match/datasets/ubcv2/generated/seed903",
+        "input_kind": "generated RGB/SAR PNG loaded by official opt_sar_test",
+        "pair_ids_exact_order": true,
+        "source_target_tensor_max_abs_difference": 0.0,
+        "tensor_shape": [
+          3,
+          512,
+          512
+        ],
+        "tensor_dtype": "torch.float32"
+      }
+    }
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "actual_counts_per_pair": {
+    "context": 1,
+    "correlation_pyramids": 2,
+    "correlation_sampling": 256,
+    "dino_forward_features": 2,
+    "flow_head": 32,
+    "frontend_v1": 1,
+    "frontend_v2": 1,
+    "gru": 32,
+    "mask_head": 1,
+    "motion": 32,
+    "terminal_lsr": 1
+  },
+  "c_cache_parity": {
+    "bitwise_equal_pairs": 424,
+    "max_abs": 0.0,
+    "pairs": 424
+  },
+  "checkpoint_sha256": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b",
+  "compact_state": {
+    "bytes": 1277449423,
+    "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-099A-STREAMLINED-C-STUDENT-OS424-20261116/M4-streamlined-C-student-state.pt",
+    "sha256": "c2d4f79b45ce190df48f52f588e40a7654fa6cce0a32da1bc0c32020b35636ad"
+  },
+  "cuda_visible_devices": "3",
+  "environment": {
+    "batch_size": 1,
+    "cuda_runtime": "12.8",
+    "fp32": true,
+    "hostname": "ubuntu",
+    "numpy": "2.2.6",
+    "pillow": "12.2.0",
+    "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+    "seed": 1234,
+    "torch": "2.8.0+cu128"
+  },
+  "exclusive_gpu_guaranteed": false,
+  "fresh_inference": true,
+  "full_m4_comparison": false,
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "iterations": 32,
+  "limitation": "Standalone GPU3 timing, not same-session full-M4 comparison. No fixed ratio to earlier shared-GPU experiments is inferred.",
+  "load_report": {
+    "keys": 1114,
+    "missing_keys": [],
+    "name": "m4.c.student",
+    "state_sha256": "b685db5b769cf6978b071d915fdf29c1bbe8a07662b8c65f08a107699c341f8e",
+    "unexpected_keys": []
+  },
+  "memory": {
+    "inference_peak_allocated_bytes": 1637789696,
+    "inference_peak_reserved_bytes": 1803550720,
+    "model_live_allocated_bytes": 1286253056,
+    "reference_deleted_before_timing": true
+  },
+  "method": "M4-streamlined-C-student",
+  "metrics": {
+    "public_component": {
+      "cmr@1": 69.5754716981132,
+      "cmr@10": 96.69811320754717,
+      "cmr@16": 98.82075471698113,
+      "cmr@2": 85.14150943396226,
+      "cmr@3": 88.20754716981132,
+      "cmr@4": 91.0377358490566,
+      "cmr@5": 92.9245283018868,
+      "failures_ge_1": 129,
+      "failures_ge_10": 14,
+      "failures_ge_16": 5,
+      "failures_ge_2": 63,
+      "failures_ge_3": 50,
+      "failures_ge_4": 38,
+      "failures_ge_5": 30,
+      "mean": 1.5929032519530013,
+      "p95": 7.185527253150927,
+      "p99": 18.401621389388968,
+      "pairs": 424,
+      "std": 3.0183636140113017,
+      "variance": 9.110518906387366
+    },
+    "vector_epe": {
+      "cmr@1": 45.28301886792453,
+      "cmr@10": 93.86792452830188,
+      "cmr@16": 96.69811320754717,
+      "cmr@2": 78.06603773584906,
+      "cmr@3": 84.43396226415094,
+      "cmr@4": 86.32075471698113,
+      "cmr@5": 88.44339622641509,
+      "failures_ge_1": 232,
+      "failures_ge_10": 26,
+      "failures_ge_16": 14,
+      "failures_ge_2": 93,
+      "failures_ge_3": 66,
+      "failures_ge_4": 58,
+      "failures_ge_5": 49,
+      "mean": 2.5620750245761195,
+      "p95": 12.202975559234584,
+      "p99": 28.535017719268698,
+      "pairs": 424,
+      "std": 4.778341091227089,
+      "variance": 22.832543584109292
+    }
+  },
+  "model_parameters": {
+    "buffers_bytes": 648,
+    "parameter_bytes": 1277213236,
+    "parameters": 319303309
+  },
+  "pairs": 424,
+  "parameter_groups": {
+    "descriptor_adapters": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 2956800,
+      "parameters": 739200
+    },
+    "dino": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 1217470464,
+      "parameters": 304367616
+    },
+    "matcher": {
+      "buffers_bytes": 0,
+      "parameter_bytes": 56785972,
+      "parameters": 14196493
+    }
+  },
+  "shared_host": true,
+  "snapshots": [
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 75 %, 69, 412.55 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 100 %, 68, 432.55 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 13965 MiB, 32607 MiB, 47 %, 62, 317.42 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 521 MiB, 32607 MiB, 0 %, 32, 18.65 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14925 MiB, 32607 MiB, 32 %, 60, 219.33 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 84 %, 62, 283.11 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 18441 MiB, 32607 MiB, 85 %, 56, 260.97 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 13165 MiB, 32607 MiB, 0 %, 43, 84.40 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 1756 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 498 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14898 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 6856 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 13136 MiB\n"
+      },
+      "stage": "before_load"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 57 %, 68, 432.78 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 99 %, 70, 434.65 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 24797 MiB, 32607 MiB, 41 %, 62, 307.32 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2009 MiB, 32607 MiB, 81 %, 55, 356.59 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14925 MiB, 32607 MiB, 75 %, 62, 250.62 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 86 %, 62, 286.18 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 18441 MiB, 32607 MiB, 89 %, 56, 283.76 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 13165 MiB, 32607 MiB, 0 %, 42, 67.73 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 12588 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 1986 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14898 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 6856 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 13136 MiB\n"
+      },
+      "stage": "before_timing"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 57 %, 70, 419.31 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 98 %, 71, 434.00 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 24797 MiB, 32607 MiB, 86 %, 61, 307.16 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 81 %, 42, 315.02 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 1145 MiB, 32607 MiB, 52 %, 61, 242.07 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 83 %, 63, 288.57 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 18441 MiB, 32607 MiB, 89 %, 56, 282.23 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 13165 MiB, 32607 MiB, 0 %, 43, 81.66 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 12588 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 1118 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 6856 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 13136 MiB\n"
+      },
+      "stage": "after_1"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 98 %, 70, 405.18 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 71 %, 66, 296.32 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 24797 MiB, 32607 MiB, 84 %, 59, 314.02 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 81 %, 54, 419.18 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 1145 MiB, 32607 MiB, 0 %, 50, 64.47 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 82 %, 62, 285.97 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 18441 MiB, 32607 MiB, 89 %, 57, 281.39 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 4383 MiB, 32607 MiB, 0 %, 41, 58.24 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 12588 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 1118 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 6856 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 4354 MiB\n"
+      },
+      "stage": "after_33"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 88 %, 69, 413.29 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 98 %, 69, 379.70 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 24797 MiB, 32607 MiB, 55 %, 61, 317.94 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 77 %, 57, 412.95 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 9747 MiB, 32607 MiB, 3 %, 49, 62.94 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 77 %, 63, 278.31 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 19060 MiB, 32607 MiB, 88 %, 53, 274.41 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 4383 MiB, 32607 MiB, 0 %, 41, 59.04 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 12588 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 9720 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 6856 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 614 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 4354 MiB\n"
+      },
+      "stage": "after_65"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 91 %, 65, 425.13 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 90 %, 68, 427.84 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 27197 MiB, 32607 MiB, 60 %, 62, 330.14 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 96 %, 55, 393.04 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 12147 MiB, 32607 MiB, 0 %, 47, 61.74 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 76 %, 62, 278.48 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 21456 MiB, 32607 MiB, 64 %, 55, 245.87 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 4383 MiB, 32607 MiB, 0 %, 41, 58.45 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14988 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 12120 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 6856 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 3010 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 4354 MiB\n"
+      },
+      "stage": "after_97"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 88 %, 70, 416.93 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 97 %, 69, 435.63 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 27197 MiB, 32607 MiB, 96 %, 58, 305.47 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 96 %, 60, 384.26 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 12147 MiB, 32607 MiB, 0 %, 47, 71.25 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 84 %, 63, 280.44 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 21596 MiB, 32607 MiB, 77 %, 52, 254.13 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 16203 MiB, 32607 MiB, 17 %, 52, 267.56 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14988 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 12120 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 6856 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 3150 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 16174 MiB\n"
+      },
+      "stage": "after_129"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 98 %, 70, 407.85 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 98 %, 70, 434.52 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 27197 MiB, 32607 MiB, 47 %, 61, 310.65 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 63 %, 62, 357.80 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14547 MiB, 32607 MiB, 3 %, 47, 66.86 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 80 %, 62, 256.21 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 21596 MiB, 32607 MiB, 87 %, 56, 283.73 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 16209 MiB, 32607 MiB, 78 %, 52, 243.16 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14988 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14520 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 6856 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 3150 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 16180 MiB\n"
+      },
+      "stage": "after_161"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 57 %, 70, 404.65 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 97 %, 68, 433.58 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 27197 MiB, 32607 MiB, 97 %, 61, 338.08 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 60 %, 62, 351.27 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14547 MiB, 32607 MiB, 0 %, 46, 81.42 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 80 %, 63, 282.85 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 17038 MiB, 32607 MiB, 1 %, 55, 245.21 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 16209 MiB, 32607 MiB, 74 %, 55, 282.57 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14988 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14520 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 1146 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 4302 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 16180 MiB\n"
+      },
+      "stage": "after_193"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 98 %, 71, 422.25 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 96 %, 70, 430.82 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 27197 MiB, 32607 MiB, 23 %, 55, 161.67 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 92 %, 61, 295.88 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14547 MiB, 32607 MiB, 2 %, 45, 59.48 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 79 %, 62, 275.10 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 17058 MiB, 32607 MiB, 82 %, 56, 261.12 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 16209 MiB, 32607 MiB, 53 %, 58, 293.56 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14988 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14520 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 1146 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 4322 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 16180 MiB\n"
+      },
+      "stage": "after_225"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 68 %, 70, 380.73 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 82 %, 68, 405.31 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 27197 MiB, 32607 MiB, 50 %, 59, 322.06 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 50 %, 64, 304.99 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14547 MiB, 32607 MiB, 3 %, 45, 76.37 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 82 %, 62, 281.47 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 17166 MiB, 32607 MiB, 0 %, 52, 255.47 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 16209 MiB, 32607 MiB, 32 %, 57, 279.18 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14988 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14520 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 1146 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 4430 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 16180 MiB\n"
+      },
+      "stage": "after_257"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 96 %, 71, 408.26 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 98 %, 69, 437.89 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 27197 MiB, 32607 MiB, 91 %, 60, 292.22 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 39 %, 63, 333.36 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14547 MiB, 32607 MiB, 0 %, 45, 78.38 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 79 %, 62, 262.60 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 23130 MiB, 32607 MiB, 93 %, 57, 273.26 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 16209 MiB, 32607 MiB, 38 %, 59, 287.14 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14988 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14520 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 7110 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 4430 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 16180 MiB\n"
+      },
+      "stage": "after_289"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 97 %, 70, 423.05 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 97 %, 70, 426.30 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 27197 MiB, 32607 MiB, 97 %, 57, 306.21 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 94 %, 62, 227.11 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14547 MiB, 32607 MiB, 0 %, 45, 79.56 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 85 %, 61, 287.65 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 23734 MiB, 32607 MiB, 91 %, 56, 289.91 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 16209 MiB, 32607 MiB, 82 %, 61, 294.85 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14988 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14520 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 7110 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 5050 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 16180 MiB\n"
+      },
+      "stage": "after_321"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 79 %, 64, 420.15 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 99 %, 67, 423.40 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 27197 MiB, 32607 MiB, 43 %, 58, 307.79 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 73 %, 64, 406.16 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14547 MiB, 32607 MiB, 0 %, 47, 89.93 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 86 %, 62, 285.15 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 24376 MiB, 32607 MiB, 88 %, 57, 274.90 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 16209 MiB, 32607 MiB, 72 %, 61, 279.51 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14988 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14520 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 7110 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 5676 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 16180 MiB\n"
+      },
+      "stage": "after_353"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 95 %, 70, 409.40 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 99 %, 71, 427.42 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 27197 MiB, 32607 MiB, 38 %, 61, 299.26 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 96 %, 65, 370.49 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14547 MiB, 32607 MiB, 3 %, 45, 79.38 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 83 %, 62, 266.82 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 24378 MiB, 32607 MiB, 96 %, 56, 288.35 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 16209 MiB, 32607 MiB, 19 %, 58, 288.46 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14988 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14520 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 7112 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 5676 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 16180 MiB\n"
+      },
+      "stage": "after_385"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 71 %, 65, 434.21 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 84 %, 68, 430.36 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 27197 MiB, 32607 MiB, 97 %, 61, 305.67 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 69 %, 67, 399.91 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14547 MiB, 32607 MiB, 0 %, 44, 56.89 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 75 %, 62, 249.20 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 24378 MiB, 32607 MiB, 92 %, 56, 277.35 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 16209 MiB, 32607 MiB, 81 %, 62, 286.91 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14988 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14520 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 7112 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 5676 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 16180 MiB\n"
+      },
+      "stage": "after_417"
+    },
+    {
+      "snapshot": {
+        "gpu": "index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\n0, GPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, NVIDIA GeForce RTX 5090, 25109 MiB, 32607 MiB, 58 %, 69, 424.47 W\n1, GPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, NVIDIA GeForce RTX 5090, 23799 MiB, 32607 MiB, 99 %, 67, 402.30 W\n2, GPU-0987694d-cce0-fc32-daa7-1967e1d37f55, NVIDIA GeForce RTX 5090, 27197 MiB, 32607 MiB, 48 %, 60, 298.04 W\n3, GPU-f9bb936e-507e-1808-bdc2-b522996093cc, NVIDIA GeForce RTX 5090, 2409 MiB, 32607 MiB, 78 %, 63, 414.30 W\n4, GPU-cb2b0088-8405-6617-efa1-a749f688608a, NVIDIA GeForce RTX 5090, 14547 MiB, 32607 MiB, 0 %, 44, 78.75 W\n5, GPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, NVIDIA GeForce RTX 5090, 11573 MiB, 32607 MiB, 0 %, 57, 99.04 W\n6, GPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, NVIDIA GeForce RTX 5090, 24482 MiB, 32607 MiB, 82 %, 56, 277.44 W\n7, GPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, NVIDIA GeForce RTX 5090, 16209 MiB, 32607 MiB, 30 %, 59, 272.52 W\n",
+        "processes": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 1700733, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 2624 MiB\nGPU-6bd47ac9-8cc0-93ed-65dc-793f08f37981, 2240079, /home/zzvr/miniconda3/envs/compared/bin/python, 22452 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 1155379, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14812 MiB\nGPU-b7f6c419-e4fd-a708-fe7f-345b684b5d30, 2309651, /mnt/sda/heyebang/.conda/envs/LUNET_RGB/bin/python, 8950 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 1084985, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14988 MiB\nGPU-0987694d-cce0-fc32-daa7-1967e1d37f55, 2138524, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 12174 MiB\nGPU-f9bb936e-507e-1808-bdc2-b522996093cc, 2413486, /mnt/sda/zhushihao/multiModel_matching/xoftr_sar/envs/xoftr5090/bin/python, 2386 MiB\nGPU-cb2b0088-8405-6617-efa1-a749f688608a, 1876865, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 14520 MiB\nGPU-97d1be50-3546-2fe2-a8c8-bfafd2ef1fdb, 2405874, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 945911, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 7112 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2406424, /mnt/sda/heyebang/.conda/envs/USCT/bin/python, 11550 MiB\nGPU-c32175d3-7e65-83aa-a3f6-fb85fe6a6c17, 2414803, /home/zzvr/miniconda3/envs/compared/bin/python, 5780 MiB\nGPU-e0ef04e8-e8b6-4435-c3e7-c8827ae9e45b, 1860600, /home/dingtingzhu/ssd_training/envs/pytorch_2_8_0_py311/bin/python, 16180 MiB\n"
+      },
+      "stage": "after_424"
+    }
+  ],
+  "source_hashes_end": {
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/LSRnet/LSmodel.py": "8e7e329bd8b0589398765b053e7a7375e7686ba4377a179572d7ad5d5b089d91",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/corr.py": "2bbfb364725d11c217f422ce9f40a84a1da09685bf5112354e5774552d2e928b",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/update.py": "721b581711e26d71d7799460d58094542c13a0ec230284a80d3b304547f1ddd5",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e072a_layerwise_frontend_alignment.py": "d66da78417b32a4dac36e431f610367e5f6b884ea5a79a3626948c68d044a156",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e073a_v1_v2_fusion_longtrain.py": "8d20a1dd3e1a76e11f68a304b0e09720a4ae2f9a73821b84991922350553507f",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e074a_f2_f3_twostage_fusion.py": "233412162f127bf1924403bc865549f1f5784f15c029bdf4b578938d1a4ecc01",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e075a_preserve_high_precision_recover_c2c5.py": "2626d29005ae8915a82f9a793850b5523ba2d6a013991161895152879ea621bf",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e092a_official_eval.py": "ba502d8657171dbba1462ca0bcbd1a572fbe573a56a834f9e0b1a427d56aab3d",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e093a_bc_ablation_profile.py": "f36ceb3c8c906f03575a0d8c2db37a13528a21555006279bd27f9b420a5af54c",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e099a_streamlined_c_student_eval.py": "172db06cd0c4ca8ca2fc487ba87bfc259e82317071ce9ce7f76201b3278a4357",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/m4_clean_deploy.py": "3fcd8b685df355c7e7bf6af30094dd554c75c105756450814320f144d9e044bb",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/m4_streamlined_c_student.py": "2630d4c22e4922b6534cf68940ce4bbce08524f8a3dff7db6116c93174c3e20c",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/experiments/sparsegeo/e027a/dino_transfer.py": "cf51a0382734495a2535d42636aa5d3cd750f8b6527aa03560da59289bc3283b",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/experiments/sparsegeo/e045a/model.py": "8c9ef8632105700e52099e8dbceb5a1f232b876e0a049fa0cc1c0a271dbf3364"
+  },
+  "source_hashes_start": {
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/LSRnet/LSmodel.py": "8e7e329bd8b0589398765b053e7a7375e7686ba4377a179572d7ad5d5b089d91",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/corr.py": "2bbfb364725d11c217f422ce9f40a84a1da09685bf5112354e5774552d2e928b",
+    "/mnt/sda/zhushihao/VS_Match/external_repos/E068A_GDROS_official/core/update.py": "721b581711e26d71d7799460d58094542c13a0ec230284a80d3b304547f1ddd5",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e072a_layerwise_frontend_alignment.py": "d66da78417b32a4dac36e431f610367e5f6b884ea5a79a3626948c68d044a156",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e073a_v1_v2_fusion_longtrain.py": "8d20a1dd3e1a76e11f68a304b0e09720a4ae2f9a73821b84991922350553507f",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e074a_f2_f3_twostage_fusion.py": "233412162f127bf1924403bc865549f1f5784f15c029bdf4b578938d1a4ecc01",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e075a_preserve_high_precision_recover_c2c5.py": "2626d29005ae8915a82f9a793850b5523ba2d6a013991161895152879ea621bf",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e092a_official_eval.py": "ba502d8657171dbba1462ca0bcbd1a572fbe573a56a834f9e0b1a427d56aab3d",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e093a_bc_ablation_profile.py": "f36ceb3c8c906f03575a0d8c2db37a13528a21555006279bd27f9b420a5af54c",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/e099a_streamlined_c_student_eval.py": "172db06cd0c4ca8ca2fc487ba87bfc259e82317071ce9ce7f76201b3278a4357",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/m4_clean_deploy.py": "3fcd8b685df355c7e7bf6af30094dd554c75c105756450814320f144d9e044bb",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/.codex_tmp/m4_streamlined_c_student.py": "2630d4c22e4922b6534cf68940ce4bbce08524f8a3dff7db6116c93174c3e20c",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/experiments/sparsegeo/e027a/dino_transfer.py": "cf51a0382734495a2535d42636aa5d3cd750f8b6527aa03560da59289bc3283b",
+    "/mnt/sda/zhushihao/VS_Match/image_matching_part2_migrated/experiments/sparsegeo/e045a/model.py": "8c9ef8632105700e52099e8dbceb5a1f232b876e0a049fa0cc1c0a271dbf3364"
+  },
+  "status": "COMPLETE",
+  "timing": {
+    "fps_from_mean": 6.96981723489088,
+    "mean_ms": 143.47578513163927,
+    "median_ms": 143.22572099626996,
+    "p95_ms": 145.79494295903714,
+    "samples": 424,
+    "std_ms": 2.7959224313064657,
+    "total_seconds": 60.83373289581505
+  },
+  "training": false
+}

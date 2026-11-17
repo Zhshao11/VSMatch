@@ -1,0 +1,104 @@
+{
+  "status": "AUDITED",
+  "run": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k",
+  "local_timezone": "CST +0800",
+  "update_counts": {
+    "full_additional": 60000,
+    "toy": 200,
+    "total_additional": 60200,
+    "inherited_step_label": 120000,
+    "final_step_label": 180000
+  },
+  "time_records": {
+    "logs/e074a_c_stage180k.log": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/logs/e074a_c_stage180k.log",
+      "birth_unix": 1788477629,
+      "mtime_unix": 1788506158.1322308,
+      "birth_local": "2026-09-04T07:20:29",
+      "mtime_local": "2026-09-04T15:15:58.132231"
+    },
+    "checkpoints/C_step140000.pt": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/checkpoints/C_step140000.pt",
+      "birth_unix": 1788489003,
+      "mtime_unix": 1788489008.7730668,
+      "birth_local": "2026-09-04T10:30:03",
+      "mtime_local": "2026-09-04T10:30:08.773067"
+    },
+    "checkpoints/C_step160000.pt": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/checkpoints/C_step160000.pt",
+      "birth_unix": 1788497634,
+      "mtime_unix": 1788497637.1137118,
+      "birth_local": "2026-09-04T12:53:54",
+      "mtime_local": "2026-09-04T12:53:57.113712"
+    },
+    "checkpoints/C_step180000.pt": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/checkpoints/C_step180000.pt",
+      "birth_unix": 1788505880,
+      "mtime_unix": 1788505883.5223086,
+      "birth_local": "2026-09-04T15:11:20",
+      "mtime_local": "2026-09-04T15:11:23.522309"
+    },
+    "formal/materialized/C_step140000_predictions_before_gt.jsonl": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/formal/materialized/C_step140000_predictions_before_gt.jsonl",
+      "birth_unix": 1788489013,
+      "mtime_unix": 1788489246.2303865,
+      "birth_local": "2026-09-04T10:30:13",
+      "mtime_local": "2026-09-04T10:34:06.230386"
+    },
+    "formal/materialized/C_step160000_predictions_before_gt.jsonl": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/formal/materialized/C_step160000_predictions_before_gt.jsonl",
+      "birth_unix": 1788497640,
+      "mtime_unix": 1788497910.5866075,
+      "birth_local": "2026-09-04T12:54:00",
+      "mtime_local": "2026-09-04T12:58:30.586607"
+    },
+    "formal/materialized/C_step180000_predictions_before_gt.jsonl": {
+      "path": "/mnt/sda/zhushihao/VS_Match/GDROS/experiments/sparsegeo/runs/E-074A-ZZVR-F2F3-TWOSTAGE-FUSION/run-c-stage180k/formal/materialized/C_step180000_predictions_before_gt.jsonl",
+      "birth_unix": 1788505886,
+      "mtime_unix": 1788506154.273417,
+      "birth_local": "2026-09-04T15:11:26",
+      "mtime_local": "2026-09-04T15:15:54.273417"
+    }
+  },
+  "stage_wall_interval_seconds": 28529.132230758667,
+  "timing_scope": "log creation through last write; includes initialization, toy/full updates, checkpoint saves and three milestone evaluations; not pure GPU training time",
+  "original_resource_report": {
+    "elapsed_seconds": 1.910475730895996,
+    "gpu_policy": "zzvr GPU0-3"
+  },
+  "original_resource_elapsed_valid": false,
+  "timer_bug": "train() calls finalize(..., time.time()) after the loop; finalize subtracts that end timestamp, not the training start",
+  "predecessor_costs_included": false,
+  "streamlined_model_retrained": false,
+  "historical_training_log_sha256": "d5b9114ca6cf6670ef21abf7f53d050ae798951a25d2c93d243f883914d6717c",
+  "historical_curve_report_sha256": "b0f069850fd5c89d468b5f323ed96efb2570847a9f6f3d7d857b6566736edc30",
+  "default_hyperparameters": {
+    "train_iters": 12,
+    "lambda_seq": 0.5,
+    "lambda_geo": 0.5,
+    "distill_weight": 0.2,
+    "lr": 3e-05
+  },
+  "hyperparameter_evidence": "defaults in retained script; original launch command not recovered, so override absence is unverified",
+  "c180k_vs_protected_m4_student": {
+    "status": "PASS",
+    "keys": 1114,
+    "tensors_bitwise_equal": true,
+    "historical_checkpoint_sha256": "c3c67e6d65aca0dd55cf7af2c2a9eedccadadc0fec5ad11fe6e493e08ecc85b9",
+    "protected_m4_sha256": "55d6e6cd7e849c5c25723004ef6b7a7c79b8cd55e2665951257cafb07b86d81b"
+  },
+  "training_curve_samples": [
+    {
+      "phase": "toy",
+      "step": 1,
+      "loss": 6.054177284240723,
+      "distill": 1.0423765182495117
+    },
+    {
+      "phase": "full",
+      "step": 180000,
+      "loss": 3.9081249237060547,
+      "distill": 0.8220666646957397
+    }
+  ]
+}

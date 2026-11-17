@@ -1,5 +1,40 @@
 # Reproducibility Guide
 
+## E100A: frozen C across WHU and UBCv2
+
+Use `remote_stage/os/e100a_streamlined_c_crossdataset.py predict --output-dir RUN`,
+then the same entry with `join --output-dir RUN`. Stage beside E092B/E092CR,
+E093A, E099 model and legacy constructor dependencies on zzvr; run from the
+migrated project root. `predict` requires a fresh run directory and checks
+the fixed E099 compact state identity. No training or teacher construction.
+Reuse WHU700 and the existing UBCv2 raw1625 seeds901/902/903; UBC groups are
+independent reproduction data, not author-screened1447 exact paper replay.
+`verify_e100a_results.py --run RUN --provenance` recomputes official-formula
+scores, hashes and data/loader audits. Alternatively audit each completed
+group with `--group NAME --provenance`, then `--aggregate-only` after join.
+Results and scope: `results/E100A_STREAMLINED_C_WHU_UBCV2_20261116/REPORT.md`.
+Training lineage/timing audit: `remote_stage/os/audit_c_training_history.py
+--root SPARSEGEO_ROOT --output FILE --verify-weights`; use configured remote
+Python with Torch. The ~7h55m historical C-stage wall interval includes
+evaluations and excludes all predecessor training; old elapsed field is invalid.
+
+## E099A: independently streamlined C/student
+
+`remote_stage/os/m4_streamlined_c_student.py:M4StreamlinedCStudent` registers
+only C's live graph, extracting from a strictly loaded protected C/student.
+The E099 runner constructs only the C prefix through E093A, removes the
+unclean reference before standalone timing, verifies three direct raw/post
+checks, covers every parameterized leaf, and newly evaluates all 424 pairs.
+All final predictions reproduce accepted E098A C caches bitwise. The result
+is a single-matcher candidate; default full M4-streamlined is unchanged.
+
+Source/contract: `experiments/E-099A-STREAMLINED-C-STUDENT-OS424.md`.
+Result: `results/E099A_STREAMLINED_C_STUDENT_OS424_20261116/REPORT.md`.
+The state and dense predictions remain on zzvr outside Git. Recompute compact
+statistics with `python3 research/remote_stage/os/verify_e099a_results.py
+research/results/E099A_STREAMLINED_C_STUDENT_OS424_20261116` (one command).
+On zzvr add `--verify-predictions` to rehash all424 predictions and the state.
+
 The E095A verified inference path is now named **M4-streamlined** (2026-11-16).
 Use `remote_stage/os/m4_streamlined.py:M4Streamlined`; its constructor and
 forward are inherited unchanged from the frozen `CleanM4` implementation.
